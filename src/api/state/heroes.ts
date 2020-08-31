@@ -1,4 +1,4 @@
-import { atom, selector } from 'recoil';
+import { atom, selector, selectorFamily } from 'recoil';
 import { Hero } from './hero-types';
 
 export const s_HeroNames = atom({
@@ -101,7 +101,7 @@ export const s_Heroes = selector({
   get: async ({ get }) => {
     const heroNames = get(s_HeroNames);
 
-    const data = await Promise.all(
+    const heroes = await Promise.all(
       heroNames.map((name) =>
         fetch(
           `https://heroespatchnotes.github.io/heroes-talents/hero/${name}.json`
@@ -109,6 +109,15 @@ export const s_Heroes = selector({
       )
     );
 
-    return data;
+    return heroes;
+  },
+});
+
+export const s_Hero = selectorFamily({
+  key: 's_Hero',
+  get: (name: string) => ({ get }) => {
+    const heroes = get(s_Heroes);
+
+    return heroes.find((h) => h.shortName === name);
   },
 });

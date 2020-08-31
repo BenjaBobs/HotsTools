@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createBrowserHistory } from 'history';
 import './index.css';
-import App from './App';
+import AppHost from './AppHost';
 import * as serviceWorker from './serviceWorker';
 import { RecoilRoot } from 'recoil';
 import { Router } from 'react-router-dom';
-
-const history = createBrowserHistory();
+import { HistoryRecoilSync, browserHistory } from './api/state/routing';
 
 ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot>
-      <Router history={history}>
-        <App />
+      <HistoryRecoilSync />
+      <Router history={browserHistory}>
+        <AppHost />
       </Router>
     </RecoilRoot>
   </React.StrictMode>,
