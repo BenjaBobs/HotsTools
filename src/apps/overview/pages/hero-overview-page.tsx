@@ -13,7 +13,9 @@ export default function HeroOverviewPage() {
       {heroData.map((x) => (
         <Link
           key={x.shortName}
-          to={(path) => `${path.pathname}/heroes/${x.shortName}`}
+          to={(path) =>
+            `${path.pathname}/heroes/${x.shortName}`.replace('//', '/')
+          }
         >
           <img alt={x.shortName} src={GetHeroIcon(x.icon)} />
         </Link>

@@ -58,7 +58,7 @@ export const s_appMatch = selector({
   get: ({ get }) => {
     const path = get(s_urlPath);
     const flatApps = get(s_flatApps);
-
+    console.log(flatApps.map((x) => x.absolutePath));
     for (const app of flatApps) {
       const match = matchPath(path, {
         path: app.absolutePath,
