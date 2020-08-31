@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hotstools/static/css/main.5f361e03.chunk.css",
+    "main.js": "/hotstools/static/js/main.87a46bf0.chunk.js",
+    "main.js.map": "/hotstools/static/js/main.87a46bf0.chunk.js.map",
+    "runtime-main.js": "/hotstools/static/js/runtime-main.4ae11175.js",
+    "runtime-main.js.map": "/hotstools/static/js/runtime-main.4ae11175.js.map",
+    "static/js/2.5f89ad0f.chunk.js": "/hotstools/static/js/2.5f89ad0f.chunk.js",
+    "static/js/2.5f89ad0f.chunk.js.map": "/hotstools/static/js/2.5f89ad0f.chunk.js.map",
+    "index.html": "/hotstools/index.html",
+    "precache-manifest.4bb0597df137f9e8bc8f33915a4403dd.js": "/hotstools/precache-manifest.4bb0597df137f9e8bc8f33915a4403dd.js",
+    "service-worker.js": "/hotstools/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/hotstools/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.5f89ad0f.chunk.js.LICENSE.txt": "/hotstools/static/js/2.5f89ad0f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/hotstools/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ae11175.js",
+    "static/js/2.5f89ad0f.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.87a46bf0.chunk.js"
+  ]
+}
