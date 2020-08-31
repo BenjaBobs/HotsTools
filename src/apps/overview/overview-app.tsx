@@ -5,12 +5,12 @@ import HeroDetailsPage from './pages/hero-details-page';
 
 const OverviewApp: AppDefinition = {
   name: 'Overview',
-  path: 'heroes',
+  path: '',
   component: <HeroOverviewPage />,
   nestedApps: [
     {
       name: 'Hero details',
-      path: ':hero',
+      path: 'heroes/:hero',
       component: <HeroDetailsPage />,
     },
   ],

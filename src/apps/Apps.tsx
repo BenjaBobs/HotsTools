@@ -24,8 +24,9 @@ export const s_apps = selector({
       for (const app of apps) {
         const extended = app as ExtendedAppDefinition;
 
-        extended.absolutePath =
-          (parentApp?.absolutePath ?? '') + '/' + extended.path;
+        extended.absolutePath = parentApp
+          ? parentApp.absolutePath + '/' + extended.path
+          : '/HotsTools' + extended.path;
 
         if (extended.nestedApps) {
           __patchApps(extended.nestedApps, extended);

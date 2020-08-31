@@ -19,7 +19,9 @@ export default function AppHost() {
       <Header className={style.header}>
         <Row align="middle" justify="space-around" className={style.header}>
           {apps.map((app) => (
-            <Link to={app.absolutePath}>{app.name}</Link>
+            <Link key={app.absolutePath} to={app.absolutePath}>
+              {app.name}
+            </Link>
           ))}
         </Row>
       </Header>

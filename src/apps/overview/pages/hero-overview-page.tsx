@@ -11,7 +11,10 @@ export default function HeroOverviewPage() {
   return (
     <Row justify="space-between">
       {heroData.map((x) => (
-        <Link to={`/heroes/${x.shortName}`}>
+        <Link
+          key={x.shortName}
+          to={(path) => `${path.pathname}/heroes/${x.shortName}`}
+        >
           <img alt={x.shortName} src={GetHeroIcon(x.icon)} />
         </Link>
       ))}
