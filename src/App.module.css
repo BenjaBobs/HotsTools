@@ -1,0 +1,13 @@
+.layout {
+  height: 100%;
+}
+
+.header {
+  background: #011932;
+  height: 64px;
+}
+
+.content {
+  background: #01366a;
+  height: 100%;
+}
