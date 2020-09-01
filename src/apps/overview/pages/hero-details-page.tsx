@@ -11,6 +11,7 @@ import {
   GetAbilityIcon,
   GetTalentIcon,
 } from '../../../api/HotsTalents';
+import { ResponsiveRadar } from '@nivo/radar';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = useRecoilValue(s_Hero(props.hero!))!;
@@ -38,62 +39,99 @@ export default function HeroDetailsPage(props: { hero?: string }) {
             />
           }
         >
-          <Row>
-            <Col>
-              {abilitySets.map((abilitySet) => (
-                <>
-                  <Row>
-                    <h2>
-                      Abilities{' '}
-                      {abilitySets.length > 1 && `(${abilitySet.form})`}
-                    </h2>
-                  </Row>
-                  <Row>
-                    <Col>
-                      {abilitySet.abilities.map((ab) => (
-                        <>
-                          <Avatar
-                            className="hexagon"
-                            size="large"
-                            src={GetAbilityIcon(ab.icon)}
-                          />
-                        </>
-                      ))}
-                    </Col>
-                  </Row>
-                </>
-              ))}
-            </Col>
-          </Row>
-          <Row>
-            <br />
-            <br />
-          </Row>
-          <Row>
-            <Col>
+          <Row justify="space-between">
+            <Col flex={1}>
               <Row>
-                <h2>Talents</h2>
+                <Col>
+                  {abilitySets.map((abilitySet) => (
+                    <>
+                      <Row>
+                        <h2>
+                          Abilities{' '}
+                          {abilitySets.length > 1 && `(${abilitySet.form})`}
+                        </h2>
+                      </Row>
+                      <Row>
+                        <Col>
+                          {abilitySet.abilities.map((ab) => (
+                            <Avatar
+                              key={ab.name}
+                              className="hexagon"
+                              size="large"
+                              src={GetAbilityIcon(ab.icon)}
+                            />
+                          ))}
+                        </Col>
+                      </Row>
+                    </>
+                  ))}
+                </Col>
               </Row>
-              {talentSets.map((talentSet) => (
-                <>
+              <br />
+              <br />
+              <Row>
+                <Col>
                   <Row>
-                    <h3>Level {talentSet.tier}</h3>
+                    <h2>Talents</h2>
                   </Row>
-                  <Row>
-                    <Col>
-                      {talentSet.talents.map((talent) => (
-                        <>
-                          <Avatar
-                            className="hexagon"
-                            size="large"
-                            src={GetTalentIcon(talent.icon)}
-                          />
-                        </>
-                      ))}
-                    </Col>
-                  </Row>
-                </>
-              ))}
+                  {talentSets.map((talentSet) => (
+                    <>
+                      <Row key="tier">
+                        <h3>Level {talentSet.tier}</h3>
+                      </Row>
+                      <Row key="talents">
+                        <Col>
+                          {talentSet.talents.map((talent) => (
+                            <Avatar
+                              className="hexagon"
+                              size="large"
+                              src={GetTalentIcon(talent.icon)}
+                            />
+                          ))}
+                        </Col>
+                      </Row>
+                    </>
+                  ))}
+                </Col>
+              </Row>
+            </Col>
+            <Col flex={1} style={{ maxWidth: 800, maxHeight: 800 }}>
+              <ResponsiveRadar
+                maxValue={10}
+                gridLevels={5}
+                gridShape="linear"
+                data={[
+                  {
+                    property: 'WaveClear',
+                    hero: Math.round(Math.random() * 10),
+                  },
+                  {
+                    property: 'Pvp',
+                    hero: Math.round(Math.random() * 10),
+                  },
+                  {
+                    property: 'RotationSpeed',
+                    hero: Math.round(Math.random() * 10),
+                  },
+                  {
+                    property: 'Other',
+                    hero: Math.round(Math.random() * 10),
+                  },
+                  {
+                    property: 'CoolSkins',
+                    hero: Math.round(Math.random() * 10),
+                  },
+                ]}
+                indexBy="property"
+                keys={['hero']}
+                colors="red"
+                margin={{ left: 128, right: 128, top: 128, bottom: 128 }}
+                enableDotLabel={true}
+                dotLabel="value"
+                dotLabelYOffset={-12}
+                fillOpacity={0.2}
+                legends={[]}
+              />
             </Col>
           </Row>
         </Card>

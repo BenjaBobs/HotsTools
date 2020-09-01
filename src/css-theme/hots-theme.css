@@ -4,6 +4,7 @@
 @import 'components/avatar.css';
 @import 'components/h.css';
 @import 'components/a.css';
+@import 'components/nivo-charts.css';
 
 :root {
   --main-color-h: 211;
