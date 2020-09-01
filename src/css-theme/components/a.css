@@ -1,9 +1,17 @@
-a {
+a.glow {
   transition: all 0.2s linear;
 }
 
-a:hover {
+a.glow:hover {
   color: hsl(var(--fg-color-brightest));
   text-shadow: 0 0 10px hsl(var(--fg-color-darkest)),
     0 0 10px hsl(var(--fg-color-darkest)), 0 0 10px hsl(var(--fg-color-darkest));
+
+  background: linear-gradient(
+    0deg,
+    hsla(var(--fg-color), 1) 0%,
+    hsla(var(--bg-color-brightest), 1) 2%,
+    hsla(var(--bg-color-brightest), 0.5) 10%,
+    hsla(var(--bg-color-brightest), 0) 30%
+  );
 }

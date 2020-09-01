@@ -1,10 +1,20 @@
 .ant-card {
   background: hsl(var(--bg-color-darker));
-  border-color: hsl(var(--border-color));
+}
+
+.ant-card-bordered {
+  border-color: hsl(var(--bg-color-brightest));
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0%;
 }
 
 .ant-card-head {
-  border-color: hsl(var(--border-color));
+  border: none;
+}
+
+.ant-card-head-wrapper {
+  border-bottom: 1px solid hsl(var(--fg-color-darkest));
 }
 
 .ant-card-body {

@@ -6,6 +6,8 @@
 .ant-layout-header {
   background: hsl(var(--bg-color-darkest));
   height: 64px;
+  border: none;
+  border-bottom: 1px solid hsl(var(--bg-color-brightest));
 }
 
 .ant-layout-content {

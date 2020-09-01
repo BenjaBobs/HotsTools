@@ -19,11 +19,19 @@ export default function AppHost() {
         <Row align="middle" justify="space-around">
           {apps.map((app) =>
             app.overrideLink ? (
-              <a key={app.overrideLink} href={app.overrideLink}>
+              <a
+                className="glow"
+                key={app.overrideLink}
+                href={app.overrideLink}
+              >
                 {app.name}
               </a>
             ) : (
-              <Link key={app.absolutePath} to={app.absolutePath}>
+              <Link
+                className="glow"
+                key={app.absolutePath}
+                to={app.absolutePath}
+              >
                 {app.name}
               </Link>
             )
