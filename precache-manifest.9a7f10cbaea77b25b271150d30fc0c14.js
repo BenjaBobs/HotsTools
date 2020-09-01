@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d18c4dd4e757bd71f36ebba723d2cff",
+    "revision": "273148898028d30f7d71902b412adce7",
     "url": "/HotsTools/index.html"
   },
   {
-    "revision": "0c2f84131ec4d38df726",
+    "revision": "62c010d3f269e591508e",
     "url": "/HotsTools/static/css/2.d4e7eff5.chunk.css"
   },
   {
-    "revision": "5e9bb8d8392a2a6dde48",
+    "revision": "900ae3701249a3a0bd9f",
     "url": "/HotsTools/static/css/main.5b05c710.chunk.css"
   },
   {
-    "revision": "0c2f84131ec4d38df726",
-    "url": "/HotsTools/static/js/2.f08bb7b6.chunk.js"
+    "revision": "62c010d3f269e591508e",
+    "url": "/HotsTools/static/js/2.bc152b87.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/HotsTools/static/js/2.f08bb7b6.chunk.js.LICENSE.txt"
+    "url": "/HotsTools/static/js/2.bc152b87.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5e9bb8d8392a2a6dde48",
-    "url": "/HotsTools/static/js/main.1ed4fe06.chunk.js"
+    "revision": "900ae3701249a3a0bd9f",
+    "url": "/HotsTools/static/js/main.d300ea7c.chunk.js"
   },
   {
     "revision": "bada81921771869c95a2",
