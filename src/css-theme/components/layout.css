@@ -1,0 +1,14 @@
+.ant-layout {
+  height: auto;
+  min-height: 100vh;
+}
+
+.ant-layout-header {
+  background: hsl(var(--bg-color-darkest));
+  height: 64px;
+}
+
+.ant-layout-content {
+  background: hsl(var(--bg-color));
+  height: 100%;
+}

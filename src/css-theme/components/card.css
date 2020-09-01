@@ -1,0 +1,12 @@
+.ant-card {
+  background: hsl(var(--bg-color-darker));
+  border-color: hsl(var(--border-color));
+}
+
+.ant-card-head {
+  border-color: hsl(var(--border-color));
+}
+
+.ant-card-body {
+  color: hsl(var(--text-color));
+}

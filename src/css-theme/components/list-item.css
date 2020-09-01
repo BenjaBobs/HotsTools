@@ -1,0 +1,7 @@
+.ant-list-item-meta-title {
+  color: hsl(var(--text-color));
+}
+
+.ant-list-item-meta-description {
+  color: hsla(var(--text-color), 0.6);
+}

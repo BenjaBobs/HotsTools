@@ -15,9 +15,9 @@ export default function AppHost() {
   const currentAppParams = useRecoilValue(s_currentAppParams);
 
   return (
-    <Layout className={style.layout}>
-      <Header className={style.header}>
-        <Row align="middle" justify="space-around" className={style.header}>
+    <Layout>
+      <Header>
+        <Row align="middle" justify="space-around">
           {apps.map((app) => (
             <Link key={app.absolutePath} to={app.absolutePath}>
               {app.name}
@@ -25,9 +25,17 @@ export default function AppHost() {
           ))}
         </Row>
       </Header>
-      <Content className={style.content}>
+      <Content>
         <Row justify="center">
-          <Col style={{ color: 'white' }} flex="1">
+          <Col
+            style={{
+              color: 'white',
+              paddingTop: 16,
+              paddingLeft: 32,
+              paddingRight: 32,
+            }}
+            flex="1"
+          >
             {!currentApp ? (
               <Result
                 status="404"
