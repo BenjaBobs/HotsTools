@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layout, Row, Col, Result } from 'antd';
-import style from './App.module.css';
 import { Link } from 'react-router-dom';
 import { useRecoilValue } from 'recoil';
 import { s_currentApp, s_currentAppParams, s_apps } from './apps/Apps';
