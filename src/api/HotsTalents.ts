@@ -6,12 +6,12 @@ export function GetHeroIcon(name: string) {
 
 export function GetAbilityIcon(name: string) {
   return (
-    'https://heroespatchnotes.github.io/heroes-talents/images/talent/' + name
+    'https://heroespatchnotes.github.io/heroes-talents/images/talents/' + name
   );
 }
 
 export function GetTalentIcon(name: string) {
   return (
-    'https://heroespatchnotes.github.io/heroes-talents/images/talent/' + name
+    'https://heroespatchnotes.github.io/heroes-talents/images/talents/' + name
   );
 }
