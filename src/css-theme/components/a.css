@@ -1,0 +1,9 @@
+a {
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  color: hsl(var(--fg-color-brightest));
+  text-shadow: 0 0 10px hsl(var(--fg-color-darkest)),
+    0 0 10px hsl(var(--fg-color-darkest)), 0 0 10px hsl(var(--fg-color-darkest));
+}

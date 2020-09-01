@@ -4,10 +4,11 @@ import { atom, selector } from 'recoil';
 import { AppDefinition, ExtendedAppDefinition } from './AppDefinition';
 import OverviewApp from './overview/overview-app';
 import { s_urlPath } from '../api/state/routing';
+import GitHubApp from './GitHub-app';
 
 const s_rawApps = atom({
   key: 'raw_apps',
-  default: [OverviewApp],
+  default: [OverviewApp, GitHubApp],
 });
 
 export const s_apps = selector({

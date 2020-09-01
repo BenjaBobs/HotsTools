@@ -17,11 +17,17 @@ export default function AppHost() {
     <Layout>
       <Header>
         <Row align="middle" justify="space-around">
-          {apps.map((app) => (
-            <Link key={app.absolutePath} to={app.absolutePath}>
-              {app.name}
-            </Link>
-          ))}
+          {apps.map((app) =>
+            app.overrideLink ? (
+              <a key={app.overrideLink} href={app.overrideLink}>
+                {app.name}
+              </a>
+            ) : (
+              <Link key={app.absolutePath} to={app.absolutePath}>
+                {app.name}
+              </Link>
+            )
+          )}
         </Row>
       </Header>
       <Content>

@@ -3,6 +3,7 @@ export type AppDefinition = {
   path: string;
   nestedApps?: AppDefinition[];
   component?: React.ReactNode;
+  overrideLink?: string;
 };
 
 export type ExtendedAppDefinition = Omit<AppDefinition, 'nestedApps'> & {

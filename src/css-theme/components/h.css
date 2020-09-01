@@ -6,3 +6,12 @@ h5,
 h6 {
   color: hsl(var(--text-color));
 }
+
+h1 {
+  text-shadow: 0 0 10px;
+  font-weight: bold;
+}
+
+h2 {
+  text-shadow: 0 0 10px;
+}

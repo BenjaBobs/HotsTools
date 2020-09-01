@@ -33,7 +33,7 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                   src={GetHeroIcon(hero?.icon!)}
                 />
               }
-              title={hero.name}
+              title={<h1>{hero.name}</h1>}
               description={hero.expandedRole + ' | ' + hero?.tags.join(', ')}
             />
           }
@@ -43,10 +43,10 @@ export default function HeroDetailsPage(props: { hero?: string }) {
               {abilitySets.map((abilitySet) => (
                 <>
                   <Row>
-                    <h1>
+                    <h2>
                       Abilities{' '}
                       {abilitySets.length > 1 && `(${abilitySet.form})`}
-                    </h1>
+                    </h2>
                   </Row>
                   <Row>
                     <Col>
@@ -72,7 +72,7 @@ export default function HeroDetailsPage(props: { hero?: string }) {
           <Row>
             <Col>
               <Row>
-                <h1>Talents</h1>
+                <h2>Talents</h2>
               </Row>
               {talentSets.map((talentSet) => (
                 <>
