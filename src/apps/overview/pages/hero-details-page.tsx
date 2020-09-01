@@ -1,14 +1,21 @@
 import React from 'react';
 import { useRecoilValue } from 'recoil';
-import { s_Hero } from '../../../api/state/heroes';
+import {
+  s_Hero,
+  s_HeroAbilities,
+  s_HeroTalents,
+} from '../../../api/state/heroes';
 import { Row, Card, List, Avatar, Col } from 'antd';
-import { GetHeroIcon, GetAbilityIcon } from '../../../api/HotsTalents';
+import {
+  GetHeroIcon,
+  GetAbilityIcon,
+  GetTalentIcon,
+} from '../../../api/HotsTalents';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = useRecoilValue(s_Hero(props.hero!))!;
-  const forms = Object.entries(hero.abilities).map(([form, abilities]) => {
-    return { form, abilities };
-  });
+  const abilitySets = useRecoilValue(s_HeroAbilities(props.hero!))!;
+  const talentSets = useRecoilValue(s_HeroTalents(props.hero!))!;
 
   return (
     <Row justify="center" style={{ paddingLeft: 48, paddingRight: 48 }}>
@@ -33,19 +40,53 @@ export default function HeroDetailsPage(props: { hero?: string }) {
         >
           <Row>
             <Col>
-              {forms.map((form) => (
+              {abilitySets.map((abilitySet) => (
                 <>
                   <Row>
-                    <h1>Abilities {forms.length > 1 && `(${form.form})`}</h1>
+                    <h1>
+                      Abilities{' '}
+                      {abilitySets.length > 1 && `(${abilitySet.form})`}
+                    </h1>
                   </Row>
                   <Row>
                     <Col>
-                      {form.abilities.map((ab) => (
+                      {abilitySet.abilities.map((ab) => (
                         <>
                           <Avatar
                             className="hexagon"
                             size="large"
                             src={GetAbilityIcon(ab.icon)}
+                          />
+                        </>
+                      ))}
+                    </Col>
+                  </Row>
+                </>
+              ))}
+            </Col>
+          </Row>
+          <Row>
+            <br />
+            <br />
+          </Row>
+          <Row>
+            <Col>
+              <Row>
+                <h1>Talents</h1>
+              </Row>
+              {talentSets.map((talentSet) => (
+                <>
+                  <Row>
+                    <h3>Level {talentSet.tier}</h3>
+                  </Row>
+                  <Row>
+                    <Col>
+                      {talentSet.talents.map((talent) => (
+                        <>
+                          <Avatar
+                            className="hexagon"
+                            size="large"
+                            src={GetTalentIcon(talent.icon)}
                           />
                         </>
                       ))}

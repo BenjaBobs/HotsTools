@@ -1,5 +1,5 @@
 import { atom, selector, selectorFamily } from 'recoil';
-import { Hero } from './hero-types';
+import { Hero, TalentTier, Talent } from './hero-types';
 
 export const s_HeroNames = atom({
   key: 's_HeroNames',
@@ -118,6 +118,38 @@ export const s_Hero = selectorFamily({
   get: (name: string) => ({ get }) => {
     const heroes = get(s_Heroes);
 
-    return heroes.find((h) => h.shortName === name);
+    return heroes.find((h) => h.shortName === name) || null;
+  },
+});
+
+export const s_HeroAbilities = selectorFamily({
+  key: 's_HeroAbilities',
+  get: (name: string) => ({ get }) => {
+    const hero = get(s_Hero(name));
+
+    if (!hero) return null;
+
+    const abilitySets = Object.entries(hero.abilities).map(
+      ([form, abilities]) => {
+        return { form, abilities };
+      }
+    );
+
+    return abilitySets;
+  },
+});
+
+export const s_HeroTalents = selectorFamily({
+  key: 's_HeroTalents',
+  get: (name: string) => ({ get }) => {
+    const hero = get(s_Hero(name));
+
+    if (!hero) return null;
+
+    const talents = Object.entries(hero.talents).map(([tier, talents]) => {
+      return { tier, talents } as { tier: TalentTier; talents: Talent[] };
+    });
+
+    return talents;
   },
 });
