@@ -4,6 +4,7 @@ import { s_Heroes } from '../../../api/state/heroes';
 import { Row } from 'antd';
 import { Link } from 'react-router-dom';
 import { GetHeroIcon } from '../../../api/HotsTalents';
+import Avatar from 'antd/lib/avatar/avatar';
 
 export default function HeroOverviewPage() {
   const heroData = useRecoilValue(s_Heroes);
@@ -17,7 +18,11 @@ export default function HeroOverviewPage() {
             `${path.pathname}/heroes/${x.shortName}`.replace('//', '/')
           }
         >
-          <img alt={x.shortName} src={GetHeroIcon(x.icon)} />
+          <Avatar
+            className="outline hoverable"
+            style={{ height: 80, width: 80 }}
+            src={GetHeroIcon(x.icon)}
+          />
         </Link>
       ))}
     </Row>

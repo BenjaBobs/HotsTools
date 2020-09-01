@@ -1,6 +1,8 @@
 @import 'components/card.css';
 @import 'components/list-item.css';
 @import 'components/layout.css';
+@import 'components/avatar.css';
+@import 'components/h.css';
 
 :root {
   --main-color-h: 211;

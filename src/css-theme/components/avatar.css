@@ -1,0 +1,36 @@
+.ant-avatar.outline {
+  border: 2px solid #88b8ff;
+  box-shadow: 0 0 10px rgba(51, 153, 255, 0.5);
+  transition: all 0.1s linear;
+}
+
+.ant-avatar.outline.hoverable:hover {
+  border: 2px solid #b4d2ff;
+  box-shadow: 0 0 10px rgba(51, 153, 255, 1), 0 0 10px rgba(51, 153, 255, 1),
+    0 0 10px rgba(51, 153, 255, 1), 0 0 10px rgba(51, 153, 255, 1),
+    0 0 10px rgba(51, 153, 255, 1), 0 0 10px rgba(51, 153, 255, 1);
+}
+
+.ant-avatar.hexagon img {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  position: absolute;
+}
+
+.ant-avatar.hexagon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(https://static.heroesofthestorm.com/images/ability-icon-frame-6f5d4ee4ef.png)
+    0 0 no-repeat;
+  background-size: cover;
+  background-position: center;
+}
