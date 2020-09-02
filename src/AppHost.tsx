@@ -1,10 +1,10 @@
 import React from 'react';
 import { Layout, Row, Col, Result } from 'antd';
-import { Link } from 'react-router-dom';
 import { useRecoilValue } from 'recoil';
 import { s_currentApp, s_currentAppParams, s_apps } from './apps/Apps';
 import { LoadingOutlined } from '@ant-design/icons';
 import ErrorBoundary from 'antd/lib/alert/ErrorBoundary';
+import Link2 from './Link2';
 
 const { Header, Content } = Layout;
 
@@ -17,25 +17,15 @@ export default function AppHost() {
     <Layout>
       <Header>
         <Row align="middle" justify="space-around">
-          {apps.map((app) =>
-            app.overrideLink ? (
-              <a
-                className="glow"
-                key={app.overrideLink}
-                href={app.overrideLink}
-              >
-                {app.name}
-              </a>
-            ) : (
-              <Link
-                className="glow"
-                key={app.absolutePath}
-                to={app.absolutePath}
-              >
-                {app.name}
-              </Link>
-            )
-          )}
+          {apps.map((app) => (
+            <Link2
+              to={app.overrideLink ?? app.absolutePath}
+              className="textglow-hover underglow-hover animate"
+              style={{ paddingLeft: 16, paddingRight: 16 }}
+            >
+              {app.name}
+            </Link2>
+          ))}
         </Row>
       </Header>
       <Content>
