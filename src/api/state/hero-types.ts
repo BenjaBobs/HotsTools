@@ -1,4 +1,6 @@
-export type Hero = {
+import { HeroDataExtensions } from './extend-hero-data';
+
+type HeroRaw = {
   id: number;
   shortName: string;
   hyperlinkId: string;
@@ -15,6 +17,10 @@ export type Hero = {
   tags: string[];
   abilities: { [key: string]: Ability[] };
   talents: { [key in TalentTier]: Talent[] };
+};
+
+export type Hero = HeroRaw & {
+  extensions: HeroDataExtensions;
 };
 
 export type Ability = {

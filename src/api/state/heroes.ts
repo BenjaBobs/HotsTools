@@ -1,5 +1,6 @@
 import { atom, selector, selectorFamily } from 'recoil';
 import { Hero, TalentTier, Talent } from './hero-types';
+import ExtendHeroData from './extend-hero-data';
 
 export const s_HeroNames = atom({
   key: 's_HeroNames',
@@ -108,6 +109,10 @@ export const s_Heroes = selector({
         ).then(async (response) => (await response.json()) as Hero)
       )
     );
+
+    heroes.forEach((hero) => {
+      ExtendHeroData(hero);
+    });
 
     return heroes;
   },
