@@ -12,6 +12,8 @@ import {
   GetTalentIcon,
 } from '../../../api/HotsTalents';
 import HeroStrengthsChart from './components/hero-strengths-chart';
+import AbilityTooltip from './components/ability-tooltip';
+import TalentTooltip from './components/talent-tooltip';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = useRecoilValue(s_Hero(props.hero!))!;
@@ -53,13 +55,16 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                       </Row>
                       <Row>
                         <Col>
-                          {abilitySet.abilities.map((ab) => (
-                            <Avatar
-                              key={ab.name}
-                              className="hexagon"
-                              size="large"
-                              src={GetAbilityIcon(ab.icon)}
-                            />
+                          {abilitySet.abilities.map((ability) => (
+                            <div style={{ padding: 8 }}>
+                              <Avatar
+                                key={ability.name}
+                                className="hexagon"
+                                size="large"
+                                src={GetAbilityIcon(ability.icon)}
+                              />
+                              <AbilityTooltip ability={ability} />
+                            </div>
                           ))}
                         </Col>
                       </Row>
@@ -82,11 +87,16 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                       <Row key="talents">
                         <Col>
                           {talentSet.talents.map((talent) => (
-                            <Avatar
-                              className="hexagon"
-                              size="large"
-                              src={GetTalentIcon(talent.icon)}
-                            />
+                            <div
+                              style={{ padding: 8, display: 'inline-block' }}
+                            >
+                              <Avatar
+                                className="hexagon"
+                                size="large"
+                                src={GetTalentIcon(talent.icon)}
+                              />
+                              <TalentTooltip talent={talent} />
+                            </div>
                           ))}
                         </Col>
                       </Row>
