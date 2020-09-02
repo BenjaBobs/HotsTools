@@ -95,7 +95,7 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                 </Col>
               </Row>
             </Col>
-            <Col flex={1} style={{ maxWidth: 600, maxHeight: 600 }}>
+            <Col flex={1} style={{ maxWidth: 800, maxHeight: 800 }}>
               <HeroStrengthsChart hero={hero} />
             </Col>
           </Row>
