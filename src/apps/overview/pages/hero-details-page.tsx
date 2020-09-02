@@ -11,7 +11,7 @@ import {
   GetAbilityIcon,
   GetTalentIcon,
 } from '../../../api/HotsTalents';
-import { ResponsiveRadar } from '@nivo/radar';
+import HeroStrengthsChart from './components/hero-strengths-chart';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = useRecoilValue(s_Hero(props.hero!))!;
@@ -95,43 +95,8 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                 </Col>
               </Row>
             </Col>
-            <Col flex={1} style={{ maxWidth: 800, maxHeight: 800 }}>
-              <ResponsiveRadar
-                maxValue={10}
-                gridLevels={5}
-                gridShape="linear"
-                data={[
-                  {
-                    property: 'WaveClear',
-                    hero: Math.round(Math.random() * 10),
-                  },
-                  {
-                    property: 'Pvp',
-                    hero: Math.round(Math.random() * 10),
-                  },
-                  {
-                    property: 'RotationSpeed',
-                    hero: Math.round(Math.random() * 10),
-                  },
-                  {
-                    property: 'Other',
-                    hero: Math.round(Math.random() * 10),
-                  },
-                  {
-                    property: 'CoolSkins',
-                    hero: Math.round(Math.random() * 10),
-                  },
-                ]}
-                indexBy="property"
-                keys={['hero']}
-                colors="red"
-                margin={{ left: 128, right: 128, top: 128, bottom: 128 }}
-                enableDotLabel={true}
-                dotLabel="value"
-                dotLabelYOffset={-12}
-                fillOpacity={0.2}
-                legends={[]}
-              />
+            <Col flex={1} style={{ maxWidth: 600, maxHeight: 600 }}>
+              <HeroStrengthsChart hero={hero} />
             </Col>
           </Row>
         </Card>
