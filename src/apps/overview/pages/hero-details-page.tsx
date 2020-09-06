@@ -43,8 +43,8 @@ export default function HeroDetailsPage(props: { hero?: string }) {
         <Row justify="space-between">
           <Col flex={1}>
             <Space direction="vertical">
-              <Row>
-                <Col>
+              <Row justify="space-between">
+                <Col flex={1}>
                   {abilitySets.map((abilitySet) => (
                     <>
                       <Row>
@@ -72,6 +72,17 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                     </>
                   ))}
                 </Col>
+                <Col
+                  flex={1}
+                  style={{
+                    maxWidth: 800,
+                    minWidth: 600,
+                    maxHeight: 800,
+                    minHeight: 600,
+                  }}
+                >
+                  <HeroStrengthsChart hero={hero} />
+                </Col>
               </Row>
               <br />
               <Row>
@@ -79,35 +90,35 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                   <Row>
                     <h2>Talents</h2>
                   </Row>
+                  <br />
                   {talentSets.map((talentSet) => (
-                    <>
-                      <Row key="tier">
+                    <Row gutter={8} style={{ paddingBottom: 32 }}>
+                      <Col key="tier" style={{ width: 90, paddingTop: 40 }}>
                         <h3>Level {talentSet.tier}</h3>
-                      </Row>
-                      <Row key="talents">
-                        <Col>
+                      </Col>
+                      <Col key="talents">
+                        <Row gutter={8}>
                           {talentSet.talents.map((talent) => (
-                            <div
-                              style={{ padding: 8, display: 'inline-block' }}
-                            >
-                              <Avatar
-                                className="hexagon"
-                                size="large"
-                                src={GetTalentIcon(talent.icon)}
-                              />
-                              <TalentTooltip talent={talent} />
-                            </div>
+                            <Col>
+                              <Row justify="center">
+                                <Avatar
+                                  className="hexagon"
+                                  size="large"
+                                  src={GetTalentIcon(talent.icon)}
+                                />
+                              </Row>
+                              <Row justify="center">
+                                <TalentTooltip talent={talent} />
+                              </Row>
+                            </Col>
                           ))}
-                        </Col>
-                      </Row>
-                    </>
+                        </Row>
+                      </Col>
+                    </Row>
                   ))}
                 </Col>
               </Row>
             </Space>
-          </Col>
-          <Col flex={1} style={{ maxWidth: 800, maxHeight: 800 }}>
-            <HeroStrengthsChart hero={hero} />
           </Col>
         </Row>
       </Col>
