@@ -13,6 +13,7 @@ export default function TalentTooltip(props: { talent: Talent }) {
           </Col>
           <Col>({props.talent.type})</Col>
         </Row>
+        <br />
         <Row>{props.talent.description}</Row>
       </HotsTooltip>
     </div>

@@ -13,10 +13,10 @@ export default function AbilityTooltip(props: { ability: Ability }) {
           </Col>
           <Col>({props.ability.hotkey})</Col>
         </Row>
-        <Row>Mana: {props.ability.manaCost}</Row>
+        {props.ability.manaCost && <Row>Mana: {props.ability.manaCost}</Row>}
         <Row></Row>
         <Row>Cooldown: {props.ability.cooldown}</Row>
-        <Row></Row>
+        <br />
         <Row>{props.ability.description}</Row>
       </HotsTooltip>
     </div>
