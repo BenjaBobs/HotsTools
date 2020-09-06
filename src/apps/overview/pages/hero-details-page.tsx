@@ -5,7 +5,7 @@ import {
   s_HeroAbilities,
   s_HeroTalents,
 } from '../../../api/state/heroes';
-import { Row, Card, List, Avatar, Col } from 'antd';
+import { Row, Avatar, Col, Space } from 'antd';
 import {
   GetHeroIcon,
   GetAbilityIcon,
@@ -23,26 +23,26 @@ export default function HeroDetailsPage(props: { hero?: string }) {
   return (
     <Row justify="center" style={{ paddingLeft: 48, paddingRight: 48 }}>
       <Col flex={1}>
-        <Card
-          hoverable={false}
-          title={
-            <List.Item.Meta
-              style={{ color: 'white' }}
-              avatar={
-                <Avatar
-                  className="outline"
-                  style={{ width: 80, height: 80 }}
-                  size="large"
-                  src={GetHeroIcon(hero?.icon!)}
-                />
-              }
-              title={<h1>{hero.name}</h1>}
-              description={hero.expandedRole + ' | ' + hero?.tags.join(', ')}
+        <Row align="middle" gutter={24}>
+          <Col>
+            <Avatar
+              className="outline"
+              style={{ width: 80, height: 80 }}
+              size="large"
+              src={GetHeroIcon(hero?.icon!)}
             />
-          }
-        >
-          <Row justify="space-between">
-            <Col flex={1}>
+          </Col>
+          <Col>
+            <Row>
+              <h1>{hero.name}</h1>
+            </Row>
+            <Row>{hero.expandedRole + ' | ' + hero?.tags.join(', ')}</Row>
+          </Col>
+        </Row>
+        <br />
+        <Row justify="space-between">
+          <Col flex={1}>
+            <Space direction="vertical">
               <Row>
                 <Col>
                   {abilitySets.map((abilitySet) => (
@@ -56,15 +56,16 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                       <Row>
                         <Col>
                           {abilitySet.abilities.map((ability) => (
-                            <div style={{ padding: 8 }}>
+                            <Row align="middle" style={{ padding: 8 }}>
                               <Avatar
                                 key={ability.name}
                                 className="hexagon"
                                 size="large"
+                                style={{ width: 80, height: 80 }}
                                 src={GetAbilityIcon(ability.icon)}
                               />
                               <AbilityTooltip ability={ability} />
-                            </div>
+                            </Row>
                           ))}
                         </Col>
                       </Row>
@@ -72,7 +73,6 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                   ))}
                 </Col>
               </Row>
-              <br />
               <br />
               <Row>
                 <Col>
@@ -104,12 +104,12 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                   ))}
                 </Col>
               </Row>
-            </Col>
-            <Col flex={1} style={{ maxWidth: 800, maxHeight: 800 }}>
-              <HeroStrengthsChart hero={hero} />
-            </Col>
-          </Row>
-        </Card>
+            </Space>
+          </Col>
+          <Col flex={1} style={{ maxWidth: 800, maxHeight: 800 }}>
+            <HeroStrengthsChart hero={hero} />
+          </Col>
+        </Row>
       </Col>
     </Row>
   );

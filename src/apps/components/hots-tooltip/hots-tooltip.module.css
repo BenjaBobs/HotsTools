@@ -2,6 +2,7 @@
   padding: 8px;
   min-height: 150px;
   min-width: 300px;
+  background: hsl(var(--bg-color-darker));
   border: 2px solid hsl(var(--fg-color-darkest));
   box-shadow: 0 0 5px hsla(var(--fg-color-darkest), 1),
     inset 0 0 5px hsla(var(--fg-color-darkest), 1);

@@ -4,14 +4,26 @@ h3,
 h4,
 h5,
 h6 {
+  line-height: 1em;
   color: hsl(var(--text-color));
+  margin: 0px;
 }
 
 h1 {
   text-shadow: 0 0 10px;
   font-weight: bold;
+  font-size: 3em;
 }
 
 h2 {
   text-shadow: 0 0 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
 }

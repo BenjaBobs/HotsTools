@@ -8,7 +8,9 @@ export default function AbilityTooltip(props: { ability: Ability }) {
     <div style={{ maxWidth: 500 }}>
       <HotsTooltip>
         <Row justify="space-between">
-          <Col>{props.ability.name}</Col>
+          <Col>
+            <b>{props.ability.name}</b>
+          </Col>
           <Col>({props.ability.hotkey})</Col>
         </Row>
         <Row>Mana: {props.ability.manaCost}</Row>
