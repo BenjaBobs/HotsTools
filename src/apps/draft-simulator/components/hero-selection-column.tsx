@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Avatar } from 'antd';
 import { GetHeroIcon } from '../../../api/HotsTalents';
-import style from './hero-selection-column.module.scss';
 
 export default function HeroSelectionColumn(props: {
   direction?: 'ltr' | 'rtl';
