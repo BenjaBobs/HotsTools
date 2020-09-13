@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppDefinition } from '../AppDefinition';
-import { Row, Col } from 'antd';
+import { Row, Col, Steps } from 'antd';
 import HeroSelectionColumn from './components/hero-selection-column';
 
 const DraftSimulatorApp: AppDefinition = {
@@ -9,21 +9,60 @@ const DraftSimulatorApp: AppDefinition = {
   component: <DraftSimulator />,
 };
 
+const BlueDot = (
+  <div
+    style={{
+      height: 30,
+      width: 30,
+      background: 'blue',
+      borderRadius: '50%',
+    }}
+  ></div>
+);
+
+const RedDot = (
+  <div
+    style={{
+      height: 30,
+      width: 30,
+      background: 'red',
+      borderRadius: '50%',
+    }}
+  ></div>
+);
+
 function DraftSimulator() {
   return (
     <>
       <Row justify="center">
-        draft stage bar
-        <br />
-        O--O--O--O--O--O--O--O--O
+        <Col>
+          <Steps labelPlacement="vertical" size="small">
+            <Steps.Step title="Ban" icon={BlueDot} />
+            <Steps.Step title="Ban" icon={RedDot} />
+            <Steps.Step title="Ban" icon={BlueDot} />
+            <Steps.Step title="Ban" icon={RedDot} />
+            <Steps.Step title="Pick" icon={BlueDot} />
+            <Steps.Step title="Pick" icon={RedDot} />
+            <Steps.Step title="Pick" icon={RedDot} />
+            <Steps.Step title="Pick" icon={BlueDot} />
+            <Steps.Step title="Pick" icon={RedDot} />
+            <Steps.Step title="Pick" />
+            <Steps.Step title="Pick" />
+            <Steps.Step title="Pick" />
+            <Steps.Step title="Pick" />
+            <Steps.Step title="Pick" />
+          </Steps>
+        </Col>
       </Row>
       <Row justify="space-between" align="middle">
         <Col style={{ height: 500, width: 200 }}>
-          <HeroSelectionColumn />
+          <HeroSelectionColumn selectedHeroes={[]} />
         </Col>
-        <Col>middle</Col>
+        <Col>hero searcher</Col>
         <Col style={{ height: 500, width: 200 }}>
-          <HeroSelectionColumn />
+          <HeroSelectionColumn
+            selectedHeroes={['abathur.png', 'brightwing.png']}
+          />
         </Col>
       </Row>
     </>
