@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/HotsTools/static/css/main.875b770d.chunk.css",
-    "main.js": "/HotsTools/static/js/main.90e9b6cc.chunk.js",
-    "main.js.map": "/HotsTools/static/js/main.90e9b6cc.chunk.js.map",
+    "main.js": "/HotsTools/static/js/main.a426ef06.chunk.js",
+    "main.js.map": "/HotsTools/static/js/main.a426ef06.chunk.js.map",
     "runtime-main.js": "/HotsTools/static/js/runtime-main.f72c4859.js",
     "runtime-main.js.map": "/HotsTools/static/js/runtime-main.f72c4859.js.map",
     "static/css/2.d4e7eff5.chunk.css": "/HotsTools/static/css/2.d4e7eff5.chunk.css",
-    "static/js/2.289ac756.chunk.js": "/HotsTools/static/js/2.289ac756.chunk.js",
-    "static/js/2.289ac756.chunk.js.map": "/HotsTools/static/js/2.289ac756.chunk.js.map",
+    "static/js/2.335bb2ab.chunk.js": "/HotsTools/static/js/2.335bb2ab.chunk.js",
+    "static/js/2.335bb2ab.chunk.js.map": "/HotsTools/static/js/2.335bb2ab.chunk.js.map",
     "index.html": "/HotsTools/index.html",
-    "precache-manifest.10c737ac7fc0e13bdd663446c324e418.js": "/HotsTools/precache-manifest.10c737ac7fc0e13bdd663446c324e418.js",
+    "precache-manifest.334cc7d20e4e759b023b89def68ebc21.js": "/HotsTools/precache-manifest.334cc7d20e4e759b023b89def68ebc21.js",
     "service-worker.js": "/HotsTools/service-worker.js",
     "static/css/2.d4e7eff5.chunk.css.map": "/HotsTools/static/css/2.d4e7eff5.chunk.css.map",
     "static/css/main.875b770d.chunk.css.map": "/HotsTools/static/css/main.875b770d.chunk.css.map",
-    "static/js/2.289ac756.chunk.js.LICENSE.txt": "/HotsTools/static/js/2.289ac756.chunk.js.LICENSE.txt"
+    "static/js/2.335bb2ab.chunk.js.LICENSE.txt": "/HotsTools/static/js/2.335bb2ab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f72c4859.js",
     "static/css/2.d4e7eff5.chunk.css",
-    "static/js/2.289ac756.chunk.js",
+    "static/js/2.335bb2ab.chunk.js",
     "static/css/main.875b770d.chunk.css",
-    "static/js/main.90e9b6cc.chunk.js"
+    "static/js/main.a426ef06.chunk.js"
   ]
 }
