@@ -74,7 +74,7 @@ function DraftSimulator() {
               <span
                 key={hero.id}
                 onClick={() => {
-                  if (phase == 'bluePick') {
+                  if (phase === 'bluePick') {
                     setBlueHeroes([...blueHeroes, hero]);
                   } else {
                     setRedHeroes([...redHeroes, hero]);
