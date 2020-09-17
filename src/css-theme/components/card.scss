@@ -13,6 +13,10 @@
   border: none;
 }
 
+.ant-card-head-title {
+  color: hsl(var(--fg-color-brightest));
+}
+
 .ant-card-head-wrapper {
   border-bottom: 1px solid hsl(var(--fg-color-darkest));
 }
