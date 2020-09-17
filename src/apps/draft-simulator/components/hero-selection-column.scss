@@ -1,0 +1,24 @@
+.hero-slot-bar {
+  --icon-size: 150px;
+  --half: calc(var(--icon-size) / 2);
+  --third: calc(var(--icon-size) / 3);
+
+  > * {
+    margin-top: calc(var(--third) * -1);
+    height: var(--icon-size);
+    width: var(--icon-size);
+    background-color: transparent;
+  }
+
+  &.ltr :nth-child(even) {
+    margin-left: var(--third);
+  }
+
+  &.rtl > :nth-child(odd) {
+    margin-left: var(--third);
+  }
+
+  > :first-child {
+    margin-top: 0px;
+  }
+}

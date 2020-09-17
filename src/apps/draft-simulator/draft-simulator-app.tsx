@@ -65,15 +65,24 @@ function DraftSimulator() {
       </Row>
       <Row justify="space-between" align="middle">
         <Col span={3} style={{ height: 500 }}>
-          <HeroSelectionColumn selectedHeroes={blueHeroes.map((h) => h.icon)} />
+          <HeroSelectionColumn
+            direction="ltr"
+            selectedHeroes={blueHeroes.map((h) => h.icon)}
+          />
         </Col>
         <Col span={18}>
-          {heroData
-            .filter((h) => !blueHeroes.includes(h) && !redHeroes.includes(h))
-            .map((hero) => (
+          {heroData.map((hero) => {
+            const disabled =
+              blueHeroes.includes(hero) || redHeroes.includes(hero);
+
+            return (
               <span
                 key={hero.id}
                 onClick={() => {
+                  if (disabled) {
+                    return;
+                  }
+
                   if (phase === 'bluePick') {
                     setBlueHeroes([...blueHeroes, hero]);
                   } else {
@@ -84,15 +93,19 @@ function DraftSimulator() {
                 }}
               >
                 <Avatar
-                  className="outline hoverable"
+                  className={'outline ' + (!disabled && 'hoverable')}
                   style={{ height: 80, width: 80 }}
                   src={GetHeroIcon(hero.icon)}
                 />
               </span>
-            ))}
+            );
+          })}
         </Col>
         <Col span={3} style={{ height: 500 }}>
-          <HeroSelectionColumn selectedHeroes={redHeroes.map((h) => h.icon)} />
+          <HeroSelectionColumn
+            direction="rtl"
+            selectedHeroes={redHeroes.map((h) => h.icon)}
+          />
         </Col>
       </Row>
     </>
