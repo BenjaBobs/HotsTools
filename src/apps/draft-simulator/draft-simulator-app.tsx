@@ -107,22 +107,21 @@ function DraftSimulator() {
                         return;
                       }
 
-                      const currentAction = actions[actions.length - 1];
+                      const uncompletedAction = actions.find(x => !x.completed);
 
-                      if (currentAction && !currentAction.completed) {
-                        currentAction.heroes.push(hero);
-                        currentAction.completed = true;
+                      if (uncompletedAction) {
+                        uncompletedAction.heroes.push(hero);
+                        uncompletedAction.completed = uncompletedAction.heroes.length === currentPhase.amount;
+                        
                         setActions([...actions]);
                       } else {
-                        const completed = currentPhase.amount === 1;
-
                         setActions([
                           ...actions,
                           {
                             type: currentPhase.type,
                             team: currentPhase.team,
                             heroes: [hero],
-                            completed,
+                            completed: currentPhase.amount === 1,
                           },
                         ]);
                       }
