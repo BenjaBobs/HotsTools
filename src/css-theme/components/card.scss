@@ -1,9 +1,9 @@
 .ant-card {
-  background: hsl(var(--bg-color-darker));
+  background: HSL(var(--bg-color-darker));
 }
 
 .ant-card-bordered {
-  border-color: hsl(var(--bg-color-brightest));
+  border-color: HSL(var(--bg-color-brightest));
   border-style: solid;
   border-width: 1px;
   border-radius: 0%;
@@ -14,13 +14,13 @@
 }
 
 .ant-card-head-title {
-  color: hsl(var(--fg-color-brightest));
+  color: HSL(var(--fg-color-brightest));
 }
 
 .ant-card-head-wrapper {
-  border-bottom: 1px solid hsl(var(--fg-color-darkest));
+  border-bottom: 1px solid HSL(var(--fg-color-darkest));
 }
 
 .ant-card-body {
-  color: hsl(var(--text-color));
+  color: HSL(var(--text-color));
 }

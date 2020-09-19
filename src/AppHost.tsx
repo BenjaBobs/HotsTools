@@ -1,9 +1,11 @@
-import React from 'react';
-import { Layout, Row, Col, Result } from 'antd';
-import { useRecoilValue } from 'recoil';
-import { s_currentApp, s_currentAppParams, s_apps } from './apps/Apps';
-import { LoadingOutlined } from '@ant-design/icons';
+import { Col, Layout, Result, Row } from 'antd';
 import ErrorBoundary from 'antd/lib/alert/ErrorBoundary';
+import React from 'react';
+import { useRecoilValue } from 'recoil';
+
+import { LoadingOutlined } from '@ant-design/icons';
+
+import { s_apps, s_currentApp, s_currentAppParams } from './apps/Apps';
 import Link2 from './Link2';
 
 const { Header, Content } = Layout;
@@ -19,6 +21,7 @@ export default function AppHost() {
         <Row align="middle" justify="space-around">
           {apps.map((app) => (
             <Link2
+              key={app.absolutePath}
               to={app.overrideLink ?? app.absolutePath}
               className="textglow-hover underglow-hover animate"
               style={{ paddingLeft: 16, paddingRight: 16 }}

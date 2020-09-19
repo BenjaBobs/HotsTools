@@ -1,0 +1,17 @@
+.ant-layout {
+  height: auto;
+  min-height: 100vh;
+}
+
+.ant-layout-header {
+  background: HSL(var(--bg-color-darkest));
+  height: 64px;
+  border: none;
+  border-bottom: 1px solid HSL(var(--bg-color));
+}
+
+.ant-layout-content {
+  border-top: 1px solid HSL(var(--bg-color-brightest));
+  background: HSL(var(--bg-color));
+  height: 100%;
+}

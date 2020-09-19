@@ -6,10 +6,10 @@
 .underglow-hover:hover {
   background: linear-gradient(
     0deg,
-    hsla(var(--fg-color), 1) 0%,
-    hsla(var(--bg-color-brightest), 1) 2%,
-    hsla(var(--bg-color-brightest), 0.5) 10%,
-    hsla(var(--bg-color-brightest), 0) 30%
+    HSLA(var(--fg-color), 1) 0%,
+    HSLA(var(--bg-color-brightest), 1) 2%,
+    HSLA(var(--bg-color-brightest), 0.5) 10%,
+    HSLA(var(--bg-color-brightest), 0) 30%
   );
 }
 

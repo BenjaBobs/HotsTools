@@ -1,11 +1,13 @@
+import './index.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Router } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
+
+import { browserHistory, HistoryRecoilSync } from './api/state/routing';
 import AppHost from './AppHost';
 import * as serviceWorker from './serviceWorker';
-import { RecoilRoot } from 'recoil';
-import { Router } from 'react-router-dom';
-import { HistoryRecoilSync, browserHistory } from './api/state/routing';
 
 ReactDOM.render(
   <React.StrictMode>
