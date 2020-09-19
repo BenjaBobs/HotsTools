@@ -46,6 +46,9 @@ const phases: Phase[] = [
 function DraftSimulator() {
   const heroData = useRecoilValue(s_Heroes);
   const [actions, setActions] = useState<PhaseActions[]>([]);
+  const currentPhase = phases[actions.filter((x) => x.completed).length];
+  
+  console.log('state', {actions, currentPhase});
 
   const blueHeroes = actions
     .filter((x) => x.team === 'blue' && x.type === 'Pick')
@@ -54,7 +57,6 @@ function DraftSimulator() {
     .filter((x) => x.team === 'red' && x.type === 'Pick')
     .flatMap((x) => x.heroes);
 
-  const currentPhase = phases[actions.filter((x) => x.completed).length];
 
   return (
     <>
