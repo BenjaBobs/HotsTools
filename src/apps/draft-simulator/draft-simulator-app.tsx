@@ -65,7 +65,7 @@ function DraftSimulator() {
           <Steps
             labelPlacement="vertical"
             size="small"
-            current={actions.length}
+            current={phases.indexOf(currentPhase)}
           >
             {phases.map((p, idx) => (
               <Steps.Step
