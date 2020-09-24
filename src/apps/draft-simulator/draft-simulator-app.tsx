@@ -77,7 +77,17 @@ function DraftSimulator() {
                     {p.type} {p.amount}
                   </span>
                 }
-                icon={<Orb />}
+                icon={
+                  p.type === 'Ban' ? (
+                    <Orb>
+                      <span style={{ color: 'white' }}>
+                        {p.team === 'blue' ? '<' : '>'}
+                      </span>
+                    </Orb>
+                  ) : (
+                    <Orb color={p.team} />
+                  )
+                }
               />
             ))}
           </Steps>
