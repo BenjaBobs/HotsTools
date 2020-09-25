@@ -80,9 +80,9 @@ function DraftSimulator() {
                 icon={
                   p.type === 'Ban' ? (
                     <Orb>
-                      <span style={{ color: 'white' }}>
+                      <div style={{ color: 'white', fontSize: 20, marginLeft: -2, marginTop: -5 }}>
                         {p.team === 'blue' ? '<' : '>'}
-                      </span>
+                      </div>
                     </Orb>
                   ) : (
                     <Orb color={p.team} />
