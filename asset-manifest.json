@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/HotsTools/static/css/main.3a6af92b.chunk.css",
+    "main.css": "/HotsTools/static/css/main.61d906ae.chunk.css",
     "main.js": "/HotsTools/static/js/main.7e9bb022.chunk.js",
     "main.js.map": "/HotsTools/static/js/main.7e9bb022.chunk.js.map",
     "runtime-main.js": "/HotsTools/static/js/runtime-main.f72c4859.js",
@@ -9,17 +9,17 @@
     "static/js/2.288ded4b.chunk.js": "/HotsTools/static/js/2.288ded4b.chunk.js",
     "static/js/2.288ded4b.chunk.js.map": "/HotsTools/static/js/2.288ded4b.chunk.js.map",
     "index.html": "/HotsTools/index.html",
-    "precache-manifest.30589f43ee6e0ed7e5c4faade4abed53.js": "/HotsTools/precache-manifest.30589f43ee6e0ed7e5c4faade4abed53.js",
+    "precache-manifest.42b030a756702870b1ecc1f7faa3b14f.js": "/HotsTools/precache-manifest.42b030a756702870b1ecc1f7faa3b14f.js",
     "service-worker.js": "/HotsTools/service-worker.js",
     "static/css/2.2ffe2656.chunk.css.map": "/HotsTools/static/css/2.2ffe2656.chunk.css.map",
-    "static/css/main.3a6af92b.chunk.css.map": "/HotsTools/static/css/main.3a6af92b.chunk.css.map",
+    "static/css/main.61d906ae.chunk.css.map": "/HotsTools/static/css/main.61d906ae.chunk.css.map",
     "static/js/2.288ded4b.chunk.js.LICENSE.txt": "/HotsTools/static/js/2.288ded4b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f72c4859.js",
     "static/css/2.2ffe2656.chunk.css",
     "static/js/2.288ded4b.chunk.js",
-    "static/css/main.3a6af92b.chunk.css",
+    "static/css/main.61d906ae.chunk.css",
     "static/js/main.7e9bb022.chunk.js"
   ]
 }
