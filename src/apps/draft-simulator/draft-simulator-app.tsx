@@ -8,6 +8,7 @@ import { s_Heroes } from '../../api/state/heroes';
 import { AppDefinition } from '../AppDefinition';
 import Orb from '../components/orb';
 import HeroSelectionColumn from './components/hero-selection-column';
+import style from './draft-simulator.module.scss';
 
 const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
@@ -47,8 +48,8 @@ function DraftSimulator() {
   const heroData = useRecoilValue(s_Heroes);
   const [actions, setActions] = useState<PhaseActions[]>([]);
   const currentPhase = phases[actions.filter((x) => x.completed).length];
-  
-  console.log('state', {actions, currentPhase});
+
+  console.log('state', { actions, currentPhase });
 
   const blueHeroes = actions
     .filter((x) => x.team === 'blue' && x.type === 'Pick')
@@ -56,7 +57,6 @@ function DraftSimulator() {
   const redHeroes = actions
     .filter((x) => x.team === 'red' && x.type === 'Pick')
     .flatMap((x) => x.heroes);
-
 
   return (
     <>
@@ -70,22 +70,42 @@ function DraftSimulator() {
             {phases.map((p, idx) => (
               <Steps.Step
                 key={idx}
-                title={
-                  <span
-                    style={{ color: p.team === 'blue' ? '#1890ff' : 'red' }}
-                  >
-                    {p.type} {p.amount}
-                  </span>
-                }
                 icon={
                   p.type === 'Ban' ? (
-                    <Orb>
-                      <div style={{ color: 'white', fontSize: 20, marginLeft: -2, marginTop: -5 }}>
+                    <Orb
+                      intensity={0.2}
+                      className={`${style.phaseOrb} ${
+                        p === currentPhase ? style.current : ''
+                      }`}
+                    >
+                      <div
+                        style={{
+                          color: 'white',
+                          fontSize: 17,
+                          marginLeft: -2,
+                          marginTop: -5,
+                        }}
+                      >
                         {p.team === 'blue' ? '<' : '>'}
                       </div>
                     </Orb>
                   ) : (
-                    <Orb color={p.team} />
+                    <Orb
+                      color={p.team}
+                      className={`${style.phaseOrb} ${
+                        p === currentPhase ? style.current : ''
+                      }`}
+                    >
+                      <div
+                        style={{
+                          color: 'white',
+                          fontSize: 12,
+                          marginTop: -4,
+                        }}
+                      >
+                        {p.amount}
+                      </div>
+                    </Orb>
                   )
                 }
               />
@@ -119,12 +139,16 @@ function DraftSimulator() {
                         return;
                       }
 
-                      const uncompletedAction = actions.find(x => !x.completed);
+                      const uncompletedAction = actions.find(
+                        (x) => !x.completed
+                      );
 
                       if (uncompletedAction) {
                         uncompletedAction.heroes.push(hero);
-                        uncompletedAction.completed = uncompletedAction.heroes.length === currentPhase.amount;
-                        
+                        uncompletedAction.completed =
+                          uncompletedAction.heroes.length ===
+                          currentPhase.amount;
+
                         setActions([...actions]);
                       } else {
                         setActions([

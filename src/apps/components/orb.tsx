@@ -7,16 +7,20 @@ export default function Orb(
     size?: number;
     color?: string;
     intensity?: number;
+    className?: string;
   }>
 ) {
   const cssVariables = {
     '--orb-size': (props.size ?? 20) + 'px',
     '--orb-color': props.color ?? '#fff',
-    '--orb-intensity': 0.5,
+    '--orb-intensity': props.intensity ?? 0.5,
   };
 
   return (
-    <div style={cssVariables as CSSProperties} className={style.orb}>
+    <div
+      style={cssVariables as CSSProperties}
+      className={style.orb + ' ' + (props.className ?? '')}
+    >
       {props.children}
     </div>
   );

@@ -1,0 +1,6 @@
+.phaseOrb {
+  transition: all 0.15s linear;
+  &.current {
+    transform: scale(2);
+  }
+}
