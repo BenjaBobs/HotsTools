@@ -1,4 +1,4 @@
-import { Avatar, Card, Col, Row, Steps } from 'antd';
+import { Avatar, Card, Col, Row } from 'antd';
 import React, { useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
@@ -7,6 +7,7 @@ import { Hero } from '../../api/state/hero-types';
 import { s_Heroes } from '../../api/state/heroes';
 import { AppDefinition } from '../AppDefinition';
 import Orb from '../components/orb';
+import FlexSteps from './components/flex-steps';
 import HeroSelectionColumn from './components/hero-selection-column';
 import style from './draft-simulator.module.scss';
 
@@ -61,56 +62,30 @@ function DraftSimulator() {
   return (
     <>
       <Row justify="center">
-        <Col>
-          <Steps
-            labelPlacement="vertical"
-            size="small"
-            current={phases.indexOf(currentPhase)}
-          >
-            {phases.map((p, idx) => (
-              <Steps.Step
-                key={idx}
-                icon={
-                  p.type === 'Ban' ? (
-                    <Orb
-                      intensity={0.2}
-                      className={`${style.phaseOrb} ${
-                        p === currentPhase ? style.current : ''
-                      }`}
-                    >
-                      <div
-                        style={{
-                          color: 'white',
-                          fontSize: 17,
-                          marginLeft: -2,
-                          marginTop: -5,
-                        }}
-                      >
-                        {p.team === 'blue' ? '<' : '>'}
-                      </div>
-                    </Orb>
-                  ) : (
-                    <Orb
-                      color={p.team}
-                      className={`${style.phaseOrb} ${
-                        p === currentPhase ? style.current : ''
-                      }`}
-                    >
-                      <div
-                        style={{
-                          color: 'white',
-                          fontSize: 12,
-                          marginTop: -4,
-                        }}
-                      >
-                        {p.amount}
-                      </div>
-                    </Orb>
-                  )
-                }
-              />
-            ))}
-          </Steps>
+        <Col span={16}>
+          <FlexSteps>
+            {phases.map((p, idx) =>
+              p.type === 'Ban' ? (
+                <Orb
+                  intensity={0.2}
+                  className={`${style.phaseOrb} ${
+                    p === currentPhase ? style.current : ''
+                  }`}
+                >
+                  {p.team === 'blue' ? '<' : '>'}
+                </Orb>
+              ) : (
+                <Orb
+                  color={p.team}
+                  className={`${style.phaseOrb} ${
+                    p === currentPhase ? style.current : ''
+                  }`}
+                >
+                  {p.amount}
+                </Orb>
+              )
+            )}
+          </FlexSteps>
         </Col>
       </Row>
       <Row justify="space-between">

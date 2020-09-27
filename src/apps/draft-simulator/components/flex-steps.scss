@@ -1,0 +1,13 @@
+.flex-steps {
+  width: 100%;
+}
+
+.flex-steps-divider {
+  > div {
+    background-color: HSL(var(--fg-color));
+    border-radius: 25%;
+    height: 1px;
+    margin-left: 20%;
+    width: 60%;
+  }
+}

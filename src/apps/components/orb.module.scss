@@ -1,3 +1,11 @@
+@mixin orbText {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
 .orb {
   --orb-size: 20px;
   --orb-color: #f00;
@@ -12,4 +20,14 @@
   box-shadow: inset 0 0 var(--orb-glow-size) var(--orb-color),
     inset 0 0 var(--orb-glow-size) white,
     0 0 var(--orb-glow-size) var(--orb-color), 0 0 var(--orb-glow-size) white;
+
+  @include orbText();
+
+  > span {
+    @include orbText();
+
+    height: 100%;
+    width: 100%;
+    margin-left: -1px;
+  }
 }
