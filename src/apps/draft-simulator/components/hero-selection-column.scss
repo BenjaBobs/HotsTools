@@ -1,7 +1,12 @@
 .hero-slot-bar {
-  --icon-size: 150px;
+  --icon-size: 100px;
   --half: calc(var(--icon-size) / 2);
   --third: calc(var(--icon-size) / 3);
+
+  > .ant-avatar {
+    font-size: var(--half);
+    line-height: var(--icon-size);
+  }
 
   > * {
     margin-top: calc(var(--third) * -1);

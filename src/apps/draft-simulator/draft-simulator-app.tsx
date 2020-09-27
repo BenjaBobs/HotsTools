@@ -8,6 +8,7 @@ import { s_Heroes } from '../../api/state/heroes';
 import { AppDefinition } from '../AppDefinition';
 import Orb from '../components/orb';
 import FlexSteps from './components/flex-steps';
+import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
 import style from './draft-simulator.module.scss';
 
@@ -59,6 +60,13 @@ function DraftSimulator() {
     .filter((x) => x.team === 'red' && x.type === 'Pick')
     .flatMap((x) => x.heroes);
 
+  const blueBans = actions
+    .filter((x) => x.team === 'blue' && x.type === 'Ban')
+    .flatMap((x) => x.heroes);
+  const redBans = actions
+    .filter((x) => x.team === 'red' && x.type === 'Ban')
+    .flatMap((x) => x.heroes);
+
   return (
     <>
       <Row justify="center">
@@ -90,6 +98,7 @@ function DraftSimulator() {
       </Row>
       <Row justify="space-between">
         <Col span={3} style={{ height: 500 }}>
+          <HeroBanColumn heroes={blueBans} />
           <HeroSelectionColumn
             direction="ltr"
             selectedHeroes={blueHeroes.map((h) => h.icon)}
@@ -153,6 +162,7 @@ function DraftSimulator() {
           </Row>
         </Col>
         <Col span={3} style={{ height: 500 }}>
+          <HeroBanColumn heroes={redBans} />
           <HeroSelectionColumn
             direction="rtl"
             selectedHeroes={redHeroes.map((h) => h.icon)}
