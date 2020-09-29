@@ -97,14 +97,18 @@ function DraftSimulator() {
         </Col>
       </Row>
       <Row justify="space-between">
-        <Col span={3} style={{ height: 500 }}>
-          <HeroBanColumn heroes={blueBans} />
-          <HeroSelectionColumn
-            direction="ltr"
-            selectedHeroes={blueHeroes.map((h) => h.icon)}
-          />
+        <Col style={{ height: 500 }}>
+          <Row>
+            <HeroBanColumn heroes={blueBans} />
+          </Row>
+          <Row style={{ width: 150 }}>
+            <HeroSelectionColumn
+              direction="ltr"
+              selectedHeroes={blueHeroes.map((h) => h.icon)}
+            />
+          </Row>
         </Col>
-        <Col span={18}>
+        <Col flex="1">
           <Row justify="center" style={{ padding: 40 }}>
             <Card title="Info">
               This is where the crucial info about what to Pick next will show
@@ -161,12 +165,17 @@ function DraftSimulator() {
             </Col>
           </Row>
         </Col>
-        <Col span={3} style={{ height: 500 }}>
-          <HeroBanColumn heroes={redBans} />
-          <HeroSelectionColumn
-            direction="rtl"
-            selectedHeroes={redHeroes.map((h) => h.icon)}
-          />
+        <Col style={{ height: 500 }}>
+          <Row>
+            <HeroBanColumn heroes={redBans} />
+          </Row>
+          <Row justify="end">
+            <HeroSelectionColumn
+              direction="rtl"
+              width={133}
+              selectedHeroes={redHeroes.map((h) => h.icon)}
+            />
+          </Row>
         </Col>
       </Row>
     </>
