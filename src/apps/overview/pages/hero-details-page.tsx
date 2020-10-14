@@ -46,8 +46,8 @@ export default function HeroDetailsPage(props: { hero?: string }) {
             <Space direction="vertical">
               <Row justify="space-between">
                 <Col flex={1}>
-                  {abilitySets.map((abilitySet) => (
-                    <>
+                  {abilitySets.map((abilitySet, idx) => (
+                    <React.Fragment key={idx}>
                       <Row>
                         <h2>
                           Abilities{' '}
@@ -56,8 +56,12 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                       </Row>
                       <Row>
                         <Col>
-                          {abilitySet.abilities.map((ability) => (
-                            <Row align="middle" style={{ padding: 8 }}>
+                          {abilitySet.abilities.map((ability, idx) => (
+                            <Row
+                              key={idx}
+                              align="middle"
+                              style={{ padding: 8 }}
+                            >
                               <Hexagon
                                 key={ability.name}
                                 style={{ width: 80, height: 80 }}
@@ -68,7 +72,7 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                           ))}
                         </Col>
                       </Row>
-                    </>
+                    </React.Fragment>
                   ))}
                 </Col>
                 <Col
@@ -90,15 +94,15 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                     <h2>Talents</h2>
                   </Row>
                   <br />
-                  {talentSets.map((talentSet) => (
-                    <Row gutter={8} style={{ paddingBottom: 32 }}>
+                  {talentSets.map((talentSet, idx) => (
+                    <Row key={idx} gutter={8} style={{ paddingBottom: 32 }}>
                       <Col key="tier" style={{ width: 90, paddingTop: 40 }}>
                         <h3>Level {talentSet.tier}</h3>
                       </Col>
                       <Col key="talents">
                         <Row gutter={8}>
-                          {talentSet.talents.map((talent) => (
-                            <Col>
+                          {talentSet.talents.map((talent, idx) => (
+                            <Col key={idx}>
                               <Row justify="center">
                                 <Hexagon src={GetTalentIcon(talent.icon)} />
                               </Row>
