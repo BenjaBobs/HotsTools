@@ -1,3 +1,12 @@
 .draft-info-panel {
   width: 100%;
 }
+
+.team-strength-chart {
+  .recharts-polar-grid {
+    line,
+    path {
+      stroke: blue;
+    }
+  }
+}
