@@ -8,15 +8,25 @@ export default function FlexSteps(props: { children: React.ReactNodeArray }) {
     <Row justify="space-between" align="middle" className="flex-steps">
       {props.children.map((step, idx) => {
         if (idx === 0) {
-          return <Col className="flex-step">{step}</Col>;
+          return (
+            <Col key={idx} className="flex-step">
+              {step}
+            </Col>
+          );
         } else {
           return (
-            <>
-              <Col flex="1" className="flex-steps-divider">
+            <React.Fragment key={idx}>
+              <Col
+                key={idx + '_divider'}
+                flex="1"
+                className="flex-steps-divider"
+              >
                 <div></div>
               </Col>
-              <Col className="flex-step">{step}</Col>
-            </>
+              <Col key={idx} className="flex-step">
+                {step}
+              </Col>
+            </React.Fragment>
           );
         }
       })}

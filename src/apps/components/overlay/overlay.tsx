@@ -19,7 +19,9 @@ export default function Overlay(
       className={'overlay ' + (props.className ?? '')}
     >
       {children.map((c, idx) => (
-        <div className="overlay-item">{c}</div>
+        <div key={idx} className="overlay-item">
+          {c}
+        </div>
       ))}
     </div>
   );

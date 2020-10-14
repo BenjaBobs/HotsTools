@@ -1,4 +1,4 @@
-import { Avatar, Card, Col, Row } from 'antd';
+import { Avatar, Col, Row } from 'antd';
 import React, { useState } from 'react';
 import { useRecoilValue } from 'recoil';
 
@@ -7,6 +7,7 @@ import { Hero } from '../../api/state/hero-types';
 import { s_Heroes } from '../../api/state/heroes';
 import { AppDefinition } from '../AppDefinition';
 import Orb from '../components/orb';
+import DraftInfoPanel from './components/draft-info-panel/draft-info-panel';
 import FlexSteps from './components/flex-steps';
 import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
@@ -18,13 +19,13 @@ const DraftSimulatorApp: AppDefinition = {
   component: <DraftSimulator />,
 };
 
-type Phase = {
+export type Phase = {
   team: 'blue' | 'red';
   type: 'Pick' | 'Ban';
   amount: number;
 };
 
-type PhaseActions = {
+export type PhaseActions = {
   type: 'Pick' | 'Ban';
   team: 'blue' | 'red';
   heroes: Hero[];
@@ -73,6 +74,7 @@ function DraftSimulator() {
             {phases.map((p, idx) =>
               p.type === 'Ban' ? (
                 <Orb
+                  key={idx}
                   intensity={0.2}
                   className={`${style.phaseOrb} ${
                     p === currentPhase ? style.current : ''
@@ -82,6 +84,7 @@ function DraftSimulator() {
                 </Orb>
               ) : (
                 <Orb
+                  key={idx}
                   color={p.team}
                   className={`${style.phaseOrb} ${
                     p === currentPhase ? style.current : ''
@@ -108,9 +111,7 @@ function DraftSimulator() {
         </Col>
         <Col flex="1">
           <Row justify="center" style={{ padding: 40 }}>
-            <Card title="Info">
-              This is where the crucial info about what to Pick next will show
-            </Card>
+            <DraftInfoPanel phase={currentPhase} history={actions} />
           </Row>
           <Row justify="center">
             <Col style={{ width: '80%' }}>
