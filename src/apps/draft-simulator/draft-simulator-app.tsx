@@ -51,8 +51,6 @@ function DraftSimulator() {
   const [actions, setActions] = useState<PhaseActions[]>([]);
   const currentPhase = phases[actions.filter((x) => x.completed).length];
 
-  console.log('state', { actions, currentPhase });
-
   const blueHeroes = actions
     .filter((x) => x.team === 'blue' && x.type === 'Pick')
     .flatMap((x) => x.heroes);

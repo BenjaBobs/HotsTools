@@ -1,9 +1,10 @@
 import './hero-selection-column.scss';
 
-import { Avatar, Col } from 'antd';
+import { Col } from 'antd';
 import React from 'react';
 
 import { GetHeroIcon } from '../../../api/HotsTalents';
+import Hexagon from '../../components/hexagon/hexagon';
 
 export default function HeroSelectionColumn(props: {
   direction?: 'ltr' | 'rtl';
@@ -19,31 +20,11 @@ export default function HeroSelectionColumn(props: {
         height: props.height ?? '100%',
       }}
     >
-      <Avatar
-        className={'hexagon'}
-        icon={'?'}
-        src={GetHeroIcon(props.selectedHeroes[0])}
-      />
-      <Avatar
-        className={'hexagon'}
-        icon={'?'}
-        src={GetHeroIcon(props.selectedHeroes[1])}
-      />
-      <Avatar
-        className={'hexagon'}
-        icon={'?'}
-        src={GetHeroIcon(props.selectedHeroes[2])}
-      />
-      <Avatar
-        className={'hexagon'}
-        icon={'?'}
-        src={GetHeroIcon(props.selectedHeroes[3])}
-      />
-      <Avatar
-        className={'hexagon'}
-        icon={'?'}
-        src={GetHeroIcon(props.selectedHeroes[4])}
-      />
+      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[0])} />
+      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[1])} />
+      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[2])} />
+      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[3])} />
+      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[4])} />
     </Col>
   );
 }

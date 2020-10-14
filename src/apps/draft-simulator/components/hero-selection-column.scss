@@ -3,7 +3,7 @@
   --half: calc(var(--icon-size) / 2);
   --third: calc(var(--icon-size) / 3);
 
-  > .ant-avatar {
+  .ant-avatar {
     font-size: var(--half);
     line-height: var(--icon-size);
   }
@@ -15,7 +15,7 @@
     background-color: transparent;
   }
 
-  &.ltr :nth-child(even) {
+  &.ltr > :nth-child(even) {
     margin-left: var(--third);
   }
 

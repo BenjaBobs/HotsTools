@@ -6,25 +6,39 @@ import React from 'react';
 
 import { GetHeroIcon } from '../../../api/HotsTalents';
 import { Hero } from '../../../api/state/hero-types';
+import { StopOutlined } from '@ant-design/icons';
+import Overlay from '../../components/overlay/overlay';
 
 export default function HeroBanColumn(props: { heroes: (Hero | undefined)[] }) {
   return (
     <Row justify="center" className="hero-ban-column">
-      <Avatar
-        className={`hexagon`}
-        icon={'?'}
-        src={GetHeroIcon(props.heroes[0]?.icon)}
-      />
-      <Avatar
-        className={`hexagon`}
-        icon={'?'}
-        src={GetHeroIcon(props.heroes[1]?.icon)}
-      />
-      <Avatar
-        className={`hexagon`}
-        icon={'?'}
-        src={GetHeroIcon(props.heroes[2]?.icon)}
-      />
+      <Overlay>
+        <Avatar
+          style={{ gridColumn: 1, gridRow: 1 }}
+          className={`hexagon`}
+          icon={'?'}
+          src={GetHeroIcon(props.heroes[0]?.icon)}
+        />
+        {props.heroes[0] && <StopOutlined />}
+      </Overlay>
+      <Overlay>
+        <Avatar
+          style={{ gridColumn: 1, gridRow: 1 }}
+          className={`hexagon`}
+          icon={'?'}
+          src={GetHeroIcon(props.heroes[1]?.icon)}
+        />
+        {props.heroes[1] && <StopOutlined />}
+      </Overlay>
+      <Overlay>
+        <Avatar
+          style={{ gridColumn: 1, gridRow: 1 }}
+          className={`hexagon`}
+          icon={'?'}
+          src={GetHeroIcon(props.heroes[2]?.icon)}
+        />
+        {props.heroes[2] && <StopOutlined />}
+      </Overlay>
     </Row>
   );
 }

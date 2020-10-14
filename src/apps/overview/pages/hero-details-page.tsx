@@ -14,6 +14,7 @@ import {
 import HeroStrengthsChart from './components/hero-strengths-chart';
 import AbilityTooltip from './components/ability-tooltip';
 import TalentTooltip from './components/talent-tooltip';
+import Hexagon from '../../components/hexagon/hexagon';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = useRecoilValue(s_Hero(props.hero!))!;
@@ -57,10 +58,8 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                         <Col>
                           {abilitySet.abilities.map((ability) => (
                             <Row align="middle" style={{ padding: 8 }}>
-                              <Avatar
+                              <Hexagon
                                 key={ability.name}
-                                className="hexagon"
-                                size="large"
                                 style={{ width: 80, height: 80 }}
                                 src={GetAbilityIcon(ability.icon)}
                               />
@@ -101,11 +100,7 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                           {talentSet.talents.map((talent) => (
                             <Col>
                               <Row justify="center">
-                                <Avatar
-                                  className="hexagon"
-                                  size="large"
-                                  src={GetTalentIcon(talent.icon)}
-                                />
+                                <Hexagon src={GetTalentIcon(talent.icon)} />
                               </Row>
                               <Row justify="center">
                                 <TalentTooltip talent={talent} />
