@@ -9,6 +9,7 @@ import {
 } from 'recharts';
 import { Hero } from '../../../../../api/state/hero-types';
 import { EmptyHeroStrengths } from '../../../../../api/state/extend-hero-data';
+import './team-strength-chart.scss';
 
 const emptyChartData = Object.entries(EmptyHeroStrengths.strengths).map(
   ([key, value]) => {
