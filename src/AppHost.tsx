@@ -36,7 +36,7 @@ export default function AppHost() {
           <Col
             style={{
               color: 'white',
-              paddingTop: 16,
+              paddingTop: 8,
               paddingLeft: 32,
               paddingRight: 32,
             }}

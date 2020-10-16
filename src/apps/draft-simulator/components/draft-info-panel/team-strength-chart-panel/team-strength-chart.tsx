@@ -43,7 +43,7 @@ export default function TeamStrengthChart(props: {
 
   return (
     <ResponsiveContainer>
-      <RadarChart className="team-strength-chart" outerRadius={100} data={data}>
+      <RadarChart className="team-strength-chart" outerRadius={150} data={data}>
         <Radar
           key="value"
           name=""
@@ -54,7 +54,11 @@ export default function TeamStrengthChart(props: {
         />
         <PolarGrid />
         <PolarAngleAxis dataKey="category" />
-        <PolarRadiusAxis domain={[0, 50]} style={{ display: 'none' }} />
+        <PolarRadiusAxis
+          tickCount={6}
+          domain={[0, 50]}
+          style={{ display: 'none' }}
+        />
       </RadarChart>
     </ResponsiveContainer>
   );

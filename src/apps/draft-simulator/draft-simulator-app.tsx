@@ -51,7 +51,7 @@ function DraftSimulator() {
               setDraftType(newDraftType);
               setActions([]);
             }}
-            style={{ width: 100, marginBottom: 16 }}
+            style={{ width: 100 }}
           >
             {Object.values(DraftType).map((type) => (
               <Select.Option key={type} value={type}>
@@ -121,7 +121,7 @@ function DraftSimulator() {
           </Row>
         </Col>
         <Col flex="1">
-          <Row justify="center" style={{ padding: 40 }}>
+          <Row justify="center" style={{ padding: 20 }}>
             <DraftInfoPanel />
           </Row>
           <Row justify="center">

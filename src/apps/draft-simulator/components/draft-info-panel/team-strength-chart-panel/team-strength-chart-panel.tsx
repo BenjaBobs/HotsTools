@@ -11,10 +11,10 @@ export default function TeamStrengthChartPanel() {
 
   return (
     <Row justify="space-between">
-      <Col flex="1" style={{ height: 300 }}>
+      <Col span={12} style={{ height: 400 }}>
         <TeamStrengthChart heroes={blueHeroes} color="#0000ff" />
       </Col>
-      <Col flex="1">
+      <Col span={12} style={{ height: 400 }}>
         <TeamStrengthChart heroes={redHeroes} color="#ff0000" />
       </Col>
     </Row>
