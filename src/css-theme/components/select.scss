@@ -1,8 +1,17 @@
 .ant-select {
   color: HSL(var(--fg-color));
+  border: none !important;
+  box-shadow: none !important;
 
   &.ant-select-open {
-    box-shadow: 0 0 2px inset HSL(var(--fg-color));
+    // box-shadow: 0 0 2px inset HSL(var(--fg-color));
+    background: linear-gradient(
+      0deg,
+      HSLA(var(--fg-color), 1) 0%,
+      HSLA(var(--bg-color-brightest), 1) 2%,
+      HSLA(var(--bg-color-brightest), 0.5) 10%,
+      HSLA(var(--bg-color-brightest), 0) 30%
+    );
   }
 
   &:not(.ant-select-borderless) {
@@ -11,7 +20,9 @@
     > .ant-select-selector {
       background-color: transparent !important;
       // border: 1px solid HSL(var(--fg-color-darkest)) !important;
-      border: none;
+      border: none !important;
+      box-shadow: none !important;
+      -webkit-box-shadow: none !important;
     }
   }
 
