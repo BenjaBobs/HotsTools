@@ -18,7 +18,8 @@ import {
   s_draftTeamBans,
 } from './draft-state';
 import { Team, DraftType } from './Types';
-import { s_draftType } from './draft-state';
+import { s_draftType, s_draftMap } from './draft-state';
+import { Maps } from '../../api/state/maps';
 
 const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
@@ -33,6 +34,7 @@ function DraftSimulator() {
   const currentPhase = phases[actions.filter((x) => x.completed).length];
 
   const [draftType, setDraftType] = useRecoilState(s_draftType);
+  const [draftMap, setDraftMap] = useRecoilState(s_draftMap);
 
   const blueHeroes = useRecoilValue(s_draftTeamPicks(Team.Blue));
   const redHeroes = useRecoilValue(s_draftTeamPicks(Team.Red));
@@ -41,22 +43,41 @@ function DraftSimulator() {
 
   return (
     <>
-      <Row justify="center">
-        <Select<DraftType>
-          bordered={false}
-          value={draftType}
-          onChange={(newDraftType) => {
-            setDraftType(newDraftType);
-            setActions([]);
-          }}
-          style={{ width: 100, marginBottom: 16 }}
-        >
-          {Object.values(DraftType).map((type) => (
-            <Select.Option key={type} value={type}>
-              {type}
-            </Select.Option>
-          ))}
-        </Select>
+      <Row justify="center" style={{ marginBottom: 16 }}>
+        <Col>
+          <Select<DraftType>
+            value={draftType}
+            onChange={(newDraftType) => {
+              setDraftType(newDraftType);
+              setActions([]);
+            }}
+            style={{ width: 100, marginBottom: 16 }}
+          >
+            {Object.values(DraftType).map((type) => (
+              <Select.Option key={type} value={type}>
+                {type}
+              </Select.Option>
+            ))}
+          </Select>
+        </Col>
+        <Col>
+          <Select
+            value={draftMap.name}
+            onChange={(newDraftMapName) => {
+              const newMap = Maps.find((m) => m.name === newDraftMapName);
+              if (newMap) {
+                setDraftMap(newMap);
+              }
+            }}
+            style={{ width: 200 }}
+          >
+            {Maps.map((m) => (
+              <Select.Option key={m.name} value={m.name}>
+                {m.name}
+              </Select.Option>
+            ))}
+          </Select>
+        </Col>
       </Row>
       <Row justify="center">
         <Col span={16}>

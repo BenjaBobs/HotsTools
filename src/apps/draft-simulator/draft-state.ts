@@ -1,5 +1,6 @@
 import { atom, selector, selectorFamily } from 'recoil';
 import { DraftType, PhaseActions, Team, Phase, Action } from './Types';
+import { Maps } from '../../api/state/maps';
 
 export const s_draftType = atom({
   key: 's_draft_type',
@@ -9,6 +10,11 @@ export const s_draftType = atom({
 export const s_draftHistory = atom<PhaseActions[]>({
   key: 's_draft_history',
   default: [],
+});
+
+export const s_draftMap = atom({
+  key: 's_draftMap',
+  default: Maps[0],
 });
 
 function GeneratePhases(firstTeam: Team, lastTeam: Team): Phase[] {
