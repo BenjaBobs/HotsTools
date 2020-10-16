@@ -13,30 +13,15 @@ export default function HeroBanColumn(props: { heroes: (Hero | undefined)[] }) {
   return (
     <Row justify="center" className="hero-ban-column">
       <Overlay>
-        <Avatar
-          style={{ gridColumn: 1, gridRow: 1 }}
-          className={`hexagon`}
-          icon={'?'}
-          src={GetHeroIcon(props.heroes[0]?.icon)}
-        />
+        <Avatar icon={'?'} src={GetHeroIcon(props.heroes[0]?.icon)} />
         {props.heroes[0] && <StopOutlined />}
       </Overlay>
       <Overlay>
-        <Avatar
-          style={{ gridColumn: 1, gridRow: 1 }}
-          className={`hexagon`}
-          icon={'?'}
-          src={GetHeroIcon(props.heroes[1]?.icon)}
-        />
+        <Avatar icon={'?'} src={GetHeroIcon(props.heroes[1]?.icon)} />
         {props.heroes[1] && <StopOutlined />}
       </Overlay>
       <Overlay>
-        <Avatar
-          style={{ gridColumn: 1, gridRow: 1 }}
-          className={`hexagon`}
-          icon={'?'}
-          src={GetHeroIcon(props.heroes[2]?.icon)}
-        />
+        <Avatar icon={'?'} src={GetHeroIcon(props.heroes[2]?.icon)} />
         {props.heroes[2] && <StopOutlined />}
       </Overlay>
     </Row>
