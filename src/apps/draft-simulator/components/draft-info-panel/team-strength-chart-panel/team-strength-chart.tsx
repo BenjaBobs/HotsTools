@@ -54,6 +54,7 @@ export default function TeamStrengthChart(props: {
               stroke="#ffffff"
               fill={props.color}
               fillOpacity={1}
+              animationDuration={200}
             />
           ))
         ) : (
