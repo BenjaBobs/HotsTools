@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import {
   ResponsiveContainer,
   RadarChart,
@@ -7,40 +7,19 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
 } from 'recharts';
-import { Hero } from '../../../../../api/state/hero-types';
-import { EmptyHeroStrengths } from '../../../../../api/state/extend-hero-data';
 import './team-strength-chart.scss';
+import { useRecoilValue } from 'recoil';
+import { s_draftTeamStrengths } from '../../../draft-state';
+import { Team } from '../../../Types';
 
-const emptyChartData = Object.entries(EmptyHeroStrengths.strengths).map(
-  ([key, value]) => {
+export default function TeamStrengthChart(props: { team: Team }) {
+  const strengths = useRecoilValue(s_draftTeamStrengths(props.team));
+  const data = Object.entries(strengths).map(([category, value]) => {
     return {
-      category: key,
-      value: value,
+      category,
+      value,
     };
-  }
-);
-
-export default function TeamStrengthChart(props: {
-  heroes: Hero[];
-  color: string;
-}) {
-  const data = useMemo(() => {
-    if (!props.heroes.length) return emptyChartData;
-
-    const accumulator: { [key: string]: any } = {};
-
-    for (const category of Object.keys(props.heroes[0].extensions.strengths)) {
-      accumulator[category] = { category: category, value: 0 };
-
-      for (const hero of props.heroes) {
-        accumulator[category][hero.shortName] = accumulator[
-          category
-        ].value += (hero.extensions.strengths as any)[category];
-      }
-    }
-
-    return Object.values(accumulator);
-  }, [props.heroes]);
+  });
 
   return (
     <ResponsiveContainer>
@@ -50,7 +29,7 @@ export default function TeamStrengthChart(props: {
           name=""
           dataKey="value"
           stroke="#ffffff"
-          fill={props.color}
+          fill={props.team === Team.Blue ? '#0000ff' : '#ff0000'}
           fillOpacity={1}
         />
         <PolarGrid />

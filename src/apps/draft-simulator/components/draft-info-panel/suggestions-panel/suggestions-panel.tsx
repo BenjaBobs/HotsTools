@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function SuggestionsPanel() {
-  return <div>Try winning.</div>;
+  return <div style={{ padding: 16 }}>Try winning.</div>;
 }

@@ -1,6 +1,10 @@
 import { atom, selector, selectorFamily } from 'recoil';
 import { DraftType, PhaseActions, Team, Phase, Action } from './Types';
 import { Maps } from '../../api/state/maps';
+import {
+  EmptyHeroStrengths,
+  HeroStrengths,
+} from '../../api/state/extend-hero-data';
 
 export const s_draftType = atom({
   key: 's_draft_type',
@@ -64,5 +68,22 @@ export const s_draftTeamBans = selectorFamily({
     return history
       .filter((x) => x.team === team && x.type === Action.Ban)
       .flatMap((x) => x.heroes);
+  },
+});
+
+export const s_draftTeamStrengths = selectorFamily({
+  key: 's_draftTeamStrengths',
+  get: (team: Team) => ({ get }) => {
+    const heroes = get(s_draftTeamPicks(team));
+
+    const strengths: HeroStrengths = { ...EmptyHeroStrengths };
+
+    for (const hero of heroes) {
+      for (const [key, value] of Object.entries(hero.extensions.strengths)) {
+        (strengths as any)[key] += value;
+      }
+    }
+
+    return strengths;
   },
 });

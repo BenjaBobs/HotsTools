@@ -1,31 +1,31 @@
 import { Hero } from './hero-types';
 
-export type HeroDataExtensions = {
-  strengths: {
-    'Wave Clear': number;
-    'Crowd Control': number;
-    'Self Sustain': number;
-    'Team Sustain': number;
-    'Rotation Potential': number;
-    'Burst Damage': number;
-    'Sustained Damage': number;
-    Poke: number;
-    Range: number;
-  };
+export type HeroStrengths = {
+  'Wave Clear': number;
+  'Crowd Control': number;
+  'Self Sustain': number;
+  'Team Sustain': number;
+  'Rotation Potential': number;
+  'Burst Damage': number;
+  'Sustained Damage': number;
+  Poke: number;
+  Range: number;
 };
 
-export const EmptyHeroStrengths: HeroDataExtensions = {
-  strengths: {
-    'Wave Clear': 0,
-    'Crowd Control': 0,
-    'Self Sustain': 0,
-    'Team Sustain': 0,
-    'Rotation Potential': 0,
-    'Burst Damage': 0,
-    'Sustained Damage': 0,
-    Poke: 0,
-    Range: 0,
-  },
+export type HeroDataExtensions = {
+  strengths: HeroStrengths;
+};
+
+export const EmptyHeroStrengths: HeroStrengths = {
+  'Wave Clear': 0,
+  'Crowd Control': 0,
+  'Self Sustain': 0,
+  'Team Sustain': 0,
+  'Rotation Potential': 0,
+  'Burst Damage': 0,
+  'Sustained Damage': 0,
+  Poke: 0,
+  Range: 0,
 };
 
 export default function ExtendHeroData(hero: Hero) {
