@@ -1,0 +1,33 @@
+.ant-select {
+  background-color: HSL(var(--bg-color-darker));
+  color: HSL(var(--fg-color));
+}
+
+.ant-select-selector {
+  background-color: transparent;
+}
+
+.ant-select-dropdown {
+  background-color: HSL(var(--bg-color-darker));
+  padding: 4px;
+  border: 1px solid HSL(var(--fg-color));
+  filter: drop-shadow(0 0 4px HSL(var(--fg-color)));
+}
+
+.ant-select-item {
+  color: HSL(var(--fg-color));
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: HSL(var(--bg-color-bright));
+  color: HSL(var(--fg-color-bright));
+}
+
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: HSL(var(--bg-color-brightest));
+  color: HSL(var(--fg-color-brightest));
+}
+
+.ant-select-arrow {
+  color: HSL(var(--fg-color));
+}

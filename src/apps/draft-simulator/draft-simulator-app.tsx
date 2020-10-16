@@ -1,4 +1,4 @@
-import { Avatar, Col, Row } from 'antd';
+import { Avatar, Col, Row, Select } from 'antd';
 import React from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
@@ -17,7 +17,8 @@ import {
   s_draftTeamPicks,
   s_draftTeamBans,
 } from './draft-state';
-import { Team } from './Types';
+import { Team, DraftType } from './Types';
+import { s_draftType } from './draft-state';
 
 const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
@@ -31,6 +32,8 @@ function DraftSimulator() {
   const phases = useRecoilValue(s_draftPhases);
   const currentPhase = phases[actions.filter((x) => x.completed).length];
 
+  const [draftType, setDraftType] = useRecoilState(s_draftType);
+
   const blueHeroes = useRecoilValue(s_draftTeamPicks(Team.Blue));
   const redHeroes = useRecoilValue(s_draftTeamPicks(Team.Red));
   const blueBans = useRecoilValue(s_draftTeamBans(Team.Blue));
@@ -38,6 +41,23 @@ function DraftSimulator() {
 
   return (
     <>
+      <Row justify="center">
+        <Select<DraftType>
+          bordered={false}
+          value={draftType}
+          onChange={(newDraftType) => {
+            setDraftType(newDraftType);
+            setActions([]);
+          }}
+          style={{ width: 100, marginBottom: 16 }}
+        >
+          {Object.values(DraftType).map((type) => (
+            <Select.Option key={type} value={type}>
+              {type}
+            </Select.Option>
+          ))}
+        </Select>
+      </Row>
       <Row justify="center">
         <Col span={16}>
           <FlexSteps>
