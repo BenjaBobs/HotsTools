@@ -29,13 +29,12 @@ export default function TeamStrengthChart(props: {
     const accumulator: { [key: string]: any } = {};
 
     for (const category of Object.keys(props.heroes[0].extensions.strengths)) {
-      accumulator[category] = { category: category, sum: 0 };
+      accumulator[category] = { category: category, value: 0 };
 
       for (const hero of props.heroes) {
-        accumulator[category][hero.shortName] =
-          (hero.extensions.strengths as any)[category] +
-          accumulator[category].sum;
-        accumulator[category].sum = accumulator[category][hero.shortName];
+        accumulator[category][hero.shortName] = accumulator[
+          category
+        ].value += (hero.extensions.strengths as any)[category];
       }
     }
 
@@ -45,28 +44,14 @@ export default function TeamStrengthChart(props: {
   return (
     <ResponsiveContainer>
       <RadarChart className="team-strength-chart" outerRadius={100} data={data}>
-        {data.length ? (
-          props.heroes?.map((hero) => (
-            <Radar
-              key={hero.shortName}
-              name=""
-              dataKey={hero.shortName}
-              stroke="#ffffff"
-              fill={props.color}
-              fillOpacity={1}
-              animationDuration={200}
-            />
-          ))
-        ) : (
-          <Radar
-            key="empty"
-            name=""
-            dataKey="empty"
-            stroke="#ffffff"
-            fill={props.color}
-            fillOpacity={1}
-          />
-        )}
+        <Radar
+          key="value"
+          name=""
+          dataKey="value"
+          stroke="#ffffff"
+          fill={props.color}
+          fillOpacity={1}
+        />
         <PolarGrid />
         <PolarAngleAxis dataKey="category" />
         <PolarRadiusAxis domain={[0, 50]} style={{ display: 'none' }} />
