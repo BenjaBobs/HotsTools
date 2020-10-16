@@ -14,6 +14,20 @@ export type HeroDataExtensions = {
   };
 };
 
+export const EmptyHeroStrengths: HeroDataExtensions = {
+  strengths: {
+    'Wave Clear': 0,
+    'Crowd Control': 0,
+    'Self Sustain': 0,
+    'Team Sustain': 0,
+    'Rotation Potential': 0,
+    'Burst Damage': 0,
+    'Sustained Damage': 0,
+    Poke: 0,
+    Range: 0,
+  },
+};
+
 export default function ExtendHeroData(hero: Hero) {
   (hero as any).extensions = {};
   const extensionData = data[hero.shortName];
