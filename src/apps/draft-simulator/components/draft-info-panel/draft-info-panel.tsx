@@ -3,6 +3,7 @@ import React, { useMemo } from 'react';
 import {
   PolarAngleAxis,
   PolarGrid,
+  PolarRadiusAxis,
   Radar,
   RadarChart,
   ResponsiveContainer,
@@ -18,7 +19,11 @@ export default function DraftInfoPanel(props: {
     .filter((x) => x.team === 'blue' && x.type === 'Pick')
     .flatMap((x) => x.heroes);
 
-  const data = useMemo(() => {
+  const redHeroes = props.history
+    .filter((x) => x.team === 'red' && x.type === 'Pick')
+    .flatMap((x) => x.heroes);
+
+  const blueData = useMemo(() => {
     if (!blueHeroes.length) return [];
 
     const accumulator: { [key: string]: any } = {};
@@ -37,37 +42,78 @@ export default function DraftInfoPanel(props: {
     return Object.values(accumulator);
   }, [blueHeroes]);
 
+  const redData = useMemo(() => {
+    if (!redHeroes.length) return [];
+
+    const accumulator: { [key: string]: any } = {};
+
+    for (const category of Object.keys(redHeroes[0].extensions.strengths)) {
+      accumulator[category] = { category: category, sum: 0 };
+
+      for (const hero of redHeroes) {
+        accumulator[category][hero.shortName] =
+          (hero.extensions.strengths as any)[category] +
+          accumulator[category].sum;
+        accumulator[category].sum = accumulator[category][hero.shortName];
+      }
+    }
+
+    return Object.values(accumulator);
+  }, [redHeroes]);
+
   return (
     <Card className={'draft-info-panel'} title="Info">
       <Row justify="space-between">
         <Col flex="1" style={{ height: 300 }}>
-          {blueHeroes.length ? (
-            <ResponsiveContainer>
-              <RadarChart
-                className="team-strength-chart"
-                outerRadius={100}
-                data={data}
-              >
-                <PolarGrid />
-                <PolarAngleAxis dataKey="category" />
-                {blueHeroes.length &&
-                  blueHeroes?.map((hero) => (
+          <ResponsiveContainer>
+            <RadarChart
+              className="team-strength-chart"
+              outerRadius={100}
+              data={blueData}
+            >
+              {blueHeroes.length
+                ? blueHeroes?.map((hero) => (
                     <Radar
                       key={hero.shortName}
                       name=""
                       dataKey={hero.shortName}
-                      stroke="#aaaaff"
-                      fill="#aaaaff"
-                      fillOpacity={0.2}
+                      stroke="#ffffff"
+                      fill="#0000ff"
+                      fillOpacity={1}
                     />
-                  ))}
-              </RadarChart>
-            </ResponsiveContainer>
-          ) : (
-            'blue team chart'
-          )}
+                  ))
+                : null}
+              <PolarGrid />
+              <PolarAngleAxis dataKey="category" />
+              <PolarRadiusAxis angle={90} domain={[0, 50]} />
+            </RadarChart>
+          </ResponsiveContainer>
         </Col>
-        <Col flex="1">red</Col>
+        <Col flex="1">
+          <ResponsiveContainer>
+            <RadarChart
+              className="team-strength-chart"
+              outerRadius={100}
+              data={redData}
+            >
+              {redHeroes.length
+                ? redHeroes?.map((hero) => (
+                    <Radar
+                      key={hero.shortName}
+                      name=""
+                      dataKey={hero.shortName}
+                      stroke="#ffffff"
+                      fill="#ff0000"
+                      fillOpacity={1}
+                    />
+                  ))
+                : null}
+              <PolarGrid />
+              <PolarAngleAxis dataKey="category" />
+              <PolarRadiusAxis angle={90} domain={[0, 50]} />
+            </RadarChart>
+          </ResponsiveContainer>
+        </Col>
       </Row>
     </Card>
   );

@@ -6,7 +6,7 @@
   .recharts-polar-grid {
     line,
     path {
-      stroke: blue;
+      stroke: HSL(var(--fg-color));
     }
   }
 }
