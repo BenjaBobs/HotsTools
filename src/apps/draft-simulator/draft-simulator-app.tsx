@@ -114,54 +114,49 @@ function DraftSimulator() {
             <DraftInfoPanel phase={currentPhase} history={actions} />
           </Row>
           <Row justify="center">
-            <Col style={{ width: '80%' }}>
-              {heroData.map((hero) => {
-                const disabled = actions.some((x) => x.heroes.includes(hero));
+            {heroData.map((hero) => {
+              const disabled = actions.some((x) => x.heroes.includes(hero));
 
-                return (
-                  <span
-                    key={hero.id}
-                    onClick={() => {
-                      if (disabled || !currentPhase) {
-                        return;
-                      }
+              return (
+                <Col
+                  key={hero.id}
+                  onClick={() => {
+                    if (disabled || !currentPhase) {
+                      return;
+                    }
 
-                      const uncompletedAction = actions.find(
-                        (x) => !x.completed
-                      );
+                    const uncompletedAction = actions.find((x) => !x.completed);
 
-                      if (uncompletedAction) {
-                        uncompletedAction.heroes.push(hero);
-                        uncompletedAction.completed =
-                          uncompletedAction.heroes.length ===
-                          currentPhase.amount;
+                    if (uncompletedAction) {
+                      uncompletedAction.heroes.push(hero);
+                      uncompletedAction.completed =
+                        uncompletedAction.heroes.length === currentPhase.amount;
 
-                        setActions([...actions]);
-                      } else {
-                        setActions([
-                          ...actions,
-                          {
-                            type: currentPhase.type,
-                            team: currentPhase.team,
-                            heroes: [hero],
-                            completed: currentPhase.amount === 1,
-                          },
-                        ]);
-                      }
+                      setActions([...actions]);
+                    } else {
+                      setActions([
+                        ...actions,
+                        {
+                          type: currentPhase.type,
+                          team: currentPhase.team,
+                          heroes: [hero],
+                          completed: currentPhase.amount === 1,
+                        },
+                      ]);
+                    }
+                  }}
+                >
+                  <Avatar
+                    className={'outline ' + (!disabled && 'hoverable')}
+                    style={{
+                      height: 60,
+                      width: 60,
                     }}
-                  >
-                    <Avatar
-                      className={'outline ' + (!disabled && 'hoverable')}
-                      style={{
-                        height: 50,
-                        width: 50,
-                      }}
-                      src={GetHeroIcon(hero.icon)}
-                    />
-                  </span>
-                );
-              })}
-            </Col>
+                    src={GetHeroIcon(hero.icon)}
+                  />
+                </Col>
+              );
+            })}
           </Row>
         </Col>
         <Col style={{ height: 500 }}>
