@@ -85,7 +85,7 @@ export default function DraftInfoPanel(props: {
                 : null}
               <PolarGrid />
               <PolarAngleAxis dataKey="category" />
-              <PolarRadiusAxis angle={90} domain={[0, 50]} />
+              <PolarRadiusAxis domain={[0, 50]} style={{ display: 'none' }} />
             </RadarChart>
           </ResponsiveContainer>
         </Col>
@@ -110,7 +110,7 @@ export default function DraftInfoPanel(props: {
                 : null}
               <PolarGrid />
               <PolarAngleAxis dataKey="category" />
-              <PolarRadiusAxis angle={90} domain={[0, 50]} />
+              <PolarRadiusAxis domain={[0, 50]} style={{ display: 'none' }} />
             </RadarChart>
           </ResponsiveContainer>
         </Col>
