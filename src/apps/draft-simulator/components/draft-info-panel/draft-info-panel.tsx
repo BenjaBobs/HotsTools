@@ -8,20 +8,14 @@ import {
   RadarChart,
   ResponsiveContainer,
 } from 'recharts';
-import { Phase, PhaseActions } from '../../draft-simulator-app';
+import { useRecoilValue } from 'recoil';
+import { s_draftTeamPicks } from '../../draft-state';
+import { Team } from '../../Types';
 import './draft-info-panel.scss';
 
-export default function DraftInfoPanel(props: {
-  phase: Phase;
-  history: PhaseActions[];
-}) {
-  const blueHeroes = props.history
-    .filter((x) => x.team === 'blue' && x.type === 'Pick')
-    .flatMap((x) => x.heroes);
-
-  const redHeroes = props.history
-    .filter((x) => x.team === 'red' && x.type === 'Pick')
-    .flatMap((x) => x.heroes);
+export default function DraftInfoPanel() {
+  const blueHeroes = useRecoilValue(s_draftTeamPicks(Team.Blue));
+  const redHeroes = useRecoilValue(s_draftTeamPicks(Team.Red));
 
   const blueData = useMemo(() => {
     if (!blueHeroes.length) return [];

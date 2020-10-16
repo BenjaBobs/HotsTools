@@ -1,9 +1,8 @@
 import { Avatar, Col, Row } from 'antd';
-import React, { useState } from 'react';
-import { useRecoilValue } from 'recoil';
+import React from 'react';
+import { useRecoilState, useRecoilValue } from 'recoil';
 
 import { GetHeroIcon } from '../../api/HotsTalents';
-import { Hero } from '../../api/state/hero-types';
 import { s_Heroes } from '../../api/state/heroes';
 import { AppDefinition } from '../AppDefinition';
 import Orb from '../components/orb';
@@ -12,6 +11,13 @@ import FlexSteps from './components/flex-steps';
 import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
 import style from './draft-simulator.module.scss';
+import {
+  s_draftHistory,
+  s_draftPhases,
+  s_draftTeamPicks,
+  s_draftTeamBans,
+} from './draft-state';
+import { Team } from './Types';
 
 const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
@@ -19,52 +25,16 @@ const DraftSimulatorApp: AppDefinition = {
   component: <DraftSimulator />,
 };
 
-export type Phase = {
-  team: 'blue' | 'red';
-  type: 'Pick' | 'Ban';
-  amount: number;
-};
-
-export type PhaseActions = {
-  type: 'Pick' | 'Ban';
-  team: 'blue' | 'red';
-  heroes: Hero[];
-  completed: boolean;
-};
-
-const phases: Phase[] = [
-  { team: 'blue', type: 'Ban', amount: 1 },
-  { team: 'red', type: 'Ban', amount: 1 },
-  { team: 'blue', type: 'Ban', amount: 1 },
-  { team: 'red', type: 'Ban', amount: 1 },
-  { team: 'blue', type: 'Pick', amount: 1 },
-  { team: 'red', type: 'Pick', amount: 2 },
-  { team: 'blue', type: 'Pick', amount: 2 },
-  { team: 'red', type: 'Ban', amount: 1 },
-  { team: 'blue', type: 'Ban', amount: 1 },
-  { team: 'red', type: 'Pick', amount: 2 },
-  { team: 'blue', type: 'Pick', amount: 2 },
-  { team: 'red', type: 'Pick', amount: 1 },
-];
-
 function DraftSimulator() {
   const heroData = useRecoilValue(s_Heroes);
-  const [actions, setActions] = useState<PhaseActions[]>([]);
+  const [actions, setActions] = useRecoilState(s_draftHistory);
+  const phases = useRecoilValue(s_draftPhases);
   const currentPhase = phases[actions.filter((x) => x.completed).length];
 
-  const blueHeroes = actions
-    .filter((x) => x.team === 'blue' && x.type === 'Pick')
-    .flatMap((x) => x.heroes);
-  const redHeroes = actions
-    .filter((x) => x.team === 'red' && x.type === 'Pick')
-    .flatMap((x) => x.heroes);
-
-  const blueBans = actions
-    .filter((x) => x.team === 'blue' && x.type === 'Ban')
-    .flatMap((x) => x.heroes);
-  const redBans = actions
-    .filter((x) => x.team === 'red' && x.type === 'Ban')
-    .flatMap((x) => x.heroes);
+  const blueHeroes = useRecoilValue(s_draftTeamPicks(Team.Blue));
+  const redHeroes = useRecoilValue(s_draftTeamPicks(Team.Red));
+  const blueBans = useRecoilValue(s_draftTeamBans(Team.Blue));
+  const redBans = useRecoilValue(s_draftTeamBans(Team.Red));
 
   return (
     <>
@@ -80,7 +50,7 @@ function DraftSimulator() {
                     p === currentPhase ? style.current : ''
                   }`}
                 >
-                  {p.team === 'blue' ? '<' : '>'}
+                  {p.team === Team.Blue ? '<' : '>'}
                 </Orb>
               ) : (
                 <Orb
@@ -111,7 +81,7 @@ function DraftSimulator() {
         </Col>
         <Col flex="1">
           <Row justify="center" style={{ padding: 40 }}>
-            <DraftInfoPanel phase={currentPhase} history={actions} />
+            <DraftInfoPanel />
           </Row>
           <Row justify="center">
             {heroData.map((hero) => {
@@ -128,11 +98,16 @@ function DraftSimulator() {
                     const uncompletedAction = actions.find((x) => !x.completed);
 
                     if (uncompletedAction) {
-                      uncompletedAction.heroes.push(hero);
-                      uncompletedAction.completed =
-                        uncompletedAction.heroes.length === currentPhase.amount;
-
-                      setActions([...actions]);
+                      setActions([
+                        ...actions.slice(0, actions.length - 1),
+                        {
+                          ...uncompletedAction,
+                          heroes: [...uncompletedAction.heroes, hero],
+                          completed:
+                            currentPhase.amount ===
+                            uncompletedAction.heroes.length + 1,
+                        },
+                      ]);
                     } else {
                       setActions([
                         ...actions,
