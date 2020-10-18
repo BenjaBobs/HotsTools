@@ -4,6 +4,7 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 
 import { GetHeroIcon } from '../../api/HotsTalents';
 import { s_Heroes } from '../../api/state/heroes';
+import { Maps } from '../../api/state/maps';
 import { AppDefinition } from '../AppDefinition';
 import Orb from '../components/orb';
 import DraftInfoPanel from './components/draft-info-panel/draft-info-panel';
@@ -12,14 +13,9 @@ import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
 import style from './draft-simulator.module.scss';
 import {
-  s_draftHistory,
-  s_draftPhases,
-  s_draftTeamPicks,
-  s_draftTeamBans,
+    s_draftHistory, s_draftMap, s_draftPhases, s_draftTeamBans, s_draftTeamPicks, s_draftType
 } from './draft-state';
-import { Team, DraftType } from './Types';
-import { s_draftType, s_draftMap } from './draft-state';
-import { Maps } from '../../api/state/maps';
+import { DraftType, Team } from './Types';
 
 const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
@@ -109,7 +105,7 @@ function DraftSimulator() {
         </Col>
       </Row>
       <Row justify="space-between">
-        <Col style={{ height: 500 }}>
+        <Col xs={4} lg={3} style={{ height: 500 }}>
           <Row>
             <HeroBanColumn heroes={blueBans} />
           </Row>
@@ -120,7 +116,7 @@ function DraftSimulator() {
             />
           </Row>
         </Col>
-        <Col flex="1">
+        <Col xs={16} lg={18}>
           <Row justify="center" style={{ padding: 20 }}>
             <DraftInfoPanel />
           </Row>
@@ -175,8 +171,8 @@ function DraftSimulator() {
             })}
           </Row>
         </Col>
-        <Col style={{ height: 500 }}>
-          <Row>
+        <Col xs={4} lg={3} style={{ height: 500 }}>
+          <Row justify="end">
             <HeroBanColumn heroes={redBans} />
           </Row>
           <Row justify="end">
