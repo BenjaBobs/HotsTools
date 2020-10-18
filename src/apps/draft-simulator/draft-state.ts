@@ -1,10 +1,9 @@
 import { atom, selector, selectorFamily } from 'recoil';
-import { DraftType, PhaseActions, Team, Phase, Action } from './Types';
+
+import { EmptyHeroStrengths, HeroStrengths } from '../../api/state/extend-hero-data';
+import { s_Heroes } from '../../api/state/heroes';
 import { Maps } from '../../api/state/maps';
-import {
-  EmptyHeroStrengths,
-  HeroStrengths,
-} from '../../api/state/extend-hero-data';
+import { Action, DraftType, Phase, PhaseActions, Team } from './Types';
 
 export const s_draftType = atom({
   key: 's_draft_type',
@@ -85,5 +84,52 @@ export const s_draftTeamStrengths = selectorFamily({
     }
 
     return strengths;
+  },
+});
+
+export const s_draftTeamWeaknesses = selectorFamily({
+  key: 's_draftTeamWeaknesses',
+  get: (team: Team) => ({ get }) => {
+    const strengths = get(s_draftTeamStrengths(team));
+
+    const weaknesses = Object.entries(strengths).reduce(
+      (accumulator: any, [key, value]) => {
+        accumulator[key] = 50 - value;
+
+        return accumulator;
+      },
+      {}
+    ) as HeroStrengths;
+
+    return weaknesses;
+  },
+});
+
+export const s_suggestedHeroes = selector({
+  key: 's_suggestedHeroes',
+  get: ({ get }) => {
+    const unavailableHeroes = get(s_draftHistory).flatMap((s) => s.heroes);
+    const weaknesses = get(s_draftTeamWeaknesses(Team.Blue));
+    const allHeroes = get(s_Heroes);
+
+    const [biggestWeakness, weaknessValue] = Object.entries(weaknesses).sort(
+      (a, b) => b[1] - a[1]
+    )[0];
+
+    const suggestions = allHeroes
+      .filter((h) => !unavailableHeroes.includes(h))
+      .sort(
+        (h1, h2) =>
+          h2.extensions.strengths[biggestWeakness as keyof HeroStrengths] -
+          h1.extensions.strengths[biggestWeakness as keyof HeroStrengths]
+      );
+
+    return [
+      {
+        type: Action.Pick,
+        reason: `Your team only has ${50 - weaknessValue} [${biggestWeakness}]`,
+        heroes: suggestions.slice(0, 3),
+      },
+    ];
   },
 });

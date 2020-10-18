@@ -27,3 +27,9 @@ export enum DraftType {
   FirstPick = 'FirstPick',
   LastPick = 'LastPick',
 }
+
+export type Suggestion = {
+  type: Action;
+  reason: string;
+  heroes: Hero[];
+};

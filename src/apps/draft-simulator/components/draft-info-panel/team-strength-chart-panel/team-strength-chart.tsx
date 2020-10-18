@@ -20,7 +20,6 @@ export default function TeamStrengthChart(props: { team: Team }) {
   });
 
   const screenSizes = useBreakpoint();
-  console.log(screenSizes);
   const radius = !screenSizes.lg ? 50 : 150;
 
   return (
