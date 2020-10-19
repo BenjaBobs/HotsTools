@@ -21,6 +21,7 @@ import {
   s_draftType,
 } from './draft-state';
 import { DraftType, Team } from './Types';
+import { usePickHero } from './draft-state';
 
 const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
@@ -41,6 +42,8 @@ function DraftSimulator() {
   const redHeroes = useRecoilValue(s_draftTeamPicks(Team.Red));
   const blueBans = useRecoilValue(s_draftTeamBans(Team.Blue));
   const redBans = useRecoilValue(s_draftTeamBans(Team.Red));
+
+  const pickHero = usePickHero();
 
   return (
     <>
@@ -133,34 +136,7 @@ function DraftSimulator() {
                 <Col
                   key={hero.id}
                   onClick={() => {
-                    if (disabled || !currentPhase) {
-                      return;
-                    }
-
-                    const uncompletedAction = actions.find((x) => !x.completed);
-
-                    if (uncompletedAction) {
-                      setActions([
-                        ...actions.slice(0, actions.length - 1),
-                        {
-                          ...uncompletedAction,
-                          heroes: [...uncompletedAction.heroes, hero],
-                          completed:
-                            currentPhase.amount ===
-                            uncompletedAction.heroes.length + 1,
-                        },
-                      ]);
-                    } else {
-                      setActions([
-                        ...actions,
-                        {
-                          type: currentPhase.type,
-                          team: currentPhase.team,
-                          heroes: [hero],
-                          completed: currentPhase.amount === 1,
-                        },
-                      ]);
-                    }
+                    pickHero(hero);
                   }}
                 >
                   <Avatar

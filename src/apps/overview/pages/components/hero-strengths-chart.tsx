@@ -9,6 +9,7 @@ import {
   PolarAngleAxis,
   Radar,
   ResponsiveContainer,
+  PolarRadiusAxis,
 } from 'recharts';
 
 export default function HeroStrengthsChart(props: { hero: Hero }) {
@@ -30,8 +31,6 @@ export default function HeroStrengthsChart(props: { hero: Hero }) {
   return (
     <ResponsiveContainer width={containerSize} height={containerSize}>
       <RadarChart outerRadius={radius} data={data}>
-        <PolarGrid />
-        <PolarAngleAxis dataKey="category" />
         <Radar
           name=""
           dot
@@ -40,6 +39,9 @@ export default function HeroStrengthsChart(props: { hero: Hero }) {
           fill="#ff0000"
           fillOpacity={0.6}
         />
+        <PolarGrid />
+        <PolarRadiusAxis angle={90} tickCount={10} domain={[0, 10]} />
+        <PolarAngleAxis dataKey="category" />
       </RadarChart>
     </ResponsiveContainer>
   );
