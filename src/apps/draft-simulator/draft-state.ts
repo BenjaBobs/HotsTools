@@ -129,7 +129,11 @@ export const s_suggestedHeroes = selector({
   key: 's_suggestedHeroes',
   get: ({ get }) => {
     const unavailableHeroes = get(s_draftHistory).flatMap((s) => s.heroes);
-    const weaknesses = get(s_draftTeamWeaknesses(Team.Blue));
+    const phase = get(s_draftCurrentPhase);
+    if (phase.team !== Team.Blue) return [];
+    const weaknesses = get(
+      s_draftTeamWeaknesses(phase.type === Action.Pick ? Team.Blue : Team.Red)
+    );
     const allHeroes = get(s_Heroes);
 
     const [biggestWeakness, weaknessValue] = Object.entries(weaknesses).sort(
@@ -146,8 +150,10 @@ export const s_suggestedHeroes = selector({
 
     return [
       {
-        type: Action.Pick,
-        reason: `Your team only has ${50 - weaknessValue} [${biggestWeakness}]`,
+        type: phase.type,
+        reason: `${
+          phase.type === Action.Pick ? 'Your' : 'Enemy'
+        } team only has ${50 - weaknessValue} [${biggestWeakness}]`,
         heroes: suggestions.slice(0, 3),
       },
     ];
