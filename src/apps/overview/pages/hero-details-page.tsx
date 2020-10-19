@@ -22,7 +22,7 @@ export default function HeroDetailsPage(props: { hero?: string }) {
   const talentSets = useRecoilValue(s_HeroTalents(props.hero!))!;
 
   return (
-    <Row justify="center" style={{ paddingLeft: 48, paddingRight: 48 }}>
+    <Row justify="center">
       <Col flex={1}>
         <Row align="middle" gutter={24}>
           <Col>
@@ -75,15 +75,7 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                     </React.Fragment>
                   ))}
                 </Col>
-                <Col
-                  flex={1}
-                  style={{
-                    maxWidth: 800,
-                    minWidth: 600,
-                    maxHeight: 800,
-                    minHeight: 600,
-                  }}
-                >
+                <Col flex={1}>
                   <HeroStrengthsChart hero={hero} />
                 </Col>
               </Row>
