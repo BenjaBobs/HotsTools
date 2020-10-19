@@ -6,10 +6,12 @@ import OverviewApp from './overview/overview-app';
 import { s_urlPath } from '../api/state/routing';
 import GitHubApp from './GitHub-app';
 import DraftSimulatorApp from './draft-simulator/draft-simulator-app';
+import AboutApp from './about/about-app';
+import ChangeLogApp from './changelog/changelog-app';
 
 const s_rawApps = atom({
   key: 'raw_apps',
-  default: [OverviewApp, DraftSimulatorApp, GitHubApp],
+  default: [OverviewApp, DraftSimulatorApp, ChangeLogApp, AboutApp, GitHubApp],
 });
 
 export const s_apps = selector({
