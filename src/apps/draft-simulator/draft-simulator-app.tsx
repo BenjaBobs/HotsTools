@@ -13,7 +13,12 @@ import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
 import style from './draft-simulator.module.scss';
 import {
-    s_draftHistory, s_draftMap, s_draftPhases, s_draftTeamBans, s_draftTeamPicks, s_draftType
+  s_draftHistory,
+  s_draftMap,
+  s_draftPhases,
+  s_draftTeamBans,
+  s_draftTeamPicks,
+  s_draftType,
 } from './draft-state';
 import { DraftType, Team } from './Types';
 
@@ -76,7 +81,7 @@ function DraftSimulator() {
         </Col>
       </Row>
       <Row justify="center">
-        <Col span={16}>
+        <Col xs={22} sm={18} md={16}>
           <FlexSteps>
             {phases.map((p, idx) =>
               p.type === 'Ban' ? (
@@ -105,19 +110,19 @@ function DraftSimulator() {
         </Col>
       </Row>
       <Row justify="space-between">
-        <Col xs={4} lg={3} style={{ height: 500 }}>
+        <Col span={3}>
           <Row>
             <HeroBanColumn heroes={blueBans} />
           </Row>
-          <Row style={{ width: 150 }}>
+          <Row>
             <HeroSelectionColumn
               direction="ltr"
               selectedHeroes={blueHeroes.map((h) => h.icon)}
             />
           </Row>
         </Col>
-        <Col xs={16} lg={18}>
-          <Row justify="center" style={{ padding: 20 }}>
+        <Col span={18}>
+          <Row justify="center" style={{ paddingTop: 20, paddingBottom: 20 }}>
             <DraftInfoPanel />
           </Row>
           <Row justify="center">
@@ -171,14 +176,13 @@ function DraftSimulator() {
             })}
           </Row>
         </Col>
-        <Col xs={4} lg={3} style={{ height: 500 }}>
+        <Col span={3}>
           <Row justify="end">
             <HeroBanColumn heroes={redBans} />
           </Row>
           <Row justify="end">
             <HeroSelectionColumn
               direction="rtl"
-              width={133}
               selectedHeroes={redHeroes.map((h) => h.icon)}
             />
           </Row>

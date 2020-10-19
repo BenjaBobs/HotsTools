@@ -1,15 +1,17 @@
 .hero-ban-column {
+  --icon-size: 60px;
+
   .ant-avatar {
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-    line-height: 60px;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    font-size: calc(var(--icon-size) / 2);
+    line-height: var(--icon-size);
   }
 
   .anticon {
     color: black;
     filter: drop-shadow(0px 0px 2px white);
-    height: 60px;
-    width: 60px;
+    height: var(--icon-size);
+    width: var(--icon-size);
   }
 }

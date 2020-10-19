@@ -2,7 +2,7 @@ import { Col, Layout, Result, Row } from 'antd';
 import ErrorBoundary from 'antd/lib/alert/ErrorBoundary';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
-
+import './AppHost.scss';
 import { LoadingOutlined } from '@ant-design/icons';
 
 import { s_apps, s_currentApp, s_currentAppParams } from './apps/Apps';
@@ -33,15 +33,7 @@ export default function AppHost() {
       </Header>
       <Content>
         <Row justify="center">
-          <Col
-            style={{
-              color: 'white',
-              paddingTop: 8,
-              paddingLeft: 32,
-              paddingRight: 32,
-            }}
-            flex="1"
-          >
+          <Col className="app-host-content" flex="1">
             {!currentApp ? (
               <Result
                 status="404"
@@ -54,7 +46,7 @@ export default function AppHost() {
                   <Result
                     status="500"
                     title="Error"
-                    subTitle="Sorry, something tralala went wrong."
+                    subTitle="Sorry, something went wrong."
                   />
                 }
               >

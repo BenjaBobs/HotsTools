@@ -1,14 +1,19 @@
 import './team-strength-chart.scss';
 
-import useBreakpoint from 'antd/lib/grid/hooks/useBreakpoint';
 import React from 'react';
 import {
-    PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer
+  PolarAngleAxis,
+  PolarGrid,
+  PolarRadiusAxis,
+  Radar,
+  RadarChart,
+  ResponsiveContainer,
 } from 'recharts';
 import { useRecoilValue } from 'recoil';
 
 import { s_draftTeamStrengths } from '../../../draft-state';
 import { Team } from '../../../Types';
+import { s_screenInterpolationRatio } from '../../../../../api/state/device';
 
 export default function TeamStrengthChart(props: { team: Team }) {
   const strengths = useRecoilValue(s_draftTeamStrengths(props.team));
@@ -19,8 +24,8 @@ export default function TeamStrengthChart(props: { team: Team }) {
     };
   });
 
-  const screenSizes = useBreakpoint();
-  const radius = !screenSizes.lg ? 50 : 150;
+  const sizeRatio = useRecoilValue(s_screenInterpolationRatio);
+  const radius = 30 + sizeRatio * 120;
 
   return (
     <ResponsiveContainer>

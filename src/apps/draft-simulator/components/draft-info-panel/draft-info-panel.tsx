@@ -16,7 +16,7 @@ const panels = [
 ];
 
 export default function DraftInfoPanel() {
-  const [panel, setPanel] = useState(panels[0]);
+  const [panel, setPanel] = useState(panels[1]);
 
   return (
     <Card

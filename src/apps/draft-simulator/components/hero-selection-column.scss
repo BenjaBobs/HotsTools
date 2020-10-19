@@ -3,8 +3,11 @@
   --half: calc(var(--icon-size) / 2);
   --third: calc(var(--icon-size) / 3);
 
+  width: calc(var(--icon-size) + var(--third));
+  height: calc(var(--icon-size) * 3.8);
+
   .ant-avatar {
-    font-size: var(--half);
+    font-size: 2vw;
     line-height: var(--icon-size);
   }
 

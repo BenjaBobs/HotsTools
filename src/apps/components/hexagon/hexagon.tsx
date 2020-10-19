@@ -15,13 +15,15 @@ export default function Hexagon(props: {
       ) : (
         <div className="hexagon-text">{props.fallback}</div>
       )}
-      <img
-        className="hexagon-outline"
-        src="https://static.heroesofthestorm.com/images/ability-icon-frame-6f5d4ee4ef.png"
-        alt=""
-        width="100%"
-        height="100%"
-      />
+      <div>
+        <img
+          className="hexagon-outline"
+          src="https://static.heroesofthestorm.com/images/ability-icon-frame-6f5d4ee4ef.png"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </div>
     </Overlay>
   );
 }
