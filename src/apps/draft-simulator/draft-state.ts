@@ -130,7 +130,7 @@ export const s_suggestedHeroes = selector({
   get: ({ get }) => {
     const unavailableHeroes = get(s_draftHistory).flatMap((s) => s.heroes);
     const phase = get(s_draftCurrentPhase);
-    if (phase.team !== Team.Blue) return [];
+    if (phase?.team !== Team.Blue) return [];
     const weaknesses = get(
       s_draftTeamWeaknesses(phase.type === Action.Pick ? Team.Blue : Team.Red)
     );
