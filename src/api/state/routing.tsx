@@ -1,31 +1,27 @@
-import React from 'react';
 import { createBrowserHistory } from 'history';
-import { useSetRecoilState, atom, selector } from 'recoil';
-import { useEffect } from 'react';
+import { atom, DefaultValue, selector } from 'recoil';
 
 export const browserHistory = createBrowserHistory();
 
-export function HistoryRecoilSync() {
-  const set = useSetRecoilState(s_location);
-
-  useEffect(() => {
-    return browserHistory.listen((location, action) => {
-      // action = 'PUSH' | 'POP' | 'REPLACE';
-      set(location);
-    });
-  }, [set]);
-
-  return <></>;
-}
-
-export const s_history = atom({
-  key: 'historyState',
-  default: browserHistory,
-});
-
 export const s_location = atom({
   key: 'location',
-  default: browserHistory.location,
+  default: { ...browserHistory.location },
+  effects_UNSTABLE: [
+    ({ setSelf, onSet }) => {
+      // set browserHistory when location is set
+      onSet((newLocation) => {
+        if (!(newLocation instanceof DefaultValue)) {
+          browserHistory.push(newLocation);
+        }
+      });
+
+      // set location when browserHistory is updated
+      // also return the unsubscribe function so we are clean
+      return browserHistory.listen((location) => {
+        setSelf(location);
+      });
+    },
+  ],
 });
 
 export const s_urlPath = selector({
