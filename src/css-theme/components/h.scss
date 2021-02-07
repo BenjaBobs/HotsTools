@@ -7,27 +7,51 @@ h6 {
   line-height: 1em;
   color: HSL(var(--text-color));
   margin: 0px;
+
+  &.ant-typography {
+    line-height: 1em;
+    color: HSL(var(--text-color));
+    margin: 0px;
+  }
 }
 
 h1 {
   text-shadow: 0 0 10px;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 3rem;
+
+  &.ant-typography {
+    text-shadow: 0 0 10px;
+    font-weight: bold;
+    font-size: 3rem;
+  }
 }
 
 h2 {
   text-shadow: 0 0 10px;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2rem;
+  &.ant-typography {
+    text-shadow: 0 0 10px;
+    font-weight: bold;
+    font-size: 2rem;
+  }
 }
 
 h3 {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  &.ant-typography {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1em;
+  font-size: 1rem;
+  &.ant-typography {
+    font-size: 1rem;
+  }
 }

@@ -1,0 +1,31 @@
+.block {
+  --block-base-columns: 1;
+  --block-columns: 1;
+  --block-base-rows: 1;
+  --block-rows: 1;
+  --block-gap: initial;
+  --block-padding: initial;
+  --block-text-align: start;
+  --block-justify: stretch;
+  --block-align: initial;
+  --block-background: transparent;
+  --block-text-color: unset;
+  --block-text-align: initial;
+
+  display: grid;
+  grid-template-columns: [start] repeat(var(--block-base-columns, 1), 1fr) [end];
+  grid-template-rows: [start] repeat(var(--block-base-rows, 1), 1fr) [end];
+  grid-auto-flow: row;
+  grid-gap: var(--block-gap);
+  padding: var(--block-padding);
+
+  grid-column: span var(--block-columns);
+  grid-row: span var(--block-rows);
+
+  text-align: var(--block-text-align);
+  justify-items: var(--block-justify);
+  align-items: var(--block-align);
+
+  background: var(--block-background);
+  color: var(--block-text-color);
+}

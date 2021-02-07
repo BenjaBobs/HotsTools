@@ -353,6 +353,16 @@ const data: { [key: string]: HeroDataExtensions } = {
       Range: FakeStats(),
     },
   },
+  hogger: {
+    strengths: {
+      'Single-target': FakeStats(),
+      AoE: FakeStats(),
+      'Single-target heal': FakeStats(),
+      'AoE heal': FakeStats(),
+      Mobility: FakeStats(),
+      Range: FakeStats(),
+    },
+  },
   illidan: {
     strengths: {
       'Single-target': FakeStats(),

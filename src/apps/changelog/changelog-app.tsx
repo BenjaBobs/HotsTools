@@ -1,6 +1,7 @@
 import { Row, Timeline, Space, Card, Col } from 'antd';
 import React from 'react';
 import { AppDefinition } from '../AppDefinition';
+import Block from '../components/block/block';
 import changeLog from './changelog';
 
 const ChangeLogApp: AppDefinition = {
@@ -22,13 +23,14 @@ function ChangeLogPage() {
               key={idx}
               label={item.date.toDateString()}
             >
-              <Card style={{ width: '80%', padding: 16, paddingBottom: 0 }}>
-                <Space direction="vertical" size={16}>
+              <Card style={{ width: '80%', padding: 16, paddingBottom: 16 }}>
+                <Block>
                   <RenderCategory name="Added" data={item.added} />
                   <RenderCategory name="Changed" data={item.changed} />
                   <RenderCategory name="Fixed" data={item.fixed} />
                   <RenderCategory name="Removed" data={item.removed} />
-                </Space>
+                  <RenderCategory name="Code" data={item.code} />
+                </Block>
               </Card>
             </Timeline.Item>
           ))}
@@ -57,4 +59,5 @@ export type ChangelogItem = {
   changed?: React.ReactNode[];
   fixed?: React.ReactNode[];
   removed?: React.ReactNode[];
+  code?: React.ReactNode[];
 };

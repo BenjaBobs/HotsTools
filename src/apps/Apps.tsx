@@ -1,4 +1,3 @@
-import { matchPath } from 'react-router-dom';
 import { atom, selector } from 'recoil';
 
 import { AppDefinition, ExtendedAppDefinition } from './AppDefinition';
@@ -57,47 +56,47 @@ export const s_flatApps = selector({
   },
 });
 
-export const s_appMatch = selector({
-  key: 'appMatch',
+export const s_currentApp = selector({
+  key: 's_currentApp',
   get: ({ get }) => {
     const path = get(s_urlPath);
     const flatApps = get(s_flatApps);
 
     for (const app of flatApps) {
-      const match = matchPath(path, {
-        path: app.absolutePath,
-        exact: true,
-        strict: false,
-      });
+      const match = matchPath(path, app.absolutePath);
 
-      if (match) {
+      if (match.isMatch) {
         return {
-          match,
           app,
+          params: match.params,
         };
       }
     }
 
-    return {
-      match: null,
-      app: null,
-    };
+    return null;
   },
 });
 
-export const s_currentApp = selector({
-  key: 'currentApp',
-  get: ({ get }) => {
-    const appMatch = get(s_appMatch);
+function matchPath(path: string, pattern: string) {
+  const pathParts = path.split('/');
+  const patternParts = pattern.split('/');
 
-    return appMatch?.app;
-  },
-});
+  if (pathParts.length !== patternParts.length) return { isMatch: false };
 
-export const s_currentAppParams = selector({
-  key: 'currentAppParams',
-  get: ({ get }) => {
-    const appMatch = get(s_appMatch);
-    return appMatch?.match?.params;
-  },
-});
+  const params: { [key: string]: string } = {};
+  for (let i = 0; i < pathParts.length; i++) {
+    const pathPart = pathParts[i];
+    const patternPart = patternParts[i];
+
+    if (patternPart.startsWith(':')) {
+      params[patternPart.substring(1)] = pathPart;
+    } else if (patternPart.toLowerCase() !== pathPart.toLowerCase()) {
+      return { isMatch: false };
+    }
+  }
+
+  return {
+    isMatch: true,
+    params: params,
+  };
+}

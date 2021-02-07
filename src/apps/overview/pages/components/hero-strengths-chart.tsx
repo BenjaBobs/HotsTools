@@ -1,4 +1,3 @@
-import React from 'react';
 import { Hero } from '../../../../api/state/hero-types';
 import { useRecoilValue } from 'recoil';
 import { s_deviceSize } from '../../../../api/state/device';
@@ -8,7 +7,6 @@ import {
   PolarGrid,
   PolarAngleAxis,
   Radar,
-  ResponsiveContainer,
   PolarRadiusAxis,
 } from 'recharts';
 
@@ -29,20 +27,23 @@ export default function HeroStrengthsChart(props: { hero: Hero }) {
   const radius = containerSize * 0.2;
 
   return (
-    <ResponsiveContainer width={containerSize} height={containerSize}>
-      <RadarChart outerRadius={radius} data={data}>
-        <Radar
-          name=""
-          dot
-          dataKey="value"
-          stroke="#ff0000"
-          fill="#ff0000"
-          fillOpacity={0.6}
-        />
-        <PolarGrid />
-        <PolarRadiusAxis angle={90} tickCount={10} domain={[0, 10]} />
-        <PolarAngleAxis dataKey="category" />
-      </RadarChart>
-    </ResponsiveContainer>
+    <RadarChart
+      outerRadius={radius}
+      data={data}
+      width={containerSize}
+      height={containerSize}
+    >
+      <Radar
+        name=""
+        dot
+        dataKey="value"
+        stroke="#ff0000"
+        fill="#ff0000"
+        fillOpacity={0.6}
+      />
+      <PolarGrid />
+      <PolarRadiusAxis angle={90} tickCount={10} domain={[0, 10]} />
+      <PolarAngleAxis dataKey="category" />
+    </RadarChart>
   );
 }

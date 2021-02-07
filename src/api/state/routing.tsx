@@ -4,12 +4,12 @@ import { atom, DefaultValue, selector } from 'recoil';
 export const browserHistory = createBrowserHistory();
 
 export const s_location = atom({
-  key: 'location',
-  default: { ...browserHistory.location },
+  key: '_location',
+  default: browserHistory.location,
   effects_UNSTABLE: [
     ({ setSelf, onSet }) => {
       // set browserHistory when location is set
-      onSet((newLocation) => {
+      onSet(newLocation => {
         if (!(newLocation instanceof DefaultValue)) {
           browserHistory.push(newLocation);
         }
@@ -17,14 +17,14 @@ export const s_location = atom({
 
       // set location when browserHistory is updated
       // also return the unsubscribe function so we are clean
-      return browserHistory.listen((location) => {
-        setSelf(location);
+      return browserHistory.listen(locationUpdate => {
+        setSelf(locationUpdate.location);
       });
     },
   ],
 });
 
-export const s_urlPath = selector({
+export const s_urlPath = selector<string>({
   key: 'urlPath',
   get: ({ get }) => get(s_location).pathname,
 });

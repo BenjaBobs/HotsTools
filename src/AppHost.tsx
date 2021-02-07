@@ -1,35 +1,43 @@
-import { Col, Layout, Result, Row } from 'antd';
+import { Col, Layout, Result, Row, Typography } from 'antd';
 import ErrorBoundary from 'antd/lib/alert/ErrorBoundary';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
 import './AppHost.scss';
 import { LoadingOutlined } from '@ant-design/icons';
 
-import { s_apps, s_currentApp, s_currentAppParams } from './apps/Apps';
-import Link2 from './Link2';
+import { s_apps, s_currentApp } from './apps/Apps';
+import Link from './Link';
+import Block from './apps/components/block/block';
 
 const { Header, Content } = Layout;
+const { Title } = Typography;
 
 export default function AppHost() {
   const apps = useRecoilValue(s_apps);
   const currentApp = useRecoilValue(s_currentApp);
-  const currentAppParams = useRecoilValue(s_currentAppParams);
 
   return (
     <Layout>
       <Header>
-        <Row align="middle" justify="space-around">
-          {apps.map((app) => (
-            <Link2
+        <Block columns={apps.length} align="center" gap={0.5}>
+          {apps.map(app => (
+            <Link
               key={app.absolutePath}
               to={app.overrideLink ?? app.absolutePath}
-              className="textglow-hover underglow-hover animate"
-              style={{ paddingLeft: 16, paddingRight: 16 }}
+              absolute
             >
-              {app.name}
-            </Link2>
+              <Block
+                align="center"
+                textAlign="center"
+                className="underglow-hover animate textglow-hover"
+                padding={{ left: 0.5, right: 0.5 }}
+                height={4}
+              >
+                <Title level={4}>{app.name}</Title>
+              </Block>
+            </Link>
           ))}
-        </Row>
+        </Block>
       </Header>
       <Content>
         <Row justify="center">
@@ -56,8 +64,8 @@ export default function AppHost() {
                   }
                 >
                   {React.cloneElement(
-                    currentApp?.component as React.ReactElement,
-                    currentAppParams
+                    currentApp.app.component as React.ReactElement,
+                    currentApp.params
                   )}
                 </React.Suspense>
               </ErrorBoundary>

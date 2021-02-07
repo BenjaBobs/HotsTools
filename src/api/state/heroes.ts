@@ -37,6 +37,7 @@ export const s_HeroNames = atom({
     'greymane',
     'guldan',
     'hanzo',
+    'hogger',
     'illidan',
     'imperius',
     'jaina',
@@ -103,14 +104,14 @@ export const s_Heroes = selector({
     const heroNames = get(s_HeroNames);
 
     const heroes = await Promise.all(
-      heroNames.map((name) =>
+      heroNames.map(name =>
         fetch(
           `https://heroespatchnotes.github.io/heroes-talents/hero/${name}.json`
-        ).then(async (response) => (await response.json()) as Hero)
+        ).then(async response => (await response.json()) as Hero)
       )
     );
 
-    heroes.forEach((hero) => {
+    heroes.forEach(hero => {
       ExtendHeroData(hero);
     });
 
@@ -123,7 +124,7 @@ export const s_Hero = selectorFamily({
   get: (name: string) => ({ get }) => {
     const heroes = get(s_Heroes);
 
-    return heroes.find((h) => h.shortName === name) || null;
+    return heroes.find(h => h.shortName === name) || null;
   },
 });
 
