@@ -115,6 +115,8 @@ export const s_Heroes = selector({
       ExtendHeroData(hero);
     });
 
+    console.log(heroes);
+
     return heroes;
   },
 });
