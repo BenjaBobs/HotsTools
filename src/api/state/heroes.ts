@@ -1,6 +1,7 @@
 import { atom, selector, selectorFamily } from 'recoil';
-import { Hero, TalentTier, Talent } from './hero-types';
+
 import ExtendHeroData from './extend-hero-data';
+import { Hero, Talent, TalentTier } from './hero-types';
 
 export const s_HeroNames = atom({
   key: 's_HeroNames',

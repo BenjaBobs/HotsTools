@@ -1,4 +1,5 @@
 import { AppDefinition } from './AppDefinition';
+
 const GitHubApp: AppDefinition = {
   name: 'GitHub/Source',
   path: 'github',

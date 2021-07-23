@@ -1,5 +1,5 @@
-import { Row, Typography } from 'antd';
-import React from 'react';
+import { Typography } from 'antd';
+
 import { AppDefinition } from '../AppDefinition';
 import Block from '../components/block/block';
 

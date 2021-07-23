@@ -39,6 +39,6 @@
   --fg-color-brightest: var(--main-color-h), var(--main-color-s),
     calc(var(--fg-base-l) + 2 * var(--color-increment));
 
-  /* named colors*/
+  /* named colors */
   --text-color: var(--fg-color);
 }

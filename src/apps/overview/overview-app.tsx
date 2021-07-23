@@ -1,7 +1,8 @@
-import React from 'react';
+
+
 import { AppDefinition } from '../AppDefinition';
-import HeroOverviewPage from './pages/hero-overview-page';
 import HeroDetailsPage from './pages/hero-details-page';
+import HeroOverviewPage from './pages/hero-overview-page';
 
 const OverviewApp: AppDefinition = {
   name: 'Overview',

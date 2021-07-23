@@ -1,5 +1,6 @@
-import { Row, Timeline, Space, Card, Col } from 'antd';
+import { Card, Col, Row, Timeline } from 'antd';
 import React from 'react';
+
 import { AppDefinition } from '../AppDefinition';
 import Block from '../components/block/block';
 import changeLog from './changelog';

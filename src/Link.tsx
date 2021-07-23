@@ -1,8 +1,9 @@
+import './Link.scss';
+
 import React, { useMemo } from 'react';
 import { useRecoilValue } from 'recoil';
 
-import './Link.scss';
-import { s_urlPath, browserHistory } from './api/state/routing';
+import { browserHistory, s_urlPath } from './api/state/routing';
 
 export type LinkProps = {
   to: string;

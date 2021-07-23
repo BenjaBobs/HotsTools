@@ -1,12 +1,11 @@
 import './hero-selection-column.scss';
 
 import { Col } from 'antd';
-import React from 'react';
+import { useRecoilValue } from 'recoil';
 
 import { GetHeroIcon } from '../../../api/HotsTalents';
-import Hexagon from '../../components/hexagon/hexagon';
-import { useRecoilValue } from 'recoil';
 import { s_screenInterpolationRatio } from '../../../api/state/device';
+import Hexagon from '../../components/hexagon/hexagon';
 
 export default function HeroSelectionColumn(props: {
   direction?: 'ltr' | 'rtl';

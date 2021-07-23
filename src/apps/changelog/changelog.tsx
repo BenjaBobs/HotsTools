@@ -1,7 +1,10 @@
-import { fixControlledValue } from 'antd/lib/input/Input';
 import { ChangelogItem } from './changelog-app';
 
 const changeLog: ChangelogItem[] = [
+  {
+    date: new Date(2021, 7, 23),
+    code: ['Moved from Create-React-App to Vite'],
+  },
   {
     date: new Date(2021, 2, 7),
     added: ['Hogger'],

@@ -1,5 +1,6 @@
-import React from 'react';
 import './overlay.scss';
+
+import React from 'react';
 
 export default function Overlay(
   props: React.PropsWithChildren<{

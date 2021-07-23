@@ -1,10 +1,10 @@
 import './block.scss';
 
 import React, { CSSProperties, PropsWithChildren, useMemo } from 'react';
+
 import useIntuitiveScreenSize, {
-  ScreenSizeName,
+    ScreenSizeName, ScreenSizes
 } from '../../../utils/hooks/useIntuitiveScreenSize';
-import { ScreenSizes } from '../../../utils/hooks/useIntuitiveScreenSize';
 
 type BlockProps = {
   // the form of the block
@@ -66,7 +66,7 @@ export default function Block(
       applyStyleFromProps(styleObj, props);
 
       const enabledScreenSizesAscending = ScreenSizes.slice(
-        ScreenSizes.findIndex((x) => x[0] === screenSize)
+        ScreenSizes.findIndex(x => x[0] === screenSize)
       ).reverse();
 
       for (const [screenSizeName] of enabledScreenSizesAscending) {
@@ -156,7 +156,7 @@ function applyStyleFromProps(
         props.padding.bottom || 0,
         props.padding.left || 0,
       ]
-        .map((x) => x + 'rem')
+        .map(x => x + 'rem')
         .join(' ');
     }
   }

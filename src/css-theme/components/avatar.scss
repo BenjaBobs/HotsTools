@@ -1,6 +1,6 @@
 .ant-avatar {
   background-color: transparent;
-  position: unset; // messes with z-index
+  position: unset; /* messes with z-index */
 
   &.outline {
     border: 2px solid #88b8ff;

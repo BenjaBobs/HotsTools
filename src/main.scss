@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.css';
+@import 'antd/dist/antd.css';
 @import 'css-theme/hots-theme.scss';
 
 body {
@@ -8,16 +8,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: auto;
-  min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-#root {
-  height: auto;
-  min-height: 100vh;
 }

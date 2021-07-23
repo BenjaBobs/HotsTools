@@ -1,7 +1,7 @@
-import React from 'react';
+import { Col, Row } from 'antd';
+
 import { Ability } from '../../../../api/state/hero-types';
 import HotsTooltip from '../../../components/hots-tooltip/hots-tooltip';
-import { Row, Col } from 'antd';
 
 export default function AbilityTooltip(props: { ability: Ability }) {
   return (

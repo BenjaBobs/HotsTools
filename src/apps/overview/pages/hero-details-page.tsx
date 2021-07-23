@@ -1,20 +1,13 @@
+import { Avatar, Col, Row, Space } from 'antd';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
-import {
-  s_Hero,
-  s_HeroAbilities,
-  s_HeroTalents,
-} from '../../../api/state/heroes';
-import { Row, Avatar, Col, Space } from 'antd';
-import {
-  GetHeroIcon,
-  GetAbilityIcon,
-  GetTalentIcon,
-} from '../../../api/HotsTalents';
-import HeroStrengthsChart from './components/hero-strengths-chart';
-import AbilityTooltip from './components/ability-tooltip';
-import TalentTooltip from './components/talent-tooltip';
+
+import { GetAbilityIcon, GetHeroIcon, GetTalentIcon } from '../../../api/HotsTalents';
+import { s_Hero, s_HeroAbilities, s_HeroTalents } from '../../../api/state/heroes';
 import Hexagon from '../../components/hexagon/hexagon';
+import AbilityTooltip from './components/ability-tooltip';
+import HeroStrengthsChart from './components/hero-strengths-chart';
+import TalentTooltip from './components/talent-tooltip';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = useRecoilValue(s_Hero(props.hero!))!;

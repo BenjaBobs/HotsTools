@@ -2,14 +2,14 @@ import './hero-ban-column.scss';
 
 import { Row } from 'antd';
 import Avatar from 'antd/lib/avatar/avatar';
-import React from 'react';
+import { useRecoilValue } from 'recoil';
+
+import { StopOutlined } from '@ant-design/icons';
 
 import { GetHeroIcon } from '../../../api/HotsTalents';
-import { Hero } from '../../../api/state/hero-types';
-import { StopOutlined } from '@ant-design/icons';
-import Overlay from '../../components/overlay/overlay';
-import { useRecoilValue } from 'recoil';
 import { s_screenInterpolationRatio } from '../../../api/state/device';
+import { Hero } from '../../../api/state/hero-types';
+import Overlay from '../../components/overlay/overlay';
 
 export default function HeroBanColumn(props: { heroes: (Hero | undefined)[] }) {
   const sizeRatio = useRecoilValue(s_screenInterpolationRatio);

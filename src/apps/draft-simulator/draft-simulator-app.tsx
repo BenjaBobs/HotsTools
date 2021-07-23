@@ -1,5 +1,4 @@
 import { Avatar, Col, Row, Select } from 'antd';
-import React from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
 import { GetHeroIcon } from '../../api/HotsTalents';
@@ -13,15 +12,10 @@ import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
 import style from './draft-simulator.module.scss';
 import {
-  s_draftHistory,
-  s_draftMap,
-  s_draftPhases,
-  s_draftTeamBans,
-  s_draftTeamPicks,
-  s_draftType,
+    s_draftHistory, s_draftMap, s_draftPhases, s_draftTeamBans, s_draftTeamPicks, s_draftType,
+    usePickHero
 } from './draft-state';
 import { DraftType, Team } from './Types';
-import { usePickHero } from './draft-state';
 
 const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
@@ -33,7 +27,7 @@ function DraftSimulator() {
   const heroData = useRecoilValue(s_Heroes);
   const [actions, setActions] = useRecoilState(s_draftHistory);
   const phases = useRecoilValue(s_draftPhases);
-  const currentPhase = phases[actions.filter((x) => x.completed).length];
+  const currentPhase = phases[actions.filter(x => x.completed).length];
 
   const [draftType, setDraftType] = useRecoilState(s_draftType);
   const [draftMap, setDraftMap] = useRecoilState(s_draftMap);
@@ -51,13 +45,13 @@ function DraftSimulator() {
         <Col>
           <Select<DraftType>
             value={draftType}
-            onChange={(newDraftType) => {
+            onChange={newDraftType => {
               setDraftType(newDraftType);
               setActions([]);
             }}
             style={{ width: 100 }}
           >
-            {Object.values(DraftType).map((type) => (
+            {Object.values(DraftType).map(type => (
               <Select.Option key={type} value={type}>
                 {type}
               </Select.Option>
@@ -67,15 +61,15 @@ function DraftSimulator() {
         <Col>
           <Select
             value={draftMap.name}
-            onChange={(newDraftMapName) => {
-              const newMap = Maps.find((m) => m.name === newDraftMapName);
+            onChange={newDraftMapName => {
+              const newMap = Maps.find(m => m.name === newDraftMapName);
               if (newMap) {
                 setDraftMap(newMap);
               }
             }}
             style={{ width: 200 }}
           >
-            {Maps.map((m) => (
+            {Maps.map(m => (
               <Select.Option key={m.name} value={m.name}>
                 {m.name}
               </Select.Option>
@@ -120,7 +114,7 @@ function DraftSimulator() {
           <Row>
             <HeroSelectionColumn
               direction="ltr"
-              selectedHeroes={blueHeroes.map((h) => h.icon)}
+              selectedHeroes={blueHeroes.map(h => h.icon)}
             />
           </Row>
         </Col>
@@ -129,8 +123,8 @@ function DraftSimulator() {
             <DraftInfoPanel />
           </Row>
           <Row justify="center">
-            {heroData.map((hero) => {
-              const disabled = actions.some((x) => x.heroes.includes(hero));
+            {heroData.map(hero => {
+              const disabled = actions.some(x => x.heroes.includes(hero));
 
               return (
                 <Col
@@ -159,7 +153,7 @@ function DraftSimulator() {
           <Row justify="end">
             <HeroSelectionColumn
               direction="rtl"
-              selectedHeroes={redHeroes.map((h) => h.icon)}
+              selectedHeroes={redHeroes.map(h => h.icon)}
             />
           </Row>
         </Col>

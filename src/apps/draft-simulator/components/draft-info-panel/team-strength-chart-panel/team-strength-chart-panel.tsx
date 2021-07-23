@@ -1,6 +1,5 @@
 import { Col, Row } from 'antd';
 import useBreakpoint from 'antd/lib/grid/hooks/useBreakpoint';
-import React from 'react';
 
 import { Team } from '../../../Types';
 import TeamStrengthChart from './team-strength-chart';

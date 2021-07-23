@@ -1,14 +1,9 @@
-import { Hero } from '../../../../api/state/hero-types';
+import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart } from 'recharts';
 import { useRecoilValue } from 'recoil';
+
 import { s_deviceSize } from '../../../../api/state/device';
+import { Hero } from '../../../../api/state/hero-types';
 import { GetInterpolationRatioLinear } from '../../../../utils/MathUtils';
-import {
-  RadarChart,
-  PolarGrid,
-  PolarAngleAxis,
-  Radar,
-  PolarRadiusAxis,
-} from 'recharts';
 
 export default function HeroStrengthsChart(props: { hero: Hero }) {
   const [width] = useRecoilValue(s_deviceSize);

@@ -1,6 +1,5 @@
 import { Row } from 'antd';
 import Avatar from 'antd/lib/avatar/avatar';
-import React from 'react';
 import { useRecoilValue } from 'recoil';
 
 import { GetHeroIcon } from '../../../api/HotsTalents';

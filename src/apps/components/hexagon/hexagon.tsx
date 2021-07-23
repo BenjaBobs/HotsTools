@@ -1,6 +1,8 @@
-import React from 'react';
-import Overlay from '../overlay/overlay';
 import './hexagon.scss';
+
+import React from 'react';
+
+import Overlay from '../overlay/overlay';
 
 export default function Hexagon(props: {
   fallback?: string;

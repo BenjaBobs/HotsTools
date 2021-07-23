@@ -1,13 +1,15 @@
+import './AppHost.scss';
+
 import { Col, Layout, Result, Row, Typography } from 'antd';
 import ErrorBoundary from 'antd/lib/alert/ErrorBoundary';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
-import './AppHost.scss';
+
 import { LoadingOutlined } from '@ant-design/icons';
 
 import { s_apps, s_currentApp } from './apps/Apps';
-import Link from './Link';
 import Block from './apps/components/block/block';
+import Link from './Link';
 
 const { Header, Content } = Layout;
 const { Title } = Typography;

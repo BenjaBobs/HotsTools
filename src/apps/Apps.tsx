@@ -1,22 +1,25 @@
-import { atom, selector } from 'recoil';
+import { selector } from 'recoil';
 
-import { AppDefinition, ExtendedAppDefinition } from './AppDefinition';
-import OverviewApp from './overview/overview-app';
 import { s_urlPath } from '../api/state/routing';
-import GitHubApp from './GitHub-app';
-import DraftSimulatorApp from './draft-simulator/draft-simulator-app';
 import AboutApp from './about/about-app';
+import { AppDefinition, ExtendedAppDefinition } from './AppDefinition';
 import ChangeLogApp from './changelog/changelog-app';
+import DraftSimulatorApp from './draft-simulator/draft-simulator-app';
+import GitHubApp from './GitHub-app';
+import OverviewApp from './overview/overview-app';
 
-const s_rawApps = atom({
-  key: 'raw_apps',
-  default: [OverviewApp, DraftSimulatorApp, ChangeLogApp, AboutApp, GitHubApp],
-});
+const s_rawApps = [
+  OverviewApp,
+  DraftSimulatorApp,
+  ChangeLogApp,
+  AboutApp,
+  GitHubApp,
+];
 
 export const s_apps = selector({
   key: 'apps',
-  get: ({ get }) => {
-    const apps = get(s_rawApps);
+  get: () => {
+    const apps = s_rawApps;
 
     return __patchApps(apps);
 
@@ -78,8 +81,8 @@ export const s_currentApp = selector({
 });
 
 function matchPath(path: string, pattern: string) {
-  const pathParts = path.split('/');
-  const patternParts = pattern.split('/');
+  const pathParts = path.split('/').filter(part => !!part);
+  const patternParts = pattern.split('/').filter(part => !!part);
 
   if (pathParts.length !== patternParts.length) return { isMatch: false };
 

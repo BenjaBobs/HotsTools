@@ -1,6 +1,7 @@
 .link {
-  // let the contents define how to render
-  // this way links can wrap rows/columns all kind of stuff
-  // and not mess up the rendering
+  /* let the contents define how to render
+     this way links can wrap rows/columns all kind of stuff
+     and not mess up the rendering
+   */
   display: contents;
 }

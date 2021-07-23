@@ -1,13 +1,12 @@
 import { Col, Row } from 'antd';
 import Avatar from 'antd/lib/avatar/avatar';
-import React from 'react';
+import useBreakpoint from 'antd/lib/grid/hooks/useBreakpoint';
 import { useRecoilValue } from 'recoil';
 
 import { GetHeroIcon } from '../../../../../api/HotsTalents';
 import { s_suggestedHeroes, usePickHero } from '../../../draft-state';
 import { Team } from '../../../Types';
 import TeamStrengthChart from '../team-strength-chart-panel/team-strength-chart';
-import useBreakpoint from 'antd/lib/grid/hooks/useBreakpoint';
 
 export default function SuggestionsPanel() {
   const pickHero = usePickHero();

@@ -1,15 +1,6 @@
-import {
-  atom,
-  selector,
-  selectorFamily,
-  useRecoilValue,
-  useRecoilState,
-} from 'recoil';
+import { atom, selector, selectorFamily, useRecoilState, useRecoilValue } from 'recoil';
 
-import {
-  EmptyHeroStrengths,
-  HeroStrengths,
-} from '../../api/state/extend-hero-data';
+import { EmptyHeroStrengths, HeroStrengths } from '../../api/state/extend-hero-data';
 import { Hero } from '../../api/state/hero-types';
 import { s_Heroes } from '../../api/state/heroes';
 import { Maps } from '../../api/state/maps';
