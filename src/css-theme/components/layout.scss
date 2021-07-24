@@ -5,7 +5,7 @@
 
 .ant-layout-header {
   background: HSL(var(--bg-color-darkest));
-  height: 64px;
+  height: unset;
   border: none;
   border-bottom: 1px solid HSL(var(--bg-color));
 }

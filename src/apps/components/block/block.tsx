@@ -1,6 +1,6 @@
 import './block.scss';
 
-import React, { CSSProperties, PropsWithChildren, useMemo } from 'react';
+import { CSSProperties, PropsWithChildren, useMemo } from 'react';
 
 import useIntuitiveScreenSize, {
     ScreenSizeName, ScreenSizes
@@ -8,9 +8,10 @@ import useIntuitiveScreenSize, {
 
 type BlockProps = {
   // the form of the block
-  span?: number | [number, number];
   columns?: number;
   rows?: number;
+  baseColumns?: number;
+  baseRows?: number;
   width?: number | string;
   height?: number | string;
 
@@ -38,6 +39,7 @@ type BlockProps = {
         bottom?: number;
         left?: number;
       };
+  onClick?: () => any;
 };
 
 export type BlockSizeProps =
@@ -102,8 +104,9 @@ export default function Block(
       props.textColor,
       props.textAlign,
       props.columns,
-      props.span,
       props.rows,
+      props.baseColumns,
+      props.baseRows,
       props.gap,
       props.justify,
       props.align,
@@ -119,7 +122,7 @@ export default function Block(
   }
 
   return (
-    <div style={style} className={className}>
+    <div style={style} className={className} onClick={props.onClick}>
       {props.children}
     </div>
   );
@@ -142,9 +145,9 @@ function applyStyleFromProps(
       typeof props.height === 'number' ? props.height + 'rem' : props.height;
   if (props.hide !== undefined) styleObj['hide'] = +props.hide;
   if (props.columns) styleObj['--block-columns'] = props.columns;
-  if (props.columns) styleObj['--block-base-columns'] = props.columns;
+  if (props.baseColumns) styleObj['--block-base-columns'] = props.baseColumns;
   if (props.rows) styleObj['--block-rows'] = props.rows;
-  if (props.rows) styleObj['--block-base-rows'] = props.rows;
+  if (props.baseRows) styleObj['--block-base-rows'] = props.baseRows;
   if (props.gap) styleObj['--block-gap'] = props.gap + 'rem';
   if (props.padding) {
     if (typeof props.padding === 'number') {

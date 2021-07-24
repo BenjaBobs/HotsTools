@@ -21,7 +21,13 @@ export default function AppHost() {
   return (
     <Layout>
       <Header>
-        <Block columns={apps.length} align="center" gap={0.5}>
+        <Block
+          baseColumns={1}
+          tablet={{ baseColumns: 3 }}
+          laptop={{ baseColumns: Math.min(apps.length, 6) }}
+          align="center"
+          gap={0.5}
+        >
           {apps.map(app => (
             <Link
               key={app.absolutePath}

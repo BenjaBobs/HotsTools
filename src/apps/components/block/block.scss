@@ -13,8 +13,12 @@
   --block-text-align: initial;
 
   display: grid;
-  grid-template-columns: [start] repeat(var(--block-base-columns, 1), 1fr) [end];
-  grid-template-rows: [start] repeat(var(--block-base-rows, 1), 1fr) [end];
+  grid-template-columns:
+    [start] repeat(var(--block-base-columns, 1), 1fr)
+    [end];
+  grid-template-rows:
+    [start] repeat(var(--block-base-rows, 1), auto)
+    [end];
   grid-auto-flow: row;
   grid-gap: var(--block-gap);
   padding: var(--block-padding);
@@ -28,4 +32,5 @@
 
   background: var(--block-background);
   color: var(--block-text-color);
+  height: fit-content;
 }
