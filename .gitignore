@@ -23,5 +23,3 @@ dist
 dist-ssr
 *.local
 
-# remove when generating works
-**/generated
