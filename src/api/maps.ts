@@ -11,7 +11,7 @@ export const Maps: Map[] = [
   { name: 'Dragon Shire' },
   { name: 'Garden of Terror' },
   { name: 'Hanamura Temple' },
-  //   { name: 'Haunted Mines' },
+  //{ name: 'Haunted Mines' },
   { name: 'Infernal Shrines' },
   { name: 'Sky Temple' },
   { name: 'Tomb of the Spider Queen' },

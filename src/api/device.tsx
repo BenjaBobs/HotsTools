@@ -1,6 +1,6 @@
 import { atom, selector } from 'recoil';
 
-import { GetInterpolationRatioLinear } from '../../utils/MathUtils';
+import { GetInterpolationRatioLinear } from '../utils/MathUtils';
 
 export const s_deviceSize = atom({
   key: 's_deviceSize',

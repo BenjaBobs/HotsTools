@@ -1,12 +1,10 @@
 import { Avatar, Col, Row, Select } from 'antd';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
-import { GetHeroIcon } from '../../api/HotsTalents';
-import { s_Heroes } from '../../api/state/heroes';
-import { Maps } from '../../api/state/maps';
+import heroes from '../../api/heroes/heroes';
+import { Maps } from '../../api/maps';
 import { AppDefinition } from '../AppDefinition';
 import Orb from '../components/orb';
-import DraftInfoPanel from './components/draft-info-panel/draft-info-panel';
 import FlexSteps from './components/flex-steps';
 import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
@@ -24,7 +22,7 @@ const DraftSimulatorApp: AppDefinition = {
 };
 
 function DraftSimulator() {
-  const heroData = useRecoilValue(s_Heroes);
+  const heroData = heroes.all;
   const [actions, setActions] = useRecoilState(s_draftHistory);
   const phases = useRecoilValue(s_draftPhases);
   const currentPhase = phases[actions.filter(x => x.completed).length];
@@ -119,16 +117,17 @@ function DraftSimulator() {
           </Row>
         </Col>
         <Col span={18}>
-          <Row justify="center" style={{ paddingTop: 20, paddingBottom: 20 }}>
-            <DraftInfoPanel />
-          </Row>
+          <Row
+            justify="center"
+            style={{ paddingTop: 20, paddingBottom: 20 }}
+          ></Row>
           <Row justify="center">
             {heroData.map(hero => {
               const disabled = actions.some(x => x.heroes.includes(hero));
 
               return (
                 <Col
-                  key={hero.id}
+                  key={hero.nameNormalized}
                   onClick={() => {
                     pickHero(hero);
                   }}
@@ -139,7 +138,7 @@ function DraftSimulator() {
                       height: 60,
                       width: 60,
                     }}
-                    src={GetHeroIcon(hero.icon)}
+                    src={hero.icon}
                   />
                 </Col>
               );

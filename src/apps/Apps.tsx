@@ -1,6 +1,6 @@
 import { selector } from 'recoil';
 
-import { s_urlPath } from '../api/state/routing';
+import { s_urlPath } from '../api/routing';
 import AboutApp from './about/about-app';
 import { AppDefinition, ExtendedAppDefinition } from './AppDefinition';
 import ChangeLogApp from './changelog/changelog-app';
