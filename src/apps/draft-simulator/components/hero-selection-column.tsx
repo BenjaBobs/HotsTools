@@ -3,8 +3,7 @@ import './hero-selection-column.scss';
 import { Col } from 'antd';
 import { useRecoilValue } from 'recoil';
 
-import { GetHeroIcon } from '../../../api/HotsTalents';
-import { s_screenInterpolationRatio } from '../../../api/state/device';
+import { s_screenInterpolationRatio } from '../../../api/device';
 import Hexagon from '../../components/hexagon/hexagon';
 
 export default function HeroSelectionColumn(props: {
@@ -21,11 +20,11 @@ export default function HeroSelectionColumn(props: {
 
   return (
     <Col className={'hero-slot-bar ' + props.direction} style={style as any}>
-      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[0])} />
-      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[1])} />
-      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[2])} />
-      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[3])} />
-      <Hexagon fallback={'?'} src={GetHeroIcon(props.selectedHeroes[4])} />
+      <Hexagon fallback={'?'} src={props.selectedHeroes[0]} />
+      <Hexagon fallback={'?'} src={props.selectedHeroes[1]} />
+      <Hexagon fallback={'?'} src={props.selectedHeroes[2]} />
+      <Hexagon fallback={'?'} src={props.selectedHeroes[3]} />
+      <Hexagon fallback={'?'} src={props.selectedHeroes[4]} />
     </Col>
   );
 }

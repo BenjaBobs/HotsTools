@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 
-import { Talent } from '../../../../api/state/hero-types';
+import { Talent } from '../../../../api/heroes/heroes';
 import HotsTooltip from '../../../components/hots-tooltip/hots-tooltip';
 
 export default function TalentTooltip(props: { talent: Talent }) {
@@ -14,7 +14,7 @@ export default function TalentTooltip(props: { talent: Talent }) {
           <Col>({props.talent.type})</Col>
         </Row>
         <br />
-        <Row>{props.talent.description}</Row>
+        <Row>{props.talent.descriptionLong}</Row>
       </HotsTooltip>
     </div>
   );

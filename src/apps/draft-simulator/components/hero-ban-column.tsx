@@ -6,9 +6,8 @@ import { useRecoilValue } from 'recoil';
 
 import { StopOutlined } from '@ant-design/icons';
 
-import { GetHeroIcon } from '../../../api/HotsTalents';
-import { s_screenInterpolationRatio } from '../../../api/state/device';
-import { Hero } from '../../../api/state/hero-types';
+import { s_screenInterpolationRatio } from '../../../api/device';
+import { Hero } from '../../../api/heroes/heroes';
 import Overlay from '../../components/overlay/overlay';
 
 export default function HeroBanColumn(props: { heroes: (Hero | undefined)[] }) {
@@ -23,15 +22,15 @@ export default function HeroBanColumn(props: { heroes: (Hero | undefined)[] }) {
   return (
     <Row justify="center" className="hero-ban-column" style={style as any}>
       <Overlay>
-        <Avatar icon={'?'} src={GetHeroIcon(props.heroes[0]?.icon)} />
+        <Avatar icon={'?'} src={props.heroes[0]?.icon} />
         {props.heroes[0] && <StopOutlined />}
       </Overlay>
       <Overlay>
-        <Avatar icon={'?'} src={GetHeroIcon(props.heroes[1]?.icon)} />
+        <Avatar icon={'?'} src={props.heroes[1]?.icon} />
         {props.heroes[1] && <StopOutlined />}
       </Overlay>
       <Overlay>
-        <Avatar icon={'?'} src={GetHeroIcon(props.heroes[2]?.icon)} />
+        <Avatar icon={'?'} src={props.heroes[2]?.icon} />
         {props.heroes[2] && <StopOutlined />}
       </Overlay>
     </Row>

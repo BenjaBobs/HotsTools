@@ -1,5 +1,3 @@
-
-
 import { AppDefinition } from '../AppDefinition';
 import HeroDetailsPage from './pages/hero-details-page';
 import HeroOverviewPage from './pages/hero-overview-page';
