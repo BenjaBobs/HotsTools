@@ -245,6 +245,7 @@ const sonya: Hero = {
         cooldown: 30,
         charges: {
           chargesMax: 2,
+          chargesInitial: 0,
           chargeCost: 1,
           recastCooldown: 8
         },

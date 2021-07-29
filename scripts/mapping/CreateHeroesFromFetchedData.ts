@@ -18,18 +18,19 @@ function CreateHeroFromData(
   data: HTC_Hero,
   gameStrings: HTC_GameStrings
 ): Hero {
+  console.log(`Generating data for ${key}`);
   return {
     name: gameStrings.unit.name[key],
     nameNormalized: data.hyperlinkId.toLowerCase(),
     franchise: data.franchise,
     gender: data.gender,
-    size: data.radius,
+    size: data.radius ?? data.innerRadius ?? 0,
     movementSpeed: data.speed,
     health: data.life,
     energy: data.energy
       ? { ...data.energy, name: gameStrings.unit.energytype[key] }
       : undefined,
-    autoAttacks: data.weapons,
+    autoAttacks: data.weapons ?? [],
     icon: `https://heroespatchnotes.github.io/heroes-talents/images/heroes/${data.hyperlinkId.toLowerCase()}.png`,
     abilities: [
       ...data.abilities.trait.map(t =>
@@ -74,7 +75,7 @@ function CreateHeroFromData(
         } as Talent;
       });
     }),
-    //fullData: data,
+    // fullData: data,
   };
 }
 
@@ -115,9 +116,9 @@ function CreateAbilityFromData(
     charges: abilityData.charges
       ? ({
           chargesMax: abilityData.charges?.countMax ?? 1,
-          chargesInitial: abilityData.charges?.countStart,
+          chargesInitial: abilityData.charges?.countStart ?? 0,
           chargeCost: abilityData.charges?.countUse,
-          recastCooldown: abilityData.charges?.recastCooldown ?? cooldown,
+          recastCooldown: abilityData.charges?.recastCooldown || undefined,
         } as Charges)
       : undefined,
     category: category,

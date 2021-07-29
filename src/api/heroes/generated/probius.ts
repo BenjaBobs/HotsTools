@@ -79,8 +79,7 @@ const probius: Hero = {
       charges: {
         chargesMax: 2,
         chargesInitial: 2,
-        chargeCost: 1,
-        recastCooldown: 6
+        chargeCost: 1
       },
       category: "basic",
       type: "W",
@@ -156,8 +155,7 @@ const probius: Hero = {
         charges: {
           chargesMax: 2,
           chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: null
+          chargeCost: 1
         },
         category: "Talent",
         type: "W",
@@ -264,8 +262,7 @@ const probius: Hero = {
         charges: {
           chargesMax: 2,
           chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: null
+          chargeCost: 1
         },
         category: "Talent",
         type: "W",
@@ -396,8 +393,7 @@ const probius: Hero = {
         charges: {
           chargesMax: 2,
           chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: null
+          chargeCost: 1
         },
         category: "Talent",
         type: "W",
@@ -418,8 +414,7 @@ const probius: Hero = {
         charges: {
           chargesMax: 2,
           chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: null
+          chargeCost: 1
         },
         category: "Talent",
         type: "W",
@@ -440,8 +435,7 @@ const probius: Hero = {
         charges: {
           chargesMax: 2,
           chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: null
+          chargeCost: 1
         },
         category: "Talent",
         type: "W",
@@ -518,8 +512,7 @@ const probius: Hero = {
         charges: {
           chargesMax: 2,
           chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: null
+          chargeCost: 1
         },
         category: "Talent",
         type: "W",

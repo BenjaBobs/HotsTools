@@ -81,8 +81,8 @@ const dva: Hero = {
       cooldown: null,
       charges: {
         chargesMax: 100,
-        chargeCost: 100,
-        recastCooldown: null
+        chargesInitial: 0,
+        chargeCost: 100
       },
       category: "basic",
       type: "E",
@@ -257,8 +257,8 @@ const dva: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 100,
-          chargeCost: 100,
-          recastCooldown: null
+          chargesInitial: 0,
+          chargeCost: 100
         },
         category: "Talent",
         type: "E",

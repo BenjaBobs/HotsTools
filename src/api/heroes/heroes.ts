@@ -82,8 +82,8 @@ export type Ability = {
 export type Charges = {
   chargesMax: number;
   chargesInitial: number;
-  chargeCost: number;
-  recastCooldown: number;
+  chargeCost?: number;
+  recastCooldown?: number;
 };
 
 export type Talent = Ability & {

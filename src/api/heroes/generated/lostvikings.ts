@@ -5,6 +5,7 @@ const lostvikings: Hero = {
   nameNormalized: "lostvikings",
   franchise: "Classic",
   gender: "Male",
+  size: 0.75,
   movementSpeed: 20,
   health: {
     amount: 1,
@@ -12,6 +13,7 @@ const lostvikings: Hero = {
     regenRate: 0,
     regenScale: 0
   },
+  autoAttacks: [],
   icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/lostvikings.png",
   abilities: [
     {
@@ -88,8 +90,8 @@ const lostvikings: Hero = {
       cooldown: null,
       charges: {
         chargesMax: 5,
-        chargeCost: 1,
-        recastCooldown: null
+        chargesInitial: 0,
+        chargeCost: 1
       },
       category: "basic",
       type: "E",
@@ -177,8 +179,8 @@ const lostvikings: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 5,
-          chargeCost: 1,
-          recastCooldown: null
+          chargesInitial: 0,
+          chargeCost: 1
         },
         category: "Talent",
         type: "Active",

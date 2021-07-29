@@ -213,8 +213,7 @@ const guldan: Hero = {
         charges: {
           chargesMax: 2,
           chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 30
+          chargeCost: 1
         },
         category: "Talent",
         type: "Active",

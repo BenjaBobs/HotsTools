@@ -5,6 +5,7 @@ const gall: Hero = {
   nameNormalized: "gall",
   franchise: "Warcraft",
   gender: "Male",
+  size: 0,
   movementSpeed: 4.8398,
   health: {
     amount: 1,
@@ -12,6 +13,7 @@ const gall: Hero = {
     regenRate: 0,
     regenScale: 0
   },
+  autoAttacks: [],
   icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/gall.png",
   abilities: [
     {

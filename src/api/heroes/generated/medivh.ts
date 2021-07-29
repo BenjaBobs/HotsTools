@@ -498,8 +498,7 @@ const medivh: Hero = {
         charges: {
           chargesMax: 2,
           chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 10
+          chargeCost: 1
         },
         category: "Talent",
         type: "Active",

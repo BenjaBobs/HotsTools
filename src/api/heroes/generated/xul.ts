@@ -37,7 +37,7 @@ const xul: Hero = {
       cooldown: null,
       charges: {
         chargesMax: 3,
-        recastCooldown: null
+        chargesInitial: 0
       },
       category: "trait",
       type: "Trait",
@@ -239,7 +239,7 @@ const xul: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 3,
-          recastCooldown: null
+          chargesInitial: 0
         },
         category: "Talent",
         type: "Trait",

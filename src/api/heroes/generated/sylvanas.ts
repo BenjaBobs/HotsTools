@@ -232,8 +232,7 @@ const sylvanas: Hero = {
         charges: {
           chargesMax: 3,
           chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 12
+          chargeCost: 1
         },
         category: "Talent",
         type: "Active",

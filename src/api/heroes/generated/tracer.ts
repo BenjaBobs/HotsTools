@@ -93,8 +93,8 @@ const tracer: Hero = {
       cooldown: null,
       charges: {
         chargesMax: 100,
-        chargeCost: 100,
-        recastCooldown: null
+        chargesInitial: 0,
+        chargeCost: 100
       },
       category: "heroic",
       type: "Heroic",
@@ -206,8 +206,8 @@ const tracer: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 100,
-          chargeCost: 100,
-          recastCooldown: null
+          chargesInitial: 0,
+          chargeCost: 100
         },
         category: "Talent",
         type: "Heroic",
@@ -292,8 +292,8 @@ const tracer: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 100,
-          chargeCost: 100,
-          recastCooldown: null
+          chargesInitial: 0,
+          chargeCost: 100
         },
         category: "Talent",
         type: "Heroic",
@@ -313,8 +313,8 @@ const tracer: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 100,
-          chargeCost: 100,
-          recastCooldown: null
+          chargesInitial: 0,
+          chargeCost: 100
         },
         category: "Talent",
         type: "Heroic",
@@ -334,8 +334,8 @@ const tracer: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 100,
-          chargeCost: 100,
-          recastCooldown: null
+          chargesInitial: 0,
+          chargeCost: 100
         },
         category: "Talent",
         type: "Heroic",
@@ -542,8 +542,8 @@ const tracer: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 100,
-          chargeCost: 100,
-          recastCooldown: null
+          chargesInitial: 0,
+          chargeCost: 100
         },
         category: "Talent",
         type: "Heroic",

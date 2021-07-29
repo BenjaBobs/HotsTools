@@ -162,8 +162,7 @@ const maiev: Hero = {
         charges: {
           chargesMax: 1,
           chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: null
+          chargeCost: 1
         },
         category: "Talent",
         type: "Active",
@@ -432,8 +431,7 @@ const maiev: Hero = {
         charges: {
           chargesMax: 5,
           chargesInitial: 5,
-          chargeCost: 5,
-          recastCooldown: null
+          chargeCost: 5
         },
         category: "Talent",
         type: "Active",
@@ -451,8 +449,7 @@ const maiev: Hero = {
         charges: {
           chargesMax: 10,
           chargesInitial: 10,
-          chargeCost: 10,
-          recastCooldown: null
+          chargeCost: 10
         },
         category: "Talent",
         type: "Active",
@@ -470,8 +467,7 @@ const maiev: Hero = {
         charges: {
           chargesMax: 10,
           chargesInitial: 10,
-          chargeCost: 10,
-          recastCooldown: null
+          chargeCost: 10
         },
         category: "Talent",
         type: "Active",

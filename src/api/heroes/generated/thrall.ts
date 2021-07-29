@@ -282,6 +282,7 @@ const thrall: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 8,
+          chargesInitial: 0,
           chargeCost: 8,
           recastCooldown: 1
         },

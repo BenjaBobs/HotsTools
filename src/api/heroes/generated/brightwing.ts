@@ -175,6 +175,7 @@ const brightwing: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 4,
+          chargesInitial: 0,
           chargeCost: 1,
           recastCooldown: 0.25
         },

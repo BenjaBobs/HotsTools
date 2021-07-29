@@ -44,6 +44,7 @@ const dehaka: Hero = {
       cooldown: 5,
       charges: {
         chargesMax: 50,
+        chargesInitial: 0,
         recastCooldown: 1
       },
       category: "trait",
@@ -175,6 +176,7 @@ const dehaka: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 50,
+          chargesInitial: 0,
           recastCooldown: 1
         },
         category: "Talent",
@@ -231,6 +233,7 @@ const dehaka: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 50,
+          chargesInitial: 0,
           recastCooldown: 1
         },
         category: "Talent",
@@ -251,6 +254,7 @@ const dehaka: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 50,
+          chargesInitial: 0,
           recastCooldown: 1
         },
         category: "Talent",
@@ -398,6 +402,7 @@ const dehaka: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 50,
+          chargesInitial: 0,
           recastCooldown: 1
         },
         category: "Talent",
@@ -508,6 +513,7 @@ const dehaka: Hero = {
         cooldown: null,
         charges: {
           chargesMax: 50,
+          chargesInitial: 0,
           recastCooldown: 1
         },
         category: "Talent",

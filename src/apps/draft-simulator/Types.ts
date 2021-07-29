@@ -1,4 +1,4 @@
-import { Hero } from '../../api/state/hero-types';
+import { Hero } from '../../api/heroes/heroes';
 
 export enum Team {
   Blue = 'Blue',

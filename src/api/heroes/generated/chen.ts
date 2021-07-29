@@ -112,8 +112,7 @@ const chen: Hero = {
       charges: {
         chargesMax: 1,
         chargesInitial: 1,
-        chargeCost: 1,
-        recastCooldown: null
+        chargeCost: 1
       },
       category: "basic",
       type: "Q",
@@ -129,8 +128,7 @@ const chen: Hero = {
       charges: {
         chargesMax: 1,
         chargesInitial: 1,
-        chargeCost: 1,
-        recastCooldown: null
+        chargeCost: 1
       },
       category: "basic",
       type: "W",
@@ -146,8 +144,7 @@ const chen: Hero = {
       charges: {
         chargesMax: 1,
         chargesInitial: 1,
-        chargeCost: 1,
-        recastCooldown: null
+        chargeCost: 1
       },
       category: "basic",
       type: "E",

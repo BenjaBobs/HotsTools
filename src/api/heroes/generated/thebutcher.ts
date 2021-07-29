@@ -37,7 +37,7 @@ const thebutcher: Hero = {
       cooldown: null,
       charges: {
         chargesMax: 65535,
-        recastCooldown: null
+        chargesInitial: 0
       },
       category: "trait",
       type: "Trait",
