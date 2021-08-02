@@ -516,7 +516,11 @@ const raynor: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 43.69114877589453,
+    damageSustainedPhysical: 58.32201086956522
+  }
 };
       
 export default raynor;

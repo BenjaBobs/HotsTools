@@ -525,7 +525,11 @@ const probius: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 37.96610169491525,
+    damageSustainedPhysical: 11.956521739130432
+  }
 };
       
 export default probius;

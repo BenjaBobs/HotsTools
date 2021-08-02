@@ -1,3 +1,5 @@
+import '../../src/utils/ArrayExtensions';
+
 import { Ability, Charges, Hero, Talent } from '../../src/api/heroes/heroes';
 import { HTC_GameStrings } from '../fetching/HeroesToolChest_GameStrings';
 import { HTC_Ability, HTC_Hero } from '../fetching/HeroesToolChest_HeroData';
@@ -10,6 +12,8 @@ export function CreateHeroesFromFetchedData(
     CreateHeroFromData(key, data, gameStrings)
   );
 
+  NormalizeHeroStats(heroes);
+
   return heroes;
 }
 
@@ -19,7 +23,8 @@ function CreateHeroFromData(
   gameStrings: HTC_GameStrings
 ): Hero {
   console.log(`Generating data for ${key}`);
-  return {
+
+  const hero = {
     name: gameStrings.unit.name[key],
     nameNormalized: data.hyperlinkId.toLowerCase(),
     franchise: data.franchise,
@@ -33,18 +38,18 @@ function CreateHeroFromData(
     autoAttacks: data.weapons ?? [],
     icon: `https://heroespatchnotes.github.io/heroes-talents/images/heroes/${data.hyperlinkId.toLowerCase()}.png`,
     abilities: [
-      ...data.abilities.trait.map(t =>
+      ...(data.abilities.trait?.map(t =>
         CreateAbilityFromData(gameStrings, 'trait', t)
-      ),
-      ...data.abilities.mount.map(t =>
+      ) ?? []),
+      ...(data.abilities.mount?.map(t =>
         CreateAbilityFromData(gameStrings, 'mount', t)
-      ),
-      ...data.abilities.basic.map(b =>
+      ) ?? []),
+      ...(data.abilities.basic?.map(b =>
         CreateAbilityFromData(gameStrings, 'basic', b)
-      ),
-      ...data.abilities.heroic.map(h =>
+      ) ?? []),
+      ...(data.abilities.heroic?.map(h =>
         CreateAbilityFromData(gameStrings, 'heroic', h)
-      ),
+      ) ?? []),
       ...Object.values(data?.subAbilities ?? {})
         .flatMap(x =>
           Object.values(x).flatMap(y =>
@@ -63,20 +68,39 @@ function CreateHeroFromData(
           )
         ),
     ].filter(ability => ability.descriptionShort),
-    talents: Object.entries(data.talents).map(([tier, talents]) => {
-      return talents.map(talent => {
-        return {
-          ...CreateAbilityFromData(gameStrings, 'Talent', talent),
-          order: talent.sort,
-          tier: tier,
-          linkedAbilityIds: talent.abilityTalentLinkIds,
-          prerequisiteTalentIds: talent.prerequisiteTalentIds,
-          isQuest: talent.isQuest,
-        } as Talent;
-      });
-    }),
+    talents: data.talents
+      ? Object.entries(data.talents).map(([tier, talents]) => {
+          return talents.map(talent => {
+            return {
+              ...CreateAbilityFromData(gameStrings, 'Talent', talent),
+              order: talent.sort,
+              tier: tier,
+              linkedAbilityIds: talent.abilityTalentLinkIds,
+              prerequisiteTalentIds: talent.prerequisiteTalentIds,
+              isQuest: talent.isQuest,
+            } as Talent;
+          });
+        })
+      : [],
+    heroUnits: data.heroUnits
+      ? data.heroUnits.map(unit => {
+          const unitKey = Object.keys(unit)[0];
+          return CreateHeroFromData(unitKey, unit[unitKey], gameStrings);
+        })
+      : undefined,
     // fullData: data,
+  } as any as Hero;
+
+  hero.analysis = {
+    tankiness: (hero.health.amount / 1000) * hero.health.scale * 100,
+    damageSustainedPhysical:
+      hero.autoAttacks.avgOf(
+        attack =>
+          (attack.damage * attack.damageScale * attack.range) / attack.period
+      ) ?? 0,
   };
+
+  return hero;
 }
 
 function CreateAbilityFromData(
@@ -126,4 +150,23 @@ function CreateAbilityFromData(
     icon: `https://heroespatchnotes.github.io/heroes-talents/images/talents/${abilityData.icon}`,
     isPassive: abilityData.isActive === false || abilityData.isPassive === true,
   };
+}
+
+function NormalizeHeroStats(heroes: Hero[]) {
+  const statKeys = Object.keys(heroes[0].analysis);
+
+  const maxStats = statKeys.reduce(
+    (obj: { [key: string]: number }, statKey) => {
+      obj[statKey] = heroes.maxOf(h => (h.analysis as any)[statKey])!;
+      return obj;
+    },
+    {}
+  );
+
+  for (const hero of heroes) {
+    const analysis: any = hero.analysis;
+    for (const category of Object.keys(maxStats)) {
+      analysis[category] = (analysis[category] / maxStats[category]) * 100 || 0;
+    }
+  }
 }

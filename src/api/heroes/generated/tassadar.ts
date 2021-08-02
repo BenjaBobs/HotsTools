@@ -501,7 +501,11 @@ const tassadar: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 49.717514124293785,
+    damageSustainedPhysical: 39.565217391304344
+  }
 };
       
 export default tassadar;

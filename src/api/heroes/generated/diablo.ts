@@ -488,7 +488,11 @@ const diablo: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 85.12241054613936,
+    damageSustainedPhysical: 13.586956521739129
+  }
 };
       
 export default diablo;

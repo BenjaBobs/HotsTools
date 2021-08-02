@@ -553,7 +553,11 @@ const junkrat: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 42.93785310734463,
+    damageSustainedPhysical: 71.7391304347826
+  }
 };
       
 export default junkrat;

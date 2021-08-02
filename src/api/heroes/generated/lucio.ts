@@ -498,7 +498,11 @@ const lucio: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 43.45009416195856,
+    damageSustainedPhysical: 10.999999999999998
+  }
 };
       
 export default lucio;

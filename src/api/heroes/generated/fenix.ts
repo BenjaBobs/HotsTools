@@ -473,7 +473,11 @@ const fenix: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 34.3502824858757,
+    damageSustainedPhysical: 33.41384863123993
+  }
 };
       
 export default fenix;

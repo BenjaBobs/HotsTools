@@ -515,7 +515,11 @@ const tyrande: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 45.52919020715631,
+    damageSustainedPhysical: 47.826086956521735
+  }
 };
       
 export default tyrande;

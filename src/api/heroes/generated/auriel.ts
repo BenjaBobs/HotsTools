@@ -477,7 +477,11 @@ const auriel: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 51.2241054613936,
+    damageSustainedPhysical: 47.82608695652173
+  }
 };
       
 export default auriel;

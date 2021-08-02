@@ -509,7 +509,11 @@ const zagara: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 47.45762711864406,
+    damageSustainedPhysical: 63.51902173913042
+  }
 };
       
 export default zagara;

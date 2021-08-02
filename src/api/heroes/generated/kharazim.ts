@@ -483,7 +483,11 @@ const kharazim: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 61.077212806026374,
+    damageSustainedPhysical: 24.34782608695652
+  }
 };
       
 export default kharazim;

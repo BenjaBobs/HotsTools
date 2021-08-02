@@ -24,8 +24,8 @@ export default heroes;
 export type Hero = {
   name: string;
   nameNormalized: string;
-  franchise: Franchise;
-  gender: 'Male' | 'Female' | 'Neutral';
+  franchise?: Franchise;
+  gender?: 'Male' | 'Female' | 'Neutral';
   size: number;
   movementSpeed: number;
   health: {
@@ -43,6 +43,8 @@ export type Hero = {
   icon: string;
   abilities: Ability[];
   talents: Talent[][];
+  heroUnits?: Hero[];
+  analysis: HeroAnalysis;
 };
 
 export type Franchise =
@@ -92,4 +94,9 @@ export type Talent = Ability & {
   linkedAbilityIds?: string[];
   prerequisiteTalentIds?: string[];
   isQuest?: boolean;
+};
+
+export type HeroAnalysis = {
+  tankiness: number;
+  damageSustainedPhysical: number;
 };

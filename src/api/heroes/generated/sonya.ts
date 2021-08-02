@@ -455,7 +455,11 @@ const sonya: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 73.82297551789078,
+    damageSustainedPhysical: 17.1195652173913
+  }
 };
       
 export default sonya;

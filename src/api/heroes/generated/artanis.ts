@@ -525,7 +525,11 @@ const artanis: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 76.08286252354048,
+    damageSustainedPhysical: 15.081521739130435
+  }
 };
       
 export default artanis;

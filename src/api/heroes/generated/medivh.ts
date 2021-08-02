@@ -508,7 +508,11 @@ const medivh: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 49.83050847457628,
+    damageSustainedPhysical: 53.14009661835749
+  }
 };
       
 export default medivh;

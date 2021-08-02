@@ -529,7 +529,11 @@ const stukov: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 55.74387947269304,
+    damageSustainedPhysical: 28.3695652173913
+  }
 };
       
 export default stukov;

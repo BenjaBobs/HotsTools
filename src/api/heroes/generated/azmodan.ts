@@ -495,7 +495,11 @@ const azmodan: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 74.25084745762712,
+    damageSustainedPhysical: 50.81521739130434
+  }
 };
       
 export default azmodan;

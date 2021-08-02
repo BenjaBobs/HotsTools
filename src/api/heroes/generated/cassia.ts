@@ -529,7 +529,11 @@ const cassia: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 50.018832391713744,
+    damageSustainedPhysical: 47.10144927536231
+  }
 };
       
 export default cassia;

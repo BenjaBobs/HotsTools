@@ -10,6 +10,7 @@
 @import 'components/recharts.scss';
 @import 'components/timeline.scss';
 @import 'components/ul.scss';
+@import 'components/input.scss';
 
 :root {
   --main-color-h: 211;
@@ -42,4 +43,12 @@
 
   /* named colors */
   --text-color: var(--fg-color);
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+#root {
+  overflow-y: hidden;
 }

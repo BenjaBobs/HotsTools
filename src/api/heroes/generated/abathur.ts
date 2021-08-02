@@ -515,7 +515,73 @@ const abathur: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  heroUnits: [
+    {
+      name: "Symbiote",
+      nameNormalized: "abathursymbiote",
+      size: 1.5,
+      movementSpeed: 0.0117,
+      health: {
+        amount: 1,
+        scale: 0,
+        regenRate: 0,
+        regenScale: 0
+      },
+      autoAttacks: [],
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/abathursymbiote.png",
+      abilities: [
+        {
+          id: "AbathurMonstrosityDeepTunnel",
+          name: "Deep Tunnel",
+          descriptionShort: "Tunnel to a location.",
+          descriptionLong: "Order your Evolved Monstrosity to quickly tunnel to a visible location",
+          cooldown: 80,
+          category: "mount",
+          type: "Z",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_mount.png",
+          isPassive: false
+        },
+        {
+          id: "AbathurSymbioteStab",
+          name: "Stab",
+          descriptionShort: "Shoots a spike that deals damage to the first enemy it contacts.",
+          descriptionLong: "Shoots a spike towards target area that deals 119 (+4% / level) damage to the first enemy it contacts.",
+          cooldown: 3,
+          charges: {
+            chargesMax: 2,
+            chargesInitial: 2,
+            chargeCost: 1,
+            recastCooldown: 1
+          },
+          category: "basic",
+          type: "Q",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_stab.png",
+          isPassive: false
+        },
+        {
+          id: "AbathurSymbioteSpikeBurst",
+          name: "Spike Burst",
+          descriptionShort: "Damage nearby enemies",
+          descriptionLong: "Deals 120 (+4% / level) damage to nearby enemies.",
+          cooldown: 6,
+          category: "basic",
+          type: "W",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_spikeburst.png",
+          isPassive: false
+        }
+      ],
+      talents: [],
+      analysis: {
+        tankiness: 0,
+        damageSustainedPhysical: 0
+      }
+    }
+  ],
+  analysis: {
+    tankiness: 20.640301318267422,
+    damageSustainedPhysical: 4.037267080745342
+  }
 };
       
 export default abathur;

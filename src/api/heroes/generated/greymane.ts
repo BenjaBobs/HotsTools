@@ -519,7 +519,11 @@ const greymane: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 63.593220338983045,
+    damageSustainedPhysical: 56.30434782608694
+  }
 };
       
 export default greymane;

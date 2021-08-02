@@ -484,7 +484,11 @@ const kelthuzad: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 43.54048964218456,
+    damageSustainedPhysical: 43.04347826086956
+  }
 };
       
 export default kelthuzad;

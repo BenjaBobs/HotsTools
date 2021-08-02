@@ -472,7 +472,11 @@ const imperius: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 71.56308851224105,
+    damageSustainedPhysical: 22.101449275362313
+  }
 };
       
 export default imperius;

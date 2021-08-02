@@ -532,7 +532,11 @@ const valeera: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 61.67984934086629,
+    damageSustainedPhysical: 21.467391304347824
+  }
 };
       
 export default valeera;

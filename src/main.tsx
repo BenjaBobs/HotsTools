@@ -1,4 +1,5 @@
 import './main.scss';
+import './utils/ArrayExtensions';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

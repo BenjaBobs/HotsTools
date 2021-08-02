@@ -512,7 +512,11 @@ const ltmorales: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 46.55367231638417,
+    damageSustainedPhysical: 49.619565217391305
+  }
 };
       
 export default ltmorales;

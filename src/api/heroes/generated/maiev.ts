@@ -477,7 +477,11 @@ const maiev: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 60.89642184557439,
+    damageSustainedPhysical: 26.26811594202898
+  }
 };
       
 export default maiev;

@@ -1,13 +1,15 @@
-import { Avatar, Col, Row, Select } from 'antd';
+import { Col, Row, Select } from 'antd';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
-import heroes from '../../api/heroes/heroes';
 import { Maps } from '../../api/maps';
 import { AppDefinition } from '../AppDefinition';
-import Orb from '../components/orb';
+import HeroPicker from '../components/hero-picker/hero-picker';
+import Orb from '../components/orb/orb';
+import DraftPanels from './components/draft-panels';
 import FlexSteps from './components/flex-steps';
 import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
+import HeroesPanel from './components/panels/heroes-panel';
 import style from './draft-simulator.module.scss';
 import {
     s_draftHistory, s_draftMap, s_draftPhases, s_draftTeamBans, s_draftTeamPicks, s_draftType,
@@ -22,7 +24,6 @@ const DraftSimulatorApp: AppDefinition = {
 };
 
 function DraftSimulator() {
-  const heroData = heroes.all;
   const [actions, setActions] = useRecoilState(s_draftHistory);
   const phases = useRecoilValue(s_draftPhases);
   const currentPhase = phases[actions.filter(x => x.completed).length];
@@ -117,32 +118,8 @@ function DraftSimulator() {
           </Row>
         </Col>
         <Col span={18}>
-          <Row
-            justify="center"
-            style={{ paddingTop: 20, paddingBottom: 20 }}
-          ></Row>
-          <Row justify="center">
-            {heroData.map(hero => {
-              const disabled = actions.some(x => x.heroes.includes(hero));
-
-              return (
-                <Col
-                  key={hero.nameNormalized}
-                  onClick={() => {
-                    pickHero(hero);
-                  }}
-                >
-                  <Avatar
-                    className={'outline ' + (!disabled && 'hoverable')}
-                    style={{
-                      height: 60,
-                      width: 60,
-                    }}
-                    src={hero.icon}
-                  />
-                </Col>
-              );
-            })}
+          <Row justify="center" style={{ paddingTop: 20, paddingBottom: 20 }}>
+            <DraftPanels />
           </Row>
         </Col>
         <Col span={3}>

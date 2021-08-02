@@ -499,7 +499,11 @@ const qhira: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 60.263653483992464,
+    damageSustainedPhysical: 24.456521739130434
+  }
 };
       
 export default qhira;

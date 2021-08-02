@@ -471,7 +471,11 @@ const illidan: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 51.9774011299435,
+    damageSustainedPhysical: 19.26877470355731
+  }
 };
       
 export default illidan;

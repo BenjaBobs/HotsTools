@@ -559,7 +559,11 @@ const alarak: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 58.75706214689266,
+    damageSustainedPhysical: 29.352522490555007
+  }
 };
       
 export default alarak;

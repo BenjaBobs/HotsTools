@@ -513,7 +513,11 @@ const chromie: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 41.88323917137476,
+    damageSustainedPhysical: 62.39130434782608
+  }
 };
       
 export default chromie;

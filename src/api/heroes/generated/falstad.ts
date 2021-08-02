@@ -497,7 +497,11 @@ const falstad: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 41.12994350282486,
+    damageSustainedPhysical: 88.81987577639751
+  }
 };
       
 export default falstad;

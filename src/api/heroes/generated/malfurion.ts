@@ -495,7 +495,11 @@ const malfurion: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 45.951035781544256,
+    damageSustainedPhysical: 39.85507246376811
+  }
 };
       
 export default malfurion;

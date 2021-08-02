@@ -1,4 +1,4 @@
-import { Card, Col, Row, Timeline } from 'antd';
+import { Card, Col, Row, Timeline, Typography } from 'antd';
 import React from 'react';
 
 import { AppDefinition } from '../AppDefinition';
@@ -15,16 +15,19 @@ export default ChangeLogApp;
 
 function ChangeLogPage() {
   return (
-    <Row style={{ paddingTop: 16 }}>
+    <Row style={{ paddingTop: 16 }} justify="center">
       <Col xs={24} lg={{ span: 16 }}>
         <Timeline mode="left" style={{ width: '100%' }}>
           {changeLog.map((item, idx) => (
-            <Timeline.Item
-              style={{ paddingBottom: 40 }}
-              key={idx}
-              label={item.date.toDateString()}
-            >
-              <Card style={{ width: '80%', padding: 16, paddingBottom: 16 }}>
+            <Timeline.Item style={{ paddingBottom: 60 }} key={idx}>
+              <Card
+                style={{ padding: 16, paddingBottom: 16 }}
+                title={
+                  <Typography.Title level={2}>
+                    {item.date.toDateString()}
+                  </Typography.Title>
+                }
+              >
                 <Block>
                   <RenderCategory name="Added" data={item.added} />
                   <RenderCategory name="Changed" data={item.changed} />

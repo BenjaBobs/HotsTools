@@ -516,7 +516,11 @@ const zeratul: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 48.873822975517896,
+    damageSustainedPhysical: 17.119565217391305
+  }
 };
       
 export default zeratul;

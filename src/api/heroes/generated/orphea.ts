@@ -510,7 +510,11 @@ const orphea: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 45.951035781544256,
+    damageSustainedPhysical: 63.14053726857166
+  }
 };
       
 export default orphea;

@@ -582,7 +582,11 @@ const lunara: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 43.08851224105461,
+    damageSustainedPhysical: 38.586956521739125
+  }
 };
       
 export default lunara;

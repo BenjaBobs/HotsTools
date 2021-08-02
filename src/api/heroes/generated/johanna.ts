@@ -461,7 +461,11 @@ const johanna: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 79.09604519774011,
+    damageSustainedPhysical: 14.673913043478256
+  }
 };
       
 export default johanna;

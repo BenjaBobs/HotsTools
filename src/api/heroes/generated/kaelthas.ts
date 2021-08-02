@@ -511,7 +511,11 @@ const kaelthas: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 45.80037664783427,
+    damageSustainedPhysical: 43.17632850241546
+  }
 };
       
 export default kaelthas;

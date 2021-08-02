@@ -560,7 +560,11 @@ const tychus: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 58.00376647834275,
+    damageSustainedPhysical: 97.82608695652173
+  }
 };
       
 export default tychus;

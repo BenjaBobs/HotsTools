@@ -520,7 +520,11 @@ const valla: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 40.376647834274955,
+    damageSustainedPhysical: 74.7282608695652
+  }
 };
       
 export default valla;

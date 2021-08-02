@@ -468,7 +468,11 @@ const anubarak: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 64.7834274952919,
+    damageSustainedPhysical: 13.206521739130434
+  }
 };
       
 export default anubarak;

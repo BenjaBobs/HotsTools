@@ -447,7 +447,11 @@ const murky: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 21.99623352165725,
+    damageSustainedPhysical: 10.190217391304348
+  }
 };
       
 export default murky;

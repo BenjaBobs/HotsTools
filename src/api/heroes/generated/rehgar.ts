@@ -503,7 +503,11 @@ const rehgar: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 60.263653483992464,
+    damageSustainedPhysical: 21.603260869565215
+  }
 };
       
 export default rehgar;

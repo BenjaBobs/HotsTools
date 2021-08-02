@@ -539,7 +539,11 @@ const zarya: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 69.06214689265536,
+    damageSustainedPhysical: 39.13043478260869
+  }
 };
       
 export default zarya;

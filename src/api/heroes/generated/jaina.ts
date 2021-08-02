@@ -484,7 +484,11 @@ const jaina: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 41.12994350282486,
+    damageSustainedPhysical: 35.8695652173913
+  }
 };
       
 export default jaina;

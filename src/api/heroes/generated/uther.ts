@@ -506,7 +506,11 @@ const uther: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 59.51035781544256,
+    damageSustainedPhysical: 8.152173913043477
+  }
 };
       
 export default uther;

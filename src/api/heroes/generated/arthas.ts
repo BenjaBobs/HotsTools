@@ -491,7 +491,11 @@ const arthas: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 86.17702448210922,
+    damageSustainedPhysical: 20.652173913043477
+  }
 };
       
 export default arthas;

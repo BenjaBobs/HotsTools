@@ -497,7 +497,11 @@ const nazeebo: Hero = {
         isQuest: true
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 45.258003766478346,
+    damageSustainedPhysical: 58.45410628019323
+  }
 };
       
 export default nazeebo;

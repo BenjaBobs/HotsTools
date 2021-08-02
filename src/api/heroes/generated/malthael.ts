@@ -485,7 +485,11 @@ const malthael: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 59.1186440677966,
+    damageSustainedPhysical: 12.154150197628457
+  }
 };
       
 export default malthael;

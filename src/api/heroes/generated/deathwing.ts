@@ -533,7 +533,11 @@ const deathwing: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 82.86252354048965,
+    damageSustainedPhysical: 28.07971014492753
+  }
 };
       
 export default deathwing;

@@ -483,7 +483,11 @@ const gall: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 0,
+    damageSustainedPhysical: 0
+  }
 };
       
 export default gall;

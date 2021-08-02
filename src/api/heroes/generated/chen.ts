@@ -546,7 +546,112 @@ const chen: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  heroUnits: [
+    {
+      name: "Chen Storm",
+      nameNormalized: "herochenstorm",
+      size: 0.625,
+      movementSpeed: 4.8398,
+      health: {
+        amount: 1731,
+        scale: 0.04,
+        regenRate: 0,
+        regenScale: 0
+      },
+      energy: {
+        amount: 500,
+        regenRate: 3,
+        name: "Mana"
+      },
+      autoAttacks: [
+        {
+          nameId: "ChenStormHeroWeapon",
+          range: 9.75,
+          period: 0.8,
+          damage: 59,
+          damageScale: 0.04
+        }
+      ],
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/herochenstorm.png",
+      abilities: [],
+      talents: [],
+      analysis: {
+        tankiness: 6.924000000000001,
+        damageSustainedPhysical: 28.762499999999996
+      }
+    },
+    {
+      name: "Chen Earth",
+      nameNormalized: "herochenearth",
+      size: 0.8125,
+      movementSpeed: 4.8398,
+      health: {
+        amount: 1731,
+        scale: 0.04,
+        regenRate: 0,
+        regenScale: 0
+      },
+      energy: {
+        amount: 500,
+        regenRate: 3,
+        name: "Mana"
+      },
+      autoAttacks: [
+        {
+          nameId: "ChenEarthHeroWeapon",
+          range: 1,
+          period: 1.5,
+          damage: 37,
+          damageScale: 0.04
+        }
+      ],
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/herochenearth.png",
+      abilities: [],
+      talents: [],
+      analysis: {
+        tankiness: 6.924000000000001,
+        damageSustainedPhysical: 0.9866666666666667
+      }
+    },
+    {
+      name: "Chen Fire",
+      nameNormalized: "herochenfire",
+      size: 0.625,
+      movementSpeed: 4.8398,
+      health: {
+        amount: 1731,
+        scale: 0.04,
+        regenRate: 0,
+        regenScale: 0
+      },
+      energy: {
+        amount: 500,
+        regenRate: 3,
+        name: "Mana"
+      },
+      autoAttacks: [
+        {
+          nameId: "ChenFireHeroWeapon",
+          range: 1,
+          period: 0.6,
+          damage: 17,
+          damageScale: 0.04
+        }
+      ],
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/herochenfire.png",
+      abilities: [],
+      talents: [],
+      analysis: {
+        tankiness: 6.924000000000001,
+        damageSustainedPhysical: 1.1333333333333335
+      }
+    }
+  ],
+  analysis: {
+    tankiness: 74.51600753295668,
+    damageSustainedPhysical: 21.739130434782606
+  }
 };
       
 export default chen;

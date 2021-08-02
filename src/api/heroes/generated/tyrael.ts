@@ -480,7 +480,11 @@ const tyrael: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 75.84180790960453,
+    damageSustainedPhysical: 15.896739130434781
+  }
 };
       
 export default tyrael;

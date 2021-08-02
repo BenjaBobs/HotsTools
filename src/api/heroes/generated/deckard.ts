@@ -498,7 +498,11 @@ const deckard: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 53.634651600753294,
+    damageSustainedPhysical: 9.33794466403162
+  }
 };
       
 export default deckard;

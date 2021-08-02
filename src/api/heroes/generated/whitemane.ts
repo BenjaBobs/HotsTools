@@ -474,7 +474,11 @@ const whitemane: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 42.18455743879473,
+    damageSustainedPhysical: 37.065217391304344
+  }
 };
       
 export default whitemane;

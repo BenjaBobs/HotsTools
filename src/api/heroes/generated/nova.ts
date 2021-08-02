@@ -529,7 +529,11 @@ const nova: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 39.1713747645951,
+    damageSustainedPhysical: 74.18478260869564
+  }
 };
       
 export default nova;

@@ -470,7 +470,11 @@ const zuljin: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 56.49717514124294,
+    damageSustainedPhysical: 70.24456521739128
+  }
 };
       
 export default zuljin;

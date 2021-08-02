@@ -517,7 +517,11 @@ const xul: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 62.674199623352166,
+    damageSustainedPhysical: 18.58993091068484
+  }
 };
       
 export default xul;

@@ -470,7 +470,11 @@ const hogger: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 68.09792843691149,
+    damageSustainedPhysical: 23.715415019762844
+  }
 };
       
 export default hogger;

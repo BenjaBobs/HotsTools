@@ -495,7 +495,11 @@ const blaze: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 87.38229755178907,
+    damageSustainedPhysical: 26.902173913043477
+  }
 };
       
 export default blaze;

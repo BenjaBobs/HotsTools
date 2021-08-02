@@ -521,7 +521,11 @@ const mei: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 80.60263653483992,
+    damageSustainedPhysical: 36.68478260869565
+  }
 };
       
 export default mei;

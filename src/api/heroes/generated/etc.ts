@@ -489,7 +489,11 @@ const etc: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 67.79661016949152,
+    damageSustainedPhysical: 20.176630434782602
+  }
 };
       
 export default etc;

@@ -483,7 +483,11 @@ const ana: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 48.150659133709986,
+    damageSustainedPhysical: 28.26086956521739
+  }
 };
       
 export default ana;

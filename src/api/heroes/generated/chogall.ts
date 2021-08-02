@@ -459,7 +459,11 @@ const chogall: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 100,
+    damageSustainedPhysical: 21.677371541501973
+  }
 };
       
 export default chogall;

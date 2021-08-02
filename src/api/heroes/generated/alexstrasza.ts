@@ -472,7 +472,121 @@ const alexstrasza: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  heroUnits: [
+    {
+      name: "Alexstrasza",
+      nameNormalized: "heroalexstraszadragon",
+      size: 1.25,
+      movementSpeed: 4.8398,
+      health: {
+        amount: 1698,
+        scale: 0.04,
+        regenRate: 3.539,
+        regenScale: 0.04
+      },
+      energy: {
+        amount: 500,
+        regenRate: 3,
+        name: "Mana"
+      },
+      autoAttacks: [
+        {
+          nameId: "AlexstraszaDragonConeWeapon",
+          range: 9,
+          period: 1.25,
+          damage: 143,
+          damageScale: 0.04
+        }
+      ],
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/heroalexstraszadragon.png",
+      abilities: [
+        {
+          id: "AlexstraszaDragonqueenDragonFormPassive",
+          name: "Dragonqueen",
+          descriptionShort: "Transform into a dragon aspect with empowered Abilities",
+          descriptionLong: "Alexstrasza has transformed into a powerful dragon aspect, gaining 500 (+4% / level) Health, resistance to disabling effects, and empowered Basic Attacks and Abilities.",
+          cooldown: null,
+          category: "trait",
+          type: "Trait",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_dragon_queen.png",
+          isPassive: true
+        },
+        {
+          id: "AlexstraszaBreathOfLife",
+          name: "Breath of Life",
+          descriptionShort: "Heal an allied Hero",
+          descriptionLong: "Heal an allied Hero for 20% of Alexstrasza's current Health.",
+          cooldown: 3,
+          category: "basic",
+          type: "Q",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_breath_of_life.png",
+          isPassive: false
+        },
+        {
+          id: "AlexstraszaPreservation",
+          name: "Preservation",
+          descriptionShort: "Heal allied Heroes in an area",
+          descriptionLong: "Plant a seed of healing that blooms after 3 seconds, healing nearby allied Heroes for 30% of their maximum Health.",
+          cooldown: 16,
+          category: "basic",
+          type: "W",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_preservation.png",
+          isPassive: false
+        },
+        {
+          id: "AlexstraszaWingBuffet",
+          name: "Wing Buffet",
+          descriptionShort: "Damage, Knockback, and Slow enemies",
+          descriptionLong: "Deal 150 (+4% / level) damage to enemies in an area, knocking them back and Slowing them by 50% for 3 seconds.",
+          cooldown: 4,
+          category: "basic",
+          type: "E",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_wing_buffet.png",
+          isPassive: false
+        },
+        {
+          id: "AlexstraszaLifebinder",
+          name: "Life-Binder",
+          descriptionShort: "Link Alexstrasza's Health with an ally",
+          descriptionLong: "Bind Alexstrasza's life force with an allied Hero. Both her and her target are healed for 480 (+4% / level) Health over 2 seconds. Afterwards, the Hero with a lower percentage of Health is healed to the same Health percentage as the other Hero.",
+          cost: {
+            type: "Mana",
+            amount: 50
+          },
+          cooldown: 50,
+          category: "heroic",
+          type: "Heroic",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_life_binder.png",
+          isPassive: false
+        },
+        {
+          id: "AlexstraszaCleansingFlameDragonqueen",
+          name: "Cleansing Flame",
+          descriptionShort: "Rain healing and damaging fire from the sky",
+          descriptionLong: "Take to the sky and drop 5 fireballs over 6 seconds at the position of the mouse cursor. Fireballs deal 135 (+4% / level) damage to enemies and heal allied Heroes for 300 (+4% / level) Health.2 seconds after dropping all fireballs, Alexstrasza lands at the position of the mouse cursor.",
+          cost: {
+            type: "Mana",
+            amount: 100
+          },
+          cooldown: 100,
+          category: "heroic",
+          type: "Heroic",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_cleansing_flame.png",
+          isPassive: false
+        }
+      ],
+      talents: [],
+      analysis: {
+        tankiness: 6.792,
+        damageSustainedPhysical: 41.184
+      }
+    }
+  ],
+  analysis: {
+    tankiness: 51.163841807909606,
+    damageSustainedPhysical: 43.64130434782608
+  }
 };
       
 export default alexstrasza;

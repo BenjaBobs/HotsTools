@@ -522,7 +522,11 @@ const varian: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 66.89265536723164,
+    damageSustainedPhysical: 12.567934782608695
+  }
 };
       
 export default varian;

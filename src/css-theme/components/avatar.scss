@@ -7,7 +7,14 @@
     box-shadow: 0 0 10px rgba(51, 153, 255, 0.5);
     transition: all 0.1s linear;
 
+    &.disabled {
+      transform: scale(0.75);
+      filter: blur(2px) grayscale(1);
+    }
+
     &.hoverable {
+      cursor: pointer;
+
       &:hover {
         border: 2px solid #b4d2ff;
         box-shadow: 0 0 10px rgba(51, 153, 255, 1),

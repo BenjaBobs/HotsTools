@@ -558,7 +558,11 @@ const yrel: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 80.69303201506591,
+    damageSustainedPhysical: 19.43979933110368
+  }
 };
       
 export default yrel;

@@ -505,7 +505,11 @@ const liming: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 38.26741996233521,
+    damageSustainedPhysical: 37.66304347826087
+  }
 };
       
 export default liming;

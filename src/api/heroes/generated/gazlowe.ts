@@ -499,7 +499,11 @@ const gazlowe: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 71.56308851224105,
+    damageSustainedPhysical: 16.98369565217391
+  }
 };
       
 export default gazlowe;

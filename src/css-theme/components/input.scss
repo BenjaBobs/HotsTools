@@ -1,0 +1,16 @@
+.ant-input {
+  color: HSL(var(--fg-color));
+  border: none !important;
+  box-shadow: none !important;
+  background: linear-gradient(
+    0deg,
+    HSLA(var(--fg-color), 1) 0%,
+    HSLA(var(--bg-color-brightest), 1) 2%,
+    HSLA(var(--bg-color-brightest), 0.5) 10%,
+    HSLA(var(--bg-color-brightest), 0) 30%
+  );
+}
+
+::placeholder {
+  color: HSL(var(--fg-color)) !important;
+}

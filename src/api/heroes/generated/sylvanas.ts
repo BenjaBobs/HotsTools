@@ -498,7 +498,11 @@ const sylvanas: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 49.717514124293785,
+    damageSustainedPhysical: 80.70652173913044
+  }
 };
       
 export default sylvanas;

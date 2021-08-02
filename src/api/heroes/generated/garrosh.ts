@@ -539,7 +539,11 @@ const garrosh: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 62.071563088512235,
+    damageSustainedPhysical: 15.511775362318842
+  }
 };
       
 export default garrosh;

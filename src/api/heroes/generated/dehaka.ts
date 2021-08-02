@@ -543,7 +543,11 @@ const dehaka: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 73.34086629001884,
+    damageSustainedPhysical: 12.077294685990339
+  }
 };
       
 export default dehaka;

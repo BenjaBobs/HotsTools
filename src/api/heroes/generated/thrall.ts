@@ -520,7 +520,11 @@ const thrall: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 56.52730696798493,
+    damageSustainedPhysical: 25.642292490118567
+  }
 };
       
 export default thrall;

@@ -509,7 +509,11 @@ const mephisto: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 59.29943502824858,
+    damageSustainedPhysical: 32.28260869565217
+  }
 };
       
 export default mephisto;

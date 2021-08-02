@@ -484,7 +484,11 @@ const guldan: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 51.2241054613936,
+    damageSustainedPhysical: 35.8695652173913
+  }
 };
       
 export default guldan;

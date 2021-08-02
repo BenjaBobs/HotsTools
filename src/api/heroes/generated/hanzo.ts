@@ -503,7 +503,11 @@ const hanzo: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 39.86440677966102,
+    damageSustainedPhysical: 93.26086956521739
+  }
 };
       
 export default hanzo;

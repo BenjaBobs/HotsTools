@@ -506,7 +506,11 @@ const malganis: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 78.3427495291902,
+    damageSustainedPhysical: 12.332015810276678
+  }
 };
       
 export default malganis;

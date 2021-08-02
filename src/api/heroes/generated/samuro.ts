@@ -485,7 +485,11 @@ const samuro: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 51.9774011299435,
+    damageSustainedPhysical: 36.95652173913043
+  }
 };
       
 export default samuro;

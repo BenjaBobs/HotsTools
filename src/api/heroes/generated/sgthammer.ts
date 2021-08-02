@@ -526,7 +526,11 @@ const sgthammer: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 51.826741996233515,
+    damageSustainedPhysical: 83.69565217391305
+  }
 };
       
 export default sgthammer;

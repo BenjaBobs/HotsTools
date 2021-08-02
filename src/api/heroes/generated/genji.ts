@@ -543,7 +543,11 @@ const genji: Hero = {
         isQuest: true
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 50.470809792843696,
+    damageSustainedPhysical: 21.52173913043478
+  }
 };
       
 export default genji;

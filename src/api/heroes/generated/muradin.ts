@@ -503,7 +503,11 @@ const muradin: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 83.31450094161958,
+    damageSustainedPhysical: 10.628019323671497
+  }
 };
       
 export default muradin;

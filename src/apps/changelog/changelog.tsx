@@ -2,7 +2,22 @@ import { ChangelogItem } from './changelog-app';
 
 const changeLog: ChangelogItem[] = [
   {
+    date: new Date(2021, 8, 2),
+    added: [
+      'Hero analysis based on stats/abilities/talents (currently only tankiness and auto attack damage)',
+      'Hero strength charts',
+      'Search bar for heroes',
+    ],
+    code: [
+      'Upgraded dependencies',
+      'Refactored hero selection into re-usable component',
+    ],
+  },
+  {
     date: new Date(2021, 7, 29),
+    removed: [
+      'Hero strength charts - they will be re-added once hero analysis is implemented',
+    ],
     code: [
       'Data is now generated locally from Heroes Tool Chest (https://github.com/HeroesToolChest/heroes-data) instead of fetched dynamically. Heroes Tool Chest has more data on each hero which allows analysis of hero stats/abilities/talents.',
     ],

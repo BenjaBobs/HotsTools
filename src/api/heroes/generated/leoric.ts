@@ -477,7 +477,11 @@ const leoric: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 76.83615819209038,
+    damageSustainedPhysical: 19.23076923076923
+  }
 };
       
 export default leoric;

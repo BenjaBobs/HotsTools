@@ -64,7 +64,7 @@ export type HTC_Hero = {
   abilities: HTC_Abilities;
   subAbilities: { [key: string]: Partial<HTC_Abilities> }[];
   talents: HTC_Talents;
-  heroUnits: HTC_Hero[];
+  heroUnits: Record<string, HTC_Hero>[];
 };
 
 export type HTC_Talent = HTC_Ability & {

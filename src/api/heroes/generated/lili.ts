@@ -489,7 +489,11 @@ const lili: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 45.19774011299435,
+    damageSustainedPhysical: 44.83695652173911
+  }
 };
       
 export default lili;

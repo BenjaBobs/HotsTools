@@ -504,7 +504,11 @@ const brightwing: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 43.69114877589453,
+    damageSustainedPhysical: 53.80434782608695
+  }
 };
       
 export default brightwing;

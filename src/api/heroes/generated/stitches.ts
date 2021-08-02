@@ -511,7 +511,11 @@ const stitches: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 92.20338983050847,
+    damageSustainedPhysical: 10.375494071146244
+  }
 };
       
 export default stitches;

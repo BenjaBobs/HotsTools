@@ -556,7 +556,11 @@ const tracer: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 40.07532956685499,
+    damageSustainedPhysical: 100
+  }
 };
       
 export default tracer;

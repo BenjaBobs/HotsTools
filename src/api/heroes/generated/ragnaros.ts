@@ -506,7 +506,110 @@ const ragnaros: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  heroUnits: [
+    {
+      name: "Ragnaros",
+      nameNormalized: "ragnarosbigrag",
+      size: 3,
+      movementSpeed: 4.8398,
+      health: {
+        amount: 3996,
+        scale: 0.04,
+        regenRate: -222,
+        regenScale: 0.04
+      },
+      autoAttacks: [],
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/ragnarosbigrag.png",
+      abilities: [
+        {
+          id: "RagnarosBigRagReturnMoltenCore",
+          name: "Return",
+          descriptionShort: "Return to original form",
+          descriptionLong: "Return to original form.",
+          cooldown: null,
+          category: "trait",
+          type: "Trait",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_return.png",
+          isPassive: false
+        },
+        {
+          id: "RagnarosBigRagMoltenSwing",
+          name: "Molten Swing",
+          descriptionShort: "Stun and damage nearby enemies",
+          descriptionLong: "Swing Sulfuras in a wide arc, dealing 161 (+4% / level) damage and Stunning enemies for 1 second.Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
+          cooldown: 6,
+          category: "basic",
+          type: "Q",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_moltenswing.png",
+          isPassive: false
+        },
+        {
+          id: "RagnarosBigRagMeteorShower",
+          name: "Meteor Shower",
+          descriptionShort: "Summon a line of meteors",
+          descriptionLong: "Vector TargetingSummon 3 meteors at the target point that fall in the target direction. Each meteor deals 151 (+4% / level) damage and slows enemies by 25% for 2 seconds.Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
+          cooldown: 2.5,
+          category: "basic",
+          type: "W",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_meteorshower.png",
+          isPassive: false
+        },
+        {
+          id: "RagnarosBigRagExplosiveRune",
+          name: "Explosive Rune",
+          descriptionShort: "Cause a delayed explosion in a large area",
+          descriptionLong: "Create a rune that deals 285 (+4% / level) damage to non-Structure enemies after 1.5 seconds.Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
+          cooldown: 4,
+          category: "basic",
+          type: "E",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_explosiverune.png",
+          isPassive: false
+        },
+        {
+          id: "RagnarosBigRagSulfurasSmash",
+          name: "Sulfuras Smash",
+          descriptionShort: "Damage and Stun enemies in an area",
+          descriptionLong: "Hurl Sulfuras at the target area, landing after 0.75 seconds, dealing 250 (+4% / level) damage. Enemies in the center take 594 (+4% / level) damage instead and are Stunned for 0.5 seconds.",
+          cooldown: 60,
+          category: "heroic",
+          type: "Heroic",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_sulfurassmash.png",
+          isPassive: false
+        },
+        {
+          id: "RagnarosLavaWaveTargetPoint",
+          name: "Lava Wave",
+          descriptionShort: "Send a wave of lava down a lane",
+          descriptionLong: "Release a wave of lava from Ragnaros's Core that travels down the targeted lane, dealing 240 (+4% / level) damage per second to non-Structure enemies in its path and instantly killing enemy Minions. Damage increased by 100% versus Heroes.",
+          cost: {
+            type: "Mana",
+            amount: 80
+          },
+          cooldown: 120,
+          charges: {
+            chargesMax: 1,
+            chargesInitial: 1,
+            chargeCost: 1,
+            recastCooldown: 5
+          },
+          category: "heroic",
+          type: "Heroic",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_lavawave.png",
+          isPassive: false
+        }
+      ],
+      talents: [],
+      analysis: {
+        tankiness: 15.984000000000002,
+        damageSustainedPhysical: 0
+      }
+    }
+  ],
+  analysis: {
+    tankiness: 62.523540489642194,
+    damageSustainedPhysical: 32.60869565217391
+  }
 };
       
 export default ragnaros;

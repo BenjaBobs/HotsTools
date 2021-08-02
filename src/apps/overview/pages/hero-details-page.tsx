@@ -1,6 +1,7 @@
 import { Avatar, Col, Result, Row, Space } from 'antd';
 
 import heroes from '../../../api/heroes/heroes';
+import HeroStrengthChart from '../../components/hero-strength-chart/hero-strength-chart';
 import Hexagon from '../../components/hexagon/hexagon';
 import AbilityTooltip from './components/ability-tooltip';
 import TalentTooltip from './components/talent-tooltip';
@@ -33,6 +34,9 @@ export default function HeroDetailsPage(props: { hero?: string }) {
             <Row>
               <h1>{hero.name}</h1>
             </Row>
+          </Col>
+          <Col style={{ height: 600, width: 1200 }}>
+            <HeroStrengthChart blueHeroes={[hero]} />
           </Col>
         </Row>
         <br />

@@ -499,7 +499,11 @@ const anduin: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 50.16949152542374,
+    damageSustainedPhysical: 42.34601449275362
+  }
 };
       
 export default anduin;

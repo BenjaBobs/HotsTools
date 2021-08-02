@@ -541,7 +541,80 @@ const dva: Hero = {
         ]
       }
     ]
-  ]
+  ],
+  heroUnits: [
+    {
+      name: "D.Va",
+      nameNormalized: "herodvapilot",
+      size: 0.625,
+      movementSpeed: 4.8398,
+      health: {
+        amount: 1109,
+        scale: 0.04,
+        regenRate: 2.5664,
+        regenScale: 0.04
+      },
+      energy: {
+        amount: 100,
+        regenRate: 2.1992,
+        name: "Charge"
+      },
+      autoAttacks: [
+        {
+          nameId: "DVaPilotWeapon",
+          range: 5.5,
+          period: 0.25,
+          damage: 55,
+          damageScale: 0.04
+        }
+      ],
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/herodvapilot.png",
+      abilities: [
+        {
+          id: "DVaPilotTorpedoDash",
+          name: "Torpedo Dash",
+          descriptionShort: "Dash towards target location",
+          descriptionLong: "Dash towards the target location, passing through enemies along the way.",
+          cooldown: 10,
+          category: "basic",
+          type: "Q",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dva_jetpackattack.png",
+          isPassive: false
+        },
+        {
+          id: "DVaPilotConcussivePulse",
+          name: "Concussive Pulse",
+          descriptionShort: "Damage and knockback nearby enemies",
+          descriptionLong: "Deal 120 (+4% / level) damage to enemies in a cone and knock them back.",
+          cooldown: 10,
+          category: "basic",
+          type: "W",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dva_concussivecharge.png",
+          isPassive: false
+        },
+        {
+          id: "DVaPilotBigShot",
+          name: "Big Shot",
+          descriptionShort: "Damage and Slow enemies in a line as a Pilot",
+          descriptionLong: "Deal 150 (+4% / level) damage to all enemies in a line. Heroes hit have their Movement Speed Slowed by 25% for 1.5 seconds. The cooldown of Call Mech is reduced by 5 seconds for each enemy Hero hit.Requires Pilot Mode.",
+          cooldown: 6,
+          category: "heroic",
+          type: "Heroic",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dva_bigshot.png",
+          isPassive: false
+        }
+      ],
+      talents: [],
+      analysis: {
+        tankiness: 4.436,
+        damageSustainedPhysical: 48.400000000000006
+      }
+    }
+  ],
+  analysis: {
+    tankiness: 64.7834274952919,
+    damageSustainedPhysical: 35.8695652173913
+  }
 };
       
 export default dva;

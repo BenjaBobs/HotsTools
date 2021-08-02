@@ -467,7 +467,11 @@ const thebutcher: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 73.01694915254237,
+    damageSustainedPhysical: 23.55072463768116
+  }
 };
       
 export default thebutcher;

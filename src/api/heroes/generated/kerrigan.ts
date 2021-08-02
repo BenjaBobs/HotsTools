@@ -504,7 +504,11 @@ const kerrigan: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  analysis: {
+    tankiness: 53.15254237288135,
+    damageSustainedPhysical: 31.249999999999993
+  }
 };
       
 export default kerrigan;

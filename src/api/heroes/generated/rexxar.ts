@@ -471,7 +471,53 @@ const rexxar: Hero = {
         tier: "level20"
       }
     ]
-  ]
+  ],
+  heroUnits: [
+    {
+      name: "Misha",
+      nameNormalized: "rexxarmisha",
+      size: 0.9375,
+      movementSpeed: 4.8398,
+      health: {
+        amount: 1520,
+        scale: 0.0475,
+        regenRate: 3.1718,
+        regenScale: 0.0475
+      },
+      autoAttacks: [
+        {
+          nameId: "MishaWeapon",
+          range: 1.5,
+          period: 1.2,
+          damage: 50,
+          damageScale: 0.04
+        }
+      ],
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/rexxarmisha.png",
+      abilities: [
+        {
+          id: "RexxarMishaCharge",
+          name: "Misha, Charge!",
+          descriptionShort: "Order Misha to charge, damaging and stunning enemies",
+          descriptionLong: "Misha charges in a line, dealing 150 (+4% / level) damage and stunning enemies for 1.25 seconds.",
+          cooldown: null,
+          category: "basic",
+          type: "W",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_mishacharge.png",
+          isPassive: false
+        }
+      ],
+      talents: [],
+      analysis: {
+        tankiness: 7.22,
+        damageSustainedPhysical: 2.5
+      }
+    }
+  ],
+  analysis: {
+    tankiness: 54.538606403013176,
+    damageSustainedPhysical: 44.32892249527411
+  }
 };
       
 export default rexxar;

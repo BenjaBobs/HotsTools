@@ -7,6 +7,12 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 0%;
+
+  &.glow {
+    border: 2px solid HSL(var(--fg-color-darkest));
+    box-shadow: 0 0 5px HSLA(var(--fg-color-darkest), 1),
+      inset 0 0 5px HSLA(var(--fg-color-darkest), 1);
+  }
 }
 
 .ant-card-head {
@@ -15,7 +21,6 @@
 
 .ant-card-head-title {
   color: HSL(var(--fg-color-brightest));
-  padding: 0;
   min-height: 48px;
 }
 
@@ -25,5 +30,4 @@
 
 .ant-card-body {
   color: HSL(var(--text-color));
-  padding: 0;
 }
