@@ -37,7 +37,9 @@ export default function AppHost() {
               <Block
                 align="center"
                 textAlign="center"
-                className="underglow-hover animate textglow-hover"
+                className={`animate textglow-hover ${
+                  app === currentApp?.app ? 'underglow' : 'underglow-hover'
+                }`}
                 padding={{ left: 0.5, right: 0.5 }}
                 height={4}
               >

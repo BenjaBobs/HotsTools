@@ -2,6 +2,17 @@ import { ChangelogItem } from './changelog-app';
 
 const changeLog: ChangelogItem[] = [
   {
+    date: new Date(2021, 8, 5),
+    added: [
+      'New analysis properties (mobility, healing, magic damage)',
+      'More stuff to the about page',
+    ],
+    code: [
+      'Started work on a better text analyser for analysing tooltips of abilities/talents',
+      'Made about page use the readme.md',
+    ],
+  },
+  {
     date: new Date(2021, 8, 2),
     added: [
       'Hero analysis based on stats/abilities/talents (currently only tankiness and auto attack damage)',

@@ -8,7 +8,7 @@
     transition: all 0.1s linear;
 
     &.disabled {
-      transform: scale(0.75);
+      transform: scale(0.65);
       filter: blur(2px) grayscale(1);
     }
 

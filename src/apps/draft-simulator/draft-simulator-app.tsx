@@ -3,17 +3,14 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 
 import { Maps } from '../../api/maps';
 import { AppDefinition } from '../AppDefinition';
-import HeroPicker from '../components/hero-picker/hero-picker';
 import Orb from '../components/orb/orb';
 import DraftPanels from './components/draft-panels';
 import FlexSteps from './components/flex-steps';
 import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
-import HeroesPanel from './components/panels/heroes-panel';
 import style from './draft-simulator.module.scss';
 import {
-    s_draftHistory, s_draftMap, s_draftPhases, s_draftTeamBans, s_draftTeamPicks, s_draftType,
-    usePickHero
+    s_draftHistory, s_draftMap, s_draftPhases, s_draftTeamBans, s_draftTeamPicks, s_draftType
 } from './draft-state';
 import { DraftType, Team } from './Types';
 
@@ -35,8 +32,6 @@ function DraftSimulator() {
   const redHeroes = useRecoilValue(s_draftTeamPicks(Team.Red));
   const blueBans = useRecoilValue(s_draftTeamBans(Team.Blue));
   const redBans = useRecoilValue(s_draftTeamBans(Team.Red));
-
-  const pickHero = usePickHero();
 
   return (
     <>

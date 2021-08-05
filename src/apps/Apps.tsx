@@ -1,5 +1,6 @@
 import { selector } from 'recoil';
 
+import shit from '../../readme.md?raw';
 import { s_urlPath } from '../api/routing';
 import AboutApp from './about/about-app';
 import { AppDefinition, ExtendedAppDefinition } from './AppDefinition';
@@ -7,6 +8,8 @@ import ChangeLogApp from './changelog/changelog-app';
 import DraftSimulatorApp from './draft-simulator/draft-simulator-app';
 import GitHubApp from './GitHub-app';
 import OverviewApp from './overview/overview-app';
+
+console.log(shit);
 
 const s_rawApps = [
   OverviewApp,
