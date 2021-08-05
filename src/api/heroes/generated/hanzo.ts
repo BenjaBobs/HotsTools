@@ -44,7 +44,14 @@ const hanzo: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_wallvault.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "HanzoStormBowFireTargetPoint",
@@ -59,7 +66,14 @@ const hanzo: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_stormbow.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 72.75
+      }
     },
     {
       id: "HanzoScatterArrow",
@@ -74,7 +88,14 @@ const hanzo: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_scatterarrow.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11
+      }
     },
     {
       id: "HanzoSonicArrow",
@@ -89,7 +110,14 @@ const hanzo: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_sonicarrow.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11
+      }
     },
     {
       id: "HanzoDragonstrike",
@@ -104,13 +132,20 @@ const hanzo: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_dragonstrike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5.6
+      }
     },
     {
       id: "HanzoDragonsArrow",
       name: "Dragon's Arrow",
       descriptionShort: "Fire a global arrow that Stuns, damages",
-      descriptionLong: "Fire a missile that travels across the battleground. Explodes upon hitting an enemy Hero, dealing 130 (+4% / level) damage to all nearby enemies and Stunning them for 0.5 seconds.After traveling a medium distance, the damage is increased to 260 (+4% / level) and the Stun duration to 1.25 seconds.After traveling a long distance, the damage is increased to 390 (+4% / level) and the Stun duration to 2 seconds.",
+      descriptionLong: "Fire a missile that travels across the battleground. Explodes upon hitting an enemy Hero, dealing 130 (+4% / level) damage to all nearby enemies and Stunning them for 0.5 seconds. After traveling a medium distance, the damage is increased to 260 (+4% / level) and the Stun duration to 1.25 seconds. After traveling a long distance, the damage is increased to 390 (+4% / level) and the Stun duration to 2 seconds.",
       cost: {
         type: "Mana",
         amount: 90
@@ -119,7 +154,14 @@ const hanzo: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_thedragonsarrow.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 8.666666666666666
+      }
     }
   ],
   talents: [
@@ -128,12 +170,19 @@ const hanzo: Hero = {
         id: "HanzoTargetPractice",
         name: "Target Practice",
         descriptionShort: "Quest: Hit all enemy Heroes to empower Storm Bow",
-        descriptionLong: "Quest: Hit every enemy Hero with Storm Bow.Reward: After hitting every enemy Hero once with Storm Bow, its range is increased by 30%.Reward: After hitting every enemy Hero 3 times with Storm Bow, its damage is increased by 100.",
+        descriptionLong: "Quest: Hit every enemy Hero with Storm Bow. Reward: After hitting every enemy Hero once with Storm Bow, its range is increased by 30%. Reward: After hitting every enemy Hero 3 times with Storm Bow, its damage is increased by 100.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_stormbow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -145,12 +194,19 @@ const hanzo: Hero = {
         id: "HanzoSimpleGeometry",
         name: "Simple Geometry",
         descriptionShort: "Quest: Gain additional Scatter Arrows",
-        descriptionLong: "Quest: Hit a Hero with multiple arrows from the same Scatter Arrow cast 20 times. Each arrow hit after the second grants additional progress.Reward: Upon hitting terrain for the first time, Scatter Arrow creates 2 additional arrows.",
+        descriptionLong: "Quest: Hit a Hero with multiple arrows from the same Scatter Arrow cast 20 times. Each arrow hit after the second grants additional progress. Reward: Upon hitting terrain for the first time, Scatter Arrow creates 2 additional arrows.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_scatterarrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -162,12 +218,19 @@ const hanzo: Hero = {
         id: "HanzoRedemption",
         name: "Redemption",
         descriptionShort: "Quest: Hit Heroes to gain Attack Speed",
-        descriptionLong: "Quest: Every 2 Basic Attacks against the same Hero within 10 seconds grants 1 Redemption, stacking up to 12. Dying decreases Redemption by 3, and Redemption can be lost even at maximum stacks.Reward: At 12 Redemption, gain 50% Attack Speed.",
+        descriptionLong: "Quest: Every 2 Basic Attacks against the same Hero within 10 seconds grants 1 Redemption, stacking up to 12. Dying decreases Redemption by 3, and Redemption can be lost even at maximum stacks. Reward: At 12 Redemption, gain 50% Attack Speed.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_redemption.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -187,6 +250,13 @@ const hanzo: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_stormbow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -203,6 +273,13 @@ const hanzo: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_scatterarrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -219,6 +296,13 @@ const hanzo: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_fromonething.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -237,6 +321,13 @@ const hanzo: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_draconicadvantage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -253,6 +344,13 @@ const hanzo: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_scatterarrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -269,6 +367,13 @@ const hanzo: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_shieldbreaker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -291,6 +396,13 @@ const hanzo: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_dragonstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 5.6
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -301,7 +413,7 @@ const hanzo: Hero = {
         id: "HanzoDragonsArrow",
         name: "Dragon's Arrow",
         descriptionShort: "Fire a global arrow that Stuns, damages",
-        descriptionLong: "Fire a missile that travels across the battleground. Explodes upon hitting an enemy Hero, dealing 130 (+4% / level) damage to all nearby enemies and Stunning them for 0.5 seconds.After traveling a medium distance, the damage is increased to 260 (+4% / level) and the Stun duration to 1.25 seconds.After traveling a long distance, the damage is increased to 390 (+4% / level) and the Stun duration to 2 seconds.",
+        descriptionLong: "Fire a missile that travels across the battleground. Explodes upon hitting an enemy Hero, dealing 130 (+4% / level) damage to all nearby enemies and Stunning them for 0.5 seconds. After traveling a medium distance, the damage is increased to 260 (+4% / level) and the Stun duration to 1.25 seconds. After traveling a long distance, the damage is increased to 390 (+4% / level) and the Stun duration to 2 seconds.",
         cost: {
           type: "Mana",
           amount: 90
@@ -311,6 +423,13 @@ const hanzo: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_thedragonsarrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 8.666666666666666
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -329,6 +448,13 @@ const hanzo: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_stormbow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -351,6 +477,13 @@ const hanzo: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_wallvault.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -367,6 +500,13 @@ const hanzo: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_grabthereins.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -385,6 +525,13 @@ const hanzo: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_fromonething.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -401,6 +548,13 @@ const hanzo: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_piercingarrows.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -418,6 +572,13 @@ const hanzo: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_kaijuhunter.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -436,6 +597,13 @@ const hanzo: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_dragonstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -449,12 +617,19 @@ const hanzo: Hero = {
         id: "HanzoPOTG",
         name: "Play of the Game",
         descriptionShort: "Activate to teleport to Dragon's Arrow",
-        descriptionLong: "While in flight or for up to 2 seconds after impacting a target, Dragon's Arrow can be reactivated to teleport to its location and jump backwards. If used after impact, Hanzo shoots arrows that deal 132 (+4% / level) damage to each target hit by the impact.Hanzo is Unstoppable during Play of the Game.",
+        descriptionLong: "While in flight or for up to 2 seconds after impacting a target, Dragon's Arrow can be reactivated to teleport to its location and jump backwards. If used after impact, Hanzo shoots arrows that deal 132 (+4% / level) damage to each target hit by the impact. Hanzo is Unstoppable during Play of the Game.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_thedragonsarrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 8.8
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -474,6 +649,13 @@ const hanzo: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_sonicarrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -496,6 +678,13 @@ const hanzo: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_wallvault.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -506,7 +695,10 @@ const hanzo: Hero = {
   ],
   analysis: {
     tankiness: 39.86440677966102,
-    damageSustainedPhysical: 93.26086956521739
+    physicalDamage: 66,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 48.257173340597475
   }
 };
       

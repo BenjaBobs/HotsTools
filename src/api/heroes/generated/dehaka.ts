@@ -40,7 +40,7 @@ const dehaka: Hero = {
       id: "DehakaEssenceCollection",
       name: "Essence Collection",
       descriptionShort: "Collect and consume enemy Essence to heal",
-      descriptionLong: "Heal Dehaka for 29 (+4% / level) Health per stored Essence over 5 seconds. Can be cast during Drag and Burrow.Passive: Gain 10 Essence from Takedowns and 2 Essence from nearby Minions dying. Maximum of 50 Essence.",
+      descriptionLong: "Heal Dehaka for 29 (+4% / level) Health per stored Essence over 5 seconds. Can be cast during Drag and Burrow. Passive: Gain 10 Essence from Takedowns and 2 Essence from nearby Minions dying. Maximum of 50 Essence.",
       cooldown: 5,
       charges: {
         chargesMax: 50,
@@ -50,24 +50,38 @@ const dehaka: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 1.16,
+        magicalDamage: 0
+      }
     },
     {
       id: "DehakaBrushstalker",
       name: "Brushstalker",
       descriptionShort: "Burrow to a bush on the Battleground.",
-      descriptionLong: "Activate to burrow to a bush on the Battleground.Passive: Gain 20% movement speed while in a bush and for 2 seconds after leaving.",
+      descriptionLong: "Activate to burrow to a bush on the Battleground. Passive: Gain 20% movement speed while in a bush and for 2 seconds after leaving.",
       cooldown: 75,
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_mount.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DehakaDrag",
       name: "Drag",
       descriptionShort: "Deal light damage and drag an enemy",
-      descriptionLong: "Dehaka lashes out his tongue, dealing 160 (+4% / level) damage to the first enemy hit, Stunning and dragging them with him for 1.75 seconds.If Dehaka is Stunned or Silenced while using Drag, the effect ends.",
+      descriptionLong: "Dehaka lashes out his tongue, dealing 160 (+4% / level) damage to the first enemy hit, Stunning and dragging them with him for 1.75 seconds. If Dehaka is Stunned or Silenced while using Drag, the effect ends.",
       cost: {
         type: "Mana",
         amount: 75
@@ -76,7 +90,14 @@ const dehaka: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_drag.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10.666666666666666
+      }
     },
     {
       id: "DehakaDarkSwarm",
@@ -91,7 +112,14 @@ const dehaka: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_trample.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5.2
+      }
     },
     {
       id: "DehakaBurrow",
@@ -106,7 +134,14 @@ const dehaka: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_burrow.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DehakaIsolation",
@@ -121,7 +156,14 @@ const dehaka: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_isolation.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 13.333333333333334
+      }
     },
     {
       id: "DehakaAdaptation",
@@ -136,18 +178,14 @@ const dehaka: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_adaptation.png",
-      isPassive: false
-    },
-    {
-      id: "DehakaCancelBurrow",
-      name: "Cancel Burrow",
-      descriptionShort: "Unburrow",
-      descriptionLong: "Cancels Burrow",
-      cooldown: null,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/hud_btn_bg_ability_cancel.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 13.333333333333334,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -162,6 +200,13 @@ const dehaka: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_trample.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -172,7 +217,7 @@ const dehaka: Hero = {
         id: "DehakaEssenceCollectionTalentTissueRegeneration",
         name: "Tissue Regeneration",
         descriptionShort: "Quest: Essence increases Health Regen, max Essence",
-        descriptionLong: "Regeneration Globes grant 10 Essence.Repeatable Quest: Every 50 Essence collected permanently increases Health Regeneration by 4, up to 40, and maximum Essence by 1, up to 10.",
+        descriptionLong: "Regeneration Globes grant 10 Essence. Repeatable Quest: Every 50 Essence collected permanently increases Health Regeneration by 4, up to 40, and maximum Essence by 1, up to 10.",
         cooldown: null,
         charges: {
           chargesMax: 50,
@@ -183,6 +228,13 @@ const dehaka: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -194,12 +246,19 @@ const dehaka: Hero = {
         id: "DehakaEssenceCollectionTalentEnhancedAgility",
         name: "Enhanced Agility",
         descriptionShort: "Quest: Essence increases Brushstalker Move Speed",
-        descriptionLong: "Brushstalker's Movement Speed bonus now lasts for 5 seconds after leaving a bush.Repeatable Quest: Every 50 Essence collected permanently increases the Movement Speed bonus of Brushstalker by 2%, up to 20%.",
+        descriptionLong: "Brushstalker's Movement Speed bonus now lasts for 5 seconds after leaving a bush. Repeatable Quest: Every 50 Essence collected permanently increases the Movement Speed bonus of Brushstalker by 2%, up to 20%.",
         cooldown: null,
         category: "Talent",
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_brushstalker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -219,6 +278,13 @@ const dehaka: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_burrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -240,6 +306,13 @@ const dehaka: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -261,6 +334,13 @@ const dehaka: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -280,6 +360,13 @@ const dehaka: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_drag.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -296,6 +383,13 @@ const dehaka: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_drag_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -312,6 +406,13 @@ const dehaka: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_trample.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -334,6 +435,13 @@ const dehaka: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_isolation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 13.333333333333334
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -354,6 +462,13 @@ const dehaka: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_adaptation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 13.333333333333334,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -372,6 +487,13 @@ const dehaka: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_trample.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -388,6 +510,13 @@ const dehaka: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_trample_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -409,6 +538,13 @@ const dehaka: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -427,6 +563,13 @@ const dehaka: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_drag_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -443,6 +586,13 @@ const dehaka: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_burrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -459,6 +609,13 @@ const dehaka: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_brushstalker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -477,6 +634,13 @@ const dehaka: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_isolation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -496,6 +660,13 @@ const dehaka: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_adaptation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 26.666666666666668,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -520,6 +691,13 @@ const dehaka: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -536,6 +714,13 @@ const dehaka: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_brushstalker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -546,7 +731,10 @@ const dehaka: Hero = {
   ],
   analysis: {
     tankiness: 73.34086629001884,
-    damageSustainedPhysical: 12.077294685990339
+    physicalDamage: 55.55555555555556,
+    mobility: 24.199,
+    healing: 19.023451172558627,
+    magicalDamage: 12.925633342413512
   }
 };
       

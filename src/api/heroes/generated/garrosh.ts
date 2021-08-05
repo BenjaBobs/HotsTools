@@ -38,7 +38,14 @@ const garrosh: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_armor_up.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "GarroshGroundbreaker",
@@ -53,7 +60,14 @@ const garrosh: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_groundbreaker.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10.125
+      }
     },
     {
       id: "GarroshBloodthirst",
@@ -74,7 +88,14 @@ const garrosh: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 18.333333333333332,
+        magicalDamage: 13
+      }
     },
     {
       id: "GarroshWreckingBall",
@@ -89,7 +110,14 @@ const garrosh: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_wrecking_ball.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.066666666666666
+      }
     },
     {
       id: "GarroshWarlordsChallenge",
@@ -104,13 +132,20 @@ const garrosh: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_warlords_challenge.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "GarroshDecimate",
       name: "Decimate",
       descriptionShort: "Damage and Slow nearby enemies",
-      descriptionLong: "Deal 50 (+4% / level) damage to nearby enemies and Slow them by 40% for 1.5 seconds. Deals 100% more damage to Heroes, and each Hero hit reduces the cooldown by 1 second.Stores up to 3 charges.",
+      descriptionLong: "Deal 50 (+4% / level) damage to nearby enemies and Slow them by 40% for 1.5 seconds. Deals 100% more damage to Heroes, and each Hero hit reduces the cooldown by 1 second. Stores up to 3 charges.",
       cost: {
         type: "Mana",
         amount: 25
@@ -125,18 +160,14 @@ const garrosh: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_decimate.png",
-      isPassive: false
-    },
-    {
-      id: "GarroshArmorUpDoubleUp",
-      name: "Double Up",
-      descriptionShort: "Activate Armor Up to increase bonus",
-      descriptionLong: "Armor Up can be activated to increase its Armor bonus by 100% for 3 seconds.",
-      cooldown: 30,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_armor_up.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.25
+      }
     }
   ],
   talents: [
@@ -145,12 +176,19 @@ const garrosh: Hero = {
         id: "GarroshGroundbreakerWarbreaker",
         name: "Warbreaker",
         descriptionShort: "Quest: Stun Heroes to empower Groundbreaker",
-        descriptionLong: "Quest: Stun Heroes with Groundbreaker.Reward: After Stunning 5 Heroes, Groundbreaker's Stun deals an additional 165 (+4% / level) damage over 3 seconds to Heroes.Reward: After Stunning 15 Heroes, permanently reduce Groundbreaker's cooldown by 2 seconds.",
+        descriptionLong: "Quest: Stun Heroes with Groundbreaker. Reward: After Stunning 5 Heroes, Groundbreaker's Stun deals an additional 165 (+4% / level) damage over 3 seconds to Heroes. Reward: After Stunning 15 Heroes, permanently reduce Groundbreaker's cooldown by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_groundbreaker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 11
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -168,6 +206,13 @@ const garrosh: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_wrecking_ball.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -190,6 +235,13 @@ const garrosh: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_slam.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 7.3999999999999995
+        },
         order: 3,
         tier: "level1"
       }
@@ -211,6 +263,13 @@ const garrosh: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -233,6 +292,13 @@ const garrosh: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -249,6 +315,13 @@ const garrosh: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_indomitablel.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -264,6 +337,13 @@ const garrosh: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_groundbreaker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -280,6 +360,13 @@ const garrosh: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_slow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7"
       },
@@ -287,12 +374,19 @@ const garrosh: Hero = {
         id: "GarroshWreckingBallIntotheFray",
         name: "Into the Fray",
         descriptionShort: "Activate to throw an ally",
-        descriptionLong: "Activate to throw a nearby ally and grant them 25 Armor for 3 seconds. Deals 91 (+4% / level) damage to nearby enemies upon impact and Slows them by 30% for 2.5 seconds.While in flight, allied Heroes are Unstoppable.",
+        descriptionLong: "Activate to throw a nearby ally and grant them 25 Armor for 3 seconds. Deals 91 (+4% / level) damage to nearby enemies upon impact and Slows them by 30% for 2.5 seconds. While in flight, allied Heroes are Unstoppable.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_intothefray.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6.066666666666666
+        },
         order: 3,
         tier: "level7"
       }
@@ -312,6 +406,13 @@ const garrosh: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_warlords_challenge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -322,7 +423,7 @@ const garrosh: Hero = {
         id: "GarroshHeroicAbilityDecimate",
         name: "Decimate",
         descriptionShort: "Damage and Slow nearby enemies",
-        descriptionLong: "Deal 50 (+4% / level) damage to nearby enemies and Slow them by 40% for 1.5 seconds. Deals 100% more damage to Heroes, and each Hero hit reduces the cooldown by 1 second.Stores up to 3 charges.",
+        descriptionLong: "Deal 50 (+4% / level) damage to nearby enemies and Slow them by 40% for 1.5 seconds. Deals 100% more damage to Heroes, and each Hero hit reduces the cooldown by 1 second. Stores up to 3 charges.",
         cost: {
           type: "Mana",
           amount: 25
@@ -338,6 +439,13 @@ const garrosh: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_decimate.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6.25
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -356,6 +464,13 @@ const garrosh: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_groundbreaker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -378,6 +493,13 @@ const garrosh: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -394,6 +516,13 @@ const garrosh: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_armor_up.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -412,6 +541,13 @@ const garrosh: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_wrecking_ball.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -428,6 +564,13 @@ const garrosh: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_intothefray.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -444,6 +587,13 @@ const garrosh: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_armor_up.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -463,6 +613,13 @@ const garrosh: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_warlords_challenge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -488,6 +645,13 @@ const garrosh: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_decimate.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -507,6 +671,13 @@ const garrosh: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_wrecking_ball.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -529,6 +700,13 @@ const garrosh: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_slam.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -542,7 +720,10 @@ const garrosh: Hero = {
   ],
   analysis: {
     tankiness: 62.071563088512235,
-    damageSustainedPhysical: 15.511775362318842
+    physicalDamage: 57.08333333333334,
+    mobility: 24.199,
+    healing: 24.06370318515926,
+    magicalDamage: 15.688561245800415
   }
 };
       

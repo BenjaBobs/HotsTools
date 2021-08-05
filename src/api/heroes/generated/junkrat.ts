@@ -33,18 +33,25 @@ const junkrat: Hero = {
       id: "JunkratTotalMayhem",
       name: "Total Mayhem",
       descriptionShort: "Drop grenades upon death",
-      descriptionLong: "Upon dying, drop 5 grenades that explode after 0.75 seconds, each dealing 250 (+4% / level) damage to nearby enemies. Deals 75% less damage to Structures.Detonate MineDetonate an active Concussion Mine.",
+      descriptionLong: "Upon dying, drop 5 grenades that explode after 0.75 seconds, each dealing 250 (+4% / level) damage to nearby enemies. Deals 75% less damage to Structures. Detonate MineDetonate an active Concussion Mine.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_bomb_pack.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16.666666666666668
+      }
     },
     {
       id: "JunkratFragLauncher",
       name: "Frag Launcher",
       descriptionShort: "Launch a bouncing grenade",
-      descriptionLong: "Launch a grenade that explodes at the end of its path or upon hitting an enemy, dealing 118 (+4% / level) damage to nearby enemies. Grenades can ricochet off of terrain. Deals 50% less damage to Structures.Stores up to 4 charges. Frag Launcher's cooldown replenishes all charges at the same time.",
+      descriptionLong: "Launch a grenade that explodes at the end of its path or upon hitting an enemy, dealing 118 (+4% / level) damage to nearby enemies. Grenades can ricochet off of terrain. Deals 50% less damage to Structures. Stores up to 4 charges. Frag Launcher's cooldown replenishes all charges at the same time.",
       cooldown: 12,
       charges: {
         chargesMax: 4,
@@ -55,84 +62,86 @@ const junkrat: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 9.833333333333332
+      }
     },
     {
       id: "JunkratConcussionMine",
       name: "Concussion Mine",
       descriptionShort: "Place a mine that can be detonated",
-      descriptionLong: "Place a mine on the ground. Junkrat's Trait can be activated to detonate the mine, dealing 180 (+4% / level) damage to nearby enemies and knocking them back. Junkrat can also be affected by Concussion Mine, but takes no damage.Limit 1 active mine.",
+      descriptionLong: "Place a mine on the ground. Junkrat's Trait can be activated to detonate the mine, dealing 180 (+4% / level) damage to nearby enemies and knocking them back. Junkrat can also be affected by Concussion Mine, but takes no damage. Limit 1 active mine.",
       cooldown: 16,
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_concussion_mine.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 12
+      }
     },
     {
       id: "JunkratSteelTrap",
       name: "Steel Trap",
       descriptionShort: "Place a trap that Roots enemies",
-      descriptionLong: "Place a trap on the ground that arms after 2 seconds. Deals 130 (+4% / level) damage to the first enemy that walks over it and Roots them for 2 seconds.Limit 1 active trap.",
+      descriptionLong: "Place a trap on the ground that arms after 2 seconds. Deals 130 (+4% / level) damage to the first enemy that walks over it and Roots them for 2 seconds. Limit 1 active trap.",
       cooldown: 12,
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_steel_trap.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10.833333333333332
+      }
     },
     {
       id: "JunkratRIPTire",
       name: "RIP-Tire",
       descriptionShort: "Create a motorized bomb that explodes",
-      descriptionLong: "Create a motorized bomb with 530 (+4% / level) Health that lasts 15 seconds. While active, Junkrat is immobile but gains control of RIP-Tire's movement.RIP-Tire can be reactivated to detonate immediately, knocking nearby enemies back and dealing 720 (+4% / level) damage to enemies near the center gradually reduced to 445 (+4% / level) to enemies on the edge.",
+      descriptionLong: "Create a motorized bomb with 530 (+4% / level) Health that lasts 15 seconds. While active, Junkrat is immobile but gains control of RIP-Tire's movement. RIP-Tire can be reactivated to detonate immediately, knocking nearby enemies back and dealing 720 (+4% / level) damage to enemies near the center gradually reduced to 445 (+4% / level) to enemies on the edge.",
       cooldown: 75,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_rip_tire.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 48
+      }
     },
     {
       id: "JunkratRocketRide",
       name: "Rocket Ride",
       descriptionShort: "Launch into the air, damaging enemies upon landing",
-      descriptionLong: "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving.After 3.75 seconds, Junkrat lands, dealing 890 (+4% / level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
+      descriptionLong: "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving. After 3.75 seconds, Junkrat lands, dealing 890 (+4% / level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
       cooldown: 75,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_rocket_ride.png",
-      isPassive: false
-    },
-    {
-      id: "JunkratRIPTireJump",
-      name: "Jump!",
-      descriptionShort: "Jump!",
-      descriptionLong: "Activate to make the RIP-Tire jump. Can be used to pass over terrain and Structures.",
-      cooldown: 2,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_rip_tire_jump.png",
-      isPassive: false
-    },
-    {
-      id: "JunkratDetonateRIPTire",
-      name: "Detonate RIP-Tire",
-      descriptionShort: "Instantly destroy the RIP-Tire",
-      descriptionLong: "Instantly detonate the RIP-Tire, knocking nearby enemies back, and dealing 720 (+4% / level) damage to enemies near the center gradually reduced to 445 (+4% / level) to enemies on the edge.",
-      cooldown: null,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_mayhem.png",
-      isPassive: false
-    },
-    {
-      id: "JunkratDetonateMine",
-      name: "Detonate Mine",
-      descriptionShort: "Detonate the Concussion Mine",
-      descriptionLong: "Detonate the planted Concussion Mine, dealing 180 (+4% / level) damage to nearby enemies and knocking them back. Junkrat can also be affected by Concussion Mine, but takes no damage.",
-      cooldown: null,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_mayhem.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 59.333333333333336
+      }
     }
   ],
   talents: [
@@ -153,6 +162,13 @@ const junkrat: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -175,6 +191,13 @@ const junkrat: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -191,6 +214,13 @@ const junkrat: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_trap_mine.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -216,6 +246,13 @@ const junkrat: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -233,6 +270,13 @@ const junkrat: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_concussion_mine.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -250,6 +294,13 @@ const junkrat: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_steel_trap.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -268,6 +319,13 @@ const junkrat: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_concussion_mine.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -285,6 +343,13 @@ const junkrat: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_steel_trap.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -301,6 +366,13 @@ const junkrat: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_steel_trap_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -317,6 +389,13 @@ const junkrat: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_bomb_pack.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level7",
         linkedAbilityIds: [
@@ -329,12 +408,19 @@ const junkrat: Hero = {
         id: "JunkratRIPTire",
         name: "RIP-Tire",
         descriptionShort: "Create a motorized bomb that explodes",
-        descriptionLong: "Create a motorized bomb with 530 (+4% / level) Health that lasts 15 seconds. While active, Junkrat is immobile but gains control of RIP-Tire's movement.RIP-Tire can be reactivated to detonate immediately, knocking nearby enemies back and dealing 720 (+4% / level) damage to enemies near the center gradually reduced to 445 (+4% / level) to enemies on the edge.",
+        descriptionLong: "Create a motorized bomb with 530 (+4% / level) Health that lasts 15 seconds. While active, Junkrat is immobile but gains control of RIP-Tire's movement. RIP-Tire can be reactivated to detonate immediately, knocking nearby enemies back and dealing 720 (+4% / level) damage to enemies near the center gradually reduced to 445 (+4% / level) to enemies on the edge.",
         cooldown: 75,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_rip_tire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 48
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -345,12 +431,19 @@ const junkrat: Hero = {
         id: "JunkratRocketRide",
         name: "Rocket Ride",
         descriptionShort: "Launch into the air, damaging enemies upon landing",
-        descriptionLong: "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving.After 3.75 seconds, Junkrat lands, dealing 890 (+4% / level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
+        descriptionLong: "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving. After 3.75 seconds, Junkrat lands, dealing 890 (+4% / level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
         cooldown: 75,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_rocket_ride.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 59.333333333333336
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -375,6 +468,13 @@ const junkrat: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -391,6 +491,13 @@ const junkrat: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_concussion_mine.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -408,6 +515,13 @@ const junkrat: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_steel_trap.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -432,6 +546,13 @@ const junkrat: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher_f.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -454,6 +575,13 @@ const junkrat: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -470,6 +598,13 @@ const junkrat: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher_d.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -485,6 +620,13 @@ const junkrat: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_rip_tire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -504,6 +646,13 @@ const junkrat: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_rocket_ride.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -530,6 +679,13 @@ const junkrat: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher_g.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -546,6 +702,13 @@ const junkrat: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_mount_rocket.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -556,7 +719,10 @@ const junkrat: Hero = {
   ],
   analysis: {
     tankiness: 42.93785310734463,
-    damageSustainedPhysical: 71.7391304347826
+    physicalDamage: 60,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 69.34985925724143
   }
 };
       

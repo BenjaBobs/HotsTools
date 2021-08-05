@@ -33,12 +33,19 @@ const zuljin: Hero = {
       id: "ZuljinBerserker",
       name: "Berserker",
       descriptionShort: "Increased Attack Speed as Health gets lower",
-      descriptionLong: "Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack.Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing.You Want Axe?Quest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1.Reward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1.Reward: After attacking Heroes 150 times, Twin Cleave now revolves twice.",
+      descriptionLong: "Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack. Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing. You Want Axe?Quest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1. Reward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1. Reward: After attacking Heroes 150 times, Twin Cleave now revolves twice.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_berzerker.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ZuljinGrievousThrow",
@@ -53,7 +60,14 @@ const zuljin: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_grievousthrow.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15.625
+      }
     },
     {
       id: "ZuljinTwinCleave",
@@ -68,7 +82,14 @@ const zuljin: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_twincleave.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.200000000000001
+      }
     },
     {
       id: "ZuljinRegeneration",
@@ -83,7 +104,14 @@ const zuljin: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_regeneration.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ZuljinTazdingo",
@@ -98,7 +126,14 @@ const zuljin: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_tazdingo.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ZuljinGuillotine",
@@ -113,7 +148,14 @@ const zuljin: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_guillotine.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 22
+      }
     }
   ],
   talents: [
@@ -128,6 +170,13 @@ const zuljin: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_grievousthrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -144,6 +193,13 @@ const zuljin: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_berzerker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -155,12 +211,19 @@ const zuljin: Hero = {
         id: "ZuljinHeadhunter",
         name: "Headhunter",
         descriptionShort: "Quest: Takedowns increase damage",
-        descriptionLong: "Quest: Zul'jin's first Takedown against each enemy Hero permanently increases his damage dealt by 2%.Reward: After getting Takedowns on every enemy Hero, Basic Attack range is increased by 1.1.",
+        descriptionLong: "Quest: Zul'jin's first Takedown against each enemy Hero permanently increases his damage dealt by 2%. Reward: After getting Takedowns on every enemy Hero, Basic Attack range is increased by 1.1.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_headhunter.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         isQuest: true
@@ -177,6 +240,13 @@ const zuljin: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_regeneration.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -187,12 +257,19 @@ const zuljin: Hero = {
         id: "ZuljinVoodooShuffle",
         name: "Voodoo Shuffle",
         descriptionShort: "Activate to remove Roots and Slows",
-        descriptionLong: "Activate to remove Roots and Slows.Passive: Lower the cooldown and Mana cost of Regeneration by 40%.",
+        descriptionLong: "Activate to remove Roots and Slows. Passive: Lower the cooldown and Mana cost of Regeneration by 40%.",
         cooldown: 10,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_regeneration_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -209,6 +286,13 @@ const zuljin: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_davoodooshuffle.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -227,6 +311,13 @@ const zuljin: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_grievousthrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -243,6 +334,13 @@ const zuljin: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_twincleave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -260,6 +358,13 @@ const zuljin: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_berzerker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -283,6 +388,13 @@ const zuljin: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_tazdingo.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -303,6 +415,13 @@ const zuljin: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_guillotine.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 22
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -321,6 +440,13 @@ const zuljin: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_twincleave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -337,6 +463,13 @@ const zuljin: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_base.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13"
       },
@@ -350,6 +483,13 @@ const zuljin: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_trollnet.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -365,6 +505,13 @@ const zuljin: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_grievousthrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -381,6 +528,13 @@ const zuljin: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_twincleave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -391,12 +545,19 @@ const zuljin: Hero = {
         id: "ZuljinLetTheKillingBegin",
         name: "Let the Killing Begin",
         descriptionShort: "Killing enemies increases Attack Speed",
-        descriptionLong: "When Zul'jin kills an enemy, his Attack Speed is increased by 5%, up to 40%, for 12 seconds. Basic Attacks refresh the duration.Hero Takedowns instantly grant 40% Attack Speed.",
+        descriptionLong: "When Zul'jin kills an enemy, his Attack Speed is increased by 5%, up to 40%, for 12 seconds. Basic Attacks refresh the duration. Hero Takedowns instantly grant 40% Attack Speed.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_speed.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -412,6 +573,13 @@ const zuljin: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_tazdingo.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -431,6 +599,13 @@ const zuljin: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_guillotine.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -450,6 +625,13 @@ const zuljin: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_regeneration.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -466,6 +648,13 @@ const zuljin: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_aoe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -473,7 +662,10 @@ const zuljin: Hero = {
   ],
   analysis: {
     tankiness: 56.49717514124294,
-    damageSustainedPhysical: 70.24456521739128
+    physicalDamage: 58.75,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 21.61280986107328
   }
 };
       

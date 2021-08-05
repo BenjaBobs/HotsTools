@@ -40,7 +40,14 @@ const chogall: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_ogrehide.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ChoSurgingFistCast",
@@ -51,7 +58,14 @@ const chogall: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_moltensurge_a.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 3.833333333333333
+      }
     },
     {
       id: "ChoConsumingBlaze",
@@ -62,7 +76,14 @@ const chogall: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_consumingflame.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0.6666666666666666,
+        magicalDamage: 12.5
+      }
     },
     {
       id: "ChoRuneBomb",
@@ -73,7 +94,14 @@ const chogall: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_runebomb.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 37.625
+      }
     },
     {
       id: "ChoUpheaval",
@@ -84,29 +112,32 @@ const chogall: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_upheaval.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.666666666666666
+      }
     },
     {
       id: "ChoHammerOfTwilight",
       name: "Hammer of Twilight",
       descriptionShort: "Activate to knockback and Stun enemies",
-      descriptionLong: "Activate to swing the Hammer of Twilight, dealing 150 (+4.5% / level) damage, pushing enemies away, and Stunning them for 0.75 seconds.Passive: Cho's Basic Attacks deal 25% increased damage.",
+      descriptionLong: "Activate to swing the Hammer of Twilight, dealing 150 (+4.5% / level) damage, pushing enemies away, and Stunning them for 0.75 seconds. Passive: Cho's Basic Attacks deal 25% increased damage.",
       cooldown: 15,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_hammeroftwilight.png",
-      isPassive: false
-    },
-    {
-      id: "ChoOgreHidePassive",
-      name: "Ogre Hide",
-      descriptionShort: "Increased Armor",
-      descriptionLong: "Cho's Armor is increased by 25, but Gall's damage is reduced by 25%.Gall can activate Ogre Rage to grant himself 25% increased damage, but remove this Armor bonus.",
-      cooldown: null,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_ogrehide.png",
-      isPassive: true
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10
+      }
     }
   ],
   talents: [
@@ -121,6 +152,13 @@ const chogall: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_consumingflame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 20,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -137,6 +175,13 @@ const chogall: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_ogrehide.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -148,12 +193,19 @@ const chogall: Hero = {
         id: "ChoTheWillofCho",
         name: "The Will of Cho",
         descriptionShort: "Killing Minions and Takedowns grant Armor",
-        descriptionLong: "Quest: Killing enemy Minions grants 1 stack of The Will of Cho, and Hero takedowns grant 10 stacks.  Gain 1 Armor for every 30 stacks of The Will of Cho, up to a maximum of 10 Armor.This Armor bonus stacks with Ogre Hide.",
+        descriptionLong: "Quest: Killing enemy Minions grants 1 stack of The Will of Cho, and Hero takedowns grant 10 stacks.  Gain 1 Armor for every 30 stacks of The Will of Cho, up to a maximum of 10 Armor. This Armor bonus stacks with Ogre Hide.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_ogrehide_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -174,6 +226,13 @@ const chogall: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_moltensurge_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -191,6 +250,13 @@ const chogall: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_runebomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -207,6 +273,13 @@ const chogall: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -222,6 +295,13 @@ const chogall: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_moltensurge_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -233,12 +313,19 @@ const chogall: Hero = {
         id: "ChoFirestarter",
         name: "Firestarter",
         descriptionShort: "Reduced Consuming Blaze cooldown",
-        descriptionLong: "Basic Attacks against ignited Heroes decreases the cooldown of Consuming Blaze by 1 second.Passive: Reduce the cooldown of Consuming Blaze by 3 seconds.",
+        descriptionLong: "Basic Attacks against ignited Heroes decreases the cooldown of Consuming Blaze by 1 second. Passive: Reduce the cooldown of Consuming Blaze by 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_consumingflame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -255,6 +342,13 @@ const chogall: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_ogrehide.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.8,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -268,12 +362,19 @@ const chogall: Hero = {
         id: "ChoHeroicAbilityHammerOfTwilight",
         name: "Hammer of Twilight",
         descriptionShort: "Activate to knockback and Stun enemies",
-        descriptionLong: "Activate to swing the Hammer of Twilight, dealing 150 (+4.5% / level) damage, pushing enemies away, and Stunning them for 0.75 seconds.Passive: Cho's Basic Attacks deal 25% increased damage.",
+        descriptionLong: "Activate to swing the Hammer of Twilight, dealing 150 (+4.5% / level) damage, pushing enemies away, and Stunning them for 0.75 seconds. Passive: Cho's Basic Attacks deal 25% increased damage.",
         cooldown: 15,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_hammeroftwilight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 10
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -290,6 +391,13 @@ const chogall: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_upheaval.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 11.666666666666666
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -308,6 +416,13 @@ const chogall: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_moltensurge_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -325,6 +440,13 @@ const chogall: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_hardenedshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13"
       },
@@ -338,6 +460,13 @@ const chogall: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_moltenblock.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -353,6 +482,13 @@ const chogall: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_moltensurge_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -370,6 +506,13 @@ const chogall: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_runebomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -386,6 +529,13 @@ const chogall: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -401,6 +551,13 @@ const chogall: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_hammeroftwilight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -420,6 +577,13 @@ const chogall: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_upheaval.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -439,6 +603,13 @@ const chogall: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 1.4
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -455,6 +626,13 @@ const chogall: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gall_psychoticbreak.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -462,7 +640,10 @@ const chogall: Hero = {
   ],
   analysis: {
     tankiness: 100,
-    damageSustainedPhysical: 21.677371541501973
+    physicalDamage: 66.47727272727272,
+    mobility: 24.199,
+    healing: 0.8750437521876092,
+    magicalDamage: 33.47606238082266
   }
 };
       

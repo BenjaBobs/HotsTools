@@ -33,18 +33,25 @@ const tracer: Hero = {
       id: "TracerReload",
       name: "Reload",
       descriptionShort: "Tracer can move while Basic Attacking; Basic Attacks cost ammo",
-      descriptionLong: "Tracer can Basic Attack while moving, and after attacking 10 times she needs to reload over 0.75 seconds. Tracer can manually reload early by activating Reload.Basic Attacks heal Tracer for 10% of the damage dealt.",
+      descriptionLong: "Tracer can Basic Attack while moving, and after attacking 10 times she needs to reload over 0.75 seconds. Tracer can manually reload early by activating Reload. Basic Attacks heal Tracer for 10% of the damage dealt.",
       cooldown: 1,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_reload.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 20,
+        magicalDamage: 0
+      }
     },
     {
       id: "TracerBlink",
       name: "Blink",
       descriptionShort: "Dash towards an area",
-      descriptionLong: "Dash towards an area.Stores up to 3 charges.",
+      descriptionLong: "Dash towards an area. Stores up to 3 charges.",
       cooldown: 9,
       charges: {
         chargesMax: 3,
@@ -55,7 +62,14 @@ const tracer: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_blink_empty.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "TracerMelee",
@@ -72,7 +86,14 @@ const tracer: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_melee.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 27.5
+      }
     },
     {
       id: "TracerRecall",
@@ -83,13 +104,20 @@ const tracer: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_recall.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "TracerPulseBomb",
       name: "Pulse Bomb",
       descriptionShort: "Attach a bomb to enemies that deals heavy damage",
-      descriptionLong: "Fire a short range bomb that can attach to an enemy if it hits them. The bomb explodes after 2 seconds dealing 298 (+6% / level) damage to them and 149 (+6% / level) damage to other nearby enemies.This ability is slowly charged over time by dealing damage to enemies with Basic Attacks and Melee.",
+      descriptionLong: "Fire a short range bomb that can attach to an enemy if it hits them. The bomb explodes after 2 seconds dealing 298 (+6% / level) damage to them and 149 (+6% / level) damage to other nearby enemies. This ability is slowly charged over time by dealing damage to enemies with Basic Attacks and Melee.",
       cooldown: null,
       charges: {
         chargesMax: 100,
@@ -99,29 +127,14 @@ const tracer: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_pulsebomb.png",
-      isPassive: false
-    },
-    {
-      id: "TracerLockedandLoadedFailReload",
-      name: "Locked and Loaded",
-      descriptionShort: "Time Reload perfectly to gain Basic Attack damage",
-      descriptionLong: "Reactivate Reload within the last 50% of its cast time to increase Tracer's Basic Attack damage by 40% for that magazine.",
-      cooldown: 1,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_reload_c.png",
-      isPassive: false
-    },
-    {
-      id: "TracerLockedandLoaded",
-      name: "Locked and Loaded",
-      descriptionShort: "Time Reload perfectly to gain Basic Attack damage",
-      descriptionLong: "Reactivate Reload within the last 50% of its cast time to increase Tracer's Basic Attack damage by 40% for that magazine.",
-      cooldown: 1,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_reload_c.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 19.866666666666667
+      }
     }
   ],
   talents: [
@@ -142,6 +155,13 @@ const tracer: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_melee.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -158,6 +178,13 @@ const tracer: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_combo_e_r.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 16
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -174,6 +201,13 @@ const tracer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_reload.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -192,6 +226,13 @@ const tracer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_reload.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 26.666666666666668,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -213,6 +254,13 @@ const tracer: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_combo_q_r.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.3333333333333335,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -223,12 +271,19 @@ const tracer: Hero = {
         id: "TracerIsThataHealthPack",
         name: "Is That a Health Pack?!",
         descriptionShort: "Empower Healing Fountains, Regen Globes",
-        descriptionLong: "Collecting a Regeneration Globe instantly heals Tracer for 10% of her maximum Health and reduces the cooldown of Healing Fountain by 15 seconds.Drinking from a Healing Fountain instantly heals for 20% of Tracer's maximum Health.",
+        descriptionLong: "Collecting a Regeneration Globe instantly heals Tracer for 10% of her maximum Health and reduces the cooldown of Healing Fountain by 15 seconds. Drinking from a Healing Fountain instantly heals for 20% of Tracer's maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_medpack.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -244,6 +299,13 @@ const tracer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_reload.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -260,6 +322,13 @@ const tracer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_reload_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 5.333333333333333
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -276,6 +345,13 @@ const tracer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_reload_c.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -299,6 +375,13 @@ const tracer: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_pulsebomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -320,6 +403,13 @@ const tracer: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_pulsebomb_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -341,6 +431,13 @@ const tracer: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_pulsebomb_c.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level10",
         linkedAbilityIds: [
@@ -353,7 +450,7 @@ const tracer: Hero = {
         id: "TracerUntouchable",
         name: "Untouchable",
         descriptionShort: "Quest: Takedowns increase Attack Damage",
-        descriptionLong: "Passive: After Blinking, gain 20% Movement Speed for 1.5 seconds.Quest: Takedowns increase Tracer's Basic Attack damage by 5%, up to 25%. These bonuses are lost on death.",
+        descriptionLong: "Passive: After Blinking, gain 20% Movement Speed for 1.5 seconds. Quest: Takedowns increase Tracer's Basic Attack damage by 5%, up to 25%. These bonuses are lost on death.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -365,6 +462,13 @@ const tracer: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_combo_q_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -376,7 +480,7 @@ const tracer: Hero = {
         id: "TracerJumper",
         name: "Jumper",
         descriptionShort: "Blink grants Shield, reduced cooldown",
-        descriptionLong: "Passive: When Blink has no charges remaining, its cooldown refreshes 150% faster.Casting Blink grants Tracer a Shield equal to 8% of her maximum Health for 3 seconds. This Shield stacks up to 3 times.",
+        descriptionLong: "Passive: When Blink has no charges remaining, its cooldown refreshes 150% faster. Casting Blink grants Tracer a Shield equal to 8% of her maximum Health for 3 seconds. This Shield stacks up to 3 times.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -388,6 +492,13 @@ const tracer: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_blink_d.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -398,12 +509,19 @@ const tracer: Hero = {
         id: "TracerTelefrag",
         name: "Telefrag",
         descriptionShort: "Damage and knockback on Recall arrival",
-        descriptionLong: "Passive: Basic Attacks against enemy Heroes reduce the cooldown of Recall by 0.1875 seconds.When Tracer arrives at her Recall location she becomes Unkillable for 1 second and nearby enemies take 175 (+4% / level) damage and are knocked back.",
+        descriptionLong: "Passive: Basic Attacks against enemy Heroes reduce the cooldown of Recall by 0.1875 seconds. When Tracer arrives at her Recall location she becomes Unkillable for 1 second and nearby enemies take 175 (+4% / level) damage and are knocked back.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_recall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -428,6 +546,13 @@ const tracer: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_melee.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -450,6 +575,13 @@ const tracer: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_melee_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -466,6 +598,13 @@ const tracer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_reload.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -490,6 +629,13 @@ const tracer: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_combo_q_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -512,6 +658,13 @@ const tracer: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_melee.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -528,6 +681,13 @@ const tracer: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_recall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -549,6 +709,13 @@ const tracer: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_pulsebomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -559,7 +726,10 @@ const tracer: Hero = {
   ],
   analysis: {
     tankiness: 40.07532956685499,
-    damageSustainedPhysical: 100
+    physicalDamage: 92,
+    mobility: 24.199,
+    healing: 26.251312565628282,
+    magicalDamage: 20.967265958412785
   }
 };
       

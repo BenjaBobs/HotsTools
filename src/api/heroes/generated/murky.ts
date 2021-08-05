@@ -28,12 +28,19 @@ const murky: Hero = {
       id: "MurkyRespawnEgg",
       name: "Spawn Egg",
       descriptionShort: "Place an Egg, from which Murky will respawn",
-      descriptionLong: "Place an Egg at target location, revealing the nearby area. Upon dying, Murky respawns at the Egg after 8 seconds. Murky only grants 25% of a real Hero's experience upon dying.If Murky's Egg is killed, he is revealed to enemies for 15 seconds, and Spawn Egg is placed on cooldown.",
+      descriptionLong: "Place an Egg at target location, revealing the nearby area. Upon dying, Murky respawns at the Egg after 8 seconds. Murky only grants 25% of a real Hero's experience upon dying. If Murky's Egg is killed, he is revealed to enemies for 15 seconds, and Spawn Egg is placed on cooldown.",
       cooldown: 15,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_trait_spawnegg.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MurkySlime",
@@ -44,7 +51,14 @@ const murky: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_slime.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 74
+      }
     },
     {
       id: "MurkyPufferfish",
@@ -55,7 +69,14 @@ const murky: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_pufferfish.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MurkySafetyBubble",
@@ -66,7 +87,14 @@ const murky: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_safetybubble.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MurkyMarchoftheMurlocs",
@@ -77,7 +105,14 @@ const murky: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_marchofthemurlocs.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 8.333333333333334
+      }
     },
     {
       id: "MurkyOctoGrab",
@@ -88,7 +123,14 @@ const murky: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_octograb.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -103,6 +145,13 @@ const murky: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_trait_spawnegg.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -113,12 +162,19 @@ const murky: Hero = {
         id: "MurkyEggHunt",
         name: "Egg Hunt",
         descriptionShort: "Place fake Eggs",
-        descriptionLong: "Activate to place a fake Egg. If the fake Egg dies, it casts an untalented Slime. Maximum 3 fake Eggs.Passive: Spawning from his Egg grants Murky Stealth for 5 seconds.",
+        descriptionLong: "Activate to place a fake Egg. If the fake Egg dies, it casts an untalented Slime. Maximum 3 fake Eggs. Passive: Spawning from his Egg grants Murky Stealth for 5 seconds.",
         cooldown: 3,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_egghunt.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1"
       },
@@ -126,7 +182,7 @@ const murky: Hero = {
         id: "MurkyAFishyDeal",
         name: "A Fishy Deal",
         descriptionShort: "Kill Minions with Pufferfish to bribe Mercs",
-        descriptionLong: "Killing a Minion with Pufferfish grants a stack of Bribe. Use 8 stacks to bribe a Mercenary, instantly defeating them. Does not work on Elite Mercenaries.Maximum of 32 stacks of Bribe.",
+        descriptionLong: "Killing a Minion with Pufferfish grants a stack of Bribe. Use 8 stacks to bribe a Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum of 32 stacks of Bribe.",
         cooldown: null,
         charges: {
           chargesMax: 4,
@@ -138,6 +194,13 @@ const murky: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_bribe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -147,12 +210,19 @@ const murky: Hero = {
         id: "MurkySlimeTime",
         name: "Slime Time",
         descriptionShort: "Quest: Slime Heroes to empower Slime",
-        descriptionLong: "Quest: Slime enemy Heroes that are already Slimed.Reward: After Sliming 10 Heroes, increase Slime's bonus damage by 125.Reward: After Sliming 20 Heroes, increase Slime's slow amount to 30%.",
+        descriptionLong: "Quest: Slime enemy Heroes that are already Slimed. Reward: After Sliming 10 Heroes, increase Slime's bonus damage by 125. Reward: After Sliming 20 Heroes, increase Slime's slow amount to 30%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_slime.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -170,6 +240,13 @@ const murky: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_pufferfish.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -186,6 +263,13 @@ const murky: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_trait_spawnegg_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -205,6 +289,13 @@ const murky: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_slime.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -221,6 +312,13 @@ const murky: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_safetybubble.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -237,6 +335,13 @@ const murky: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_slow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0.4666666666666667
+        },
         order: 3,
         tier: "level7"
       }
@@ -252,6 +357,13 @@ const murky: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_marchofthemurlocs.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 8.333333333333334
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -268,6 +380,13 @@ const murky: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_octograb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -286,6 +405,13 @@ const murky: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_safetybubble.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -302,6 +428,13 @@ const murky: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_trait_spawnegg.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -318,6 +451,13 @@ const murky: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_fishtank.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.3333333333333335,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -336,6 +476,13 @@ const murky: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_slime.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -352,6 +499,13 @@ const murky: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_pufferfish.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -368,6 +522,13 @@ const murky: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_pufferfish_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -386,6 +547,13 @@ const murky: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_marchofthemurlocs.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -405,6 +573,13 @@ const murky: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_octograb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -424,6 +599,13 @@ const murky: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_ingame_heroselect_btn_murky.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -440,6 +622,13 @@ const murky: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_murky_slime.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -450,7 +639,10 @@ const murky: Hero = {
   ],
   analysis: {
     tankiness: 21.99623352165725,
-    damageSustainedPhysical: 10.190217391304348
+    physicalDamage: 37.49999999999999,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 36.44556433306093
   }
 };
       

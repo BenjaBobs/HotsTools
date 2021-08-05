@@ -38,13 +38,20 @@ const ltmorales: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_caduceusreactor.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0.26666666666666666,
+        magicalDamage: 0
+      }
     },
     {
       id: "MedicHealingBeam",
       name: "Healing Beam",
       descriptionShort: "Heals allies over time",
-      descriptionLong: "Heal target allied Hero or Minion for 172 (+4% / level) Health per second as long as they are in range. After not channeling Healing Beam for 2 seconds, regenerate 6 Energy per second.Reactivate to switch targets, or self-cast to cancel channeling.",
+      descriptionLong: "Heal target allied Hero or Minion for 172 (+4% / level) Health per second as long as they are in range. After not channeling Healing Beam for 2 seconds, regenerate 6 Energy per second. Reactivate to switch targets, or self-cast to cancel channeling.",
       cost: {
         type: "Energy",
         amount: 6,
@@ -54,7 +61,14 @@ const ltmorales: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_healingbeam.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 2.293333333333333,
+        magicalDamage: 0
+      }
     },
     {
       id: "MedicSafeguard",
@@ -71,7 +85,14 @@ const ltmorales: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MedicDisplacementGrenade",
@@ -82,7 +103,14 @@ const ltmorales: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_displacementgrenade.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MedicStimDrone",
@@ -93,7 +121,14 @@ const ltmorales: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_stim.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MedicMedivacDropship",
@@ -104,29 +139,14 @@ const ltmorales: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_medivacdropship.png",
-      isPassive: false
-    },
-    {
-      id: "MedicRedirectHealingBeam",
-      name: "Redirect Healing Beam",
-      descriptionShort: "Heals allies over time",
-      descriptionLong: "Redirect Healing Beam to another Hero or Minion. Self-cast to cancel channeling.",
-      cooldown: null,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_healingbeam_target.png",
-      isPassive: false
-    },
-    {
-      id: "MedicDetonateDisplacementGrenade",
-      name: "Detonate Displacement Grenade",
-      descriptionShort: "Damages and knocks enemies away",
-      descriptionLong: "Detonate Displacement Grenade, dealing 208 (+4% / level) damage to nearby enemies and knocking them away.",
-      cooldown: 12,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_displacementgrenade_b.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -141,6 +161,13 @@ const ltmorales: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_mana.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1"
       },
@@ -160,6 +187,13 @@ const ltmorales: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -170,12 +204,19 @@ const ltmorales: Hero = {
         id: "MedicClear",
         name: "Clear!",
         descriptionShort: "Quest: Hit Heroes to empower Displacement Grenade",
-        descriptionLong: "Quest: Hit Heroes with Displacement Grenade.Reward: After hitting 15 Heroes, reduce the cooldown of Displacement Grenade from 12 seconds to 9 seconds.Reward: After hitting 30 Heroes, increase the detonation area of Displacement Grenade by 25%.",
+        descriptionLong: "Quest: Hit Heroes with Displacement Grenade. Reward: After hitting 15 Heroes, reduce the cooldown of Displacement Grenade from 12 seconds to 9 seconds. Reward: After hitting 30 Heroes, increase the detonation area of Displacement Grenade by 25%.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_displacementgrenade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -196,6 +237,13 @@ const ltmorales: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_temp_btn-upgrade-terran-mobiusreactor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 5.333333333333333,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4"
       },
@@ -203,12 +251,19 @@ const ltmorales: Hero = {
         id: "MedicTraumaTrigger",
         name: "Trauma Trigger",
         descriptionShort: "Gain Armor at low Health",
-        descriptionLong: "Taking damage while below 40% Health grants 40 Armor for 3 seconds.This effect has a 20 second cooldown.",
+        descriptionLong: "Taking damage while below 40% Health grants 40 Armor for 3 seconds. This effect has a 20 second cooldown.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_advancedblock.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4"
       },
@@ -222,6 +277,13 @@ const ltmorales: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_displacementgrenade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -246,6 +308,13 @@ const ltmorales: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -256,7 +325,7 @@ const ltmorales: Hero = {
         id: "MedicVanadiumPlating",
         name: "Vanadium Plating",
         descriptionShort: "Increased duration, Stuns, Roots increase Safeguard Armor",
-        descriptionLong: "Passive: Increase the duration of Safeguard by 1 second.While an ally affected by Safeguard is Stunned or Rooted, Safeguard grants an additional 20 Armor.",
+        descriptionLong: "Passive: Increase the duration of Safeguard by 1 second. While an ally affected by Safeguard is Stunned or Rooted, Safeguard grants an additional 20 Armor.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -268,6 +337,13 @@ const ltmorales: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield_c.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -290,6 +366,13 @@ const ltmorales: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -308,6 +391,13 @@ const ltmorales: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_stim.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -324,6 +414,13 @@ const ltmorales: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_medivacdropship.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -342,6 +439,13 @@ const ltmorales: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_displacementgrenade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6.4
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -358,6 +462,13 @@ const ltmorales: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_displacementgrenade_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -375,6 +486,13 @@ const ltmorales: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_displacementgrenade_c.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -393,6 +511,13 @@ const ltmorales: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_healingbeam.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -410,6 +535,13 @@ const ltmorales: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_healingbeam_c.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.3333333333333335,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -433,6 +565,13 @@ const ltmorales: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -451,6 +590,13 @@ const ltmorales: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_stim.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -470,6 +616,13 @@ const ltmorales: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_medivacdropship.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -483,12 +636,19 @@ const ltmorales: Hero = {
         id: "MedicReinforcements",
         name: "Reinforcements",
         descriptionShort: "Medivac appears at Hall of Storms",
-        descriptionLong: "Activate to call down a Medivac Dropship at your Hall of Storms for your allies. After 10 seconds, or when the Ability is activated again, the Medivac will travel to the original cast location to unload its passengers. Cooldown is shared with Medivac Dropship.Passive: Reduce the cooldown of Medivac Dropship from 60 to 30 seconds.Does not require the Medivac Dropship Talent.",
+        descriptionLong: "Activate to call down a Medivac Dropship at your Hall of Storms for your allies. After 10 seconds, or when the Ability is activated again, the Medivac will travel to the original cast location to unload its passengers. Cooldown is shared with Medivac Dropship. Passive: Reduce the cooldown of Medivac Dropship from 60 to 30 seconds. Does not require the Medivac Dropship Talent.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_medivacdropship_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -505,6 +665,13 @@ const ltmorales: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_caduceusreactor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.0666666666666667,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -515,7 +682,10 @@ const ltmorales: Hero = {
   ],
   analysis: {
     tankiness: 46.55367231638417,
-    damageSustainedPhysical: 49.619565217391305
+    physicalDamage: 41.5,
+    mobility: 24.199,
+    healing: 3.3601680084004193,
+    magicalDamage: 0
   }
 };
       

@@ -38,7 +38,14 @@ const rehgar: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "RehgarGhostWolfActivate",
@@ -49,7 +56,14 @@ const rehgar: Hero = {
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_mount.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "RehgarChainHeal",
@@ -64,7 +78,14 @@ const rehgar: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_chainheal.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 13,
+        magicalDamage: 0
+      }
     },
     {
       id: "RehgarLightningShield",
@@ -79,7 +100,14 @@ const rehgar: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_lightningshield.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 8
+      }
     },
     {
       id: "RehgarEarthbindTotem",
@@ -94,7 +122,14 @@ const rehgar: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_earthbindtotem.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "RehgarBloodlust",
@@ -109,7 +144,14 @@ const rehgar: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_bloodlust.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 4,
+        magicalDamage: 0
+      }
     },
     {
       id: "RehgarAncestralHealing",
@@ -124,29 +166,14 @@ const rehgar: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ancestralhealing.png",
-      isPassive: false
-    },
-    {
-      id: "RehgarTotemicProjection",
-      name: "Totemic Projection",
-      descriptionShort: "Instantly move Earthbind Totem to a new location",
-      descriptionLong: "Instantly move Earthbind Totem to a new location.",
-      cooldown: null,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_earthbindtotem_a.png",
-      isPassive: false
-    },
-    {
-      id: "RehgarGhostWolfLunge",
-      name: "Ghost Wolf",
-      descriptionShort: "Transform into a Ghost Wolf",
-      descriptionLong: "Instead of using a mount, Rehgar transforms into a Ghost Wolf with 20% increased Movement Speed. Basic Attacks in Ghost Wolf form cause him to lunge at his target and deal 75% bonus damage. Dealing damage, using Abilities, and channeling cancels Ghost Wolf form.",
-      cooldown: null,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
-      isPassive: true
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 15.733333333333333,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -161,6 +188,13 @@ const rehgar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_lightningshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -177,6 +211,13 @@ const rehgar: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_earthbindtotem.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -193,6 +234,13 @@ const rehgar: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -212,6 +260,13 @@ const rehgar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_lightningshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -228,6 +283,13 @@ const rehgar: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -245,6 +307,13 @@ const rehgar: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_healingward.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.5333333333333333,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -260,6 +329,13 @@ const rehgar: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_earthbindtotem.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7"
       },
@@ -273,6 +349,13 @@ const rehgar: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -290,6 +373,13 @@ const rehgar: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_cleanse.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -309,6 +399,13 @@ const rehgar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ancestralhealing.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 15.733333333333333,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -329,6 +426,13 @@ const rehgar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_bloodlust.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -347,6 +451,13 @@ const rehgar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_chainheal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -363,6 +474,13 @@ const rehgar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_chainheal_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 9.666666666666668,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -379,6 +497,13 @@ const rehgar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_lightningshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -397,6 +522,13 @@ const rehgar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_lightningshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -413,6 +545,13 @@ const rehgar: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_earthbindtotem.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -429,6 +568,13 @@ const rehgar: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.6666666666666666,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -448,6 +594,13 @@ const rehgar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ancestralhealing.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 7.866666666666666,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -467,6 +620,13 @@ const rehgar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_bloodlust.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -486,6 +646,13 @@ const rehgar: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_rewind.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20"
       },
@@ -499,6 +666,13 @@ const rehgar: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_stormshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -506,7 +680,10 @@ const rehgar: Hero = {
   ],
   analysis: {
     tankiness: 60.263653483992464,
-    damageSustainedPhysical: 21.603260869565215
+    physicalDamage: 66.25,
+    mobility: 24.199,
+    healing: 42.964648232411626,
+    magicalDamage: 3.5412694088804137
   }
 };
       

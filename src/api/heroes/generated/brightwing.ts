@@ -33,12 +33,19 @@ const brightwing: Hero = {
       id: "BrightwingCalmingMist",
       name: "Soothing Mist",
       descriptionShort: "Remove disabling effects from allies",
-      descriptionLong: "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.Passive: Brightwing heals nearby allied Heroes for 105 (+4% / level) every 4 seconds",
+      descriptionLong: "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes. Passive: Brightwing heals nearby allied Heroes for 105 (+4% / level) every 4 seconds",
       cooldown: 100,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_soothingmist.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 2.8,
+        magicalDamage: 0
+      }
     },
     {
       id: "BrightwingPhaseShift",
@@ -49,7 +56,14 @@ const brightwing: Hero = {
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_mount.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 3.3333333333333335,
+        magicalDamage: 0
+      }
     },
     {
       id: "FaerieDragonArcaneFlare",
@@ -64,7 +78,14 @@ const brightwing: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_arcaneflare.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 12.5
+      }
     },
     {
       id: "FaerieDragonPolymorph",
@@ -79,7 +100,14 @@ const brightwing: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_polymorph.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "FaerieDragonPixieDust",
@@ -94,13 +122,20 @@ const brightwing: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_pixiedust.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "FaerieDragonBlinkHealDash",
       name: "Blink Heal",
       descriptionShort: "Teleport to allies and heal them",
-      descriptionLong: "Teleport to a nearby ally. When teleporting to a Hero, heal them for 200 (+4% / level).Stores up to 2 charges.",
+      descriptionLong: "Teleport to a nearby ally. When teleporting to a Hero, heal them for 200 (+4% / level). Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 40
@@ -115,7 +150,14 @@ const brightwing: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_blinkheal.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 4.444444444444445,
+        magicalDamage: 0
+      }
     },
     {
       id: "FaerieDragonEmeraldWind",
@@ -130,7 +172,14 @@ const brightwing: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_emeraldwind.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15
+      }
     }
   ],
   talents: [
@@ -145,6 +194,13 @@ const brightwing: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_polymorph.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -161,6 +217,13 @@ const brightwing: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_hypershift.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.0666666666666667,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -171,7 +234,7 @@ const brightwing: Hero = {
         id: "BrightwingPixieCharm",
         name: "Pixie Charm",
         descriptionShort: "Activate to instantly defeat a Mercenary",
-        descriptionLong: "Activate to consume 20 stacks of Bribe to instantly defeat an uncaptured non-Elite Mercenary.Passive: Gain 1 stack of Bribe when a nearby enemy Minion dies, and 5 stacks when hitting an enemy Hero with Arcane Flare's center. Maximum 80 stacks.",
+        descriptionLong: "Activate to consume 20 stacks of Bribe to instantly defeat an uncaptured non-Elite Mercenary. Passive: Gain 1 stack of Bribe when a nearby enemy Minion dies, and 5 stacks when hitting an enemy Hero with Arcane Flare's center. Maximum 80 stacks.",
         cooldown: null,
         charges: {
           chargesMax: 4,
@@ -183,6 +246,13 @@ const brightwing: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_bribe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -198,6 +268,13 @@ const brightwing: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_arcaneflare.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -214,6 +291,13 @@ const brightwing: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_polymorph.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -230,6 +314,13 @@ const brightwing: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -245,6 +336,13 @@ const brightwing: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_arcaneflare.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -261,6 +359,13 @@ const brightwing: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_hypershift.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -277,6 +382,13 @@ const brightwing: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_soothingmist.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 17.733333333333334,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -289,7 +401,7 @@ const brightwing: Hero = {
         id: "FaerieDragonHeroicAbilityBlinkHeal",
         name: "Blink Heal",
         descriptionShort: "Teleport to allies and heal them",
-        descriptionLong: "Teleport to a nearby ally. When teleporting to a Hero, heal them for 200 (+4% / level).Stores up to 2 charges.",
+        descriptionLong: "Teleport to a nearby ally. When teleporting to a Hero, heal them for 200 (+4% / level). Stores up to 2 charges.",
         cost: {
           type: "Mana",
           amount: 40
@@ -305,6 +417,13 @@ const brightwing: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_blinkheal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4.444444444444445,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -325,6 +444,13 @@ const brightwing: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_emeraldwind.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 15
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -343,6 +469,13 @@ const brightwing: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_pixiedust.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -359,6 +492,13 @@ const brightwing: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_pixiedust_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 10,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -375,6 +515,13 @@ const brightwing: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_pixiedust_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -393,6 +540,13 @@ const brightwing: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_arcaneflare.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -409,6 +563,13 @@ const brightwing: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_polymorph.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -425,6 +586,13 @@ const brightwing: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_stasis.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -434,7 +602,7 @@ const brightwing: Hero = {
         id: "BrightwingInvisibleFriends",
         name: "Invisible Friends",
         descriptionShort: "Blink Heal grants Stealth",
-        descriptionLong: "Blink Heal grants Stealth to Brightwing. If Blink Heal is cast on a Hero, they are also granted Stealth. While Stealthed by Invisible Friends, Heroes heal for 20 (+4% / level) Health per second and are Unrevealable for the first 0.5 seconds.Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
+        descriptionLong: "Blink Heal grants Stealth to Brightwing. If Blink Heal is cast on a Hero, they are also granted Stealth. While Stealthed by Invisible Friends, Heroes heal for 20 (+4% / level) Health per second and are Unrevealable for the first 0.5 seconds. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -446,6 +614,13 @@ const brightwing: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_blinkheal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.5333333333333333,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -465,6 +640,13 @@ const brightwing: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_emeraldwind.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -484,6 +666,13 @@ const brightwing: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_hypershift.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20"
       },
@@ -497,6 +686,13 @@ const brightwing: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_pixiedust.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -507,7 +703,10 @@ const brightwing: Hero = {
   ],
   analysis: {
     tankiness: 43.69114877589453,
-    damageSustainedPhysical: 53.80434782608695
+    physicalDamage: 45,
+    mobility: 24.199,
+    healing: 13.88402753471007,
+    magicalDamage: 12.173113593026423
   }
 };
       

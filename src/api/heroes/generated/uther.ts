@@ -33,12 +33,19 @@ const uther: Hero = {
       id: "UtherEternalDevotion",
       name: "Devotion",
       descriptionShort: "Uther's healing grants Armor, and when killed his spirit remains",
-      descriptionLong: "Allied Heroes affected by Uther's Basic Abilities gain 25 Armor for 2 seconds.  This effect does not stack with itself.Eternal VanguardUpon dying, Uther becomes an Invulnerable spirit for up to 8 seconds. While in spirit form, Uther can heal allies with Flash of Light.",
+      descriptionLong: "Allied Heroes affected by Uther's Basic Abilities gain 25 Armor for 2 seconds.  This effect does not stack with itself. Eternal VanguardUpon dying, Uther becomes an Invulnerable spirit for up to 8 seconds. While in spirit form, Uther can heal allies with Flash of Light.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_eternaldevotion.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "UtherHolyLight",
@@ -53,7 +60,14 @@ const uther: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holylight.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 9.05,
+        magicalDamage: 0
+      }
     },
     {
       id: "UtherHolyRadiance",
@@ -68,7 +82,14 @@ const uther: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holyradiance.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 7.76,
+        magicalDamage: 17.7
+      }
     },
     {
       id: "UtherHammerOfJustice",
@@ -83,7 +104,14 @@ const uther: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_hammerofjustice.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10.9
+      }
     },
     {
       id: "UtherDivineIntervention",
@@ -98,7 +126,14 @@ const uther: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divineshield.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "UtherDivineStorm",
@@ -113,33 +148,14 @@ const uther: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divinestorm.png",
-      isPassive: false
-    },
-    {
-      id: "UtherHolyShock",
-      name: "Holy Light",
-      descriptionShort: "Heal an allied Hero and Uther",
-      descriptionLong: "Heal target allied Hero for 362 (+4% / level) Health. When used on a target other than Uther, also heal Uther for 181 (+4% / level) Health.",
-      cost: {
-        type: "Mana",
-        amount: 80
-      },
-      cooldown: 12,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holylight.png",
-      isPassive: false
-    },
-    {
-      id: "UtherFlashofLight",
-      name: "Flash of Light",
-      descriptionShort: "Heal an Ally",
-      descriptionLong: "Heal an ally for 230 (+4% / level) Health.",
-      cooldown: 1.5,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_flashoflight.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.333333333333334
+      }
     }
   ],
   talents: [
@@ -148,12 +164,19 @@ const uther: Hero = {
         id: "UtherHolyLightSilverTouch",
         name: "Silver Touch",
         descriptionShort: "Quest: Mitigate damage to improve Holy Light",
-        descriptionLong: "Quest: Reduce damage from Heroic sources with Devotion.Reward: After reducing damage 40 times, Holy Light's Mana cost is reduced from 80 to 60.Reward: After reducing damage 80 times, Holy Light's Mana cost is reduced to 40, and its range is increased by 50%.",
+        descriptionLong: "Quest: Reduce damage from Heroic sources with Devotion. Reward: After reducing damage 40 times, Holy Light's Mana cost is reduced from 80 to 60. Reward: After reducing damage 80 times, Holy Light's Mana cost is reduced to 40, and its range is increased by 50%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holylight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -166,12 +189,19 @@ const uther: Hero = {
         id: "UtherMasteryWaveofLightHolyRadiance",
         name: "Wave of Light",
         descriptionShort: "Quest: Holy Radiance increases Devotion duration",
-        descriptionLong: "Quest: Damage or heal Heroes 60 times with Holy Radiance.Reward: Increase the duration of Devotion by 0.5 seconds.Passive: Damaging or healing Heroes with Holy Radiance refunds 5 Mana and reduces its cooldown by 0.75 seconds.",
+        descriptionLong: "Quest: Damage or heal Heroes 60 times with Holy Radiance. Reward: Increase the duration of Devotion by 0.5 seconds. Passive: Damaging or healing Heroes with Holy Radiance refunds 5 Mana and reduces its cooldown by 0.75 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holyradiance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -183,12 +213,19 @@ const uther: Hero = {
         id: "UtherCombatStyleHammerOfTheLightbringer",
         name: "Hammer of the Lightbringer",
         descriptionShort: "Quest: Reduce Hammer of Justice cooldown",
-        descriptionLong: "Quest: Basic Attack enemies 75 times.Reward: Basic Attacks reduce the cooldown of Hammer of Justice by 1.5 seconds.Passive: Basic Attacks restore 1.5% of Uther's maximum Mana.",
+        descriptionLong: "Quest: Basic Attack enemies 75 times. Reward: Basic Attacks reduce the cooldown of Hammer of Justice by 1.5 seconds. Passive: Basic Attacks restore 1.5% of Uther's maximum Mana.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_mana.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -208,6 +245,13 @@ const uther: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holylight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -225,6 +269,13 @@ const uther: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_hammerofjustice.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -241,6 +292,13 @@ const uther: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holyfire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0.8666666666666667
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -259,6 +317,13 @@ const uther: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holylight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -276,6 +341,13 @@ const uther: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_eternaldevotion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -292,6 +364,13 @@ const uther: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_cleanse.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -311,6 +390,13 @@ const uther: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divineshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -331,6 +417,13 @@ const uther: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divinestorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 11.333333333333334
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -349,6 +442,13 @@ const uther: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holylight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -366,6 +466,13 @@ const uther: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_hammerofjustice.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -376,12 +483,19 @@ const uther: Hero = {
         id: "GenericTalentSpellShield",
         name: "Spell Shield",
         descriptionShort: "Periodically gain temporary Spell Armor",
-        descriptionLong: "Every 30 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 50%.Can be toggled to allow or prevent this talent from triggering automatically.",
+        descriptionLong: "Every 30 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 50%. Can be toggled to allow or prevent this talent from triggering automatically.",
         cooldown: null,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_spellshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -397,6 +511,13 @@ const uther: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holylight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 33.333333333333336,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -414,6 +535,13 @@ const uther: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_holyradiance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2.6666666666666665,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -430,6 +558,13 @@ const uther: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_benediction.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -445,6 +580,13 @@ const uther: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divineshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -464,6 +606,13 @@ const uther: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divinestorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -477,12 +626,19 @@ const uther: Hero = {
         id: "UtherMasteryRedemption",
         name: "Redemption",
         descriptionShort: "Resurrect after Eternal Vanguard ends",
-        descriptionLong: "After Eternal Vanguard ends, Uther revives at the spirit's location with 50% of his maximum Health.This effect has a 180 second cooldown.",
+        descriptionLong: "After Eternal Vanguard ends, Uther revives at the spirit's location with 50% of his maximum Health. This effect has a 180 second cooldown.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_eternaldevotion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -499,6 +655,13 @@ const uther: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_eternaldevotion_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -509,7 +672,10 @@ const uther: Hero = {
   ],
   analysis: {
     tankiness: 59.51035781544256,
-    damageSustainedPhysical: 8.152173913043477
+    physicalDamage: 37.5,
+    mobility: 24.199,
+    healing: 22.064228211410573,
+    magicalDamage: 17.676836465994736
   }
 };
       

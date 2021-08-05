@@ -40,12 +40,19 @@ const rexxar: Hero = {
       id: "RexxarMishaFocus",
       name: "Misha, Focus!",
       descriptionShort: "Command Misha to move or attack",
-      descriptionLong: "Passive: Misha gains 15% move speed. Command Misha to attack a specific enemy or move to a point and wait.Targeting Rexxar commands Misha to retreat to his position, gaining 30% move speed until she reaches Rexxar.Targeting Misha commands her to hold her current position.",
+      descriptionLong: "Passive: Misha gains 15% move speed. Command Misha to attack a specific enemy or move to a point and wait. Targeting Rexxar commands Misha to retreat to his position, gaining 30% move speed until she reaches Rexxar. Targeting Misha commands her to hold her current position.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_mishafixate.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "RexxarSpiritSwoop",
@@ -60,7 +67,14 @@ const rexxar: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_spiritswoop.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 20.142857142857142
+      }
     },
     {
       id: "RexxarMishaChargeRedirect",
@@ -75,7 +89,14 @@ const rexxar: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_mishacharge.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15
+      }
     },
     {
       id: "RexxarMendPet",
@@ -90,7 +111,14 @@ const rexxar: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_mendpet.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 14.280000000000001,
+        magicalDamage: 0
+      }
     },
     {
       id: "RexxarUnleashTheBoars",
@@ -105,7 +133,14 @@ const rexxar: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_unleashtheboars.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 7.333333333333333
+      }
     },
     {
       id: "RexxarBestialWrath",
@@ -120,7 +155,14 @@ const rexxar: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_bestialwrath.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -135,6 +177,13 @@ const rexxar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_spiritswoop.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -151,6 +200,13 @@ const rexxar: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_heremishaactive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1"
       },
@@ -164,6 +220,13 @@ const rexxar: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_flare.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -179,6 +242,13 @@ const rexxar: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_heremishaactive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.6,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4"
       },
@@ -192,6 +262,13 @@ const rexxar: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_regenerationmaster.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         isQuest: true
@@ -200,12 +277,19 @@ const rexxar: Hero = {
         id: "RexxarSpiritBondGrizzledFortitude",
         name: "Grizzled Fortitude",
         descriptionShort: "Periodically gain Physical Armor",
-        descriptionLong: "Every 6 seconds, Rexxar and Misha gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.Stores up to 2 charges. Both Rexxar and Misha have their own charges.",
+        descriptionLong: "Every 6 seconds, Rexxar and Misha gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%. Stores up to 2 charges. Both Rexxar and Misha have their own charges.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_block.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       },
@@ -219,6 +303,13 @@ const rexxar: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_stayinalive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level4"
       }
@@ -234,6 +325,13 @@ const rexxar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_spiritswoop.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -250,6 +348,13 @@ const rexxar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_spiritswoop_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -266,6 +371,13 @@ const rexxar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_mishacharge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -289,6 +401,13 @@ const rexxar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_bestialwrath.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -309,6 +428,13 @@ const rexxar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_unleashtheboars.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 7.333333333333333
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -327,6 +453,13 @@ const rexxar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_spiritswoop.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -343,6 +476,13 @@ const rexxar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_mishacharge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -360,6 +500,13 @@ const rexxar: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_burningrage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 1.8666666666666667
+        },
         order: 3,
         tier: "level13"
       }
@@ -375,6 +522,13 @@ const rexxar: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_heremishaactive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16"
       },
@@ -382,12 +536,19 @@ const rexxar: Hero = {
         id: "RexxarSpiritBondPrimalIntimidation",
         name: "Primal Intimidation",
         descriptionShort: "Activate to slow enemy Attack and Move speed",
-        descriptionLong: "Activate to slow the Attack Speed by 50% and Movement Speed by 20% of Heroes and Summons near Rexxar and Misha for 2.5 seconds.Passive: Heroes and Summons that attack Rexxar or Misha have their Attack Speed slowed by 20% for 2.5 seconds.",
+        descriptionLong: "Activate to slow the Attack Speed by 50% and Movement Speed by 20% of Heroes and Summons near Rexxar and Misha for 2.5 seconds. Passive: Heroes and Summons that attack Rexxar or Misha have their Attack Speed slowed by 20% for 2.5 seconds.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_imposingpresence.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16"
       },
@@ -401,6 +562,13 @@ const rexxar: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_feigndeath.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -416,6 +584,13 @@ const rexxar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_bestialwrath.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -435,6 +610,13 @@ const rexxar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_unleashtheboars.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -454,6 +636,13 @@ const rexxar: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_slow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20"
       },
@@ -467,6 +656,13 @@ const rexxar: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_hardenedshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -504,19 +700,32 @@ const rexxar: Hero = {
           category: "basic",
           type: "W",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_mishacharge.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 10
+          }
         }
       ],
       talents: [],
       analysis: {
         tankiness: 7.22,
-        damageSustainedPhysical: 2.5
+        physicalDamage: 1.6666666666666667,
+        mobility: 24.199,
+        healing: 0,
+        magicalDamage: 10
       }
     }
   ],
   analysis: {
     tankiness: 54.538606403013176,
-    damageSustainedPhysical: 44.32892249527411
+    physicalDamage: 58.2608695652174,
+    mobility: 24.199,
+    healing: 18.74343717185859,
+    magicalDamage: 18.802454242388862
   }
 };
       

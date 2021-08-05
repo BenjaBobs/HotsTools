@@ -45,7 +45,14 @@ const raynor: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "RaynorPenetratingRound",
@@ -60,13 +67,20 @@ const raynor: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_penetratinground.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 22
+      }
     },
     {
       id: "RaynorInspire",
       name: "Inspire",
       descriptionShort: "Reset and empower Basic Attacks",
-      descriptionLong: "Raynor and all nearby allied Minions and Mercenaries gain 30% Attack Speed and 10% Movement Speed for 4 seconds.Casting Inspire resets Raynor's Basic Attack cooldown.",
+      descriptionLong: "Raynor and all nearby allied Minions and Mercenaries gain 30% Attack Speed and 10% Movement Speed for 4 seconds. Casting Inspire resets Raynor's Basic Attack cooldown.",
       cost: {
         type: "Mana",
         amount: 50
@@ -75,7 +89,14 @@ const raynor: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_inspire.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "RaynorAdrenalineRush",
@@ -90,7 +111,14 @@ const raynor: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_adrenalinrush.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 3.3333333333333335,
+        magicalDamage: 0
+      }
     },
     {
       id: "RaynorHyperion",
@@ -105,40 +133,32 @@ const raynor: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_hyperion.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 52.93333333333333
+      }
     },
     {
       id: "RaynorRaynorsRaidersDummy",
       name: "Raynor's Raider",
       descriptionShort: "Summon a Banshee escort",
-      descriptionLong: "Summon a Banshee that assists Raynor. The Banshee deals 84 (+4% / level) damage per second and regenerates 75 (+4% / level) Health per second if it hasn't taken damage in the last 4 seconds. Can reactivate to retarget or move the Banshee.The Banshee respawns automatically after 45 seconds.",
+      descriptionLong: "Summon a Banshee that assists Raynor. The Banshee deals 84 (+4% / level) damage per second and regenerates 75 (+4% / level) Health per second if it hasn't taken damage in the last 4 seconds. Can reactivate to retarget or move the Banshee. The Banshee respawns automatically after 45 seconds.",
       cooldown: 45,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_raynorsraiders.png",
-      isPassive: false
-    },
-    {
-      id: "RaynorRaynorsRaidersRedirect",
-      name: "Command Raynor's Raider",
-      descriptionShort: "Order the Banshee to attack",
-      descriptionLong: "Order the Banshee to attack an enemy.",
-      cooldown: null,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_commandraynorsraiders.png",
-      isPassive: false
-    },
-    {
-      id: "RaynorBountyHunter",
-      name: "Give 'Em Some Pepper",
-      descriptionShort: "Empower every 4th Attack",
-      descriptionLong: "Every 4th Basic Attack splashes in a small area and deals 125% more damage to the main target.",
-      cooldown: 40,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5.6
+      }
     }
   ],
   talents: [
@@ -153,6 +173,13 @@ const raynor: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -171,6 +198,13 @@ const raynor: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acardtoplay.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -188,6 +222,13 @@ const raynor: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_building.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -207,6 +248,13 @@ const raynor: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_adrenalinrush.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -223,6 +271,13 @@ const raynor: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.4,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -240,6 +295,13 @@ const raynor: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_hulkarmor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -260,6 +322,13 @@ const raynor: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_split_debilitatingrounds.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -277,6 +346,13 @@ const raynor: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -294,6 +370,13 @@ const raynor: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_penetratinground.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -316,6 +399,13 @@ const raynor: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_hyperion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 52.93333333333333
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -326,12 +416,19 @@ const raynor: Hero = {
         id: "RaynorHeroicAbilityRaynorsRaiders",
         name: "Raynor's Raider",
         descriptionShort: "Summon a Banshee escort",
-        descriptionLong: "Summon a Banshee that assists Raynor. The Banshee deals 84 (+4% / level) damage per second and regenerates 75 (+4% / level) Health per second if it hasn't taken damage in the last 4 seconds. Can reactivate to retarget or move the Banshee.The Banshee respawns automatically after 45 seconds.",
+        descriptionLong: "Summon a Banshee that assists Raynor. The Banshee deals 84 (+4% / level) damage per second and regenerates 75 (+4% / level) Health per second if it hasn't taken damage in the last 4 seconds. Can reactivate to retarget or move the Banshee. The Banshee respawns automatically after 45 seconds.",
         cooldown: 45,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_raynorsraiders.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 5.6
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -350,6 +447,13 @@ const raynor: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_split_fuelrush.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -367,6 +471,13 @@ const raynor: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_inspire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -383,6 +494,13 @@ const raynor: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_inspire_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -401,6 +519,13 @@ const raynor: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_penetratinground.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 12,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -417,6 +542,13 @@ const raynor: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_split_debilitatingrounds.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -434,6 +566,13 @@ const raynor: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -452,6 +591,13 @@ const raynor: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_hyperion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -471,6 +617,13 @@ const raynor: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_raynorsraiders.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -491,6 +644,13 @@ const raynor: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -508,6 +668,13 @@ const raynor: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -519,7 +686,10 @@ const raynor: Hero = {
   ],
   analysis: {
     tankiness: 43.69114877589453,
-    damageSustainedPhysical: 58.32201086956522
+    physicalDamage: 63.125,
+    mobility: 24.199,
+    healing: 4.375218760938047,
+    magicalDamage: 35.648778716062836
   }
 };
       

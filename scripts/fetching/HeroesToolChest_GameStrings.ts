@@ -45,8 +45,9 @@ function PatchGameStringKeys(gamestrings: HTC_GameStrings) {
           .replace(/<[^>]*>/g, '')
           // fix damage level scaling text
           .replace(/~~0.0([0-9])([0-9])~~/g, ' (+$1.$2% / level)')
-          .replace(/~~0.0([0-9])~~/g, ' (+$1% / level)');
-
+          .replace(/~~0.0([0-9])~~/g, ' (+$1% / level)')
+          // fix missing space in new sentences
+          .replace(/(\.)([a-zA-Z])/g, '$1 $2');
         obj[patchedKey] = patchedValue;
 
         return obj;

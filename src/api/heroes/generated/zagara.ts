@@ -33,7 +33,7 @@ const zagara: Hero = {
       id: "ZagaraSummonCreepTumor",
       name: "Creep Tumor",
       descriptionShort: "Generates Creep allowing Zagara and her minions to move faster",
-      descriptionLong: "Lay a Creep Tumor that generates Creep. While on Creep, Zagara gains 20% additional attack range and both Zagara and her summons move 20% faster. Tumors last 240 seconds and reveal the surrounding area while active.Stores up to 3 charges.",
+      descriptionLong: "Lay a Creep Tumor that generates Creep. While on Creep, Zagara gains 20% additional attack range and both Zagara and her summons move 20% faster. Tumors last 240 seconds and reveal the surrounding area while active. Stores up to 3 charges.",
       cooldown: 18,
       charges: {
         chargesMax: 3,
@@ -44,13 +44,20 @@ const zagara: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_creep.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ZagaraBanelingBarrage",
       name: "Baneling Barrage",
       descriptionShort: "Launch a Baneling that explodes on contact with an enemy",
-      descriptionLong: "Launch 1 Baneling that deals 86 (+4% / level) damage to enemies it hits.Stores up to 4 charges.",
+      descriptionLong: "Launch 1 Baneling that deals 86 (+4% / level) damage to enemies it hits. Stores up to 4 charges.",
       cost: {
         type: "Mana",
         amount: 10
@@ -65,7 +72,14 @@ const zagara: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_banelingbarrage.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 28.666666666666664
+      }
     },
     {
       id: "ZagaraSummonHydralisk",
@@ -80,7 +94,14 @@ const zagara: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_hunterkiller.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 4.733333333333333
+      }
     },
     {
       id: "ZagaraInfestedDrop",
@@ -95,13 +116,20 @@ const zagara: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_infesteddrop.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 2.25
+      }
     },
     {
       id: "ZagaraSummonNydusWorm",
       name: "Nydus Network",
       descriptionShort: "Empowers Creep and can create Nydus Worms",
-      descriptionLong: "Summon a Nydus Worm on Creep anywhere that Zagara has vision. Zagara can enter a Nydus Worm and travel to any other Nydus Worm by right-clicking near it. While inside a Nydus Worm, Zagara regenerates 10% Health and Mana per second.Stores up to 2 charges. Maximum of 4 Nydus Worms at a time.Passive: Creep spreads 15% farther. Passive: While on Creep, each Basic Attack reduces all of Zagara's cooldowns by 0.4 seconds.",
+      descriptionLong: "Summon a Nydus Worm on Creep anywhere that Zagara has vision. Zagara can enter a Nydus Worm and travel to any other Nydus Worm by right-clicking near it. While inside a Nydus Worm, Zagara regenerates 10% Health and Mana per second. Stores up to 2 charges. Maximum of 4 Nydus Worms at a time. Passive: Creep spreads 15% farther. Passive: While on Creep, each Basic Attack reduces all of Zagara's cooldowns by 0.4 seconds.",
       cost: {
         type: "Mana",
         amount: 50
@@ -116,13 +144,20 @@ const zagara: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_nydusworm.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ZagaraDevouringMaw",
       name: "Devouring Maw",
       descriptionShort: "Eats enemies in area",
-      descriptionLong: "Summon a Devouring Maw that devours enemies for 4 seconds. Devoured enemies cannot fight and take 94 (+4% / level) damage per second.Usable on Unstoppable enemies.",
+      descriptionLong: "Summon a Devouring Maw that devours enemies for 4 seconds. Devoured enemies cannot fight and take 94 (+4% / level) damage per second. Usable on Unstoppable enemies.",
       cost: {
         type: "Mana",
         amount: 70
@@ -131,7 +166,14 @@ const zagara: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_devouringmaw.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -152,6 +194,13 @@ const zagara: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_banelingbarrage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -168,6 +217,13 @@ const zagara: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_infesteddrop.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -184,6 +240,13 @@ const zagara: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_infest.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -199,6 +262,13 @@ const zagara: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_range.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4"
       },
@@ -212,6 +282,13 @@ const zagara: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_aoe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4"
       },
@@ -225,6 +302,13 @@ const zagara: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         isQuest: true
@@ -247,6 +331,13 @@ const zagara: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_banelingbarrage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -269,6 +360,13 @@ const zagara: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_banelingbarrage_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -279,12 +377,19 @@ const zagara: Hero = {
         id: "ZagaraMasteryBileDrop",
         name: "Bile Drop",
         descriptionShort: "Quest: Increase maximum number of Roachlings",
-        descriptionLong: "Quest: Passively increases the radius of Infested Drop by 20%.Reward: After hitting 12 Heroes with Infested Drop, it spawns an additional Roachling.",
+        descriptionLong: "Quest: Passively increases the radius of Infested Drop by 20%. Reward: After hitting 12 Heroes with Infested Drop, it spawns an additional Roachling.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_infesteddrop.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -298,7 +403,7 @@ const zagara: Hero = {
         id: "ZagaraHeroicAbilityDevouringMaw",
         name: "Devouring Maw",
         descriptionShort: "Eats enemies in area",
-        descriptionLong: "Summon a Devouring Maw that devours enemies for 4 seconds. Devoured enemies cannot fight and take 94 (+4% / level) damage per second.Usable on Unstoppable enemies.",
+        descriptionLong: "Summon a Devouring Maw that devours enemies for 4 seconds. Devoured enemies cannot fight and take 94 (+4% / level) damage per second. Usable on Unstoppable enemies.",
         cost: {
           type: "Mana",
           amount: 70
@@ -308,6 +413,13 @@ const zagara: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_devouringmaw.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -318,7 +430,7 @@ const zagara: Hero = {
         id: "ZagaraHeroicAbilityNydusAssault",
         name: "Nydus Network",
         descriptionShort: "Empowers Creep and can create Nydus Worms",
-        descriptionLong: "Summon a Nydus Worm on Creep anywhere that Zagara has vision. Zagara can enter a Nydus Worm and travel to any other Nydus Worm by right-clicking near it. While inside a Nydus Worm, Zagara regenerates 10% Health and Mana per second.Stores up to 2 charges. Maximum of 4 Nydus Worms at a time.Passive: Creep spreads 15% farther. Passive: While on Creep, each Basic Attack reduces all of Zagara's cooldowns by 0.4 seconds.",
+        descriptionLong: "Summon a Nydus Worm on Creep anywhere that Zagara has vision. Zagara can enter a Nydus Worm and travel to any other Nydus Worm by right-clicking near it. While inside a Nydus Worm, Zagara regenerates 10% Health and Mana per second. Stores up to 2 charges. Maximum of 4 Nydus Worms at a time. Passive: Creep spreads 15% farther. Passive: While on Creep, each Basic Attack reduces all of Zagara's cooldowns by 0.4 seconds.",
         cost: {
           type: "Mana",
           amount: 50
@@ -334,6 +446,13 @@ const zagara: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_nydusworm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -352,6 +471,13 @@ const zagara: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_hunterkiller.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 8,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -374,6 +500,13 @@ const zagara: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_creep.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -384,12 +517,19 @@ const zagara: Hero = {
         id: "GenericTalentSpellShield",
         name: "Spell Shield",
         descriptionShort: "Periodically gain temporary Spell Armor",
-        descriptionLong: "Every 30 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 50%.Can be toggled to allow or prevent this talent from triggering automatically.",
+        descriptionLong: "Every 30 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 50%. Can be toggled to allow or prevent this talent from triggering automatically.",
         cooldown: null,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_spellshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -405,6 +545,13 @@ const zagara: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_hunterkiller.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -421,6 +568,13 @@ const zagara: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_hunterkillermuta.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -443,6 +597,13 @@ const zagara: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_creep.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -461,6 +622,13 @@ const zagara: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_devouringmaw.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -486,6 +654,13 @@ const zagara: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_nydusworm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -505,6 +680,13 @@ const zagara: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6.066666666666666
+        },
         order: 3,
         tier: "level20"
       }
@@ -512,7 +694,10 @@ const zagara: Hero = {
   ],
   analysis: {
     tankiness: 47.45762711864406,
-    damageSustainedPhysical: 63.51902173913042
+    physicalDamage: 53.125,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 15.780781803323343
   }
 };
       

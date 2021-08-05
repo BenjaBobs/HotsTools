@@ -33,12 +33,19 @@ const kerrigan: Hero = {
       id: "KerriganAssimilation",
       name: "Assimilation",
       descriptionShort: "Gain a temporary Shield by attacking enemies",
-      descriptionLong: "Gain 10% of damage dealt from Basic Attacks and Abilities as Shields for 6 seconds. Shield amount gained doubled against Heroes.Current maximum: 1004 (+4% / level)",
+      descriptionLong: "Gain 10% of damage dealt from Basic Attacks and Abilities as Shields for 6 seconds. Shield amount gained doubled against Heroes. Current maximum: 1004 (+4% / level)",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_assimilation.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "KerriganRavage",
@@ -59,7 +66,14 @@ const kerrigan: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16.25
+      }
     },
     {
       id: "KerriganImpalingBlades",
@@ -74,7 +88,14 @@ const kerrigan: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_impalingblades.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 13.75
+      }
     },
     {
       id: "KerriganPrimalGrasp",
@@ -89,13 +110,20 @@ const kerrigan: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_primalgrasp.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 22
+      }
     },
     {
       id: "KerriganSummonUltralisk",
       name: "Summon Ultralisk",
       descriptionShort: "Summon a commandable Ultralisk",
-      descriptionLong: "After 0.5 seconds, summon an Ultralisk that rushes forward upon spawning, dealing 250 (+4% / level) damage to the first enemy Hero hit and Stunning them for 0.5 seconds.The Ultralisk's Basic Attacks deal 50% of their damage in an area around their target. Reactivate to retarget the Ultralisk.",
+      descriptionLong: "After 0.5 seconds, summon an Ultralisk that rushes forward upon spawning, dealing 250 (+4% / level) damage to the first enemy Hero hit and Stunning them for 0.5 seconds. The Ultralisk's Basic Attacks deal 50% of their damage in an area around their target. Reactivate to retarget the Ultralisk.",
       cost: {
         type: "Mana",
         amount: 75
@@ -104,7 +132,14 @@ const kerrigan: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ultralisk.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16.666666666666668
+      }
     },
     {
       id: "KerriganMaelstrom",
@@ -119,7 +154,14 @@ const kerrigan: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_maelstrom.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 4.933333333333334
+      }
     }
   ],
   talents: [
@@ -140,6 +182,13 @@ const kerrigan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -156,6 +205,13 @@ const kerrigan: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_assimilation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.6666666666666666,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -172,6 +228,13 @@ const kerrigan: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_aoe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -181,7 +244,7 @@ const kerrigan: Hero = {
         id: "KerriganRavageSharpenedBlades",
         name: "Sharpened Blades",
         descriptionShort: "Quest: Ravage kills increase damage",
-        descriptionLong: "Quest: Minions and Heroes that die within 1.5 seconds of being hit by Ravage increase its damage up to a maximum of 75.Minions grant 1 increased damage and Heroes grant 5 increased damage.Reward: After reaching a 75 damage increase, Ravage gains 50 additional damage.",
+        descriptionLong: "Quest: Minions and Heroes that die within 1.5 seconds of being hit by Ravage increase its damage up to a maximum of 75. Minions grant 1 increased damage and Heroes grant 5 increased damage. Reward: After reaching a 75 damage increase, Ravage gains 50 additional damage.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -193,6 +256,13 @@ const kerrigan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -210,6 +280,13 @@ const kerrigan: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_impalingblades.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -226,6 +303,13 @@ const kerrigan: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_primalgrasp.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -250,6 +334,13 @@ const kerrigan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -272,6 +363,13 @@ const kerrigan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -288,6 +386,13 @@ const kerrigan: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -307,6 +412,13 @@ const kerrigan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_maelstrom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 4.933333333333334
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -317,7 +429,7 @@ const kerrigan: Hero = {
         id: "KerriganHeroicAbilitySummonUltralisk",
         name: "Summon Ultralisk",
         descriptionShort: "Summon a commandable Ultralisk",
-        descriptionLong: "After 0.5 seconds, summon an Ultralisk that rushes forward upon spawning, dealing 250 (+4% / level) damage to the first enemy Hero hit and Stunning them for 0.5 seconds.The Ultralisk's Basic Attacks deal 50% of their damage in an area around their target. Reactivate to retarget the Ultralisk.",
+        descriptionLong: "After 0.5 seconds, summon an Ultralisk that rushes forward upon spawning, dealing 250 (+4% / level) damage to the first enemy Hero hit and Stunning them for 0.5 seconds. The Ultralisk's Basic Attacks deal 50% of their damage in an area around their target. Reactivate to retarget the Ultralisk.",
         cost: {
           type: "Mana",
           amount: 75
@@ -327,6 +439,13 @@ const kerrigan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ultralisk.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 16.666666666666668
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -345,6 +464,13 @@ const kerrigan: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_primalgrasp.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -361,6 +487,13 @@ const kerrigan: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_assimilation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -371,12 +504,19 @@ const kerrigan: Hero = {
         id: "KerriganChrysalis",
         name: "Chrysalis",
         descriptionShort: "Activate to enter Stasis and heal",
-        descriptionLong: "Activate to place Kerrigan in a Chrysalis with 750 (+4% / level) Health for 5 seconds. While inside, Kerrigan regenerates 5% of her maximum Health per second.Enemies can destroy the Chrysalis to end its effects early.",
+        descriptionLong: "Activate to place Kerrigan in a Chrysalis with 750 (+4% / level) Health for 5 seconds. While inside, Kerrigan regenerates 5% of her maximum Health per second. Enemies can destroy the Chrysalis to end its effects early.",
         cooldown: 90,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_chrysalis.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -398,6 +538,13 @@ const kerrigan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -414,6 +561,13 @@ const kerrigan: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_impalingblades.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -430,6 +584,13 @@ const kerrigan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_abilitytalent_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -449,6 +610,13 @@ const kerrigan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_maelstrom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -468,6 +636,13 @@ const kerrigan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ultralisk.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -487,6 +662,13 @@ const kerrigan: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20"
       },
@@ -500,6 +682,13 @@ const kerrigan: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_boltofthestorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3.3333333333333335
+        },
         order: 4,
         tier: "level20"
       }
@@ -507,7 +696,10 @@ const kerrigan: Hero = {
   ],
   analysis: {
     tankiness: 53.15254237288135,
-    damageSustainedPhysical: 31.249999999999993
+    physicalDamage: 71.875,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 32.57967856169981
   }
 };
       

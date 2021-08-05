@@ -33,18 +33,25 @@ const whitemane: Hero = {
       id: "WhitemaneFanaticalPower",
       name: "Zeal",
       descriptionShort: "Heal marked allies for damage dealt",
-      descriptionLong: "Whitemane's healing Abilities apply Zeal for 8 seconds. Allies with Zeal are healed for 100% of the damage Whitemane deals to Heroes.Activate to gain 25% Spell Power and lose 25 Armor for 5 seconds. Can be cast while channeling abilities.",
+      descriptionLong: "Whitemane's healing Abilities apply Zeal for 8 seconds. Allies with Zeal are healed for 100% of the damage Whitemane deals to Heroes. Activate to gain 25% Spell Power and lose 25 Armor for 5 seconds. Can be cast while channeling abilities.",
       cooldown: 40,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_zeal.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 13.333333333333334,
+        magicalDamage: 0
+      }
     },
     {
       id: "WhitemaneDesperatePlea",
       name: "Desperate Plea",
       descriptionShort: "Heal an allied Hero",
-      descriptionLong: "Heal an allied Hero for 140 (+4% / level) and gain Desperation for 4 seconds.Desperation increases Desperate Plea's Mana cost by 45, and stacks up to 3 times.Current Mana Cost: 45",
+      descriptionLong: "Heal an allied Hero for 140 (+4% / level) and gain Desperation for 4 seconds. Desperation increases Desperate Plea's Mana cost by 45, and stacks up to 3 times. Current Mana Cost: 45",
       cost: {
         type: "Mana",
         amount: 45
@@ -53,29 +60,50 @@ const whitemane: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_desperation.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 1.8666666666666667,
+        magicalDamage: 0
+      }
     },
     {
       id: "WhitemaneInquisition",
       name: "Inquisition",
       descriptionShort: "Damage or heal Heroes",
-      descriptionLong: "Channel on an enemy Hero for up to 3 seconds, dealing 50 (+4% / level) damage every 0.5 seconds and Slowing them by 30%. Removes a stack of Desperation.Shares a cooldown with Clemency.",
+      descriptionLong: "Channel on an enemy Hero for up to 3 seconds, dealing 50 (+4% / level) damage every 0.5 seconds and Slowing them by 30%. Removes a stack of Desperation. Shares a cooldown with Clemency.",
       cooldown: 12,
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_inquisition.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 4.166666666666666
+      }
     },
     {
       id: "WhitemaneSearingLash",
       name: "Searing Lash",
       descriptionShort: "Damage enemies in a line",
-      descriptionLong: "After 0.5 seconds, smite enemies in a straight line for 82 (+4% / level) damage.If the first strike hits an enemy Hero, a second strike will occur after a short delay.",
+      descriptionLong: "After 0.5 seconds, smite enemies in a straight line for 82 (+4% / level) damage. If the first strike hits an enemy Hero, a second strike will occur after a short delay.",
       cooldown: 6,
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_lash.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "WhitemaneScarletAegis",
@@ -86,7 +114,14 @@ const whitemane: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_aegis.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 8,
+        magicalDamage: 0
+      }
     },
     {
       id: "WhitemaneDivineReckoning",
@@ -97,29 +132,14 @@ const whitemane: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_reckoning.png",
-      isPassive: false
-    },
-    {
-      id: "WhitemaneInquisitionCancel",
-      name: "Inquisition (Cancel)",
-      descriptionShort: "Cancel Inquisition",
-      descriptionLong: "Stop Channeling Inquisition.",
-      cooldown: null,
-      category: "basic",
-      type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/hud_btn_bg_ability_cancel.png",
-      isPassive: false
-    },
-    {
-      id: "WhitemaneInquisitionCancel",
-      name: "Inquisition (Cancel)",
-      descriptionShort: "Cancel Inquisition",
-      descriptionLong: "Stop Channeling Inquisition.",
-      cooldown: null,
-      category: "activable",
-      type: "Active",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/hud_btn_bg_ability_cancel.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 3.3333333333333335
+      }
     }
   ],
   talents: [
@@ -134,6 +154,13 @@ const whitemane: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_inquisition_lash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -150,6 +177,13 @@ const whitemane: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_lash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -160,12 +194,19 @@ const whitemane: Hero = {
         id: "WhitemaneInquisitorsPrayer",
         name: "Inquisitor's Prayer",
         descriptionShort: "Quest: Searing Lash increases Health and Mana",
-        descriptionLong: "Quest: Hit Heroes with Searing Lash.Reward: Each Hero hit grants 3 permanent Health and 2 permanent Mana. Heroes hit with the second strike count as 2 hits.",
+        descriptionLong: "Quest: Hit Heroes with Searing Lash. Reward: Each Hero hit grants 3 permanent Health and 2 permanent Mana. Heroes hit with the second strike count as 2 hits.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_lash_alt_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -185,6 +226,13 @@ const whitemane: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_desperation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -201,6 +249,13 @@ const whitemane: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_desperation_alt_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -217,6 +272,13 @@ const whitemane: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_zeal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -235,6 +297,13 @@ const whitemane: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_desperation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -251,6 +320,13 @@ const whitemane: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_lash_alt_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3.6666666666666665
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -267,6 +343,13 @@ const whitemane: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_intercession.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -282,6 +365,13 @@ const whitemane: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_aegis.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 8,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -298,6 +388,13 @@ const whitemane: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_reckoning.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3.3333333333333335
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -316,6 +413,13 @@ const whitemane: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_inquisition.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -332,6 +436,13 @@ const whitemane: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_lash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -348,6 +459,13 @@ const whitemane: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_zeal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -366,6 +484,13 @@ const whitemane: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_desperation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2.3333333333333335,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -382,6 +507,13 @@ const whitemane: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_inquisition.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 2.3333333333333335
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -398,6 +530,13 @@ const whitemane: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_lash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -416,6 +555,13 @@ const whitemane: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_aegis.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -435,6 +581,13 @@ const whitemane: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_reckoning.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -454,6 +607,13 @@ const whitemane: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_zeal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -470,6 +630,13 @@ const whitemane: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_purge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 20
+        },
         order: 4,
         tier: "level20"
       }
@@ -477,7 +644,10 @@ const whitemane: Hero = {
   ],
   analysis: {
     tankiness: 42.18455743879473,
-    damageSustainedPhysical: 37.065217391304344
+    physicalDamage: 31,
+    mobility: 24.199,
+    healing: 30.45152257612881,
+    magicalDamage: 3.319940070825388
   }
 };
       

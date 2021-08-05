@@ -33,18 +33,25 @@ const alexstrasza: Hero = {
       id: "AlexstraszaDragonqueen",
       name: "Dragonqueen",
       descriptionShort: "Transform into a dragon aspect with empowered Abilities",
-      descriptionLong: "After 1.25 seconds, transform into a dragon and gain 500 (+4% / level) Health.While Dragonqueen is active, Alexstrasza's Abilities are empowered, and her Basic Attacks deal 143 (+4% / level) damage and heal allied Heroes for 43 (+4% / level) in an arc in front of her. Additionally, the duration of incoming Stuns, Roots, and Slows, is reduced by 50%.Lasts 15 seconds.",
+      descriptionLong: "After 1.25 seconds, transform into a dragon and gain 500 (+4% / level) Health. While Dragonqueen is active, Alexstrasza's Abilities are empowered, and her Basic Attacks deal 143 (+4% / level) damage and heal allied Heroes for 43 (+4% / level) in an arc in front of her. Additionally, the duration of incoming Stuns, Roots, and Slows, is reduced by 50%. Lasts 15 seconds.",
       cooldown: 150,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_dragon_queen.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 1.1466666666666665,
+        magicalDamage: 9.533333333333333
+      }
     },
     {
       id: "AlexstraszaGiftOfLife",
       name: "Gift of Life",
       descriptionShort: "Give a portion of Health to an allied Hero",
-      descriptionLong: "Sacrifice 15% of Alexstrasza's current Health, healing an allied Hero for 150% of that amount.Dragonqueen: Breath of LifeCooldown greatly reduced and does not cost Health.",
+      descriptionLong: "Sacrifice 15% of Alexstrasza's current Health, healing an allied Hero for 150% of that amount. Dragonqueen: Breath of LifeCooldown greatly reduced and does not cost Health.",
       cost: {
         type: "Health",
         amount: 15
@@ -53,13 +60,20 @@ const alexstrasza: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_gift_of_life.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 42.857142857142854,
+        magicalDamage: 0
+      }
     },
     {
       id: "AlexstraszaAbundance",
       name: "Abundance",
       descriptionShort: "Heal allied Heroes in an area",
-      descriptionLong: "Plant a seed of healing that blooms after 3 seconds, healing nearby allied Heroes for 20% of their maximum Health.Dragonqueen: PreservationHeal area and amount greatly increased.",
+      descriptionLong: "Plant a seed of healing that blooms after 3 seconds, healing nearby allied Heroes for 20% of their maximum Health. Dragonqueen: PreservationHeal area and amount greatly increased.",
       cost: {
         type: "Mana",
         amount: 75
@@ -68,13 +82,20 @@ const alexstrasza: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_abundance.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 5.7142857142857135,
+        magicalDamage: 0
+      }
     },
     {
       id: "AlexstraszaFlameBuffet",
       name: "Flame Buffet",
       descriptionShort: "Launch a fireball that ignites enemies and can Slow them",
-      descriptionLong: "Launch a fireball, Burning enemies hit for 75 (+4% / level) damage over 5.5 seconds.Hitting enemies that are already Burning deals 125 (+4% / level) bonus damage upon impact, Slows them by 40% decaying over 2 seconds, and refunds the Mana cost.Dragonqueen: Wing BuffetDamage and Knockback enemies in an arc.",
+      descriptionLong: "Launch a fireball, Burning enemies hit for 75 (+4% / level) damage over 5.5 seconds. Hitting enemies that are already Burning deals 125 (+4% / level) bonus damage upon impact, Slows them by 40% decaying over 2 seconds, and refunds the Mana cost. Dragonqueen: Wing BuffetDamage and Knockback enemies in an arc.",
       cost: {
         type: "Mana",
         amount: 50
@@ -83,7 +104,14 @@ const alexstrasza: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_flame_buffet.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 62.5
+      }
     },
     {
       id: "AlexstraszaLifebinder",
@@ -98,7 +126,14 @@ const alexstrasza: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_life_binder.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 6.4,
+        magicalDamage: 0
+      }
     },
     {
       id: "AlexstraszaCleansingFlame",
@@ -113,7 +148,14 @@ const alexstrasza: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_cleansing_flame.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 8,
+        magicalDamage: 9
+      }
     }
   ],
   talents: [
@@ -128,6 +170,13 @@ const alexstrasza: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_gift_of_life.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -138,12 +187,19 @@ const alexstrasza: Hero = {
         id: "AlexstraszaCircleOfLifeAbundance",
         name: "Circle of Life",
         descriptionShort: "Quest: Regen Globes empower Abundance",
-        descriptionLong: "Quest: Collect Regeneration Globes.Reward: After collecting 10 Regeneration Globes, Abundance heals for an additional 5% maximum Health.Reward: After collecting 15 Regeneration Globes, Abundance's healing burst creates a Regeneration Globe.",
+        descriptionLong: "Quest: Collect Regeneration Globes. Reward: After collecting 10 Regeneration Globes, Abundance heals for an additional 5% maximum Health. Reward: After collecting 15 Regeneration Globes, Abundance's healing burst creates a Regeneration Globe.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_abundance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.6666666666666666,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -155,12 +211,19 @@ const alexstrasza: Hero = {
         id: "AlexstraszaFlamesOfFuryFlameBuffet",
         name: "Flames of Fury",
         descriptionShort: "Quest: Flame Buffet reduces Dragonqueen cooldown",
-        descriptionLong: "Reduce the Mana cost of Flame Buffet from 50 to 40.Quest: Hit 20 Burning Heroes with Flame Buffet.Reward: Hitting a Burning Hero with Flame Buffet reduces Dragonqueen's cooldown by 5 seconds.",
+        descriptionLong: "Reduce the Mana cost of Flame Buffet from 50 to 40. Quest: Hit 20 Burning Heroes with Flame Buffet. Reward: Hitting a Burning Hero with Flame Buffet reduces Dragonqueen's cooldown by 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_flame_buffet.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -180,6 +243,13 @@ const alexstrasza: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_abundance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 8,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -196,6 +266,13 @@ const alexstrasza: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_flame_buffet.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -212,6 +289,13 @@ const alexstrasza: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_exuberance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -221,12 +305,19 @@ const alexstrasza: Hero = {
         id: "AlexstraszaLifeblossomGiftOfLife",
         name: "Lifeblossom",
         descriptionShort: "Gift of Life creates a Lifeblossom at high Health",
-        descriptionLong: "While Alexstrasza is above 75% Health, Gift of Life creates a Lifeblossom at the target's location. Alexstrasza can collect the Lifeblossom to make her next Gift of Life cost no Health.Passive: Reduces the cost of Gift of Life to 10% of Alexstrasza's current Health.",
+        descriptionLong: "While Alexstrasza is above 75% Health, Gift of Life creates a Lifeblossom at the target's location. Alexstrasza can collect the Lifeblossom to make her next Gift of Life cost no Health. Passive: Reduces the cost of Gift of Life to 10% of Alexstrasza's current Health.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_life_blossom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -243,6 +334,13 @@ const alexstrasza: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_abundance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 13.333333333333334,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -259,6 +357,13 @@ const alexstrasza: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_flame_buffet.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.3333333333333333,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -281,6 +386,13 @@ const alexstrasza: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_life_binder.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.4,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -301,6 +413,13 @@ const alexstrasza: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_cleansing_flame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 8,
+          magicalDamage: 9
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -320,6 +439,13 @@ const alexstrasza: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_dragon_scales.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13"
       },
@@ -327,12 +453,19 @@ const alexstrasza: Hero = {
         id: "AlexstraszaPacify",
         name: "Pacify",
         descriptionShort: "Slow an enemy Hero and reduce their damage",
-        descriptionLong: "Activate to Slow and reduce an enemy Hero's damage by 50% for 3 seconds.Healing a Stunned, Rooted, or Silenced ally reduces Pacify's cooldown by 30 seconds.",
+        descriptionLong: "Activate to Slow and reduce an enemy Hero's damage by 50% for 3 seconds. Healing a Stunned, Rooted, or Silenced ally reduces Pacify's cooldown by 30 seconds.",
         cooldown: 60,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_pacify.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13"
       },
@@ -340,12 +473,19 @@ const alexstrasza: Hero = {
         id: "AlexstraszaLifeUnbound",
         name: "Life Unbound",
         descriptionShort: "Heal an ally and damage enemies",
-        descriptionLong: "Activate to heal an allied Hero for 15% of their maximum Health and deal 200 (+4% / level) damage to nearby enemies.Healing a Stunned, Rooted, or Silenced ally reduces Life Unbound's cooldown by 30 seconds.Cannot be used on Alexstrasza.",
+        descriptionLong: "Activate to heal an allied Hero for 15% of their maximum Health and deal 200 (+4% / level) damage to nearby enemies. Healing a Stunned, Rooted, or Silenced ally reduces Life Unbound's cooldown by 30 seconds. Cannot be used on Alexstrasza.",
         cooldown: 90,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_life_unbound.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2,
+          magicalDamage: 13.333333333333334
+        },
         order: 3,
         tier: "level13"
       }
@@ -361,6 +501,13 @@ const alexstrasza: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_gift_of_life.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -377,6 +524,13 @@ const alexstrasza: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_abundance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 9.333333333333334,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -393,6 +547,13 @@ const alexstrasza: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_dragon_queen.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -412,6 +573,13 @@ const alexstrasza: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_life_binder.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -431,6 +599,13 @@ const alexstrasza: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_cleansing_flame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -451,6 +626,13 @@ const alexstrasza: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_dragon_queen_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -462,12 +644,19 @@ const alexstrasza: Hero = {
         id: "AlexstraszaBlessingOfTheRed",
         name: "Blessing of the Red",
         descriptionShort: "Grant bonus Health to an ally",
-        descriptionLong: "Activate to grant an allied Hero 500 bonus maximum Health until they die.Cannot be used on Alexstrasza, or on a Hero who already has Blessing of the Red.",
+        descriptionLong: "Activate to grant an allied Hero 500 bonus maximum Health until they die. Cannot be used on Alexstrasza, or on a Hero who already has Blessing of the Red.",
         cooldown: 40,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_blessing_of_the_red.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -510,7 +699,14 @@ const alexstrasza: Hero = {
           category: "trait",
           type: "Trait",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_dragon_queen.png",
-          isPassive: true
+          isPassive: true,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "AlexstraszaBreathOfLife",
@@ -521,7 +717,14 @@ const alexstrasza: Hero = {
           category: "basic",
           type: "Q",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_breath_of_life.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 13.333333333333332,
+            magicalDamage: 0
+          }
         },
         {
           id: "AlexstraszaPreservation",
@@ -532,7 +735,14 @@ const alexstrasza: Hero = {
           category: "basic",
           type: "W",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_preservation.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 8,
+            magicalDamage: 0
+          }
         },
         {
           id: "AlexstraszaWingBuffet",
@@ -543,7 +753,14 @@ const alexstrasza: Hero = {
           category: "basic",
           type: "E",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_wing_buffet.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 37.5
+          }
         },
         {
           id: "AlexstraszaLifebinder",
@@ -558,7 +775,14 @@ const alexstrasza: Hero = {
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_life_binder.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 6.4,
+            magicalDamage: 0
+          }
         },
         {
           id: "AlexstraszaCleansingFlameDragonqueen",
@@ -573,19 +797,32 @@ const alexstrasza: Hero = {
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alexstrasza_cleansing_flame.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 8,
+            magicalDamage: 9
+          }
         }
       ],
       talents: [],
       analysis: {
         tankiness: 6.792,
-        damageSustainedPhysical: 41.184
+        physicalDamage: 4.576,
+        mobility: 24.199,
+        healing: 35.733333333333334,
+        magicalDamage: 46.5
       }
     }
   ],
   analysis: {
     tankiness: 51.163841807909606,
-    damageSustainedPhysical: 43.64130434782608
+    physicalDamage: 36.5,
+    mobility: 24.199,
+    healing: 84.15920796039802,
+    magicalDamage: 35.870108054117864
   }
 };
       

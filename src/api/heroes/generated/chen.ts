@@ -38,7 +38,14 @@ const chen: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_fortifyingbrew.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ChenFlyingKick",
@@ -53,13 +60,20 @@ const chen: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_flyingkick.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 24
+      }
     },
     {
       id: "ChenKegSmash",
       name: "Keg Smash",
       descriptionShort: "Drench enemies in a nearby area with Brew, Slowing them",
-      descriptionLong: "Deal 50 (+4% / level) damage and soak enemies in Brew for 3 seconds, Slowing them by 10%. After 1.25 seconds, the Slow is increased to 40%.After being used, this ability becomes Breath of Fire.Breath of FireDeal damage and Ignite Brew-soaked enemies.",
+      descriptionLong: "Deal 50 (+4% / level) damage and soak enemies in Brew for 3 seconds, Slowing them by 10%. After 1.25 seconds, the Slow is increased to 40%. After being used, this ability becomes Breath of Fire. Breath of FireDeal damage and Ignite Brew-soaked enemies.",
       cost: {
         type: "Brew",
         amount: 30
@@ -68,7 +82,14 @@ const chen: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_kegsmash.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10
+      }
     },
     {
       id: "ChenStagger",
@@ -79,18 +100,32 @@ const chen: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_stagger.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ChenStormEarthFire",
       name: "Storm, Earth, Fire",
       descriptionShort: "Split into three elemental spirits",
-      descriptionLong: "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well.Storm can grant the spirits a Shield. Earth can leap to an area and Slow enemies. Fire can grant the spirits Attack Speed, damage.",
+      descriptionLong: "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well. Storm can grant the spirits a Shield. Earth can leap to an area and Slow enemies. Fire can grant the spirits Attack Speed, damage.",
       cooldown: 120,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_stormearthfire.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ChenWanderingKeg",
@@ -101,70 +136,14 @@ const chen: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_wanderingkeg.png",
-      isPassive: false
-    },
-    {
-      id: "ChenStorm",
-      name: "Storm",
-      descriptionShort: "Gain a Shield",
-      descriptionLong: "The spirits gain a Shield for 400 (+4% / level) over 3 seconds.If this is the final Ability cast, the shield amount is increased to 750 (+4% / level) with no limited duration, and the duration of Storm, Earth, Fire is increased by 5 seconds.",
-      cooldown: null,
-      charges: {
-        chargesMax: 1,
-        chargesInitial: 1,
-        chargeCost: 1
-      },
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_temp_war3_btntornado.png",
-      isPassive: false
-    },
-    {
-      id: "ChenEarth",
-      name: "Earth",
-      descriptionShort: "Leap to a location, damaging and Rooting enemies",
-      descriptionLong: "Fire and Earth leap to the target location, dealing 32 (+4% / level) damage and Slowing enemies in a large area by 70% for 1.5 seconds.If this is the final Ability cast, increase the damage dealt by 300% and instead of Slowing, the leap Roots enemy Heroes hit for 1.75 seconds.",
-      cooldown: null,
-      charges: {
-        chargesMax: 1,
-        chargesInitial: 1,
-        chargeCost: 1
-      },
-      category: "basic",
-      type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_temp_war3_btnearthquake.png",
-      isPassive: false
-    },
-    {
-      id: "ChenFire",
-      name: "Fire",
-      descriptionShort: "Increase Attack Speed, damage",
-      descriptionLong: "Increase the Attack Speed and Basic Attack damage of the spirits by 50% for 5 seconds.If this is the final Ability cast, the Attack Speed and damage bonus is increased to 75% and the spirits gain 50% Movement Speed for its duration.",
-      cooldown: null,
-      charges: {
-        chargesMax: 1,
-        chargesInitial: 1,
-        chargeCost: 1
-      },
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_temp_war3_btnmarkoffire.png",
-      isPassive: false
-    },
-    {
-      id: "ChenBreathOfFire",
-      name: "Breath of Fire",
-      descriptionShort: "Breathe fire in target direction, dealing damage and Igniting drenched enemies",
-      descriptionLong: "Breathe a cone of flames, dealing 85 (+4% / level) damage. Enemies that are soaked in Brew are Ignited, dealing 171 (+4% / level) additional damage over 3 seconds and adding 1.5 seconds to the duration of the Slow from Keg Smash.  After being used or after 6 seconds, this ability becomes Keg Smash.Keg SmashDamage and Slow enemies.",
-      cost: {
-        type: "Brew",
-        amount: 10
-      },
-      cooldown: null,
-      category: "basic",
-      type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_breathoffire.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 3.933333333333333
+      }
     }
   ],
   talents: [
@@ -179,6 +158,13 @@ const chen: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_kegsmash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 5.333333333333333,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -190,12 +176,19 @@ const chen: Hero = {
         id: "ChenFreshestIngredients",
         name: "Freshest Ingredients",
         descriptionShort: "Quest: Regen Globes heal more",
-        descriptionLong: "Increase the healing duration of Regeneration Globes by 150%.Quest: Gather 15 Regeneration Globes.Reward: Reduce Fortifying Brew's cooldown by 2 seconds, and 50% of its Shield persists indefinitely after drinking.",
+        descriptionLong: "Increase the healing duration of Regeneration Globes by 150%. Quest: Gather 15 Regeneration Globes. Reward: Reduce Fortifying Brew's cooldown by 2 seconds, and 50% of its Shield persists indefinitely after drinking.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_fortifyingbrew.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 26.666666666666668,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -213,6 +206,13 @@ const chen: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_stormstoutsecretrecipe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.4666666666666667,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -231,6 +231,13 @@ const chen: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_flyingkick.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -247,6 +254,13 @@ const chen: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_breathoffire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -264,6 +278,13 @@ const chen: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_breathoffire_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -283,6 +304,13 @@ const chen: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_stagger.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -299,6 +327,13 @@ const chen: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_fortifyingbrew.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -315,6 +350,13 @@ const chen: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_elusivebrew.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -330,6 +372,13 @@ const chen: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_wanderingkeg.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3.933333333333333
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -340,12 +389,19 @@ const chen: Hero = {
         id: "ChenHeroicAbilityStormEarthFire",
         name: "Storm, Earth, Fire",
         descriptionShort: "Split into three elemental spirits",
-        descriptionLong: "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well.Storm can grant the spirits a Shield. Earth can leap to an area and Slow enemies. Fire can grant the spirits Attack Speed, damage.",
+        descriptionLong: "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well. Storm can grant the spirits a Shield. Earth can leap to an area and Slow enemies. Fire can grant the spirits Attack Speed, damage.",
         cooldown: 120,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_stormearthfire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -364,6 +420,13 @@ const chen: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_flyingkick.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -380,6 +443,13 @@ const chen: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_kegsmash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -397,6 +467,13 @@ const chen: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_breathoffire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3.6666666666666665
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -414,6 +491,13 @@ const chen: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_fortifyingbrew.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level13",
         linkedAbilityIds: [
@@ -432,6 +516,13 @@ const chen: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_flyingkick.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -448,6 +539,13 @@ const chen: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_stagger.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -464,6 +562,13 @@ const chen: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_fortifyingbrew.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -482,6 +587,13 @@ const chen: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_wanderingkeg.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -501,6 +613,13 @@ const chen: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_stormearthfire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -523,6 +642,13 @@ const chen: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_fortifyingbrew.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -539,6 +665,13 @@ const chen: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_fortifyingbrew_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -578,7 +711,10 @@ const chen: Hero = {
       talents: [],
       analysis: {
         tankiness: 6.924000000000001,
-        damageSustainedPhysical: 28.762499999999996
+        physicalDamage: 2.9499999999999997,
+        mobility: 24.199,
+        healing: 0,
+        magicalDamage: 0
       }
     },
     {
@@ -611,7 +747,10 @@ const chen: Hero = {
       talents: [],
       analysis: {
         tankiness: 6.924000000000001,
-        damageSustainedPhysical: 0.9866666666666667
+        physicalDamage: 0.9866666666666667,
+        mobility: 24.199,
+        healing: 0,
+        magicalDamage: 0
       }
     },
     {
@@ -644,13 +783,19 @@ const chen: Hero = {
       talents: [],
       analysis: {
         tankiness: 6.924000000000001,
-        damageSustainedPhysical: 1.1333333333333335
+        physicalDamage: 1.1333333333333335,
+        mobility: 24.199,
+        healing: 0,
+        magicalDamage: 0
       }
     }
   ],
   analysis: {
     tankiness: 74.51600753295668,
-    damageSustainedPhysical: 21.739130434782606
+    physicalDamage: 50,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 16.791519113774626
   }
 };
       

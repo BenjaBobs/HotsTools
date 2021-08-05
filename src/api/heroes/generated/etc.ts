@@ -32,13 +32,20 @@ const etc: Hero = {
     {
       id: "RockstarDummy",
       name: "Rockstar",
-      descriptionShort: "After using an ability, E.T.C. gains Armor",
-      descriptionLong: "After E.T.C. uses a Basic or Heroic ability, he gains 20 Armor for 2 seconds.  This effect does not stack with itself.",
+      descriptionShort: "After using an ability, E. T. C. gains Armor",
+      descriptionLong: "After E. T. C. uses a Basic or Heroic ability, he gains 20 Armor for 2 seconds.  This effect does not stack with itself.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_rockstar.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "L90ETCPowerslide",
@@ -53,7 +60,14 @@ const etc: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_powerslide.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 7.583333333333333
+      }
     },
     {
       id: "L90ETCFaceMelt",
@@ -68,7 +82,14 @@ const etc: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_facemelt.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5.666666666666666
+      }
     },
     {
       id: "L90ETCGuitarSolo",
@@ -83,7 +104,14 @@ const etc: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_guitarsolo.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "L90ETCMoshPit",
@@ -98,7 +126,14 @@ const etc: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_moshpit.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "L90ETCStageDive",
@@ -113,7 +148,14 @@ const etc: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_stagedive.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 22
+      }
     }
   ],
   talents: [
@@ -122,12 +164,19 @@ const etc: Hero = {
         id: "ETCMasteryGuitarHero",
         name: "Guitar Hero",
         descriptionShort: "Basic Attacks add duration, heal during Guitar Solo",
-        descriptionLong: "While Guitar Solo is active, E.T.C. heals for 50% of his damage dealt by Basic Attacks.  Basic Attacks increase the duration of Guitar Solo by 0.5 seconds.",
+        descriptionLong: "While Guitar Solo is active, E. T. C. heals for 50% of his damage dealt by Basic Attacks.  Basic Attacks increase the duration of Guitar Solo by 0.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_guitarsolo.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -144,6 +193,13 @@ const etc: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_guitarsolo_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.3333333333333333,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -161,6 +217,13 @@ const etc: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_rockstar.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -179,6 +242,13 @@ const etc: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_powerslide.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -195,6 +265,13 @@ const etc: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_facemelt.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -211,6 +288,13 @@ const etc: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_speedmetal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -229,6 +313,13 @@ const etc: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_facemelt.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -245,6 +336,13 @@ const etc: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_guitarsolo.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -261,6 +359,13 @@ const etc: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_echopedal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -283,6 +388,13 @@ const etc: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_moshpit.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -303,6 +415,13 @@ const etc: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_stagedive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 22
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -321,6 +440,13 @@ const etc: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_facemelt.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -331,12 +457,19 @@ const etc: Hero = {
         id: "ETCMasteryEncore",
         name: "Encore",
         descriptionShort: "Face Melt will knock enemies away a second time, reduces Heroic Ability cooldown",
-        descriptionLong: "Face Melt leaves an Amp behind, which will knock enemies away again 2 seconds later.Passive: Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by 5%.",
+        descriptionLong: "Face Melt leaves an Amp behind, which will knock enemies away again 2 seconds later. Passive: Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by 5%.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_facemelt_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -353,6 +486,13 @@ const etc: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_facemelt_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -371,6 +511,13 @@ const etc: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_powerslide.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -381,12 +528,19 @@ const etc: Hero = {
         id: "ETCMasteryGuitarSoloAggressiveShredding",
         name: "Aggressive Shredding",
         descriptionShort: "Basic Attacks reduce Guitar Solo cooldown",
-        descriptionLong: "E.T.C.'s Basic Attacks reduce the cooldown of Guitar Solo by 0.75 seconds.",
+        descriptionLong: "E. T. C.'s Basic Attacks reduce the cooldown of Guitar Solo by 0.75 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_guitarsolo.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -397,12 +551,19 @@ const etc: Hero = {
         id: "GenericTalentImposingPresence",
         name: "Imposing Presence",
         descriptionShort: "Activate to Slow enemy Basic Attacks and Move Speed",
-        descriptionLong: "Activate to reduce the Attack Speed by 50% and Movement Speed by 20% of nearby Heroes and Summons for 2.5 seconds.Passive: Heroes and Summons that attack your Hero have their Attack Speed Slowed by 20% for 2.5 seconds.",
+        descriptionLong: "Activate to reduce the Attack Speed by 50% and Movement Speed by 20% of nearby Heroes and Summons for 2.5 seconds. Passive: Heroes and Summons that attack your Hero have their Attack Speed Slowed by 20% for 2.5 seconds.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_imposingpresence.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -412,12 +573,19 @@ const etc: Hero = {
         id: "L90ETCMasteryMoshPitTourBus",
         name: "Tour Bus",
         descriptionShort: "Makes Powerslide usable during Mosh Pit",
-        descriptionLong: "Mosh Pit refreshes the cooldown of Powerslide. E.T.C. can Powerslide during Mosh Pit, which also increases its duration by 2 seconds.",
+        descriptionLong: "Mosh Pit refreshes the cooldown of Powerslide. E. T. C. can Powerslide during Mosh Pit, which also increases its duration by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_moshpit.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -437,6 +605,13 @@ const etc: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_stagedive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -450,12 +625,19 @@ const etc: Hero = {
         id: "L90ETCMasteryDeathMetal",
         name: "Death Metal",
         descriptionShort: "Dying causes Mosh Pit",
-        descriptionLong: "Upon dying, a ghost uses Mosh Pit at E.T.C's location.",
+        descriptionLong: "Upon dying, a ghost uses Mosh Pit at E. T. C's location.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_moshpit_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -472,6 +654,13 @@ const etc: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_stormshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       },
@@ -485,6 +674,13 @@ const etc: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_boltofthestorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 5,
         tier: "level20"
       }
@@ -492,7 +688,10 @@ const etc: Hero = {
   ],
   analysis: {
     tankiness: 67.79661016949152,
-    damageSustainedPhysical: 20.176630434782602
+    physicalDamage: 61.87499999999999,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 15.603718332879325
   }
 };
       

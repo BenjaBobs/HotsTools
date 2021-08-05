@@ -33,12 +33,19 @@ const qhira: Hero = {
       id: "NexusHunterGrapplingHook",
       name: "Grappling Hook",
       descriptionShort: "Qhira launches herself towards terrain or Heroes",
-      descriptionLong: "Qhira fires a grappling hook that pulls her to terrain it contacts. If an enemy Hero is hit, they take 35 (+4% / level) damage and Qhira launches at them, kicking them for an additional 108 (+4% / level) damage.Can be used while Revolving Sweep is active.",
+      descriptionLong: "Qhira fires a grappling hook that pulls her to terrain it contacts. If an enemy Hero is hit, they take 35 (+4% / level) damage and Qhira launches at them, kicking them for an additional 108 (+4% / level) damage. Can be used while Revolving Sweep is active.",
       cooldown: 25,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_d.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "NexusHunterCarnage",
@@ -53,13 +60,20 @@ const qhira: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_q.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5
+      }
     },
     {
       id: "NexusHunterBloodRage",
       name: "Blood Rage",
       descriptionShort: "Your Basic Attacks and Abilities cause enemies to take damage over time",
-      descriptionLong: "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 (+4% / level) damage over 4 seconds. Stacks 5 times.Active: Qhira deals 32 (+4% / level) damage and heals for 85 (+4% / level) Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
+      descriptionLong: "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 (+4% / level) damage over 4 seconds. Stacks 5 times. Active: Qhira deals 32 (+4% / level) damage and heals for 85 (+4% / level) Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
       cost: {
         type: "Mana",
         amount: 35
@@ -68,13 +82,20 @@ const qhira: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_w.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 14.625,
+        magicalDamage: 4
+      }
     },
     {
       id: "NexusHunterRevolvingSweep",
       name: "Revolving Sweep",
       descriptionShort: "Attach to an enemy Hero to rotate around and Stun them",
-      descriptionLong: "Attach your sword on the first enemy Hero hit, dealing 96 (+4% / level) damage and Stunning them for 0.25 seconds. Once attached, Qhira becomes Immune to all effects, swinging around the target for 2.75 seconds and dealing 105 (+4% / level) damage to enemies between you and the target.Re-activate to send you to the target's location knocking them away, dealing 108 (+4% / level) damage and Stunning them for 0.75 seconds.",
+      descriptionLong: "Attach your sword on the first enemy Hero hit, dealing 96 (+4% / level) damage and Stunning them for 0.25 seconds. Once attached, Qhira becomes Immune to all effects, swinging around the target for 2.75 seconds and dealing 105 (+4% / level) damage to enemies between you and the target. Re-activate to send you to the target's location knocking them away, dealing 108 (+4% / level) damage and Stunning them for 0.75 seconds.",
       cost: {
         type: "Mana",
         amount: 70
@@ -83,7 +104,14 @@ const qhira: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_e.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 20.6
+      }
     },
     {
       id: "NexusHunterUnrelentingStrikes",
@@ -98,7 +126,14 @@ const qhira: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_r1.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 13.6
+      }
     },
     {
       id: "NexusHunterFinalStrikeActivate",
@@ -113,18 +148,14 @@ const qhira: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_r2.png",
-      isPassive: false
-    },
-    {
-      id: "NexusHunterRevolvingSweepSecondary",
-      name: "Revolving Sweep",
-      descriptionShort: "Fly into your target to Stun and Knockback",
-      descriptionLong: "Fly into your target dealing 108 (+4% / level) damage, knocking them away and Stunning them for 0.75 seconds.",
-      cooldown: null,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_e.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 26.333333333333332
+      }
     }
   ],
   talents: [
@@ -139,6 +170,13 @@ const qhira: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 7.2
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -149,12 +187,19 @@ const qhira: Hero = {
         id: "NexusHunterFatalWounds",
         name: "Fatal Wounds",
         descriptionShort: "Quest: Increase Blood Rage damage, duration",
-        descriptionLong: "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health.Quest: Damage enemy Heroes with Blood Rage's bleed damage. Reward: After damaging Heroes with Blood Rage's bleed damage 200 times, Blood Rage's duration is increased by 2 seconds.",
+        descriptionLong: "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health. Quest: Damage enemy Heroes with Blood Rage's bleed damage. Reward: After damaging Heroes with Blood Rage's bleed damage 200 times, Blood Rage's duration is increased by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -172,6 +217,13 @@ const qhira: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_passive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -190,6 +242,13 @@ const qhira: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -206,6 +265,13 @@ const qhira: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -223,6 +289,13 @@ const qhira: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_passive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -241,6 +314,13 @@ const qhira: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -257,6 +337,13 @@ const qhira: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2.533333333333333,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -267,12 +354,19 @@ const qhira: Hero = {
         id: "NexusHunterSiphoningLink",
         name: "Siphoning Link",
         descriptionShort: "Revolving Sweep heals over time",
-        descriptionLong: "Damaging an enemy Hero with Revolving Sweep's initial impact or swing causes Qhira to regenerate 96 (+4% / level) Health over 4 seconds. Stacks up to 4 times.Passive: Basic Attacks heal for 20% of the damage dealt.",
+        descriptionLong: "Damaging an enemy Hero with Revolving Sweep's initial impact or swing causes Qhira to regenerate 96 (+4% / level) Health over 4 seconds. Stacks up to 4 times. Passive: Basic Attacks heal for 20% of the damage dealt.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2.6666666666666665,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -296,6 +390,13 @@ const qhira: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_r1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 13.6
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -316,6 +417,13 @@ const qhira: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_r2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 26.333333333333332
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -334,6 +442,13 @@ const qhira: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -350,6 +465,13 @@ const qhira: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -367,6 +489,13 @@ const qhira: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_passive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -385,6 +514,13 @@ const qhira: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -402,6 +538,13 @@ const qhira: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_e_alt_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -419,6 +562,13 @@ const qhira: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_e_alt_2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -438,6 +588,13 @@ const qhira: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_r1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -451,12 +608,19 @@ const qhira: Hero = {
         id: "NexusHunterFinalStrikeUnleashedPotential",
         name: "Unleashed Potential",
         descriptionShort: "Final Strike refunds Ability cooldowns",
-        descriptionLong: "Increase the damage to enemy Heroes under 50% Health from 25% to 50%.If an enemy Hero dies within 1.5 seconds of being hit by Final Strike, then reset the cooldowns of Final Strike and all of Qhira's Basic Abilities.",
+        descriptionLong: "Increase the damage to enemy Heroes under 50% Health from 25% to 50%. If an enemy Hero dies within 1.5 seconds of being hit by Final Strike, then reset the cooldowns of Final Strike and all of Qhira's Basic Abilities.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_r2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -476,6 +640,13 @@ const qhira: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_d.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -486,12 +657,19 @@ const qhira: Hero = {
         id: "NexusHunterHuntersVengeanceNoSanctuary",
         name: "No Sanctuary",
         descriptionShort: "Hunt low Health enemies",
-        descriptionLong: "Nearby enemy Heroes below 50% Health are revealed and you gain 20% Movement Speed while an enemy Hero is revealed by you in this way.Additionally, you deal 20% increased damage to these revealed enemies.",
+        descriptionLong: "Nearby enemy Heroes below 50% Health are revealed and you gain 20% Movement Speed while an enemy Hero is revealed by you in this way. Additionally, you deal 20% increased damage to these revealed enemies.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_passive_alt_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -502,7 +680,10 @@ const qhira: Hero = {
   ],
   analysis: {
     tankiness: 60.263653483992464,
-    damageSustainedPhysical: 24.456521739130434
+    physicalDamage: 50,
+    mobility: 24.199,
+    healing: 19.19627231361568,
+    magicalDamage: 30.779533278852263
   }
 };
       

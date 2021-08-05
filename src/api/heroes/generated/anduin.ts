@@ -44,7 +44,14 @@ const anduin: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_leap_of_faith.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "AnduinFlashHeal",
@@ -59,7 +66,14 @@ const anduin: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_flash_heal.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 13.5,
+        magicalDamage: 0
+      }
     },
     {
       id: "AnduinDivineStar",
@@ -74,7 +88,14 @@ const anduin: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_divine_star.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 11.333333333333332,
+        magicalDamage: 15.555555555555555
+      }
     },
     {
       id: "AnduinChastise",
@@ -89,7 +110,14 @@ const anduin: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_chastise.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 17.5
+      }
     },
     {
       id: "AnduinHolyWordSalvation",
@@ -104,13 +132,20 @@ const anduin: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_holy_word_salvation.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 8,
+        magicalDamage: 0
+      }
     },
     {
       id: "AnduinLightBomb",
       name: "Lightbomb",
       descriptionShort: "Stun enemies around an ally",
-      descriptionLong: "Imbue an allied Hero with the Light. After 1.5 seconds, it explodes, dealing 150 (+4% / level) damage to enemies and Stunning them for 1.25 seconds.The target gains a Shield that absorbs 165 (+4% / level) damage per enemy Hero hit. Lasts for 5 seconds.",
+      descriptionLong: "Imbue an allied Hero with the Light. After 1.5 seconds, it explodes, dealing 150 (+4% / level) damage to enemies and Stunning them for 1.25 seconds. The target gains a Shield that absorbs 165 (+4% / level) damage per enemy Hero hit. Lasts for 5 seconds.",
       cost: {
         type: "Mana",
         amount: 70
@@ -119,18 +154,14 @@ const anduin: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_light_bomb.png",
-      isPassive: false
-    },
-    {
-      id: "AnduinHolyWordSalvationCancel",
-      name: "Cancel Holy Word: Salvation",
-      descriptionShort: "Cancel Holy Word: Salvation",
-      descriptionLong: "Cancel Holy Word: Salvation.",
-      cooldown: 1,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/hud_btn_bg_ability_cancel.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10
+      }
     }
   ],
   talents: [
@@ -145,6 +176,13 @@ const anduin: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_flash_heal_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.466666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -161,6 +199,13 @@ const anduin: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_varians_legacy.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -177,6 +222,13 @@ const anduin: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_bold_strategy.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -195,6 +247,13 @@ const anduin: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_divine_star.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -211,6 +270,13 @@ const anduin: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_chastise.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2.6666666666666665,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -227,6 +293,13 @@ const anduin: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_varians_legacy.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -245,6 +318,13 @@ const anduin: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_flash_heal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.5333333333333332,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -261,6 +341,13 @@ const anduin: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_divine_star.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -271,12 +358,19 @@ const anduin: Hero = {
         id: "AnduinBlessedRecovery",
         name: "Blessed Recovery",
         descriptionShort: "Recover Health after taking high damage",
-        descriptionLong: "If Anduin loses more than 8% of his maximum Health at once, recover 15% Health over 3 seconds. This effect has a 10 second cooldown.Current Health required: 133 (+4% / level)",
+        descriptionLong: "If Anduin loses more than 8% of his maximum Health at once, recover 15% Health over 3 seconds. This effect has a 10 second cooldown. Current Health required: 133 (+4% / level)",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_blessed_recovery.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -296,6 +390,13 @@ const anduin: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_holy_word_salvation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 8,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -306,7 +407,7 @@ const anduin: Hero = {
         id: "AnduinLightBomb",
         name: "Lightbomb",
         descriptionShort: "Stun enemies around an ally",
-        descriptionLong: "Imbue an allied Hero with the Light. After 1.5 seconds, it explodes, dealing 150 (+4% / level) damage to enemies and Stunning them for 1.25 seconds.The target gains a Shield that absorbs 165 (+4% / level) damage per enemy Hero hit. Lasts for 5 seconds.",
+        descriptionLong: "Imbue an allied Hero with the Light. After 1.5 seconds, it explodes, dealing 150 (+4% / level) damage to enemies and Stunning them for 1.25 seconds. The target gains a Shield that absorbs 165 (+4% / level) damage per enemy Hero hit. Lasts for 5 seconds.",
         cost: {
           type: "Mana",
           amount: 70
@@ -316,6 +417,13 @@ const anduin: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_light_bomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 10
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -334,6 +442,13 @@ const anduin: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_divine_star.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -350,6 +465,13 @@ const anduin: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_chastise.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -366,6 +488,13 @@ const anduin: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_leap_of_faith.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.7333333333333334,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -384,6 +513,13 @@ const anduin: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_flash_heal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 9.333333333333334,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -400,6 +536,13 @@ const anduin: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_divine_star.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2.8,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -410,12 +553,19 @@ const anduin: Hero = {
         id: "AnduinFlashHealInnerFocus",
         name: "Inner Focus",
         descriptionShort: "Activate to reset Flash Heal cooldown",
-        descriptionLong: "Activate to reset the cooldown of Flash Heal and its next cast heals for 40% more.Damaging enemy Heroes with Divine Star reduces this cooldown by 8 seconds.",
+        descriptionLong: "Activate to reset the cooldown of Flash Heal and its next cast heals for 40% more. Damaging enemy Heroes with Divine Star reduces this cooldown by 8 seconds.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_inner_focus.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 5.333333333333333,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       },
@@ -423,12 +573,19 @@ const anduin: Hero = {
         id: "AnduinLightwell",
         name: "Lightwell",
         descriptionShort: "Activate to summon a healing Lightwell",
-        descriptionLong: "Summon a Lightwell that periodically heals a nearby allied Hero for 75 (+4% / level). The well only fades after healing 10 times or when recast.This cooldown is reduced by 1 second each time Anduin heals an allied Hero.",
+        descriptionLong: "Summon a Lightwell that periodically heals a nearby allied Hero for 75 (+4% / level). The well only fades after healing 10 times or when recast. This cooldown is reduced by 1 second each time Anduin heals an allied Hero.",
         cooldown: 80,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_lightwell.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level16"
       }
@@ -444,6 +601,13 @@ const anduin: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_holy_word_salvation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -463,6 +627,13 @@ const anduin: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_leap_of_faith.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -479,6 +650,13 @@ const anduin: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_varians_legacy.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -495,6 +673,13 @@ const anduin: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_desperate_prayer.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 7.2,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -502,7 +687,10 @@ const anduin: Hero = {
   ],
   analysis: {
     tankiness: 50.16949152542374,
-    damageSustainedPhysical: 42.34601449275362
+    physicalDamage: 35.41666666666667,
+    mobility: 24.199,
+    healing: 43.095904795239754,
+    magicalDamage: 19.058915221405005
   }
 };
       

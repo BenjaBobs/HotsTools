@@ -45,7 +45,14 @@ const cassia: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance_b.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "AmazonLightningFury",
@@ -66,13 +73,20 @@ const cassia: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_lightningfury.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 63.2
+      }
     },
     {
       id: "AmazonBlindingLight",
       name: "Blinding Light",
       descriptionShort: "Blind enemies in an area",
-      descriptionLong: "After 0.5 seconds, deal 50 (+4% / level) damage and Blind enemies in the target area for 2 seconds.Passive: Cassia deals 20% increased damage to Blinded targets.",
+      descriptionLong: "After 0.5 seconds, deal 50 (+4% / level) damage and Blind enemies in the target area for 2 seconds. Passive: Cassia deals 20% increased damage to Blinded targets.",
       cost: {
         type: "Mana",
         amount: 50
@@ -81,7 +95,14 @@ const cassia: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_blindinglight.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 3.3333333333333335
+      }
     },
     {
       id: "AmazonFend",
@@ -96,7 +117,14 @@ const cassia: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_fend.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.4
+      }
     },
     {
       id: "AmazonBallLightning",
@@ -111,7 +139,14 @@ const cassia: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_balllightning.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 12
+      }
     },
     {
       id: "AmazonValkyrie",
@@ -126,18 +161,14 @@ const cassia: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_valkrie.png",
-      isPassive: false
-    },
-    {
-      id: "AmazonSurgeOfLight",
-      name: "Avoidance",
-      descriptionShort: "Gain Armor while moving",
-      descriptionLong: "While moving, Cassia gradually gains up to 30 Armor over 3 seconds. After being stationary for 0.75 seconds, the Armor is rapidly lost over .5 seconds. Avoidance remains charged while Fending.",
-      cooldown: null,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance_b.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15
+      }
     }
   ],
   talents: [
@@ -146,7 +177,7 @@ const cassia: Hero = {
         id: "AmazonThunderstroke",
         name: "Thunderstroke",
         descriptionShort: "Quest: Increase Lightning Fury damage",
-        descriptionLong: "Increase the damage of Lightning Fury by 25.Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
+        descriptionLong: "Increase the damage of Lightning Fury by 25. Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -158,6 +189,13 @@ const cassia: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_lightningfury.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -175,6 +213,13 @@ const cassia: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_fend.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -191,6 +236,13 @@ const cassia: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_new_chargedstrikes.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -206,6 +258,13 @@ const cassia: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -223,6 +282,13 @@ const cassia: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_ringoftheleech.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4"
       },
@@ -236,6 +302,13 @@ const cassia: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_innerlight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.3333333333333335,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -260,6 +333,13 @@ const cassia: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_combo_q_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -271,12 +351,19 @@ const cassia: Hero = {
         id: "AmazonSeraphsHymn",
         name: "Seraph's Hymn",
         descriptionShort: "Empower Basic Attacks, Blinding Light",
-        descriptionLong: "Basic Attacks against your primary enemy Hero grant 10 Mana and reduce the cooldown of Blinding Light by 1.5 seconds.Passive: Increase the passive damage bonus of Blinding Light from 20% to 30%.",
+        descriptionLong: "Basic Attacks against your primary enemy Hero grant 10 Mana and reduce the cooldown of Blinding Light by 1.5 seconds. Passive: Increase the passive damage bonus of Blinding Light from 20% to 30%.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_blindinglight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -293,6 +380,13 @@ const cassia: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 16
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -315,6 +409,13 @@ const cassia: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_balllightning.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 12
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -335,6 +436,13 @@ const cassia: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_valkrie.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 15
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -353,6 +461,13 @@ const cassia: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_fend.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -369,6 +484,13 @@ const cassia: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -386,6 +508,13 @@ const cassia: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_new_gloves.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -411,6 +540,13 @@ const cassia: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_combo_q_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -434,6 +570,13 @@ const cassia: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_combo_q_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -451,6 +594,13 @@ const cassia: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -466,6 +616,13 @@ const cassia: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_balllightning_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -485,6 +642,13 @@ const cassia: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_valkrie_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 13.333333333333334
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -504,6 +668,13 @@ const cassia: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -521,6 +692,13 @@ const cassia: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -532,7 +710,10 @@ const cassia: Hero = {
   ],
   analysis: {
     tankiness: 50.018832391713744,
-    damageSustainedPhysical: 47.10144927536231
+    physicalDamage: 66.66666666666666,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 44.23635703259784
   }
 };
       

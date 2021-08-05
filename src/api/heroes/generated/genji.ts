@@ -38,13 +38,20 @@ const genji: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_cyberagility.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "GenjiShuriken",
       name: "Shuriken",
       descriptionShort: "Throw Shuriken in a spread pattern",
-      descriptionLong: "Throw 3 Shuriken in a spread pattern, each dealing 65 (+4% / level) damage to the first enemy hit.Stores up to 3 charges.  Shuriken's cooldown replenishes all charges at the same time.",
+      descriptionLong: "Throw 3 Shuriken in a spread pattern, each dealing 65 (+4% / level) damage to the first enemy hit. Stores up to 3 charges.  Shuriken's cooldown replenishes all charges at the same time.",
       cost: {
         type: "Mana",
         amount: 20
@@ -59,13 +66,20 @@ const genji: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5.416666666666666
+      }
     },
     {
       id: "GenjiDeflectInstant",
       name: "Deflect",
       descriptionShort: "Become Protected and return fire from attacks",
-      descriptionLong: "Channel for 1.25 seconds, becoming Protected and blocking damage. Any damage blocked while channeling causes Genji to throw a Kunai toward the nearest enemy, prioritizing Heroes and dealing 55 (+4% / level) damage.Total Damage Deflected: 0",
+      descriptionLong: "Channel for 1.25 seconds, becoming Protected and blocking damage. Any damage blocked while channeling causes Genji to throw a Kunai toward the nearest enemy, prioritizing Heroes and dealing 55 (+4% / level) damage. Total Damage Deflected: 0",
       cost: {
         type: "Mana",
         amount: 70
@@ -74,7 +88,14 @@ const genji: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_deflect.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 3.6666666666666665
+      }
     },
     {
       id: "GenjiSwiftStrike",
@@ -89,7 +110,14 @@ const genji: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_swiftstrike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15.833333333333332
+      }
     },
     {
       id: "GenjiDragonblade",
@@ -104,7 +132,14 @@ const genji: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_dragonblade.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16
+      }
     },
     {
       id: "GenjiXStrike",
@@ -119,29 +154,14 @@ const genji: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens_xblade.png",
-      isPassive: false
-    },
-    {
-      id: "GenjiDragonbladeAttack",
-      name: "Dragonblade",
-      descriptionShort: "Lunge forward and slash in a huge arc",
-      descriptionLong: "Lunge forward and slash in a huge arc, dealing 240 (+4% / level) damage.",
-      cooldown: 1,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_dragonblade_sword.png",
-      isPassive: false
-    },
-    {
-      id: "GenjiDragonbladeAttack",
-      name: "Dragonblade",
-      descriptionShort: "Lunge forward and slash in a huge arc",
-      descriptionLong: "Lunge forward and slash in a huge arc, dealing 240 (+4% / level) damage.",
-      cooldown: 1,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_dragonblade_sword.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 9.666666666666666
+      }
     }
   ],
   talents: [
@@ -156,6 +176,13 @@ const genji: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_swiftstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -172,6 +199,13 @@ const genji: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_cyberagility.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -188,6 +222,13 @@ const genji: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_cyberagility_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -200,7 +241,7 @@ const genji: Hero = {
         id: "GenjiShurikenShurikenMastery",
         name: "Shuriken Mastery",
         descriptionShort: "Quest: Increase Shuriken damage and restore charges",
-        descriptionLong: "Quest: Hit enemy Heroes with Shuriken.Reward: After hitting 35 Heroes, Shuriken damage is increased by 25.Reward: After hitting 75 Heroes, Cyber Agility now refunds 2 charges of Shuriken.",
+        descriptionLong: "Quest: Hit enemy Heroes with Shuriken. Reward: After hitting 35 Heroes, Shuriken damage is increased by 25. Reward: After hitting 75 Heroes, Cyber Agility now refunds 2 charges of Shuriken.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -212,6 +253,13 @@ const genji: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -229,6 +277,13 @@ const genji: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_swiftstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -245,6 +300,13 @@ const genji: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens_dragonsoul.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 12.666666666666666
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -263,6 +325,13 @@ const genji: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_deflect.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -279,6 +348,13 @@ const genji: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_deflect_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -295,6 +371,13 @@ const genji: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_cyberagility.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -311,6 +394,13 @@ const genji: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_dodge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level7"
       }
@@ -330,6 +420,13 @@ const genji: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_dragonblade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 16
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -350,6 +447,13 @@ const genji: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens_xblade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 9.666666666666666
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -374,6 +478,13 @@ const genji: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 7.666666666666667
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -390,6 +501,13 @@ const genji: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_swiftstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -406,6 +524,13 @@ const genji: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -424,6 +549,13 @@ const genji: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_deflect.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -440,6 +572,13 @@ const genji: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_swiftstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 8.333333333333334
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -456,6 +595,13 @@ const genji: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_swiftstrike_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -474,6 +620,13 @@ const genji: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_dragonblade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -494,6 +647,13 @@ const genji: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens_xblade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -519,6 +679,13 @@ const genji: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -529,12 +696,19 @@ const genji: Hero = {
         id: "GenjiDeflectZanshin",
         name: "Zanshin",
         descriptionShort: "Quest: Deflect hits all nearby Heroes",
-        descriptionLong: "Quest: Block 6500 damage with Deflect, including damage blocked so far.Reward: Deflect hits all nearby enemy Heroes.",
+        descriptionLong: "Quest: Block 6500 damage with Deflect, including damage blocked so far. Reward: Deflect hits all nearby enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_deflect_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -546,7 +720,10 @@ const genji: Hero = {
   ],
   analysis: {
     tankiness: 50.470809792843696,
-    damageSustainedPhysical: 21.52173913043478
+    physicalDamage: 22,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 22.39115136656678
   }
 };
       

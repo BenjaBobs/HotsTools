@@ -20,12 +20,19 @@ const lostvikings: Hero = {
       id: "LostVikingsVikingHoardTalent",
       name: "Viking Hoard",
       descriptionShort: "Gather Regen Globes to increase Health Regen",
-      descriptionLong: "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by 0.5 per second.Current Bonus: 0 Regen per second",
+      descriptionLong: "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by 0.5 per second. Current Bonus: 0 Regen per second",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_vikinghoard.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LostVikingsGoGoGo",
@@ -36,7 +43,14 @@ const lostvikings: Hero = {
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_mount.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LostVikingsSpinToWin",
@@ -47,7 +61,14 @@ const lostvikings: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_spintowin.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 8.5
+      }
     },
     {
       id: "LostVikingsNorseForce",
@@ -58,7 +79,14 @@ const lostvikings: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_norseforce.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LostVikingsPressA",
@@ -69,7 +97,14 @@ const lostvikings: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_jump.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LostVikingsNordicAttackSquad",
@@ -80,13 +115,20 @@ const lostvikings: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LostVikingsVikingBribery",
       name: "Viking Bribery",
       descriptionShort: "Kill Minions to bribe a Mercenary",
-      descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.Current number of Bribe stacks: 0",
+      descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
       cooldown: null,
       charges: {
         chargesMax: 5,
@@ -96,18 +138,32 @@ const lostvikings: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_bribe.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LostVikingsLongboatRaidNewer",
       name: "Longboat Raid!",
       descriptionShort: "Load into a Longboat to attack enemies",
-      descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds.Requires all surviving Vikings to be nearby.",
+      descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
       cooldown: 90,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_longboatraid.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15.2
+      }
     },
     {
       id: "LostVikingsPlayAgain",
@@ -118,7 +174,14 @@ const lostvikings: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_playagain.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -127,12 +190,19 @@ const lostvikings: Hero = {
         id: "LostVikingsMasteryOlafTheStout",
         name: "Olaf the Stout",
         descriptionShort: "Olaf gains Health, Physical Armor",
-        descriptionLong: "Passive: Olaf gains 20% bonus maximum Health.Every 5 seconds, Olaf gains 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.Stores up to 2 charges.",
+        descriptionLong: "Passive: Olaf gains 20% bonus maximum Health. Every 5 seconds, Olaf gains 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%. Stores up to 2 charges.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selectolaf.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -149,6 +219,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selecterik.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -165,6 +242,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selectbaleog.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -175,7 +259,7 @@ const lostvikings: Hero = {
         id: "LostVikingsMasteryVikingBribery",
         name: "Viking Bribery",
         descriptionShort: "Kill Minions to bribe a Mercenary",
-        descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.Current number of Bribe stacks: 0",
+        descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
         cooldown: null,
         charges: {
           chargesMax: 5,
@@ -186,6 +270,13 @@ const lostvikings: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_bribe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level1"
       }
@@ -201,6 +292,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selectbaleog.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2.6666666666666665,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -217,6 +315,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selecterik.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.4533333333333333,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -233,6 +338,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selecterik_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -249,6 +361,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_mercenarylord.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level4"
       }
@@ -264,6 +383,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selectbaleog.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -280,6 +406,13 @@ const lostvikings: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_spintowin.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 8.5
+        },
         order: 2,
         tier: "level7"
       },
@@ -293,6 +426,13 @@ const lostvikings: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_norseforce.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -302,12 +442,19 @@ const lostvikings: Hero = {
         id: "LostVikingsHeroicAbilityLongboatRaid",
         name: "Longboat Raid!",
         descriptionShort: "Load into a Longboat to attack enemies",
-        descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds.Requires all surviving Vikings to be nearby.",
+        descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
         cooldown: 90,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_longboatraid.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 15.2
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -324,6 +471,13 @@ const lostvikings: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_playagain.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -342,6 +496,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selectolaf.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 2.2666666666666666
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -358,6 +519,13 @@ const lostvikings: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_jump.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13"
       },
@@ -371,6 +539,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -386,6 +561,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selectolaf.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -402,6 +584,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16"
       },
@@ -415,6 +604,13 @@ const lostvikings: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_64kbmarathon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -431,6 +627,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level16"
       }
@@ -446,6 +649,13 @@ const lostvikings: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_longboatraid.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -465,6 +675,13 @@ const lostvikings: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_playagain.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -484,6 +701,13 @@ const lostvikings: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_fastrestart.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -500,6 +724,13 @@ const lostvikings: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 2.7333333333333334
+        },
         order: 4,
         tier: "level20"
       }
@@ -539,12 +770,19 @@ const lostvikings: Hero = {
           id: "LostVikingsVikingHoardTalent",
           name: "Viking Hoard",
           descriptionShort: "Gather Regen Globes to increase Health Regen",
-          descriptionLong: "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by 0.5 per second.Current Bonus: 0 Regen per second",
+          descriptionLong: "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by 0.5 per second. Current Bonus: 0 Regen per second",
           cooldown: null,
           category: "trait",
           type: "Trait",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_vikinghoard.png",
-          isPassive: true
+          isPassive: true,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsGoGoGo",
@@ -555,7 +793,14 @@ const lostvikings: Hero = {
           category: "mount",
           type: "Z",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_mount.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsSpinToWin",
@@ -566,7 +811,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "Q",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_spintowin.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 8.5
+          }
         },
         {
           id: "LostVikingsNorseForce",
@@ -577,7 +829,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "Q",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_norseforce.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsPressA",
@@ -588,7 +847,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "W",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_jump.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsNordicAttackSquad",
@@ -599,13 +865,20 @@ const lostvikings: Hero = {
           category: "basic",
           type: "W",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsVikingBribery",
           name: "Viking Bribery",
           descriptionShort: "Kill Minions to bribe a Mercenary",
-          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.Current number of Bribe stacks: 0",
+          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
           cooldown: null,
           charges: {
             chargesMax: 5,
@@ -615,7 +888,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "E",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_bribe.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsPlayAgain",
@@ -626,24 +906,41 @@ const lostvikings: Hero = {
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_playagain.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsLongboatRaidNewer",
           name: "Longboat Raid!",
           descriptionShort: "Load into a Longboat to attack enemies",
-          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds.Requires all surviving Vikings to be nearby.",
+          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
           cooldown: 90,
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_longboatraid.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 15.2
+          }
         }
       ],
       talents: [],
       analysis: {
         tankiness: 4.72,
-        damageSustainedPhysical: 9.100000000000001
+        physicalDamage: 3.466666666666667,
+        mobility: 24.199,
+        healing: 0,
+        magicalDamage: 23.7
       }
     },
     {
@@ -672,12 +969,19 @@ const lostvikings: Hero = {
           id: "LostVikingsVikingHoardTalent",
           name: "Viking Hoard",
           descriptionShort: "Gather Regen Globes to increase Health Regen",
-          descriptionLong: "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by 0.5 per second.Current Bonus: 0 Regen per second",
+          descriptionLong: "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by 0.5 per second. Current Bonus: 0 Regen per second",
           cooldown: null,
           category: "trait",
           type: "Trait",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_vikinghoard.png",
-          isPassive: true
+          isPassive: true,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsGoGoGo",
@@ -688,7 +992,14 @@ const lostvikings: Hero = {
           category: "mount",
           type: "Z",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_mount.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsSpinToWin",
@@ -699,7 +1010,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "Q",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_spintowin.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 8.5
+          }
         },
         {
           id: "LostVikingsNorseForce",
@@ -710,7 +1028,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "Q",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_norseforce.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsPressA",
@@ -721,7 +1046,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "W",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_jump.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsNordicAttackSquad",
@@ -732,13 +1064,20 @@ const lostvikings: Hero = {
           category: "basic",
           type: "W",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsVikingBribery",
           name: "Viking Bribery",
           descriptionShort: "Kill Minions to bribe a Mercenary",
-          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.Current number of Bribe stacks: 0",
+          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
           cooldown: null,
           charges: {
             chargesMax: 5,
@@ -748,7 +1087,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "E",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_bribe.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsPlayAgain",
@@ -759,24 +1105,41 @@ const lostvikings: Hero = {
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_playagain.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsLongboatRaidNewer",
           name: "Longboat Raid!",
           descriptionShort: "Load into a Longboat to attack enemies",
-          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds.Requires all surviving Vikings to be nearby.",
+          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
           cooldown: 90,
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_longboatraid.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 15.2
+          }
         }
       ],
       talents: [],
       analysis: {
         tankiness: 3.36,
-        damageSustainedPhysical: 24.142857142857146
+        physicalDamage: 3.714285714285715,
+        mobility: 27.832,
+        healing: 0,
+        magicalDamage: 23.7
       }
     },
     {
@@ -805,12 +1168,19 @@ const lostvikings: Hero = {
           id: "LostVikingsVikingHoardTalent",
           name: "Viking Hoard",
           descriptionShort: "Gather Regen Globes to increase Health Regen",
-          descriptionLong: "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by 0.5 per second.Current Bonus: 0 Regen per second",
+          descriptionLong: "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by 0.5 per second. Current Bonus: 0 Regen per second",
           cooldown: null,
           category: "trait",
           type: "Trait",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_vikinghoard.png",
-          isPassive: true
+          isPassive: true,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsGoGoGo",
@@ -821,7 +1191,14 @@ const lostvikings: Hero = {
           category: "mount",
           type: "Z",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_mount.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsSpinToWin",
@@ -832,7 +1209,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "Q",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_spintowin.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 8.5
+          }
         },
         {
           id: "LostVikingsNorseForce",
@@ -843,7 +1227,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "Q",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_norseforce.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsPressA",
@@ -854,7 +1245,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "W",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_jump.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsNordicAttackSquad",
@@ -865,13 +1263,20 @@ const lostvikings: Hero = {
           category: "basic",
           type: "W",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsVikingBribery",
           name: "Viking Bribery",
           descriptionShort: "Kill Minions to bribe a Mercenary",
-          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.Current number of Bribe stacks: 0",
+          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
           cooldown: null,
           charges: {
             chargesMax: 5,
@@ -881,7 +1286,14 @@ const lostvikings: Hero = {
           category: "basic",
           type: "E",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_bribe.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsPlayAgain",
@@ -892,30 +1304,50 @@ const lostvikings: Hero = {
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_playagain.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "LostVikingsLongboatRaidNewer",
           name: "Longboat Raid!",
           descriptionShort: "Load into a Longboat to attack enemies",
-          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds.Requires all surviving Vikings to be nearby.",
+          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
           cooldown: 90,
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_longboatraid.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 15.2
+          }
         }
       ],
       talents: [],
       analysis: {
         tankiness: 6.16,
-        damageSustainedPhysical: 2.8500000000000005
+        physicalDamage: 2.2800000000000002,
+        mobility: 24.199,
+        healing: 0,
+        magicalDamage: 23.7
       }
     }
   ],
   analysis: {
     tankiness: 0,
-    damageSustainedPhysical: 0
+    physicalDamage: 0,
+    mobility: 100,
+    healing: 0,
+    magicalDamage: 10.491010623808226
   }
 };
       

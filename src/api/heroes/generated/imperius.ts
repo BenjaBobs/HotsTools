@@ -38,7 +38,14 @@ const imperius: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_trait.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 1,
+        magicalDamage: 0
+      }
     },
     {
       id: "ImperiusCelestialCharge",
@@ -53,7 +60,14 @@ const imperius: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_q.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10.5
+      }
     },
     {
       id: "ImperiusSolarionsFire",
@@ -68,7 +82,14 @@ const imperius: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_w.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 12.5
+      }
     },
     {
       id: "ImperiusMoltenArmor",
@@ -83,13 +104,20 @@ const imperius: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_e.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 8.333333333333332,
+        magicalDamage: 0
+      }
     },
     {
       id: "ImperiusAngelicArmaments",
       name: "Angelic Armaments",
       descriptionShort: "Gain a large Shield, reactivate to damage",
-      descriptionLong: "Summon a ring of blazing swords that grants 850 (+4% / level) Shield for 3 seconds.If the Shield lasts the full duration, this ability can be reactivated within 5 seconds to launch 6 swords toward an area, each dealing 140 (+4% / level) damage to the first enemy hit.",
+      descriptionLong: "Summon a ring of blazing swords that grants 850 (+4% / level) Shield for 3 seconds. If the Shield lasts the full duration, this ability can be reactivated within 5 seconds to launch 6 swords toward an area, each dealing 140 (+4% / level) damage to the first enemy hit.",
       cost: {
         type: "Mana",
         amount: 70
@@ -98,13 +126,20 @@ const imperius: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_r1.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 9.333333333333334
+      }
     },
     {
       id: "ImperiusWrathOfTheAngiris",
       name: "Wrath of the Angiris",
       descriptionShort: "Ascend with an enemy into the Heavens",
-      descriptionLong: "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving.After 2 seconds, slam the target into the ground, dealing 375 (+4% / level) damage and Stunning them for 1 second.",
+      descriptionLong: "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving. After 2 seconds, slam the target into the ground, dealing 375 (+4% / level) damage and Stunning them for 1 second.",
       cost: {
         type: "Mana",
         amount: 80
@@ -113,7 +148,14 @@ const imperius: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_r2.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 25
+      }
     }
   ],
   talents: [
@@ -128,6 +170,13 @@ const imperius: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -144,6 +193,13 @@ const imperius: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -160,6 +216,13 @@ const imperius: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -178,6 +241,13 @@ const imperius: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -194,6 +264,13 @@ const imperius: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 9.333333333333334,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -210,6 +287,13 @@ const imperius: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_globe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -228,6 +312,13 @@ const imperius: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 10
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -244,6 +335,13 @@ const imperius: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 10
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -260,6 +358,13 @@ const imperius: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_item_01.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -269,7 +374,7 @@ const imperius: Hero = {
         id: "ImperiusAngelicArmaments",
         name: "Angelic Armaments",
         descriptionShort: "Gain a large Shield, reactivate to damage",
-        descriptionLong: "Summon a ring of blazing swords that grants 850 (+4% / level) Shield for 3 seconds.If the Shield lasts the full duration, this ability can be reactivated within 5 seconds to launch 6 swords toward an area, each dealing 140 (+4% / level) damage to the first enemy hit.",
+        descriptionLong: "Summon a ring of blazing swords that grants 850 (+4% / level) Shield for 3 seconds. If the Shield lasts the full duration, this ability can be reactivated within 5 seconds to launch 6 swords toward an area, each dealing 140 (+4% / level) damage to the first enemy hit.",
         cost: {
           type: "Mana",
           amount: 70
@@ -279,6 +384,13 @@ const imperius: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_r1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 9.333333333333334
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -289,7 +401,7 @@ const imperius: Hero = {
         id: "ImperiusWrathOfTheAngiris",
         name: "Wrath of the Angiris",
         descriptionShort: "Ascend with an enemy into the Heavens",
-        descriptionLong: "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving.After 2 seconds, slam the target into the ground, dealing 375 (+4% / level) damage and Stunning them for 1 second.",
+        descriptionLong: "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving. After 2 seconds, slam the target into the ground, dealing 375 (+4% / level) damage and Stunning them for 1 second.",
         cost: {
           type: "Mana",
           amount: 80
@@ -299,6 +411,13 @@ const imperius: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_r2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 25
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -317,6 +436,13 @@ const imperius: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -333,6 +459,13 @@ const imperius: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -349,6 +482,13 @@ const imperius: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_e_alt_01.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.8,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -367,6 +507,13 @@ const imperius: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -383,6 +530,13 @@ const imperius: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -399,6 +553,13 @@ const imperius: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_item_03.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -408,12 +569,19 @@ const imperius: Hero = {
         id: "ImperiusAngelicArmamentsHeavenlyHost",
         name: "Heavenly Host",
         descriptionShort: "Allied Heroes gain a weaponized Shield",
-        descriptionLong: "Nearby allied Heroes gain 600 (+4% / level) Shield for 3 seconds.If the Shield lasts the full duration, fire a sword at the nearest enemy Hero, dealing 140 (+4% / level) damage.",
+        descriptionLong: "Nearby allied Heroes gain 600 (+4% / level) Shield for 3 seconds. If the Shield lasts the full duration, fire a sword at the nearest enemy Hero, dealing 140 (+4% / level) damage.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_r1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 9.333333333333334
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -433,6 +601,13 @@ const imperius: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_r2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -452,6 +627,13 @@ const imperius: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -468,6 +650,13 @@ const imperius: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_item_02.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -475,7 +664,10 @@ const imperius: Hero = {
   ],
   analysis: {
     tankiness: 71.56308851224105,
-    damageSustainedPhysical: 22.101449275362313
+    physicalDamage: 50.83333333333333,
+    mobility: 24.199,
+    healing: 12.25061253062653,
+    magicalDamage: 25.37909743030963
   }
 };
       

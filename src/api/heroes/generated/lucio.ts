@@ -38,7 +38,14 @@ const lucio: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_accelerando.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LucioWallRide",
@@ -49,7 +56,14 @@ const lucio: Hero = {
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_mount.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LucioSoundwave",
@@ -64,18 +78,32 @@ const lucio: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundwave.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15
+      }
     },
     {
       id: "LucioCrossfade",
       name: "Crossfade",
       descriptionShort: "Play a Healing Boost or Speed Boost track",
-      descriptionLong: "Currently playing Speed Boost, increasing the Movement Speed of Lúcio and nearby allied Heroes by 10%.Toggle to play Healing Boost instead.",
+      descriptionLong: "Currently playing Speed Boost, increasing the Movement Speed of Lúcio and nearby allied Heroes by 10%. Toggle to play Healing Boost instead.",
       cooldown: null,
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_crossfadehealing.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LucioAmpItUp",
@@ -90,7 +118,14 @@ const lucio: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_ampitup.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 6.338461538461539,
+        magicalDamage: 0
+      }
     },
     {
       id: "LucioSoundBarrier",
@@ -105,7 +140,14 @@ const lucio: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundbarrier.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "LucioHighFive",
@@ -120,18 +162,14 @@ const lucio: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_highfive.png",
-      isPassive: false
-    },
-    {
-      id: "LucioCrossfade",
-      name: "Crossfade",
-      descriptionShort: "Play a Healing Boost or Speed Boost track",
-      descriptionLong: "Currently playing Healing Boost, passively healing Lúcio and nearby allied Heroes for 15 (+4% / level) Health per second.Toggle to play Speed Boost instead.",
-      cooldown: null,
-      category: "basic",
-      type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_crossfadespeed.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 5,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -140,12 +178,19 @@ const lucio: Hero = {
         id: "LucioCrossfadePartyMixQuest",
         name: "Party Mix",
         descriptionShort: "Quest: Playing Crossfade for allies increases range",
-        descriptionLong: "Quest: Play Lúcio's Crossfade tracks to nearby allies for a total of 8 minutes. Multiple allies provide additional time.Reward: Permanently increase Crossfade's range by 20%.",
+        descriptionLong: "Quest: Play Lúcio's Crossfade tracks to nearby allies for a total of 8 minutes. Multiple allies provide additional time. Reward: Permanently increase Crossfade's range by 20%.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_crossfade_all.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -163,6 +208,13 @@ const lucio: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_wallride.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -173,12 +225,19 @@ const lucio: Hero = {
         id: "LucioPassiveSmoothMoves",
         name: "Smooth Moves",
         descriptionShort: "Wall Ride Basic Attacks heal",
-        descriptionLong: "While Wall Ride is active, Basic Attacks heal for 30% of the damage dealt and restore 0.5 Mana.Passive: Increase Wall Ride duration by 1 second.",
+        descriptionLong: "While Wall Ride is active, Basic Attacks heal for 30% of the damage dealt and restore 0.5 Mana. Passive: Increase Wall Ride duration by 1 second.",
         cooldown: null,
         category: "Talent",
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_wallride_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -191,12 +250,19 @@ const lucio: Hero = {
         id: "LucioSoundwaveSubwoofer",
         name: "Subwoofer",
         descriptionShort: "Quest: Empower Soundwave",
-        descriptionLong: "Enemies within the first half of Soundwave's range are knocked back 75% further.Quest: Hit 3 enemy Heroes with a single Soundwave.Reward: Increase Soundwave's arc by 50% and its range by 20%.",
+        descriptionLong: "Enemies within the first half of Soundwave's range are knocked back 75% further. Quest: Hit 3 enemy Heroes with a single Soundwave. Reward: Increase Soundwave's arc by 50% and its range by 20%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundwave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -214,6 +280,13 @@ const lucio: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundwave_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -230,6 +303,13 @@ const lucio: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_accelerando.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -248,6 +328,13 @@ const lucio: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundwave_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -258,12 +345,19 @@ const lucio: Hero = {
         id: "LucioReverseAmp",
         name: "Reverse Amp",
         descriptionShort: "Amp It Up blasts Crossfade at enemy Heroes",
-        descriptionLong: "Blast Lúcio's active Crossfade track at enemy Heroes. While Amp It Up is active, Healing Boost deals 50 (+4% / level) damage per second and Speed Boost Slows by 20%.This ability is unaffected by Crossfade talents.",
+        descriptionLong: "Blast Lúcio's active Crossfade track at enemy Heroes. While Amp It Up is active, Healing Boost deals 50 (+4% / level) damage per second and Speed Boost Slows by 20%. This ability is unaffected by Crossfade talents.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_crossfade_all.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.3333333333333333,
+          magicalDamage: 3.3333333333333335
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -274,12 +368,19 @@ const lucio: Hero = {
         id: "LucioBoombox",
         name: "Boombox",
         descriptionShort: "Drop a boombox that plays Crossfade",
-        descriptionLong: "Place a boombox that plays Lúcio's active Crossfade track. Its volume adjusts with Amp It Up.Crossfade tracks do not stack.",
+        descriptionLong: "Place a boombox that plays Lúcio's active Crossfade track. Its volume adjusts with Amp It Up. Crossfade tracks do not stack.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_fineshrine.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -299,6 +400,13 @@ const lucio: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundbarrier.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -319,6 +427,13 @@ const lucio: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_highfive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 5,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -337,6 +452,13 @@ const lucio: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_crossfade_all.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -353,6 +475,13 @@ const lucio: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_accelerando.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -363,12 +492,19 @@ const lucio: Hero = {
         id: "LucioWallRideSlip",
         name: "Slip",
         descriptionShort: "Gain Armor, Move Speed during Wall Ride",
-        descriptionLong: "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40% for 1 second.Passive: Wall Ride grants 20 Armor.",
+        descriptionLong: "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40% for 1 second. Passive: Wall Ride grants 20 Armor.",
         cooldown: null,
         category: "Talent",
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_wallride.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -387,6 +523,13 @@ const lucio: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_ampitup.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.3333333333333333,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -397,12 +540,19 @@ const lucio: Hero = {
         id: "LucioAmpItUpUpTheFrequency",
         name: "Up the Frequency",
         descriptionShort: "Basic Attacks reduce Amp It Up cooldown",
-        descriptionLong: "Hitting enemy Heroes with Basic Attacks reduces the cooldown of Amp It Up by 0.4 seconds.Passive: Wall Ride increases Basic Attack range by 2.2.",
+        descriptionLong: "Hitting enemy Heroes with Basic Attacks reduces the cooldown of Amp It Up by 0.4 seconds. Passive: Wall Ride increases Basic Attack range by 2.2.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_ampitup_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -419,6 +569,13 @@ const lucio: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_ampitup_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -437,6 +594,13 @@ const lucio: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundbarrier.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -450,12 +614,19 @@ const lucio: Hero = {
         id: "LucioCrossfadeMixingFire",
         name: "Mixing Fire",
         descriptionShort: "High Five damages enemies, reduces their healing",
-        descriptionLong: "High Five can now be cast on enemy Heroes, dealing 225 (+4% / level) damage and reducing all healing received by 50% for 3 seconds.Passive: Reduce the cost and cooldown of High Five by 50%.",
+        descriptionLong: "High Five can now be cast on enemy Heroes, dealing 225 (+4% / level) damage and reducing all healing received by 50% for 3 seconds. Passive: Reduce the cost and cooldown of High Five by 50%.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_highfive.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 13.333333333333334,
+          magicalDamage: 15
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -475,6 +646,13 @@ const lucio: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_crossfade_all.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -491,6 +669,13 @@ const lucio: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_crossfade_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -501,7 +686,10 @@ const lucio: Hero = {
   ],
   analysis: {
     tankiness: 43.45009416195856,
-    damageSustainedPhysical: 10.999999999999998
+    physicalDamage: 9.2,
+    mobility: 24.199,
+    healing: 14.88247489297542,
+    magicalDamage: 6.639880141650776
   }
 };
       

@@ -33,12 +33,19 @@ const alarak: Hero = {
       id: "AlarakSadism",
       name: "Sadism",
       descriptionShort: "Each point of Sadism increases Alarak's Ability damage and self-healing against enemy Heroes by 1%Repeatable Quest: Takedowns increase Sadism by 3%, up to 30%. Sadism gained from Takedowns is lost on death.",
-      descriptionLong: "Alarak's Ability damage and self-healing are increased by 100% against enemy Heroes.Repeatable Quest: Takedowns increase Sadism by 3%, up to 30%. Sadism gained from Takedowns is lost on death.",
+      descriptionLong: "Alarak's Ability damage and self-healing are increased by 100% against enemy Heroes. Repeatable Quest: Takedowns increase Sadism by 3%, up to 30%. Sadism gained from Takedowns is lost on death.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_sadism.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 13.333333333333334,
+        magicalDamage: 0
+      }
     },
     {
       id: "AlarakDiscordStrike",
@@ -53,7 +60,14 @@ const alarak: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_discordstrike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "AlarakTelekinesis",
@@ -68,7 +82,14 @@ const alarak: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_telekinesis.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 4
+      }
     },
     {
       id: "AlarakLightningSurge",
@@ -83,13 +104,20 @@ const alarak: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_lightningsurge.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10.333333333333332
+      }
     },
     {
       id: "AlarakDeadlyChargeActivate",
       name: "Deadly Charge",
       descriptionShort: "Channel to charge a long distance",
-      descriptionLong: "After channeling, Alarak charges forward dealing 200 (+4% / level) damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.5 seconds.Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.",
+      descriptionLong: "After channeling, Alarak charges forward dealing 200 (+4% / level) damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.5 seconds. Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.",
       cost: {
         type: "Mana",
         amount: 60
@@ -98,7 +126,14 @@ const alarak: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_recklesscharge.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 13.333333333333334
+      }
     },
     {
       id: "AlarakCounterStrikeTargeted",
@@ -113,70 +148,14 @@ const alarak: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_counterstrike.png",
-      isPassive: false
-    },
-    {
-      id: "AlarakDeadlyChargeExecute",
-      name: "Unleash Deadly Charge",
-      descriptionShort: "Charge Recklessly",
-      descriptionLong: "Unleash Alarak's Deadly Charge.Issuing a move order while this is channeling will cancel the cast at no cost. Taking damage will interrupt the channeling.",
-      cooldown: null,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_recklesscharge.png",
-      isPassive: false
-    },
-    {
-      id: "AlarakLightningSurgeLightningBarrage",
-      name: "Lightning Surge",
-      descriptionShort: "Damage enemies in a line",
-      descriptionLong: "Deal 62 (+4% / level) damage to an enemy and an additional 100% damage to enemies between Alarak and the target. Restore 70 (+4% / level) health for each Hero hit.",
-      cooldown: null,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_lightningsurge.png",
-      isPassive: false
-    },
-    {
-      id: "AlarakDeadlyChargeExecute2ndHeroic",
-      name: "Unleash Deadly Charge",
-      descriptionShort: "Charge Recklessly",
-      descriptionLong: "Unleash Alarak's Deadly Charge.Issuing a move order while this is channeling will cancel the cast at no cost. Taking damage will interrupt the channeling.",
-      cooldown: null,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_recklesscharge.png",
-      isPassive: false
-    },
-    {
-      id: "AlarakDeadlyChargeActivate2ndHeroic",
-      name: "Deadly Charge",
-      descriptionShort: "Deal increased ability damage to Heroes",
-      descriptionLong: "After channeling, Alarak charges forward dealing 200 (+4% / level) damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.5 seconds.Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.SadismAlarak's Ability damage and self-healing are increased by 100% against enemy Heroes.Takedowns increase Sadism by 3%, up to 30%. Sadism gained from Takedowns is lost on death.",
-      cost: {
-        type: "Mana",
-        amount: 60
-      },
-      cooldown: 45,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_recklesscharge.png",
-      isPassive: false
-    },
-    {
-      id: "AlarakCounterStrikeTargeted2ndHeroic",
-      name: "Counter-Strike",
-      descriptionShort: "Deal increased ability damage to Heroes",
-      descriptionLong: "Alarak targets an area and channels for 1 second, becoming Protected and Unstoppable. After, if he took damage from an enemy Hero, he sends a shockwave that deals 275 (+4% / level) damage.SadismAlarak's Ability damage and self-healing are increased by 100% against enemy Heroes.Takedowns increase Sadism by 3%, up to 30%. Sadism gained from Takedowns is lost on death.",
-      cost: {
-        type: "Mana",
-        amount: 50
-      },
-      cooldown: 30,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_counterstrike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 18.333333333333332
+      }
     }
   ],
   talents: [
@@ -191,6 +170,13 @@ const alarak: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_discordstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -207,6 +193,13 @@ const alarak: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_telekinesis.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -219,12 +212,19 @@ const alarak: Hero = {
         id: "AlarakExtendedLightning",
         name: "Extended Lightning",
         descriptionShort: "Quest: Reduce Sadism, empower Lightning Surge",
-        descriptionLong: "Reduce Sadism by 10%.Quest: Hit Heroes with the center of Lightning Surge.Reward: After hitting 5 Heroes, increase Lightning Surge's range by 20%.Reward: After hitting 15 Heroes, Lightning Surge's center also Slows enemies by 40% for 2 seconds.Reward: After hitting 3 Heroes with the center of a single cast, increase Sadism by 10% and instantly gain all other Rewards.",
+        descriptionLong: "Reduce Sadism by 10%. Quest: Hit Heroes with the center of Lightning Surge. Reward: After hitting 5 Heroes, increase Lightning Surge's range by 20%. Reward: After hitting 15 Heroes, Lightning Surge's center also Slows enemies by 40% for 2 seconds. Reward: After hitting 3 Heroes with the center of a single cast, increase Sadism by 10% and instantly gain all other Rewards.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_lightningsurge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -239,12 +239,19 @@ const alarak: Hero = {
         id: "AlarakChaosReigns",
         name: "Chaos Reigns",
         descriptionShort: "Quest: Hit Heroes to increase Discord Strike damage",
-        descriptionLong: "Quest: Hit Heroes with Discord Strike.Reward: After hitting 15 Heroes, increase Discord Strike's damage by 60.Reward: After hitting 2 Heroes with a single Discord Strike, increase its damage by 60.Reward: After hitting 3 Heroes with a single Discord Strike, increase its damage by 100 and instantly gain all other Rewards.",
+        descriptionLong: "Quest: Hit Heroes with Discord Strike. Reward: After hitting 15 Heroes, increase Discord Strike's damage by 60. Reward: After hitting 2 Heroes with a single Discord Strike, increase its damage by 60. Reward: After hitting 3 Heroes with a single Discord Strike, increase its damage by 100 and instantly gain all other Rewards.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_discordstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -256,12 +263,19 @@ const alarak: Hero = {
         id: "AlarakNegativelyCharged",
         name: "Negatively Charged",
         descriptionShort: "Quest: Increase Lightning Surge center damage",
-        descriptionLong: "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to 175%.Repeatable Quest: Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by 4%.",
+        descriptionLong: "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to 175%. Repeatable Quest: Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by 4%.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_lightningsurge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -280,6 +294,13 @@ const alarak: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_sadism.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -300,6 +321,13 @@ const alarak: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_discordstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -316,6 +344,13 @@ const alarak: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_telekinesis_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -332,6 +367,13 @@ const alarak: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_telekinesis.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -344,7 +386,7 @@ const alarak: Hero = {
         id: "AlarakDeadlyChargeFirstHeroic",
         name: "Deadly Charge",
         descriptionShort: "Channel to charge a long distance",
-        descriptionLong: "After channeling, Alarak charges forward dealing 200 (+4% / level) damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.5 seconds.Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.",
+        descriptionLong: "After channeling, Alarak charges forward dealing 200 (+4% / level) damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.5 seconds. Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.",
         cost: {
           type: "Mana",
           amount: 60
@@ -354,6 +396,13 @@ const alarak: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_recklesscharge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 13.333333333333334
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -374,6 +423,13 @@ const alarak: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_counterstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 18.333333333333332
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -386,12 +442,19 @@ const alarak: Hero = {
         id: "AlarakBladeoftheHighlord",
         name: "Blade of the Highlord",
         descriptionShort: "Basic Attacks increase Sadism",
-        descriptionLong: "Basic Attacks against Heroes increase Sadism by 2% stacking up to 40%.Sadism gained from Blade of the Highlord is lost on death.",
+        descriptionLong: "Basic Attacks against Heroes increase Sadism by 2% stacking up to 40%. Sadism gained from Blade of the Highlord is lost on death.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_sadism.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -404,12 +467,19 @@ const alarak: Hero = {
         id: "AlarakPureMalice",
         name: "Pure Malice",
         descriptionShort: "Allied deaths increase Sadism",
-        descriptionLong: "Increase Sadism by 10% any time an allied Hero dies, up to 40%.Sadism gained from Pure Malice is lost on death.",
+        descriptionLong: "Increase Sadism by 10% any time an allied Hero dies, up to 40%. Sadism gained from Pure Malice is lost on death.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_sadism_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -422,12 +492,19 @@ const alarak: Hero = {
         id: "AlarakRiteofRakShir",
         name: "Rite of Rak'Shir",
         descriptionShort: "Mark and damage Hero to increase Sadism",
-        descriptionLong: "Activate to mark an enemy Hero for 300 seconds.Hitting the marked Hero with Discord Strike increases Sadism by 3%. Killing the marked Hero increases Sadism by 5% and lowers the cooldown of Rite of Rak'Shir to 10 seconds.Sadism gained from Rite of Rak'Shir is lost on death.",
+        descriptionLong: "Activate to mark an enemy Hero for 300 seconds. Hitting the marked Hero with Discord Strike increases Sadism by 3%. Killing the marked Hero increases Sadism by 5% and lowers the cooldown of Rite of Rak'Shir to 10 seconds. Sadism gained from Rite of Rak'Shir is lost on death.",
         cooldown: 300,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_sadism_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -443,6 +520,13 @@ const alarak: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_discordstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -459,6 +543,13 @@ const alarak: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_lightningsurge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -476,6 +567,13 @@ const alarak: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -490,7 +588,7 @@ const alarak: Hero = {
         id: "AlarakCounterStrikeItem",
         name: "Counter-Strike",
         descriptionShort: "Prevents damage to deal damage in a large area",
-        descriptionLong: "Alarak targets an area and channels for 1 second, becoming Protected and Unstoppable. After, if he took damage from an enemy Hero, he sends a shockwave that deals 275 (+4% / level) damage.This ability will take over Alarak's Trait button.",
+        descriptionLong: "Alarak targets an area and channels for 1 second, becoming Protected and Unstoppable. After, if he took damage from an enemy Hero, he sends a shockwave that deals 275 (+4% / level) damage. This ability will take over Alarak's Trait button.",
         cost: {
           type: "Mana",
           amount: 50
@@ -500,6 +598,13 @@ const alarak: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_counterstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 18.333333333333332
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -513,7 +618,7 @@ const alarak: Hero = {
         id: "AlarakDeadlyChargeSecondHeroic",
         name: "Deadly Charge",
         descriptionShort: "Channel to charge a long distance",
-        descriptionLong: "After channeling, Alarak charges forward dealing 200 (+4% / level) damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.5 seconds.Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.",
+        descriptionLong: "After channeling, Alarak charges forward dealing 200 (+4% / level) damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.5 seconds. Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.",
         cost: {
           type: "Mana",
           amount: 60
@@ -523,6 +628,13 @@ const alarak: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_recklesscharge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 13.333333333333334
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -542,6 +654,13 @@ const alarak: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_lasttrick.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20"
       },
@@ -555,6 +674,13 @@ const alarak: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_alarak_hastybargain.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -562,7 +688,10 @@ const alarak: Hero = {
   ],
   analysis: {
     tankiness: 58.75706214689266,
-    damageSustainedPhysical: 29.352522490555007
+    physicalDamage: 90.01440230436869,
+    mobility: 24.199,
+    healing: 17.50087504375219,
+    magicalDamage: 20.36229910106238
   }
 };
       

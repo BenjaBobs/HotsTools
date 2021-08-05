@@ -33,12 +33,19 @@ const kelthuzad: Hero = {
       id: "KelThuzadMasterOfTheColdDark",
       name: "Master of the Cold Dark",
       descriptionShort: "Kel'Thuzad becomes increasingly stronger as he disrupts enemies",
-      descriptionLong: "Quest: Gain 1 Blight every time a Hero is Rooted by Frost Nova or hit by Chains of Kel'Thuzad.Reward: After gaining 15 Blight, gain the Glacial Spike Ability.Reward: After gaining 30 Blight, gain 75% Spell Power.Blight: 0/30",
+      descriptionLong: "Quest: Gain 1 Blight every time a Hero is Rooted by Frost Nova or hit by Chains of Kel'Thuzad. Reward: After gaining 15 Blight, gain the Glacial Spike Ability. Reward: After gaining 30 Blight, gain 75% Spell Power. Blight: 0/30",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_powerofthecolddark.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "KelThuzadDeathAndDecay",
@@ -53,7 +60,14 @@ const kelthuzad: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_deathanddecay.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 46.400000000000006
+      }
     },
     {
       id: "KelThuzadFrostNova",
@@ -68,7 +82,14 @@ const kelthuzad: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_frostnova.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 22.5
+      }
     },
     {
       id: "KelThuzadChains",
@@ -83,7 +104,14 @@ const kelthuzad: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_chains.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 9.700000000000001
+      }
     },
     {
       id: "KelThuzadFrozenTomb",
@@ -98,7 +126,14 @@ const kelthuzad: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_frozentomb.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 7.666666666666667
+      }
     },
     {
       id: "KelThuzadShadowFissure",
@@ -113,18 +148,14 @@ const kelthuzad: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_shadowfissure.png",
-      isPassive: false
-    },
-    {
-      id: "KelThuzadGlacialSpike",
-      name: "Glacial Spike",
-      descriptionShort: "Create a spike that explodes, deals damage",
-      descriptionLong: "Activate to create a spike that detonates after 4 seconds, dealing 60 (+2.5% / level) damage to nearby enemies. The spike can be affected by Chains of Kel'Thuzad.",
-      cooldown: 30,
-      category: "activable",
-      type: "Active",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_glacialspike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 21.333333333333332
+      }
     }
   ],
   talents: [
@@ -139,6 +170,13 @@ const kelthuzad: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_deathanddecay.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -155,6 +193,13 @@ const kelthuzad: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_frostnova.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -171,6 +216,13 @@ const kelthuzad: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_chains.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -183,12 +235,19 @@ const kelthuzad: Hero = {
         id: "KelThuzadStripShields",
         name: "Strip Shields",
         descriptionShort: "Chains grants Shield, damages Shields",
-        descriptionLong: "Pulling a Hero with Chains of Kel'Thuzad grants Kel'Thuzad a permanent 128 (+4% / level) Shield, stacking up to 2 times.Additionally, Chains of Kel'Thuzad deals up to 270 (+2.5% / level) bonus damage to Heroes' Shields.",
+        descriptionLong: "Pulling a Hero with Chains of Kel'Thuzad grants Kel'Thuzad a permanent 128 (+4% / level) Shield, stacking up to 2 times. Additionally, Chains of Kel'Thuzad deals up to 270 (+2.5% / level) bonus damage to Heroes' Shields.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_chains.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 18
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -199,12 +258,19 @@ const kelthuzad: Hero = {
         id: "KelThuzadPhylactery",
         name: "Phylactery of Kel'Thuzad",
         descriptionShort: "Quest: Collect Regen Globes for instant respawn",
-        descriptionLong: "Quest: Collect 12 Regeneration Globes to charge Kel'Thuzad's Phylactery.Reward: Kel'Thuzad's Phylactery can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again.Passive: Kel'Thuzad heals for 10% of all Spell Damage dealt while the Phylactery is charged.",
+        descriptionLong: "Quest: Collect 12 Regeneration Globes to charge Kel'Thuzad's Phylactery. Reward: Kel'Thuzad's Phylactery can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again. Passive: Kel'Thuzad heals for 10% of all Spell Damage dealt while the Phylactery is charged.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_phylactery.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.3333333333333333,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -222,6 +288,13 @@ const kelthuzad: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_armorofthearchlich.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -237,6 +310,13 @@ const kelthuzad: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_deathanddecay.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -253,6 +333,13 @@ const kelthuzad: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_chillingtouch.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -269,6 +356,13 @@ const kelthuzad: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_glacialspike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -291,6 +385,13 @@ const kelthuzad: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_frozentomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 7.666666666666667
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -311,6 +412,13 @@ const kelthuzad: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_shadowfissure.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 21.333333333333332
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -329,6 +437,13 @@ const kelthuzad: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_frostnova.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -345,6 +460,13 @@ const kelthuzad: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_chains.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -361,6 +483,13 @@ const kelthuzad: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_chains_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -379,6 +508,13 @@ const kelthuzad: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_deathanddecay.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -395,6 +531,13 @@ const kelthuzad: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_abilitytalent_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -411,6 +554,13 @@ const kelthuzad: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_poweroficecrown.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -429,6 +579,13 @@ const kelthuzad: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_frozentomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -448,6 +605,13 @@ const kelthuzad: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_shadowfissure.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -467,6 +631,13 @@ const kelthuzad: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_shiftingmalice.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 10
+        },
         order: 3,
         tier: "level20"
       },
@@ -480,6 +651,13 @@ const kelthuzad: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kel'thuzad_cultofthedamned.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -487,7 +665,10 @@ const kelthuzad: Hero = {
   ],
   analysis: {
     tankiness: 43.54048964218456,
-    damageSustainedPhysical: 43.04347826086956
+    physicalDamage: 36,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 47.63007354944157
   }
 };
       

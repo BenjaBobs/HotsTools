@@ -33,18 +33,25 @@ const valeera: Hero = {
       id: "ValeeraStealth",
       name: "Vanish",
       descriptionShort: "Stealth and gain new Abilities",
-      descriptionLong: "Vanish from sight, becoming Stealthed, gaining 20% Movement Speed and access to new Abilities. For the first second, Valeera is Unrevealable and can pass through other units. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.After being Stealthed for 3 seconds, Ambush, Cheap Shot, and Garrote have 100% increased range, and cause Valeera to teleport to the target when used.",
+      descriptionLong: "Vanish from sight, becoming Stealthed, gaining 20% Movement Speed and access to new Abilities. For the first second, Valeera is Unrevealable and can pass through other units. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible. After being Stealthed for 3 seconds, Ambush, Cheap Shot, and Garrote have 100% increased range, and cause Valeera to teleport to the target when used.",
       cooldown: 8,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_vanish.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ValeeraSinisterStrike",
       name: "Sinister Strike",
       descriptionShort: "Dash forward, damaging enemies in a line",
-      descriptionLong: "Dash forward, hitting all enemies in a line for 110 (+4% / level) damage. If Sinister Strike hits a Hero, Valeera stops dashing immediately and the cooldown is reduced to 1 second.Awards 1 Combo Point.Stealth: AmbushHeavily damage an enemy and reduce their Armor.",
+      descriptionLong: "Dash forward, hitting all enemies in a line for 110 (+4% / level) damage. If Sinister Strike hits a Hero, Valeera stops dashing immediately and the cooldown is reduced to 1 second. Awards 1 Combo Point. Stealth: AmbushHeavily damage an enemy and reduce their Armor.",
       cost: {
         type: "Energy",
         amount: 25
@@ -53,13 +60,20 @@ const valeera: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_sinisterstrike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ValeeraBladeFlurry",
       name: "Blade Flurry",
       descriptionShort: "Damage nearby enemies",
-      descriptionLong: "Deal 130 (+4% / level) damage in an area around Valeera. Awards 1 Combo Point per enemy Hero hit.Stealth: Cheap ShotStun, Blind, and damage an enemy.",
+      descriptionLong: "Deal 130 (+4% / level) damage in an area around Valeera. Awards 1 Combo Point per enemy Hero hit. Stealth: Cheap ShotStun, Blind, and damage an enemy.",
       cost: {
         type: "Energy",
         amount: 40
@@ -68,7 +82,14 @@ const valeera: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_bladeflurry.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 32.5
+      }
     },
     {
       id: "ValeeraEviscerate",
@@ -83,74 +104,50 @@ const valeera: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_eviscerate.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ValeeraCloakOfShadows",
       name: "Cloak of Shadows",
       descriptionShort: "Become Unstoppable, gain Spell Armor",
-      descriptionLong: "Valeera is enveloped in a Cloak of Shadows, which immediately removes all damage over time effects from her. For 1.5 seconds, she becomes Unstoppable and gains 75 Spell Armor, reducing Ability Damage taken by 75%.Using this Ability does not break Stealth.",
+      descriptionLong: "Valeera is enveloped in a Cloak of Shadows, which immediately removes all damage over time effects from her. For 1.5 seconds, she becomes Unstoppable and gains 75 Spell Armor, reducing Ability Damage taken by 75%. Using this Ability does not break Stealth.",
       cooldown: 15,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_cloakofshadows.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ValeeraSmokeBomb",
       name: "Smoke Bomb",
       descriptionShort: "Create an obscuring cloud of smoke",
-      descriptionLong: "Create a cloud of smoke. While in the smoke, Valeera is Unrevealable, can pass through other units, and gains 60 Armor, reducing damage taken by 60%. Valeera can continue to attack and use abilities without being revealed. Lasts 5 seconds.Using this Ability does not break Stealth.",
+      descriptionLong: "Create a cloud of smoke. While in the smoke, Valeera is Unrevealable, can pass through other units, and gains 60 Armor, reducing damage taken by 60%. Valeera can continue to attack and use abilities without being revealed. Lasts 5 seconds. Using this Ability does not break Stealth.",
       cooldown: 60,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_smokebomb.png",
-      isPassive: false
-    },
-    {
-      id: "ValeeraAmbush",
-      name: "Ambush",
-      descriptionShort: "Damage an enemy and reduce their Armor",
-      descriptionLong: "Ambush an enemy, dealing 130 (+4% / level) damage and reducing their Armor by 10 for 5 seconds.Awards 1 Combo Point.Unstealth: Sinister StrikeDash forward, damaging enemies.",
-      cost: {
-        type: "Energy",
-        amount: 10
-      },
-      cooldown: 1,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_ambush.png",
-      isPassive: false
-    },
-    {
-      id: "ValeeraCheapShot",
-      name: "Cheap Shot",
-      descriptionShort: "Stun, Blind, and damage an enemy",
-      descriptionLong: "Deal 30 (+4% / level) damage to an enemy, Stun them for 0.75 seconds, and Blind them for 2 seconds once Cheap Shot's Stun expires.Awards 1 Combo Point.Unstealth: Blade FlurryDeal damage in an area around Valeera.",
-      cost: {
-        type: "Energy",
-        amount: 30
-      },
-      cooldown: 1,
-      category: "basic",
-      type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_cheapshot.png",
-      isPassive: false
-    },
-    {
-      id: "ValeeraGarrote",
-      name: "Garrote",
-      descriptionShort: "Deal high damage over time to an enemy",
-      descriptionLong: "Deal 20 (+4% / level) damage to an enemy and an additional 140 (+4% / level) damage over 7 seconds, and Silence them for 2.5 seconds.Awards 1 Combo Point.Unstealth: EviscerateHigh damage finishing move.",
-      cost: {
-        type: "Energy",
-        amount: 30
-      },
-      cooldown: 1,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_garrote.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -159,12 +156,19 @@ const valeera: Hero = {
         id: "ValeeraVigor",
         name: "Vigor",
         descriptionShort: "Quest: Regen Globes increase max Energy",
-        descriptionLong: "Valeera regenerates an additional 3 Energy per second.Reward: After Gathering 20 Regen Globes, increase Valeera's maximum Energy to 120.",
+        descriptionLong: "Valeera regenerates an additional 3 Energy per second. Reward: After Gathering 20 Regen Globes, increase Valeera's maximum Energy to 120.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_conjurerspursuit.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         isQuest: true
@@ -179,6 +183,13 @@ const valeera: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_vanish.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -196,6 +207,13 @@ const valeera: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_block.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       },
@@ -203,12 +221,19 @@ const valeera: Hero = {
         id: "ValeeraCripplingPoison",
         name: "Crippling Poison",
         descriptionShort: "Spell Damage Slows enemies",
-        descriptionLong: "Activate to make Valeera's next damaging Ability and subsequent Abilities within 4 seconds Slow targets by 20% for 4 seconds.Activating Crippling Poison does not break Stealth.",
+        descriptionLong: "Activate to make Valeera's next damaging Ability and subsequent Abilities within 4 seconds Slow targets by 20% for 4 seconds. Activating Crippling Poison does not break Stealth.",
         cooldown: 15,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_cripplingpoison.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level1"
       }
@@ -224,6 +249,13 @@ const valeera: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_sinisterstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -240,6 +272,13 @@ const valeera: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_garrote.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -256,6 +295,13 @@ const valeera: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_vanish.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -267,12 +313,19 @@ const valeera: Hero = {
         id: "ValeeraWoundPoison",
         name: "Wound Poison",
         descriptionShort: "Spell Damage reduces enemy healing received",
-        descriptionLong: "Activate to make Valeera's next damaging Ability and subsequent Abilities within 4 seconds reduce enemy healing received by 50% for 4 seconds.Activating Wound Poison does not break Stealth.",
+        descriptionLong: "Activate to make Valeera's next damaging Ability and subsequent Abilities within 4 seconds reduce enemy healing received by 50% for 4 seconds. Activating Wound Poison does not break Stealth.",
         cooldown: 15,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_woundpoison.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level4"
       }
@@ -288,6 +341,13 @@ const valeera: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_sinisterstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -298,12 +358,19 @@ const valeera: Hero = {
         id: "ValeeraBladeFlurryFatalFinesse",
         name: "Fatal Finesse",
         descriptionShort: "Quest: Hit Heroes with Blade Flurry",
-        descriptionLong: "Quest: Each time Blade Flurry damages an enemy Hero, its damage increases by 6, up to 90.Reward: After damaging 15 Heroes with Blade Flurry, permanently reduce its Energy cost by 20.",
+        descriptionLong: "Quest: Each time Blade Flurry damages an enemy Hero, its damage increases by 6, up to 90. Reward: After damaging 15 Heroes with Blade Flurry, permanently reduce its Energy cost by 20.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_bladeflurry.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -315,12 +382,19 @@ const valeera: Hero = {
         id: "ValeeraEviscerateSliceAndDice",
         name: "Slice and Dice",
         descriptionShort: "Eviscerate grants Attack Speed",
-        descriptionLong: "Eviscerating an enemy with 3 Combo Points grants 150% Attack Speed. Lasts 3 seconds or 3 Basic Attacks.Passive: Basic Attacks restore 2 Energy.",
+        descriptionLong: "Eviscerating an enemy with 3 Combo Points grants 150% Attack Speed. Lasts 3 seconds or 3 Basic Attacks. Passive: Basic Attacks restore 2 Energy.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_eviscerate.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -333,12 +407,19 @@ const valeera: Hero = {
         id: "ValeeraSmokeBomb",
         name: "Smoke Bomb",
         descriptionShort: "Create an obscuring cloud of smoke",
-        descriptionLong: "Create a cloud of smoke. While in the smoke, Valeera is Unrevealable, can pass through other units, and gains 60 Armor, reducing damage taken by 60%. Valeera can continue to attack and use abilities without being revealed. Lasts 5 seconds.Using this Ability does not break Stealth.",
+        descriptionLong: "Create a cloud of smoke. While in the smoke, Valeera is Unrevealable, can pass through other units, and gains 60 Armor, reducing damage taken by 60%. Valeera can continue to attack and use abilities without being revealed. Lasts 5 seconds. Using this Ability does not break Stealth.",
         cooldown: 60,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_smokebomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -349,12 +430,19 @@ const valeera: Hero = {
         id: "ValeeraCloakOfShadows",
         name: "Cloak of Shadows",
         descriptionShort: "Become Unstoppable, gain Spell Armor",
-        descriptionLong: "Valeera is enveloped in a Cloak of Shadows, which immediately removes all damage over time effects from her. For 1.5 seconds, she becomes Unstoppable and gains 75 Spell Armor, reducing Ability Damage taken by 75%.Using this Ability does not break Stealth.",
+        descriptionLong: "Valeera is enveloped in a Cloak of Shadows, which immediately removes all damage over time effects from her. For 1.5 seconds, she becomes Unstoppable and gains 75 Spell Armor, reducing Ability Damage taken by 75%. Using this Ability does not break Stealth.",
         cooldown: 15,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_cloakofshadows.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -373,6 +461,13 @@ const valeera: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_ambush.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -389,6 +484,13 @@ const valeera: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_cheapshot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -405,6 +507,13 @@ const valeera: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_garrote.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -423,6 +532,13 @@ const valeera: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_sinisterstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -439,6 +555,13 @@ const valeera: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_ambush.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -449,12 +572,19 @@ const valeera: Hero = {
         id: "ValeeraThistleTea",
         name: "Thistle Tea",
         descriptionShort: "Activate to instantly restore Energy",
-        descriptionLong: "Activate to instantly restore 100 Energy.Activating Thistle Tea does not break Stealth.",
+        descriptionLong: "Activate to instantly restore 100 Energy. Activating Thistle Tea does not break Stealth.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_thistletea.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -470,6 +600,13 @@ const valeera: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_smokebomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -489,6 +626,13 @@ const valeera: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_cloakofshadows.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -508,6 +652,13 @@ const valeera: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_garrote.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -524,6 +675,13 @@ const valeera: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_vanish.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -535,7 +693,10 @@ const valeera: Hero = {
   ],
   analysis: {
     tankiness: 61.67984934086629,
-    damageSustainedPhysical: 21.467391304347824
+    physicalDamage: 79,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 14.386406973576682
   }
 };
       

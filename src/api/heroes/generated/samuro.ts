@@ -28,29 +28,43 @@ const samuro: Hero = {
       id: "SamuroIllusionMaster",
       name: "Image Transmission",
       descriptionShort: "Increase Movement Speed when attacking Heroes",
-      descriptionLong: "Activate to switch places with a target Mirror Image, removing most negative effects from Samuro and the Mirror Image.Advancing StrikesBasic Attacks against enemy Heroes increase Samuro's Movement Speed by 25% for 2 seconds.",
+      descriptionLong: "Activate to switch places with a target Mirror Image, removing most negative effects from Samuro and the Mirror Image. Advancing StrikesBasic Attacks against enemy Heroes increase Samuro's Movement Speed by 25% for 2 seconds.",
       cooldown: 14,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_flowingstrikes.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "SamuroMirrorImageTargeted",
       name: "Mirror Image",
       descriptionShort: "Create Mirror Images to confuse and attack enemies",
-      descriptionLong: "Teleport a short distance in the direction of the mouse cursor, creating 2 Mirror Images for 8 seconds with 100% of Samuro's current Health that Basic Attack enemies for 11 (+4% / level) damage. Images have their duration increased by 1 second each time they or Samuro use a Basic Attack against an enemy Hero. Whenever an Image takes damage, it deals that amount of damage to itself, effectively doubling the damage it takes.Maximum 2 Mirror Images can be active at at time. Using Mirror Image removes most negative effects from Samuro.",
+      descriptionLong: "Teleport a short distance in the direction of the mouse cursor, creating 2 Mirror Images for 8 seconds with 100% of Samuro's current Health that Basic Attack enemies for 11 (+4% / level) damage. Images have their duration increased by 1 second each time they or Samuro use a Basic Attack against an enemy Hero. Whenever an Image takes damage, it deals that amount of damage to itself, effectively doubling the damage it takes. Maximum 2 Mirror Images can be active at at time. Using Mirror Image removes most negative effects from Samuro.",
       cooldown: 14,
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_mirrorimage.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "SamuroCriticalStrike",
       name: "Critical Strike",
       descriptionShort: "Critically Strike for increased damage.",
-      descriptionLong: "Samuro's next Basic Attack within 8 seconds will be a Critical Strike, dealing 50% increased damage. This also applies to Images, and does not break Wind Walk.Passive: Samuro and his Images deal a Critical Strike on every 4th Basic Attack.",
+      descriptionLong: "Samuro's next Basic Attack within 8 seconds will be a Critical Strike, dealing 50% increased damage. This also applies to Images, and does not break Wind Walk. Passive: Samuro and his Images deal a Critical Strike on every 4th Basic Attack.",
       cooldown: 10,
       charges: {
         chargesMax: 1,
@@ -61,18 +75,32 @@ const samuro: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "SamuroWindwalk",
       name: "Wind Walk",
       descriptionShort: "Become Stealthed and gain Movement Speed",
-      descriptionLong: "Grant Samuro Stealth for up to 10 seconds or until he attacks, uses an Ability, or takes damage.While Stealthed, Samuro heals for 1% of his maximum Health every second, his Movement Speed is increased by 20% and he can pass through other units. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.Samuro is Unrevealable for the first 1 second of Wind Walk.",
+      descriptionLong: "Grant Samuro Stealth for up to 10 seconds or until he attacks, uses an Ability, or takes damage. While Stealthed, Samuro heals for 1% of his maximum Health every second, his Movement Speed is increased by 20% and he can pass through other units. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible. Samuro is Unrevealable for the first 1 second of Wind Walk.",
       cooldown: 15,
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_windwalk.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0.13333333333333333,
+        magicalDamage: 0
+      }
     },
     {
       id: "SamuroBladeStormDummy",
@@ -83,7 +111,14 @@ const samuro: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_bladestorm.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 12
+      }
     },
     {
       id: "SamuroIllusionMaster",
@@ -94,7 +129,14 @@ const samuro: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_illusiondancer.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -103,12 +145,19 @@ const samuro: Hero = {
         id: "SamuroWayOfIllusion",
         name: "Way of Illusion",
         descriptionShort: "Quest: Image Critical Strikes empower Basic Attacks",
-        descriptionLong: "Quest: Every time a Mirror Image Critically Strikes a Hero, Samuro gains 0.25 Attack Damage, up to 10.Reward: After hitting 40 Heroes, Samuro gains an additional 30 Attack Damage.",
+        descriptionLong: "Quest: Every time a Mirror Image Critically Strikes a Hero, Samuro gains 0.25 Attack Damage, up to 10. Reward: After hitting 40 Heroes, Samuro gains an additional 30 Attack Damage.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_mirrorimage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -132,6 +181,13 @@ const samuro: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -148,6 +204,13 @@ const samuro: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_windwalk.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.6666666666666666,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -166,6 +229,13 @@ const samuro: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_mirrorimage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -182,6 +252,13 @@ const samuro: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_windwalk.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -198,6 +275,13 @@ const samuro: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_flowingstrikes.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -222,6 +306,13 @@ const samuro: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -244,6 +335,13 @@ const samuro: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -266,6 +364,13 @@ const samuro: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -284,6 +389,13 @@ const samuro: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_bladestorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 12
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -300,6 +412,13 @@ const samuro: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_illusiondancer.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -318,6 +437,13 @@ const samuro: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_mirrorimage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -334,6 +460,13 @@ const samuro: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_windwalk.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -350,6 +483,13 @@ const samuro: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_windwalk_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -374,6 +514,13 @@ const samuro: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -390,6 +537,13 @@ const samuro: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_windwalk.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -406,6 +560,13 @@ const samuro: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_flowingstrikes.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -424,6 +585,13 @@ const samuro: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_bladestorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -443,6 +611,13 @@ const samuro: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_illusiondancer.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -462,6 +637,13 @@ const samuro: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_windwalk.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -478,6 +660,13 @@ const samuro: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_flowingstrikes.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -488,7 +677,10 @@ const samuro: Hero = {
   ],
   analysis: {
     tankiness: 51.9774011299435,
-    damageSustainedPhysical: 36.95652173913043
+    physicalDamage: 85.00000000000001,
+    mobility: 24.199,
+    healing: 0.17500875043752187,
+    magicalDamage: 5.311904113320621
   }
 };
       

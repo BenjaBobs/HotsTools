@@ -33,18 +33,25 @@ const ragnaros: Hero = {
       id: "RagnarosMoltenCore",
       name: "Molten Core",
       descriptionShort: "Take over a destroyed or Allied fort to unleash Ragnaros's full power",
-      descriptionLong: "Channel on an allied or destroyed Fort or Keep to replace it with Ragnaros's ultimate form, temporarily gaining new Abilities, having 3996 (+4% / level) Health that burns away over 18 seconds.Ragnaros returns to his normal form upon losing all Health in Molten Core.",
+      descriptionLong: "Channel on an allied or destroyed Fort or Keep to replace it with Ragnaros's ultimate form, temporarily gaining new Abilities, having 3996 (+4% / level) Health that burns away over 18 seconds. Ragnaros returns to his normal form upon losing all Health in Molten Core.",
       cooldown: 120,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_moltencore.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "RagnarosEmpowerSulfuras",
       name: "Empower Sulfuras",
       descriptionShort: "Deal damage in an area and heal Ragnaros",
-      descriptionLong: "Ragnaros's next Basic Attack is instant, dealing 191 (+4% / level) Ability damage in an area, and heals for 20% of the damage dealt. Healing doubled versus Heroes.Molten Core: Molten SwingStun and damage nearby enemies.",
+      descriptionLong: "Ragnaros's next Basic Attack is instant, dealing 191 (+4% / level) Ability damage in an area, and heals for 20% of the damage dealt. Healing doubled versus Heroes. Molten Core: Molten SwingStun and damage nearby enemies.",
       cost: {
         type: "Mana",
         amount: 25
@@ -53,13 +60,20 @@ const ragnaros: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_empowersulfuras.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 10,
+        magicalDamage: 47.75
+      }
     },
     {
       id: "RagnarosLivingMeteor",
       name: "Living Meteor",
       descriptionShort: "Summon a meteor to damage enemies in a line",
-      descriptionLong: "Vector TargetingSummon a meteor at the target point that deals 68 (+4% / level) damage, then rolls in the target direction dealing 272 (+4% / level) damage per second for 1.75 seconds.Molten Core: Meteor ShowerDrop a line of meteor impacts.",
+      descriptionLong: "Vector TargetingSummon a meteor at the target point that deals 68 (+4% / level) damage, then rolls in the target direction dealing 272 (+4% / level) damage per second for 1.75 seconds. Molten Core: Meteor ShowerDrop a line of meteor impacts.",
       cost: {
         type: "Mana",
         amount: 60
@@ -68,13 +82,20 @@ const ragnaros: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_livingmeteor.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 28.33333333333333
+      }
     },
     {
       id: "RagnarosBlastWave",
       name: "Blast Wave",
       descriptionShort: "Cause a delayed explosion around an ally",
-      descriptionLong: "Ignite Ragnaros or an ally, granting 25% Movement Speed for 1.5 seconds before exploding dealing 104 (+4% / level) damage to nearby enemies.Molten Core: Explosive RuneCause a delayed explosion in a large area.",
+      descriptionLong: "Ignite Ragnaros or an ally, granting 25% Movement Speed for 1.5 seconds before exploding dealing 104 (+4% / level) damage to nearby enemies. Molten Core: Explosive RuneCause a delayed explosion in a large area.",
       cost: {
         type: "Mana",
         amount: 50
@@ -83,7 +104,14 @@ const ragnaros: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_blastwave.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.555555555555555
+      }
     },
     {
       id: "RagnarosSulfurasSmash",
@@ -98,7 +126,14 @@ const ragnaros: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_sulfurassmash.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16.666666666666668
+      }
     },
     {
       id: "RagnarosLavaWaveTargetPoint",
@@ -119,18 +154,14 @@ const ragnaros: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_lavawave.png",
-      isPassive: false
-    },
-    {
-      id: "RagnarosEmpowerSulfurasActive",
-      name: "Empower Sulfuras",
-      descriptionShort: "Deal damage in an area and heal Ragnaros",
-      descriptionLong: "Ragnaros's next Basic Attack is instant, dealing 191 (+4% / level) Ability damage in an area, and heals for 20% of the damage dealt. Healing doubled versus Heroes.Molten Core: Molten SwingStun and damage nearby enemies.",
-      cooldown: null,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_empowersulfuras_active.png",
-      isPassive: true
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16
+      }
     }
   ],
   talents: [
@@ -139,12 +170,19 @@ const ragnaros: Hero = {
         id: "RagnarosEmpowerSulfurasSulfurasHungers",
         name: "Sulfuras Hungers",
         descriptionShort: "Quest: Kill Minions with Empower Sulfuras to increase its damage",
-        descriptionLong: "Quest: Every time Empower Sulfuras kills a Minion, its damage is increased by 1, up to 25.Reward: After killing 25 Minions, increase its damage by an additional 100.",
+        descriptionLong: "Quest: Every time Empower Sulfuras kills a Minion, its damage is increased by 1, up to 25. Reward: After killing 25 Minions, increase its damage by an additional 100.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_empowersulfuras.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -157,12 +195,19 @@ const ragnaros: Hero = {
         id: "RagnarosLivingMeteorShiftingMeteor",
         name: "Shifting Meteor",
         descriptionShort: "Quest: Hit Heroes to empower Living Meteor",
-        descriptionLong: "Each time an enemy is hit by the same Living Meteor, they take 6% increased damage from it.Quest: Hit 75 Heroes with Living Meteor.Reward: After hitting 75 Heroes with Living Meteor, its duration is increased to 2.25 seconds, and it can be reactivated to change its direction once per use.",
+        descriptionLong: "Each time an enemy is hit by the same Living Meteor, they take 6% increased damage from it. Quest: Hit 75 Heroes with Living Meteor. Reward: After hitting 75 Heroes with Living Meteor, its duration is increased to 2.25 seconds, and it can be reactivated to change its direction once per use.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_livingmeteor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -180,6 +225,13 @@ const ragnaros: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_blastwave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -192,12 +244,19 @@ const ragnaros: Hero = {
         id: "RagnarosLivingMeteorFireWard",
         name: "Fire Ward",
         descriptionShort: "Living Meteor grants Spell Armor",
-        descriptionLong: "When Living Meteor hits an enemy Hero, gain a charge of Spell Armor, reducing damage from the next enemy ability by 50%.Stores up to 2 charges.",
+        descriptionLong: "When Living Meteor hits an enemy Hero, gain a charge of Spell Armor, reducing damage from the next enemy ability by 50%. Stores up to 2 charges.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_livingmeteor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -214,6 +273,13 @@ const ragnaros: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_blastwave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -224,12 +290,19 @@ const ragnaros: Hero = {
         id: "RagnarosCatchingFire",
         name: "Catching Fire",
         descriptionShort: "Quest: Regen Globes increase Health Regen",
-        descriptionLong: "Quest: Gathering a Regeneration Globe increases Ragnaros' Health Regeneration by 1.25 per second, up to 18.75.Reward: After gathering 15 Regeneration Globes, activate Catching Fire to gain 25 Armor for 3 seconds, reducing damage taken by 25%.",
+        descriptionLong: "Quest: Gathering a Regeneration Globe increases Ragnaros' Health Regeneration by 1.25 per second, up to 18.75. Reward: After gathering 15 Regeneration Globes, activate Catching Fire to gain 25 Armor for 3 seconds, reducing damage taken by 25%.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_catchingfire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         isQuest: true
@@ -246,6 +319,13 @@ const ragnaros: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_empowersulfuras.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -263,6 +343,13 @@ const ragnaros: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_livingmeteor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -279,6 +366,13 @@ const ragnaros: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -298,6 +392,13 @@ const ragnaros: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_sulfurassmash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 16.666666666666668
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -324,6 +425,13 @@ const ragnaros: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_lavawave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 16
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -342,6 +450,13 @@ const ragnaros: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_empowersulfuras.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -359,6 +474,13 @@ const ragnaros: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_blastwave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -375,6 +497,13 @@ const ragnaros: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_resistance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -390,6 +519,13 @@ const ragnaros: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_empowersulfuras.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -407,6 +543,13 @@ const ragnaros: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_livingmeteor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 14.666666666666666
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -423,6 +566,13 @@ const ragnaros: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_blastwave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -441,6 +591,13 @@ const ragnaros: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_sulfurassmash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -467,6 +624,13 @@ const ragnaros: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_lavawave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -486,6 +650,13 @@ const ragnaros: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_moltencore.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -502,6 +673,13 @@ const ragnaros: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_submerge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 8,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -531,40 +709,68 @@ const ragnaros: Hero = {
           category: "trait",
           type: "Trait",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_return.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 0
+          }
         },
         {
           id: "RagnarosBigRagMoltenSwing",
           name: "Molten Swing",
           descriptionShort: "Stun and damage nearby enemies",
-          descriptionLong: "Swing Sulfuras in a wide arc, dealing 161 (+4% / level) damage and Stunning enemies for 1 second.Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
+          descriptionLong: "Swing Sulfuras in a wide arc, dealing 161 (+4% / level) damage and Stunning enemies for 1 second. Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
           cooldown: 6,
           category: "basic",
           type: "Q",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_moltenswing.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 26.833333333333332
+          }
         },
         {
           id: "RagnarosBigRagMeteorShower",
           name: "Meteor Shower",
           descriptionShort: "Summon a line of meteors",
-          descriptionLong: "Vector TargetingSummon 3 meteors at the target point that fall in the target direction. Each meteor deals 151 (+4% / level) damage and slows enemies by 25% for 2 seconds.Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
+          descriptionLong: "Vector TargetingSummon 3 meteors at the target point that fall in the target direction. Each meteor deals 151 (+4% / level) damage and slows enemies by 25% for 2 seconds. Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
           cooldown: 2.5,
           category: "basic",
           type: "W",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_meteorshower.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 60.400000000000006
+          }
         },
         {
           id: "RagnarosBigRagExplosiveRune",
           name: "Explosive Rune",
           descriptionShort: "Cause a delayed explosion in a large area",
-          descriptionLong: "Create a rune that deals 285 (+4% / level) damage to non-Structure enemies after 1.5 seconds.Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
+          descriptionLong: "Create a rune that deals 285 (+4% / level) damage to non-Structure enemies after 1.5 seconds. Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
           cooldown: 4,
           category: "basic",
           type: "E",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_explosiverune.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 71.25
+          }
         },
         {
           id: "RagnarosBigRagSulfurasSmash",
@@ -575,7 +781,14 @@ const ragnaros: Hero = {
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_sulfurassmash.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 16.666666666666668
+          }
         },
         {
           id: "RagnarosLavaWaveTargetPoint",
@@ -596,19 +809,32 @@ const ragnaros: Hero = {
           category: "heroic",
           type: "Heroic",
           icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_lavawave.png",
-          isPassive: false
+          isPassive: false,
+          analysis: {
+            mobility: 0,
+            physicalDamage: 0,
+            tankiness: 0,
+            healing: 0,
+            magicalDamage: 16
+          }
         }
       ],
       talents: [],
       analysis: {
         tankiness: 15.984000000000002,
-        damageSustainedPhysical: 0
+        physicalDamage: 0,
+        mobility: 24.199,
+        healing: 0,
+        magicalDamage: 191.15
       }
     }
   ],
   analysis: {
     tankiness: 62.523540489642194,
-    damageSustainedPhysical: 32.60869565217391
+    physicalDamage: 75,
+    mobility: 24.199,
+    healing: 13.125656282814141,
+    magicalDamage: 53.254297950906505
   }
 };
       
