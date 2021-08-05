@@ -33,7 +33,7 @@ const malfurion: Hero = {
       id: "MalfurionInnervate",
       name: "Innervate",
       descriptionShort: "Grant Mana to an ally and reduce their cooldowns",
-      descriptionLong: "Grant an allied Hero 20% of their maximum Mana over 5 seconds. While affected by Innervate, their Basic Ability cooldowns recharge 50% faster.Cannot be used on Heroes that do not use Mana.",
+      descriptionLong: "Grant an allied Hero 20% of their maximum Mana over 5 seconds. While affected by Innervate, their Basic Ability cooldowns recharge 50% faster. Cannot be used on Heroes that do not use Mana.",
       cooldown: 25,
       charges: {
         chargesMax: 1,
@@ -44,7 +44,14 @@ const malfurion: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_innerrvate.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MalfurionRegrowth",
@@ -59,13 +66,20 @@ const malfurion: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_regrowth.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 15.200000000000001,
+        magicalDamage: 0
+      }
     },
     {
       id: "MalfurionMoonfire",
       name: "Moonfire",
       descriptionShort: "Damage enemies in an area, and heal allies with Regrowth",
-      descriptionLong: "Deal 90 (+4% / level) damage to enemies in an area and reveal them for 2 seconds.Allies with an active Regrowth are healed for 130 (+4% / level) Health for each enemy Hero hit by Moonfire.",
+      descriptionLong: "Deal 90 (+4% / level) damage to enemies in an area and reveal them for 2 seconds. Allies with an active Regrowth are healed for 130 (+4% / level) Health for each enemy Hero hit by Moonfire.",
       cost: {
         type: "Mana",
         amount: 10
@@ -74,7 +88,14 @@ const malfurion: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_moonfire.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 8.666666666666666,
+        magicalDamage: 30
+      }
     },
     {
       id: "MalfurionEntanglingRoots",
@@ -89,7 +110,14 @@ const malfurion: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_entanglingroots.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 9.75
+      }
     },
     {
       id: "MalfurionTranquility",
@@ -104,7 +132,14 @@ const malfurion: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_tranquility.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 2.1333333333333333,
+        magicalDamage: 0
+      }
     },
     {
       id: "MalfurionTwilightDream",
@@ -119,7 +154,14 @@ const malfurion: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_twilightdream.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 20.666666666666668
+      }
     }
   ],
   talents: [
@@ -128,12 +170,19 @@ const malfurion: Hero = {
         id: "MalfurionEntanglingRootsDeepRootsTalent",
         name: "Deep Roots",
         descriptionShort: "Quest: Entangling Roots grants permanent Mana",
-        descriptionLong: "Entangling Roots grows 25% larger, and persist on the ground 40% longer.Repeatable Quest: Every time an enemy Hero becomes Rooted, gain 10 Mana permanently.",
+        descriptionLong: "Entangling Roots grows 25% larger, and persist on the ground 40% longer. Repeatable Quest: Every time an enemy Hero becomes Rooted, gain 10 Mana permanently.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_entanglingroots.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -145,12 +194,19 @@ const malfurion: Hero = {
         id: "MalfurionMasteryVengefulRoots",
         name: "Vengeful Roots",
         descriptionShort: "Quest: Entangling Roots spawns a Treant",
-        descriptionLong: "Entangling Roots spawns a Treant that deals 58 damage per second and lasts 10 seconds.Repeatable Quest: Hitting enemy Heroes with Entangling Roots permanently increases the Treant's Basic Attack damage by 7.",
+        descriptionLong: "Entangling Roots spawns a Treant that deals 58 damage per second and lasts 10 seconds. Repeatable Quest: Hitting enemy Heroes with Entangling Roots permanently increases the Treant's Basic Attack damage by 7.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_entanglingroots_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -168,6 +224,13 @@ const malfurion: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_entanglingroots_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -183,6 +246,13 @@ const malfurion: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_regrowth.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -199,6 +269,13 @@ const malfurion: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_moonfire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -221,6 +298,13 @@ const malfurion: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_innerrvate.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -239,6 +323,13 @@ const malfurion: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_wildgrowth.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -256,6 +347,13 @@ const malfurion: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_entanglingroots.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -272,6 +370,13 @@ const malfurion: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_regrowth.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -294,6 +399,13 @@ const malfurion: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_tranquility.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2.1333333333333333,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -314,6 +426,13 @@ const malfurion: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_twilightdream.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 20.666666666666668
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -332,6 +451,13 @@ const malfurion: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_regrowth.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -348,6 +474,13 @@ const malfurion: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_moonfire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -364,6 +497,13 @@ const malfurion: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_innerrvate.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -382,6 +522,13 @@ const malfurion: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_regrowth.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 8,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -398,6 +545,13 @@ const malfurion: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_wildgrowth.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -415,6 +569,13 @@ const malfurion: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_wildgrowth_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -434,6 +595,13 @@ const malfurion: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_tranquility.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.3333333333333333,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -447,12 +615,19 @@ const malfurion: Hero = {
         id: "MalfurionMasteryAstralCommunion",
         name: "Astral Communion",
         descriptionShort: "Activate to teleport and cast Twilight Dream",
-        descriptionLong: "Activate to Channel for 1 second, and then instantly teleport and cast Twilight Dream at the targeted location.  Cooldown is shared with Twilight Dream.Passive: Increase Twilight Dream's Silence duration to 4 seconds.",
+        descriptionLong: "Activate to Channel for 1 second, and then instantly teleport and cast Twilight Dream at the targeted location.  Cooldown is shared with Twilight Dream. Passive: Increase Twilight Dream's Silence duration to 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_twilightdream.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -472,6 +647,13 @@ const malfurion: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_regrowth.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.3333333333333333,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -488,6 +670,13 @@ const malfurion: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_moonfire_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -498,7 +687,10 @@ const malfurion: Hero = {
   ],
   analysis: {
     tankiness: 45.951035781544256,
-    damageSustainedPhysical: 39.85507246376811
+    physicalDamage: 33.33333333333333,
+    mobility: 24.199,
+    healing: 34.12670633531676,
+    magicalDamage: 26.74396168164896
   }
 };
       

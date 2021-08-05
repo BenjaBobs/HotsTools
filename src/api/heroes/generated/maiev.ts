@@ -38,13 +38,20 @@ const maiev: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_trait.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MaievFanOfKnives",
       name: "Fan of Knives",
       descriptionShort: "Throw a volley of knives",
-      descriptionLong: "Deal 152 (+4% / level) damage to enemies in a crescent area.Hitting at least 2 enemy Heroes with Fan of Knives reduces its cooldown to 0.5 seconds, and refunds its Mana cost.",
+      descriptionLong: "Deal 152 (+4% / level) damage to enemies in a crescent area. Hitting at least 2 enemy Heroes with Fan of Knives reduces its cooldown to 0.5 seconds, and refunds its Mana cost.",
       cost: {
         type: "Mana",
         amount: 30
@@ -53,7 +60,14 @@ const maiev: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_knives.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 38
+      }
     },
     {
       id: "MaievUmbralBind",
@@ -68,7 +82,14 @@ const maiev: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_umbra_1.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 7.857142857142857
+      }
     },
     {
       id: "MaievSpiritOfVengeance",
@@ -83,13 +104,20 @@ const maiev: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_rush_1.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.538461538461538
+      }
     },
     {
       id: "MaievContainmentDisc",
       name: "Containment Disc",
       descriptionShort: "Time Stop an enemy Hero and remove their vision",
-      descriptionLong: "Throw a glaive in the target direction. If an enemy Hero is hit, Containment Disc can be reactivated to remove their vision and Time Stop them for 4 seconds.Containment Disc automatically activates 6 seconds after hitting a Hero.",
+      descriptionLong: "Throw a glaive in the target direction. If an enemy Hero is hit, Containment Disc can be reactivated to remove their vision and Time Stop them for 4 seconds. Containment Disc automatically activates 6 seconds after hitting a Hero.",
       cost: {
         type: "Mana",
         amount: 50
@@ -98,7 +126,14 @@ const maiev: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_heroic_1_a.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MaievWardensCage",
@@ -113,7 +148,14 @@ const maiev: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_heroic_2.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -122,12 +164,19 @@ const maiev: Hero = {
         id: "MaievUmbralBindBondsOfJustice",
         name: "Bonds of Justice",
         descriptionShort: "Quest: Secondary tethers increase Umbral Bind damage",
-        descriptionLong: "Quest: Each tether applied to a secondary target of Umbral Bind permanently increases Umbral Bind's pull damage by 15.Reward: After applying 5 tethers to secondary targets, increase Umbral Bind's pull damage by 75.Reward: After applying 10 tethers to secondary targets, increase Umbral Bind's cleave damage by 30%.",
+        descriptionLong: "Quest: Each tether applied to a secondary target of Umbral Bind permanently increases Umbral Bind's pull damage by 15. Reward: After applying 5 tethers to secondary targets, increase Umbral Bind's pull damage by 75. Reward: After applying 10 tethers to secondary targets, increase Umbral Bind's cleave damage by 30%.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_umbra_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -146,6 +195,13 @@ const maiev: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_pursuit_vengeance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -157,7 +213,7 @@ const maiev: Hero = {
         id: "MaievFanOfKnivesNaishasMemento",
         name: "Naisha's Memento",
         descriptionShort: "Activate to make Basic Attacks bounce",
-        descriptionLong: "Activate to make primary Basic Attacks bounce between nearby enemies up to 2 times. Lasts 8 seconds.Recharge Naisha's Memento by hitting at least 2 Heroes with a single Fan of Knives.",
+        descriptionLong: "Activate to make primary Basic Attacks bounce between nearby enemies up to 2 times. Lasts 8 seconds. Recharge Naisha's Memento by hitting at least 2 Heroes with a single Fan of Knives.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -168,6 +224,13 @@ const maiev: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_memento.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -180,12 +243,19 @@ const maiev: Hero = {
         id: "MaievFanOfKnivesPinDown",
         name: "Pin Down",
         descriptionShort: "Quest: Hitting multiple Heroes empowers Fan of Knives",
-        descriptionLong: "Quest: Hit 3 enemy Heroes with a single Fan of Knives.Reward: Increase Fan of Knives damage by 25%.Reward: Each additional time 3 enemy Heroes are hit by a single Fan of Knives, gain an additional 5% damage, up to 40%.Reward: Hit 4 enemy Heroes with a single Fan of Knives to instantly gain all Rewards.",
+        descriptionLong: "Quest: Hit 3 enemy Heroes with a single Fan of Knives. Reward: Increase Fan of Knives damage by 25%. Reward: Each additional time 3 enemy Heroes are hit by a single Fan of Knives, gain an additional 5% damage, up to 40%. Reward: Hit 4 enemy Heroes with a single Fan of Knives to instantly gain all Rewards.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_knives.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -203,6 +273,13 @@ const maiev: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_knives_2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3.3333333333333335
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -219,6 +296,13 @@ const maiev: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_rush_2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -238,6 +322,13 @@ const maiev: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_knives.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 5.133333333333333
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -254,6 +345,13 @@ const maiev: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_orb_corruption.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -271,6 +369,13 @@ const maiev: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_rush_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -284,7 +389,7 @@ const maiev: Hero = {
         id: "MaievContainmentDisc",
         name: "Containment Disc",
         descriptionShort: "Time Stop an enemy Hero and remove their vision",
-        descriptionLong: "Throw a glaive in the target direction. If an enemy Hero is hit, Containment Disc can be reactivated to remove their vision and Time Stop them for 4 seconds.Containment Disc automatically activates 6 seconds after hitting a Hero.",
+        descriptionLong: "Throw a glaive in the target direction. If an enemy Hero is hit, Containment Disc can be reactivated to remove their vision and Time Stop them for 4 seconds. Containment Disc automatically activates 6 seconds after hitting a Hero.",
         cost: {
           type: "Mana",
           amount: 50
@@ -294,6 +399,13 @@ const maiev: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_heroic_1_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -314,6 +426,13 @@ const maiev: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_heroic_2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -332,6 +451,13 @@ const maiev: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_knives.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -348,6 +474,13 @@ const maiev: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_umbra_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -365,6 +498,13 @@ const maiev: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_rush_2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -384,6 +524,13 @@ const maiev: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_knives.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -400,6 +547,13 @@ const maiev: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_umbra_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -417,6 +571,13 @@ const maiev: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_heavy_strikes.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -426,7 +587,7 @@ const maiev: Hero = {
         id: "MaievSpiritOfVengeanceShadowOrbVengeance",
         name: "Shadow Orb: Vengeance",
         descriptionShort: "Activate to reset Spirit of Vengeance cooldown",
-        descriptionLong: "Activate to reset the cooldown of Spirit of Vengeance.Recharge Shadow Orb by damaging enemy Heroes with Spirit of Vengeance 5 times.",
+        descriptionLong: "Activate to reset the cooldown of Spirit of Vengeance. Recharge Shadow Orb by damaging enemy Heroes with Spirit of Vengeance 5 times.",
         cooldown: null,
         charges: {
           chargesMax: 5,
@@ -437,6 +598,13 @@ const maiev: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_shadoworb_vengeance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20"
       },
@@ -444,7 +612,7 @@ const maiev: Hero = {
         id: "MaievShadowOrbHuntress",
         name: "Shadow Orb: Huntress",
         descriptionShort: "Activate to gain Move Speed, Attack Speed",
-        descriptionLong: "Activate to increase Movement Speed and Attack Speed by 40% for 5 seconds.Recharge Shadow Orb by dealing Physical Damage to enemy Heroes 10 times.",
+        descriptionLong: "Activate to increase Movement Speed and Attack Speed by 40% for 5 seconds. Recharge Shadow Orb by dealing Physical Damage to enemy Heroes 10 times.",
         cooldown: null,
         charges: {
           chargesMax: 10,
@@ -455,6 +623,13 @@ const maiev: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_shadoworb_relentless.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20"
       },
@@ -462,7 +637,7 @@ const maiev: Hero = {
         id: "MaievShadowOrbShadowStrike",
         name: "Shadow Orb: Shadow Strike",
         descriptionShort: "Activate to Slow, reduce Armor",
-        descriptionLong: "Activate to deal 75 (+4% / level) damage to an enemy Hero, Slowing them by 30% and reducing their Armor by 20 for 4 seconds.Recharge Shadow Orb by dealing Spell Damage to enemy Heroes 10 times.",
+        descriptionLong: "Activate to deal 75 (+4% / level) damage to an enemy Hero, Slowing them by 30% and reducing their Armor by 20 for 4 seconds. Recharge Shadow Orb by dealing Spell Damage to enemy Heroes 10 times.",
         cooldown: null,
         charges: {
           chargesMax: 10,
@@ -473,6 +648,13 @@ const maiev: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_shadoworb_strike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 5
+        },
         order: 3,
         tier: "level20"
       }
@@ -480,7 +662,10 @@ const maiev: Hero = {
   ],
   analysis: {
     tankiness: 60.89642184557439,
-    damageSustainedPhysical: 26.26811594202898
+    physicalDamage: 80.55555555555554,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 25.40666225629451
   }
 };
       

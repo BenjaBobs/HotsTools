@@ -38,7 +38,14 @@ const varian: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_heroicstrike.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 8.333333333333334
+      }
     },
     {
       id: "VarianLionsFang",
@@ -53,13 +60,20 @@ const varian: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_lionsfang.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 4.375,
+        magicalDamage: 18.75
+      }
     },
     {
       id: "VarianParry",
       name: "Parry",
       descriptionShort: "Block incoming Basic Attacks for a short duration",
-      descriptionLong: "Parry all incoming Basic Attacks for 1.25 seconds, reducing their damage by 100%.Stores up to 2 charges.",
+      descriptionLong: "Parry all incoming Basic Attacks for 1.25 seconds, reducing their damage by 100%. Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 30
@@ -73,7 +87,14 @@ const varian: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_parry.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "VarianCharge",
@@ -88,13 +109,20 @@ const varian: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_charge.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 4.166666666666666
+      }
     },
     {
       id: "VarianTaunt",
       name: "Taunt",
       descriptionShort: "Gain HealthForce a Hero to attack Varian",
-      descriptionLong: "Silence a target Hero and force them to attack Varian for 1.25 seconds.Passive: Maximum Health and Health Regeneration increased by 40%.",
+      descriptionLong: "Silence a target Hero and force them to attack Varian for 1.25 seconds. Passive: Maximum Health and Health Regeneration increased by 40%.",
       cost: {
         type: "Mana",
         amount: 20
@@ -103,13 +131,20 @@ const varian: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_taunt.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "VarianColossusSmash",
       name: "Colossus Smash",
       descriptionShort: "Gain Damage, Lose HealthSmash enemies and lower their Armor",
-      descriptionLong: "Smash a target enemy, dealing 160 (+4% / level) damage and lowering their Armor by 20 for 3 seconds, causing them to take 20% increased damage.Passive: Base Attack Damage increased by 100%.Passive: Maximum Health and Health Regeneration reduced by 10%.",
+      descriptionLong: "Smash a target enemy, dealing 160 (+4% / level) damage and lowering their Armor by 20 for 3 seconds, causing them to take 20% increased damage. Passive: Base Attack Damage increased by 100%. Passive: Maximum Health and Health Regeneration reduced by 10%.",
       cost: {
         type: "Mana",
         amount: 40
@@ -118,29 +153,32 @@ const varian: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_colossus_smash.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10.666666666666666
+      }
     },
     {
       id: "VarianTwinBladesOfFury",
       name: "Twin Blades of Fury",
       descriptionShort: "Gain Attack Speed, Lose DamageBasic Attacks reduce Heroic Strike cooldown",
-      descriptionLong: "Basic Attacks reduce Heroic Strike's cooldown by 9 seconds, and increase Varian's Movement Speed by 30% for 2 seconds.Passive: Attack Speed increased by 100%.Passive: Base Attack Damage reduced by 25%.",
+      descriptionLong: "Basic Attacks reduce Heroic Strike's cooldown by 9 seconds, and increase Varian's Movement Speed by 30% for 2 seconds. Passive: Attack Speed increased by 100%. Passive: Base Attack Damage reduced by 25%.",
       cooldown: null,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_twinbladesoffury.png",
-      isPassive: true
-    },
-    {
-      id: "VarianHeroicStrikeActive",
-      name: "Heroic Strike",
-      descriptionShort: "Bonus Basic Attack damage",
-      descriptionLong: "Every 18 seconds, Varian's next Basic Attack deals 125 (+4% / level) bonus Spell Damage. Basic Attacks reduce this cooldown by 2 seconds.",
-      cooldown: 18,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_heroicstrike.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -149,12 +187,19 @@ const varian: Hero = {
         id: "VarianLionsFangLionsMawQuest",
         name: "Lion's Maw",
         descriptionShort: "Quest: Hit Heroes to empower Lion's Fang",
-        descriptionLong: "Quest: Every time Lion's Fang hits a Hero, increase its damage by 6, up to 150.Reward: After hitting 25 Heroes, the Slow is increased to 50% and its duration is increased to 2 seconds.",
+        descriptionLong: "Quest: Every time Lion's Fang hits a Hero, increase its damage by 6, up to 150. Reward: After hitting 25 Heroes, the Slow is increased to 50% and its duration is increased to 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_lionsfang.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -177,6 +222,13 @@ const varian: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_parry.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -187,12 +239,19 @@ const varian: Hero = {
         id: "VarianHighKingsQuestQuest",
         name: "High King's Quest",
         descriptionShort: "Quest:  Complete Quests to gain Attack Damage",
-        descriptionLong: "Quest: Hit 50 Heroes with Basic Attacks.Quest: Participate in 5 Hero Takedowns.Quest: Gather 15 Regeneration Globes.Reward: Completing a Quest grants 10 Base Attack Damage. Completing all 3 Quests grants an additional 30 Base Attack Damage.",
+        descriptionLong: "Quest: Hit 50 Heroes with Basic Attacks. Quest: Participate in 5 Hero Takedowns. Quest: Gather 15 Regeneration Globes. Reward: Completing a Quest grants 10 Base Attack Damage. Completing all 3 Quests grants an additional 30 Base Attack Damage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_highkingsquest.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -207,7 +266,7 @@ const varian: Hero = {
         id: "VarianTaunt",
         name: "Taunt",
         descriptionShort: "Gain HealthForce a Hero to attack Varian",
-        descriptionLong: "Silence a target Hero and force them to attack Varian for 1.25 seconds.Passive: Maximum Health and Health Regeneration increased by 40%.",
+        descriptionLong: "Silence a target Hero and force them to attack Varian for 1.25 seconds. Passive: Maximum Health and Health Regeneration increased by 40%.",
         cost: {
           type: "Mana",
           amount: 20
@@ -217,6 +276,13 @@ const varian: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_taunt.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -227,7 +293,7 @@ const varian: Hero = {
         id: "VarianColossusSmash",
         name: "Colossus Smash",
         descriptionShort: "Gain Damage, Lose HealthSmash enemies and lower their Armor",
-        descriptionLong: "Smash a target enemy, dealing 160 (+4% / level) damage and lowering their Armor by 20 for 3 seconds, causing them to take 20% increased damage.Passive: Base Attack Damage increased by 100%.Passive: Maximum Health and Health Regeneration reduced by 10%.",
+        descriptionLong: "Smash a target enemy, dealing 160 (+4% / level) damage and lowering their Armor by 20 for 3 seconds, causing them to take 20% increased damage. Passive: Base Attack Damage increased by 100%. Passive: Maximum Health and Health Regeneration reduced by 10%.",
         cost: {
           type: "Mana",
           amount: 40
@@ -237,6 +303,13 @@ const varian: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_colossus_smash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 10.666666666666666
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -247,12 +320,19 @@ const varian: Hero = {
         id: "VarianTwinBladesOfFury",
         name: "Twin Blades of Fury",
         descriptionShort: "Gain Attack Speed, Lose DamageBasic Attacks reduce Heroic Strike cooldown",
-        descriptionLong: "Basic Attacks reduce Heroic Strike's cooldown by 9 seconds, and increase Varian's Movement Speed by 30% for 2 seconds.Passive: Attack Speed increased by 100%.Passive: Base Attack Damage reduced by 25%.",
+        descriptionLong: "Basic Attacks reduce Heroic Strike's cooldown by 9 seconds, and increase Varian's Movement Speed by 30% for 2 seconds. Passive: Attack Speed increased by 100%. Passive: Base Attack Damage reduced by 25%.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_twinbladesoffury.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -271,6 +351,13 @@ const varian: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_lionsfang.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 20,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -287,6 +374,13 @@ const varian: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_secondwind.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 13.466666666666669,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7"
       },
@@ -300,6 +394,13 @@ const varian: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_victoryrush.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4.666666666666667,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -320,6 +421,13 @@ const varian: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_parry.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -336,6 +444,13 @@ const varian: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_charge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -354,6 +469,13 @@ const varian: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_charge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -370,6 +492,13 @@ const varian: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_mortalstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -381,12 +510,19 @@ const varian: Hero = {
         id: "VarianShatteringThrow",
         name: "Shattering Throw",
         descriptionShort: "Deal massive damage to enemy Shields",
-        descriptionLong: "Activate to throw a sword at a target Hero that deals 50 (+4% / level) damage, and up to 1400 (+4% / level) bonus damage to their Shields.Passive: Basic Attacks against Heroes deal up to 200% bonus Physical Damage to Shields.",
+        descriptionLong: "Activate to throw a sword at a target Hero that deals 50 (+4% / level) damage, and up to 1400 (+4% / level) bonus damage to their Shields. Passive: Basic Attacks against Heroes deal up to 200% bonus Physical Damage to Shields.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_shatteringthrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3.3333333333333335
+        },
         order: 3,
         tier: "level13"
       }
@@ -402,6 +538,13 @@ const varian: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_bannerofstormwind.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16"
       },
@@ -415,6 +558,13 @@ const varian: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_bannerofironforge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16"
       },
@@ -428,6 +578,13 @@ const varian: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_bannerofdalaran.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -443,6 +600,13 @@ const varian: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_taunt.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -462,6 +626,13 @@ const varian: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_colossus_smash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -481,6 +652,13 @@ const varian: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_twinbladesoffury.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -500,6 +678,13 @@ const varian: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_glorytothealliance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 13.333333333333334,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -518,6 +703,13 @@ const varian: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_demoralizingshout.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 5,
         tier: "level20"
       }
@@ -525,7 +717,10 @@ const varian: Hero = {
   ],
   analysis: {
     tankiness: 66.89265536723164,
-    damageSustainedPhysical: 12.567934782608695
+    physicalDamage: 46.25,
+    mobility: 24.199,
+    healing: 5.742474623731186,
+    magicalDamage: 18.554776173613003
   }
 };
       

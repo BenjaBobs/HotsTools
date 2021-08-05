@@ -33,7 +33,7 @@ const guldan: Hero = {
       id: "GuldanLifeTap",
       name: "Life Tap",
       descriptionShort: "Restore Mana at the cost of Health",
-      descriptionLong: "Gul'dan does not regenerate Mana.Activate to restore 25% of Gul'dan's Mana.",
+      descriptionLong: "Gul'dan does not regenerate Mana. Activate to restore 25% of Gul'dan's Mana.",
       cost: {
         type: "Life",
         amount: 222
@@ -42,7 +42,14 @@ const guldan: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_lifetap.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "GuldanFelFlame",
@@ -57,7 +64,14 @@ const guldan: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_felflame.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 140
+      }
     },
     {
       id: "GuldanDrainLife",
@@ -68,7 +82,14 @@ const guldan: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_healthfunnel.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 3.7600000000000002,
+        magicalDamage: 13.200000000000001
+      }
     },
     {
       id: "GuldanCorruption",
@@ -83,7 +104,14 @@ const guldan: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_handofguldan.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 14.571428571428571
+      }
     },
     {
       id: "GuldanHorrify",
@@ -98,7 +126,14 @@ const guldan: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_horrify.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 8
+      }
     },
     {
       id: "GuldanRainOfDestruction",
@@ -113,7 +148,14 @@ const guldan: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_rainoffire.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11
+      }
     }
   ],
   talents: [
@@ -122,12 +164,19 @@ const guldan: Hero = {
         id: "GuldanFelFlamePursuitOfFlame",
         name: "Pursuit of Flame",
         descriptionShort: "Quest: Hit 30 Heroes to increase area",
-        descriptionLong: "Quest: Hit 30 enemy Heroes with Fel Flame.Reward: Fel Flame's radius is increased by 10%.",
+        descriptionLong: "Quest: Hit 30 enemy Heroes with Fel Flame. Reward: Fel Flame's radius is increased by 10%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_felflame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -139,12 +188,19 @@ const guldan: Hero = {
         id: "GuldanChaoticEnergy",
         name: "Chaotic Energy",
         descriptionShort: "Quest: Gather Regen Globes to reduce Mana costs",
-        descriptionLong: "Increases the cast range of Drain Life by 25% and the healing provided by Regen Globes by 50%.Quest: Gather 15 Regen Globes.Reward: Basic Ability Mana costs are permanently reduced by 20.",
+        descriptionLong: "Increases the cast range of Drain Life by 25% and the healing provided by Regen Globes by 50%. Quest: Gather 15 Regen Globes. Reward: Basic Ability Mana costs are permanently reduced by 20.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_healthfunnel.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -156,12 +212,19 @@ const guldan: Hero = {
         id: "GuldanCorruptionEchoedCorruption",
         name: "Echoed Corruption",
         descriptionShort: "Quest: Hit 40 Heroes with Corruption to increase strikes",
-        descriptionLong: "Quest: Hit 40 enemy Heroes with Corruption.Reward: After the third strike, Corruption strikes 3 times in the opposite direction.",
+        descriptionLong: "Quest: Hit 40 enemy Heroes with Corruption. Reward: After the third strike, Corruption strikes 3 times in the opposite direction.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_handofguldan.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -181,6 +244,13 @@ const guldan: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_healthfunnel.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -197,6 +267,13 @@ const guldan: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_lifetap.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -208,7 +285,7 @@ const guldan: Hero = {
         id: "GuldanConsumeSoul",
         name: "Consume Soul",
         descriptionShort: "Instantly kill an enemy Minion to heal",
-        descriptionLong: "Instantly kill an enemy Minion and heal for 365 (+4% / level) Health.Stores up to 2 charges.",
+        descriptionLong: "Instantly kill an enemy Minion and heal for 365 (+4% / level) Health. Stores up to 2 charges.",
         cooldown: 30,
         charges: {
           chargesMax: 2,
@@ -219,6 +296,13 @@ const guldan: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_darkpact.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4.866666666666666,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -234,6 +318,13 @@ const guldan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_felflame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -250,6 +341,13 @@ const guldan: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_healthfunnel.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -266,6 +364,13 @@ const guldan: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_hungerforpower.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.3333333333333335,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -289,6 +394,13 @@ const guldan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_horrify.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 8
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -309,6 +421,13 @@ const guldan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_rainoffire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 11
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -327,6 +446,13 @@ const guldan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_felflame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -343,6 +469,13 @@ const guldan: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_healthfunnel.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 10,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -359,6 +492,13 @@ const guldan: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_darkbargain.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -376,6 +516,13 @@ const guldan: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_healthstone.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.3333333333333335,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level13"
       }
@@ -391,6 +538,13 @@ const guldan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_felflame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -407,6 +561,13 @@ const guldan: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_handofguldan.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 20.733333333333334
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -423,6 +584,13 @@ const guldan: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_lifetap.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 40
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -442,6 +610,13 @@ const guldan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_horrify.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -461,6 +636,13 @@ const guldan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_rainoffire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -480,6 +662,13 @@ const guldan: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_guldan_demoniccircle.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20"
       }
@@ -487,7 +676,10 @@ const guldan: Hero = {
   ],
   analysis: {
     tankiness: 51.2241054613936,
-    damageSustainedPhysical: 35.8695652173913
+    physicalDamage: 30,
+    mobility: 24.199,
+    healing: 4.935246762338117,
+    magicalDamage: 82.67599330661166
   }
 };
       

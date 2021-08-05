@@ -40,18 +40,25 @@ const greymane: Hero = {
       id: "GreymaneWorgenForm",
       name: "Curse of the Worgen",
       descriptionShort: "Able to shapeshift between a Human and a Worgen",
-      descriptionLong: "Greymane can use certain Abilities to shapeshift between a Human and a Worgen.While Human, Greymane's Basic Attacks are ranged.While Worgen, Greymane gains 10 Armor, and his Basic Attacks become melee but deal 40% more damage.",
+      descriptionLong: "Greymane can use certain Abilities to shapeshift between a Human and a Worgen. While Human, Greymane's Basic Attacks are ranged. While Worgen, Greymane gains 10 Armor, and his Basic Attacks become melee but deal 40% more damage.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_curseoftheworgen.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "GreymaneGilneanCocktail",
       name: "Gilnean Cocktail",
       descriptionShort: "Damage the first enemy hit and deal heavy damage behind them",
-      descriptionLong: "Hurl a flask that deals 55 (+4% / level) damage to the first enemy hit and explodes for 220 (+4% / level) damage to enemies in a cone behind them.Worgen: Razor SwipeSwipe forward, damaging enemies hit.",
+      descriptionLong: "Hurl a flask that deals 55 (+4% / level) damage to the first enemy hit and explodes for 220 (+4% / level) damage to enemies in a cone behind them. Worgen: Razor SwipeSwipe forward, damaging enemies hit.",
       cost: {
         type: "Mana",
         amount: 55
@@ -60,7 +67,14 @@ const greymane: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_qattack.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.111111111111111
+      }
     },
     {
       id: "GreymaneInnerBeast",
@@ -75,13 +89,20 @@ const greymane: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_beastfocus.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "GreymaneDarkflight",
       name: "Darkflight",
       descriptionShort: "Leap at an enemy and shapeshift into a Worgen",
-      descriptionLong: "Shapeshift into a Worgen and leap at an enemy dealing 88 (+4% / level) damage.Worgen: DisengageRoll away and shapeshift into a Human.",
+      descriptionLong: "Shapeshift into a Worgen and leap at an enemy dealing 88 (+4% / level) damage. Worgen: DisengageRoll away and shapeshift into a Human.",
       cost: {
         type: "Mana",
         amount: 10
@@ -90,7 +111,14 @@ const greymane: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_darkflight.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 17.6
+      }
     },
     {
       id: "GreymaneGoForTheThroat",
@@ -105,13 +133,20 @@ const greymane: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_goforthethroat.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "GreymaneCursedBullet",
       name: "Cursed Bullet",
       descriptionShort: "Remove a portion of enemy's current Health",
-      descriptionLong: "Greymane shapeshifts into a Human and fires a bullet that hits the first enemy Hero in its path, dealing 35% of their current Health in damage.Does not affect Vehicles.",
+      descriptionLong: "Greymane shapeshifts into a Human and fires a bullet that hits the first enemy Hero in its path, dealing 35% of their current Health in damage. Does not affect Vehicles.",
       cost: {
         type: "Mana",
         amount: 50
@@ -120,33 +155,14 @@ const greymane: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_snapshot.png",
-      isPassive: false
-    },
-    {
-      id: "GreymaneRazorSwipe",
-      name: "Razor Swipe",
-      descriptionShort: "Swipe forward and damage enemies",
-      descriptionLong: "Swipe in the targeted direction, dealing 126 (+4% / level) damage to enemies hit.Human: Gilnean CocktailDamage the first enemy hit and deal heavy damage behind them.",
-      cost: {
-        type: "Mana",
-        amount: 25
-      },
-      cooldown: 4,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_swipe.png",
-      isPassive: false
-    },
-    {
-      id: "GreymaneDisengage",
-      name: "Disengage",
-      descriptionShort: "Roll away and transform into a Human",
-      descriptionLong: "Roll away and shapeshift into a Human.Human: DarkflightLeap at an enemy and shapeshift into a Worgen.",
-      cooldown: 5,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_disengage.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -161,6 +177,13 @@ const greymane: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_beastfocus.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -178,6 +201,13 @@ const greymane: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_qattack.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -194,6 +224,13 @@ const greymane: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_beastfocus_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -213,6 +250,13 @@ const greymane: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_darkflight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -229,6 +273,13 @@ const greymane: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_disengage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -245,6 +296,13 @@ const greymane: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_beastfocus.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -264,6 +322,13 @@ const greymane: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_curseoftheworgen.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -274,12 +339,19 @@ const greymane: Hero = {
         id: "GreymaneGilneanCocktailIncendiaryElixir",
         name: "Incendiary Elixir",
         descriptionShort: "Quest: Increases Gilnean Cocktail damage",
-        descriptionLong: "Quest: Reduce the cooldown of Gilnean Cocktail by 2 seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by 20, up to 300.Reward: After hitting 15 Heroes, the cooldown is reduced by an additional 2 seconds.",
+        descriptionLong: "Quest: Reduce the cooldown of Gilnean Cocktail by 2 seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by 20, up to 300. Reward: After hitting 15 Heroes, the cooldown is reduced by an additional 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_qattack.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -297,6 +369,13 @@ const greymane: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_curseoftheworgen_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -320,6 +399,13 @@ const greymane: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_goforthethroat.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -330,7 +416,7 @@ const greymane: Hero = {
         id: "GreymaneHeroicAbilityCursedBullet",
         name: "Cursed Bullet",
         descriptionShort: "Remove a portion of enemy's current Health",
-        descriptionLong: "Greymane shapeshifts into a Human and fires a bullet that hits the first enemy Hero in its path, dealing 35% of their current Health in damage.Does not affect Vehicles.",
+        descriptionLong: "Greymane shapeshifts into a Human and fires a bullet that hits the first enemy Hero in its path, dealing 35% of their current Health in damage. Does not affect Vehicles.",
         cost: {
           type: "Mana",
           amount: 50
@@ -340,6 +426,13 @@ const greymane: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_snapshot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -358,6 +451,13 @@ const greymane: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_darkflight.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -375,6 +475,13 @@ const greymane: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_swipe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -391,6 +498,13 @@ const greymane: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_beastfocus.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -410,6 +524,13 @@ const greymane: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_beastfocus.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -427,6 +548,13 @@ const greymane: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16"
       },
@@ -440,6 +568,13 @@ const greymane: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_curseoftheworgen_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -452,12 +587,19 @@ const greymane: Hero = {
         id: "GreymaneGoForTheThroatUnleashed",
         name: "Unleashed",
         descriptionShort: "Increase Go for the Throat damage, reset Ability cooldowns",
-        descriptionLong: "Passive: Go For The Throat's damage is increased by 25%.If Go for the Throat kills its target, refund its Mana cost and reset the cooldowns of Greymane's Abilities.",
+        descriptionLong: "Passive: Go For The Throat's damage is increased by 25%. If Go for the Throat kills its target, refund its Mana cost and reset the cooldowns of Greymane's Abilities.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_goforthethroat.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -477,6 +619,13 @@ const greymane: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_snapshot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -496,6 +645,13 @@ const greymane: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_curseoftheworgen.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -512,6 +668,13 @@ const greymane: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_curseoftheworgen_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -522,7 +685,10 @@ const greymane: Hero = {
   ],
   analysis: {
     tankiness: 63.593220338983045,
-    damageSustainedPhysical: 56.30434782608694
+    physicalDamage: 74,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 10.495929053542783
   }
 };
       

@@ -39,7 +39,7 @@ export default function HeroPicker(props: {
         <Input
           ref={ref => (searchRef.current = ref || undefined)}
           placeholder={'Search...'}
-          onChange={evt => setSearch(evt.target.value)}
+          onChange={evt => setSearch(evt.target.value.toLowerCase())}
         />
       </Col>
       {heroes.all.map(hero => (

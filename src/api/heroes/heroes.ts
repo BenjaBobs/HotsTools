@@ -44,7 +44,7 @@ export type Hero = {
   abilities: Ability[];
   talents: Talent[][];
   heroUnits?: Hero[];
-  analysis: HeroAnalysis;
+  analysis: Analysis;
 };
 
 export type Franchise =
@@ -79,6 +79,7 @@ export type Ability = {
   type: string;
   icon: string;
   isPassive: boolean;
+  analysis: Analysis;
 };
 
 export type Charges = {
@@ -96,7 +97,10 @@ export type Talent = Ability & {
   isQuest?: boolean;
 };
 
-export type HeroAnalysis = {
+export type Analysis = {
   tankiness: number;
-  damageSustainedPhysical: number;
+  physicalDamage: number;
+  magicalDamage: number;
+  healing: number;
+  mobility: number;
 };

@@ -33,18 +33,25 @@ const gazlowe: Hero = {
       id: "GazloweSalvagerSalvageTurretAbility",
       name: "Reduce, Reuse, Recycle",
       descriptionShort: "Regenerate Scrap, salvage Rock-It! Turrets",
-      descriptionLong: "Regenerate 1 Scrap every 4 seconds. Destroyed Rock-It! Turrets drop 1 Scrap, which can be picked up.Activate to destroy a target Rock-It! Turret.",
+      descriptionLong: "Regenerate 1 Scrap every 4 seconds. Destroyed Rock-It! Turrets drop 1 Scrap, which can be picked up. Activate to destroy a target Rock-It! Turret.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_salvager.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "TinkerRockItTurret",
       name: "Rock-It! Turret",
       descriptionShort: "Create a turret that shoots at nearby enemies",
-      descriptionLong: "Create a turret that deals 38 (+4% / level) damage. Lasts for 15 seconds.Turrets prioritize the nearest enemy Hero when first created.",
+      descriptionLong: "Create a turret that deals 38 (+4% / level) damage. Lasts for 15 seconds. Turrets prioritize the nearest enemy Hero when first created.",
       cost: {
         type: "Scrap",
         amount: 4
@@ -53,7 +60,14 @@ const gazlowe: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_rockitturret.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 2.533333333333333
+      }
     },
     {
       id: "GazloweDethLazor",
@@ -70,7 +84,14 @@ const gazlowe: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_dethlazor.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 6.25,
+        magicalDamage: 22.5
+      }
     },
     {
       id: "TinkerXplodiumBomb",
@@ -87,7 +108,14 @@ const gazlowe: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_explodiumcharge.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.833333333333332
+      }
     },
     {
       id: "TinkerRoboGoblin",
@@ -98,7 +126,14 @@ const gazlowe: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_robogoblin.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6
+      }
     },
     {
       id: "TinkerGravOBomb3000",
@@ -109,7 +144,14 @@ const gazlowe: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_gravobomb.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 14.666666666666666
+      }
     }
   ],
   talents: [
@@ -130,6 +172,13 @@ const gazlowe: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_explodiumcharge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -146,6 +195,13 @@ const gazlowe: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_salvager.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -162,6 +218,13 @@ const gazlowe: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -180,6 +243,13 @@ const gazlowe: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_rockitturret.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -196,6 +266,13 @@ const gazlowe: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_combo_w_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 20,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -213,6 +290,13 @@ const gazlowe: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_imposingpresence.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -228,6 +312,13 @@ const gazlowe: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_combo_q_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -251,6 +342,13 @@ const gazlowe: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_dethlazor_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -267,6 +365,13 @@ const gazlowe: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_combo_w_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -286,6 +391,13 @@ const gazlowe: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_robogoblin.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -302,6 +414,13 @@ const gazlowe: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_gravobomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 14.666666666666666
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -320,6 +439,13 @@ const gazlowe: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_rockitturret.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -336,6 +462,13 @@ const gazlowe: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_rockitturret_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -352,6 +485,13 @@ const gazlowe: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_rockitturret_var2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -376,6 +516,13 @@ const gazlowe: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_dethlazor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 8.333333333333334
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -386,7 +533,7 @@ const gazlowe: Hero = {
         id: "GazloweXplodiumChargeArkReaktor",
         name: "Ark Reaktor",
         descriptionShort: "Xplodium Charge creates Turrets, reduce cooldown",
-        descriptionLong: "Reduce the cooldown of Xplodium Charge by 2 seconds. Casting Xplodium Charge creates 3 miniature Rock-It! Turrets that last for 3 seconds.These Turrets do not drop Scrap or benefit from other Talents.",
+        descriptionLong: "Reduce the cooldown of Xplodium Charge by 2 seconds. Casting Xplodium Charge creates 3 miniature Rock-It! Turrets that last for 3 seconds. These Turrets do not drop Scrap or benefit from other Talents.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -398,6 +545,13 @@ const gazlowe: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_explodiumcharge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -408,12 +562,19 @@ const gazlowe: Hero = {
         id: "GazloweOverklock",
         name: "Overklock",
         descriptionShort: "Attacks grant Move Speed, deal bonus damage",
-        descriptionLong: "Basic Attacks grant Gazlowe 15% Movement Speed for 2 seconds.Dealing Basic Attack damage to Heroes causes them to take an additional 2.5% of their maximum Health as damage.",
+        descriptionLong: "Basic Attacks grant Gazlowe 15% Movement Speed for 2 seconds. Dealing Basic Attack damage to Heroes causes them to take an additional 2.5% of their maximum Health as damage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -432,6 +593,13 @@ const gazlowe: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_robogoblin.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -451,6 +619,13 @@ const gazlowe: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_gravobomb.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -470,6 +645,13 @@ const gazlowe: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_rockitturret.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -492,6 +674,13 @@ const gazlowe: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_explodiumcharge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -502,7 +691,10 @@ const gazlowe: Hero = {
   ],
   analysis: {
     tankiness: 71.56308851224105,
-    damageSustainedPhysical: 16.98369565217391
+    physicalDamage: 62.5,
+    mobility: 24.199,
+    healing: 8.203535176758837,
+    magicalDamage: 25.46762916553164
   }
 };
       

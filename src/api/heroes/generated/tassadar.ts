@@ -33,12 +33,19 @@ const tassadar: Hero = {
       id: "TassadarResonanceBeam",
       name: "Resonance Beam",
       descriptionShort: "Basic Attacks are Channeled, restore Mana",
-      descriptionLong: "Tassadar's Basic Attack is a Channeled beam that Slows by 15%. While Channeling, your Basic Attack damage and Mana regeneration increases by 25% a second, to a maximum of 100%. While at full charge, gain an extra 3 Mana every second.This bonus is lost after 6 seconds of not Channeling.",
+      descriptionLong: "Tassadar's Basic Attack is a Channeled beam that Slows by 15%. While Channeling, your Basic Attack damage and Mana regeneration increases by 25% a second, to a maximum of 100%. While at full charge, gain an extra 3 Mana every second. This bonus is lost after 6 seconds of not Channeling.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_trait.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "TassadarShockRay",
@@ -53,7 +60,14 @@ const tassadar: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_q_ray.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 40
+      }
     },
     {
       id: "TassadarPsionicStorm",
@@ -68,7 +82,14 @@ const tassadar: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_psionicstorm.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "TassadarForceWall",
@@ -83,13 +104,20 @@ const tassadar: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_forcewall.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "TassadarArchon",
       name: "Archon",
       descriptionShort: "Become an Archon",
-      descriptionLong: "Tassadar transforms into an Archon, gaining a Shield equal to 25% of his maximum Health and empowering Resonance Beam. Lasts for 12 seconds.Resonance Beam: Deals 140 (+4% / level) damage to the target and splashes 70 (+4% / level) damage to nearby enemies. Heroes hit have their Spell Armor reduced by 20 for 2 seconds. Resonance Beam is fully charged while Archon is active.",
+      descriptionLong: "Tassadar transforms into an Archon, gaining a Shield equal to 25% of his maximum Health and empowering Resonance Beam. Lasts for 12 seconds. Resonance Beam: Deals 140 (+4% / level) damage to the target and splashes 70 (+4% / level) damage to nearby enemies. Heroes hit have their Spell Armor reduced by 20 for 2 seconds. Resonance Beam is fully charged while Archon is active.",
       cost: {
         type: "Mana",
         amount: 100
@@ -98,7 +126,14 @@ const tassadar: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_archon.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 9.333333333333334
+      }
     },
     {
       id: "TassadarBlackHole",
@@ -113,33 +148,14 @@ const tassadar: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_blackhole.png",
-      isPassive: false
-    },
-    {
-      id: "TassadarArchon",
-      name: "Archon",
-      descriptionShort: "Become an Archon",
-      descriptionLong: "Tassadar transforms into an Archon, gaining a Shield equal to 25% of his maximum Health and empowering Resonance Beam. Lasts for 12 seconds.Resonance Beam: Deals 140 (+4% / level) damage to the target and splashes 70 (+4% / level) damage to nearby enemies. Heroes hit have their Spell Armor reduced by 20 for 2 seconds. Resonance Beam is fully charged while Archon is active.",
-      cost: {
-        type: "Mana",
-        amount: 100
-      },
-      cooldown: 90,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_archon.png",
-      isPassive: true
-    },
-    {
-      id: "TassadarResonanceBeamArcDischargeDummy",
-      name: "Resonance Beam",
-      descriptionShort: "Basic Attacks are Channeled, restore Mana",
-      descriptionLong: "Tassadar's Basic Attack is a Channeled beam that Slows by 15%. While Channeling, your Basic Attack damage and Mana regeneration increases by 25% a second, to a maximum of 100%. While at full charge, gain an extra 3 Mana every second.This bonus is lost after 6 seconds of not Channeling.",
-      cooldown: 20,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_trait.png",
-      isPassive: true
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 20.666666666666668
+      }
     }
   ],
   talents: [
@@ -154,6 +170,13 @@ const tassadar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_q_ray.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -171,6 +194,13 @@ const tassadar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_psionicstorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -181,12 +211,19 @@ const tassadar: Hero = {
         id: "TassadarKhaydarinAmulet",
         name: "Khaydarin Amulet",
         descriptionShort: "Quest: Empower Resonance Beam",
-        descriptionLong: "Quest: Resonance Beam charges 50% faster.Reward: After Resonance Beam has been fully charged for 80 seconds, it bounces to hit 1 additional target for 75% damage, prioritizing Heroes.Reward: After Resonance Beam has been fully charged for 160 seconds, it bounces to hit 2 additional targets for 75% damage, prioritizing Heroes.",
+        descriptionLong: "Quest: Resonance Beam charges 50% faster. Reward: After Resonance Beam has been fully charged for 80 seconds, it bounces to hit 1 additional target for 75% damage, prioritizing Heroes. Reward: After Resonance Beam has been fully charged for 160 seconds, it bounces to hit 2 additional targets for 75% damage, prioritizing Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -207,6 +244,13 @@ const tassadar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_q_ray.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -223,6 +267,13 @@ const tassadar: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_forcewall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6.133333333333333
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -239,6 +290,13 @@ const tassadar: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -258,6 +316,13 @@ const tassadar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_q_ray.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -274,6 +339,13 @@ const tassadar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_psionicstorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -285,12 +357,19 @@ const tassadar: Hero = {
         id: "TassadarArcDischarge",
         name: "Arc Discharge",
         descriptionShort: "Resonance Beam creates Psionic Storms",
-        descriptionLong: "When Resonance Beam is fully charged, Tassadar's Basic Attack range is increased by 1 and its next instance of damage also creates a Psionic Storm on the target.This effect has a 20 second cooldown that decays twice as fast while Resonance Beam is fully charged.",
+        descriptionLong: "When Resonance Beam is fully charged, Tassadar's Basic Attack range is increased by 1 and its next instance of damage also creates a Psionic Storm on the target. This effect has a 20 second cooldown that decays twice as fast while Resonance Beam is fully charged.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -304,7 +383,7 @@ const tassadar: Hero = {
         id: "TassadarHeroicAbilityArchon",
         name: "Archon",
         descriptionShort: "Become an Archon",
-        descriptionLong: "Tassadar transforms into an Archon, gaining a Shield equal to 25% of his maximum Health and empowering Resonance Beam. Lasts for 12 seconds.Resonance Beam: Deals 140 (+4% / level) damage to the target and splashes 70 (+4% / level) damage to nearby enemies. Heroes hit have their Spell Armor reduced by 20 for 2 seconds. Resonance Beam is fully charged while Archon is active.",
+        descriptionLong: "Tassadar transforms into an Archon, gaining a Shield equal to 25% of his maximum Health and empowering Resonance Beam. Lasts for 12 seconds. Resonance Beam: Deals 140 (+4% / level) damage to the target and splashes 70 (+4% / level) damage to nearby enemies. Heroes hit have their Spell Armor reduced by 20 for 2 seconds. Resonance Beam is fully charged while Archon is active.",
         cost: {
           type: "Mana",
           amount: 100
@@ -314,6 +393,13 @@ const tassadar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_archon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 9.333333333333334
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -334,6 +420,13 @@ const tassadar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_blackhole.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 20.666666666666668
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -352,6 +445,13 @@ const tassadar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_psionicstorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -362,12 +462,19 @@ const tassadar: Hero = {
         id: "TassadarShadowWalk",
         name: "Shadow Walk",
         descriptionShort: "Become temporarily Stealthed, gain Armor",
-        descriptionLong: "Tassadar becomes Stealthed and Unrevealable, but cannot attack or use Abilities for 1.5 seconds. While this effect is active, gain 40% increased Movement Speed and 25 Armor.Can be cast while Channeling Shock Ray.",
+        descriptionLong: "Tassadar becomes Stealthed and Unrevealable, but cannot attack or use Abilities for 1.5 seconds. While this effect is active, gain 40% increased Movement Speed and 25 Armor. Can be cast while Channeling Shock Ray.",
         cooldown: 60,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_dimensionalshift.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13"
       },
@@ -375,12 +482,19 @@ const tassadar: Hero = {
         id: "TassadarOracle",
         name: "Oracle",
         descriptionShort: "Gain Spell Armor, Channel to reveal an area",
-        descriptionLong: "Passive: While stationary, gain 30 Spell Armor for 0.75 seconds and restore 12 (+4% / level) Health a second.Activate to Channel for up to 4 seconds, revealing a gradually increasing area anywhere on the map.",
+        descriptionLong: "Passive: While stationary, gain 30 Spell Armor for 0.75 seconds and restore 12 (+4% / level) Health a second. Activate to Channel for up to 4 seconds, revealing a gradually increasing area anywhere on the map.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_oracle.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -396,6 +510,13 @@ const tassadar: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_q_ray.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -412,6 +533,13 @@ const tassadar: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_psionicstorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -428,6 +556,13 @@ const tassadar: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_temp_btn-upgrade-protoss-khaydarinamulet.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -443,6 +578,13 @@ const tassadar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_archon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -462,6 +604,13 @@ const tassadar: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_blackhole.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -481,6 +630,13 @@ const tassadar: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_forcewall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -497,6 +653,13 @@ const tassadar: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_active_khala.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -504,7 +667,10 @@ const tassadar: Hero = {
   ],
   analysis: {
     tankiness: 49.717514124293785,
-    damageSustainedPhysical: 39.565217391304344
+    physicalDamage: 28.000000000000004,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 30.98610732770362
   }
 };
       

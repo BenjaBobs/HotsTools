@@ -45,7 +45,14 @@ const zeratul: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_cloak.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ZeratulCleave",
@@ -60,7 +67,14 @@ const zeratul: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_cleave.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 33.33333333333333
+      }
     },
     {
       id: "ZeratulSingularitySpike",
@@ -75,13 +89,20 @@ const zeratul: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_singularityspike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 20
+      }
     },
     {
       id: "ZeratulBlinkStorm",
       name: "Blink",
       descriptionShort: "Teleport to a location. Ability does not break cloak",
-      descriptionLong: "Teleport to the target location.Using this Ability does not break Stealth.",
+      descriptionLong: "Teleport to the target location. Using this Ability does not break Stealth.",
       cost: {
         type: "Mana",
         amount: 50
@@ -90,13 +111,20 @@ const zeratul: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_blink.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ZeratulMightOfTheNerazimDummy",
       name: "Might Of The Nerazim",
       descriptionShort: "Recast last Basic Ability",
-      descriptionLong: "Activate to cast an untalented version of Zeratul's most recently used Basic Ability, dealing 50% less damage.Passive: After using an Ability, Zeratul's next Basic Attack within 6 seconds deals 30% more damage.",
+      descriptionLong: "Activate to cast an untalented version of Zeratul's most recently used Basic Ability, dealing 50% less damage. Passive: After using an Ability, Zeratul's next Basic Attack within 6 seconds deals 30% more damage.",
       cost: {
         type: "Mana",
         amount: 30
@@ -105,7 +133,14 @@ const zeratul: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_mightofnerazim.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ZeratulVoidPrison",
@@ -120,52 +155,14 @@ const zeratul: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_voidprison.png",
-      isPassive: false
-    },
-    {
-      id: "ZeratulCleaveMightOfTheNerazim",
-      name: "Cleave",
-      descriptionShort: "Damage nearby enemies",
-      descriptionLong: "Deal 100 (+4% / level) damage to nearby enemies.",
-      cost: {
-        type: "Mana",
-        amount: 30
-      },
-      cooldown: 20,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_cleave_nerazim.png",
-      isPassive: false
-    },
-    {
-      id: "ZeratulSingularitySpikeMightOfTheNerazim",
-      name: "Singularity Spike",
-      descriptionShort: "Slow and damage the first enemy hit",
-      descriptionLong: "Flings a Singularity Spike that sticks to the first enemy hit. Deals 120 (+4% / level) damage after 1 second and slows the enemy by 40% for 3 seconds.",
-      cost: {
-        type: "Mana",
-        amount: 30
-      },
-      cooldown: 20,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_singularityspike_nerazim.png",
-      isPassive: false
-    },
-    {
-      id: "ZeratulBlinkMightOfTheNerazim",
-      name: "Blink",
-      descriptionShort: "Teleport to a location. Ability does not break cloak",
-      descriptionLong: "Teleport to the target location. Using this Ability does not break cloak.",
-      cost: {
-        type: "Mana",
-        amount: 30
-      },
-      cooldown: 20,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_blink_nerazim.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -180,6 +177,13 @@ const zeratul: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_cleave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -190,12 +194,19 @@ const zeratul: Hero = {
         id: "ZeratulShadowHunter",
         name: "Shadow Hunter",
         descriptionShort: "Quest: Gather Regen Globes to empower Blink",
-        descriptionLong: "Quest: Gather Regeneration Globes to lower the Mana cost of Blink by 3, up to 45.Reward: Upon gathering 15 Regeneration Globes, Basic Attacks reduce the cooldown of Blink by 1.5 seconds.",
+        descriptionLong: "Quest: Gather Regeneration Globes to lower the Mana cost of Blink by 3, up to 45. Reward: Upon gathering 15 Regeneration Globes, Basic Attacks reduce the cooldown of Blink by 1.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_blink.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -213,6 +224,13 @@ const zeratul: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_cloak.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -231,6 +249,13 @@ const zeratul: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_cleave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -247,6 +272,13 @@ const zeratul: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_abilitytalent_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4"
       },
@@ -254,12 +286,19 @@ const zeratul: Hero = {
         id: "ZeratulDarknessDescends",
         name: "Darkness Descends",
         descriptionShort: "Activate to gain Attack Speed",
-        descriptionLong: "Activate to gain 40% Attack Speed for 5 seconds.Passive: Gain 20% Attack Speed.",
+        descriptionLong: "Activate to gain 40% Attack Speed for 5 seconds. Passive: Gain 20% Attack Speed.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_shadowassault.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -275,6 +314,13 @@ const zeratul: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_blink.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -291,6 +337,13 @@ const zeratul: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_singularityspike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -307,6 +360,13 @@ const zeratul: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_vorpalblade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -319,7 +379,7 @@ const zeratul: Hero = {
         id: "ZeratulMightOfTheNerazim",
         name: "Might Of The Nerazim",
         descriptionShort: "Recast last Basic Ability",
-        descriptionLong: "Activate to cast an untalented version of Zeratul's most recently used Basic Ability, dealing 50% less damage.Passive: After using an Ability, Zeratul's next Basic Attack within 6 seconds deals 30% more damage.",
+        descriptionLong: "Activate to cast an untalented version of Zeratul's most recently used Basic Ability, dealing 50% less damage. Passive: After using an Ability, Zeratul's next Basic Attack within 6 seconds deals 30% more damage.",
         cost: {
           type: "Mana",
           amount: 30
@@ -329,6 +389,13 @@ const zeratul: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_mightofnerazim.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -349,6 +416,13 @@ const zeratul: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_voidprison.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -367,6 +441,13 @@ const zeratul: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_cloak.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -383,6 +464,13 @@ const zeratul: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_heal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4.666666666666667,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13"
       },
@@ -390,12 +478,19 @@ const zeratul: Hero = {
         id: "GenericTalentSpellShield",
         name: "Spell Shield",
         descriptionShort: "Periodically gain temporary Spell Armor",
-        descriptionLong: "Every 30 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 50%.Can be toggled to allow or prevent this talent from triggering automatically.",
+        descriptionLong: "Every 30 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 50%. Can be toggled to allow or prevent this talent from triggering automatically.",
         cooldown: null,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_spellshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -411,6 +506,13 @@ const zeratul: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -427,6 +529,13 @@ const zeratul: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_cleave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -443,6 +552,13 @@ const zeratul: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_singularityspike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -461,6 +577,13 @@ const zeratul: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_mightofnerazim.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -480,6 +603,13 @@ const zeratul: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_singularityspike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -496,6 +626,13 @@ const zeratul: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_vorpalblade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -512,6 +649,13 @@ const zeratul: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_abilitytalent_heal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 8,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -519,7 +663,10 @@ const zeratul: Hero = {
   ],
   analysis: {
     tankiness: 48.873822975517896,
-    damageSustainedPhysical: 17.119565217391305
+    physicalDamage: 70,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 23.608462725869426
   }
 };
       

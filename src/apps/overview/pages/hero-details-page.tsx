@@ -1,4 +1,5 @@
 import { Avatar, Col, Result, Row, Space } from 'antd';
+import { useEffect } from 'react';
 
 import heroes from '../../../api/heroes/heroes';
 import HeroStrengthChart from '../../components/hero-strength-chart/hero-strength-chart';
@@ -8,6 +9,10 @@ import TalentTooltip from './components/talent-tooltip';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = heroes.byName(props.hero);
+
+  useEffect(() => {
+    console.log(hero);
+  }, []);
 
   if (!hero) {
     return (

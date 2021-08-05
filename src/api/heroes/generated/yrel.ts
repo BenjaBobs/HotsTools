@@ -33,18 +33,25 @@ const yrel: Hero = {
       id: "YrelDivinePurpose",
       name: "Divine Purpose",
       descriptionShort: "Make next Basic Ability cast instantly",
-      descriptionLong: "Activate to instantly charge Yrel's next Basic Ability at no mana cost.Passive: Yrel's Basic Abilities charge up over 1.5 seconds, increasing in effectiveness, but reducing Yrel's Movement Speed by 25%.",
+      descriptionLong: "Activate to instantly charge Yrel's next Basic Ability at no mana cost. Passive: Yrel's Basic Abilities charge up over 1.5 seconds, increasing in effectiveness, but reducing Yrel's Movement Speed by 25%.",
       cooldown: 8,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_divine_purpose.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "YrelVindication",
       name: "Vindication",
       descriptionShort: "Restore Health, damage enemies",
-      descriptionLong: "Unleash holy energy around Yrel, dealing 42 (+4% / level) damage to nearby enemies and healing her for 96 (+4% / level).Charging up this Ability increases its damage up to 140 (+4% / level), and healing up to 320 (+4% / level).",
+      descriptionLong: "Unleash holy energy around Yrel, dealing 42 (+4% / level) damage to nearby enemies and healing her for 96 (+4% / level). Charging up this Ability increases its damage up to 140 (+4% / level), and healing up to 320 (+4% / level).",
       cost: {
         type: "Mana",
         amount: 65
@@ -53,13 +60,20 @@ const yrel: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_vindication.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 13.866666666666665,
+        magicalDamage: 7
+      }
     },
     {
       id: "YrelRighteousHammerChannel",
       name: "Righteous Hammer",
       descriptionShort: "Knockback and Stun enemies",
-      descriptionLong: "Swing Yrel's hammer, dealing 38 (+4% / level) damage to enemies in front of her and knocking them away.Charging up this Ability increases its knockback distance, and damage up to 125 (+4% / level). Enemies hit at maximum charge are Stunned for 0.75 seconds.",
+      descriptionLong: "Swing Yrel's hammer, dealing 38 (+4% / level) damage to enemies in front of her and knocking them away. Charging up this Ability increases its knockback distance, and damage up to 125 (+4% / level). Enemies hit at maximum charge are Stunned for 0.75 seconds.",
       cost: {
         type: "Mana",
         amount: 65
@@ -68,13 +82,20 @@ const yrel: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_righteous_hammer.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.333333333333333
+      }
     },
     {
       id: "YrelAvengingWrath",
       name: "Avenging Wrath",
       descriptionShort: "Leap to an area to damage, Slow enemies",
-      descriptionLong: "Leap to a location, dealing 225 (+4% / level) damage to enemies in an area and Slowing them by 50% for 1 second.Charging up this Ability increases its range.",
+      descriptionLong: "Leap to a location, dealing 225 (+4% / level) damage to enemies in an area and Slowing them by 50% for 1 second. Charging up this Ability increases its range.",
       cost: {
         type: "Mana",
         amount: 65
@@ -83,7 +104,14 @@ const yrel: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_avenging_wrath.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 37.5
+      }
     },
     {
       id: "YrelArdentDefender",
@@ -98,7 +126,14 @@ const yrel: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_ardent_defender.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 6.666666666666667,
+        magicalDamage: 0
+      }
     },
     {
       id: "YrelSacredGround",
@@ -113,93 +148,14 @@ const yrel: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_sacred_ground.png",
-      isPassive: false
-    },
-    {
-      id: "YrelVindicationCast",
-      name: "Vindication",
-      descriptionShort: "Restore Health, damage enemies",
-      descriptionLong: "Unleash holy energy around Yrel, dealing 42 (+4% / level) damage to nearby enemies and healing her for 96 (+4% / level).Charging up this Ability increases its damage up to 140 (+4% / level), and healing up to 320 (+4% / level).",
-      cost: {
-        type: "Mana",
-        amount: 65
-      },
-      cooldown: 6,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_vindication.png",
-      isPassive: false
-    },
-    {
-      id: "YrelRighteousHammerDivinePurpose",
-      name: "Righteous Hammer",
-      descriptionShort: "Knockback and Stun enemies",
-      descriptionLong: "Swing Yrel's hammer, dealing 38 (+4% / level) damage to enemies in front of her and knocking them away.Charging up this Ability increases its knockback distance, and damage up to 125 (+4% / level). Enemies hit at maximum charge are Stunned for 0.75 seconds.",
-      cost: {
-        type: "Mana",
-        amount: 65
-      },
-      cooldown: 6,
-      category: "basic",
-      type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_righteous_hammer.png",
-      isPassive: false
-    },
-    {
-      id: "YrelAvengingWrathDivinePurpose",
-      name: "Avenging Wrath",
-      descriptionShort: "Leap to an area to damage, Slow enemies",
-      descriptionLong: "Leap to a location, dealing 225 (+4% / level) damage to enemies in an area and Slowing them by 50% for 1 second.Charging up this Ability increases its range.",
-      cost: {
-        type: "Mana",
-        amount: 65
-      },
-      cooldown: 6,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_avenging_wrath.png",
-      isPassive: false
-    },
-    {
-      id: "YrelDivinePurposeActive",
-      name: "Divine Purpose",
-      descriptionShort: "Make next Basic Ability cast instantly",
-      descriptionLong: "Activate to instantly charge Yrel's next Basic Ability at no mana cost.Passive: Yrel's Basic Abilities charge up over 1.5 seconds, increasing in effectiveness, but reducing Yrel's Movement Speed by 25%.",
-      cooldown: 8,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_divine_purpose_active.png",
-      isPassive: true
-    },
-    {
-      id: "YrelRighteousHammer",
-      name: "Righteous Hammer",
-      descriptionShort: "Knockback and Stun enemies",
-      descriptionLong: "Swing Yrel's hammer, dealing 38 (+4% / level) damage to enemies in front of her and knocking them away.Charging up this Ability increases its knockback distance, and damage up to 125 (+4% / level). Enemies hit at maximum charge are Stunned for 0.75 seconds.",
-      cost: {
-        type: "Mana",
-        amount: 65
-      },
-      cooldown: 6,
-      category: "basic",
-      type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_righteous_hammer.png",
-      isPassive: false
-    },
-    {
-      id: "YrelAvengingWrathChannel",
-      name: "Avenging Wrath",
-      descriptionShort: "Leap to an area to damage, Slow enemies",
-      descriptionLong: "Leap to a location, dealing 225 (+4% / level) damage to enemies in an area and Slowing them by 50% for 1 second.Charging up this Ability increases its range.",
-      cost: {
-        type: "Mana",
-        amount: 65
-      },
-      cooldown: 6,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_avenging_wrath.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -214,6 +170,13 @@ const yrel: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_vindication.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -231,6 +194,13 @@ const yrel: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_abilitytalent_armor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1"
       },
@@ -244,6 +214,13 @@ const yrel: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_heal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.8,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -259,6 +236,13 @@ const yrel: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_avenging_wrath.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -277,6 +261,13 @@ const yrel: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_divine_purpose.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -293,6 +284,13 @@ const yrel: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_hand_of_freedom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -308,6 +306,13 @@ const yrel: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_righteous_hammer.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -326,6 +331,13 @@ const yrel: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_avenging_wrath.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -344,6 +356,13 @@ const yrel: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_divine_steed.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -366,6 +385,13 @@ const yrel: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_ardent_defender.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -386,6 +412,13 @@ const yrel: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_sacred_ground.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -404,6 +437,13 @@ const yrel: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_vindication.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -421,6 +461,13 @@ const yrel: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_avenging_wrath.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -439,6 +486,13 @@ const yrel: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_velens_chosen.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -454,6 +508,13 @@ const yrel: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_righteous_hammer.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -472,6 +533,13 @@ const yrel: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_divine_purpose.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -488,6 +556,13 @@ const yrel: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_aoe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -503,6 +578,13 @@ const yrel: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_ardent_defender.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 43.333333333333336,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -522,6 +604,13 @@ const yrel: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_sacred_ground.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -541,6 +630,13 @@ const yrel: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_bubble_hearth.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20"
       },
@@ -554,6 +650,13 @@ const yrel: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_seraphim.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -561,7 +664,10 @@ const yrel: Hero = {
   ],
   analysis: {
     tankiness: 80.69303201506591,
-    damageSustainedPhysical: 19.43979933110368
+    physicalDamage: 59.61538461538461,
+    mobility: 24.199,
+    healing: 26.951347567378363,
+    magicalDamage: 22.501816035594295
   }
 };
       

@@ -38,13 +38,20 @@ const arthas: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frostmournehungers_off.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ArthasDeathCoil",
       name: "Death Coil",
       descriptionShort: "Deals damage to a target or heal Arthas",
-      descriptionLong: "Deals 164 (+4% / level) damage to target enemy.Can be self-cast to heal for 262 (+4% / level) Health.",
+      descriptionLong: "Deals 164 (+4% / level) damage to target enemy. Can be self-cast to heal for 262 (+4% / level) Health.",
       cost: {
         type: "Mana",
         amount: 50
@@ -53,7 +60,14 @@ const arthas: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_deathcoil.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 5.822222222222222,
+        magicalDamage: 18.22222222222222
+      }
     },
     {
       id: "ArthasHowlingBlast",
@@ -68,7 +82,14 @@ const arthas: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_howlingblast.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.800000000000001
+      }
     },
     {
       id: "ArthasFrozenTempest",
@@ -84,7 +105,14 @@ const arthas: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frosentempest.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 40
+      }
     },
     {
       id: "ArthasArmyOfTheDead",
@@ -99,7 +127,14 @@ const arthas: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_armyofthedead.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 3.56,
+        magicalDamage: 0
+      }
     },
     {
       id: "ArthasSummonSindragosa",
@@ -114,18 +149,14 @@ const arthas: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_summonsindragosa.png",
-      isPassive: false
-    },
-    {
-      id: "ArthasArmyOfTheDeadSacrifice",
-      name: "Sacrifice",
-      descriptionShort: "Sacrifice a Ghoul to heal",
-      descriptionLong: "Sacrifice a Ghoul to restore 267 (+4% / level) Health.",
-      cooldown: 2,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_sacrifice.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15.333333333333334
+      }
     }
   ],
   talents: [
@@ -134,12 +165,19 @@ const arthas: Hero = {
         id: "ArthasMasteryFrostPresenceHowlingBlast",
         name: "Frost Presence",
         descriptionShort: "Quest: Root Heroes to empower Howling Blast",
-        descriptionLong: "Quest: Root enemy Heroes with Howling Blast.Reward: After Rooting 5 Heroes, Howling Blast's cooldown is reduced by 2 seconds.Reward: After Rooting 10 Heroes, Howling Blast's range is increased by 20%.Reward: After Rooting 20 Heroes, Howling Blast also Roots enemies in its path.",
+        descriptionLong: "Quest: Root enemy Heroes with Howling Blast. Reward: After Rooting 5 Heroes, Howling Blast's cooldown is reduced by 2 seconds. Reward: After Rooting 10 Heroes, Howling Blast's range is increased by 20%. Reward: After Rooting 20 Heroes, Howling Blast also Roots enemies in its path.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_howlingblast.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -151,12 +189,19 @@ const arthas: Hero = {
         id: "ArthasMasteryEternalHungerFrostmourneHungers",
         name: "Eternal Hunger",
         descriptionShort: "Quest: Empower Frostmourne Hungers",
-        descriptionLong: "Quest: Use Frostmourne Hungers on an enemy Hero.Reward: Increases the Mana it restores by 4, to a maximum of 40, and its damage by 4.",
+        descriptionLong: "Quest: Use Frostmourne Hungers on an enemy Hero. Reward: Increases the Mana it restores by 4, to a maximum of 40, and its damage by 4.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frostmournehungers_off.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -175,6 +220,13 @@ const arthas: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_block.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -190,6 +242,13 @@ const arthas: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_deathcoil.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -200,12 +259,19 @@ const arthas: Hero = {
         id: "ArthasMasteryFrozenWastesFrozenTempest",
         name: "Frozen Wastes",
         descriptionShort: "Quest: Frozen Tempest Slow lingers",
-        descriptionLong: "Frozen Tempest Mana cost reduced by 2 per second.Quest: Damage enemy Heroes with Frozen Tempest.Reward: After damaging enemy Heroes 150 times with Frozen Tempest, the Movement and Attack Speed Slows of Frozen Tempest last an extra 1.5 seconds against enemy Heroes.",
+        descriptionLong: "Frozen Tempest Mana cost reduced by 2 per second. Quest: Damage enemy Heroes with Frozen Tempest. Reward: After damaging enemy Heroes 150 times with Frozen Tempest, the Movement and Attack Speed Slows of Frozen Tempest last an extra 1.5 seconds against enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frosentempest.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -224,6 +290,13 @@ const arthas: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frosentempest_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -242,6 +315,13 @@ const arthas: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_deathcoil.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -258,6 +338,13 @@ const arthas: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_runetap.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.6666666666666666,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7"
       },
@@ -271,6 +358,13 @@ const arthas: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_icebound_fortitude.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -290,6 +384,13 @@ const arthas: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_armyofthedead.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.56,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -310,6 +411,13 @@ const arthas: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_summonsindragosa.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 15.333333333333334
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -328,6 +436,13 @@ const arthas: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_howlingblast.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -344,6 +459,13 @@ const arthas: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frosentempest.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -361,6 +483,13 @@ const arthas: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frostmournehungers_off.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -380,6 +509,13 @@ const arthas: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_deathcoil.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 13.333333333333334,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -396,6 +532,13 @@ const arthas: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frosentempest.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -413,6 +556,13 @@ const arthas: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frostmournehungers_off.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -432,6 +582,13 @@ const arthas: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_armyofthedead.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -452,6 +609,13 @@ const arthas: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_summonsindragosa.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -471,6 +635,13 @@ const arthas: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frosentempest.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -487,6 +658,13 @@ const arthas: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_temp_war3_btnantimagicshell.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.3333333333333335,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -494,7 +672,10 @@ const arthas: Hero = {
   ],
   analysis: {
     tankiness: 86.17702448210922,
-    damageSustainedPhysical: 20.652173913043477
+    physicalDamage: 47.5,
+    mobility: 24.199,
+    healing: 12.314782405786955,
+    magicalDamage: 35.570083840309934
   }
 };
       

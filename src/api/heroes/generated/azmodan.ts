@@ -33,18 +33,25 @@ const azmodan: Hero = {
       id: "AzmodanDemonLieutenant",
       name: "Demon Lieutenant",
       descriptionShort: "Azmodan summons a Demon Lieutenant to assist Minions, Mercenaries, and Summons",
-      descriptionLong: "Summon a Demon Lieutenant at any allied Mercenary, Minion, or Azmodan Demon. The Lieutenant will cast Demonic Smite every 7 seconds, instantly killing an enemy Minion. Lasts 20 seconds.Usable while Channeling All Shall Burn.",
+      descriptionLong: "Summon a Demon Lieutenant at any allied Mercenary, Minion, or Azmodan Demon. The Lieutenant will cast Demonic Smite every 7 seconds, instantly killing an enemy Minion. Lasts 20 seconds. Usable while Channeling All Shall Burn.",
       cooldown: 60,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_generalofhell.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "AzmodanGlobeOfAnnihilation",
       name: "Globe of Annihilation",
       descriptionShort: "Launch a long range orb of destruction dealing area damage",
-      descriptionLong: "Shoot a globe of destruction, dealing 184 (+2.5% / level) damage on impact.Quest: Hitting a Hero or killing a Minion within 1.5 seconds of being hit by Globe of Annihilation grants 2 Annihilation.Reward: Each stack of Annihilation increases the damage of Globe of Annihilation by 1, up to 400.",
+      descriptionLong: "Shoot a globe of destruction, dealing 184 (+2.5% / level) damage on impact. Quest: Hitting a Hero or killing a Minion within 1.5 seconds of being hit by Globe of Annihilation grants 2 Annihilation. Reward: Each stack of Annihilation increases the damage of Globe of Annihilation by 1, up to 400.",
       cost: {
         type: "Mana",
         amount: 70
@@ -53,13 +60,20 @@ const azmodan: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_globeofannihilation.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 18.400000000000002
+      }
     },
     {
       id: "AzmodanSummonDemonWarrior",
       name: "Summon Demon Warrior",
       descriptionShort: "Summon a Demon Warrior",
-      descriptionLong: "Spawn a Demon Warrior that marches forward. Warriors deal 35 (+4% / level) damage per Attack and 18 (+4% / level) damage to nearby enemies every second. Lasts for 10 seconds.Usable while Channeling All Shall Burn.",
+      descriptionLong: "Spawn a Demon Warrior that marches forward. Warriors deal 35 (+4% / level) damage per Attack and 18 (+4% / level) damage to nearby enemies every second. Lasts for 10 seconds. Usable while Channeling All Shall Burn.",
       cost: {
         type: "Mana",
         amount: 25
@@ -68,13 +82,20 @@ const azmodan: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_summondemonwarrior.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 3.5
+      }
     },
     {
       id: "AzmodanAllShallBurn",
       name: "All Shall Burn",
       descriptionShort: "Channel a beam of death on an enemy",
-      descriptionLong: "Channel a beam of death on an enemy, dealing 128 (+4% / level) damage per second for 2.5 seconds. If the Channel lasts its full duration, deal an extra 340 (+4% / level) damage to the target.Azmodan's Movement Speed is reduced by 30% while Channeling.",
+      descriptionLong: "Channel a beam of death on an enemy, dealing 128 (+4% / level) damage per second for 2.5 seconds. If the Channel lasts its full duration, deal an extra 340 (+4% / level) damage to the target. Azmodan's Movement Speed is reduced by 30% while Channeling.",
       cost: {
         type: "Mana",
         amount: 25
@@ -83,13 +104,20 @@ const azmodan: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_allshallburn.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 78
+      }
     },
     {
       id: "AzmodanDemonicInvasion",
       name: "Demonic Invasion",
       descriptionShort: "Damage area and create an army of Grunts",
-      descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 42 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 98 (+4% / level) damage to nearby enemies.Usable while Channeling All Shall Burn.",
+      descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 42 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 98 (+4% / level) damage to nearby enemies. Usable while Channeling All Shall Burn.",
       cost: {
         type: "Mana",
         amount: 60
@@ -98,13 +126,20 @@ const azmodan: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_demonicinvasion.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 13.666666666666666
+      }
     },
     {
       id: "AzmodanTideOfSin",
       name: "Tide of Sin",
       descriptionShort: "Empower Globe of Annihilation",
-      descriptionLong: "Activate to make the next Globe of Annihilation cost no Mana and deal 50% more damage.Usable while Channeling All Shall Burn.",
+      descriptionLong: "Activate to make the next Globe of Annihilation cost no Mana and deal 50% more damage. Usable while Channeling All Shall Burn.",
       cost: {
         type: "Mana",
         amount: 100
@@ -113,18 +148,14 @@ const azmodan: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_blackpool.png",
-      isPassive: false
-    },
-    {
-      id: "AzmodanTideOfSinPassive",
-      name: "Tide of Sin",
-      descriptionShort: "Empower Globe of Annihilation",
-      descriptionLong: "Your next Globe of Annihilation costs no Mana and deals 50% more damage.",
-      cooldown: null,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_blackpool.png",
-      isPassive: true
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -133,12 +164,19 @@ const azmodan: Hero = {
         id: "AzmodanGreed",
         name: "Greed",
         descriptionShort: "Increase Globe damage to non-HeroesQuest: Increase All Shall Burn range",
-        descriptionLong: "Globe of Annihilation deals 20% more damage to non-Heroic targets.Quest: After gaining 200 Annihilation, increase the range of All Shall Burn by 25% and Demon Warriors gain 20% Attack Speed and Movement Speed.",
+        descriptionLong: "Globe of Annihilation deals 20% more damage to non-Heroic targets. Quest: After gaining 200 Annihilation, increase the range of All Shall Burn by 25% and Demon Warriors gain 20% Attack Speed and Movement Speed.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_globeofannihilation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -150,12 +188,19 @@ const azmodan: Hero = {
         id: "AzmodanGluttony",
         name: "Gluttony",
         descriptionShort: "Quest: Increase Annihilation from hitting Heroes",
-        descriptionLong: "Increase the number of stacks of Annihilation gained by hitting Heroes with Globe of Annihilation from 2 to 3.Quest: After gaining 200 Annihilation, each enemy hit by Globe of Annihilation reduces its cooldown by 0.25 seconds, doubled against Heroes.",
+        descriptionLong: "Increase the number of stacks of Annihilation gained by hitting Heroes with Globe of Annihilation from 2 to 3. Quest: After gaining 200 Annihilation, each enemy hit by Globe of Annihilation reduces its cooldown by 0.25 seconds, doubled against Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_globeofannihilation_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -173,6 +218,13 @@ const azmodan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_globeofannihilation_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -192,6 +244,13 @@ const azmodan: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_summondemonwarrior.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -208,6 +267,13 @@ const azmodan: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_summondemonwarrior_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -225,6 +291,13 @@ const azmodan: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -244,6 +317,13 @@ const azmodan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_globeofannihilation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -260,6 +340,13 @@ const azmodan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_globeofannihilation_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -276,6 +363,13 @@ const azmodan: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_allshallburn.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -288,7 +382,7 @@ const azmodan: Hero = {
         id: "AzmodanHeroicAbilityDemonicInvasion",
         name: "Demonic Invasion",
         descriptionShort: "Damage area and create an army of Grunts",
-        descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 42 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 98 (+4% / level) damage to nearby enemies.Usable while Channeling All Shall Burn.",
+        descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 42 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 98 (+4% / level) damage to nearby enemies. Usable while Channeling All Shall Burn.",
         cost: {
           type: "Mana",
           amount: 60
@@ -298,6 +392,13 @@ const azmodan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_demonicinvasion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 13.666666666666666
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -308,7 +409,7 @@ const azmodan: Hero = {
         id: "AzmodanTideOfSin",
         name: "Tide of Sin",
         descriptionShort: "Empower Globe of Annihilation",
-        descriptionLong: "Activate to make the next Globe of Annihilation cost no Mana and deal 50% more damage.Usable while Channeling All Shall Burn.",
+        descriptionLong: "Activate to make the next Globe of Annihilation cost no Mana and deal 50% more damage. Usable while Channeling All Shall Burn.",
         cost: {
           type: "Mana",
           amount: 100
@@ -318,6 +419,13 @@ const azmodan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_blackpool.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -336,6 +444,13 @@ const azmodan: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_summondemonwarrior.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -352,6 +467,13 @@ const azmodan: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_allshallburn.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.0666666666666667,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -368,6 +490,13 @@ const azmodan: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_generalofhell.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -386,6 +515,13 @@ const azmodan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_globeofannihilation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -402,6 +538,13 @@ const azmodan: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_allshallburn.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -418,6 +561,13 @@ const azmodan: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_trample.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 18.333333333333332
+        },
         order: 3,
         tier: "level16"
       }
@@ -433,6 +583,13 @@ const azmodan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_demonicinvasion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -452,6 +609,13 @@ const azmodan: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_blackpool.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -472,6 +636,13 @@ const azmodan: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_globeofannihilation.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -488,6 +659,13 @@ const azmodan: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_allshallburn.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -498,7 +676,10 @@ const azmodan: Hero = {
   ],
   analysis: {
     tankiness: 74.25084745762712,
-    damageSustainedPhysical: 50.81521739130434
+    physicalDamage: 42.5,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 50.27127031689821
   }
 };
       

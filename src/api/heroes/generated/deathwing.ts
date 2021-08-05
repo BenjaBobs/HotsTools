@@ -33,12 +33,19 @@ const deathwing: Hero = {
       id: "DeathwingAspectOfDeath",
       name: "Aspect of Death",
       descriptionShort: "Deathwing is especially powerful, but ignores friendly effects",
-      descriptionLong: "Deathwing is fitted with 4 Armor Plates which grant 10 Armor each. Every 25% Health lost causes Deathwing to lose a plate. Plates are only restored when Dragonflight is used, based on the amount of Health Deathwing has when landing.Deathwing is also a mighty Dragon Aspect who is permanently Unstoppable and deals 100% additional Spell Damage to Heroes, but views his allies with contempt and ignores any of their friendly effects.",
+      descriptionLong: "Deathwing is fitted with 4 Armor Plates which grant 10 Armor each. Every 25% Health lost causes Deathwing to lose a plate. Plates are only restored when Dragonflight is used, based on the amount of Health Deathwing has when landing. Deathwing is also a mighty Dragon Aspect who is permanently Unstoppable and deals 100% additional Spell Damage to Heroes, but views his allies with contempt and ignores any of their friendly effects.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_aspect_of_death.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DeathwingDragonflight",
@@ -49,7 +56,14 @@ const deathwing: Hero = {
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_mount.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DeathwingMoltenFlame",
@@ -64,13 +78,20 @@ const deathwing: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_molten_flame.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 7
+      }
     },
     {
       id: "DeathwingIncinerate",
       name: "Incinerate",
       descriptionShort: "Damage enemies near Deathwing",
-      descriptionLong: "After 0.75 seconds, Deathwing flaps his wings, dealing 65 (+4% / level) damage to nearby enemies.World Breaker: Lava BurstCreate a lava pool that damages and Slows",
+      descriptionLong: "After 0.75 seconds, Deathwing flaps his wings, dealing 65 (+4% / level) damage to nearby enemies. World Breaker: Lava BurstCreate a lava pool that damages and Slows",
       cost: {
         type: "Energy",
         amount: 20
@@ -79,13 +100,20 @@ const deathwing: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_incinerate.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16.25
+      }
     },
     {
       id: "DeathwingOnslaught",
       name: "Onslaught",
       descriptionShort: "Lunge in a direction",
-      descriptionLong: "After 0.5 seconds, Deathwing lunges in a direction dealing 38 (+4% / level) damage to enemies and Slowing them by 35% for 2 seconds. Deathwing bites enemies at the end of the lunge, dealing an additional 72 (+4% / level) damage.World Breaker: Earth ShatterDamage and Stun enemies in two lines",
+      descriptionLong: "After 0.5 seconds, Deathwing lunges in a direction dealing 38 (+4% / level) damage to enemies and Slowing them by 35% for 2 seconds. Deathwing bites enemies at the end of the lunge, dealing an additional 72 (+4% / level) damage. World Breaker: Earth ShatterDamage and Stun enemies in two lines",
       cost: {
         type: "Energy",
         amount: 20
@@ -94,7 +122,14 @@ const deathwing: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_onslaught.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 22
+      }
     },
     {
       id: "DeathwingCataclysm",
@@ -105,76 +140,14 @@ const deathwing: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_cataclysm.png",
-      isPassive: false
-    },
-    {
-      id: "DeathwingDestroyerForm",
-      name: "Destroyer",
-      descriptionShort: "Land on the ground in Destroyer form",
-      descriptionLong: "After 1.75 seconds, Deathwing slams down to the ground, dealing 50 (+4% / level) damage to enemies in the area and landing in Destroyer form. Deathwing can begin to cast Abilities 3 seconds after landing.",
-      cooldown: 8,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_destroyer.png",
-      isPassive: false
-    },
-    {
-      id: "DeathwingWorldbreakerForm",
-      name: "World Breaker",
-      descriptionShort: "Land on the ground in World Breaker form",
-      descriptionLong: "After 1.75 seconds, Deathwing slams down to the ground, dealing 50 (+4% / level) damage to enemies in the area and landing in World Breaker form. Deathwing can begin to cast Abilities 3 seconds after landing.",
-      cooldown: 8,
-      category: "basic",
-      type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_world_breaker.png",
-      isPassive: false
-    },
-    {
-      id: "DeathwingLavaBurst",
-      name: "Lava Burst",
-      descriptionShort: "Create a lava pool that damages and Slows",
-      descriptionLong: "After a 1 second delay, deal 30 (+4% / level) damage to all enemies in an area and create a pool of magma that deals 24 (+4% / level) damage per second and Slows enemies by 35%. Lasts 6 seconds.Destroyer: IncinerateDamage enemies near Deathwing",
-      cost: {
-        type: "Energy",
-        amount: 15
-      },
-      cooldown: 6,
-      category: "basic",
-      type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_lava_burst.png",
-      isPassive: false
-    },
-    {
-      id: "DeathwingEarthShatter",
-      name: "Earth Shatter",
-      descriptionShort: "Damage and Stun enemies in two lines",
-      descriptionLong: "Create a fissure of earth that deals 90 (+4% / level) damage to enemies hit and Stuns them for 0.75 seconds.Destroyer: OnslaughtLunge in a direction",
-      cost: {
-        type: "Energy",
-        amount: 25
-      },
-      cooldown: 12,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_earth_shatter.png",
-      isPassive: false
-    },
-    {
-      id: "DeathwingSkyfall",
-      name: "Skyfall",
-      descriptionShort: "Deathwing can drop meteors while in Dragonflight",
-      descriptionLong: "After 0.8 seconds, a meteor falls from the sky, dealing 58 (+4% / level) damage to enemies in the area.If a Hero is hit, Deathwing heals for 3% of his maximum Health.",
-      cooldown: 10,
-      charges: {
-        chargesMax: 3,
-        chargesInitial: 3,
-        chargeCost: 1,
-        recastCooldown: 0.5
-      },
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_skyfall.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 8.4
+      }
     }
   ],
   talents: [
@@ -183,12 +156,19 @@ const deathwing: Hero = {
         id: "DeathwingDragonSoul",
         name: "Dragon Soul",
         descriptionShort: "Incinerate, Lava Burst explosion heal Deathwing",
-        descriptionLong: "Destroyer: Incinerate heals Deathwing for 75% of the damage dealt to enemy Heroes.World Breaker: Lava Burst's explosion damage heals Deathwing for 150% of the damage dealt to enemy Heroes.",
+        descriptionLong: "Destroyer: Incinerate heals Deathwing for 75% of the damage dealt to enemy Heroes. World Breaker: Lava Burst's explosion damage heals Deathwing for 150% of the damage dealt to enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_heat_wave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 50,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -206,6 +186,13 @@ const deathwing: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_aspect_of_death.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.08,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -223,6 +210,13 @@ const deathwing: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_aspect_of_death_alt1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -242,6 +236,13 @@ const deathwing: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_molten_flame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -253,12 +254,19 @@ const deathwing: Hero = {
         id: "DeathwingHeatWave",
         name: "Heat Wave",
         descriptionShort: "Increase Incinerate and Lava Burst damage",
-        descriptionLong: "Destroyer: After hitting an enemy Hero with Incinerate, Deathwing deals 12 (+4% / level) damage per second to all nearby enemies for the next 8 seconds. Stacks up to 4 times.World Breaker: Increase the explosion damage of Lava Burst by 125%.",
+        descriptionLong: "Destroyer: After hitting an enemy Hero with Incinerate, Deathwing deals 12 (+4% / level) damage per second to all nearby enemies for the next 8 seconds. Stacks up to 4 times. World Breaker: Increase the explosion damage of Lava Burst by 125%.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_heat_wave.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0.8
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -276,6 +284,13 @@ const deathwing: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_aspect_of_death.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -289,12 +304,19 @@ const deathwing: Hero = {
         id: "DeathwingFirestorm",
         name: "Firestorm",
         descriptionShort: "Meteors reduce Dragonflight's cooldown",
-        descriptionLong: "Reduce the cooldown of Deathwing's landing Abilities by 2 seconds.  When Deathwing lands, he drops 7 meteors near the landing area, dealing 70 (+4% / level) damage to enemies hit. Heroes hit by the meteors reduce Dragonflight's cooldown by 25 seconds.Meteors prioritize landing on Heroes, otherwise they fall randomly in the area.",
+        descriptionLong: "Reduce the cooldown of Deathwing's landing Abilities by 2 seconds.  When Deathwing lands, he drops 7 meteors near the landing area, dealing 70 (+4% / level) damage to enemies hit. Heroes hit by the meteors reduce Dragonflight's cooldown by 25 seconds. Meteors prioritize landing on Heroes, otherwise they fall randomly in the area.",
         cooldown: null,
         category: "Talent",
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_firestorm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 4.666666666666667
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -313,6 +335,13 @@ const deathwing: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_deathdrop.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -325,7 +354,7 @@ const deathwing: Hero = {
         id: "DeathwingSkyfall",
         name: "Skyfall",
         descriptionShort: "Deathwing can drop meteors to heal himself",
-        descriptionLong: "After using Dragonflight, Deathwing can drop meteors anywhere within vision dealing 58 (+4% / level) damage to enemies in the area. Has 3 charges.If a Hero is hit, Deathwing heals for 3% of his maximum Health.",
+        descriptionLong: "After using Dragonflight, Deathwing can drop meteors anywhere within vision dealing 58 (+4% / level) damage to enemies in the area. Has 3 charges. If a Hero is hit, Deathwing heals for 3% of his maximum Health.",
         cooldown: 10,
         charges: {
           chargesMax: 3,
@@ -337,6 +366,13 @@ const deathwing: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_skyfall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.6000000000000001,
+          magicalDamage: 5.800000000000001
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -355,6 +391,13 @@ const deathwing: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_cataclysm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -371,6 +414,13 @@ const deathwing: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_bellowing_roar.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 1.6666666666666667
+        },
         order: 2,
         tier: "level10"
       }
@@ -386,6 +436,13 @@ const deathwing: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_molten_flame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -397,12 +454,19 @@ const deathwing: Hero = {
         id: "DeathwingRuination",
         name: "Ruination",
         descriptionShort: "Onslaught bite Slows, Earth Shatter cost reduced",
-        descriptionLong: "Destroyer: The bite from Onslaught now Slows by 60% for 1.5 seconds.World Breaker: Reduce Earth Shatter's cooldown by 6 seconds and its Energy cost by 10.",
+        descriptionLong: "Destroyer: The bite from Onslaught now Slows by 60% for 1.5 seconds. World Breaker: Reduce Earth Shatter's cooldown by 6 seconds and its Energy cost by 10.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_ruination.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -420,6 +484,13 @@ const deathwing: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_fire_and_fury.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -439,6 +510,13 @@ const deathwing: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_molten_flame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 26.666666666666664
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -456,6 +534,13 @@ const deathwing: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_deathdrop.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -468,12 +553,19 @@ const deathwing: Hero = {
         id: "DeathwingElementiumPlating",
         name: "Elementium Plating",
         descriptionShort: "Activate to gain a Shield, restore Health",
-        descriptionLong: "Activate to gain a Shield equal to 30% of Deathwing's missing Health for 8 seconds. While the Shield holds, Deathwing regenerates 2% of his maximum Health per second. When the Shield expires or is destroyed, Deathwing regains Armor Plates appropriate for his new Health.The Shield and effect end immediately if Deathwing uses Dragonflight.",
+        descriptionLong: "Activate to gain a Shield equal to 30% of Deathwing's missing Health for 8 seconds. While the Shield holds, Deathwing regenerates 2% of his maximum Health per second. When the Shield expires or is destroyed, Deathwing regains Armor Plates appropriate for his new Health. The Shield and effect end immediately if Deathwing uses Dragonflight.",
         cooldown: 60,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_elemental_plating.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -489,6 +581,13 @@ const deathwing: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_cataclysm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -499,12 +598,19 @@ const deathwing: Hero = {
         id: "DeathwingArrivalOfAGod",
         name: "Arrival of a God",
         descriptionShort: "Landing damage increased, gain all level 7 talents",
-        descriptionLong: "Destroyer or World Breaker's landing damage is increased by 400%.Deathwing also gains the benefits of all of his level 7 talents.",
+        descriptionLong: "Destroyer or World Breaker's landing damage is increased by 400%. Deathwing also gains the benefits of all of his level 7 talents.",
         cooldown: null,
         category: "Talent",
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_deathdrop.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -517,12 +623,19 @@ const deathwing: Hero = {
         id: "DeathwingDestroyersRampage",
         name: "Destroyer's Rampage",
         descriptionShort: "Landing in Destroyer form empowers Deathwing",
-        descriptionLong: "For the next 6 seconds after landing in Destroyer form, Deathwing's damage is increased by 40% and his Basic Ability cooldowns recharge 50% faster.Damaging Heroes refreshes this effect and switching to World Breaker form removes the effect.",
+        descriptionLong: "For the next 6 seconds after landing in Destroyer form, Deathwing's damage is increased by 40% and his Basic Ability cooldowns recharge 50% faster. Damaging Heroes refreshes this effect and switching to World Breaker form removes the effect.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deathwing_destroyer.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -536,7 +649,10 @@ const deathwing: Hero = {
   ],
   analysis: {
     tankiness: 82.86252354048965,
-    damageSustainedPhysical: 28.07971014492753
+    physicalDamage: 51.66666666666667,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 23.748637973304277
   }
 };
       

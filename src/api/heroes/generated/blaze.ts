@@ -33,12 +33,19 @@ const blaze: Hero = {
       id: "FirebatIgnite",
       name: "Pyromania",
       descriptionShort: "Gain Armor and damage nearby enemies",
-      descriptionLong: "Gain 40 Armor and deal 40 (+4% / level) damage to nearby enemies every 0.5 seconds for 4 seconds.Each Hero hit by Flame Stream reduces Pyromania's cooldown by 5 seconds.",
+      descriptionLong: "Gain 40 Armor and deal 40 (+4% / level) damage to nearby enemies every 0.5 seconds for 4 seconds. Each Hero hit by Flame Stream reduces Pyromania's cooldown by 5 seconds.",
       cooldown: 90,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_pyromania.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 2.6666666666666665
+      }
     },
     {
       id: "FirebatFlameStream",
@@ -53,13 +60,20 @@ const blaze: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_flame.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 20.75
+      }
     },
     {
       id: "FirebatOilSpill",
       name: "Oil Spill",
       descriptionShort: "Splash oil that Slows and can be Ignited to damage enemies and heal Blaze",
-      descriptionLong: "Vector TargetingDispense a slick of oil that lasts for 5 seconds and Slows enemies that come in contact with it by 50%.Oil Spills are Ignited for 2.5 seconds when hit by Flame Stream. Ignited Oil Spills no longer Slow enemies, but instead deal 16 (+4% / level) damage to them every 0.3 seconds. Additionally, Blaze is healed for 49 (+4% / level) Health every 0.3 seconds while standing in Ignited Oil Spills.Stores up to 2 charges.",
+      descriptionLong: "Vector TargetingDispense a slick of oil that lasts for 5 seconds and Slows enemies that come in contact with it by 50%. Oil Spills are Ignited for 2.5 seconds when hit by Flame Stream. Ignited Oil Spills no longer Slow enemies, but instead deal 16 (+4% / level) damage to them every 0.3 seconds. Additionally, Blaze is healed for 49 (+4% / level) Health every 0.3 seconds while standing in Ignited Oil Spills. Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 50
@@ -74,7 +88,14 @@ const blaze: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0.8166666666666667,
+        magicalDamage: 1.3333333333333333
+      }
     },
     {
       id: "FirebatJetPropulsion",
@@ -89,7 +110,14 @@ const blaze: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_jet.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5.2
+      }
     },
     {
       id: "FirebatBunkerDrop",
@@ -104,13 +132,20 @@ const blaze: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_bunker.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.333333333333334
+      }
     },
     {
       id: "FirebatCombustion",
       name: "Combustion",
       descriptionShort: "Channel to damage and Slow enemies",
-      descriptionLong: "Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 55 (+4% / level) damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds.Blaze's Movement Speed is reduced by 40% while Channeling.",
+      descriptionLong: "Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 55 (+4% / level) damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds. Blaze's Movement Speed is reduced by 40% while Channeling.",
       cost: {
         type: "Mana",
         amount: 70
@@ -119,7 +154,14 @@ const blaze: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_combustion.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 3.6666666666666665
+      }
     }
   ],
   talents: [
@@ -128,12 +170,19 @@ const blaze: Hero = {
         id: "FirebatAdrenalineStimpack",
         name: "Adrenaline Stimpack",
         descriptionShort: "Activate to gain Attack Speed, Move Speed",
-        descriptionLong: "Passive: While over 80% Health, gain 25% bonus Attack Speed and 10% bonus Movement Speed.Activate to gain 100% Attack Speed and 25% Movement Speed for 5 seconds.",
+        descriptionLong: "Passive: While over 80% Health, gain 25% bonus Attack Speed and 10% bonus Movement Speed. Activate to gain 100% Attack Speed and 25% Movement Speed for 5 seconds.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_stim_2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1"
       },
@@ -141,12 +190,19 @@ const blaze: Hero = {
         id: "FirebatEnduranceStimpack",
         name: "Endurance Stimpack",
         descriptionShort: "Activate to gain a Shield",
-        descriptionLong: "Activate to gain a Shield that absorbs 590 (+4% / level) damage over 5 seconds.When taking damage while below 30% maximum Health, Endurance Stimpack will automatically be cast if it is not on cooldown.",
+        descriptionLong: "Activate to gain a Shield that absorbs 590 (+4% / level) damage over 5 seconds. When taking damage while below 30% maximum Health, Endurance Stimpack will automatically be cast if it is not on cooldown.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_stim_1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1"
       },
@@ -160,6 +216,13 @@ const blaze: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_stim_3.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       },
@@ -167,12 +230,19 @@ const blaze: Hero = {
         id: "FirebatNewHabits",
         name: "New Habits",
         descriptionShort: "Quest: Pyromania grants Unstoppable",
-        descriptionLong: "Collecting Regeneration Globes reduces the cooldown of Pyromania by 8 seconds.Quest: Collect 15 Regeneration Globes.Reward: Pyromania grants Unstoppable for 2 seconds.",
+        descriptionLong: "Collecting Regeneration Globes reduces the cooldown of Pyromania by 8 seconds. Quest: Collect 15 Regeneration Globes. Reward: Pyromania grants Unstoppable for 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_new_habits.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level1",
         linkedAbilityIds: [
@@ -198,6 +268,13 @@ const blaze: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -214,6 +291,13 @@ const blaze: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_pyromania.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -230,6 +314,13 @@ const blaze: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_slow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -245,6 +336,13 @@ const blaze: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_flame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 9.266666666666666
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -255,7 +353,7 @@ const blaze: Hero = {
         id: "FirebatOilSpillGrillandKill",
         name: "Grill and Kill",
         descriptionShort: "Quest: Increase Ignited Oil Spill damage, duration",
-        descriptionLong: "Quest: Damage enemy Heroes with Ignited Oil Spills 60 times.Reward: Increase Oil Spill's Ignite duration by 2 seconds, and damage by 35%.",
+        descriptionLong: "Quest: Damage enemy Heroes with Ignited Oil Spills 60 times. Reward: Increase Oil Spill's Ignite duration by 2 seconds, and damage by 35%.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -267,6 +365,13 @@ const blaze: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -290,6 +395,13 @@ const blaze: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -312,6 +424,13 @@ const blaze: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_bunker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 11.333333333333334
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -322,7 +441,7 @@ const blaze: Hero = {
         id: "FirebatHeroicAbilityCombustion",
         name: "Combustion",
         descriptionShort: "Channel to damage and Slow enemies",
-        descriptionLong: "Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 55 (+4% / level) damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds.Blaze's Movement Speed is reduced by 40% while Channeling.",
+        descriptionLong: "Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 55 (+4% / level) damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds. Blaze's Movement Speed is reduced by 40% while Channeling.",
         cost: {
           type: "Mana",
           amount: 70
@@ -332,6 +451,13 @@ const blaze: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_combustion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3.6666666666666665
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -350,6 +476,13 @@ const blaze: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_flame.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -372,6 +505,13 @@ const blaze: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -388,6 +528,13 @@ const blaze: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_jet.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -406,6 +553,13 @@ const blaze: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_jet.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -422,6 +576,13 @@ const blaze: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_pyromania.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 10,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -438,6 +599,13 @@ const blaze: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_vanadium_plating.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -453,6 +621,13 @@ const blaze: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_bunker.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -472,6 +647,13 @@ const blaze: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_combustion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -491,6 +673,13 @@ const blaze: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_slow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 1.2
+        },
         order: 3,
         tier: "level20"
       }
@@ -498,7 +687,10 @@ const blaze: Hero = {
   ],
   analysis: {
     tankiness: 87.38229755178907,
-    damageSustainedPhysical: 26.902173913043477
+    physicalDamage: 27.500000000000004,
+    mobility: 24.199,
+    healing: 1.0719285964298215,
+    magicalDamage: 19.897507491146822
   }
 };
       

@@ -45,7 +45,14 @@ const lunara: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_stiflingblossom.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 2.4
+      }
     },
     {
       id: "DryadDryadsSwiftness",
@@ -56,7 +63,14 @@ const lunara: Hero = {
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_mount.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DryadNoxiousBlossom",
@@ -71,7 +85,14 @@ const lunara: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_pollencloud.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 20
+      }
     },
     {
       id: "DryadCripplingSpores",
@@ -86,7 +107,14 @@ const lunara: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_fullbloom.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DryadWisp",
@@ -97,13 +125,20 @@ const lunara: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_wisp.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DryadThornwoodVine",
       name: "Thornwood Vine",
       descriptionShort: "Damages in a line",
-      descriptionLong: "Send forth vines that deal 176 (+4% / level) damage to all enemies in a line.Stores up to 3 charges.",
+      descriptionLong: "Send forth vines that deal 176 (+4% / level) damage to all enemies in a line. Stores up to 3 charges.",
       cost: {
         type: "Mana",
         amount: 35
@@ -118,13 +153,20 @@ const lunara: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_wildspear.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.733333333333333
+      }
     },
     {
       id: "DryadLeapingStrike",
       name: "Leaping Strike",
       descriptionShort: "Leap over enemies, damaging and Slowing",
-      descriptionLong: "Leap over an enemy, Slowing them by 80% for 0.35 seconds and dealing 271 (+4% / level) damage.Stores up to 2 charges.",
+      descriptionLong: "Leap over an enemy, Slowing them by 80% for 0.35 seconds and dealing 271 (+4% / level) damage. Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 50
@@ -139,29 +181,14 @@ const lunara: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_boundlessstride.png",
-      isPassive: false
-    },
-    {
-      id: "DryadWispRedirect",
-      name: "Relocate Wisp",
-      descriptionShort: "Move the Wisp to a new location",
-      descriptionLong: "Moves the Wisp to a new location.",
-      cooldown: 1,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_wispredirect.png",
-      isPassive: false
-    },
-    {
-      id: "DryadGallopingGait",
-      name: "Dryad's Swiftness",
-      descriptionShort: "Lunara moves about 20% faster by leaping short distances.",
-      descriptionLong: "Lunara moves 20% faster by leaping short distances.",
-      cooldown: 30,
-      category: "mount",
-      type: "Z",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_mount.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 18.066666666666666
+      }
     }
   ],
   talents: [
@@ -176,6 +203,13 @@ const lunara: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_wisp.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -193,6 +227,13 @@ const lunara: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_stiflingblossom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -209,6 +250,13 @@ const lunara: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_boundlessstride_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -228,6 +276,13 @@ const lunara: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_pollencloud.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -244,6 +299,13 @@ const lunara: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_stiflingblossom_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.3733333333333333,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -260,6 +322,13 @@ const lunara: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_stiflingblossom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -278,6 +347,13 @@ const lunara: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_pollencloud.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -294,6 +370,13 @@ const lunara: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_pollencloud_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -310,6 +393,13 @@ const lunara: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_fullbloom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -322,7 +412,7 @@ const lunara: Hero = {
         id: "DryadHeroicAbilityThornwoodVine",
         name: "Thornwood Vine",
         descriptionShort: "Damages in a line",
-        descriptionLong: "Send forth vines that deal 176 (+4% / level) damage to all enemies in a line.Stores up to 3 charges.",
+        descriptionLong: "Send forth vines that deal 176 (+4% / level) damage to all enemies in a line. Stores up to 3 charges.",
         cost: {
           type: "Mana",
           amount: 35
@@ -338,6 +428,13 @@ const lunara: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_wildspear.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 11.733333333333333
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -348,7 +445,7 @@ const lunara: Hero = {
         id: "DryadHeroicAbilityLeapingStrike",
         name: "Leaping Strike",
         descriptionShort: "Leap over enemies, damaging and Slowing",
-        descriptionLong: "Leap over an enemy, Slowing them by 80% for 0.35 seconds and dealing 271 (+4% / level) damage.Stores up to 2 charges.",
+        descriptionLong: "Leap over an enemy, Slowing them by 80% for 0.35 seconds and dealing 271 (+4% / level) damage. Stores up to 2 charges.",
         cost: {
           type: "Mana",
           amount: 50
@@ -364,6 +461,13 @@ const lunara: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_boundlessstride.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 18.066666666666666
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -382,6 +486,13 @@ const lunara: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_fullbloom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -398,6 +509,13 @@ const lunara: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_fullbloom_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -408,12 +526,19 @@ const lunara: Hero = {
         id: "DryadGreaterSpellShield",
         name: "Greater Spell Shield",
         descriptionShort: "Periodically gain temporary Spell Armor",
-        descriptionLong: "Every 30 seconds, gain 75 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 75%.Can be toggled to allow or prevent this talent from triggering automatically.",
+        descriptionLong: "Every 30 seconds, gain 75 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 75%. Can be toggled to allow or prevent this talent from triggering automatically.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_greaterspellshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       },
@@ -427,6 +552,13 @@ const lunara: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_abolishmagic.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level13"
       }
@@ -442,6 +574,13 @@ const lunara: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_pollencloud.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -458,6 +597,13 @@ const lunara: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_fullbloom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -474,6 +620,13 @@ const lunara: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_fullbloom_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -490,6 +643,13 @@ const lunara: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_stiflingblossom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level16",
         linkedAbilityIds: [
@@ -514,6 +674,13 @@ const lunara: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_wildspear.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -539,6 +706,13 @@ const lunara: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_boundlessstride.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -558,6 +732,13 @@ const lunara: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_stiflingblossom.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -575,6 +756,13 @@ const lunara: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_boundlessstride_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -585,7 +773,10 @@ const lunara: Hero = {
   ],
   analysis: {
     tankiness: 43.08851224105461,
-    damageSustainedPhysical: 38.586956521739125
+    physicalDamage: 50,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 23.106782892944704
   }
 };
       

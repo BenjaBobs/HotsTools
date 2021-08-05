@@ -33,12 +33,19 @@ const hogger: Hero = {
       id: "HoggerLootHoard",
       name: "Loot Hoard",
       descriptionShort: "Create terrain and restore Health",
-      descriptionLong: "Toss a pile of junk onto the battlefield, dealing 102 (+4% / level) damage in an area, knocking enemies away, and acting as terrain for up to 5 seconds.When the Loot Hoard expires or is destroyed, a chunk of Meat falls out that can be picked up to restore 3% of maximum Health every second for 4 seconds.Reactivate to destroy Loot Hoard.",
+      descriptionLong: "Toss a pile of junk onto the battlefield, dealing 102 (+4% / level) damage in an area, knocking enemies away, and acting as terrain for up to 5 seconds. When the Loot Hoard expires or is destroyed, a chunk of Meat falls out that can be picked up to restore 3% of maximum Health every second for 4 seconds. Reactivate to destroy Loot Hoard.",
       cooldown: 20,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_trait.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.8
+      }
     },
     {
       id: "HoggerStaggeringBlow",
@@ -49,7 +56,14 @@ const hogger: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_q.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 24.166666666666664
+      }
     },
     {
       id: "HoggerEzThroDynamite",
@@ -60,7 +74,14 @@ const hogger: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_w.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "HoggerHoggWild",
@@ -71,18 +92,32 @@ const hogger: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_e.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 2.2857142857142856
+      }
     },
     {
       id: "HoggerHoardapult",
       name: "Hoardapult",
       descriptionShort: "Launch Loot Hoard, Hogger",
-      descriptionLong: "Launch an empowered Loot Hoard with Hogger attached, dealing 100 (+4% / level) damage and Slowing enemies by 50% for 2 seconds.Hoardapult's Loot Hoard lasts for up to 20 seconds, decaying rapidly while not nearby. Every 10 seconds Hogger can take a chunk of Meat from the Loot Hoard.",
+      descriptionLong: "Launch an empowered Loot Hoard with Hogger attached, dealing 100 (+4% / level) damage and Slowing enemies by 50% for 2 seconds. Hoardapult's Loot Hoard lasts for up to 20 seconds, decaying rapidly while not nearby. Every 10 seconds Hogger can take a chunk of Meat from the Loot Hoard.",
       cooldown: 60,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_r1.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.666666666666667
+      }
     },
     {
       id: "HoggerShockwave",
@@ -93,29 +128,14 @@ const hogger: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_r2.png",
-      isPassive: false
-    },
-    {
-      id: "HoggerCancelHoardapult",
-      name: "Destroy Hoardapult",
-      descriptionShort: "Destroy Hoardapult's Loot Hoard",
-      descriptionLong: "Destroy Hoardapult's Loot Hoard.",
-      cooldown: null,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/hud_btn_bg_ability_cancel.png",
-      isPassive: false
-    },
-    {
-      id: "HoggerCancelLootHoard",
-      name: "Destroy Loot Hoard",
-      descriptionShort: "Destroy Loot Hoard",
-      descriptionLong: "Destroy Loot Hoard.",
-      cooldown: null,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/hud_btn_bg_ability_cancel.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -124,12 +144,19 @@ const hogger: Hero = {
         id: "HoggerJourneymanCooking",
         name: "Journeyman Cooking",
         descriptionShort: "Quest: Ez-Thro Dynamite heals, increases Health",
-        descriptionLong: "Each Hero hit by Ez-Thro Dynamite heals you for 8% of maximum Health.Quest: Hitting Heroes with Ez-Thro Dynamite permanently increases your maximum Health by 10, to a maximum of 750 bonus Health.",
+        descriptionLong: "Each Hero hit by Ez-Thro Dynamite heals you for 8% of maximum Health. Quest: Hitting Heroes with Ez-Thro Dynamite permanently increases your maximum Health by 10, to a maximum of 750 bonus Health.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.0666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -147,6 +174,13 @@ const hogger: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -157,12 +191,19 @@ const hogger: Hero = {
         id: "HoggerOnTheProwl",
         name: "On The Prowl",
         descriptionShort: "Periodically heal, activate to gain Rage",
-        descriptionLong: "Activate to gain 30 Rage over 8 seconds.Passive: You heal for 9 (+4% / level) Health every second, increased by 2% per point of Rage.",
+        descriptionLong: "Activate to gain 30 Rage over 8 seconds. Passive: You heal for 9 (+4% / level) Health every second, increased by 2% per point of Rage.",
         cooldown: 40,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_rage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.12,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -172,12 +213,19 @@ const hogger: Hero = {
         id: "HoggerBruteForce",
         name: "Brute Force",
         descriptionShort: "Increases Attack Damage and Loot Hoard range",
-        descriptionLong: "Increase the range of Loot Hoard by 15%.Quest: Hitting Heroes with Staggering Blow permanently increases Basic Attack damage by 2, to a maximum of 125 bonus damage. Enemy Heroes that hit terrain grant an additional 8 damage.",
+        descriptionLong: "Increase the range of Loot Hoard by 15%. Quest: Hitting Heroes with Staggering Blow permanently increases Basic Attack damage by 2, to a maximum of 125 bonus damage. Enemy Heroes that hit terrain grant an additional 8 damage.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_combo_q_d.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -195,6 +243,13 @@ const hogger: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -211,6 +266,13 @@ const hogger: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_rage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4"
       }
@@ -226,6 +288,13 @@ const hogger: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_combo_q_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -237,12 +306,19 @@ const hogger: Hero = {
         id: "HoggerDenseBlastingPowder",
         name: "Dense Blasting Powder",
         descriptionShort: "Create more Ez-Thro Dynamite",
-        descriptionLong: "Instant detonations of Ez-Thro Dynamite creates an additional dynamite behind the Hero hit.Hitting the bundle of Ez-Thro Dynamite with Staggering Blow breaks it into three sticks and launches them forward in an arc.",
+        descriptionLong: "Instant detonations of Ez-Thro Dynamite creates an additional dynamite behind the Hero hit. Hitting the bundle of Ez-Thro Dynamite with Staggering Blow breaks it into three sticks and launches them forward in an arc.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -260,6 +336,13 @@ const hogger: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -272,12 +355,19 @@ const hogger: Hero = {
         id: "HoggerHoardapult",
         name: "Hoardapult",
         descriptionShort: "Launch Loot Hoard, Hogger",
-        descriptionLong: "Launch an empowered Loot Hoard with Hogger attached, dealing 100 (+4% / level) damage and Slowing enemies by 50% for 2 seconds.Hoardapult's Loot Hoard lasts for up to 20 seconds, decaying rapidly while not nearby. Every 10 seconds Hogger can take a chunk of Meat from the Loot Hoard.",
+        descriptionLong: "Launch an empowered Loot Hoard with Hogger attached, dealing 100 (+4% / level) damage and Slowing enemies by 50% for 2 seconds. Hoardapult's Loot Hoard lasts for up to 20 seconds, decaying rapidly while not nearby. Every 10 seconds Hogger can take a chunk of Meat from the Loot Hoard.",
         cooldown: 60,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_r1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6.666666666666667
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -294,6 +384,13 @@ const hogger: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_r2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -312,6 +409,13 @@ const hogger: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -328,6 +432,13 @@ const hogger: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_e_variant.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -344,6 +455,13 @@ const hogger: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_heal.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 8.8,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -363,6 +481,13 @@ const hogger: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -379,6 +504,13 @@ const hogger: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -389,12 +521,19 @@ const hogger: Hero = {
         id: "HoggerFurzerker",
         name: "Furzerker",
         descriptionShort: "Empower Basic Attacks, increase Move Speed",
-        descriptionLong: "Hitting Heroes with Staggering Blow or Ez-Thro Dynamite increases the damage of the next Basic Attack within 8 seconds by 50%, stacking up to 2 times.When Hogg Wild ends, gain 30% Movement Speed for 2 seconds.",
+        descriptionLong: "Hitting Heroes with Staggering Blow or Ez-Thro Dynamite increases the damage of the next Basic Attack within 8 seconds by 50%, stacking up to 2 times. When Hogg Wild ends, gain 30% Movement Speed for 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -409,12 +548,19 @@ const hogger: Hero = {
         id: "HoggerSecretStash",
         name: "Secret Stash",
         descriptionShort: "Loot Hoard launches Dynamite and Meat",
-        descriptionLong: "Every 2 seconds, Hoardapults' Loot Hoard randomly launches Ez-Thro Dynamite, prioritizing nearby enemy Heroes.Every 5 seconds, it also launches a chunk of Meat towards Hogger.",
+        descriptionLong: "Every 2 seconds, Hoardapults' Loot Hoard randomly launches Ez-Thro Dynamite, prioritizing nearby enemy Heroes. Every 5 seconds, it also launches a chunk of Meat towards Hogger.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_r1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -428,12 +574,19 @@ const hogger: Hero = {
         id: "HoggerPowerSpike",
         name: "Power Spike",
         descriptionShort: "Shockwave reduces Armor, reduced cooldown",
-        descriptionLong: "Hitting Heroes with Shockwave reduces their Armor by 15 for 4 seconds and grants 20 Rage.Passive: Rage's cooldown reduction affects Shockwave's cooldown.",
+        descriptionLong: "Hitting Heroes with Shockwave reduces their Armor by 15 for 4 seconds and grants 20 Rage. Passive: Rage's cooldown reduction affects Shockwave's cooldown.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_r2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -447,12 +600,19 @@ const hogger: Hero = {
         id: "HoggerNoControl",
         name: "No Control",
         descriptionShort: "Chase enemies with Hogg Wild",
-        descriptionLong: "Activate to cast an untalented Hogg Wild and begin chasing an enemy Hero. After reaching the Hero, bounce to a random nearby enemy Hero. Lasts up to 5 seconds, rapidly decaying if there are no other enemy Heroes nearby.Cannot be cancelled.",
+        descriptionLong: "Activate to cast an untalented Hogg Wild and begin chasing an enemy Hero. After reaching the Hero, bounce to a random nearby enemy Hero. Lasts up to 5 seconds, rapidly decaying if there are no other enemy Heroes nearby. Cannot be cancelled.",
         cooldown: 60,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_e_variant.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20"
       },
@@ -460,12 +620,19 @@ const hogger: Hero = {
         id: "HoggerAngerManagement",
         name: "Anger Management",
         descriptionShort: "Increase max Rage, increase Rage gains",
-        descriptionLong: "Increase maximum Rage by 50, raising the maximum bonuses for its cooldown refresh rate to 75% and Hogg Wild damage to 150%.Passive: Basic Attacks grant 5 additional Rage.",
+        descriptionLong: "Increase maximum Rage by 50, raising the maximum bonuses for its cooldown refresh rate to 75% and Hogg Wild damage to 150%. Passive: Basic Attacks grant 5 additional Rage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_rage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -473,7 +640,10 @@ const hogger: Hero = {
   ],
   analysis: {
     tankiness: 68.09792843691149,
-    damageSustainedPhysical: 23.715415019762844
+    physicalDamage: 54.54545454545454,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 17.670512770621734
   }
 };
       

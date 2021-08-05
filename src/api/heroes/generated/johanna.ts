@@ -38,7 +38,14 @@ const johanna: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_iron_skin.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "CrusaderPunish",
@@ -53,7 +60,14 @@ const johanna: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_punish.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 14.125
+      }
     },
     {
       id: "CrusaderCondemn",
@@ -68,7 +82,14 @@ const johanna: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_condemn.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5.5
+      }
     },
     {
       id: "CrusaderShieldGlare",
@@ -83,7 +104,14 @@ const johanna: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_shield_glare.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 4.916666666666666
+      }
     },
     {
       id: "CrusaderFallingSword",
@@ -98,7 +126,14 @@ const johanna: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_falling_sword.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 14
+      }
     },
     {
       id: "CrusaderBlessedShield",
@@ -113,7 +148,14 @@ const johanna: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_blessed_shield.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.399999999999999
+      }
     }
   ],
   talents: [
@@ -128,6 +170,13 @@ const johanna: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_block.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -144,6 +193,13 @@ const johanna: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_iron_skin.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -154,12 +210,19 @@ const johanna: Hero = {
         id: "CrusaderMasteryLawsOfHope",
         name: "Laws of Hope",
         descriptionShort: "Increases Health Regen, activate to burst heal",
-        descriptionLong: "Activate to heal 30% of Johanna's max Health over 4 seconds.Passive: Regenerate 1.5 (+4% / level) Health per second.",
+        descriptionLong: "Activate to heal 30% of Johanna's max Health over 4 seconds. Passive: Regenerate 1.5 (+4% / level) Health per second.",
         cooldown: 40,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_lawsofhope.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -175,6 +238,13 @@ const johanna: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_condemn.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -191,6 +261,13 @@ const johanna: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_condemn_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -207,6 +284,13 @@ const johanna: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_shield_glare.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -219,12 +303,19 @@ const johanna: Hero = {
         id: "CrusaderMasteryPunishSubdue",
         name: "Subdue",
         descriptionShort: "Quest: Increase Punish Slow",
-        descriptionLong: "Hitting 2 or more Heroes at the same time with Punish increases the Slow to 80% and the Slow amount does not decay.Quest: Hit 4 or more Heroes at the same time with Punish.Reward: Punish always Slows by 80% and the Slow amount no longer decays.",
+        descriptionLong: "Hitting 2 or more Heroes at the same time with Punish increases the Slow to 80% and the Slow amount does not decay. Quest: Hit 4 or more Heroes at the same time with Punish. Reward: Punish always Slows by 80% and the Slow amount no longer decays.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_punish.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -242,6 +333,13 @@ const johanna: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_shield_glare.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -258,6 +356,13 @@ const johanna: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -277,6 +382,13 @@ const johanna: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_falling_sword.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 14
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -297,6 +409,13 @@ const johanna: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_blessed_shield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 11.399999999999999
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -315,6 +434,13 @@ const johanna: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_punish.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -331,6 +457,13 @@ const johanna: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_burningrage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0.8
+        },
         order: 2,
         tier: "level13"
       },
@@ -338,12 +471,19 @@ const johanna: Hero = {
         id: "CrusaderBlessedHammer",
         name: "Blessed Hammer",
         descriptionShort: "Activate to create spinning hammers",
-        descriptionLong: "Activate to create 2 hammers that spiral outward from Johanna, dealing 84 (+4% / level) damage to enemies hit.Hitting Heroes with Shield Glare reduces the cooldown of this Ability by 8 seconds.",
+        descriptionLong: "Activate to create 2 hammers that spiral outward from Johanna, dealing 84 (+4% / level) damage to enemies hit. Hitting Heroes with Shield Glare reduces the cooldown of this Ability by 8 seconds.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_btn_d3ros_crusader_blessedhammer.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 5.6
+        },
         order: 3,
         tier: "level13"
       }
@@ -359,6 +499,13 @@ const johanna: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_shield_glare.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -375,6 +522,13 @@ const johanna: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_iron_skin.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -385,12 +539,19 @@ const johanna: Hero = {
         id: "GenericTalentImposingPresence",
         name: "Imposing Presence",
         descriptionShort: "Activate to Slow enemy Basic Attacks and Move Speed",
-        descriptionLong: "Activate to reduce the Attack Speed by 50% and Movement Speed by 20% of nearby Heroes and Summons for 2.5 seconds.Passive: Heroes and Summons that attack your Hero have their Attack Speed Slowed by 20% for 2.5 seconds.",
+        descriptionLong: "Activate to reduce the Attack Speed by 50% and Movement Speed by 20% of nearby Heroes and Summons for 2.5 seconds. Passive: Heroes and Summons that attack your Hero have their Attack Speed Slowed by 20% for 2.5 seconds.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_imposingpresence.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -406,6 +567,13 @@ const johanna: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_falling_sword.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 5
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -425,6 +593,13 @@ const johanna: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_blessed_shield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -444,6 +619,13 @@ const johanna: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_indestructible.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20"
       },
@@ -451,12 +633,19 @@ const johanna: Hero = {
         id: "CrusaderBlindedByTheLight",
         name: "Blinded By The Light",
         descriptionShort: "Activate to Shield nearby allies",
-        descriptionLong: "Activate to grant nearby allied Heroes a Shield equal to 25% of their maximum Health for 3 seconds.Hitting Heroes with Shield Glare reduces the cooldown of this Ability by 8 seconds.",
+        descriptionLong: "Activate to grant nearby allied Heroes a Shield equal to 25% of their maximum Health for 3 seconds. Hitting Heroes with Shield Glare reduces the cooldown of this Ability by 8 seconds.",
         cooldown: 60,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_stormshield.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -464,7 +653,10 @@ const johanna: Hero = {
   ],
   analysis: {
     tankiness: 79.09604519774011,
-    damageSustainedPhysical: 14.673913043478256
+    physicalDamage: 44.99999999999999,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 22.107112049396164
   }
 };
       

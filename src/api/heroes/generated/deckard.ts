@@ -38,13 +38,20 @@ const deckard: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_protectors_of_cain.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DeckardHealingPotion",
       name: "Healing Potion",
       descriptionShort: "Throw Potions that heal allies",
-      descriptionLong: "Throw a Healing Potion on the ground that heals the first allied Hero that comes in contact with it for 270 (+4% / level).Limit 5 active Potions.",
+      descriptionLong: "Throw a Healing Potion on the ground that heals the first allied Hero that comes in contact with it for 270 (+4% / level). Limit 5 active Potions.",
       cost: {
         type: "Mana",
         amount: 25
@@ -53,7 +60,14 @@ const deckard: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_healing_potion.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 13.5,
+        magicalDamage: 0
+      }
     },
     {
       id: "DeckardHoradricCube",
@@ -68,7 +82,14 @@ const deckard: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_horadric_cube.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.666666666666666
+      }
     },
     {
       id: "DeckardScrollOfSealing",
@@ -83,13 +104,20 @@ const deckard: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_scroll_of_sealing.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10
+      }
     },
     {
       id: "DeckardStayAWhileAndListen",
       name: "Stay Awhile and Listen",
       descriptionShort: "Put enemies to Sleep with a fascinating story",
-      descriptionLong: "After 1 second, Channel for 3 seconds, putting enemy Heroes in front of Deckard to Sleep while Channeling, and for 2 seconds after.Enemies can only be put to Sleep once per cast, and Sleep's effects end instantly if they take damage.",
+      descriptionLong: "After 1 second, Channel for 3 seconds, putting enemy Heroes in front of Deckard to Sleep while Channeling, and for 2 seconds after. Enemies can only be put to Sleep once per cast, and Sleep's effects end instantly if they take damage.",
       cost: {
         type: "Mana",
         amount: 60
@@ -98,7 +126,14 @@ const deckard: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_stay_awhile_and_listen.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DeckardLorenado",
@@ -119,7 +154,14 @@ const deckard: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_lorenado.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -128,12 +170,19 @@ const deckard: Hero = {
         id: "DeckardScrollOfIdentify",
         name: "Scroll of Identify",
         descriptionShort: "Quest: Scroll of Sealing reveals, reduces Armor",
-        descriptionLong: "Quest: Hitting an enemy Hero with Scroll of Sealing reveals them for 8 seconds.Reward: After hitting 14 Heroes, Scroll of Sealing also reduces Armor of Heroes hit by 15 for 4 seconds and the reveal duration is doubled.",
+        descriptionLong: "Quest: Hitting an enemy Hero with Scroll of Sealing reveals them for 8 seconds. Reward: After hitting 14 Heroes, Scroll of Sealing also reduces Armor of Heroes hit by 15 for 4 seconds and the reveal duration is doubled.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_scroll_of_sealing.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -151,6 +200,13 @@ const deckard: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_scroll_of_sealing_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -161,12 +217,19 @@ const deckard: Hero = {
         id: "DeckardGemSapphire",
         name: "Sapphire",
         descriptionShort: "Next Horadric Cube Slow increased",
-        descriptionLong: "Activate to increase the damage of the next Horadric Cube by 100% and its slow by 30%.Only 1 Gem may be active at a time.",
+        descriptionLong: "Activate to increase the damage of the next Horadric Cube by 100% and its slow by 30%. Only 1 Gem may be active at a time.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_sapphire.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -185,6 +248,13 @@ const deckard: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_healing_potion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.6266666666666665,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -201,6 +271,13 @@ const deckard: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_rejuvination_potion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.4400000000000002,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -211,12 +288,19 @@ const deckard: Hero = {
         id: "DeckardGemRuby",
         name: "Ruby",
         descriptionShort: "Next Horadric Cube creates Lesser Healing Potions",
-        descriptionLong: "Activate to increase the damage of the next Horadric Cube by 100%  and it spawns 3 Lesser Healing Potions from each enemy Hero hit, healing allied Heroes for 250 (+4% / level) when picked up. Lesser Healing Potions last for 10 seconds.Only 1 Gem may be active at a time.",
+        descriptionLong: "Activate to increase the damage of the next Horadric Cube by 100%  and it spawns 3 Lesser Healing Potions from each enemy Hero hit, healing allied Heroes for 250 (+4% / level) when picked up. Lesser Healing Potions last for 10 seconds. Only 1 Gem may be active at a time.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_ruby.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -235,6 +319,13 @@ const deckard: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_horadric_cube.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -251,6 +342,13 @@ const deckard: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_kanais_cube.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -261,12 +359,19 @@ const deckard: Hero = {
         id: "DeckardGemEmerald",
         name: "Emerald",
         descriptionShort: "Next Horadric Cube reduces enemy healing received",
-        descriptionLong: "Activate to increase the damage of the next Horadric Cube by 100% and have it reduce the healing received of enemy Heroes by 75% for 4 seconds.Only 1 Gem may be active at a time.",
+        descriptionLong: "Activate to increase the damage of the next Horadric Cube by 100% and have it reduce the healing received of enemy Heroes by 75% for 4 seconds. Only 1 Gem may be active at a time.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_emerald.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 20,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -279,7 +384,7 @@ const deckard: Hero = {
         id: "DeckardStayAWhileAndListen",
         name: "Stay Awhile and Listen",
         descriptionShort: "Put enemies to Sleep with a fascinating story",
-        descriptionLong: "After 1 second, Channel for 3 seconds, putting enemy Heroes in front of Deckard to Sleep while Channeling, and for 2 seconds after.Enemies can only be put to Sleep once per cast, and Sleep's effects end instantly if they take damage.",
+        descriptionLong: "After 1 second, Channel for 3 seconds, putting enemy Heroes in front of Deckard to Sleep while Channeling, and for 2 seconds after. Enemies can only be put to Sleep once per cast, and Sleep's effects end instantly if they take damage.",
         cost: {
           type: "Mana",
           amount: 60
@@ -289,6 +394,13 @@ const deckard: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_stay_awhile_and_listen.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -315,6 +427,13 @@ const deckard: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_lorenado.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -333,6 +452,13 @@ const deckard: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_super_healing_potion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 16,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -349,6 +475,13 @@ const deckard: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_unstable_healing_potion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 13.333333333333334,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -365,6 +498,13 @@ const deckard: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_angelic_conduit.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.2,
+          magicalDamage: 4.133333333333333
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -383,6 +523,13 @@ const deckard: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_scroll_of_sealing.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -399,6 +546,13 @@ const deckard: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_study_time.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -416,6 +570,13 @@ const deckard: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_horadric_staff.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -431,6 +592,13 @@ const deckard: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_stay_awhile_and_listen.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -456,6 +624,13 @@ const deckard: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_lorenado.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -475,6 +650,13 @@ const deckard: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_healing_potion.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -491,6 +673,13 @@ const deckard: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_perfect_gems.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -501,7 +690,10 @@ const deckard: Hero = {
   ],
   analysis: {
     tankiness: 53.634651600753294,
-    damageSustainedPhysical: 9.33794466403162
+    physicalDamage: 28.636363636363633,
+    mobility: 24.199,
+    healing: 17.71963598179909,
+    magicalDamage: 7.377644601834195
   }
 };
       

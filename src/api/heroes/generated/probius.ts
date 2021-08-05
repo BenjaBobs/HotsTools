@@ -33,29 +33,43 @@ const probius: Hero = {
       id: "ProbiusWarpInPylon",
       name: "Warp In Pylon",
       descriptionShort: "Summon a Pylon that renergizes Probius and allows the construction of other buildings",
-      descriptionLong: "Warp in a Pylon that generates a Power Field and grants vision of the surrounding area. Probius only regenerates mana while inside a Power Field.Up to 2 Pylons can be active at a time.",
+      descriptionLong: "Warp in a Pylon that generates a Power Field and grants vision of the surrounding area. Probius only regenerates mana while inside a Power Field. Up to 2 Pylons can be active at a time.",
       cooldown: 12,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warpinpylon.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ProbiusWorkerRush",
       name: "Worker Rush",
       descriptionShort: "Move faster passively.  Activate to move even faster.",
-      descriptionLong: "Activate to gain an additional 60% Movement Speed for 5 seconds. Taking damage ends this effect early.  Worker Rush is always active while at the Hall of Storms.Passive: Probius moves 10% faster by hovering over the ground.",
+      descriptionLong: "Activate to gain an additional 60% Movement Speed for 5 seconds. Taking damage ends this effect early.  Worker Rush is always active while at the Hall of Storms. Passive: Probius moves 10% faster by hovering over the ground.",
       cooldown: 30,
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_mount.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ProbiusDisruptionPulse",
       name: "Disruption Pulse",
       descriptionShort: "Fire a missile in a line that damages enemies and detonates Warp Rifts",
-      descriptionLong: "Fire a burst of energy forward, dealing 142 (+5% / level) damage to all enemies it passes through.Hitting the center of a Warp Rift will cause it to explode, dealing additional damage.",
+      descriptionLong: "Fire a burst of energy forward, dealing 142 (+5% / level) damage to all enemies it passes through. Hitting the center of a Warp Rift will cause it to explode, dealing additional damage.",
       cost: {
         type: "Mana",
         amount: 75
@@ -64,13 +78,20 @@ const probius: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_disruptionpulse.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 47.33333333333333
+      }
     },
     {
       id: "ProbiusWarpRift",
       name: "Warp Rift",
       descriptionShort: "Create a rift that slows enemies and can be detonated with Disruption Pulse",
-      descriptionLong: "Open an unstable Warp Rift at a location that takes 1.25 seconds to arm, which then slows nearby enemies by 25% lasting 9 seconds.Armed Warp Rifts explode when hit by Disruption Pulse, dealing 261 (+5% / level) damage to nearby enemies.Stores up to 2 charges.",
+      descriptionLong: "Open an unstable Warp Rift at a location that takes 1.25 seconds to arm, which then slows nearby enemies by 25% lasting 9 seconds. Armed Warp Rifts explode when hit by Disruption Pulse, dealing 261 (+5% / level) damage to nearby enemies. Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 150
@@ -84,18 +105,32 @@ const probius: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 43.5
+      }
     },
     {
       id: "ProbiusPhotonCannon",
       name: "Photon Cannon",
       descriptionShort: "Create a cannon that attacks nearby enemies",
-      descriptionLong: "Warp in a Photon Cannon that deals 105 (+4% / level) damage per second. Lasts for 13 seconds.Must be placed within a Pylon's Power Field.  Deactivates if it doesn't have a Pylon powering it.",
+      descriptionLong: "Warp in a Photon Cannon that deals 105 (+4% / level) damage per second. Lasts for 13 seconds. Must be placed within a Pylon's Power Field.  Deactivates if it doesn't have a Pylon powering it.",
       cooldown: 15,
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_photoncannon.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 7
+      }
     },
     {
       id: "ProbiusPylonOvercharge",
@@ -110,7 +145,14 @@ const probius: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_pylonovercharge.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ProbiusNullGate",
@@ -125,7 +167,14 @@ const probius: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_voidgate.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -140,6 +189,13 @@ const probius: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_disruptionpulse.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -150,7 +206,7 @@ const probius: Hero = {
         id: "ProbiusWarpResonanceWarpRiftQuest",
         name: "Warp Resonance",
         descriptionShort: "Quest: Detonate Warp Rift on Heroes",
-        descriptionLong: "Quest: Hit Heroes with Warp Rift explosions.Reward: After hitting 8 Heroes with Warp Rift explosions, increase the explosion damage by 100.Reward: After hitting 16 Heroes with Warp Rift explosions, Warp Rift gains 1 additional charge.",
+        descriptionLong: "Quest: Hit Heroes with Warp Rift explosions. Reward: After hitting 8 Heroes with Warp Rift explosions, increase the explosion damage by 100. Reward: After hitting 16 Heroes with Warp Rift explosions, Warp Rift gains 1 additional charge.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -161,6 +217,13 @@ const probius: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -178,6 +241,13 @@ const probius: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_photoncannon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -197,6 +267,13 @@ const probius: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_photoncannon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -213,6 +290,13 @@ const probius: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_workerrush.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -229,6 +313,13 @@ const probius: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_shieldcapacitor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -247,6 +338,13 @@ const probius: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_disruptionpulse.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -268,6 +366,13 @@ const probius: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -284,6 +389,13 @@ const probius: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_photoncannon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -306,6 +418,13 @@ const probius: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_pylonovercharge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -326,6 +445,13 @@ const probius: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_voidgate.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -344,6 +470,13 @@ const probius: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warpinpylon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -360,6 +493,13 @@ const probius: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warpinpylon_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -376,6 +516,13 @@ const probius: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warpinpylon_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -399,6 +546,13 @@ const probius: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -420,6 +574,13 @@ const probius: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -441,6 +602,13 @@ const probius: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift_c.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -459,6 +627,13 @@ const probius: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_pylonovercharge.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -478,6 +653,13 @@ const probius: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_voidgate.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -497,6 +679,13 @@ const probius: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_disruptionpulse.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -518,6 +707,13 @@ const probius: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -528,7 +724,10 @@ const probius: Hero = {
   ],
   analysis: {
     tankiness: 37.96610169491525,
-    damageSustainedPhysical: 11.956521739130432
+    physicalDamage: 18.333333333333336,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 43.30677381276672
   }
 };
       

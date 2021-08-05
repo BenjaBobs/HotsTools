@@ -38,7 +38,14 @@ const mei: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_trait.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MeiOWSnowBlind",
@@ -59,7 +66,14 @@ const mei: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_q_snowblind.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MeiOWBlizzard",
@@ -74,13 +88,20 @@ const mei: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_w_blizzard.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MeiOWIcing",
       name: "Icing",
       descriptionShort: "Slide in a direction and knockback enemies",
-      descriptionLong: "Slide quickly in the targeted direction. When this effect ends, enemies near Mei are knocked back, take 52 (+4% / level) damage, and are Slowed by 80%, rapidly decaying over 1.5 seconds.Can be canceled during sliding.",
+      descriptionLong: "Slide quickly in the targeted direction. When this effect ends, enemies near Mei are knocked back, take 52 (+4% / level) damage, and are Slowed by 80%, rapidly decaying over 1.5 seconds. Can be canceled during sliding.",
       cost: {
         type: "Mana",
         amount: 70
@@ -89,7 +110,14 @@ const mei: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_e1_slide.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MeiOWAvalanche",
@@ -104,7 +132,14 @@ const mei: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_r1_avalanche.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 14.666666666666666
+      }
     },
     {
       id: "MeiOWIceWall",
@@ -119,29 +154,14 @@ const mei: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_r2_icewall.png",
-      isPassive: false
-    },
-    {
-      id: "MeiOWIcingCancel",
-      name: "Icing",
-      descriptionShort: "Slide in a direction and knockback enemies",
-      descriptionLong: "Cancel Icing",
-      cooldown: 14,
-      category: "basic",
-      type: "E",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_e2_slide.png",
-      isPassive: false
-    },
-    {
-      id: "MeiOWCryoFreezeCancel",
-      name: "Cryo-Freeze",
-      descriptionShort: "Activate to gain Shield and heal",
-      descriptionLong: "Cancel Cryo-Freeze",
-      cooldown: null,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/hud_btn_bg_ability_cancel.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -162,6 +182,13 @@ const mei: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_q_snowblind.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -178,6 +205,13 @@ const mei: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_w_blizzard.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -194,6 +228,13 @@ const mei: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.24,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1"
       }
@@ -215,6 +256,13 @@ const mei: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_q_snowblind.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -231,6 +279,13 @@ const mei: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_e1_slide.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -247,6 +302,13 @@ const mei: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -265,6 +327,13 @@ const mei: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_w_blizzard.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -281,6 +350,13 @@ const mei: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_e1_slide.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -297,6 +373,13 @@ const mei: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_battery.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7"
       }
@@ -316,6 +399,13 @@ const mei: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_r1_avalanche.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 14.666666666666666
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -336,6 +426,13 @@ const mei: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_r2_icewall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -354,6 +451,13 @@ const mei: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_w_blizzard.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -364,12 +468,19 @@ const mei: Hero = {
         id: "MeiOWCryoFreezeCoolingServos",
         name: "Cooling Servos",
         descriptionShort: "Empower Cryo-Freeze, Basic Attacks",
-        descriptionLong: "While Cryo-Freeze is active, Mei's Basic Ability cooldowns recover 200% faster.Passive: Basic Attacks Slow by 20% for 1.5 seconds.",
+        descriptionLong: "While Cryo-Freeze is active, Mei's Basic Ability cooldowns recover 200% faster. Passive: Basic Attacks Slow by 20% for 1.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -386,6 +497,13 @@ const mei: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frosentempest.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 1.6
+        },
         order: 3,
         tier: "level13"
       }
@@ -407,6 +525,13 @@ const mei: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_q_snowblind.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -423,6 +548,13 @@ const mei: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_e1_slide.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -439,6 +571,13 @@ const mei: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_jaina_frostarmor.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.13333333333333333,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -448,12 +587,19 @@ const mei: Hero = {
         id: "MeiOWCascade",
         name: "Cascade",
         descriptionShort: "Avalanche launches Snow Blinds during travel",
-        descriptionLong: "While traveling, Avalanche constantly launches a volley of untalented Snow Blind snowballs ahead of itself.Passive: Reduce the cooldown of Avalanche by 30 seconds.",
+        descriptionLong: "While traveling, Avalanche constantly launches a volley of untalented Snow Blind snowballs ahead of itself. Passive: Reduce the cooldown of Avalanche by 30 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_r1_avalanche.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -473,6 +619,13 @@ const mei: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_r2_icewall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -498,6 +651,13 @@ const mei: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_q_snowblind.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -514,6 +674,13 @@ const mei: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -524,7 +691,10 @@ const mei: Hero = {
   ],
   analysis: {
     tankiness: 80.60263653483992,
-    damageSustainedPhysical: 36.68478260869565
+    physicalDamage: 37.5,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 6.4923272496140925
   }
 };
       

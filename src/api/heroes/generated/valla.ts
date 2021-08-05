@@ -38,7 +38,14 @@ const valla: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DemonHunterHungeringArrow",
@@ -53,7 +60,14 @@ const valla: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hungeringarrow.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 22
+      }
     },
     {
       id: "DemonHunterMultishot",
@@ -68,7 +82,14 @@ const valla: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_multishot.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 14.333333333333332
+      }
     },
     {
       id: "DemonHunterVault",
@@ -89,7 +110,14 @@ const valla: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_vault.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DemonHunterStrafe",
@@ -104,13 +132,20 @@ const valla: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_strafe.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "DemonHunterRainOfVengeance",
       name: "Rain of Vengeance",
       descriptionShort: "Area attack that stuns enemies",
-      descriptionLong: "Launch a wave of Shadow Beasts that deals 250 (+4% / level) damage and stuns enemies in the target area for 0.5 seconds.Stores up to 2 charges.",
+      descriptionLong: "Launch a wave of Shadow Beasts that deals 250 (+4% / level) damage and stuns enemies in the target area for 0.5 seconds. Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 50
@@ -125,7 +160,14 @@ const valla: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_rainofvengeance.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16.666666666666668
+      }
     }
   ],
   talents: [
@@ -140,6 +182,13 @@ const valla: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hungeringarrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -150,7 +199,7 @@ const valla: Hero = {
         id: "DemonHunterMasteryCaltrops",
         name: "Caltrops",
         descriptionShort: "Drop Caltrops while Vaulting Quest: Maintain Hatred to empower Vault",
-        descriptionLong: "Drop 3 Caltrops while Vaulting. Caltrops do 60 (+4% / level) damage and Slow enemies by 40% for 1 second.Quest: Spend 160 seconds at 10 stacks of Hatred.Reward: Vault cooldown is reduced by 5 seconds and its Mana cost is reduced from 50 to 25.",
+        descriptionLong: "Drop 3 Caltrops while Vaulting. Caltrops do 60 (+4% / level) damage and Slow enemies by 40% for 1 second. Quest: Spend 160 seconds at 10 stacks of Hatred. Reward: Vault cooldown is reduced by 5 seconds and its Mana cost is reduced from 50 to 25.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -162,6 +211,13 @@ const valla: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_vault.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -179,6 +235,13 @@ const valla: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -191,12 +254,19 @@ const valla: Hero = {
         id: "DemonHunterMasteryPuncturingArrow",
         name: "Puncturing Arrow",
         descriptionShort: "Quest: Hitting Heroes empowers Hungering Arrow",
-        descriptionLong: "Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow increases its damage by 5, up to a maximum of 100.Reward: After gaining 100 bonus damage, gain an additional 75 bonus damage and Hungering Arrow also bounces 1 additional time.",
+        descriptionLong: "Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow increases its damage by 5, up to a maximum of 100. Reward: After gaining 100 bonus damage, gain an additional 75 bonus damage and Hungering Arrow also bounces 1 additional time.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hungeringarrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -214,6 +284,13 @@ const valla: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_multishot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -224,12 +301,19 @@ const valla: Hero = {
         id: "DemonHunterCreedoftheHunter",
         name: "Creed of the Hunter",
         descriptionShort: "Increases Attack SpeedQuest: Attacking Heroes empowers Hatred",
-        descriptionLong: "Increases Attack Speed by 10%.Quest: Use 100 Basic Attacks against Heroes.Reward: Hatred grants an additional 2% Basic Attack Damage per stack.",
+        descriptionLong: "Increases Attack Speed by 10%. Quest: Use 100 Basic Attacks against Heroes. Reward: Hatred grants an additional 2% Basic Attack Damage per stack.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -249,6 +333,13 @@ const valla: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_multishot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 8
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -271,6 +362,13 @@ const valla: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_vault.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -293,6 +391,13 @@ const valla: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_vault_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -315,6 +420,13 @@ const valla: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_strafe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -325,7 +437,7 @@ const valla: Hero = {
         id: "DemonHunterHeroicAbilityRainofVengeance",
         name: "Rain of Vengeance",
         descriptionShort: "Area attack that stuns enemies",
-        descriptionLong: "Launch a wave of Shadow Beasts that deals 250 (+4% / level) damage and stuns enemies in the target area for 0.5 seconds.Stores up to 2 charges.",
+        descriptionLong: "Launch a wave of Shadow Beasts that deals 250 (+4% / level) damage and stuns enemies in the target area for 0.5 seconds. Stores up to 2 charges.",
         cost: {
           type: "Mana",
           amount: 50
@@ -341,6 +453,13 @@ const valla: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_rainofvengeance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 16.666666666666668
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -359,6 +478,13 @@ const valla: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hungeringarrow.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 10,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -375,6 +501,13 @@ const valla: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.3333333333333335,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -385,12 +518,19 @@ const valla: Hero = {
         id: "DemonHunterGloom",
         name: "Gloom",
         descriptionShort: "Consume Hatred to gain Spell Armor",
-        descriptionLong: "Activate to consume all Hatred, granting 3 Spell Armor per Hatred consumed for 5 seconds.Passive: Permanently gain 20 Spell Armor, reducing Ability Damage taken by 20%.",
+        descriptionLong: "Activate to consume all Hatred, granting 3 Spell Armor per Hatred consumed for 5 seconds. Passive: Permanently gain 20 Spell Armor, reducing Ability Damage taken by 20%.",
         cooldown: 5,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -409,6 +549,13 @@ const valla: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_multishot.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -425,6 +572,13 @@ const valla: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -441,6 +595,13 @@ const valla: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -456,6 +617,13 @@ const valla: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_strafe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -481,6 +649,13 @@ const valla: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_rainofvengeance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -500,6 +675,13 @@ const valla: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -516,6 +698,13 @@ const valla: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_range.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20"
       }
@@ -523,7 +712,10 @@ const valla: Hero = {
   ],
   analysis: {
     tankiness: 40.376647834274955,
-    damageSustainedPhysical: 74.7282608695652
+    physicalDamage: 62.5,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 23.46090983383274
   }
 };
       

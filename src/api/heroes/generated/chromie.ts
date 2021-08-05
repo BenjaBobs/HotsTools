@@ -38,13 +38,20 @@ const chromie: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timetraveler.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ChromieSandBlast",
       name: "Sand Blast",
       descriptionShort: "Fire a long range blast that damages an enemy",
-      descriptionLong: "After 0.5 seconds, fire a missile that deals 305 (+4% / level) damage to the first enemy hit. Deals 50% damage to Structures.Casting Sand Blast leaves an Echo behind that mimics Chromie's Sand Blast and Basic Attack, dealing 40% damage. Maximum of 1 Echo active at a time.",
+      descriptionLong: "After 0.5 seconds, fire a missile that deals 305 (+4% / level) damage to the first enemy hit. Deals 50% damage to Structures. Casting Sand Blast leaves an Echo behind that mimics Chromie's Sand Blast and Basic Attack, dealing 40% damage. Maximum of 1 Echo active at a time.",
       cost: {
         type: "Mana",
         amount: 20
@@ -53,7 +60,14 @@ const chromie: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_aethercannon.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 101.66666666666666
+      }
     },
     {
       id: "ChromieDragonsBreath",
@@ -68,7 +82,14 @@ const chromie: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_sandstrike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15.357142857142856
+      }
     },
     {
       id: "ChromieTimeTrap",
@@ -89,13 +110,20 @@ const chromie: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timetrap.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ChromieTemporalLoop",
       name: "Temporal Loop",
       descriptionShort: "Return an enemy Hero to a previous position",
-      descriptionLong: "Choose an enemy Hero. After 3 seconds, they are teleported back to the location where Temporal Loop was cast on them.Basic Abilities recharge 500% faster for 3 seconds after casting Temporal Loop.",
+      descriptionLong: "Choose an enemy Hero. After 3 seconds, they are teleported back to the location where Temporal Loop was cast on them. Basic Abilities recharge 500% faster for 3 seconds after casting Temporal Loop.",
       cost: {
         type: "Mana",
         amount: 60
@@ -104,7 +132,14 @@ const chromie: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_looper.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "ChromieSlowingSands",
@@ -120,18 +155,14 @@ const chromie: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timewarp.png",
-      isPassive: false
-    },
-    {
-      id: "ChromieTimeTrapDetonate",
-      name: "Detonate Time Trap",
-      descriptionShort: "Detonate a trap that Time Stops Heroes",
-      descriptionLong: "Detonates active Time Traps, placing all nearby allied or enemy Heroes in Time Stop for 2 seconds.",
-      cooldown: 2,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_detonate_timetrap.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     }
   ],
   talents: [
@@ -140,12 +171,19 @@ const chromie: Hero = {
         id: "ChromieSandBlastOnceAgainTheFirstTime",
         name: "Once Again the First Time",
         descriptionShort: "Quest: Sand Blast gains another Echo",
-        descriptionLong: "Quest: Hit 40 Heroes with Sand Blast from Chromie or her Echoes.Reward: Increase the maximum number of active Echoes to 2, and increase Echo damage to 45%.",
+        descriptionLong: "Quest: Hit 40 Heroes with Sand Blast from Chromie or her Echoes. Reward: Increase the maximum number of active Echoes to 2, and increase Echo damage to 45%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_aethercannon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -157,12 +195,19 @@ const chromie: Hero = {
         id: "ChromieDragonsBreathDeepBreathing",
         name: "Deep Breathing",
         descriptionShort: "Quest: Hitting Heroes empowers Dragon's Breath",
-        descriptionLong: "Quest: Every time Dragon's Breath hits a Hero increase its damage by 1%, up to 20%.Reward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
+        descriptionLong: "Quest: Every time Dragon's Breath hits a Hero increase its damage by 1%, up to 20%. Reward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_sandstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -180,6 +225,13 @@ const chromie: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_clairvoyance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -204,6 +256,13 @@ const chromie: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timetrap.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -227,6 +286,13 @@ const chromie: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timetrap_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -249,6 +315,13 @@ const chromie: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timetrap_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -268,6 +341,13 @@ const chromie: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_aethercannon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -284,6 +364,13 @@ const chromie: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_sandstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -300,6 +387,13 @@ const chromie: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_abilitytalent_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -323,6 +417,13 @@ const chromie: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timewarp.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -333,7 +434,7 @@ const chromie: Hero = {
         id: "ChromieHeroicAbilityTemporalLoop",
         name: "Temporal Loop",
         descriptionShort: "Return an enemy Hero to a previous position",
-        descriptionLong: "Choose an enemy Hero. After 3 seconds, they are teleported back to the location where Temporal Loop was cast on them.Basic Abilities recharge 500% faster for 3 seconds after casting Temporal Loop.",
+        descriptionLong: "Choose an enemy Hero. After 3 seconds, they are teleported back to the location where Temporal Loop was cast on them. Basic Abilities recharge 500% faster for 3 seconds after casting Temporal Loop.",
         cost: {
           type: "Mana",
           amount: 60
@@ -343,6 +444,13 @@ const chromie: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_looper.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -361,6 +469,13 @@ const chromie: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_aethercannon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -377,6 +492,13 @@ const chromie: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_herethere.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13"
       },
@@ -390,6 +512,13 @@ const chromie: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timeblock.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -405,6 +534,13 @@ const chromie: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_aethercannon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -421,6 +557,13 @@ const chromie: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_aethercannon_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -437,6 +580,13 @@ const chromie: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_hyperdrivesreach.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -452,6 +602,13 @@ const chromie: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timewarp.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -471,6 +628,13 @@ const chromie: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_looper.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -490,6 +654,13 @@ const chromie: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_aethercannon.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -500,12 +671,19 @@ const chromie: Hero = {
         id: "ChromieBlessingOfTheBronze",
         name: "Blessing of the Bronze",
         descriptionShort: "Increase allied Move Speed and reduce cooldowns",
-        descriptionLong: "Activate to cause Chromie and all allied Heroes to gain 20% Movement Speed and their Basic Abilities recharge 35% faster for 8 seconds.Hitting an enemy Hero with Sand Blast from Chromie or her Echoes reduces the cooldown of Blessing of the Bronze by 1 second.",
+        descriptionLong: "Activate to cause Chromie and all allied Heroes to gain 20% Movement Speed and their Basic Abilities recharge 35% faster for 8 seconds. Hitting an enemy Hero with Sand Blast from Chromie or her Echoes reduces the cooldown of Blessing of the Bronze by 1 second.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_blessing_of_the_bronze.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -516,7 +694,10 @@ const chromie: Hero = {
   ],
   analysis: {
     tankiness: 41.88323917137476,
-    damageSustainedPhysical: 62.39130434782608
+    physicalDamage: 41,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 51.801604597164385
   }
 };
       

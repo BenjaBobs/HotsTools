@@ -38,7 +38,14 @@ const sgthammer: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_siegemode.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "SgtHammerThrusters",
@@ -49,13 +56,20 @@ const sgthammer: Hero = {
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_mount.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "SgtHammerSpiderMines",
       name: "Spider Mines",
       descriptionShort: "Create mines that slow and damage enemies on contact",
-      descriptionLong: "Create 3 mines that arm after 1.25 seconds. Mines detonate when an enemy comes in range, dealing 96 (+4% / level) damage to nearby enemies and Slowing them by 25% for 1.5 seconds.Siege Mode: Cast range increased by 100%.",
+      descriptionLong: "Create 3 mines that arm after 1.25 seconds. Mines detonate when an enemy comes in range, dealing 96 (+4% / level) damage to nearby enemies and Slowing them by 25% for 1.5 seconds. Siege Mode: Cast range increased by 100%.",
       cost: {
         type: "Mana",
         amount: 50
@@ -64,13 +78,20 @@ const sgthammer: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_spidermines.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.857142857142857
+      }
     },
     {
       id: "SgtHammerConcussiveBlast",
       name: "Concussive Blast",
       descriptionShort: "Knock back and damage enemies",
-      descriptionLong: "Deal 141 (+4% / level) damage to enemies in front of Sgt. Hammer and knock them back.Siege Mode: Radius increased by 50%.",
+      descriptionLong: "Deal 141 (+4% / level) damage to enemies in front of Sgt. Hammer and knock them back. Siege Mode: Radius increased by 50%.",
       cost: {
         type: "Mana",
         amount: 80
@@ -79,13 +100,20 @@ const sgthammer: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_concussiveblast.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 11.75
+      }
     },
     {
       id: "SgtHammerNeosteelPlating",
       name: "Neosteel Plating",
       descriptionShort: "Gain temporary Armor",
-      descriptionLong: "Gain 25 Armor for 2 seconds.Siege Mode: Grants 100% more Armor.",
+      descriptionLong: "Gain 25 Armor for 2 seconds. Siege Mode: Grants 100% more Armor.",
       cost: {
         type: "Mana",
         amount: 60
@@ -94,7 +122,14 @@ const sgthammer: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_neosteelplating.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "SgtHammerNapalmStrike",
@@ -109,7 +144,14 @@ const sgthammer: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_napalmstrike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 35.666666666666664
+      }
     },
     {
       id: "SgtHammerBluntForceGun",
@@ -124,37 +166,14 @@ const sgthammer: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_bluntforcegun.png",
-      isPassive: false
-    },
-    {
-      id: "SgtHammerSpiderMinesSiegeMode",
-      name: "Spider Mines",
-      descriptionShort: "Create mines that slow and damage enemies on contact",
-      descriptionLong: "Create 3 mines that arm after 1.25 seconds. Mines detonate when an enemy comes in range, dealing 96 (+4% / level) damage to nearby enemies and Slowing them by 25% for 1.5 seconds.Siege Mode: Cast range increased by 100%.",
-      cost: {
-        type: "Mana",
-        amount: 50
-      },
-      cooldown: 14,
-      category: "basic",
-      type: "Q",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_spidermines.png",
-      isPassive: false
-    },
-    {
-      id: "SgtHammerNapalmStrikeSiege",
-      name: "Napalm Strike",
-      descriptionShort: "Fire damaging napalm at enemies",
-      descriptionLong: "Deals 164 (+4% / level) damage on impact, and leaves a napalm area that deals 50 (+4% / level) damage per second. Lasts for 4 seconds.",
-      cost: {
-        type: "Mana",
-        amount: 35
-      },
-      cooldown: 6,
-      category: "heroic",
-      type: "Heroic",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_napalmstrike.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 33.333333333333336
+      }
     }
   ],
   talents: [
@@ -163,12 +182,19 @@ const sgthammer: Hero = {
         id: "SgtHammerAmbush",
         name: "Ambush",
         descriptionShort: "Siege Mode grants Stealth, extra damage",
-        descriptionLong: "Gain Stealth when entering Siege Mode or after not taking or dealing damage for 3 seconds while in Siege Mode. Basic Attacks while Stealthed deal 100% more damage.Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
+        descriptionLong: "Gain Stealth when entering Siege Mode or after not taking or dealing damage for 3 seconds while in Siege Mode. Basic Attacks while Stealthed deal 100% more damage. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_siegemode_var2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -185,6 +211,13 @@ const sgthammer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_siegemode.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -195,7 +228,7 @@ const sgthammer: Hero = {
         id: "SgtHammerSiegeModeMaelstromRounds",
         name: "Maelstrom Rounds",
         descriptionShort: "Activate to increase Basic Attack damage",
-        descriptionLong: "Activate to increase Basic Attack damage dealt by 30% for 5 seconds. Hitting enemy Heroes or Structures with Basic Attacks while in Siege Mode reduces the cooldown of Maelstrom Rounds by 5 seconds.Stores up to 3 charges.",
+        descriptionLong: "Activate to increase Basic Attack damage dealt by 30% for 5 seconds. Hitting enemy Heroes or Structures with Basic Attacks while in Siege Mode reduces the cooldown of Maelstrom Rounds by 5 seconds. Stores up to 3 charges.",
         cooldown: 100,
         charges: {
           chargesMax: 3,
@@ -207,6 +240,13 @@ const sgthammer: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_siegemode_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -225,6 +265,13 @@ const sgthammer: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_concussiveblast.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -241,6 +288,13 @@ const sgthammer: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_neosteelplating.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -257,6 +311,13 @@ const sgthammer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_siegemode.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.3333333333333333,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -275,6 +336,13 @@ const sgthammer: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_spidermines.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -292,6 +360,13 @@ const sgthammer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_siegemode.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -308,6 +383,13 @@ const sgthammer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_siegemode_var1.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -330,6 +412,13 @@ const sgthammer: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_bluntforcegun.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 33.333333333333336
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -350,6 +439,13 @@ const sgthammer: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_napalmstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 35.666666666666664
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -368,6 +464,13 @@ const sgthammer: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_spidermines.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -385,6 +488,13 @@ const sgthammer: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_concussiveblast.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -401,6 +511,13 @@ const sgthammer: Hero = {
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_hypercoolingengines.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -419,6 +536,13 @@ const sgthammer: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_neosteelplating.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -435,6 +559,13 @@ const sgthammer: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16"
       },
@@ -448,6 +579,13 @@ const sgthammer: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -463,6 +601,13 @@ const sgthammer: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_bluntforcegun.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -482,6 +627,13 @@ const sgthammer: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_napalmstrike.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -502,6 +654,13 @@ const sgthammer: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_spidermines.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -519,6 +678,13 @@ const sgthammer: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_siegemode.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -529,7 +695,10 @@ const sgthammer: Hero = {
   ],
   analysis: {
     tankiness: 51.826741996233515,
-    damageSustainedPhysical: 83.69565217391305
+    physicalDamage: 70,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 38.780061874927036
   }
 };
       

@@ -33,18 +33,25 @@ const stukov: Hero = {
       id: "StukovBioKillSwitch",
       name: "Bio-Kill Switch",
       descriptionShort: "Detonate Viruses for immediate effects",
-      descriptionLong: "Activate to detonate all of Stukov's Viruses. Each Healing Pathogen heals its target for 450 (+4% / level) Health, and each Weighted Pustule does 100 (+4% / level) damage and Slows its target by 70% for 2 seconds.Can be cast while Channeling Lurking Arm.",
+      descriptionLong: "Activate to detonate all of Stukov's Viruses. Each Healing Pathogen heals its target for 450 (+4% / level) Health, and each Weighted Pustule does 100 (+4% / level) damage and Slows its target by 70% for 2 seconds. Can be cast while Channeling Lurking Arm.",
       cooldown: 16,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_bio-killswitch.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 7.333333333333333,
+        magicalDamage: 0
+      }
     },
     {
       id: "StukovHealingPathogen",
       name: "Healing Pathogen",
       descriptionShort: "Infest allies with a spreading healing Virus",
-      descriptionLong: "Infest an allied Hero with a Healing Pathogen that heals the target for 222 (+4% / level) Health over 4.5 seconds. Healing Pathogens can spread to a nearby allied Hero every 0.75 seconds.Each cast of Healing Pathogen can only spread to each allied Hero 1 time.",
+      descriptionLong: "Infest an allied Hero with a Healing Pathogen that heals the target for 222 (+4% / level) Health over 4.5 seconds. Healing Pathogens can spread to a nearby allied Hero every 0.75 seconds. Each cast of Healing Pathogen can only spread to each allied Hero 1 time.",
       cost: {
         type: "Mana",
         amount: 40
@@ -53,7 +60,14 @@ const stukov: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_healingpathogen.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 4.44,
+        magicalDamage: 0
+      }
     },
     {
       id: "StukovWeightedPustule",
@@ -68,13 +82,20 @@ const stukov: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_weightedpustule.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 10.8
+      }
     },
     {
       id: "StukovLurkingArm",
       name: "Lurking Arm",
       descriptionShort: "Continually damage and Silence enemies in an area",
-      descriptionLong: "Channel at a target location, creating an area that deals 136 (+4% / level) damage per second to non-Structure enemies and Silences them. Deals 50% reduced damage to non-Heroes.Does not cost Mana while Channeling, and lasts until canceled or interrupted.",
+      descriptionLong: "Channel at a target location, creating an area that deals 136 (+4% / level) damage per second to non-Structure enemies and Silences them. Deals 50% reduced damage to non-Heroes. Does not cost Mana while Channeling, and lasts until canceled or interrupted.",
       cost: {
         type: "Mana",
         amount: 60
@@ -83,7 +104,14 @@ const stukov: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_lurkingarm.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 13.600000000000001
+      }
     },
     {
       id: "StukovMassiveShove",
@@ -98,7 +126,14 @@ const stukov: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_massiveshove.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 12.666666666666666
+      }
     },
     {
       id: "StukovFlailingSwipe",
@@ -119,7 +154,14 @@ const stukov: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_flailingswipe.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 3.2
+      }
     }
   ],
   talents: [
@@ -128,12 +170,19 @@ const stukov: Hero = {
         id: "StukovFetidTouch",
         name: "Fetid Touch",
         descriptionShort: "Quest: Reduce Weighted Pustule cooldown, cost",
-        descriptionLong: "Quest: Hit Heroes with Weighted Pustule.Reward: After hitting 15 Heroes, reduce the cooldown of Weighted Pustule by 2.5 seconds and its Mana cost by 25.Reward: After hitting 25 Heroes, reduce the cooldown of Weighted Pustule by an additional 2.5 seconds and remove its Mana cost.",
+        descriptionLong: "Quest: Hit Heroes with Weighted Pustule. Reward: After hitting 15 Heroes, reduce the cooldown of Weighted Pustule by 2.5 seconds and its Mana cost by 25. Reward: After hitting 25 Heroes, reduce the cooldown of Weighted Pustule by an additional 2.5 seconds and remove its Mana cost.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_weightedpustule.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -145,12 +194,19 @@ const stukov: Hero = {
         id: "StukovWeightedPustuleReactiveBallistospores",
         name: "Reactive Ballistospores",
         descriptionShort: "Radiate Weighted Pustule at low Health",
-        descriptionLong: "When taking damage below 50% Health, instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch.This effect has a 25 second cooldown.",
+        descriptionLong: "When taking damage below 50% Health, instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch. This effect has a 25 second cooldown.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_weightedpustule_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -167,6 +223,13 @@ const stukov: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_lurkingarm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -183,6 +246,13 @@ const stukov: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_spinelauncher.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level1"
       }
@@ -198,6 +268,13 @@ const stukov: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_healingpathogen.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -214,6 +291,13 @@ const stukov: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_healingpathogen_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -230,6 +314,13 @@ const stukov: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_bio-killswitch.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -248,6 +339,13 @@ const stukov: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_weightedpustule.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -264,6 +362,13 @@ const stukov: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_lurkingarm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -280,6 +385,13 @@ const stukov: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_bio-killswitch.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -308,6 +420,13 @@ const stukov: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_flailingswipe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 3.2
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -328,6 +447,13 @@ const stukov: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_massiveshove.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 12.666666666666666
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -346,6 +472,13 @@ const stukov: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_lurkingarm.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -362,6 +495,13 @@ const stukov: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_lurkingarm_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -378,6 +518,13 @@ const stukov: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_lurkingarm_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -394,6 +541,13 @@ const stukov: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_bio-killswitch.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level13",
         linkedAbilityIds: [
@@ -412,6 +566,13 @@ const stukov: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_healingpathogen.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.3333333333333335,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -428,6 +589,13 @@ const stukov: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_healingpathogen_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 5.333333333333333,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -444,6 +612,13 @@ const stukov: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_bio-killswitch.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -468,6 +643,13 @@ const stukov: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_flailingswipe.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -487,6 +669,13 @@ const stukov: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_massiveshove.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -506,6 +695,13 @@ const stukov: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_healingpathogen.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 12,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -522,6 +718,13 @@ const stukov: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_bio-killswitch.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 15.333333333333334
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -532,7 +735,10 @@ const stukov: Hero = {
   ],
   analysis: {
     tankiness: 55.74387947269304,
-    damageSustainedPhysical: 28.3695652173913
+    physicalDamage: 87,
+    mobility: 24.199,
+    healing: 15.453272663633182,
+    magicalDamage: 17.82438935803142
   }
 };
       

@@ -33,12 +33,19 @@ const mephisto: Hero = {
       id: "MephistoLordOfHatred",
       name: "Lord Of Hatred",
       descriptionShort: "Hitting Heroes with Basic Abilities reduces Mephisto's cooldowns",
-      descriptionLong: "Hitting enemy Heroes with Basic Abilities reduces Mephisto's Basic Ability cooldowns.Skull Missile and Shade of Mephisto grant 1.5 seconds of cooldown reduction per Hero hit, and Lightning Nova grants 0.3 seconds per Hero hit.",
+      descriptionLong: "Hitting enemy Heroes with Basic Abilities reduces Mephisto's Basic Ability cooldowns. Skull Missile and Shade of Mephisto grant 1.5 seconds of cooldown reduction per Hero hit, and Lightning Nova grants 0.3 seconds per Hero hit.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_hatred.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MephistoSkullMissile",
@@ -59,13 +66,20 @@ const mephisto: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_skull.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15.875
+      }
     },
     {
       id: "MephistoLightningNova",
       name: "Lightning Nova",
       descriptionShort: "Deal increasing damage to nearby enemies",
-      descriptionLong: "A ring of lightning appears around Mephisto for 2.5 seconds. Enemies within the ring take 43 (+4% / level) damage every 0.25 seconds.Each time a cast of Lightning Nova hits a Hero, its damage is increased by 3%, up to 30%.",
+      descriptionLong: "A ring of lightning appears around Mephisto for 2.5 seconds. Enemies within the ring take 43 (+4% / level) damage every 0.25 seconds. Each time a cast of Lightning Nova hits a Hero, its damage is increased by 3%, up to 30%.",
       cost: {
         type: "Mana",
         amount: 50
@@ -74,7 +88,14 @@ const mephisto: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_lightning.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MephistoShadeOfMephisto",
@@ -89,7 +110,14 @@ const mephisto: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_shade.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5.2
+      }
     },
     {
       id: "MephistoConsumeSouls",
@@ -104,13 +132,20 @@ const mephisto: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_souls.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "MephistoDuranceOfHate",
       name: "Durance of Hate",
       descriptionShort: "Unleash spirits that spread Roots",
-      descriptionLong: "After 0.75 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 (+4% / level) damage to them over the same duration.Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
+      descriptionLong: "After 0.75 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 (+4% / level) damage to them over the same duration. Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
       cost: {
         type: "Mana",
         amount: 50
@@ -119,7 +154,14 @@ const mephisto: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_durance.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16.666666666666668
+      }
     }
   ],
   talents: [
@@ -128,7 +170,7 @@ const mephisto: Hero = {
         id: "MephistoSkullMissileUnyieldingPower",
         name: "Unyielding Power",
         descriptionShort: "Quest: Empower Skull Missile",
-        descriptionLong: "Quest: Hit Heroes with Skull Missile.Reward: After hitting 20 Heroes, increase Skull Missile's damage by 100.Reward: After hitting 40 Heroes, Skull Missile gains an additional charge.",
+        descriptionLong: "Quest: Hit Heroes with Skull Missile. Reward: After hitting 20 Heroes, increase Skull Missile's damage by 100. Reward: After hitting 40 Heroes, Skull Missile gains an additional charge.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -140,6 +182,13 @@ const mephisto: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_skull.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -157,6 +206,13 @@ const mephisto: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_lightning.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 4.333333333333333
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -167,12 +223,19 @@ const mephisto: Hero = {
         id: "MephistoShadeOfMephistoMaliciousIntent",
         name: "Malicious Intent",
         descriptionShort: "Shade of Mephisto grants Spell Power",
-        descriptionLong: "Shade of Mephisto grants 25% Spell Power while active and for 2.5 seconds after ending.If Mephisto hits enemy Heroes at least 18 times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to 10 seconds after it ends.",
+        descriptionLong: "Shade of Mephisto grants 25% Spell Power while active and for 2.5 seconds after ending. If Mephisto hits enemy Heroes at least 18 times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to 10 seconds after it ends.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_shade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -197,6 +260,13 @@ const mephisto: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_skull.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 9.333333333333334,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -213,6 +283,13 @@ const mephisto: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_lightning.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -229,6 +306,13 @@ const mephisto: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_hatred.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 20,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -247,6 +331,13 @@ const mephisto: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_shade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -263,6 +354,13 @@ const mephisto: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_shade_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -273,12 +371,19 @@ const mephisto: Hero = {
         id: "MephistoShadeOfMephistoTrickery",
         name: "Trickery",
         descriptionShort: "Shade of Mephisto grants Move Speed",
-        descriptionLong: "Shade of Mephisto grants 20% Movement Speed while active and for 2.5 seconds after it ends.If Mephisto hits enemy Heroes at least 18 times with his Basic Abilities while Shade of Mephisto is active, then reset the cooldown of Shade of Mephisto.",
+        descriptionLong: "Shade of Mephisto grants 20% Movement Speed while active and for 2.5 seconds after it ends. If Mephisto hits enemy Heroes at least 18 times with his Basic Abilities while Shade of Mephisto is active, then reset the cooldown of Shade of Mephisto.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_shade_c.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -301,6 +406,13 @@ const mephisto: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_souls.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -311,7 +423,7 @@ const mephisto: Hero = {
         id: "MephistoDuranceOfHate",
         name: "Durance of Hate",
         descriptionShort: "Unleash spirits that spread Roots",
-        descriptionLong: "After 0.75 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 (+4% / level) damage to them over the same duration.Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
+        descriptionLong: "After 0.75 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 (+4% / level) damage to them over the same duration. Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
         cost: {
           type: "Mana",
           amount: 50
@@ -321,6 +433,13 @@ const mephisto: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_durance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 16.666666666666668
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -345,6 +464,13 @@ const mephisto: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_skull.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -361,6 +487,13 @@ const mephisto: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_hatred.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -377,6 +510,13 @@ const mephisto: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_splash.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -398,6 +538,13 @@ const mephisto: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_skull.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 9.2
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -414,6 +561,13 @@ const mephisto: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_lightning.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -430,6 +584,13 @@ const mephisto: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_lightning_b.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -448,6 +609,13 @@ const mephisto: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_souls.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -467,6 +635,13 @@ const mephisto: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_durance.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -486,6 +661,13 @@ const mephisto: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_lightning.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -496,12 +678,19 @@ const mephisto: Hero = {
         id: "MephistoShadeOfMephistoShadeLord",
         name: "Shade Lord",
         descriptionShort: "Activate to swap with Shade of Mephisto",
-        descriptionLong: "Activate to swap locations with Shade of Mephisto and refresh its duration.Passive: Shade of Mephisto benefits from all of Mephisto's level 7 Talents.",
+        descriptionLong: "Activate to swap locations with Shade of Mephisto and refresh its duration. Passive: Shade of Mephisto benefits from all of Mephisto's level 7 Talents.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_shade.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -512,7 +701,10 @@ const mephisto: Hero = {
   ],
   analysis: {
     tankiness: 59.29943502824858,
-    damageSustainedPhysical: 32.28260869565217
+    physicalDamage: 33,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 16.706676200853536
   }
 };
       

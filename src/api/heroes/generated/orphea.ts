@@ -40,12 +40,19 @@ const orphea: Hero = {
       id: "OrpheaOverflowingChaos",
       name: "Overflowing Chaos",
       descriptionShort: "Basic Abilities against enemy Heroes grant Chaos",
-      descriptionLong: "Hitting an enemy Hero with a Basic Ability grants 1 Chaos. Chaos can stack up to 3 times.While Orphea has Chaos, her Basic Attacks against Heroes consume all Chaos, dealing 50% increased damage per stack, and healing for 100% of the damage dealt.",
+      descriptionLong: "Hitting an enemy Hero with a Basic Ability grants 1 Chaos. Chaos can stack up to 3 times. While Orphea has Chaos, her Basic Attacks against Heroes consume all Chaos, dealing 50% increased damage per stack, and healing for 100% of the damage dealt.",
       cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_trait.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 13.333333333333334,
+        magicalDamage: 0
+      }
     },
     {
       id: "OrpheaShadowWaltz",
@@ -60,7 +67,14 @@ const orphea: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_q.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 33
+      }
     },
     {
       id: "OrpheaChomp",
@@ -75,7 +89,14 @@ const orphea: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_w.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 30.5
+      }
     },
     {
       id: "OrpheaDread",
@@ -90,7 +111,14 @@ const orphea: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_e.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 18.57142857142857
+      }
     },
     {
       id: "OrpheaCrushingJaws",
@@ -105,7 +133,14 @@ const orphea: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_ult_thrasher.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 16.666666666666668
+      }
     },
     {
       id: "OrpheaEternalFeast",
@@ -120,18 +155,14 @@ const orphea: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_ult_darkfall.png",
-      isPassive: false
-    },
-    {
-      id: "OrpheaOverflowingChaosInvasiveMiasma",
-      name: "Overflowing Chaos",
-      descriptionShort: "Basic Abilities against enemy Heroes grant Chaos",
-      descriptionLong: "Hitting an enemy Hero with a Basic Ability grants 1 Chaos. Chaos can stack up to 3 times.While Orphea has Chaos, her Basic Attacks against Heroes consumes all Chaos, dealing 50% increased damage per stack, and healing for 100% of the damage dealt.",
-      cooldown: 10,
-      category: "trait",
-      type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_trait.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 14
+      }
     }
   ],
   talents: [
@@ -146,6 +177,13 @@ const orphea: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -156,12 +194,19 @@ const orphea: Hero = {
         id: "OrpheaGrowingNightmare",
         name: "Growing Nightmare",
         descriptionShort: "Quest: Empower Dread eruption",
-        descriptionLong: "Increase Dread's eruption damage by 40%.  Quest: Hit 3 enemy Heroes with a single cast of Dread's eruption.Reward: Permanently increase Dread's eruption damage by an additional 25% and increase the Slow amount of Dread's eruption by 15%.",
+        descriptionLong: "Increase Dread's eruption damage by 40%.  Quest: Hit 3 enemy Heroes with a single cast of Dread's eruption. Reward: Permanently increase Dread's eruption damage by an additional 25% and increase the Slow amount of Dread's eruption by 15%.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -179,6 +224,13 @@ const orphea: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -192,12 +244,19 @@ const orphea: Hero = {
         id: "OrpheaAllegrissimo",
         name: "Allegrissimo",
         descriptionShort: "Reduce Shadow Waltz cooldown",
-        descriptionLong: "Reduce the cooldown of Shadow Waltz by 1 second.Hitting Heroes with the end of Shadow Waltz sets its cooldown to 0.75 seconds.",
+        descriptionLong: "Reduce the cooldown of Shadow Waltz by 1 second. Hitting Heroes with the end of Shadow Waltz sets its cooldown to 0.75 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -208,12 +267,19 @@ const orphea: Hero = {
         id: "OrpheaBackbiter",
         name: "Backbiter",
         descriptionShort: "Orphea dashes back after Chomp, gain Health",
-        descriptionLong: "If Chomp hits a Hero, Orphea immediately dashes a short distance backwards.Passive: Gain 15% maximum Health.",
+        descriptionLong: "If Chomp hits a Hero, Orphea immediately dashes a short distance backwards. Passive: Gain 15% maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -230,6 +296,13 @@ const orphea: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -249,6 +322,13 @@ const orphea: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -265,6 +345,13 @@ const orphea: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_w_2.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 4.133333333333334,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -276,12 +363,19 @@ const orphea: Hero = {
         id: "OrpheaMindDevourer",
         name: "Mind Devourer",
         descriptionShort: "Quest: Increase Dread damage, reduce cooldown",
-        descriptionLong: "Quest: Hitting Heroes with Dread increases its damage by 5, up to 150.Reward: After hitting 30 Heroes, hitting an enemy Hero with Dread's eruption sets its cooldown to 6 seconds and refunds 50 Mana.",
+        descriptionLong: "Quest: Hitting Heroes with Dread increases its damage by 5, up to 150. Reward: After hitting 30 Heroes, hitting an enemy Hero with Dread's eruption sets its cooldown to 6 seconds and refunds 50 Mana.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_e.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -305,6 +399,13 @@ const orphea: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_ult_darkfall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 14
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -325,6 +426,13 @@ const orphea: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_ult_thrasher.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 16.666666666666668
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -343,6 +451,13 @@ const orphea: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -359,6 +474,13 @@ const orphea: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_w.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -375,6 +497,13 @@ const orphea: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 3.64,
+          magicalDamage: 15
+        },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
@@ -393,6 +522,13 @@ const orphea: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_q.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 6.666666666666667,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -409,6 +545,13 @@ const orphea: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -430,6 +573,13 @@ const orphea: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_e_terror.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
@@ -448,6 +598,13 @@ const orphea: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_ult_darkfall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -467,6 +624,13 @@ const orphea: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_ult_thrasher.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -486,6 +650,13 @@ const orphea: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_trait.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
@@ -503,6 +674,13 @@ const orphea: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_orphea_reset.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -513,7 +691,10 @@ const orphea: Hero = {
   ],
   analysis: {
     tankiness: 45.951035781544256,
-    damageSustainedPhysical: 63.14053726857166
+    physicalDamage: 52.8084493518963,
+    mobility: 24.199,
+    healing: 17.50087504375219,
+    magicalDamage: 49.90449598526417
   }
 };
       

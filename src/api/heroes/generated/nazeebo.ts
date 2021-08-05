@@ -38,7 +38,14 @@ const nazeebo: Hero = {
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_voodooritual.png",
-      isPassive: true
+      isPassive: true,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 0
+      }
     },
     {
       id: "WitchDoctorCorpseSpiders",
@@ -53,7 +60,14 @@ const nazeebo: Hero = {
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_corpsespider.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 5.555555555555555
+      }
     },
     {
       id: "WitchDoctorZombieWall",
@@ -68,13 +82,20 @@ const nazeebo: Hero = {
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_zombiewall.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 2
+      }
     },
     {
       id: "WitchDoctorPlagueofToads",
       name: "Plague of Toads",
       descriptionShort: "Summon a wave of exploding toads",
-      descriptionLong: "Create a wave of 3 Toads that explode on contact, dealing 119 (+4% / level) damage over 6 seconds. This effect stacks.Stores up to 2 charges.",
+      descriptionLong: "Create a wave of 3 Toads that explode on contact, dealing 119 (+4% / level) damage over 6 seconds. This effect stacks. Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 30
@@ -89,7 +110,14 @@ const nazeebo: Hero = {
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_plagueoftoads.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 14.875
+      }
     },
     {
       id: "WitchDoctorGargantuan",
@@ -104,7 +132,14 @@ const nazeebo: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_gargantuan.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 6.666666666666667
+      }
     },
     {
       id: "WitchDoctorRavenousSpirit",
@@ -119,7 +154,14 @@ const nazeebo: Hero = {
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_ravenousspirit.png",
-      isPassive: false
+      isPassive: false,
+      analysis: {
+        mobility: 0,
+        physicalDamage: 0,
+        tankiness: 0,
+        healing: 0,
+        magicalDamage: 15.333333333333334
+      }
     }
   ],
   talents: [
@@ -128,12 +170,19 @@ const nazeebo: Hero = {
         id: "WitchDoctorWidowmakers",
         name: "Widowmakers",
         descriptionShort: "Quest: Empower Corpse Spiders",
-        descriptionLong: "Reduce the Mana cost of Corpse Spiders by 10.Reward: After Corpse Spiders attack Heroes 100 times, their attack damage is increased by 30% and the cooldown is reduced by 2 seconds.",
+        descriptionLong: "Reduce the Mana cost of Corpse Spiders by 10. Reward: After Corpse Spiders attack Heroes 100 times, their attack damage is increased by 30% and the cooldown is reduced by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_corpsespider.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
@@ -157,6 +206,13 @@ const nazeebo: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_plagueoftoads.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level1",
         linkedAbilityIds: [
@@ -168,12 +224,19 @@ const nazeebo: Hero = {
         id: "WitchDoctorThingOfTheDeep",
         name: "Thing of the Deep",
         descriptionShort: "Increase range, Quest: Increase Spell Power",
-        descriptionLong: "Increase the range of Nazeebo's Basic Abilities by 20%.Reward: After gaining 50 stacks of Voodoo Ritual, gain 5% Spell Power.Reward: After gaining 100 stacks of Voodoo Ritual, gain an additional 5% Spell Power.",
+        descriptionLong: "Increase the range of Nazeebo's Basic Abilities by 20%. Reward: After gaining 50 stacks of Voodoo Ritual, gain 5% Spell Power. Reward: After gaining 100 stacks of Voodoo Ritual, gain an additional 5% Spell Power.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_elunesgrace.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
@@ -193,6 +256,13 @@ const nazeebo: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_corpsespider.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level4",
         linkedAbilityIds: [
@@ -209,6 +279,13 @@ const nazeebo: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_voodooritual.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
@@ -225,6 +302,13 @@ const nazeebo: Hero = {
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_voodooritual_a.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
@@ -243,6 +327,13 @@ const nazeebo: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_corpsespider.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level7",
         linkedAbilityIds: [
@@ -259,6 +350,13 @@ const nazeebo: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_zombiewall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
@@ -281,6 +379,13 @@ const nazeebo: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_plagueoftoads.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
@@ -303,6 +408,13 @@ const nazeebo: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_gargantuan.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6.666666666666667
+        },
         order: 1,
         tier: "level10",
         linkedAbilityIds: [
@@ -323,6 +435,13 @@ const nazeebo: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_ravenousspirit.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 15.333333333333334
+        },
         order: 2,
         tier: "level10",
         linkedAbilityIds: [
@@ -347,6 +466,13 @@ const nazeebo: Hero = {
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_plagueoftoads.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
@@ -363,6 +489,13 @@ const nazeebo: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_suprerstition.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13"
       },
@@ -376,6 +509,13 @@ const nazeebo: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_iceblock.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level13"
       }
@@ -391,6 +531,13 @@ const nazeebo: Hero = {
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_corpsespider.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level16",
         linkedAbilityIds: [
@@ -407,6 +554,13 @@ const nazeebo: Hero = {
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_zombiewall.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 21.266666666666666
+        },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
@@ -423,6 +577,13 @@ const nazeebo: Hero = {
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_soulharvest.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 3,
         tier: "level16"
       }
@@ -438,6 +599,13 @@ const nazeebo: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_gargantuan.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
@@ -457,6 +625,13 @@ const nazeebo: Hero = {
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_ravenousspirit.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
@@ -476,6 +651,13 @@ const nazeebo: Hero = {
         type: "Passive",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 6.066666666666666
+        },
         order: 3,
         tier: "level20"
       },
@@ -483,12 +665,19 @@ const nazeebo: Hero = {
         id: "WitchDoctorVileInfection",
         name: "Vile Infection",
         descriptionShort: "Quest: Empower Voodoo Ritual",
-        descriptionLong: "Quest: Reach 175 stacks of Voodoo Ritual.Reward: After reaching 175 stacks of Voodoo Ritual, it can also be applied to Heroes and its damage is increased from 67 (+4% / level) to 167 (+4% / level) over 6 seconds.",
+        descriptionLong: "Quest: Reach 175 stacks of Voodoo Ritual. Reward: After reaching 175 stacks of Voodoo Ritual, it can also be applied to Heroes and its damage is increased from 67 (+4% / level) to 167 (+4% / level) over 6 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_voodooritual.png",
         isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 4,
         tier: "level20",
         linkedAbilityIds: [
@@ -500,7 +689,10 @@ const nazeebo: Hero = {
   ],
   analysis: {
     tankiness: 45.258003766478346,
-    damageSustainedPhysical: 58.45410628019323
+    physicalDamage: 48.888888888888886,
+    mobility: 24.199,
+    healing: 0,
+    magicalDamage: 19.667570901056326
   }
 };
       

@@ -1,8 +1,11 @@
 import '../../src/utils/ArrayExtensions';
 
-import { Ability, Charges, Hero, Talent } from '../../src/api/heroes/heroes';
+import { match } from 'assert';
+
+import { Ability, Analysis, Charges, Hero, Talent } from '../../src/api/heroes/heroes';
 import { HTC_GameStrings } from '../fetching/HeroesToolChest_GameStrings';
 import { HTC_Ability, HTC_Hero } from '../fetching/HeroesToolChest_HeroData';
+import TextAnalyser from './TextAnalyser';
 
 export function CreateHeroesFromFetchedData(
   heroData: { [key: string]: HTC_Hero },
@@ -50,23 +53,23 @@ function CreateHeroFromData(
       ...(data.abilities.heroic?.map(h =>
         CreateAbilityFromData(gameStrings, 'heroic', h)
       ) ?? []),
-      ...Object.values(data?.subAbilities ?? {})
-        .flatMap(x =>
-          Object.values(x).flatMap(y =>
-            Object.entries(y).map(z => {
-              return {
-                category: z[0],
-                abilities: z[1],
-              };
-            })
-          )
-        )
-        .filter(x => x.abilities?.length)
-        .flatMap(x =>
-          x.abilities.map(y =>
-            CreateAbilityFromData(gameStrings, x.category, y)
-          )
-        ),
+      // ...Object.values(data?.subAbilities ?? {})
+      //   .flatMap(x =>
+      //     Object.values(x).flatMap(y =>
+      //       Object.entries(y).map(z => {
+      //         return {
+      //           category: z[0],
+      //           abilities: z[1],
+      //         };
+      //       })
+      //     )
+      //   )
+      //   .filter(x => x.abilities?.length)
+      //   .flatMap(x =>
+      //     x.abilities.map(y =>
+      //       CreateAbilityFromData(gameStrings, x.category, y)
+      //     )
+      //   ),
     ].filter(ability => ability.descriptionShort),
     talents: data.talents
       ? Object.entries(data.talents).map(([tier, talents]) => {
@@ -93,11 +96,14 @@ function CreateHeroFromData(
 
   hero.analysis = {
     tankiness: (hero.health.amount / 1000) * hero.health.scale * 100,
-    damageSustainedPhysical:
+    physicalDamage:
       hero.autoAttacks.avgOf(
-        attack =>
-          (attack.damage * attack.damageScale * attack.range) / attack.period
+        attack => (attack.damage * attack.damageScale) / attack.period
       ) ?? 0,
+    mobility:
+      hero.movementSpeed * 5 + hero.abilities.sumOf(a => a.analysis.mobility),
+    healing: hero.abilities.sumOf(a => a.analysis.healing),
+    magicalDamage: hero.abilities.sumOf(a => a.analysis.magicalDamage),
   };
 
   return hero;
@@ -130,7 +136,7 @@ function CreateAbilityFromData(
       }
     : undefined;
 
-  return {
+  const ability = {
     id: abilityData.nameId,
     name: gameStrings.abiltalent.name[gameStringKey]?.trim(),
     descriptionShort: gameStrings.abiltalent.short[gameStringKey]?.trim(),
@@ -149,7 +155,11 @@ function CreateAbilityFromData(
     type: abilityData.abilityType,
     icon: `https://heroespatchnotes.github.io/heroes-talents/images/talents/${abilityData.icon}`,
     isPassive: abilityData.isActive === false || abilityData.isPassive === true,
-  };
+  } as any as Ability;
+
+  ability.analysis = AnalyseAbility(ability);
+
+  return ability;
 }
 
 function NormalizeHeroStats(heroes: Hero[]) {
@@ -169,4 +179,73 @@ function NormalizeHeroStats(heroes: Hero[]) {
       analysis[category] = (analysis[category] / maxStats[category]) * 100 || 0;
     }
   }
+}
+
+function AnalyseAbility(ability: Ability): Analysis {
+  const analysis: Analysis = {
+    mobility: 0,
+    physicalDamage: 0,
+    tankiness: 0,
+    healing: 0,
+    magicalDamage: 0,
+  };
+
+  const text = ability.descriptionLong.toLowerCase();
+  const analyser = new TextAnalyser(text);
+  const cooldownFactor = 1 / Math.min(ability.cooldown ?? 15, 15);
+
+  const tokens = [analyser.FindNextToken()];
+  while (true) {
+    const token = analyser.FindNextToken();
+    if (!token) break;
+
+    if (token.data.type === 'damage') {
+      const damageValue = tokens.last();
+      const deals = tokens.last(2);
+
+      if (
+        damageValue?.data.type === 'scalingValue' &&
+        deals?.data.type === 'deal'
+      ) {
+        analysis.magicalDamage += damageValue.data.value * cooldownFactor;
+      }
+    }
+
+    if (
+      token.data.type === 'scalingValue' ||
+      token.data.type === 'percentage'
+    ) {
+      const prev = tokens.last();
+      const prevPrev = tokens.last(2);
+      const prevPrevPrev = tokens.last(3);
+
+      if (
+        prev?.data.type === 'heal' ||
+        prevPrev?.data.type === 'heal' ||
+        prevPrevPrev?.data.type === 'heal'
+      ) {
+        const healFactor =
+          token.data.type === 'scalingValue'
+            ? token.data.value / 5
+            : token.data.value * 2;
+
+        const aoeFactor =
+          (prev?.data.type === 'hero' && prev.data.multiple) ||
+          (prevPrev?.data.type === 'hero' && prevPrev.data.multiple) ||
+          (prevPrevPrev?.data.type === 'hero' && prevPrevPrev.data.multiple)
+            ? 2
+            : 1;
+
+        analysis.healing += healFactor * aoeFactor * cooldownFactor;
+      }
+    }
+
+    tokens.push(token);
+  }
+
+  if (ability.id === 'KaelthasFlamestrike') {
+    console.log(tokens);
+  }
+
+  return analysis;
 }
