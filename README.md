@@ -6,7 +6,7 @@ It's possible because some nice people have provided an easy way to get data on 
 - [https://github.com/heroespatchnotes](https://github.com/heroespatchnotes)
 - [https://github.com/HeroesToolChest](https://github.com/HeroesToolChest)
 
-There are currently two things todo in [Hots Tools](https://benjabobs.github.io/HotsTools).
+There are currently two things to do in [Hots Tools](https://benjabobs.github.io/HotsTools).
 
 ## Hero Overview
 

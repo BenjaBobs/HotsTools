@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown';
+import Markdown from 'markdown-to-jsx';
 
 import readmeMD from '../../../README.md?raw';
 import { AppDefinition } from '../AppDefinition';
@@ -6,7 +6,7 @@ import Block from '../components/block/block';
 
 const AboutApp: AppDefinition = {
   name: 'About',
-  path: '/about',
+  path: '',
   component: <AboutPage />,
 };
 
@@ -15,11 +15,12 @@ export default AboutApp;
 function AboutPage() {
   return (
     <Block
+      className="markdown"
       mobile={{ width: '100%' }}
       tablet={{ width: '75%' }}
       laptop={{ width: '50%' }}
     >
-      <ReactMarkdown className="markdown">{readmeMD}</ReactMarkdown>
+      <Markdown children={readmeMD} />
     </Block>
   );
 }

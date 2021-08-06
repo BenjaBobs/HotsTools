@@ -4,8 +4,8 @@ import HeroPicker from '../components/hero-picker/hero-picker';
 import HeroDetailsPage from './pages/hero-details-page';
 
 const OverviewApp: AppDefinition = {
-  name: 'Overview',
-  path: '',
+  name: 'Heroes',
+  path: '/heroes',
   component: (
     <HeroPicker
       onHeroPicked={hero =>
@@ -16,7 +16,7 @@ const OverviewApp: AppDefinition = {
   nestedApps: [
     {
       name: 'Hero details',
-      path: 'heroes/:hero',
+      path: '/:hero',
       component: <HeroDetailsPage />,
     },
   ],

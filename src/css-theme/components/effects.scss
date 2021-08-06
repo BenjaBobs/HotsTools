@@ -3,6 +3,7 @@
 }
 
 .underglow,
+.block .underglow, // block will override it otherwise
 .underglow-hover:hover {
   background: linear-gradient(
     0deg,

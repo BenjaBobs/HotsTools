@@ -2,6 +2,10 @@ import { ChangelogItem } from './changelog-app';
 
 const changeLog: ChangelogItem[] = [
   {
+    date: new Date(2021, 8, 6),
+    fixed: ['About page', 'Underglow effect in menu not sticking'],
+  },
+  {
     date: new Date(2021, 8, 5),
     added: [
       'New analysis properties (mobility, healing, magic damage)',
