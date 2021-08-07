@@ -22,3 +22,19 @@ You pick a draft mode (first/last pick) and a map, and then you ban/pick heroes 
 The _heroes_ tab is for selecting heroes.
 
 The _analysis_ tab shows the (naïve) analysis for each team.
+
+# How to run locally
+Clone the repo
+Install the dependencies:
+> yarn install
+> 
+Compile the hero data from the latest patch:
+> yarn compile-data
+> 
+Start development server:
+> yarn dev
+
+# Questions?
+
+### How often is this updated?
+More or less when I feel like it.
