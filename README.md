@@ -27,15 +27,15 @@ The _analysis_ tab shows the (naïve) analysis for each team.
 Clone the repo
 Install the dependencies:
 
-> yarn install
+> `yarn install`
 
 Compile the hero data from the latest patch:
 
-> yarn compile-data
+> `yarn compile-data`
  
 Start development server:
 
-> yarn dev
+> `yarn dev`
 
 # Questions?
 
