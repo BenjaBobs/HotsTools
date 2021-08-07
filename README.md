@@ -25,17 +25,9 @@ The _analysis_ tab shows the (naïve) analysis for each team.
 
 # How to run locally
 Clone the repo
-Install the dependencies:
-
-> `yarn install`
-
-Compile the hero data from the latest patch:
-
-> `yarn compile-data`
- 
-Start development server:
-
-> `yarn dev`
+Install the dependencies: `yarn install`
+Compile the hero data from the latest patch: `yarn compile-data`
+Start development server: `yarn dev`
 
 # Questions?
 
