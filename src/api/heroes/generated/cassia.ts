@@ -86,7 +86,7 @@ const cassia: Hero = {
       id: "AmazonBlindingLight",
       name: "Blinding Light",
       descriptionShort: "Blind enemies in an area",
-      descriptionLong: "After 0.5 seconds, deal 50 (+4% / level) damage and Blind enemies in the target area for 2 seconds. Passive: Cassia deals 20% increased damage to Blinded targets.",
+      descriptionLong: "After 0.5 seconds, deal 50 (+4% / level) damage and Blind enemies in the target area for 2 seconds. Passive: Cassia deals 15% increased damage to Blinded targets.",
       cost: {
         type: "Mana",
         amount: 50
@@ -177,7 +177,7 @@ const cassia: Hero = {
         id: "AmazonThunderstroke",
         name: "Thunderstroke",
         descriptionShort: "Quest: Increase Lightning Fury damage",
-        descriptionLong: "Increase the damage of Lightning Fury by 25. Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
+        descriptionLong: "Increase the damage of Lightning Fury by 15. Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -351,7 +351,7 @@ const cassia: Hero = {
         id: "AmazonSeraphsHymn",
         name: "Seraph's Hymn",
         descriptionShort: "Empower Basic Attacks, Blinding Light",
-        descriptionLong: "Basic Attacks against your primary enemy Hero grant 10 Mana and reduce the cooldown of Blinding Light by 1.5 seconds. Passive: Increase the passive damage bonus of Blinding Light from 20% to 30%.",
+        descriptionLong: "Basic Attacks against your primary enemy Hero grant 10 Mana and reduce the cooldown of Blinding Light by 1.5 seconds. Passive: Increase the passive damage bonus of Blinding Light from 15% to 30%.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -374,7 +374,7 @@ const cassia: Hero = {
         id: "AmazonSurgeOfLight",
         name: "Surge of Light",
         descriptionShort: "Activate Avoidance to deal damage",
-        descriptionLong: "After taking 650 (+4% / level) damage with Avoidance active, Cassia can activate Avoidance to deal 240 (+4% / level) damage to enemies around her.",
+        descriptionLong: "After taking 650 (+4% / level) damage with Avoidance active, Cassia can activate Avoidance to deal 220 (+4% / level) damage to enemies around her.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -385,7 +385,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16
+          magicalDamage: 14.666666666666666
         },
         order: 3,
         tier: "level7",

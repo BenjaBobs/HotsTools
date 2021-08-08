@@ -3,7 +3,6 @@
 This little project is meant as an informative tool for [Heroes of the Storm](https://heroesofthestorm.com/en-us/) drafting.
 It's possible because some nice people have provided an easy way to get data on the heroes, be sure to check them out:
 
-- [https://github.com/heroespatchnotes](https://github.com/heroespatchnotes)
 - [https://github.com/HeroesToolChest](https://github.com/HeroesToolChest)
 
 There are currently two things to do in [Hots Tools](https://benjabobs.github.io/HotsTools).

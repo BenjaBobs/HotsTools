@@ -23,14 +23,14 @@ const raynor: Hero = {
       nameId: "RaynorWeaponMelee",
       range: 2,
       period: 0.8,
-      damage: 101,
+      damage: 98,
       damageScale: 0.04
     },
     {
       nameId: "RaynorWeapon",
       range: 6.5,
       period: 0.8,
-      damage: 101,
+      damage: 98,
       damageScale: 0.04
     }
   ],
@@ -58,12 +58,12 @@ const raynor: Hero = {
       id: "RaynorPenetratingRound",
       name: "Penetrating Round",
       descriptionShort: "Fire a shot damaging, knocking back, and Slowing enemies",
-      descriptionLong: "Deal 220 (+4% / level) damage, knock back, and Slow enemies in a line by 20% for 2 seconds. Enemies close to Raynor are knocked back further.",
+      descriptionLong: "Deal 205 (+4% / level) damage, knock back, and Slow enemies in a line by 20% for 2 seconds. Enemies close to Raynor are knocked back further.",
       cost: {
         type: "Mana",
-        amount: 65
+        amount: 60
       },
-      cooldown: 10,
+      cooldown: 9,
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_penetratinground.png",
@@ -73,7 +73,7 @@ const raynor: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22
+        magicalDamage: 22.777777777777775
       }
     },
     {
@@ -164,14 +164,14 @@ const raynor: Hero = {
   talents: [
     [
       {
-        id: "RaynorVeteranMarksman",
-        name: "Veteran Marksman",
-        descriptionShort: "Quest: Empower Give 'Em Some Pepper",
-        descriptionLong: "Quest: Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 1%.",
+        id: "RaynorGiveEmSomePepperExterminator",
+        name: "Exterminator",
+        descriptionShort: "Increase damage to non-Heroes",
+        descriptionLong: "Basic Attacks deal 50% more damage to Minions, Mercenaries, and Monsters. This is increased to 125% while Inspire is active. Passive: Inspire does not expire on friendly Minions and Mercenaries.",
         cooldown: null,
         category: "Talent",
-        type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
+        type: "W",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_inspire.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -183,20 +183,20 @@ const raynor: Hero = {
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
+          "RaynorInspire",
           "RaynorBountyHunter",
           "RaynorGiveEmSomePepper"
-        ],
-        isQuest: true
+        ]
       },
       {
-        id: "RaynorAceInTheHole",
-        name: "Ace In The Hole",
-        descriptionShort: "Deal more damage to disabled Heroes",
-        descriptionLong: "Passive: Deal 10% more damage to Stunned or Slowed Heroes. Enemy Heroes hit by Give 'Em Some Pepper are Slowed by 10% for 2.5 seconds.",
+        id: "RaynorVeteranMarksman",
+        name: "Veteran Marksman",
+        descriptionShort: "Gambit: Gain Give 'Em Some Pepper damageQuest: Gain Give 'Em Some Pepper damage",
+        descriptionLong: "Quest: Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 0.75%. Gambit: Gain 60% bonus Give 'Em Some Pepper damage. Every death reduces this bonus by 15%.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acardtoplay.png",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -210,17 +210,18 @@ const raynor: Hero = {
         linkedAbilityIds: [
           "RaynorBountyHunter",
           "RaynorGiveEmSomePepper"
-        ]
+        ],
+        isQuest: true
       },
       {
-        id: "RaynorGiveEmSomePepperExterminator",
-        name: "Exterminator",
-        descriptionShort: "Increased Attack damage to non-Heroes",
-        descriptionLong: "Basic Attacks deal 50% more damage to Minions, Mercenaries, and Monsters. This is increased to 125% while Inspire is active.",
+        id: "RaynorAceInTheHole",
+        name: "Ace In The Hole",
+        descriptionShort: "Deal more damage to disabled Heroes",
+        descriptionLong: "Deal 10% more damage to Stunned or Slowed Heroes. Enemy Heroes hit by Give 'Em Some Pepper are Slowed by 10% for 2.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_building.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acardtoplay.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -241,7 +242,7 @@ const raynor: Hero = {
       {
         id: "RaynorMasteryFightorFlightAdrenalineRush",
         name: "Fight or Flight",
-        descriptionShort: "Adrenaline Rush cooldown reduced, grants Armor",
+        descriptionShort: "Lower Adrenaline Rush cooldown, grants Armor",
         descriptionLong: "Reduce Adrenaline Rush's cooldown by 10 seconds. Casting Adrenaline Rush grants 25 Armor for 3 seconds.",
         cooldown: null,
         category: "Talent",
@@ -264,7 +265,7 @@ const raynor: Hero = {
       {
         id: "RaynorBasicAttackSustainingRounds",
         name: "Sustaining Rounds",
-        descriptionShort: "Give 'Em Some Pepper Attacks heal",
+        descriptionShort: "Give 'Em Some Pepper attacks heal",
         descriptionLong: "Give 'Em Some Pepper heals Raynor for 3% of his maximum Health, increased to 6% if the primary target is a Hero.",
         cooldown: null,
         category: "Talent",
@@ -289,7 +290,7 @@ const raynor: Hero = {
         id: "RaynorBehemothArmor",
         name: "Behemoth Armor",
         descriptionShort: "Quest: Gain bonus max Health",
-        descriptionLong: "Gain 200 bonus maximum Health.  Quest: Every time Give 'Em Some Pepper's primary target is a Hero, gain an additional 5 maximum Health.",
+        descriptionLong: "Gain 200 bonus maximum Health.  Quest: Every time Give 'Em Some Pepper's primary target is a Hero, gain an additional 8 maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -313,10 +314,33 @@ const raynor: Hero = {
     ],
     [
       {
+        id: "RaynorPenetratingRoundHeavySlugs",
+        name: "Heavy Slugs",
+        descriptionShort: "Improve Penetrating Round's Slow",
+        descriptionLong: "Increase Penetrating Round's Slow by 15% and its duration by 1.5 seconds.",
+        cooldown: null,
+        category: "Talent",
+        type: "Q",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_penetratinground.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 1,
+        tier: "level7",
+        linkedAbilityIds: [
+          "RaynorPenetratingRound"
+        ]
+      },
+      {
         id: "RaynorInspireFuelTheRush",
         name: "Fuel The Rush",
         descriptionShort: "Increase Adrenaline Rush cooldown reduction",
-        descriptionLong: "Reduce the Mana cost of Adrenaline Rush from 75 to 50.  While Inspire is active, increase Adrenaline Rush's cooldown reduction from Basic Attacks by 200%.",
+        descriptionLong: "Reduce the Mana cost of Adrenaline Rush from 75 to 45. While Inspire is active, increase Adrenaline Rush's cooldown reduction from Basic Attacks by 300%.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -329,7 +353,7 @@ const raynor: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 1,
+        order: 2,
         tier: "level7",
         linkedAbilityIds: [
           "RaynorInspire",
@@ -340,7 +364,7 @@ const raynor: Hero = {
         id: "RaynorGiveEmSomePepperUnstableCompound",
         name: "Unstable Compound",
         descriptionShort: "Give 'Em Some Pepper area increased, reduces cooldowns",
-        descriptionLong: "Increase the area of Give 'Em Some Pepper by 15%. Each enemy Hero hit by Give 'Em Some Pepper grants Raynor 10 Mana and reduces the cooldown of Penetrating Round and Inspire by 1 second.",
+        descriptionLong: "Increase the area of Give 'Em Some Pepper by 15%. Each enemy Hero hit by Give 'Em Some Pepper grants Raynor 10 Mana and reduces the cooldown of Penetrating Round by 1.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -353,34 +377,11 @@ const raynor: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 2,
+        order: 3,
         tier: "level7",
         linkedAbilityIds: [
           "RaynorBountyHunter",
           "RaynorGiveEmSomePepper"
-        ]
-      },
-      {
-        id: "RaynorPenetratingRoundHeavySlugs",
-        name: "Heavy Slugs",
-        descriptionShort: "Activate to empower Penetrating Round",
-        descriptionLong: "Activate to increase the distance of the next Penetrating Round by 30% and increase its Slow duration to 6 seconds.",
-        cooldown: 30,
-        category: "Talent",
-        type: "Active",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_penetratinground.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 3,
-        tier: "level7",
-        linkedAbilityIds: [
-          "RaynorPenetratingRound"
         ]
       }
     ],
@@ -438,14 +439,14 @@ const raynor: Hero = {
     ],
     [
       {
-        id: "RaynorPenetratingRoundDebilitatingRounds",
-        name: "Debilitating Rounds",
-        descriptionShort: "Inspire empowers Penetrating Round",
-        descriptionLong: "Reduce the Mana cost of Penetrating Round from 65 to 45, and its cooldown by 3 seconds. While Inspire is active, Penetrating Round's Slow is increased by 20%.",
+        id: "RaynorPenetratingRoundLine'EmUp",
+        name: "Line 'Em Up",
+        descriptionShort: "Reduce Penetrating Round's cooldown",
+        descriptionLong: "Reduce the cooldown of Penetrating Round by 3 seconds. Penetrating Round hitting two or more enemy Heroes reduces its cooldown by an additional 3 seconds.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_split_fuelrush.png",
+        type: "Q",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_penetratinground.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -457,15 +458,14 @@ const raynor: Hero = {
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
-          "RaynorPenetratingRound",
-          "RaynorInspire"
+          "RaynorPenetratingRound"
         ]
       },
       {
-        id: "RaynorInspireRallyingCry",
-        name: "Rallying Cry",
-        descriptionShort: "Inspire lasts longer and affects allied Heroes",
-        descriptionLong: "Increase the duration of Inspire by 1 second. Casting Inspire grants nearby allied Heroes 10% Movement and Attack Speed for its duration.",
+        id: "RaynorInspireGiddyUp",
+        name: "Giddy-Up",
+        descriptionShort: "Gain Move Speed, increased during Inspire",
+        descriptionLong: "Gain 10% Movement Speed while mounted and unmounted. Inspire grants 10% more Movement Speed.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -485,26 +485,27 @@ const raynor: Hero = {
         ]
       },
       {
-        id: "RaynorInspireGiddyUp",
-        name: "Giddy-Up",
-        descriptionShort: "Gain Move Speed, empower Inspire",
-        descriptionLong: "Gain 8% Movement Speed while mounted and unmounted. Inspire grants 8% more Movement Speed.",
+        id: "RaynorMasteryGiveMeMoreAdrenalineRush",
+        name: "Give Me More!",
+        descriptionShort: "Empower Adrenaline Rush and Inspire",
+        descriptionLong: "Increase Adrenaline Rush healing by 50%. While Inspire is active, gain 1 Basic Attack range.",
         cooldown: null,
         category: "Talent",
-        type: "W",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_inspire_a.png",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_split_debilitatingrounds.png",
         isPassive: false,
         analysis: {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 6.666666666666667,
           magicalDamage: 0
         },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
-          "RaynorInspire"
+          "RaynorInspire",
+          "RaynorAdrenalineRush"
         ]
       }
     ],
@@ -513,7 +514,7 @@ const raynor: Hero = {
         id: "RaynorPenetratingRoundPaintThemRed",
         name: "Paint Them Red",
         descriptionShort: "Penetrating Round deals more damage, heals",
-        descriptionLong: "Increase the damage of Penetrating Round by 50% and heal for 90% of the damage it deals to Heroes.",
+        descriptionLong: "Increase the damage of Penetrating Round by 50% and heal for 90% of the damage Penetrating Round deals to Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -533,27 +534,26 @@ const raynor: Hero = {
         ]
       },
       {
-        id: "RaynorMasteryGiveMeMoreAdrenalineRush",
-        name: "Give Me More!",
-        descriptionShort: "Empower Adrenaline Rush and Inspire",
-        descriptionLong: "Increase Adrenaline Rush healing by 50%. While Inspire is active, gain 1 Basic Attack range.",
+        id: "RaynorInspireRallyingCry",
+        name: "Rallying Cry",
+        descriptionShort: "Increase Inspire Attack Speed, cast for free",
+        descriptionLong: "Increase the Attack Speed bonus of Inspire by 20%. Passive: After every 12 Basic Attacks, cast Inspire for free.",
         cooldown: null,
         category: "Talent",
-        type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_split_debilitatingrounds.png",
+        type: "W",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_inspire.png",
         isPassive: false,
         analysis: {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
-          "RaynorInspire",
-          "RaynorAdrenalineRush"
+          "RaynorInspire"
         ]
       },
       {
@@ -582,10 +582,10 @@ const raynor: Hero = {
     ],
     [
       {
-        id: "RaynorHyperionIndomitableResolve",
-        name: "Indomitable Resolve",
-        descriptionShort: "Empower Hyperion, Inspire grants Unstoppable",
-        descriptionLong: "Give 'Em Some Pepper lowers the cooldown of Hyperion by 5 seconds if the primary target is a Hero. Inspire grants Raynor Unstoppable for 2 seconds.",
+        id: "RaynorHyperionCavalrysArrived",
+        name: "Cavalry's Arrived",
+        descriptionShort: "Mark targets for the Hyperion",
+        descriptionLong: "Give 'Em Some Pepper lowers the cooldown of Hyperion by 5 seconds if the primary target is a Hero. These Heroes are targeted by the Hyperion for 100% increased damage.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -611,7 +611,7 @@ const raynor: Hero = {
         id: "RaynorDuskWing",
         name: "Dusk Wing",
         descriptionShort: "Upgrade Raynor's Raider",
-        descriptionLong: "Increase the damage, Health, and leash range of Raynor's Raider by 100%. When it dies, both Inspire and Adrenaline Rush are activated for free.",
+        descriptionLong: "Increase the Health and leash range of Raynor's Raider by 100%. Its Basic Attack lowers enemy Hero Armor by 2 for 1 second, stacking up to 25.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -635,38 +635,37 @@ const raynor: Hero = {
         ]
       },
       {
-        id: "RaynorGiveEmSomePepperWeakSpotAcquired",
-        name: "Weak Spot Acquired",
-        descriptionShort: "Give 'Em Some Pepper reduces Armor",
-        descriptionLong: "Enemy Heroes that are the primary target of Give 'Em Some Pepper have their Armor reduced by 25 for 2 seconds.",
+        id: "RaynorAdrenalineRushRaidersRoll",
+        name: "Raiders Roll",
+        descriptionShort: "Adrenaline Rush grants Unstoppable",
+        descriptionLong: "Adrenaline Rush grants Unstoppable and continues healing for an additional 2 seconds. The additional duration ends upon reaching 70% Health.",
         cooldown: null,
         category: "Talent",
-        type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_adrenalinrush.png",
         isPassive: false,
         analysis: {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 9.333333333333334,
           magicalDamage: 0
         },
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
-          "RaynorBountyHunter",
-          "RaynorGiveEmSomePepper"
+          "RaynorAdrenalineRush"
         ]
       },
       {
-        id: "RaynorBasicAttackExecute",
-        name: "Execute",
-        descriptionShort: "Empowers Basic Attacks",
-        descriptionLong: "Increase Attack Speed by 20%. Basic Attack damage is increased by 25% against targets below 50% Health.",
+        id: "RaynorGive'EmSomePepperSergeantPepper",
+        name: "Sergeant Pepper",
+        descriptionShort: "Give 'Em Some Pepper every 3rd attack",
+        descriptionLong: "Give 'Em Some Pepper now activates every 3 Basic Attacks.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_acquireweakspot.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -681,15 +680,35 @@ const raynor: Hero = {
           "RaynorBountyHunter",
           "RaynorGiveEmSomePepper"
         ]
+      },
+      {
+        id: "RaynorHyperionExecuteOrders",
+        name: "Execute Orders",
+        descriptionShort: "Retaliate upon death",
+        descriptionLong: "Reduce Raynor's death timer by 35 seconds. Upon death, the Hyperion is cast towards the closest enemy Hero.",
+        cooldown: null,
+        category: "Talent",
+        type: "Passive",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_advancedoptics.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 5,
+        tier: "level20"
       }
     ]
   ],
   analysis: {
     tankiness: 43.69114877589453,
-    physicalDamage: 63.125,
+    physicalDamage: 61.24999999999999,
     mobility: 24.199,
     healing: 4.375218760938047,
-    magicalDamage: 35.648778716062836
+    magicalDamage: 35.99306879748176
   }
 };
       

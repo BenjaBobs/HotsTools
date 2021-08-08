@@ -23,7 +23,7 @@ const valla: Hero = {
       nameId: "HeroDemonHunter",
       range: 5.5,
       period: 0.6,
-      damage: 75,
+      damage: 70,
       damageScale: 0.04
     }
   ],
@@ -73,7 +73,7 @@ const valla: Hero = {
       id: "DemonHunterMultishot",
       name: "Multishot",
       descriptionShort: "Damage enemies in an area",
-      descriptionLong: "Deal 172 (+4% / level) damage to enemies within the target area.",
+      descriptionLong: "Deal 165 (+4% / level) damage to enemies within the target area.",
       cost: {
         type: "Mana",
         amount: 75
@@ -88,7 +88,7 @@ const valla: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 14.333333333333332
+        magicalDamage: 13.75
       }
     },
     {
@@ -105,7 +105,7 @@ const valla: Hero = {
         chargesMax: 1,
         chargesInitial: 1,
         chargeCost: 1,
-        recastCooldown: 2
+        recastCooldown: 0.5
       },
       category: "basic",
       type: "E",
@@ -144,8 +144,8 @@ const valla: Hero = {
     {
       id: "DemonHunterRainOfVengeance",
       name: "Rain of Vengeance",
-      descriptionShort: "Area attack that stuns enemies",
-      descriptionLong: "Launch a wave of Shadow Beasts that deals 250 (+4% / level) damage and stuns enemies in the target area for 0.5 seconds. Stores up to 2 charges.",
+      descriptionShort: "Area attack that Stuns enemies",
+      descriptionLong: "Launch a wave of Shadow Beasts that deals 250 (+4% / level) damage and Stuns enemies in the target area for 0.5 seconds. Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 50
@@ -173,88 +173,10 @@ const valla: Hero = {
   talents: [
     [
       {
-        id: "DemonHunterMasteryMonsterHunterHungeringArrow",
-        name: "Monster Hunter",
-        descriptionShort: "Reduces Hungering Arrow Mana cost and increases non-Hero damage",
-        descriptionLong: "Reduces the Mana cost of Hungering Arrow by 40 and increases the damage it deals to Minions, Mercenaries, and Monsters by 150%.",
-        cooldown: null,
-        category: "Talent",
-        type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hungeringarrow.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 1,
-        tier: "level1",
-        linkedAbilityIds: [
-          "DemonHunterHungeringArrow"
-        ]
-      },
-      {
-        id: "DemonHunterMasteryCaltrops",
-        name: "Caltrops",
-        descriptionShort: "Drop Caltrops while Vaulting Quest: Maintain Hatred to empower Vault",
-        descriptionLong: "Drop 3 Caltrops while Vaulting. Caltrops do 60 (+4% / level) damage and Slow enemies by 40% for 1 second. Quest: Spend 160 seconds at 10 stacks of Hatred. Reward: Vault cooldown is reduced by 5 seconds and its Mana cost is reduced from 50 to 25.",
-        cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 2
-        },
-        category: "Talent",
-        type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_vault.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level1",
-        linkedAbilityIds: [
-          "DemonHunterVault"
-        ],
-        isQuest: true
-      },
-      {
-        id: "DemonHunterCombatStyleHotPursuit",
-        name: "Hot Pursuit",
-        descriptionShort: "Max Hatred increases Movement Speed and Mana Regen",
-        descriptionLong: "When at 10 stacks of Hatred, the Movement Speed bonus increases to 20% total and Valla gains 4 Mana per second.",
-        cooldown: null,
-        category: "Talent",
-        type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 3,
-        tier: "level1",
-        linkedAbilityIds: [
-          "DemonHunterHatred"
-        ]
-      }
-    ],
-    [
-      {
         id: "DemonHunterMasteryPuncturingArrow",
         name: "Puncturing Arrow",
-        descriptionShort: "Quest: Hitting Heroes empowers Hungering Arrow",
-        descriptionLong: "Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow increases its damage by 5, up to a maximum of 100. Reward: After gaining 100 bonus damage, gain an additional 75 bonus damage and Hungering Arrow also bounces 1 additional time.",
+        descriptionShort: "Quest: Gain Hungering Arrow bounce, damage",
+        descriptionLong: "Increase the number of Hungering Arrow bounces by 1. Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 7.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -268,17 +190,17 @@ const valla: Hero = {
           magicalDamage: 0
         },
         order: 1,
-        tier: "level4",
+        tier: "level1",
         linkedAbilityIds: [
           "DemonHunterHungeringArrow"
         ],
         isQuest: true
       },
       {
-        id: "DemonHunterPunishment",
-        name: "Punishment",
-        descriptionShort: "Hatred increases Multishot damage",
-        descriptionLong: "Each stack of Hatred increases the damage of Multishot by 4%.",
+        id: "DemonHunterMultishotFireAtWill",
+        name: "Fire At Will",
+        descriptionShort: "Quest: Gain Multishot damage, Hatred",
+        descriptionLong: "Quest: Hitting a Hero with Multishot grants 2 Hatred and permanently increases its damage by 2. Reward: After hitting 20 Heroes with Multishot, increase its damage by 40.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -292,16 +214,17 @@ const valla: Hero = {
           magicalDamage: 0
         },
         order: 2,
-        tier: "level4",
+        tier: "level1",
         linkedAbilityIds: [
           "DemonHunterMultishot"
-        ]
+        ],
+        isQuest: true
       },
       {
         id: "DemonHunterCreedoftheHunter",
         name: "Creed of the Hunter",
-        descriptionShort: "Increases Attack SpeedQuest: Attacking Heroes empowers Hatred",
-        descriptionLong: "Increases Attack Speed by 10%. Quest: Use 100 Basic Attacks against Heroes. Reward: Hatred grants an additional 2% Basic Attack Damage per stack.",
+        descriptionShort: "Gambit: Gain Attack SpeedQuest: Increase Hatred Basic Attack bonus",
+        descriptionLong: "Quest: Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 5%. Gambit: Gain 20% bonus Attack Speed. Every death reduces this bonus by 5%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -315,7 +238,7 @@ const valla: Hero = {
           magicalDamage: 0
         },
         order: 3,
-        tier: "level4",
+        tier: "level1",
         linkedAbilityIds: [
           "DemonHunterHatred"
         ],
@@ -326,8 +249,8 @@ const valla: Hero = {
       {
         id: "DemonHunterMasteryArsenal",
         name: "Arsenal",
-        descriptionShort: "Multishot launches grenades",
-        descriptionLong: "Multishot also fires 3 grenades which deal 120 (+4% / level) damage. Each enemy Hero hit by a grenade reduces the cooldown of Multishot by 2 seconds.",
+        descriptionShort: "Increase Multishot range, launch grenades",
+        descriptionLong: "Increase the range of Multishot by 20%. Multishot also fires 3 grenades that deal 120 (+4% / level) damage and refund 25 Mana after hitting enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -341,7 +264,7 @@ const valla: Hero = {
           magicalDamage: 8
         },
         order: 1,
-        tier: "level7",
+        tier: "level4",
         linkedAbilityIds: [
           "DemonHunterMultishot"
         ]
@@ -349,14 +272,14 @@ const valla: Hero = {
       {
         id: "DemonHunterDeathDealer",
         name: "Death Dealer",
-        descriptionShort: "Increases Vault Basic Attack damage bonus",
-        descriptionLong: "Increases Vault Basic Attack damage bonus from 6% to 14% per stack of Hatred. If this attack kills its victim, the Mana cost and cooldown of Vault are refunded.",
+        descriptionShort: "Increases Vault damage bonus, reduce cooldown",
+        descriptionLong: "Increase Vaults Basic Attack damage bonus from 6% to 15% per stack of Hatred. If this attack kills its victim within 1.5 seconds, the Mana cost and cooldown of Vault are refunded. Passive: Reduce the cooldown of Vault by 5 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 1,
           chargesInitial: 1,
           chargeCost: 1,
-          recastCooldown: 2
+          recastCooldown: 0.5
         },
         category: "Talent",
         type: "E",
@@ -370,7 +293,7 @@ const valla: Hero = {
           magicalDamage: 0
         },
         order: 2,
-        tier: "level7",
+        tier: "level4",
         linkedAbilityIds: [
           "DemonHunterVault"
         ]
@@ -379,17 +302,89 @@ const valla: Hero = {
         id: "DemonHunterMasteryRepeatingArrowVault",
         name: "Repeating Arrow",
         descriptionShort: "Vault refreshes Hungering Arrow",
-        descriptionLong: "The cooldown for Hungering Arrow is reset when Vault is used.",
+        descriptionLong: "Vault no longer has a Mana cost. Casting Vault resets the cooldown of Hungering Arrow.",
         cooldown: null,
         charges: {
           chargesMax: 1,
           chargesInitial: 1,
           chargeCost: 1,
-          recastCooldown: 2
+          recastCooldown: 0.5
         },
         category: "Talent",
         type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_vault_a.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_repeatingarrow.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level4",
+        linkedAbilityIds: [
+          "DemonHunterVault"
+        ]
+      }
+    ],
+    [
+      {
+        id: "DemonHunterMasteryMonsterHunterHungeringArrow",
+        name: "Monster Hunter",
+        descriptionShort: "Increase Hungering Arrow non-Hero damage",
+        descriptionLong: "Hungering Arrow deals 150% additional damage to Minions, Mercenaries, and Monsters.",
+        cooldown: null,
+        category: "Talent",
+        type: "Q",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hungeringarrow.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 1,
+        tier: "level7",
+        linkedAbilityIds: [
+          "DemonHunterHungeringArrow"
+        ]
+      },
+      {
+        id: "DemonHunterMasteryFrostShot",
+        name: "Frost Shot",
+        descriptionShort: "Gain Multishot Slow, Hungering Arrow damage",
+        descriptionLong: "Multishot Slows enemies by 20% for 2.5 seconds. Hungering Arrows deals 25% more damage to Slowed enemies.",
+        cooldown: null,
+        category: "Talent",
+        type: "Q",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_siphoningarrow.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 2,
+        tier: "level7",
+        linkedAbilityIds: [
+          "DemonHunterHungeringArrow",
+          "DemonHunterMultishot"
+        ]
+      },
+      {
+        id: "DemonHunterCombatStyleHotPursuit",
+        name: "Hot Pursuit",
+        descriptionShort: "Increase Hatred Move Speed bonus",
+        descriptionLong: "Increase the Movement Speed bonus of each stack of Hatred to 2.5%.",
+        cooldown: null,
+        category: "Talent",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -401,7 +396,7 @@ const valla: Hero = {
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
-          "DemonHunterVault"
+          "DemonHunterHatred"
         ]
       }
     ],
@@ -436,8 +431,8 @@ const valla: Hero = {
       {
         id: "DemonHunterHeroicAbilityRainofVengeance",
         name: "Rain of Vengeance",
-        descriptionShort: "Area attack that stuns enemies",
-        descriptionLong: "Launch a wave of Shadow Beasts that deals 250 (+4% / level) damage and stuns enemies in the target area for 0.5 seconds. Stores up to 2 charges.",
+        descriptionShort: "Area attack that Stuns enemies",
+        descriptionLong: "Launch a wave of Shadow Beasts that deals 250 (+4% / level) damage and Stuns enemies in the target area for 0.5 seconds. Stores up to 2 charges.",
         cost: {
           type: "Mana",
           amount: 50
@@ -470,32 +465,33 @@ const valla: Hero = {
     [
       {
         id: "DemonHunterMasterySiphoningArrow",
-        name: "Siphoning Arrow",
-        descriptionShort: "Hungering Arrow returns damage as Health",
-        descriptionLong: "Valla heals for 75% of the damage dealt to Heroes by Hungering Arrow.",
+        name: "Siphoning Arrows",
+        descriptionShort: "Hungering Arrow and Multishot heal",
+        descriptionLong: "Hitting a Hero with Hungering Arrow heals Valla for 4% of her maximum Health, and Multishot heals for 2%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hungeringarrow.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_siphoningarrow.png",
         isPassive: false,
         analysis: {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
-          "DemonHunterHungeringArrow"
+          "DemonHunterHungeringArrow",
+          "DemonHunterMultishot"
         ]
       },
       {
         id: "DemonHunterCombatStyleTemperedByDiscipline",
         name: "Tempered by Discipline",
-        descriptionShort: "Max Hatred grants healing on Basic Attacks",
-        descriptionLong: "While at 10 stacks of Hatred, Basic Attacks heal for 25% of the damage dealt.",
+        descriptionShort: "Basic Attacks heal, increased by Hatred",
+        descriptionLong: "Basic Attacks heal for 10% of the damage dealt, increased by 2% per Hatred stack.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -505,7 +501,7 @@ const valla: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 1.3333333333333333,
           magicalDamage: 0
         },
         order: 2,
@@ -518,7 +514,7 @@ const valla: Hero = {
         id: "DemonHunterGloom",
         name: "Gloom",
         descriptionShort: "Consume Hatred to gain Spell Armor",
-        descriptionLong: "Activate to consume all Hatred, granting 3 Spell Armor per Hatred consumed for 5 seconds. Passive: Permanently gain 20 Spell Armor, reducing Ability Damage taken by 20%.",
+        descriptionLong: "Activate to consume all Hatred, granting 3 Spell Armor per Hatred consumed for 5 seconds. Passive: Gain 20 Spell Armor, and each stack of Hatred heals for 2.5 Health per second.",
         cooldown: 5,
         category: "Talent",
         type: "Active",
@@ -540,10 +536,10 @@ const valla: Hero = {
     ],
     [
       {
-        id: "DemonHunterMasteryFrostShot",
-        name: "Frost Shot",
-        descriptionShort: "Multishot slows enemies and has increased range",
-        descriptionLong: "Increases the range of Multishot by 20% and it also slows by 25% for 1.5 seconds.",
+        id: "DemonHunterPunishment",
+        name: "Punishment",
+        descriptionShort: "Reduce Multishot cooldown at max Hatred",
+        descriptionLong: "While at max Hatred, Multishot's cooldown recharges 50% faster.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -565,8 +561,8 @@ const valla: Hero = {
       {
         id: "DemonHunterSeethingHatred",
         name: "Seething Hatred",
-        descriptionShort: "Max Hatred grants Spell Power, gain Hatred faster",
-        descriptionLong: "While at 10 stacks of Hatred, gain 15% Spell Power. Basic Attacks now grant 2 stacks of Hatred.",
+        descriptionShort: "Increase all damage at max Hatred",
+        descriptionLong: "While at max Hatred, increase all damage dealt by 10%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -588,8 +584,8 @@ const valla: Hero = {
       {
         id: "DemonHunterManticore",
         name: "Manticore",
-        descriptionShort: "Consecutive Basic Attacks against Heroes are empowered",
-        descriptionLong: "Every 3rd Basic Attack against the same Heroic target deals an additional 5% of their maximum Health as damage.",
+        descriptionShort: "Increase Basic Attacks against Heroes",
+        descriptionLong: "Every 3rd Basic Attack against the same Hero deals an additional 5% of their maximum Health as damage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -610,8 +606,8 @@ const valla: Hero = {
       {
         id: "DemonHunterMasteryDeathSiphon",
         name: "Death Siphon",
-        descriptionShort: "Fires penetrating bolts and heals",
-        descriptionLong: "Strafe also fires penetrating bolts in a line for 34 (+4% / level) damage every 0.25 seconds. 25% of the damage dealt with Strafe is returned as Health.",
+        descriptionShort: "Strafe lasts longer, fires leeching bolts",
+        descriptionLong: "Hitting an enemy Hero with Strafe increases its duration by 0.125 seconds. Strafe also fires penetrating bolts in a line for 34 (+4% / level) damage every 0.25 seconds that heal for 25% of their damage dealt.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -621,7 +617,7 @@ const valla: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -636,8 +632,8 @@ const valla: Hero = {
       {
         id: "DemonHunterMasteryStormofVengeance",
         name: "Storm of Vengeance",
-        descriptionShort: "Basic Attacks reduce Cooldown",
-        descriptionLong: "Basic Attacks reduce the charge cooldown of Rain of Vengeance by 5 seconds.",
+        descriptionShort: "Reduce cooldown, gain Attack Speed",
+        descriptionLong: "Basic Attacks against Heroes reduce the cooldown of Rain of Vengeance by 5 seconds. Passive: Each stack of Hatred increases your Attack Speed by 2%. While at max Hatred, gain an additional 30% Attack Speed.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -666,10 +662,39 @@ const valla: Hero = {
         ]
       },
       {
-        id: "DemonHunterCombatStyleRancor",
-        name: "Rancor",
-        descriptionShort: "Hatred increases Attack Speed",
-        descriptionLong: "Each stack of Hatred also increases Attack Speed by 2%. While at 10 stacks of Hatred, gain an additional 30% Attack Speed.",
+        id: "DemonHunterVaultAcrobat",
+        name: "Acrobat",
+        descriptionShort: "Gain Vault charges, drop Caltrops",
+        descriptionLong: "Gain 2 additional charges of Vault. Drop 3 Caltrops while Vaulting that deal 60 (+4% / level) damage and Slow enemies by 40% for 1 second.",
+        cooldown: null,
+        charges: {
+          chargesMax: 1,
+          chargesInitial: 1,
+          chargeCost: 1,
+          recastCooldown: 0.5
+        },
+        category: "Talent",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_vault.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 4
+        },
+        order: 3,
+        tier: "level20",
+        linkedAbilityIds: [
+          "DemonHunterVault"
+        ]
+      },
+      {
+        id: "DemonHunterFarflightQuiver",
+        name: "Farflight Quiver",
+        descriptionShort: "Gain Basic Attack range, increased by Hatred",
+        descriptionLong: "Gain 20% Basic Attack range. While at max Hatred, gain an additional 30% Basic Attack range.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -682,40 +707,20 @@ const valla: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 3,
+        order: 4,
         tier: "level20",
         linkedAbilityIds: [
           "DemonHunterHatred"
         ]
-      },
-      {
-        id: "DemonHunterFarflightQuiver",
-        name: "Farflight Quiver",
-        descriptionShort: "Increases Basic Attack range",
-        descriptionLong: "Increases Valla's Basic Attack range by 2.2.",
-        cooldown: null,
-        category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_range.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 4,
-        tier: "level20"
       }
     ]
   ],
   analysis: {
     tankiness: 40.376647834274955,
-    physicalDamage: 62.5,
+    physicalDamage: 58.333333333333336,
     mobility: 24.199,
     healing: 0,
-    magicalDamage: 23.46090983383274
+    magicalDamage: 23.202692272768548
   }
 };
       

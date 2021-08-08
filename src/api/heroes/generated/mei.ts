@@ -8,9 +8,9 @@ const mei: Hero = {
   size: 0.875,
   movementSpeed: 4.8398,
   health: {
-    amount: 2675,
+    amount: 2625,
     scale: 0.04,
-    regenRate: 5.5742,
+    regenRate: 5.5703,
     regenScale: 0.04
   },
   energy: {
@@ -150,7 +150,7 @@ const mei: Hero = {
         type: "Mana",
         amount: 50
       },
-      cooldown: 50,
+      cooldown: 60,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_r2_icewall.png",
@@ -199,7 +199,7 @@ const mei: Hero = {
         id: "MeiOWIceStorm",
         name: "Ice Storm",
         descriptionShort: "Blizzard can deal extra damage",
-        descriptionLong: "Every 3rd hit of Blizzard against enemy Heroes deals an additional 45 (+4% / level) damage. Blizzard's final Stun damage is increased by 150% against all enemies.",
+        descriptionLong: "Every 3rd hit of Blizzard against enemy Heroes deals an additional 42 (+4% / level) damage. Blizzard's final Stun damage is increased by 150% against all enemies.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -210,7 +210,7 @@ const mei: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3
+          magicalDamage: 2.8
         },
         order: 2,
         tier: "level1",
@@ -222,7 +222,7 @@ const mei: Hero = {
         id: "MeiOWHeatTransfer",
         name: "Heat Transfer",
         descriptionShort: "Gain bonuses from disabling Heroes",
-        descriptionLong: "Basic Attacks against Stunned, Rooted, or Slowed Heroes deal 33% more damage. Each time Mei Stuns or Slows an enemy Hero she heals for 18 (+4% / level) Health.",
+        descriptionLong: "Basic Attacks against Stunned, Rooted, or Slowed Heroes deal 33% more damage. Each time Mei Stuns or Slows an enemy Hero she heals for 16 (+4% / level) Health.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -232,7 +232,7 @@ const mei: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.24,
+          healing: 0.21333333333333335,
           magicalDamage: 0
         },
         order: 3,
@@ -273,7 +273,7 @@ const mei: Hero = {
         id: "MeiOWColdFront",
         name: "Cold Front",
         descriptionShort: "Blizzard reduces Icing cooldown",
-        descriptionLong: "Reduce the cooldown of Icing by 4 seconds.  If Mei enters her own Blizzard while Icing is active, the cooldown of Icing is reduced by 5 seconds and she gains 80 Mana.",
+        descriptionLong: "Reduce the cooldown of Icing by 3 seconds.  If Mei enters her own Blizzard while Icing is active, the cooldown of Icing is reduced by 5 seconds and she gains 80 Mana.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -421,7 +421,7 @@ const mei: Hero = {
           type: "Mana",
           amount: 50
         },
-        cooldown: 50,
+        cooldown: 60,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_r2_icewall.png",
@@ -690,7 +690,7 @@ const mei: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 80.60263653483992,
+    tankiness: 79.09604519774011,
     physicalDamage: 37.5,
     mobility: 24.199,
     healing: 0,

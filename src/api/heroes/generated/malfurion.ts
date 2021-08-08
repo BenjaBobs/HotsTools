@@ -589,7 +589,7 @@ const malfurion: Hero = {
         id: "MalfurionMasterySerenity",
         name: "Serenity",
         descriptionShort: "Empower Tranquility",
-        descriptionLong: "Each enemy Hero hit by Moonfire reduces the cooldown of Tranquility by 3 seconds. Increase Tranquility's healing by 10% per ally affected by Regrowth.",
+        descriptionLong: "Each enemy Hero hit by Moonfire reduces the cooldown of Tranquility by 3 seconds. Increase Tranquility's healing by 25% and 10% per ally affected by Regrowth.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -599,7 +599,7 @@ const malfurion: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 4.666666666666667,
           magicalDamage: 0
         },
         order: 1,

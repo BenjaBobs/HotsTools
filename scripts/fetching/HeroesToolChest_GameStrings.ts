@@ -6,15 +6,16 @@ export async function GetLatestGameStrings(patches: PatchVersion[]) {
   console.log('Fetching latest game strings...');
   // try latest patch first
   for (const patch of patches) {
-    console.log(`Trying patch ${patch.fullVersion} - ${patch.patchName}`);
+    console.log(`Trying patch ${patch.name}`);
 
+    const fullVersion = patch.tag_name.substring(1);
     const [majorVersion, minorVersion, patchVersion, build] =
-      patch.fullVersion.split('.');
+      fullVersion.split('.');
 
     // https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/2.53.1.83632/gamestrings/gamestrings_83632_enus.json
     // https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/<full-version>/gamestrings/gamestrings_<build-number>_enus.json
     const gameStringsResponse = await fetch(
-      `https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/${patch.fullVersion}/gamestrings/gamestrings_${build}_enus.json`
+      `https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/${fullVersion}/gamestrings/gamestrings_${build}_enus.json`
     );
 
     if (gameStringsResponse.status === 404) {

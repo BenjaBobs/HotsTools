@@ -153,7 +153,7 @@ const lucio: Hero = {
       id: "LucioHighFive",
       name: "High Five",
       descriptionShort: "Skate to allies, healing and granting Unstoppable",
-      descriptionLong: "Quickly skate to an allied Hero. Upon arrival the ally is healed for 250 (+4% / level), Lúcio is healed for 125 (+4% / level), and both gain Unstoppable for 1 second.",
+      descriptionLong: "Quickly skate to an allied Hero. Upon arrival the ally is healed for 230 (+4% / level), Lúcio is healed for 80 (+4% / level), and both gain Unstoppable for 1 second.",
       cost: {
         type: "Mana",
         amount: 30
@@ -167,7 +167,7 @@ const lucio: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 5,
+        healing: 4.133333333333333,
         magicalDamage: 0
       }
     }
@@ -177,8 +177,8 @@ const lucio: Hero = {
       {
         id: "LucioCrossfadePartyMixQuest",
         name: "Party Mix",
-        descriptionShort: "Quest: Playing Crossfade for allies increases range",
-        descriptionLong: "Quest: Play Lúcio's Crossfade tracks to nearby allies for a total of 8 minutes. Multiple allies provide additional time. Reward: Permanently increase Crossfade's range by 20%.",
+        descriptionShort: "Quest: Increase Crossfade range, max Mana",
+        descriptionLong: "Quest: Play Lúcio's Crossfade tracks to nearby allies. Multiple allies provide additional time. Reward: For every 1 Minute played, permanently increase Lucio's maximum Mana by 10. Reward: Once you have played for 8 minutes or more, permanently increase Crossfade's range by 20%.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -368,7 +368,7 @@ const lucio: Hero = {
         id: "LucioBoombox",
         name: "Boombox",
         descriptionShort: "Drop a boombox that plays Crossfade",
-        descriptionLong: "Place a boombox that plays Lúcio's active Crossfade track. Its volume adjusts with Amp It Up. Crossfade tracks do not stack.",
+        descriptionLong: "Place a boombox that plays Lúcio's active Crossfade track. Its volume adjusts with Amp It Up. Allied Heroes near the boombox gain 5 Armor. Crossfade tracks do not stack.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
@@ -417,7 +417,7 @@ const lucio: Hero = {
         id: "LucioHighFive",
         name: "High Five",
         descriptionShort: "Skate to allies, healing and granting Unstoppable",
-        descriptionLong: "Quickly skate to an allied Hero. Upon arrival the ally is healed for 250 (+4% / level), Lúcio is healed for 125 (+4% / level), and both gain Unstoppable for 1 second.",
+        descriptionLong: "Quickly skate to an allied Hero. Upon arrival the ally is healed for 230 (+4% / level), Lúcio is healed for 80 (+4% / level), and both gain Unstoppable for 1 second.",
         cost: {
           type: "Mana",
           amount: 30
@@ -431,7 +431,7 @@ const lucio: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 4.133333333333333,
           magicalDamage: 0
         },
         order: 2,
@@ -492,7 +492,7 @@ const lucio: Hero = {
         id: "LucioWallRideSlip",
         name: "Slip",
         descriptionShort: "Gain Armor, Move Speed during Wall Ride",
-        descriptionLong: "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40% for 1 second. Passive: Wall Ride grants 20 Armor.",
+        descriptionLong: "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40%, and grants 15 Armor, for 1 second.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -563,7 +563,7 @@ const lucio: Hero = {
         id: "LucioAmpItUpUpToEleven",
         name: "Up To Eleven",
         descriptionShort: "Increase Amp It Up duration",
-        descriptionLong: "Increase the duration of Amp It Up by 1 second.",
+        descriptionLong: "Increase the duration of Amp It Up by 1 second. While Amp It Up is active, enemy Heroes hit by Soundwave or Push-Off further increase its duration by 0.3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -614,7 +614,7 @@ const lucio: Hero = {
         id: "LucioCrossfadeMixingFire",
         name: "Mixing Fire",
         descriptionShort: "High Five damages enemies, reduces their healing",
-        descriptionLong: "High Five can now be cast on enemy Heroes, dealing 225 (+4% / level) damage and reducing all healing received by 50% for 3 seconds. Passive: Reduce the cost and cooldown of High Five by 50%.",
+        descriptionLong: "High Five can now be cast on enemy Heroes, dealing 160 (+4% / level) damage and reducing all healing received by 50% for 3 seconds. Passive: Reduce the cost and cooldown of High Five by 30%.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -624,8 +624,8 @@ const lucio: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
-          magicalDamage: 15
+          healing: 10.666666666666668,
+          magicalDamage: 10.666666666666666
         },
         order: 2,
         tier: "level20",
@@ -688,7 +688,7 @@ const lucio: Hero = {
     tankiness: 43.45009416195856,
     physicalDamage: 9.2,
     mobility: 24.199,
-    healing: 14.88247489297542,
+    healing: 13.744918015131526,
     magicalDamage: 6.639880141650776
   }
 };

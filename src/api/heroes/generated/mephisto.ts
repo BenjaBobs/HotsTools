@@ -145,7 +145,7 @@ const mephisto: Hero = {
       id: "MephistoDuranceOfHate",
       name: "Durance of Hate",
       descriptionShort: "Unleash spirits that spread Roots",
-      descriptionLong: "After 0.75 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 (+4% / level) damage to them over the same duration. Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
+      descriptionLong: "After 1 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 (+4% / level) damage to them over the same duration. Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
       cost: {
         type: "Mana",
         amount: 50
@@ -423,7 +423,7 @@ const mephisto: Hero = {
         id: "MephistoDuranceOfHate",
         name: "Durance of Hate",
         descriptionShort: "Unleash spirits that spread Roots",
-        descriptionLong: "After 0.75 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 (+4% / level) damage to them over the same duration. Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
+        descriptionLong: "After 1 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 (+4% / level) damage to them over the same duration. Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
         cost: {
           type: "Mana",
           amount: 50

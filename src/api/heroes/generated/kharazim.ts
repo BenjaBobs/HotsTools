@@ -632,6 +632,31 @@ const kharazim: Hero = {
         ]
       },
       {
+        id: "MonkFistsofLegendTrait",
+        name: "Fists of Legend",
+        descriptionShort: "Gain partial level 1 talent benefits",
+        descriptionLong: "Gain 50% of the benefit from both level 1  talents that were not chosen.",
+        cooldown: null,
+        category: "Talent",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_glues_draft_portrait_monk.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level20",
+        linkedAbilityIds: [
+          "MonkIronFists",
+          "MonkInsight",
+          "MonkTranscendence"
+        ]
+      },
+      {
         id: "GenericTalentStormShield",
         name: "Storm Shield",
         descriptionShort: "Activate to grant Shields to all nearby allies",
@@ -648,7 +673,7 @@ const kharazim: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 3,
+        order: 4,
         tier: "level20"
       },
       {
@@ -668,7 +693,7 @@ const kharazim: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 4,
+        order: 5,
         tier: "level20"
       }
     ]

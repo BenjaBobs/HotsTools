@@ -51,7 +51,7 @@ const junkrat: Hero = {
       id: "JunkratFragLauncher",
       name: "Frag Launcher",
       descriptionShort: "Launch a bouncing grenade",
-      descriptionLong: "Launch a grenade that explodes at the end of its path or upon hitting an enemy, dealing 118 (+4% / level) damage to nearby enemies. Grenades can ricochet off of terrain. Deals 50% less damage to Structures. Stores up to 4 charges. Frag Launcher's cooldown replenishes all charges at the same time.",
+      descriptionLong: "Launch a grenade that explodes at the end of its path or upon hitting an enemy, dealing 124 (+4% / level) damage to nearby enemies. Grenades can ricochet off of terrain. Deals 50% less damage to Structures. Stores up to 4 charges. Frag Launcher's cooldown replenishes all charges at the same time.",
       cooldown: 12,
       charges: {
         chargesMax: 4,
@@ -68,7 +68,7 @@ const junkrat: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 9.833333333333332
+        magicalDamage: 10.333333333333332
       }
     },
     {
@@ -129,7 +129,7 @@ const junkrat: Hero = {
       id: "JunkratRocketRide",
       name: "Rocket Ride",
       descriptionShort: "Launch into the air, damaging enemies upon landing",
-      descriptionLong: "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving. After 3.75 seconds, Junkrat lands, dealing 890 (+4% / level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
+      descriptionLong: "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving. After 3.75 seconds, Junkrat lands, dealing 935 (+4% / level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
       cooldown: 75,
       category: "heroic",
       type: "Heroic",
@@ -140,7 +140,7 @@ const junkrat: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 59.333333333333336
+        magicalDamage: 62.333333333333336
       }
     }
   ],
@@ -179,7 +179,7 @@ const junkrat: Hero = {
         id: "JunkratFragLauncherExtraWoundTimers",
         name: "Extra-Wound Timers",
         descriptionShort: "Frag Launcher grenades deal bonus damage",
-        descriptionLong: "The final grenade launched from Frag Launcher deals 80% bonus damage, and Frag Launcher grenades last an additional 2 seconds before automatically detonating.",
+        descriptionLong: "The final grenade launched from Frag Launcher deals 120% bonus damage, and Frag Launcher grenades last an additional 2 seconds before automatically detonating.",
         cooldown: null,
         charges: {
           chargesMax: 4,
@@ -337,7 +337,7 @@ const junkrat: Hero = {
         id: "JunkratSteelTrapBigAs",
         name: "Big As",
         descriptionShort: "Increase Steel Trap radius, damage",
-        descriptionLong: "Increase Steel Trap's radius and damage by 50% and enemy Heroes who are hit have their Armor reduced by 15 for 3 seconds.",
+        descriptionLong: "Steel Trap now only hits Heroes, and Heroes hit have their Armor reduced by 15 for 3 seconds. Increases Steel Trap's radius and damage by 50%.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -431,7 +431,7 @@ const junkrat: Hero = {
         id: "JunkratRocketRide",
         name: "Rocket Ride",
         descriptionShort: "Launch into the air, damaging enemies upon landing",
-        descriptionLong: "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving. After 3.75 seconds, Junkrat lands, dealing 890 (+4% / level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
+        descriptionLong: "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving. After 3.75 seconds, Junkrat lands, dealing 935 (+4% / level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
         cooldown: 75,
         category: "Talent",
         type: "Heroic",
@@ -442,7 +442,7 @@ const junkrat: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 59.333333333333336
+          magicalDamage: 62.333333333333336
         },
         order: 2,
         tier: "level10",
@@ -722,7 +722,7 @@ const junkrat: Hero = {
     physicalDamage: 60,
     mobility: 24.199,
     healing: 0,
-    magicalDamage: 69.34985925724143
+    magicalDamage: 70.89916462362662
   }
 };
       

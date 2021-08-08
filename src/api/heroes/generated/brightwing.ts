@@ -33,8 +33,8 @@ const brightwing: Hero = {
       id: "BrightwingCalmingMist",
       name: "Soothing Mist",
       descriptionShort: "Remove disabling effects from allies",
-      descriptionLong: "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes. Passive: Brightwing heals nearby allied Heroes for 105 (+4% / level) every 4 seconds",
-      cooldown: 100,
+      descriptionLong: "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes. Passive: Brightwing heals nearby allied Heroes for 115 (+4% / level) every 4 seconds",
+      cooldown: 90,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_soothingmist.png",
@@ -43,7 +43,7 @@ const brightwing: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 2.8,
+        healing: 3.0666666666666664,
         magicalDamage: 0
       }
     },
@@ -52,7 +52,7 @@ const brightwing: Hero = {
       name: "Phase Shift",
       descriptionShort: "Teleport to an allied Hero and heal them",
       descriptionLong: "After 2 seconds, teleport to an allied Hero and heal them for 25% of their maximum Health.",
-      cooldown: 50,
+      cooldown: 40,
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_mount.png",
@@ -211,7 +211,7 @@ const brightwing: Hero = {
         id: "BrightwingPhaseShiftHyperShift",
         name: "Hyper Shift",
         descriptionShort: "Increase Phase Shift healing",
-        descriptionLong: "Increase Phase Shift's healing by an additional 8% of the target's maximum Health. Nearby enemy Minion deaths reduce Phase Shift's cooldown by 1.5 seconds.",
+        descriptionLong: "Increase Phase Shift's healing by an additional 8% of the target's maximum Health. Nearby enemy Minion deaths reduce Phase Shift's cooldown by 1 second.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -353,7 +353,7 @@ const brightwing: Hero = {
         id: "BrightwingPhaseShiftPeekaboo",
         name: "Peekaboo!",
         descriptionShort: "Phase Shift grants a Shield, reveals an area",
-        descriptionLong: "Phase Shifting to an ally grants both Brightwing and her target a 335 (+4% / level) point Shield and reveals a large area around them for 5 seconds.",
+        descriptionLong: "Phase Shifting to an ally grants both Brightwing and her target a 335 (+4% / level) Shield for 4 seconds and reveals a large area around them for 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -376,7 +376,7 @@ const brightwing: Hero = {
         id: "BrightwingCriticalMistCalmingMist",
         name: "Critical Mist",
         descriptionShort: "Activating Soothing Mist heals",
-        descriptionLong: "Soothing Mist heals allied Heroes for 165 (+4% / level). Increase this healing by 100% if Soothing Mist removed a disabling effect from that ally.",
+        descriptionLong: "Soothing Mist heals allied Heroes for 165 (+4% / level). Increase this healing by 140% if Soothing Mist removed a disabling effect from that ally.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -386,7 +386,7 @@ const brightwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 17.733333333333334,
+          healing: 23.06666666666667,
           magicalDamage: 0
         },
         order: 3,
@@ -463,7 +463,7 @@ const brightwing: Hero = {
         id: "BrightwingPixieBoostPixieDust",
         name: "Pixie Boost",
         descriptionShort: "Pixie Dust grants an additional burst of speed",
-        descriptionLong: "Pixie Dust gives 40% bonus Movement Speed, decaying to 20% over 3 seconds.",
+        descriptionLong: "Pixie Dust gives 50% bonus Movement Speed, decaying to 20% over 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -633,8 +633,8 @@ const brightwing: Hero = {
       {
         id: "BrightwingIntensiveWinds",
         name: "Intensive Winds",
-        descriptionShort: "Reduce Emerald Wind cooldown, increase cost",
-        descriptionLong: "Permanently reduce Emerald Wind's cooldown to 5 seconds and increase its Mana cost to 200.",
+        descriptionShort: "Massively reduce Emerald Wind's cooldown",
+        descriptionLong: "Permanently reduce Emerald Wind's cooldown to 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -660,10 +660,10 @@ const brightwing: Hero = {
         id: "BrightwingSpeedyDragon",
         name: "Speedy Dragon",
         descriptionShort: "Permanently gain Movement Speed",
-        descriptionLong: "Permanently gain 20% Movement Speed.",
+        descriptionLong: "Permanently gain 20% Movement Speed. Reduce Phase Shift's cast time by 1 second.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
+        type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_hypershift.png",
         isPassive: false,
         analysis: {
@@ -674,13 +674,16 @@ const brightwing: Hero = {
           magicalDamage: 0
         },
         order: 3,
-        tier: "level20"
+        tier: "level20",
+        linkedAbilityIds: [
+          "BrightwingPhaseShift"
+        ]
       },
       {
         id: "BrightwingFaerieProtector",
         name: "Faerie Protector",
         descriptionShort: "Grant nearby allies Pixie Dust",
-        descriptionLong: "Activate to apply Pixie Dust to all nearby Heroes.",
+        descriptionLong: "Activate to apply Pixie Dust to all nearby Heroes. Passive: Pixie Dust always bounces back and applies to Brightwing.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
@@ -705,7 +708,7 @@ const brightwing: Hero = {
     tankiness: 43.69114877589453,
     physicalDamage: 45,
     mobility: 24.199,
-    healing: 13.88402753471007,
+    healing: 14.234045035585114,
     magicalDamage: 12.173113593026423
   }
 };

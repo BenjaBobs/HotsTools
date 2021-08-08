@@ -21,7 +21,7 @@ const zagara: Hero = {
   autoAttacks: [
     {
       nameId: "HeroZagara",
-      range: 5.5,
+      range: 6.6,
       period: 0.8,
       damage: 85,
       damageScale: 0.04
@@ -33,7 +33,7 @@ const zagara: Hero = {
       id: "ZagaraSummonCreepTumor",
       name: "Creep Tumor",
       descriptionShort: "Generates Creep allowing Zagara and her minions to move faster",
-      descriptionLong: "Lay a Creep Tumor that generates Creep. While on Creep, Zagara gains 20% additional attack range and both Zagara and her summons move 20% faster. Tumors last 240 seconds and reveal the surrounding area while active. Stores up to 3 charges.",
+      descriptionLong: "Lay a Creep Tumor that generates Creep. While on Creep, Zagara moves 20% faster and her summons move 30% faster. Tumors last 240 seconds and reveal the surrounding area while active. Stores up to 3 charges.",
       cooldown: 18,
       charges: {
         chargesMax: 3,
@@ -57,17 +57,17 @@ const zagara: Hero = {
       id: "ZagaraBanelingBarrage",
       name: "Baneling Barrage",
       descriptionShort: "Launch a Baneling that explodes on contact with an enemy",
-      descriptionLong: "Launch 1 Baneling that deals 86 (+4% / level) damage to enemies it hits. Stores up to 4 charges.",
+      descriptionLong: "Launch 2 Banelings that deal 86 (+4% / level) damage to enemies they hit. Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 10
       },
       cooldown: 3,
       charges: {
-        chargesMax: 4,
-        chargesInitial: 4,
+        chargesMax: 2,
+        chargesInitial: 2,
         chargeCost: 1,
-        recastCooldown: 0.0625
+        recastCooldown: 0.125
       },
       category: "basic",
       type: "Q",
@@ -107,7 +107,7 @@ const zagara: Hero = {
       id: "ZagaraInfestedDrop",
       name: "Infested Drop",
       descriptionShort: "Bombard an area with a Zerg Drop Pod that spawns Roachlings",
-      descriptionLong: "Bombard target area with a Zerg Drop Pod for 140 (+4% / level) damage. The pod spawns 2 Roachlings that deal 27 (+4% / level) damage per second and last for 8 seconds.",
+      descriptionLong: "Bombard target area with a Zerg Drop Pod for 140 (+4% / level) damage. The pod spawns 2 Roachlings that deal 30 (+4% / level) damage per second and last for 8 seconds.",
       cost: {
         type: "Mana",
         amount: 50
@@ -122,7 +122,7 @@ const zagara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.25
+        magicalDamage: 2.5
       }
     },
     {
@@ -185,10 +185,10 @@ const zagara: Hero = {
         descriptionLong: "Banelings can travel 50% further before exploding and their damage is increased by 20%.",
         cooldown: null,
         charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
+          chargesMax: 2,
+          chargesInitial: 2,
           chargeCost: 1,
-          recastCooldown: 0.0625
+          recastCooldown: 0.125
         },
         category: "Talent",
         type: "Q",
@@ -322,10 +322,10 @@ const zagara: Hero = {
         descriptionLong: "Gain 2 additional charges of Banelings, and reduce the cooldown of Baneling Barrage by 0.5 seconds.",
         cooldown: null,
         charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
+          chargesMax: 2,
+          chargesInitial: 2,
           chargeCost: 1,
-          recastCooldown: 0.0625
+          recastCooldown: 0.125
         },
         category: "Talent",
         type: "Q",
@@ -351,10 +351,10 @@ const zagara: Hero = {
         descriptionLong: "Banelings Slow enemies by 25% for 2.5 seconds.",
         cooldown: null,
         charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
+          chargesMax: 2,
+          chargesInitial: 2,
           chargeCost: 1,
-          recastCooldown: 0.0625
+          recastCooldown: 0.125
         },
         category: "Talent",
         type: "Q",
@@ -585,7 +585,7 @@ const zagara: Hero = {
         id: "ZagaraJaggedBarbsTalent",
         name: "Jagged Barbs",
         descriptionShort: "Gain Attack Damage, range on Creep",
-        descriptionLong: "While on Creep, Zagara gains 40% more Basic Attack damage and her attack range is increased by an additional 20%.",
+        descriptionLong: "While on Creep, Zagara gains 50% more Basic Attack damage and her attack range is increased by 1.1.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -671,24 +671,56 @@ const zagara: Hero = {
         ]
       },
       {
-        id: "GenericTalentFuryoftheStorm",
-        name: "Fury of the Storm",
-        descriptionShort: "Basic Attacks chain to non-Heroes",
-        descriptionLong: "Every 5 seconds, your next Basic Attack will deal an additional 91 (+4% / level) damage to the target, and 228 (+4% / level) damage to all nearby Minions, Mercenaries, and Monsters.",
+        id: "ZagaraBroodmother",
+        name: "Broodmother",
+        descriptionShort: "Basic Attacks launch Banelings",
+        descriptionLong: "Every 3rd Basic Attack also launches a Baneling towards the target.",
         cooldown: null,
+        charges: {
+          chargesMax: 2,
+          chargesInitial: 2,
+          chargeCost: 1,
+          recastCooldown: 0.125
+        },
         category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        type: "Q",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_banelingbarrage.png",
         isPassive: false,
         analysis: {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.066666666666666
+          magicalDamage: 0
         },
         order: 3,
-        tier: "level20"
+        tier: "level20",
+        linkedAbilityIds: [
+          "ZagaraBanelingBarrage"
+        ]
+      },
+      {
+        id: "ZagaraPackInstinct",
+        name: "Pack Instinct",
+        descriptionShort: "Increase damage against Hunter Killer target",
+        descriptionLong: "Zagara and her summons deal 25% more damage to enemies attacked by a Hunter Killer in the last 3 seconds.",
+        cooldown: null,
+        category: "Talent",
+        type: "W",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_hunterkiller.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 4,
+        tier: "level20",
+        linkedAbilityIds: [
+          "ZagaraSummonHydralisk"
+        ]
       }
     ]
   ],
@@ -697,7 +729,7 @@ const zagara: Hero = {
     physicalDamage: 53.125,
     mobility: 24.199,
     healing: 0,
-    magicalDamage: 15.780781803323343
+    magicalDamage: 15.891446472350857
   }
 };
       

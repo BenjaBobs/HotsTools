@@ -51,7 +51,7 @@ const azmodan: Hero = {
       id: "AzmodanGlobeOfAnnihilation",
       name: "Globe of Annihilation",
       descriptionShort: "Launch a long range orb of destruction dealing area damage",
-      descriptionLong: "Shoot a globe of destruction, dealing 184 (+2.5% / level) damage on impact. Quest: Hitting a Hero or killing a Minion within 1.5 seconds of being hit by Globe of Annihilation grants 2 Annihilation. Reward: Each stack of Annihilation increases the damage of Globe of Annihilation by 1, up to 400.",
+      descriptionLong: "Shoot a globe of destruction, dealing 184 (+4% / level) damage on impact. Quest: Hitting a Hero or killing a Minion within 1.5 seconds of being hit by Globe of Annihilation grants 2 Annihilation. Reward: Each stack of Annihilation increases the damage of Globe of Annihilation by 1, up to 400.",
       cost: {
         type: "Mana",
         amount: 70
@@ -117,12 +117,12 @@ const azmodan: Hero = {
       id: "AzmodanDemonicInvasion",
       name: "Demonic Invasion",
       descriptionShort: "Damage area and create an army of Grunts",
-      descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 42 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 98 (+4% / level) damage to nearby enemies. Usable while Channeling All Shall Burn.",
+      descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 39 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 88 (+4% / level) damage to nearby enemies. Usable while Channeling All Shall Burn.",
       cost: {
         type: "Mana",
         amount: 60
       },
-      cooldown: 90,
+      cooldown: 100,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_demonicinvasion.png",
@@ -132,7 +132,7 @@ const azmodan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 13.666666666666666
+        magicalDamage: 12.8
       }
     },
     {
@@ -164,7 +164,7 @@ const azmodan: Hero = {
         id: "AzmodanGreed",
         name: "Greed",
         descriptionShort: "Increase Globe damage to non-HeroesQuest: Increase All Shall Burn range",
-        descriptionLong: "Globe of Annihilation deals 20% more damage to non-Heroic targets. Quest: After gaining 200 Annihilation, increase the range of All Shall Burn by 25% and Demon Warriors gain 20% Attack Speed and Movement Speed.",
+        descriptionLong: "Globe of Annihilation deals 15% more damage to non-Heroic targets. Quest: After gaining 200 Annihilation, increase the range of All Shall Burn by 25% and Demon Warriors gain 20% Attack Speed and Movement Speed.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -188,7 +188,7 @@ const azmodan: Hero = {
         id: "AzmodanGluttony",
         name: "Gluttony",
         descriptionShort: "Quest: Increase Annihilation from hitting Heroes",
-        descriptionLong: "Increase the number of stacks of Annihilation gained by hitting Heroes with Globe of Annihilation from 2 to 3. Quest: After gaining 200 Annihilation, each enemy hit by Globe of Annihilation reduces its cooldown by 0.25 seconds, doubled against Heroes.",
+        descriptionLong: "Increase the number of stacks of Annihilation gained by hitting Heroes with Globe of Annihilation from 2 to 4. Quest: After gaining 200 Annihilation, each enemy hit by Globe of Annihilation reduces its cooldown by 0.25 seconds, doubled against Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -261,7 +261,7 @@ const azmodan: Hero = {
         id: "AzmodanHellforgedArmor",
         name: "Hellforged Armor",
         descriptionShort: "Increase Demon Armor and duration",
-        descriptionLong: "Demon Warriors and Lieutenants gain 25 Armor and last 4 seconds longer.",
+        descriptionLong: "Demon Warriors and Lieutenants gain 20 Armor and last 4 seconds longer.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -357,7 +357,7 @@ const azmodan: Hero = {
         id: "AzmodanMasterofDestruction",
         name: "Master of Destruction",
         descriptionShort: "All Shall Burn explodes",
-        descriptionLong: "If All Shall Burn's Channel kills or lasts its full duration, All Shall Burn's final damage applies to all enemies in an area around the target and grants 4 Annihilation per Hero hit.",
+        descriptionLong: "If All Shall Burn's Channel kills or lasts its full duration, All Shall Burn's final damage applies to all enemies in an area around the target and grants 2 Annihilation per Hero hit.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -382,12 +382,12 @@ const azmodan: Hero = {
         id: "AzmodanHeroicAbilityDemonicInvasion",
         name: "Demonic Invasion",
         descriptionShort: "Damage area and create an army of Grunts",
-        descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 42 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 98 (+4% / level) damage to nearby enemies. Usable while Channeling All Shall Burn.",
+        descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 39 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 88 (+4% / level) damage to nearby enemies. Usable while Channeling All Shall Burn.",
         cost: {
           type: "Mana",
           amount: 60
         },
-        cooldown: 90,
+        cooldown: 100,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_azmodan_demonicinvasion.png",
@@ -397,7 +397,7 @@ const azmodan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 13.666666666666666
+          magicalDamage: 12.8
         },
         order: 1,
         tier: "level10",
@@ -532,7 +532,7 @@ const azmodan: Hero = {
         id: "AzmodanHellRift",
         name: "Hell Rift",
         descriptionShort: "All Shall Burn summons and buffs Demon Warriors",
-        descriptionLong: "If All Shall Burn Channels for its full duration or kills the target, a Demon Warrior is summoned at the target's location and all Demon Warriors deal 100% increased damage for 5 seconds.",
+        descriptionLong: "If All Shall Burn Channels for its full duration or kills the target, a Demon Warrior is summoned at the target's location and all Demon Warriors deal 75% increased damage for 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -577,7 +577,7 @@ const azmodan: Hero = {
         id: "AzmodanSiegebreaker",
         name: "Siegebreaker",
         descriptionShort: "Demons deal more Structure damage",
-        descriptionLong: "Azmodan's Demons deal 50% increased damage to Structures.",
+        descriptionLong: "Azmodan's Demons deal 40% increased damage to Structures.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -630,7 +630,7 @@ const azmodan: Hero = {
         id: "AzmodanPride",
         name: "Pride",
         descriptionShort: "Max Annihilation empowers Globe",
-        descriptionLong: "After gaining 400 Annihilation, the area of Globe of Annihilation is increased by 15% and it deals 100 additional damage.",
+        descriptionLong: "After gaining 400 Annihilation, the area of Globe of Annihilation is increased by 15% and it deals 125 additional damage.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -679,7 +679,7 @@ const azmodan: Hero = {
     physicalDamage: 42.5,
     mobility: 24.199,
     healing: 0,
-    magicalDamage: 50.27127031689821
+    magicalDamage: 49.88763279760283
   }
 };
       

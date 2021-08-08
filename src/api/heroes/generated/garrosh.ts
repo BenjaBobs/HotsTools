@@ -331,7 +331,7 @@ const garrosh: Hero = {
         id: "GarroshGroundbreakerIntimidation",
         name: "Intimidation",
         descriptionShort: "Groundbreaker reduces Attack Speed",
-        descriptionLong: "Groundbreaker reduces the Attack Speed of Heroes hit by 40% for 4 seconds.",
+        descriptionLong: "Groundbreaker reduces the Attack Speed of Heroes hit by 30% for 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -353,12 +353,18 @@ const garrosh: Hero = {
       {
         id: "GarroshOppressor",
         name: "Oppressor",
-        descriptionShort: "Basic Attacks reduce Spell Power",
-        descriptionLong: "Basic Attacks against Heroes reduce the target's Spell Power by 40% for 2.5 seconds.",
+        descriptionShort: "Basic Attacks, Bloodthirst reduce Spell Power",
+        descriptionLong: "Basic Attacks and Bloodthirst against Heroes reduce the target's Spell Power by 30% for 2.5 seconds.",
         cooldown: null,
+        charges: {
+          chargesMax: 1,
+          chargesInitial: 1,
+          chargeCost: 1,
+          recastCooldown: 1
+        },
         category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_slow.png",
+        type: "W",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -368,13 +374,16 @@ const garrosh: Hero = {
           magicalDamage: 0
         },
         order: 2,
-        tier: "level7"
+        tier: "level7",
+        linkedAbilityIds: [
+          "GarroshBloodthirst"
+        ]
       },
       {
-        id: "GarroshWreckingBallIntotheFray",
-        name: "Into the Fray",
-        descriptionShort: "Activate to throw an ally",
-        descriptionLong: "Activate to throw a nearby ally and grant them 25 Armor for 3 seconds. Deals 91 (+4% / level) damage to nearby enemies upon impact and Slows them by 30% for 2.5 seconds. While in flight, allied Heroes are Unstoppable.",
+        id: "GarroshIntotheFrayLoktarOgar",
+        name: "Lok-tar ogar!",
+        descriptionShort: "Increase Into the Fray Armor, lower cooldown",
+        descriptionLong: "Increase Into the Fray's Armor by 20. Hitting enemy Heroes with Into the Fray reduces its cooldown by 12 seconds.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
@@ -385,10 +394,13 @@ const garrosh: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.066666666666666
+          magicalDamage: 0
         },
         order: 3,
-        tier: "level7"
+        tier: "level7",
+        linkedAbilityIds: [
+          "GarroshWreckingBallIntotheFray"
+        ]
       }
     ],
     [

@@ -23,7 +23,7 @@ const imperius: Hero = {
       nameId: "ImperiusHeroWeapon",
       range: 2,
       period: 1.2,
-      damage: 122,
+      damage: 126,
       damageScale: 0.04
     }
   ],
@@ -73,7 +73,7 @@ const imperius: Hero = {
       id: "ImperiusSolarionsFire",
       name: "Solarion's Fire",
       descriptionShort: "Damage and Slow enemies in a line",
-      descriptionLong: "Release a fiery wave that deals 100 (+4% / level) damage. Enemies hit by the center take 50% bonus damage and are Slowed by 40% for 3 seconds.",
+      descriptionLong: "Release a fiery wave that deals 110 (+4% / level) damage. Enemies hit by the center take 50% bonus damage and are Slowed by 40% for 3 seconds.",
       cost: {
         type: "Mana",
         amount: 50
@@ -88,7 +88,7 @@ const imperius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12.5
+        magicalDamage: 13.75
       }
     },
     {
@@ -258,7 +258,7 @@ const imperius: Hero = {
         id: "ImperiusValorousBrandBattleHunger",
         name: "Battle Hunger",
         descriptionShort: "Increase Valorous Brand healing",
-        descriptionLong: "Increase the healing of Valorous Brand by 70%.",
+        descriptionLong: "Increase the healing of Valorous Brand by 80%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -268,7 +268,7 @@ const imperius: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 9.333333333333334,
+          healing: 10.666666666666666,
           magicalDamage: 0
         },
         order: 2,
@@ -329,7 +329,7 @@ const imperius: Hero = {
         id: "ImperiusSolarionsFireBlazeOfGlory",
         name: "Blaze of Glory",
         descriptionShort: "Solarion's Fire creates a delayed explosion",
-        descriptionLong: "Solarion's Fire leaves a line of scorched earth along its center, exploding after 2 seconds and dealing 150 (+4% / level) damage.  This explosion benefits from and consumes Valorous Brand marks.",
+        descriptionLong: "Solarion's Fire leaves a line of scorched earth along its center, exploding after 2 seconds and dealing 185 (+4% / level) damage.  This explosion benefits from and consumes Valorous Brand marks.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -340,7 +340,7 @@ const imperius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 12.333333333333334
         },
         order: 2,
         tier: "level7",
@@ -352,7 +352,7 @@ const imperius: Hero = {
         id: "ImperiusHolyFervor",
         name: "Holy Fervor",
         descriptionShort: "Activate to gain cleaving Basic Attacks",
-        descriptionLong: "Activate to cause the next 4 Basic Attacks within 10 seconds to cleave for 30% additional damage.",
+        descriptionLong: "Activate to cause the next 4 Basic Attacks within 10 seconds to cleave for 30% additional damage. Passive: Casting Molten Armor grants Holy Fervor for 2 Basic Attacks.",
         cooldown: 25,
         category: "Talent",
         type: "Active",
@@ -594,8 +594,8 @@ const imperius: Hero = {
       {
         id: "ImperiusWrathOfTheAngirisUnrelentingDescent",
         name: "Unrelenting Descent",
-        descriptionShort: "Valorous Brand reduces the cooldown",
-        descriptionLong: "Consuming a Valorous Brand reduces the cooldown of Wrath of the Angiris by 10 seconds.",
+        descriptionShort: "Wrath of the Angiris heals, reduced cooldown",
+        descriptionLong: "Descending from the Heavens restores 30% of Imperius' maximum Health and Mana. Consuming a Valorous Brand reduces the cooldown of Wrath of the Angiris by 10 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -664,10 +664,10 @@ const imperius: Hero = {
   ],
   analysis: {
     tankiness: 71.56308851224105,
-    physicalDamage: 50.83333333333333,
+    physicalDamage: 52.5,
     mobility: 24.199,
     healing: 12.25061253062653,
-    magicalDamage: 25.37909743030963
+    magicalDamage: 25.932420775447202
   }
 };
       

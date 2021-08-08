@@ -102,7 +102,7 @@ const artanis: Hero = {
       id: "ArtanisPhasePrism",
       name: "Phase Prism",
       descriptionShort: "Swap positions with an enemy Hero",
-      descriptionLong: "Fire a Phase Prism that deals 66 (+4% / level) damage to the first Hero hit and swaps Artanis's position with theirs. Can be used during Blade Dash.",
+      descriptionLong: "Fire a Phase Prism that deals 66 (+4% / level) damage to the first Hero hit and swaps Artanis's position with theirs. Hitting a Hero also grants Artanis Unstoppable for 1.5 seconds. Can be used during Blade Dash.",
       cost: {
         type: "Mana",
         amount: 50
@@ -127,9 +127,9 @@ const artanis: Hero = {
       descriptionLong: "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 (+4% / level) damage per second for 8 seconds. The beam will chase the target as they move.  Unlimited range.",
       cost: {
         type: "Mana",
-        amount: 80
+        amount: 65
       },
-      cooldown: 80,
+      cooldown: 70,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_artanis_purifierbeam.png",
@@ -176,8 +176,8 @@ const artanis: Hero = {
       {
         id: "ArtanisTwinBladesReactiveParry",
         name: "Reactive Parry",
-        descriptionShort: "Twin Blades gives Physical Armor",
-        descriptionLong: "Damaging enemies with the first slash of Twin Blades grants Artanis 75 Physical Armor against the next enemy Hero Basic Attack, reducing its damage by 75%.  If the target is an enemy Hero, then the second slash grants Artanis an additional stack. Stores up to 2 charges.",
+        descriptionShort: "Twin Blades, Blade Dash gives Physical Armor",
+        descriptionLong: "Damaging enemy Heroes with Twin Blades or Blade Dash grants Artanis 50 Physical Armor against the next enemy Hero Basic Attack, reducing its damage by 50%. Stores up to 2 charges.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -274,7 +274,7 @@ const artanis: Hero = {
         id: "ArtanisShieldOverloadShieldBattery",
         name: "Shield Battery",
         descriptionShort: "Shield Overload recharges faster while active",
-        descriptionLong: "Shield Overload's cooldown recharges 125% faster while its Shield is active, and the Shield duration is increased by 1 second.",
+        descriptionLong: "Shield Overload's cooldown recharges 125% faster while its Shield is active. Passive: Reduce Shield Overload's cooldown by 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -365,10 +365,10 @@ const artanis: Hero = {
         ]
       },
       {
-        id: "GenericTalentFollowThrough",
-        name: "Follow Through",
+        id: "ArtanisFinalCut",
+        name: "Final Cut",
         descriptionShort: "Abilities increase Basic Attack damage",
-        descriptionLong: "After using an Ability, your next Basic Attack within 6 seconds deals 40% additional damage.",
+        descriptionLong: "After using an Ability, your next Basic Attack within 6 seconds deals 40% additional damage. While under 25% Health, this damage bonus is increased to 60%.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -426,9 +426,9 @@ const artanis: Hero = {
         descriptionLong: "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 (+4% / level) damage per second for 8 seconds. The beam will chase the target as they move.  Unlimited range.",
         cost: {
           type: "Mana",
-          amount: 80
+          amount: 65
         },
-        cooldown: 80,
+        cooldown: 70,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_artanis_purifierbeam.png",
@@ -594,7 +594,7 @@ const artanis: Hero = {
         id: "ArtanisTwinBladesBladesofaTemplar",
         name: "Blades of a Templar",
         descriptionShort: "Gain Attack Speed, Slow enemies",
-        descriptionLong: "Increase Attack Speed by 30%. Basic Attacks Slow by 20% for 1.25 seconds.",
+        descriptionLong: "Increase Attack Speed by 20%. Basic Attacks Slow by 20% for 1.25 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -677,7 +677,7 @@ const artanis: Hero = {
         id: "ArtanisTwinBladesZealotCharge",
         name: "Zealot Charge",
         descriptionShort: "Increase Twin Blades charge distance",
-        descriptionLong: "Increase Twin Blades' charge distance by 100%.",
+        descriptionLong: "Increase Twin Blades' charge distance by 75%.",
         cooldown: null,
         category: "Talent",
         type: "W",

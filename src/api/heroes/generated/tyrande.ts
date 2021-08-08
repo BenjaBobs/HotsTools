@@ -33,7 +33,7 @@ const tyrande: Hero = {
       id: "TyrandeHuntersMark",
       name: "Hunter's Mark",
       descriptionShort: "Lowers Armor and Reveals Marked target",
-      descriptionLong: "Reveal a non-Structure enemy and reduce their Armor by 15 for 4 seconds.",
+      descriptionLong: "Reveal a non-Structure enemy and reduce their Armor by 15 for 4 seconds. Passive: Tyrande's Basic Attacks heal her for 1% of her maximum Health, doubled against targets with Hunter's Mark.",
       cooldown: 20,
       category: "trait",
       type: "Trait",
@@ -43,7 +43,7 @@ const tyrande: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
+        healing: 0.13333333333333333,
         magicalDamage: 0
       }
     },
@@ -79,7 +79,7 @@ const tyrande: Hero = {
       id: "TyrandeSentinelShot",
       name: "Sentinel",
       descriptionShort: "Fire a scouting Owl that reveals and damages enemy Heroes",
-      descriptionLong: "Send an Owl across the battleground revealing its path, dealing 120 (+4% / level) damage to the first Hero hit, and revealing them for 5 seconds.",
+      descriptionLong: "Send an Owl across the battleground revealing its path, dealing 120 (+4% / level) damage to the first Hero hit, and revealing them for 5 seconds. If a Hero revealed by Sentinel dies, refresh its cooldown.",
       cost: {
         type: "Mana",
         amount: 50
@@ -217,7 +217,7 @@ const tyrande: Hero = {
         id: "TyrandeTrueshotAura",
         name: "Trueshot Aura",
         descriptionShort: "Gain Attack Damage, reset Hunter's Mark",
-        descriptionLong: "Passive: Basic Attack damage increased by 15%. Activate to reset the cooldown of Hunter's Mark, increase the bonus of Trueshot Aura to 25%, and apply it to other nearby allied Heroes for 5 seconds.",
+        descriptionLong: "Passive: Basic Attack damage increased by 30%. Activate to reset the cooldown of Hunter's Mark, increase the bonus of Trueshot Aura to 30%, and apply it to other nearby allied Heroes for 5 seconds.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
@@ -270,8 +270,8 @@ const tyrande: Hero = {
       {
         id: "TyrandeMarkofMending",
         name: "Mark of Mending",
-        descriptionShort: "Marked enemies heal attackers",
-        descriptionLong: "Tyrande's Basic Attacks heal her for 2.5% of her maximum Health. Basic Attacks against targets with Hunter's Mark heal the attacker for 2% of their maximum Health.",
+        descriptionShort: "Marked enemies heal nearby Allies",
+        descriptionLong: "Basic Attacks against Marked targets Heal all nearby allied Heroes for 4% of their maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -281,7 +281,7 @@ const tyrande: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6,
+          healing: 1.0666666666666667,
           magicalDamage: 0
         },
         order: 2,
@@ -507,7 +507,7 @@ const tyrande: Hero = {
         id: "TyrandeRangersMark",
         name: "Ranger's Mark",
         descriptionShort: "Basic Attacks empower Hunter's Mark, Lunar Flare",
-        descriptionLong: "Basic Attacks reduce the cooldown of Hunter's Mark by 1 second. Basic Attacks against marked targets reduce the cooldown of Lunar Flare by 3 seconds.",
+        descriptionLong: "Basic Attacks reduce the cooldown of Hunter's Mark by 2 second. Basic Attacks against marked targets reduce the cooldown of Lunar Flare by 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -584,7 +584,7 @@ const tyrande: Hero = {
         id: "TyrandeDarnassianArchery",
         name: "Darnassian Archery",
         descriptionShort: "Consecutive Basic Attacks deal more damage",
-        descriptionLong: "Basic Attacks against enemy Heroes grant a stacking 10% increased Attack Damage bonus for 4 seconds.",
+        descriptionLong: "Basic Attacks against enemy Heroes grant a stacking 12% increased Attack Damage bonus for 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -709,7 +709,7 @@ const tyrande: Hero = {
     tankiness: 45.52919020715631,
     physicalDamage: 36.66666666666667,
     mobility: 24.199,
-    healing: 18.025901295064752,
+    healing: 18.200910045502276,
     magicalDamage: 11.363842731317533
   }
 };

@@ -74,7 +74,7 @@ const lostvikings: Hero = {
       id: "LostVikingsNorseForce",
       name: "Norse Force!",
       descriptionShort: "All Vikings gain a Shield",
-      descriptionLong: "All Vikings gain a 130 (+4% / level) to 260 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
+      descriptionLong: "All Vikings gain a 140 (+4% / level) to 308 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
       cooldown: 15,
       category: "basic",
       type: "Q",
@@ -151,7 +151,7 @@ const lostvikings: Hero = {
       id: "LostVikingsLongboatRaidNewer",
       name: "Longboat Raid!",
       descriptionShort: "Load into a Longboat to attack enemies",
-      descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+      descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
       cooldown: 90,
       category: "heroic",
       type: "Heroic",
@@ -332,7 +332,7 @@ const lostvikings: Hero = {
         id: "LostVikingsMasteryItsASabotage",
         name: "It's a Sabotage!",
         descriptionShort: "Erik's attacks stronger against Structures",
-        descriptionLong: "Erik's Basic Attacks against Structures light them on fire for 5 seconds, causing 250 (+4% / level) damage.",
+        descriptionLong: "Erik's Basic Attacks against Structures light them on fire for 3 seconds, causing 225 (+4% / level) damage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -420,7 +420,7 @@ const lostvikings: Hero = {
         id: "LostVikingsMasteryNorseForce",
         name: "Norse Force!",
         descriptionShort: "All Vikings gain a Shield",
-        descriptionLong: "All Vikings gain a 130 (+4% / level) to 260 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
+        descriptionLong: "All Vikings gain a 140 (+4% / level) to 308 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
         cooldown: 15,
         category: "Talent",
         type: "Active",
@@ -442,7 +442,7 @@ const lostvikings: Hero = {
         id: "LostVikingsHeroicAbilityLongboatRaid",
         name: "Longboat Raid!",
         descriptionShort: "Load into a Longboat to attack enemies",
-        descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+        descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
         cooldown: 90,
         category: "Talent",
         type: "Heroic",
@@ -578,7 +578,7 @@ const lostvikings: Hero = {
         id: "LostVikingsMasteryImpatienceIsAVirtue",
         name: "Impatience Is a Virtue",
         descriptionShort: "Vikings' attacks reduce cooldowns of all Vikings",
-        descriptionLong: "Enemies damaged by a Viking's Basic Attack reduce the cooldown of all Viking Abilities by 0.25 seconds.",
+        descriptionLong: "Enemies damaged by a Viking's Basic Attack reduce the cooldown of all Viking Abilities by 0.31 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -597,8 +597,8 @@ const lostvikings: Hero = {
       {
         id: "LostVikingsGoGoGo64KBMarathon",
         name: "64 KB Marathon",
-        descriptionShort: "Run faster and break slows and roots",
-        descriptionLong: "Gain an additional 40% Movement Speed when activating Go Go Go! that decays over 4 seconds.  Additionally, the Vikings will break out of Roots and Slows.",
+        descriptionShort: "Run faster and break Slows and Roots",
+        descriptionLong: "Activating Go Go Go! grants an additional 40% Movement Speed and breaks the Vikings out of Roots and Slows.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -643,7 +643,7 @@ const lostvikings: Hero = {
         id: "LostVikingsMasteryWereOnABoat",
         name: "Ragnarok 'n' Roll!",
         descriptionShort: "Increased combat prowess",
-        descriptionLong: "The Longboat can attack two targets at once and the range of its Mortar is increased by 100%.",
+        descriptionLong: "The Longboat can attack two targets at once and the range of its Mortar is increased by 100%. Reduce Longboat Raid!'s cooldown by 30 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -743,9 +743,9 @@ const lostvikings: Hero = {
       size: 0.5625,
       movementSpeed: 4.8398,
       health: {
-        amount: 1180,
+        amount: 1130,
         scale: 0.04,
-        regenRate: 2.457,
+        regenRate: 2.3554,
         regenScale: 0.04
       },
       autoAttacks: [
@@ -753,14 +753,14 @@ const lostvikings: Hero = {
           nameId: "HeroBaleogSword",
           range: 1.25,
           period: 0.9,
-          damage: 78,
+          damage: 75,
           damageScale: 0.04
         },
         {
           nameId: "HeroBaleogBow",
           range: 4,
           period: 0.9,
-          damage: 78,
+          damage: 75,
           damageScale: 0.04
         }
       ],
@@ -824,7 +824,7 @@ const lostvikings: Hero = {
           id: "LostVikingsNorseForce",
           name: "Norse Force!",
           descriptionShort: "All Vikings gain a Shield",
-          descriptionLong: "All Vikings gain a 130 (+4% / level) to 260 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
+          descriptionLong: "All Vikings gain a 140 (+4% / level) to 308 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
           cooldown: 15,
           category: "basic",
           type: "Q",
@@ -919,7 +919,7 @@ const lostvikings: Hero = {
           id: "LostVikingsLongboatRaidNewer",
           name: "Longboat Raid!",
           descriptionShort: "Load into a Longboat to attack enemies",
-          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
           cooldown: 90,
           category: "heroic",
           type: "Heroic",
@@ -936,8 +936,8 @@ const lostvikings: Hero = {
       ],
       talents: [],
       analysis: {
-        tankiness: 4.72,
-        physicalDamage: 3.466666666666667,
+        tankiness: 4.52,
+        physicalDamage: 3.333333333333333,
         mobility: 24.199,
         healing: 0,
         magicalDamage: 23.7
@@ -949,9 +949,9 @@ const lostvikings: Hero = {
       size: 0.5,
       movementSpeed: 5.5664,
       health: {
-        amount: 840,
+        amount: 804,
         scale: 0.04,
-        regenRate: 1.75,
+        regenRate: 1.6757,
         regenScale: 0.04
       },
       autoAttacks: [
@@ -959,7 +959,7 @@ const lostvikings: Hero = {
           nameId: "HeroErikSlingshot",
           range: 6.5,
           period: 0.7,
-          damage: 65,
+          damage: 62,
           damageScale: 0.04
         }
       ],
@@ -1023,7 +1023,7 @@ const lostvikings: Hero = {
           id: "LostVikingsNorseForce",
           name: "Norse Force!",
           descriptionShort: "All Vikings gain a Shield",
-          descriptionLong: "All Vikings gain a 130 (+4% / level) to 260 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
+          descriptionLong: "All Vikings gain a 140 (+4% / level) to 308 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
           cooldown: 15,
           category: "basic",
           type: "Q",
@@ -1118,7 +1118,7 @@ const lostvikings: Hero = {
           id: "LostVikingsLongboatRaidNewer",
           name: "Longboat Raid!",
           descriptionShort: "Load into a Longboat to attack enemies",
-          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
           cooldown: 90,
           category: "heroic",
           type: "Heroic",
@@ -1135,8 +1135,8 @@ const lostvikings: Hero = {
       ],
       talents: [],
       analysis: {
-        tankiness: 3.36,
-        physicalDamage: 3.714285714285715,
+        tankiness: 3.216,
+        physicalDamage: 3.542857142857143,
         mobility: 27.832,
         healing: 0,
         magicalDamage: 23.7
@@ -1148,9 +1148,9 @@ const lostvikings: Hero = {
       size: 0.875,
       movementSpeed: 4.8398,
       health: {
-        amount: 1540,
+        amount: 1482,
         scale: 0.04,
-        regenRate: 3.207,
+        regenRate: 3.086,
         regenScale: 0.04
       },
       autoAttacks: [
@@ -1158,7 +1158,7 @@ const lostvikings: Hero = {
           nameId: "HeroOlaf",
           range: 1.25,
           period: 1,
-          damage: 57,
+          damage: 54,
           damageScale: 0.04
         }
       ],
@@ -1222,7 +1222,7 @@ const lostvikings: Hero = {
           id: "LostVikingsNorseForce",
           name: "Norse Force!",
           descriptionShort: "All Vikings gain a Shield",
-          descriptionLong: "All Vikings gain a 130 (+4% / level) to 260 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
+          descriptionLong: "All Vikings gain a 140 (+4% / level) to 308 (+4% / level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
           cooldown: 15,
           category: "basic",
           type: "Q",
@@ -1317,7 +1317,7 @@ const lostvikings: Hero = {
           id: "LostVikingsLongboatRaidNewer",
           name: "Longboat Raid!",
           descriptionShort: "Load into a Longboat to attack enemies",
-          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 112 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
           cooldown: 90,
           category: "heroic",
           type: "Heroic",
@@ -1334,8 +1334,8 @@ const lostvikings: Hero = {
       ],
       talents: [],
       analysis: {
-        tankiness: 6.16,
-        physicalDamage: 2.2800000000000002,
+        tankiness: 5.928,
+        physicalDamage: 2.16,
         mobility: 24.199,
         healing: 0,
         magicalDamage: 23.7

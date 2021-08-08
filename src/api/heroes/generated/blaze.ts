@@ -33,7 +33,7 @@ const blaze: Hero = {
       id: "FirebatIgnite",
       name: "Pyromania",
       descriptionShort: "Gain Armor and damage nearby enemies",
-      descriptionLong: "Gain 40 Armor and deal 40 (+4% / level) damage to nearby enemies every 0.5 seconds for 4 seconds. Each Hero hit by Flame Stream reduces Pyromania's cooldown by 5 seconds.",
+      descriptionLong: "Gain 40 Armor and deal 40 (+4% / level) damage to nearby enemies every 0.5 seconds for 4 seconds. Each Hero hit by Flame Stream reduces Pyromania's cooldown by 4 seconds.",
       cooldown: 90,
       category: "trait",
       type: "Trait",
@@ -51,7 +51,7 @@ const blaze: Hero = {
       id: "FirebatFlameStream",
       name: "Flame Stream",
       descriptionShort: "Fire two streams of flames",
-      descriptionLong: "Fire two streams that deal 83 (+4% / level) damage to enemies hit. Flame Stream Ignites Oil Spills it comes in contact with.",
+      descriptionLong: "Fire two streams that deal 76 (+4% / level) damage to enemies hit, and an additional 120 (+4% / level) damage to enemies hit by both streams. Flame Stream Ignites Oil Spills it comes in contact with.",
       cost: {
         type: "Mana",
         amount: 30
@@ -66,7 +66,7 @@ const blaze: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20.75
+        magicalDamage: 19
       }
     },
     {
@@ -230,7 +230,7 @@ const blaze: Hero = {
         id: "FirebatNewHabits",
         name: "New Habits",
         descriptionShort: "Quest: Pyromania grants Unstoppable",
-        descriptionLong: "Collecting Regeneration Globes reduces the cooldown of Pyromania by 8 seconds. Quest: Collect 15 Regeneration Globes. Reward: Pyromania grants Unstoppable for 2 seconds.",
+        descriptionLong: "Collecting Regeneration Globes reduces the cooldown of Pyromania by 6 seconds. Quest: Collect 15 Regeneration Globes. Reward: Pyromania grants Unstoppable for 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -256,7 +256,7 @@ const blaze: Hero = {
         id: "FirebatOilSpillOilDispersal",
         name: "Oil Dispersal",
         descriptionShort: "Increase Oil Spill area",
-        descriptionLong: "Increase Oil Spill's area by 20%.  Each enemy Hero hit by Flame Stream reduces the cooldown of Oil Spill by 1 second and refunds 5 Mana.",
+        descriptionLong: "Increase Oil Spill's area by 20%. Each enemy Hero hit by Flame Stream reduces the cooldown of Oil Spill by 0.75 seconds and refunds 5 Mana.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -327,10 +327,10 @@ const blaze: Hero = {
     ],
     [
       {
-        id: "FirebatFlameStreamCrossfire",
-        name: "Crossfire",
-        descriptionShort: "Flame Stream can deal bonus damage",
-        descriptionLong: "Hitting an enemy with both streams of Flame Stream deals 139 (+4% / level) bonus damage.",
+        id: "FirebatFlameStreamSuppressiveFire",
+        name: "Suppressive Fire",
+        descriptionShort: "Flame Stream reduces Spell Power",
+        descriptionLong: "Each stream of Flame Stream reduces the Spell Power of Heroes hit by 25% for 4 seconds, up to 50%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -341,7 +341,7 @@ const blaze: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 9.266666666666666
+          magicalDamage: 0
         },
         order: 1,
         tier: "level7",
@@ -350,10 +350,10 @@ const blaze: Hero = {
         ]
       },
       {
-        id: "FirebatOilSpillGrillandKill",
-        name: "Grill and Kill",
-        descriptionShort: "Quest: Increase Ignited Oil Spill damage, duration",
-        descriptionLong: "Quest: Damage enemy Heroes with Ignited Oil Spills 60 times. Reward: Increase Oil Spill's Ignite duration by 2 seconds, and damage by 35%.",
+        id: "FirebatOilSpillNanomachineCoating",
+        name: "Nanomachine Coating",
+        descriptionShort: "Oil Spill reduces Attack Speed",
+        descriptionLong: "Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 50% for 3 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -376,24 +376,17 @@ const blaze: Hero = {
         tier: "level7",
         linkedAbilityIds: [
           "FirebatOilSpill"
-        ],
-        isQuest: true
+        ]
       },
       {
-        id: "FirebatOilSpillAdhesivePetroleum",
-        name: "Adhesive Petroleum",
-        descriptionShort: "Oil Spill Slows when Ignited",
-        descriptionLong: "Enemies standing in Oil Spill when it is Ignited are Slowed by 40% for 3 seconds.  Additionally, Basic Attack splashes Ignite Oil Spills.",
+        id: "FirebatJetPropulsionFuelLeak",
+        name: "Fuel Leak",
+        descriptionShort: "Jet Propulsion creates a trail of Oil Spills",
+        descriptionLong: "Jet Propulsion creates Oil Spills along Blaze's path. If Jet Propulsion impacts an enemy Hero, an additional Oil Spill is created underneath them.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
-        type: "W",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil_b.png",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_jet.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -405,7 +398,7 @@ const blaze: Hero = {
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
-          "FirebatOilSpill"
+          "FirebatJetPropulsion"
         ]
       }
     ],
@@ -467,33 +460,10 @@ const blaze: Hero = {
     ],
     [
       {
-        id: "FirebatFlameStreamSuppressiveFire",
-        name: "Suppressive Fire",
-        descriptionShort: "Flame Stream reduces Spell Power",
-        descriptionLong: "Each stream of Flame Stream reduces the Spell Power of Heroes hit by 25% for 4 seconds, up to 50%.",
-        cooldown: null,
-        category: "Talent",
-        type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_flame.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 1,
-        tier: "level13",
-        linkedAbilityIds: [
-          "FirebatFlameStream"
-        ]
-      },
-      {
-        id: "FirebatOilSpillNanomachineCoating",
-        name: "Nanomachine Coating",
-        descriptionShort: "Oil Spill reduces Attack Speed",
-        descriptionLong: "Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 50% for 3 seconds.",
+        id: "FirebatOilSpillGrillandKill",
+        name: "Grill and Kill",
+        descriptionShort: "Quest: Increase Ignited Oil Spill damage, duration",
+        descriptionLong: "Increase Ignited Oil Spill damage by 45%. Quest: Damage enemy Heroes with Ignited Oil Spills 30 times. Reward: Increase Oil Spill's Ignite duration by 2.5 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -512,6 +482,36 @@ const blaze: Hero = {
           healing: 0,
           magicalDamage: 0
         },
+        order: 1,
+        tier: "level13",
+        linkedAbilityIds: [
+          "FirebatOilSpill"
+        ],
+        isQuest: true
+      },
+      {
+        id: "FirebatOilSpillAdhesivePetroleum",
+        name: "Adhesive Petroleum",
+        descriptionShort: "Oil Spill Slows when Ignited",
+        descriptionLong: "Enemies standing in Oil Spill when it is Ignited are Slowed by 40% and take 35% more Basic Attack damage from Blaze for 3 seconds. Additionally, Basic Attack splashes Ignite Oil Spills.",
+        cooldown: null,
+        charges: {
+          chargesMax: 2,
+          chargesInitial: 2,
+          chargeCost: 1,
+          recastCooldown: 1
+        },
+        category: "Talent",
+        type: "W",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil_b.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
@@ -519,10 +519,10 @@ const blaze: Hero = {
         ]
       },
       {
-        id: "FirebatJetPropulsionFuelLeak",
-        name: "Fuel Leak",
-        descriptionShort: "Jet Propulsion creates a trail of Oil Spills",
-        descriptionLong: "Jet Propulsion creates Oil Spills along Blaze's path. If Jet Propulsion impacts an enemy Hero, an additional Oil Spill is created underneath them.",
+        id: "FirebatJetPropulsionCollisionCourse",
+        name: "Collision Course",
+        descriptionShort: "Jet Propulsion collision deals damage",
+        descriptionLong: "Jet Propulsion's collision deals 275 (+4% / level) damage to the first enemy Hero hit.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -533,7 +533,7 @@ const blaze: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 18.333333333333332
         },
         order: 3,
         tier: "level13",
@@ -690,7 +690,7 @@ const blaze: Hero = {
     physicalDamage: 27.500000000000004,
     mobility: 24.199,
     healing: 1.0719285964298215,
-    magicalDamage: 19.897507491146822
+    magicalDamage: 19.122854807954234
   }
 };
       

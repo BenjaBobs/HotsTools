@@ -51,7 +51,7 @@ const muradin: Hero = {
       id: "MuradinStormBolt",
       name: "Storm Bolt",
       descriptionShort: "Throw a hammer, stunning and damaging the first enemy hit",
-      descriptionLong: "Throw a hammer, dealing 110 (+4% / level) damage to the first enemy hit and Stunning them for 1.25 seconds. Quest: Hit 25 Heroes with Storm Bolt. Heroes who die within 2.5 seconds of being hit by Storm Bolt count as hitting 3 additional Heroes. Reward: Storm Bolt pierces to hit an additional target. Muradin's Basic Attacks reduce the cooldown of Storm Bolt by 1 second and restore 3 Mana.",
+      descriptionLong: "Throw a hammer, dealing 110 (+4% / level) damage to the first enemy hit and Stunning them for 1.25 seconds. After reaching level 10, Storm Bolt pierces to hit an additional target. Muradin's Basic Attacks reduce the cooldown of Storm Bolt by 1 second and restore 3 Mana.",
       cost: {
         type: "Mana",
         amount: 45
@@ -170,7 +170,7 @@ const muradin: Hero = {
         id: "MuradinStormboltPerfectStorm",
         name: "Perfect Storm",
         descriptionShort: "Quest: Hitting Heroes empowers Storm Bolt",
-        descriptionLong: "Quest: Every time Storm Bolt hits a Hero, increase its damage by 4.",
+        descriptionLong: "Quest: Every time Muradin hits an enemy Hero with a Basic Attack, increase Storm Bolt's damage by 0.75. If an enemy Hero is killed within 3 seconds of being hit by a Storm Bolt increase its damage by an additional 10.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -241,8 +241,8 @@ const muradin: Hero = {
       {
         id: "MuradinMasteryStormhammerSledgehammer",
         name: "Sledgehammer",
-        descriptionShort: "Empowers Storm Bolt",
-        descriptionLong: "Stormbolt deals 350% damage to non-Heroic enemies. Hitting a Hero grants an additional stack of his baseline quest.",
+        descriptionShort: "Increase Storm Bolt non-Hero damage",
+        descriptionLong: "Stormbolt deals 350% damage to non-Heroic enemies. Increase Storm Bolt's cooldown reduction from 1 second to 1.25 seconds per Basic Attack.",
         cooldown: null,
         category: "Talent",
         type: "Q",

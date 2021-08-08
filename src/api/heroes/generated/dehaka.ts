@@ -22,14 +22,14 @@ const dehaka: Hero = {
     {
       nameId: "HeroDehaka",
       range: 1,
-      period: 0.9,
+      period: 0.8,
       damage: 100,
       damageScale: 0.04
     },
     {
       nameId: "HeroDehakaDragWeapon",
       range: 1,
-      period: 0.9,
+      period: 0.8,
       damage: 100,
       damageScale: 0.04
     }
@@ -125,7 +125,7 @@ const dehaka: Hero = {
       id: "DehakaBurrow",
       name: "Burrow",
       descriptionShort: "Gain Stasis by burrowing into the ground",
-      descriptionLong: "Burrow into the ground, entering Stasis and becoming Invulnerable for 2 seconds.",
+      descriptionLong: "Burrow into the ground, entering Stasis and becoming Invulnerable for 2 seconds. While Burrowed, Dehaka can move at 50% movement speed.",
       cost: {
         type: "Mana",
         amount: 65
@@ -272,7 +272,7 @@ const dehaka: Hero = {
         id: "DehakaBurrowTalentLurkerStrain",
         name: "Lurker Strain",
         descriptionShort: "Burrow Stealths, knocks enemies away",
-        descriptionLong: "Reduce the cooldown of Burrow by 6 seconds.  Emerging from Burrow grants Dehaka Stealth for 3 seconds and also knocks nearby enemies back, Slowing them by 30% for 3 seconds.",
+        descriptionLong: "Emerging from Burrow grants Dehaka Stealth for 3 seconds and knocks nearby enemies back, dealing 125 (+4% / level) damage and Slowing them by 30% for 3 seconds. Passive: Reduce the cooldown of Burrow by 6 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -283,7 +283,7 @@ const dehaka: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 8.333333333333334
         },
         order: 1,
         tier: "level4",
@@ -294,8 +294,8 @@ const dehaka: Hero = {
       {
         id: "DehakaEssenceCollectionOneWhoCollectsTalent",
         name: "One-Who-Collects",
-        descriptionShort: "Increases Essence from Minions",
-        descriptionLong: "Increases Essence collected from Minions by 50%.",
+        descriptionShort: "Increases Essence from Minions, Dark Swarm damage to Mercenaries",
+        descriptionLong: "Increases Essence collected from Minions by 50%. Dark Swarm deals 40% more damage to Mercenaries.",
         cooldown: null,
         charges: {
           chargesMax: 50,
@@ -316,6 +316,7 @@ const dehaka: Hero = {
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
+          "DehakaDarkSwarm",
           "DehakaEssenceCollection"
         ]
       },
@@ -354,7 +355,7 @@ const dehaka: Hero = {
         id: "DehakaDragTalentFeedingFrenzy",
         name: "Feeding Frenzy",
         descriptionShort: "Basic Attacks reduce Drag cooldown",
-        descriptionLong: "Basic Attacks reduce Drag's cooldown by 2 seconds.",
+        descriptionLong: "Basic Attacks reduce Drag's cooldown by 1.75 seconds. Passive: Increase Drag's duration by 0.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -376,8 +377,8 @@ const dehaka: Hero = {
       {
         id: "DehakaDragTalentParalyzingEnzymes",
         name: "Paralyzing Enzymes",
-        descriptionShort: "Increase Drag duration, Slow",
-        descriptionLong: "Increase the duration of Drag by 0.5 seconds. Drag Slows enemies by 35% for 2 seconds after it ends.",
+        descriptionShort: "Gambit: Drag slows, deals additional damage",
+        descriptionLong: "Drag Slows enemies by 40% for 2 seconds after it ends. Gambit: When Drag ends, deal an additional 280 (+4% / level) damage to the target over 2 seconds. Every death reduces this damage by 40 (+4% / level), up to 5 times.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -388,13 +389,14 @@ const dehaka: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 18.666666666666668
         },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
           "DehakaDrag"
-        ]
+        ],
+        isQuest: true
       },
       {
         id: "DehakaDarkSwarmTalentSymbiosis",
@@ -481,7 +483,7 @@ const dehaka: Hero = {
         id: "DehakaBrushstalkerFerociousStalker",
         name: "Ferocious Stalker",
         descriptionShort: "Brushstalker Slows, increases Dark Swarm damage",
-        descriptionLong: "Dark Swarm Slows enemy Heroes by 15% for 0.75 seconds and deals 50% more damage while Brushstalker's Movement Speed bonus is active.",
+        descriptionLong: "Dark Swarm Slows enemy Heroes by 15% for 0.75 seconds and deals 60% more damage while Brushstalker's Movement Speed bonus is active.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -579,8 +581,8 @@ const dehaka: Hero = {
       {
         id: "DehakaTunnelingClaws",
         name: "Tunneling Claws",
-        descriptionShort: "Dehaka can move while Burrowed",
-        descriptionLong: "Dehaka can move while Burrowed.",
+        descriptionShort: "Increase Burrow movement speed",
+        descriptionLong: "Increase movement speed while Burrowing to 125%.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -602,8 +604,8 @@ const dehaka: Hero = {
       {
         id: "DehakaPackLeaderBrushstalkerTalent",
         name: "Pack Leader",
-        descriptionShort: "Gain Armor near bushes",
-        descriptionLong: "Dehaka gains 20 Armor while in a bush and for 5 seconds after leaving.",
+        descriptionShort: "Gain Armor, Attack Speed near bushes",
+        descriptionLong: "Dehaka gains 20 Armor and 15% increased Attack Speed while in a bush and for 5 seconds after leaving.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -731,7 +733,7 @@ const dehaka: Hero = {
   ],
   analysis: {
     tankiness: 73.34086629001884,
-    physicalDamage: 55.55555555555556,
+    physicalDamage: 62.5,
     mobility: 24.199,
     healing: 19.023451172558627,
     magicalDamage: 12.925633342413512

@@ -33,7 +33,7 @@ const uther: Hero = {
       id: "UtherEternalDevotion",
       name: "Devotion",
       descriptionShort: "Uther's healing grants Armor, and when killed his spirit remains",
-      descriptionLong: "Allied Heroes affected by Uther's Basic Abilities gain 25 Armor for 2 seconds.  This effect does not stack with itself. Eternal VanguardUpon dying, Uther becomes an Invulnerable spirit for up to 8 seconds. While in spirit form, Uther can heal allies with Flash of Light.",
+      descriptionLong: "Uther's Basic Abilities grant 25 Armor to allied Heroes, and 15 to Uther, for 2 seconds. Eternal VanguardUpon dying, Uther becomes an Invulnerable spirit for up to 8 seconds. While in spirit form, Uther can heal allies with Flash of Light for 230 (+4% / level).",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -43,7 +43,7 @@ const uther: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
+        healing: 3.0666666666666664,
         magicalDamage: 0
       }
     },
@@ -505,7 +505,7 @@ const uther: Hero = {
         id: "UtherBeaconOfLight",
         name: "Beacon of Light",
         descriptionShort: "Increase Holy Light self-healing",
-        descriptionLong: "Uther receives 100% bonus self-healing when targeting others with Holy Light.  This bonus is increased to 200% while he is below 50% Health.",
+        descriptionLong: "Uther receives 125% bonus self-healing when targeting others with Holy Light.  This bonus is increased to 250% while he is below 50% Health.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -515,7 +515,7 @@ const uther: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 33.333333333333336,
+          healing: 40,
           magicalDamage: 0
         },
         order: 1,
@@ -529,7 +529,7 @@ const uther: Hero = {
         id: "UtherHolyRadianceTyrsDeliverance",
         name: "Tyr's Deliverance",
         descriptionShort: "Increased Holy Radiance healing and damage",
-        descriptionLong: "Increase the damage and healing of Holy Radiance by 10%. Basic Attacks against enemy Heroes cause Uther's next cast of Holy Radiance to have its damage and healing increased by an additional 10%, stacking up to 4 times.",
+        descriptionLong: "Increase the damage and healing of Holy Radiance by 10%. Basic Attacks against enemy Heroes cause Uther's next cast of Holy Radiance to have its damage and healing increased by an additional 10%, stacking up to 7 times.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -649,7 +649,7 @@ const uther: Hero = {
         id: "UtherEternalDevotionDivineProtection",
         name: "Divine Protection",
         descriptionShort: "Increase Devotion Armor and duration",
-        descriptionLong: "Increase Devotion's Armor to 50 and its duration by 0.5 seconds.",
+        descriptionLong: "Increase Devotion Armor to 50 and its duration by 0.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -674,7 +674,7 @@ const uther: Hero = {
     tankiness: 59.51035781544256,
     physicalDamage: 37.5,
     mobility: 24.199,
-    healing: 22.064228211410573,
+    healing: 26.089429471473576,
     magicalDamage: 17.676836465994736
   }
 };

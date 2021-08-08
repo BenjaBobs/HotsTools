@@ -22,7 +22,7 @@ const anduin: Hero = {
     {
       nameId: "AnduinHeroWeapon",
       range: 5.5,
-      period: 1.2,
+      period: 1,
       damage: 85,
       damageScale: 0.04
     }
@@ -33,7 +33,7 @@ const anduin: Hero = {
       id: "AnduinLeapOfFaithInstant",
       name: "Leap of Faith",
       descriptionShort: "Pull an allied Hero to your location",
-      descriptionLong: "Faith instantly pulls an allied Hero to Anduin's location, granting them Unstoppable while they travel.",
+      descriptionLong: "Faith instantly pulls an allied Hero to Anduin's location, granting them Unstoppable while they travel. Pursued By GraceBasic Attacks against enemy Heroes heal the lowest Health allied Hero near Anduin for 32 (+4% / level).",
       cooldown: 70,
       charges: {
         chargesMax: 1,
@@ -57,12 +57,12 @@ const anduin: Hero = {
       id: "AnduinFlashHeal",
       name: "Flash Heal",
       descriptionShort: "Cast a heal on an Ally",
-      descriptionLong: "Cast for 0.75 seconds to heal an allied Hero for 270 (+4% / level).",
+      descriptionLong: "Cast for 0.75 seconds to heal an allied Hero for 280 (+4% / level).",
       cost: {
         type: "Mana",
-        amount: 25
+        amount: 20
       },
-      cooldown: 4,
+      cooldown: 5,
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_flash_heal.png",
@@ -71,7 +71,7 @@ const anduin: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 13.5,
+        healing: 11.200000000000001,
         magicalDamage: 0
       }
     },
@@ -84,7 +84,7 @@ const anduin: Hero = {
         type: "Mana",
         amount: 50
       },
-      cooldown: 9,
+      cooldown: 10,
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_divine_star.png",
@@ -93,8 +93,8 @@ const anduin: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 11.333333333333332,
-        magicalDamage: 15.555555555555555
+        healing: 10.2,
+        magicalDamage: 14
       }
     },
     {
@@ -106,7 +106,7 @@ const anduin: Hero = {
         type: "Mana",
         amount: 40
       },
-      cooldown: 10,
+      cooldown: 9,
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_chastise.png",
@@ -116,7 +116,7 @@ const anduin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 17.5
+        magicalDamage: 19.444444444444443
       }
     },
     {
@@ -167,152 +167,10 @@ const anduin: Hero = {
   talents: [
     [
       {
-        id: "AnduinFlashHealRenew",
-        name: "Renew",
-        descriptionShort: "Basic Attacks enhance Flash Heal",
-        descriptionLong: "Basic Attacks against Heroes empower the next Flash Heal to also heal for 130 (+4% / level) over 5 seconds.",
-        cooldown: null,
-        category: "Talent",
-        type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_flash_heal_a.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 3.466666666666667,
-          magicalDamage: 0
-        },
-        order: 1,
-        tier: "level1",
-        linkedAbilityIds: [
-          "AnduinFlashHeal"
-        ]
-      },
-      {
-        id: "AnduinPursuedByGrace",
-        name: "Pursued by Grace",
-        descriptionShort: "Damage Heroes to heal nearby allies",
-        descriptionLong: "Damaging an enemy Hero heals the lowest Health allied Hero near Anduin for 35 (+4% / level).",
-        cooldown: null,
-        category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_varians_legacy.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level1",
-        linkedAbilityIds: [
-          "AnduinLeapOfFaithInstant"
-        ]
-      },
-      {
-        id: "AnduinBoldStrategy",
-        name: "Bold Strategy",
-        descriptionShort: "Weaken Flash Heal to gain extra Talents",
-        descriptionLong: "Anduin gains his other level 1 Talents, but Flash Heal's cooldown is increased by 2 seconds.",
-        cooldown: null,
-        category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_bold_strategy.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 3,
-        tier: "level1",
-        linkedAbilityIds: [
-          "AnduinFlashHeal"
-        ]
-      }
-    ],
-    [
-      {
-        id: "AnduinDivineStarMoralCompass",
-        name: "Moral Compass",
-        descriptionShort: "Divine Star fires Basic Attacks at its apex",
-        descriptionLong: "Divine Star fires Basic Attacks at 2 Heroes close to its apex for 70% damage.",
-        cooldown: null,
-        category: "Talent",
-        type: "W",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_divine_star.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 1,
-        tier: "level4",
-        linkedAbilityIds: [
-          "AnduinDivineStar"
-        ]
-      },
-      {
-        id: "AnduinChastiseHolyReach",
-        name: "Holy Reach",
-        descriptionShort: "Chastise empowers next Basic Attack",
-        descriptionLong: "Increase the Root duration of Chastise from 1.25 to 1.5 seconds.  After hitting an enemy with Chastise, Anduin's next Basic Attack deals 75% more damage and heals allied Heroes near him for 100 (+4% / level).",
-        cooldown: null,
-        category: "Talent",
-        type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_chastise.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 2.6666666666666665,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level4",
-        linkedAbilityIds: [
-          "AnduinChastise"
-        ]
-      },
-      {
-        id: "AnduinInnerFire",
-        name: "Inner Fire",
-        descriptionShort: "Increase Attack Speed and range",
-        descriptionLong: "Increases Attack Speed by 20% and Basic Attack range by 15%.",
-        cooldown: null,
-        category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_varians_legacy.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 3,
-        tier: "level4",
-        linkedAbilityIds: [
-          "AnduinLeapOfFaithInstant"
-        ]
-      }
-    ],
-    [
-      {
-        id: "AnduinFlashHealBindingHeal",
-        name: "Binding Heal",
-        descriptionShort: "Flash Heal also heals Anduin",
-        descriptionLong: "Casting Flash Heal on an ally heals Anduin for 115 (+4% / level).",
+        id: "AnduinFlashHealEvenhandedBlessings",
+        name: "Evenhanded Blessings",
+        descriptionShort: "Refund Flash Heal cooldown on new targets",
+        descriptionLong: "If Flash Heal is cast on a different target from its last, increase its healing by 15% and refund 40% of its cooldown.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -322,11 +180,11 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.5333333333333332,
+          healing: 7.333333333333333,
           magicalDamage: 0
         },
         order: 1,
-        tier: "level7",
+        tier: "level1",
         linkedAbilityIds: [
           "AnduinFlashHeal"
         ]
@@ -334,8 +192,8 @@ const anduin: Hero = {
       {
         id: "AnduinDivineStarPowerWordShield",
         name: "Power Word: Shield",
-        descriptionShort: "Divine Star can grant Anduin a Shield",
-        descriptionLong: "If Divine Star hits an enemy Hero, gain a Shield that absorbs 185 (+4% / level) damage for 4 seconds.",
+        descriptionShort: "Divine Star grants Shields",
+        descriptionLong: "While Divine Star is traveling out, allies in its path gain a Shield that absorbs 128 (+4% / level) damage for 4 seconds. If Divine Star hits an enemy Hero, Anduin gains a Shield that absorbs 185 (+4% / level) damage for 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -349,9 +207,126 @@ const anduin: Hero = {
           magicalDamage: 0
         },
         order: 2,
-        tier: "level7",
+        tier: "level1",
         linkedAbilityIds: [
           "AnduinDivineStar"
+        ]
+      },
+      {
+        id: "AnduinLightwell",
+        name: "Lightwell",
+        descriptionShort: "Activate to summon a healing Lightwell",
+        descriptionLong: "Summon a Lightwell that periodically heals a nearby allied Hero for 50 (+4% / level). The well only fades after healing 15 times or when recast. This cooldown is reduced by 1 second each time Anduin heals an allied Hero.",
+        cooldown: 75,
+        category: "Talent",
+        type: "Active",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_lightwell.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0.6666666666666666,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level1"
+      }
+    ],
+    [
+      {
+        id: "AnduinDivineStarMoralCompass",
+        name: "Moral Compass",
+        descriptionShort: "Divine Star fires Basic Attacks at its apex",
+        descriptionLong: "Divine Star fires Basic Attacks at Heroes close to its apex. Passive: Increase Attack Range by 1.1.",
+        cooldown: null,
+        category: "Talent",
+        type: "W",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_divine_star.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 1,
+        tier: "level4",
+        linkedAbilityIds: [
+          "AnduinDivineStar"
+        ]
+      },
+      {
+        id: "AnduinSurgeofLight",
+        name: "Surge of Light",
+        descriptionShort: "Chastise empowers Basic Attacks",
+        descriptionLong: "Basic Attacks reduce the cooldown of Chastise by 0.75 seconds. Basic Attacks against Heroes Rooted by Chastise launch an additional Basic Attack and restore 25 Mana.",
+        cooldown: null,
+        category: "Talent",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_chastise.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 2,
+        tier: "level4",
+        linkedAbilityIds: [
+          "AnduinChastise"
+        ]
+      },
+      {
+        id: "AnduinPiercingLight",
+        name: "Piercing Light",
+        descriptionShort: "Chastise pierces, grants Spell Power",
+        descriptionLong: "Chastise pierces to hit an additional Hero. Quest: Hitting two Heroes with a single Chastise permanently increases Spell Power by 1, to a maximum of 10.",
+        cooldown: null,
+        category: "Talent",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_chastise_a.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level4",
+        linkedAbilityIds: [
+          "AnduinChastise"
+        ],
+        isQuest: true
+      }
+    ],
+    [
+      {
+        id: "AnduinFlashHealBindingHeal",
+        name: "Binding Heal",
+        descriptionShort: "Flash Heal also heals Anduin",
+        descriptionLong: "Casting Flash Heal on an ally heals Anduin for 135 (+4% / level).",
+        cooldown: null,
+        category: "Talent",
+        type: "Q",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_flash_heal.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1.8,
+          magicalDamage: 0
+        },
+        order: 1,
+        tier: "level7",
+        linkedAbilityIds: [
+          "AnduinFlashHeal"
         ]
       },
       {
@@ -369,6 +344,26 @@ const anduin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
+          magicalDamage: 0
+        },
+        order: 2,
+        tier: "level7"
+      },
+      {
+        id: "AnduinFlashHealDesperatePrayer",
+        name: "Desperate Prayer",
+        descriptionShort: "Activate to desperately heal an allied Hero",
+        descriptionLong: "Activate to instantly heal an allied Hero for 375 (+4% / level), but kneel for 2 seconds, unable to act.",
+        cooldown: 35,
+        category: "Talent",
+        type: "Active",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_desperate_prayer.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 5,
           magicalDamage: 0
         },
         order: 3,
@@ -458,31 +453,28 @@ const anduin: Hero = {
       {
         id: "AnduinPushForward",
         name: "Push Forward!",
-        descriptionShort: "Damage Heroes for Move Speed, reduce cooldown",
-        descriptionLong: "Damaging an enemy Hero grants 2.5% Movement Speed for 6 seconds, up to 20%.  While gaining 20% Movement Speed, Chastise's cooldown recharges 25% faster.",
+        descriptionShort: "Damage Heroes for Move Speed, increased healing",
+        descriptionLong: "Damaging an enemy Hero increases Movement Speed by 2.5% and the amount healed by Pursued By Grace by 5% for 6 seconds. These effects stack up to 8 times.",
         cooldown: null,
         category: "Talent",
-        type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_chastise.png",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_varians_legacy.png",
         isPassive: false,
         analysis: {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.6666666666666666,
           magicalDamage: 0
         },
         order: 2,
-        tier: "level13",
-        linkedAbilityIds: [
-          "AnduinChastise"
-        ]
+        tier: "level13"
       },
       {
         id: "AnduinLeapOfFaithEnchantBootsLionsSpeed",
         name: "Enchant Boots - Lion's Speed",
         descriptionShort: "Leap of Faith grants Move Speed, heals",
-        descriptionLong: "Gain 5% Movement Speed. This bonus is quadrupled while Leap of Faith's cooldown is available.  Allies pulled by Leap of Faith are healed for 280 (+4% / level) over 4 seconds.",
+        descriptionLong: "Gain 5% Movement Speed. This bonus is quadrupled while Leap of Faith's cooldown is available. Allies pulled by Leap of Faith are healed for 280 (+4% / level) over 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -504,10 +496,10 @@ const anduin: Hero = {
     ],
     [
       {
-        id: "AnduinFlashHealEvenhandedBlessings",
-        name: "Evenhanded Blessings",
-        descriptionShort: "Refund Flash Heal cooldown on new targets",
-        descriptionLong: "If Flash Heal is cast on a different target from its last, increase its healing by 20% and  refund 50% of its cooldown.",
+        id: "AnduinFlashHealRenew",
+        name: "Renew",
+        descriptionShort: "Flash Heal heals over time",
+        descriptionLong: "Flash Heal heals an additional 180 (+4% / level) over 6 seconds. The duration of this heal is refreshed each time Anduin hits an enemy Hero with a Basic Attack.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -517,7 +509,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 9.333333333333334,
+          healing: 2.4,
           magicalDamage: 0
         },
         order: 1,
@@ -530,7 +522,7 @@ const anduin: Hero = {
         id: "AnduinDivineStarHolyNova",
         name: "Holy Nova",
         descriptionShort: "Divine Star explodes when caught",
-        descriptionLong: "After Anduin catches Divine Star, it explodes, healing nearby allied Heroes for 105 (+4% / level) and damaging enemies for 105 (+4% / level).",
+        descriptionLong: "After Anduin catches Divine Star, it explodes, healing nearby allied Heroes for 105 (+4% / level) and damaging enemies for 150 (+4% / level).",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -550,10 +542,33 @@ const anduin: Hero = {
         ]
       },
       {
+        id: "AnduinLeapOfFaithGlyphOfFaith",
+        name: "Glyph of Faith",
+        descriptionShort: "Leap of Faith gains a charge",
+        descriptionLong: "Leap of Faith gains a 2nd charge.",
+        cooldown: null,
+        category: "Talent",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_leap_of_faith.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level16",
+        linkedAbilityIds: [
+          "AnduinLeapOfFaithInstant"
+        ]
+      },
+      {
         id: "AnduinFlashHealInnerFocus",
         name: "Inner Focus",
         descriptionShort: "Activate to reset Flash Heal cooldown",
-        descriptionLong: "Activate to reset the cooldown of Flash Heal and its next cast heals for 40% more. Damaging enemy Heroes with Divine Star reduces this cooldown by 8 seconds.",
+        descriptionLong: "Activate to reset the cooldown of Flash Heal and its next cast heals for 25% more. Damaging enemy Heroes reduces this cooldown by 1 second.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
@@ -563,27 +578,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5.333333333333333,
-          magicalDamage: 0
-        },
-        order: 3,
-        tier: "level16"
-      },
-      {
-        id: "AnduinLightwell",
-        name: "Lightwell",
-        descriptionShort: "Activate to summon a healing Lightwell",
-        descriptionLong: "Summon a Lightwell that periodically heals a nearby allied Hero for 75 (+4% / level). The well only fades after healing 10 times or when recast. This cooldown is reduced by 1 second each time Anduin heals an allied Hero.",
-        cooldown: 80,
-        category: "Talent",
-        type: "Active",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_lightwell.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 1,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 4,
@@ -618,14 +613,14 @@ const anduin: Hero = {
         ]
       },
       {
-        id: "AnduinLeapOfFaithGlyphOfFaith",
-        name: "Glyph of Faith",
-        descriptionShort: "Leap of Faith gains a charge",
-        descriptionLong: "Leap of Faith gains a 2nd charge.",
+        id: "AnduinInnerFire",
+        name: "Inner Fire",
+        descriptionShort: "Lightbomb increases Move Speed, grants Armor",
+        descriptionLong: "The target of Light Bomb gains 40% Move Speed and 50 Armor for 3 seconds.",
         cooldown: null,
         category: "Talent",
-        type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_leap_of_faith.png",
+        type: "Heroic",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_light_bomb.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -638,6 +633,32 @@ const anduin: Hero = {
         tier: "level20",
         linkedAbilityIds: [
           "AnduinLeapOfFaithInstant"
+        ],
+        prerequisiteTalentIds: [
+          "AnduinLightBomb"
+        ]
+      },
+      {
+        id: "AnduinCensure",
+        name: "Censure",
+        descriptionShort: "Chastise Stuns, increased Root duration",
+        descriptionLong: "Chastise Stuns for 0.75 seconds and its Root duration is increased by 0.5 seconds.",
+        cooldown: null,
+        category: "Talent",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_chastise.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level20",
+        linkedAbilityIds: [
+          "AnduinChastise"
         ]
       },
       {
@@ -657,40 +678,20 @@ const anduin: Hero = {
           healing: 6.666666666666667,
           magicalDamage: 0
         },
-        order: 3,
+        order: 4,
         tier: "level20",
         linkedAbilityIds: [
           "AnduinLeapOfFaithInstant"
         ]
-      },
-      {
-        id: "AnduinFlashHealDesperatePrayer",
-        name: "Desperate Prayer",
-        descriptionShort: "Activate to desperately heal an allied Hero",
-        descriptionLong: "Activate to desperately heal an allied Hero for 540 (+4% / level), but kneel for 2 seconds, unable to act.",
-        cooldown: 30,
-        category: "Talent",
-        type: "Active",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_desperate_prayer.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 7.2,
-          magicalDamage: 0
-        },
-        order: 4,
-        tier: "level20"
       }
     ]
   ],
   analysis: {
     tankiness: 50.16949152542374,
-    physicalDamage: 35.41666666666667,
+    physicalDamage: 42.5,
     mobility: 24.199,
-    healing: 43.095904795239754,
-    magicalDamage: 19.058915221405005
+    healing: 38.58942947147357,
+    magicalDamage: 19.231060262114468
   }
 };
       

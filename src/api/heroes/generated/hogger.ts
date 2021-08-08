@@ -87,7 +87,7 @@ const hogger: Hero = {
       id: "HoggerHoggWild",
       name: "Hogg Wild",
       descriptionShort: "Rapidly spin, dealing damage",
-      descriptionLong: "After 0.25 seconds, become Unstoppable and uncontrollably spin towards the target direction, ricocheting off terrain. Every 0.125 seconds, deal 32 (+4% / level) damage to nearby non-Structure enemies, increased by 1% for each point of Rage. Ricocheting off terrain refreshes the duration.",
+      descriptionLong: "After 0.25 seconds, become Unstoppable and uncontrollably spin towards the target direction, ricocheting off terrain. Ricocheting off terrain refreshes the duration. Every 0.125 seconds, deal 44 (+4% / level) damage to nearby non-Structure enemies. Damage against Heroes is increased by .5% for each point of Rage.",
       cooldown: 14,
       category: "basic",
       type: "E",
@@ -98,7 +98,7 @@ const hogger: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.2857142857142856
+        magicalDamage: 3.142857142857143
       }
     },
     {
@@ -191,7 +191,7 @@ const hogger: Hero = {
         id: "HoggerOnTheProwl",
         name: "On The Prowl",
         descriptionShort: "Periodically heal, activate to gain Rage",
-        descriptionLong: "Activate to gain 30 Rage over 8 seconds. Passive: You heal for 9 (+4% / level) Health every second, increased by 2% per point of Rage.",
+        descriptionLong: "Activate to gain 30 Rage over 8 seconds. Passive: You heal for 8 (+4% / level) Health every second, increased by 2% per point of Rage.",
         cooldown: 40,
         category: "Talent",
         type: "Active",
@@ -201,7 +201,7 @@ const hogger: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.12,
+          healing: 0.10666666666666667,
           magicalDamage: 0
         },
         order: 3,
@@ -213,7 +213,7 @@ const hogger: Hero = {
         id: "HoggerBruteForce",
         name: "Brute Force",
         descriptionShort: "Increases Attack Damage and Loot Hoard range",
-        descriptionLong: "Increase the range of Loot Hoard by 15%. Quest: Hitting Heroes with Staggering Blow permanently increases Basic Attack damage by 2, to a maximum of 125 bonus damage. Enemy Heroes that hit terrain grant an additional 8 damage.",
+        descriptionLong: "Increase the range of Loot Hoard by 20% and its damage by 50%. Quest: Hitting Heroes with Staggering Blow permanently increases Basic Attack damage by 2, to a maximum of 150 bonus damage. Enemy Heroes that hit terrain grant an additional 8 damage.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -237,7 +237,7 @@ const hogger: Hero = {
         id: "HoggerAggroRange",
         name: "Aggro Range",
         descriptionShort: "Increase Hogg Wild radius, generates Rage",
-        descriptionLong: "Increase Hogg Wild's radius by 25% and each enemy hit generates 0.5 Rage, increased to 2 against Heroes.",
+        descriptionLong: "Increase Hogg Wild's radius by 20% and each enemy hit generates 0.5 Rage, increased to 2 against Heroes.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -260,7 +260,7 @@ const hogger: Hero = {
         id: "HoggerHoggersJoggers",
         name: "Hogger's Joggers",
         descriptionShort: "Rage increases Move Speed, healing received",
-        descriptionLong: "While above 30 Rage, gain 10% increased Movement Speed and healing received. When above 50 Rage, increase these bonuses to 15%.",
+        descriptionLong: "While above 30 Rage, gain 10% increased Movement Speed and healing received. When at or above 50 Rage, increase these bonuses to 15%.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -403,7 +403,7 @@ const hogger: Hero = {
         id: "HoggerDustDevil",
         name: "Dust Devil",
         descriptionShort: "Hogg Wild grants Armor",
-        descriptionLong: "Gain 20 Armor while Hogg Wild is active and for 3 seconds after. When above 50 Rage, increase this Armor to 40.",
+        descriptionLong: "Gain 20 Armor while Hogg Wild is active and for 3 seconds after. When at or above 50 Rage, increase this Armor to 40.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -426,7 +426,7 @@ const hogger: Hero = {
         id: "HoggerPummel",
         name: "Pummel",
         descriptionShort: "Hogg Wild Slows, reduces Spell Power",
-        descriptionLong: "Enemies hit by Hogg Wild are Slowed by 10% for 2 seconds, stacking up to 5 times. Heroes hit have their Spell Power reduced by 50% for 3 seconds.",
+        descriptionLong: "Enemies hit by Hogg Wild are Slowed by 10% for 2 seconds, stacking up to 5 times. Heroes hit have their Spell Power reduced by 50% for 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -620,7 +620,7 @@ const hogger: Hero = {
         id: "HoggerAngerManagement",
         name: "Anger Management",
         descriptionShort: "Increase max Rage, increase Rage gains",
-        descriptionLong: "Increase maximum Rage by 50, raising the maximum bonuses for its cooldown refresh rate to 75% and Hogg Wild damage to 150%. Passive: Basic Attacks grant 5 additional Rage.",
+        descriptionLong: "Increase maximum Rage by 50, raising the maximum bonuses for its cooldown refresh rate to 75% and Hogg Wild's Hero damage to 75%. Passive: Basic Attacks grant 5 additional Rage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -643,7 +643,7 @@ const hogger: Hero = {
     physicalDamage: 54.54545454545454,
     mobility: 24.199,
     healing: 0,
-    magicalDamage: 17.670512770621734
+    magicalDamage: 18.049934493001775
   }
 };
       

@@ -170,7 +170,7 @@ const stukov: Hero = {
         id: "StukovFetidTouch",
         name: "Fetid Touch",
         descriptionShort: "Quest: Reduce Weighted Pustule cooldown, cost",
-        descriptionLong: "Quest: Hit Heroes with Weighted Pustule. Reward: After hitting 15 Heroes, reduce the cooldown of Weighted Pustule by 2.5 seconds and its Mana cost by 25. Reward: After hitting 25 Heroes, reduce the cooldown of Weighted Pustule by an additional 2.5 seconds and remove its Mana cost.",
+        descriptionLong: "Basic Attacks become ranged and Slow enemies by 15% for 1.5 seconds, but deal 50% less damage. This effect can be toggled. Quest: Hit Heroes with Weighted Pustule. Reward: After hitting 20 Heroes, reduce the cooldown of Weighted Pustule by 5 seconds and remove its Mana cost.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -194,7 +194,7 @@ const stukov: Hero = {
         id: "StukovWeightedPustuleReactiveBallistospores",
         name: "Reactive Ballistospores",
         descriptionShort: "Radiate Weighted Pustule at low Health",
-        descriptionLong: "When taking damage below 50% Health, instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch. This effect has a 25 second cooldown.",
+        descriptionLong: "While below 50% Health, the cooldown of Bio-Kill Switch refreshes 150% faster. Activate to instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch. This effect has a 60 second cooldown.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -217,7 +217,7 @@ const stukov: Hero = {
         id: "StukovLowBlow",
         name: "Low Blow",
         descriptionShort: "Increase Lurking Arm damage to low Health targets",
-        descriptionLong: "Lurking Arm deals 100% more damage to enemy Heroes below 50% Health.",
+        descriptionLong: "Lurking Arm deals 100% more damage to enemy Heroes below 50% Health and persists for 1 second after it is canceled.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -235,26 +235,6 @@ const stukov: Hero = {
         linkedAbilityIds: [
           "StukovLurkingArm"
         ]
-      },
-      {
-        id: "StukovSpineLauncher",
-        name: "Spine Launcher",
-        descriptionShort: "Basic Attacks Slow, become ranged",
-        descriptionLong: "Basic Attacks become ranged and Slow enemies by 20% for 1.5 seconds, but deal 40% less damage.",
-        cooldown: null,
-        category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_spinelauncher.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 4,
-        tier: "level1"
       }
     ],
     [
@@ -285,7 +265,7 @@ const stukov: Hero = {
         id: "StukovBioticArmor",
         name: "Biotic Armor",
         descriptionShort: "Healing Pathogen grants Physical Armor",
-        descriptionLong: "Healing Pathogen grants 10 Physical Armor to targets while active on them. Detonating Bio-Kill Switch increases this bonus to 75 for 2.5 seconds.",
+        descriptionLong: "Healing Pathogen grants 10 Physical Armor to targets while active on them. Detonating Bio-Kill Switch increases this bonus to 50 for 2.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -379,7 +359,7 @@ const stukov: Hero = {
         id: "StukovTargetedExcision",
         name: "Targeted Excision",
         descriptionShort: "Detonate single Weighted Pustule to reduce cooldowns",
-        descriptionLong: "Detonating exactly 1 Weighted Pustule (but any number of Healing Pathogens) with Bio-Kill Switch reduces the cooldown of Bio-Kill Switch to 5 seconds and other Basic Abilities by 1.5 seconds.",
+        descriptionLong: "Detonating exactly 1 Weighted Pustule (but any number of Healing Pathogens) with Bio-Kill Switch reduces the cooldown of Bio-Kill Switch to 8 seconds and other Basic Abilities by 1.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -486,10 +466,10 @@ const stukov: Hero = {
         ]
       },
       {
-        id: "StukovLingeringSpines",
-        name: "Lingering Spines",
-        descriptionShort: "Lurking Arm persists after canceling",
-        descriptionLong: "Lurking Arm persists for 1.5 seconds after it is canceled.",
+        id: "StukovVirulentReaction",
+        name: "Virulent Reaction",
+        descriptionShort: "Detonating Weighted Pustule in Lurking Arm Roots",
+        descriptionLong: "Detonating a Weighted Pustule on an enemy who is inside of Lurking Arm Roots them for 1.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -503,29 +483,6 @@ const stukov: Hero = {
           magicalDamage: 0
         },
         order: 2,
-        tier: "level13",
-        linkedAbilityIds: [
-          "StukovLurkingArm"
-        ]
-      },
-      {
-        id: "StukovVirulentReaction",
-        name: "Virulent Reaction",
-        descriptionShort: "Detonating Weighted Pustule in Lurking Arm Roots",
-        descriptionLong: "Detonating a Weighted Pustule on an enemy who is inside of Lurking Arm Roots them for 2 seconds.",
-        cooldown: null,
-        category: "Talent",
-        type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_lurkingarm_b.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 3,
         tier: "level13",
         linkedAbilityIds: [
           "StukovLurkingArm"
@@ -548,7 +505,7 @@ const stukov: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 4,
+        order: 3,
         tier: "level13",
         linkedAbilityIds: [
           "StukovBioKillSwitch"

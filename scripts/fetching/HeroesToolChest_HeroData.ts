@@ -6,15 +6,16 @@ export async function GetLatestHeroData(patches: PatchVersion[]) {
   console.log('Fetching latest hero data...');
 
   for (const patch of patches) {
-    console.log(`Trying patch ${patch.fullVersion} - ${patch.patchName}`);
+    console.log(`Trying patch ${patch.name}`);
 
+    const fullVersion = patch.tag_name.substring(1);
     const [majorVersion, minorVersion, patchVersion, build] =
-      patch.fullVersion.split('.');
+      fullVersion.split('.');
 
     // https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/2.53.1.83632/data/herodata_83632_localized.json
     // https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/<full-version>/data/herodata_<build-number>_localized.json
     const gameDataResponse = await fetch(
-      `https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/${patch.fullVersion}/data/herodata_${build}_localized.json`
+      `https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/${fullVersion}/data/herodata_${build}_localized.json`
     );
 
     if (gameDataResponse.status === 404) {
