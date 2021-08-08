@@ -24,6 +24,7 @@ The _heroes_ tab is for selecting heroes.
 The _analysis_ tab shows the (naïve) analysis for each team.
 
 # How to run locally
+
 Clone the repo
 
 Install the dependencies: `yarn install`
@@ -35,4 +36,5 @@ Start development server: `yarn dev`
 # Questions?
 
 ### How often is this updated?
-More or less when I feel like it.
+
+Check the [changelog](/HotsTools/changelog)
