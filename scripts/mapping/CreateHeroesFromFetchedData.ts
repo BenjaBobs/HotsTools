@@ -1,7 +1,5 @@
 import '../../src/utils/ArrayExtensions';
 
-import { match } from 'assert';
-
 import { Ability, Analysis, Charges, Hero, Talent } from '../../src/api/heroes/heroes';
 import { HTC_GameStrings } from '../fetching/HeroesToolChest_GameStrings';
 import { HTC_Ability, HTC_Hero } from '../fetching/HeroesToolChest_HeroData';
@@ -192,59 +190,45 @@ function AnalyseAbility(ability: Ability): Analysis {
 
   const text = ability.descriptionLong.toLowerCase();
   const analyser = new TextAnalyser(text);
+
+  // limit cooldown factor to 15s, because otherwise it skews the usefulness
+  // since a lot of fights are determined in less than that so no need to calculate
+  // the dps of an ability with 90s cooldown
   const cooldownFactor = 1 / Math.min(ability.cooldown ?? 15, 15);
 
-  const tokens = [analyser.FindNextToken()];
-  while (true) {
-    const token = analyser.FindNextToken();
-    if (!token) break;
-
-    if (token.data.type === 'damage') {
-      const damageValue = tokens.last();
-      const deals = tokens.last(2);
-
-      if (
-        damageValue?.data.type === 'scalingValue' &&
-        deals?.data.type === 'deal'
-      ) {
-        analysis.magicalDamage += damageValue.data.value * cooldownFactor;
-      }
+  for (const [, damage] of analyser.FindPatterns('deal', 'value', 'damage')) {
+    if (damage.subtype === 'flat') {
+      analysis.magicalDamage += damage.value * damage.scaling * cooldownFactor;
+    } else if (damage.subtype === 'percentage') {
+      analysis.magicalDamage += damage.percentage * cooldownFactor;
     }
-
-    if (
-      token.data.type === 'scalingValue' ||
-      token.data.type === 'percentage'
-    ) {
-      const prev = tokens.last();
-      const prevPrev = tokens.last(2);
-      const prevPrevPrev = tokens.last(3);
-
-      if (
-        prev?.data.type === 'heal' ||
-        prevPrev?.data.type === 'heal' ||
-        prevPrevPrev?.data.type === 'heal'
-      ) {
-        const healFactor =
-          token.data.type === 'scalingValue'
-            ? token.data.value / 5
-            : token.data.value * 2;
-
-        const aoeFactor =
-          (prev?.data.type === 'hero' && prev.data.multiple) ||
-          (prevPrev?.data.type === 'hero' && prevPrev.data.multiple) ||
-          (prevPrevPrev?.data.type === 'hero' && prevPrevPrev.data.multiple)
-            ? 2
-            : 1;
-
-        analysis.healing += healFactor * aoeFactor * cooldownFactor;
-      }
-    }
-
-    tokens.push(token);
   }
 
-  if (ability.id === 'KaelthasFlamestrike') {
-    console.log(tokens);
+  for (const match of analyser.FindPatterns(
+    'increase',
+    null,
+    'movement speed',
+    'value'
+  )) {
+    if (match[3] === undefined) {
+      console.log(match);
+    }
+    if (match[3].subtype === 'percentage') {
+      analysis.mobility += match[3].percentage;
+    }
+  }
+
+  for (const [, , , healing] of analyser.FindPatterns(
+    'heal',
+    null,
+    null,
+    'value'
+  )) {
+    if (healing.subtype === 'flat') {
+      analysis.healing += healing.value * healing.scaling * cooldownFactor;
+    } else if (healing.subtype === 'percentage') {
+      analysis.healing += healing.percentage * cooldownFactor;
+    }
   }
 
   return analysis;
