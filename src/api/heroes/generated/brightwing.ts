@@ -43,7 +43,7 @@ const brightwing: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 3.0666666666666664,
+        healing: 30.666666666666668,
         magicalDamage: 0
       }
     },
@@ -61,7 +61,7 @@ const brightwing: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 3.3333333333333335,
+        healing: 0,
         magicalDamage: 0
       }
     },
@@ -84,7 +84,7 @@ const brightwing: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12.5
+        magicalDamage: 50
       }
     },
     {
@@ -124,7 +124,7 @@ const brightwing: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_pixiedust.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 20,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -155,7 +155,7 @@ const brightwing: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 4.444444444444445,
+        healing: 0,
         magicalDamage: 0
       }
     },
@@ -178,7 +178,7 @@ const brightwing: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15
+        magicalDamage: 60
       }
     }
   ],
@@ -221,7 +221,7 @@ const brightwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.0666666666666667,
+          healing: 0.5333333333333333,
           magicalDamage: 0
         },
         order: 2,
@@ -386,7 +386,7 @@ const brightwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 23.06666666666667,
+          healing: 44,
           magicalDamage: 0
         },
         order: 3,
@@ -421,7 +421,7 @@ const brightwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.444444444444445,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -449,7 +449,7 @@ const brightwing: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15
+          magicalDamage: 60
         },
         order: 2,
         tier: "level10",
@@ -496,7 +496,7 @@ const brightwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10,
+          healing: 5,
           magicalDamage: 0
         },
         order: 2,
@@ -545,7 +545,7 @@ const brightwing: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.6666666666666667
         },
         order: 1,
         tier: "level16",
@@ -618,7 +618,7 @@ const brightwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.5333333333333333,
+          healing: 5.333333333333333,
           magicalDamage: 0
         },
         order: 1,
@@ -707,8 +707,8 @@ const brightwing: Hero = {
   analysis: {
     tankiness: 43.69114877589453,
     physicalDamage: 45,
-    mobility: 24.199,
-    healing: 14.234045035585114,
+    mobility: 31.752383278615504,
+    healing: 6.0662007121192145,
     magicalDamage: 12.173113593026423
   }
 };

@@ -66,7 +66,7 @@ const chen: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 24
+        magicalDamage: 96
       }
     },
     {
@@ -88,7 +88,7 @@ const chen: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10
+        magicalDamage: 40
       }
     },
     {
@@ -142,7 +142,7 @@ const chen: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.933333333333333
+        magicalDamage: 15.733333333333333
       }
     }
   ],
@@ -162,8 +162,8 @@ const chen: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5.333333333333333,
-          magicalDamage: 0
+          healing: 0,
+          magicalDamage: 2.6666666666666665
         },
         order: 1,
         tier: "level1",
@@ -186,7 +186,7 @@ const chen: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 26.666666666666668,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -210,7 +210,7 @@ const chen: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.4666666666666667,
+          healing: 0.23333333333333334,
           magicalDamage: 0
         },
         order: 3,
@@ -377,7 +377,7 @@ const chen: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.933333333333333
+          magicalDamage: 15.733333333333333
         },
         order: 1,
         tier: "level10",
@@ -472,7 +472,7 @@ const chen: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.6666666666666665
+          magicalDamage: 14.666666666666666
         },
         order: 3,
         tier: "level13",
@@ -567,7 +567,7 @@ const chen: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5
         },
         order: 3,
         tier: "level16",
@@ -588,7 +588,7 @@ const chen: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_wanderingkeg.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 70,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -793,7 +793,7 @@ const chen: Hero = {
   analysis: {
     tankiness: 74.51600753295668,
     physicalDamage: 50,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 16.791519113774626
   }

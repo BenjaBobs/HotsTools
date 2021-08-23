@@ -44,7 +44,7 @@ const hogger: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 6.8
+        magicalDamage: 27.2
       }
     },
     {
@@ -62,7 +62,7 @@ const hogger: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 24.166666666666664
+        magicalDamage: 96.66666666666666
       }
     },
     {
@@ -98,7 +98,7 @@ const hogger: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.142857142857143
+        magicalDamage: 12.571428571428571
       }
     },
     {
@@ -116,7 +116,7 @@ const hogger: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 6.666666666666667
+        magicalDamage: 26.666666666666668
       }
     },
     {
@@ -154,7 +154,7 @@ const hogger: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.0666666666666667,
+          healing: 0.5333333333333333,
           magicalDamage: 0
         },
         order: 1,
@@ -201,7 +201,7 @@ const hogger: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.10666666666666667,
+          healing: 2.1333333333333333,
           magicalDamage: 0
         },
         order: 3,
@@ -270,7 +270,7 @@ const hogger: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 0,
           magicalDamage: 0
         },
         order: 3,
@@ -366,7 +366,7 @@ const hogger: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.666666666666667
+          magicalDamage: 26.666666666666668
         },
         order: 1,
         tier: "level10",
@@ -459,7 +459,7 @@ const hogger: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8.8,
+          healing: 2.2,
           magicalDamage: 0
         },
         order: 3,
@@ -509,7 +509,7 @@ const hogger: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 2,
         tier: "level16",
@@ -641,7 +641,7 @@ const hogger: Hero = {
   analysis: {
     tankiness: 68.09792843691149,
     physicalDamage: 54.54545454545454,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 18.049934493001775
   }

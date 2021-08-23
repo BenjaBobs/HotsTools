@@ -50,7 +50,7 @@ const orphea: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 13.333333333333334,
+        healing: 6.666666666666667,
         magicalDamage: 0
       }
     },
@@ -73,7 +73,7 @@ const orphea: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 33
+        magicalDamage: 132
       }
     },
     {
@@ -95,7 +95,7 @@ const orphea: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 30.5
+        magicalDamage: 122
       }
     },
     {
@@ -117,7 +117,7 @@ const orphea: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 18.57142857142857
+        magicalDamage: 74.28571428571428
       }
     },
     {
@@ -139,7 +139,7 @@ const orphea: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.666666666666668
+        magicalDamage: 66.66666666666667
       }
     },
     {
@@ -161,7 +161,7 @@ const orphea: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 14
+        magicalDamage: 56
       }
     }
   ],
@@ -229,7 +229,7 @@ const orphea: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1
         },
         order: 3,
         tier: "level1",
@@ -301,7 +301,7 @@ const orphea: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5
         },
         order: 3,
         tier: "level4",
@@ -349,7 +349,7 @@ const orphea: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.133333333333334,
+          healing: 16,
           magicalDamage: 0
         },
         order: 2,
@@ -404,7 +404,7 @@ const orphea: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 14
+          magicalDamage: 56
         },
         order: 1,
         tier: "level10",
@@ -431,7 +431,7 @@ const orphea: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16.666666666666668
+          magicalDamage: 66.66666666666667
         },
         order: 2,
         tier: "level10",
@@ -501,8 +501,8 @@ const orphea: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.64,
-          magicalDamage: 15
+          healing: 0,
+          magicalDamage: 60
         },
         order: 3,
         tier: "level13",
@@ -526,7 +526,7 @@ const orphea: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -550,7 +550,7 @@ const orphea: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6
+          magicalDamage: 24
         },
         order: 2,
         tier: "level16",
@@ -692,8 +692,8 @@ const orphea: Hero = {
   analysis: {
     tankiness: 45.951035781544256,
     physicalDamage: 52.8084493518963,
-    mobility: 24.199,
-    healing: 17.50087504375219,
+    mobility: 17.38446396885035,
+    healing: 1.3187392852433075,
     magicalDamage: 49.90449598526417
   }
 };

@@ -43,8 +43,8 @@ const ana: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 42.5,
-        magicalDamage: 10
+        healing: 15,
+        magicalDamage: 40
       }
     },
     {
@@ -65,7 +65,7 @@ const ana: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 19.5,
+        healing: 390,
         magicalDamage: 0
       }
     },
@@ -87,7 +87,7 @@ const ana: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 8.186666666666667,
+        healing: 40.53333333333333,
         magicalDamage: 0
       }
     },
@@ -153,8 +153,8 @@ const ana: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 6,
-        magicalDamage: 0
+        healing: 60,
+        magicalDamage: 3.3333333333333335
       }
     }
   ],
@@ -174,7 +174,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 2,
           magicalDamage: 0
         },
         order: 1,
@@ -220,7 +220,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.06666666666666667,
+          healing: 0.03333333333333333,
           magicalDamage: 0
         },
         order: 3,
@@ -247,7 +247,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -418,8 +418,8 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6,
-          magicalDamage: 0
+          healing: 60,
+          magicalDamage: 3.3333333333333335
         },
         order: 2,
         tier: "level10",
@@ -443,7 +443,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 1.6666666666666667,
           magicalDamage: 0
         },
         order: 1,
@@ -466,7 +466,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.6666666666666665,
+          healing: 1.3333333333333333,
           magicalDamage: 0
         },
         order: 2,
@@ -514,7 +514,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 7.333333333333334,
+          healing: 3.666666666666667,
           magicalDamage: 0
         },
         order: 1,
@@ -537,7 +537,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 0.6666666666666666,
           magicalDamage: 0
         },
         order: 2,
@@ -585,7 +585,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -611,7 +611,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.5333333333333333,
+          healing: 0.26666666666666666,
           magicalDamage: 0
         },
         order: 2,
@@ -676,9 +676,9 @@ const ana: Hero = {
   analysis: {
     tankiness: 48.150659133709986,
     physicalDamage: 20,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 100,
-    magicalDamage: 4.426586761100518
+    magicalDamage: 4.7954689911922275
   }
 };
       

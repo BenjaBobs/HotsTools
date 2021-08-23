@@ -39,7 +39,7 @@ const abathur: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.0666666666666664
+        magicalDamage: 13.933333333333332
       }
     },
     {
@@ -99,7 +99,7 @@ const abathur: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.3
+        magicalDamage: 61.2
       }
     },
     {
@@ -186,7 +186,7 @@ const abathur: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5
         },
         order: 2,
         tier: "level1",
@@ -493,7 +493,7 @@ const abathur: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.8533333333333334,
+          healing: 17.066666666666666,
           magicalDamage: 0
         },
         order: 2,
@@ -563,7 +563,7 @@ const abathur: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_carapace.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 40,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -590,8 +590,8 @@ const abathur: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 26.666666666666668,
-          magicalDamage: 9.133333333333333
+          healing: 6.666666666666667,
+          magicalDamage: 36.53333333333333
         },
         order: 3,
         tier: "level16",
@@ -773,7 +773,7 @@ const abathur: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 39.666666666666664
+            magicalDamage: 158.66666666666666
           }
         },
         {
@@ -791,7 +791,7 @@ const abathur: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 20
+            magicalDamage: 80
           }
         }
       ],
@@ -801,16 +801,16 @@ const abathur: Hero = {
         physicalDamage: 0,
         mobility: 0.0585,
         healing: 0,
-        magicalDamage: 59.666666666666664
+        magicalDamage: 238.66666666666666
       }
     }
   ],
   analysis: {
     tankiness: 20.640301318267422,
     physicalDamage: 18.571428571428573,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 8.130164351221284
+    magicalDamage: 8.314605466267139
   }
 };
       

@@ -43,7 +43,7 @@ const tracer: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 20,
+        healing: 10,
         magicalDamage: 0
       }
     },
@@ -92,7 +92,7 @@ const tracer: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 27.5
+        magicalDamage: 110
       }
     },
     {
@@ -133,7 +133,7 @@ const tracer: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 19.866666666666667
+        magicalDamage: 119.2
       }
     }
   ],
@@ -183,7 +183,7 @@ const tracer: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16
+          magicalDamage: 64
         },
         order: 2,
         tier: "level1",
@@ -230,7 +230,7 @@ const tracer: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 26.666666666666668,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -258,7 +258,7 @@ const tracer: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 1.6666666666666667,
           magicalDamage: 0
         },
         order: 2,
@@ -281,7 +281,7 @@ const tracer: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 0.6666666666666666,
           magicalDamage: 0
         },
         order: 3,
@@ -327,7 +327,7 @@ const tracer: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.333333333333333
+          magicalDamage: 21.333333333333332
         },
         order: 2,
         tier: "level7",
@@ -714,7 +714,7 @@ const tracer: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 4,
         tier: "level20",
@@ -727,9 +727,9 @@ const tracer: Hero = {
   analysis: {
     tankiness: 40.07532956685499,
     physicalDamage: 92,
-    mobility: 24.199,
-    healing: 26.251312565628282,
-    magicalDamage: 20.967265958412785
+    mobility: 17.38446396885035,
+    healing: 1.9781089278649613,
+    magicalDamage: 25.36434214110596
   }
 };
       

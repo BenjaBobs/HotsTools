@@ -66,7 +66,7 @@ const azmodan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 18.400000000000002
+        magicalDamage: 73.60000000000001
       }
     },
     {
@@ -88,7 +88,7 @@ const azmodan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.5
+        magicalDamage: 14
       }
     },
     {
@@ -110,7 +110,7 @@ const azmodan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 78
+        magicalDamage: 312
       }
     },
     {
@@ -132,7 +132,7 @@ const azmodan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12.8
+        magicalDamage: 51.2
       }
     },
     {
@@ -154,7 +154,7 @@ const azmodan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 3.3333333333333335
       }
     }
   ],
@@ -175,7 +175,7 @@ const azmodan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1
         },
         order: 1,
         tier: "level1",
@@ -397,7 +397,7 @@ const azmodan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 12.8
+          magicalDamage: 51.2
         },
         order: 1,
         tier: "level10",
@@ -424,7 +424,7 @@ const azmodan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 2,
         tier: "level10",
@@ -471,7 +471,7 @@ const azmodan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.0666666666666667,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -566,7 +566,7 @@ const azmodan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 18.333333333333332
+          magicalDamage: 73.33333333333333
         },
         order: 3,
         tier: "level16"
@@ -677,9 +677,9 @@ const azmodan: Hero = {
   analysis: {
     tankiness: 74.25084745762712,
     physicalDamage: 42.5,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 49.88763279760283
+    magicalDamage: 50.25651502769454
   }
 };
       

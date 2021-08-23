@@ -64,7 +64,7 @@ const chogall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.833333333333333
+        magicalDamage: 15.333333333333332
       }
     },
     {
@@ -81,8 +81,8 @@ const chogall: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0.6666666666666666,
-        magicalDamage: 12.5
+        healing: 0,
+        magicalDamage: 50
       }
     },
     {
@@ -100,7 +100,7 @@ const chogall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 37.625
+        magicalDamage: 150.5
       }
     },
     {
@@ -118,7 +118,7 @@ const chogall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.666666666666666
+        magicalDamage: 46.666666666666664
       }
     },
     {
@@ -136,7 +136,7 @@ const chogall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10
+        magicalDamage: 40
       }
     }
   ],
@@ -156,7 +156,7 @@ const chogall: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 20,
+          healing: 10,
           magicalDamage: 0
         },
         order: 1,
@@ -278,7 +278,7 @@ const chogall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.3333333333333333
         },
         order: 3,
         tier: "level4"
@@ -346,7 +346,7 @@ const chogall: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.8,
+          healing: 16,
           magicalDamage: 0
         },
         order: 3,
@@ -373,7 +373,7 @@ const chogall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 40
         },
         order: 1,
         tier: "level10",
@@ -396,7 +396,7 @@ const chogall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 11.666666666666666
+          magicalDamage: 46.666666666666664
         },
         order: 2,
         tier: "level10",
@@ -420,7 +420,7 @@ const chogall: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 40,
           magicalDamage: 0
         },
         order: 1,
@@ -608,7 +608,7 @@ const chogall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.4
+          magicalDamage: 5.6
         },
         order: 3,
         tier: "level20",
@@ -641,8 +641,8 @@ const chogall: Hero = {
   analysis: {
     tankiness: 100,
     physicalDamage: 66.47727272727272,
-    mobility: 24.199,
-    healing: 0.8750437521876092,
+    mobility: 17.38446396885035,
+    healing: 0,
     magicalDamage: 33.47606238082266
   }
 };

@@ -62,7 +62,7 @@ const auriel: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5
+        magicalDamage: 20
       }
     },
     {
@@ -98,7 +98,7 @@ const auriel: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 4.583333333333333
+        magicalDamage: 18.333333333333332
       }
     },
     {
@@ -134,7 +134,7 @@ const auriel: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 17
+        magicalDamage: 68
       }
     }
   ],
@@ -416,7 +416,7 @@ const auriel: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 17
+          magicalDamage: 68
         },
         order: 2,
         tier: "level10",
@@ -666,7 +666,7 @@ const auriel: Hero = {
   analysis: {
     tankiness: 51.2241054613936,
     physicalDamage: 40,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 11.767343139925542
   }

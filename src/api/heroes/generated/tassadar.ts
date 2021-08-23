@@ -66,7 +66,7 @@ const tassadar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 40
+        magicalDamage: 160
       }
     },
     {
@@ -132,7 +132,7 @@ const tassadar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 9.333333333333334
+        magicalDamage: 37.333333333333336
       }
     },
     {
@@ -154,7 +154,7 @@ const tassadar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20.666666666666668
+        magicalDamage: 82.66666666666667
       }
     }
   ],
@@ -272,7 +272,7 @@ const tassadar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.133333333333333
+          magicalDamage: 24.53333333333333
         },
         order: 2,
         tier: "level4",
@@ -398,7 +398,7 @@ const tassadar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 9.333333333333334
+          magicalDamage: 37.333333333333336
         },
         order: 1,
         tier: "level10",
@@ -425,7 +425,7 @@ const tassadar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 20.666666666666668
+          magicalDamage: 82.66666666666667
         },
         order: 2,
         tier: "level10",
@@ -668,7 +668,7 @@ const tassadar: Hero = {
   analysis: {
     tankiness: 49.717514124293785,
     physicalDamage: 28.000000000000004,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 30.98610732770362
   }

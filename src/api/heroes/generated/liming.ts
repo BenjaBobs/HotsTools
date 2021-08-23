@@ -66,7 +66,7 @@ const liming: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 49
+        magicalDamage: 147
       }
     },
     {
@@ -88,7 +88,7 @@ const liming: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.875
+        magicalDamage: 50.625
       }
     },
     {
@@ -132,7 +132,7 @@ const liming: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 32
+        magicalDamage: 160
       }
     },
     {
@@ -154,7 +154,7 @@ const liming: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10.666666666666666
+        magicalDamage: 53.333333333333336
       }
     }
   ],
@@ -198,7 +198,7 @@ const liming: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 0.6666666666666666
         },
         order: 2,
         tier: "level1",
@@ -317,7 +317,7 @@ const liming: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 9.333333333333334
+          magicalDamage: 37.333333333333336
         },
         order: 1,
         tier: "level7",
@@ -392,7 +392,7 @@ const liming: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 32
+          magicalDamage: 160
         },
         order: 1,
         tier: "level10",
@@ -419,7 +419,7 @@ const liming: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10.666666666666666
+          magicalDamage: 53.333333333333336
         },
         order: 2,
         tier: "level10",
@@ -694,9 +694,9 @@ const liming: Hero = {
   analysis: {
     tankiness: 38.26741996233521,
     physicalDamage: 31.5,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 48.0469104694452
+    magicalDamage: 45.47856794243167
   }
 };
       

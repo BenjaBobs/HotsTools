@@ -66,7 +66,7 @@ const chromie: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 101.66666666666666
+        magicalDamage: 436.66666666666663
       }
     },
     {
@@ -88,7 +88,7 @@ const chromie: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.357142857142856
+        magicalDamage: 61.42857142857142
       }
     },
     {
@@ -369,7 +369,7 @@ const chromie: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2
         },
         order: 2,
         tier: "level7",
@@ -695,9 +695,9 @@ const chromie: Hero = {
   analysis: {
     tankiness: 41.88323917137476,
     physicalDamage: 41,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 51.801604597164385
+    magicalDamage: 55.121544667989774
   }
 };
       

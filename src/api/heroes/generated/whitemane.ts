@@ -43,7 +43,7 @@ const whitemane: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 13.333333333333334,
+        healing: 6.666666666666667,
         magicalDamage: 0
       }
     },
@@ -65,7 +65,7 @@ const whitemane: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 1.8666666666666667,
+        healing: 37.333333333333336,
         magicalDamage: 0
       }
     },
@@ -84,7 +84,7 @@ const whitemane: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 4.166666666666666
+        magicalDamage: 16.666666666666664
       }
     },
     {
@@ -119,7 +119,7 @@ const whitemane: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 8,
+        healing: 0,
         magicalDamage: 0
       }
     },
@@ -138,7 +138,7 @@ const whitemane: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.3333333333333335
+        magicalDamage: 13.333333333333334
       }
     }
   ],
@@ -182,7 +182,7 @@ const whitemane: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.6666666666666667
         },
         order: 2,
         tier: "level1",
@@ -253,7 +253,7 @@ const whitemane: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 2,
           magicalDamage: 0
         },
         order: 2,
@@ -325,7 +325,7 @@ const whitemane: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.6666666666666665
+          magicalDamage: 14.666666666666666
         },
         order: 2,
         tier: "level7",
@@ -369,7 +369,7 @@ const whitemane: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -393,7 +393,7 @@ const whitemane: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 13.333333333333334
         },
         order: 2,
         tier: "level10",
@@ -488,7 +488,7 @@ const whitemane: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.3333333333333335,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -512,7 +512,7 @@ const whitemane: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.3333333333333335
+          magicalDamage: 9.333333333333334
         },
         order: 2,
         tier: "level16",
@@ -559,7 +559,7 @@ const whitemane: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -586,7 +586,7 @@ const whitemane: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 2,
         tier: "level20",
@@ -635,7 +635,7 @@ const whitemane: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 20
+          magicalDamage: 80
         },
         order: 4,
         tier: "level20"
@@ -645,8 +645,8 @@ const whitemane: Hero = {
   analysis: {
     tankiness: 42.18455743879473,
     physicalDamage: 31,
-    mobility: 24.199,
-    healing: 30.45152257612881,
+    mobility: 17.38446396885035,
+    healing: 8.70367928260583,
     magicalDamage: 3.319940070825388
   }
 };

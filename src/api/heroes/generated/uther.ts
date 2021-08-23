@@ -43,7 +43,7 @@ const uther: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 3.0666666666666664,
+        healing: 0,
         magicalDamage: 0
       }
     },
@@ -65,7 +65,7 @@ const uther: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 9.05,
+        healing: 120.66666666666666,
         magicalDamage: 0
       }
     },
@@ -87,8 +87,8 @@ const uther: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 7.76,
-        magicalDamage: 17.7
+        healing: 77.60000000000001,
+        magicalDamage: 70.8
       }
     },
     {
@@ -110,7 +110,7 @@ const uther: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10.9
+        magicalDamage: 43.6
       }
     },
     {
@@ -128,7 +128,7 @@ const uther: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divineshield.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 20,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -154,7 +154,7 @@ const uther: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.333333333333334
+        magicalDamage: 45.333333333333336
       }
     }
   ],
@@ -270,7 +270,7 @@ const uther: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_hammerofjustice.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 25,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -297,7 +297,7 @@ const uther: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0.8666666666666667
+          magicalDamage: 3.466666666666667
         },
         order: 3,
         tier: "level4",
@@ -391,7 +391,7 @@ const uther: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divineshield.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 20,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -422,7 +422,7 @@ const uther: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 11.333333333333334
+          magicalDamage: 45.333333333333336
         },
         order: 2,
         tier: "level10",
@@ -446,7 +446,7 @@ const uther: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 1,
           magicalDamage: 0
         },
         order: 1,
@@ -515,7 +515,7 @@ const uther: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 40,
+          healing: 16.666666666666668,
           magicalDamage: 0
         },
         order: 1,
@@ -539,7 +539,7 @@ const uther: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.6666666666666665,
+          healing: 0.6666666666666666,
           magicalDamage: 0
         },
         order: 2,
@@ -673,8 +673,8 @@ const uther: Hero = {
   analysis: {
     tankiness: 59.51035781544256,
     physicalDamage: 37.5,
-    mobility: 24.199,
-    healing: 26.089429471473576,
+    mobility: 31.752383278615504,
+    healing: 39.21930634313596,
     magicalDamage: 17.676836465994736
   }
 };

@@ -44,7 +44,7 @@ const deathwing: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 6.666666666666667
       }
     },
     {
@@ -84,7 +84,7 @@ const deathwing: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7
+        magicalDamage: 28
       }
     },
     {
@@ -106,7 +106,7 @@ const deathwing: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.25
+        magicalDamage: 65
       }
     },
     {
@@ -128,7 +128,7 @@ const deathwing: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22
+        magicalDamage: 88
       }
     },
     {
@@ -146,7 +146,7 @@ const deathwing: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8.4
+        magicalDamage: 33.6
       }
     }
   ],
@@ -166,7 +166,7 @@ const deathwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 50,
+          healing: 15,
           magicalDamage: 0
         },
         order: 1,
@@ -190,7 +190,7 @@ const deathwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.08,
+          healing: 0.04,
           magicalDamage: 0
         },
         order: 2,
@@ -214,7 +214,7 @@ const deathwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 1.6666666666666667,
           magicalDamage: 0
         },
         order: 3,
@@ -265,7 +265,7 @@ const deathwing: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0.8
+          magicalDamage: 3.2
         },
         order: 2,
         tier: "level4",
@@ -315,7 +315,7 @@ const deathwing: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4.666666666666667
+          magicalDamage: 18.666666666666668
         },
         order: 1,
         tier: "level7",
@@ -370,8 +370,8 @@ const deathwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6000000000000001,
-          magicalDamage: 5.800000000000001
+          healing: 0,
+          magicalDamage: 23.200000000000003
         },
         order: 3,
         tier: "level7",
@@ -419,7 +419,7 @@ const deathwing: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.6666666666666667
+          magicalDamage: 6.666666666666667
         },
         order: 2,
         tier: "level10"
@@ -489,7 +489,7 @@ const deathwing: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2
         },
         order: 3,
         tier: "level13",
@@ -515,7 +515,7 @@ const deathwing: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 26.666666666666664
+          magicalDamage: 106.66666666666666
         },
         order: 1,
         tier: "level16",
@@ -650,9 +650,9 @@ const deathwing: Hero = {
   analysis: {
     tankiness: 82.86252354048965,
     physicalDamage: 51.66666666666667,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 23.748637973304277
+    magicalDamage: 24.486402433487694
   }
 };
       

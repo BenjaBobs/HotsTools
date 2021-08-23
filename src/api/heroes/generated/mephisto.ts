@@ -72,7 +72,7 @@ const mephisto: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.875
+        magicalDamage: 63.5
       }
     },
     {
@@ -116,7 +116,7 @@ const mephisto: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5.2
+        magicalDamage: 20.8
       }
     },
     {
@@ -160,7 +160,7 @@ const mephisto: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.666666666666668
+        magicalDamage: 66.66666666666667
       }
     }
   ],
@@ -211,7 +211,7 @@ const mephisto: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4.333333333333333
+          magicalDamage: 17.333333333333332
         },
         order: 2,
         tier: "level1",
@@ -264,7 +264,7 @@ const mephisto: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 9.333333333333334,
+          healing: 4.666666666666667,
           magicalDamage: 0
         },
         order: 1,
@@ -310,7 +310,7 @@ const mephisto: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 20,
+          healing: 10,
           magicalDamage: 0
         },
         order: 3,
@@ -438,7 +438,7 @@ const mephisto: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16.666666666666668
+          magicalDamage: 66.66666666666667
         },
         order: 2,
         tier: "level10",
@@ -469,7 +469,7 @@ const mephisto: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.6666666666666665
         },
         order: 1,
         tier: "level13",
@@ -491,7 +491,7 @@ const mephisto: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 1,
           magicalDamage: 0
         },
         order: 2,
@@ -543,7 +543,7 @@ const mephisto: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 9.2
+          magicalDamage: 36.8
         },
         order: 1,
         tier: "level16",
@@ -702,7 +702,7 @@ const mephisto: Hero = {
   analysis: {
     tankiness: 59.29943502824858,
     physicalDamage: 33,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 16.706676200853536
   }

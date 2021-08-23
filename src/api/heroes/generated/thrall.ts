@@ -43,7 +43,7 @@ const thrall: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 2.9733333333333336,
+        healing: 0,
         magicalDamage: 0
       }
     },
@@ -72,7 +72,7 @@ const thrall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 34.714285714285715
+        magicalDamage: 138.85714285714286
       }
     },
     {
@@ -94,7 +94,7 @@ const thrall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12.75
+        magicalDamage: 51
       }
     },
     {
@@ -112,7 +112,7 @@ const thrall: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_thrall_windfury.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 30,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -138,7 +138,7 @@ const thrall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 19.333333333333332
+        magicalDamage: 77.33333333333333
       }
     },
     {
@@ -160,7 +160,7 @@ const thrall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.3333333333333335
+        magicalDamage: 13.333333333333334
       }
     }
   ],
@@ -341,7 +341,7 @@ const thrall: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_thrall_windfury_var1.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 40,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -374,7 +374,7 @@ const thrall: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 20,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -395,7 +395,7 @@ const thrall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.6666666666666665
         },
         order: 3,
         tier: "level7"
@@ -421,7 +421,7 @@ const thrall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 19.333333333333332
+          magicalDamage: 77.33333333333333
         },
         order: 1,
         tier: "level10",
@@ -448,7 +448,7 @@ const thrall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 13.333333333333334
         },
         order: 2,
         tier: "level10",
@@ -495,7 +495,7 @@ const thrall: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 20,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -672,7 +672,7 @@ const thrall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.3333333333333333
         },
         order: 3,
         tier: "level20"
@@ -702,8 +702,8 @@ const thrall: Hero = {
   analysis: {
     tankiness: 56.52730696798493,
     physicalDamage: 78.63636363636363,
-    mobility: 24.199,
-    healing: 3.9026951347567382,
+    mobility: 38.93634293349808,
+    healing: 0,
     magicalDamage: 31.04407453528946
   }
 };

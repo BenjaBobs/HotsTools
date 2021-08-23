@@ -70,7 +70,7 @@ const thebutcher: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 27.5
+        magicalDamage: 110
       }
     },
     {
@@ -91,8 +91,8 @@ const thebutcher: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 10.714285714285714,
-        magicalDamage: 2.642857142857143
+        healing: 5.357142857142857,
+        magicalDamage: 10.571428571428571
       }
     },
     {
@@ -136,7 +136,7 @@ const thebutcher: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 33.333333333333336
+        magicalDamage: 133.33333333333334
       }
     },
     {
@@ -158,7 +158,7 @@ const thebutcher: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.4
+        magicalDamage: 45.6
       }
     }
   ],
@@ -340,7 +340,7 @@ const thebutcher: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -393,7 +393,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 33.333333333333336
+          magicalDamage: 133.33333333333334
         },
         order: 1,
         tier: "level10",
@@ -420,7 +420,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 11.4
+          magicalDamage: 45.6
         },
         order: 2,
         tier: "level10",
@@ -445,7 +445,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.3333333333333335
         },
         order: 1,
         tier: "level13"
@@ -488,7 +488,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1
         },
         order: 3,
         tier: "level13",
@@ -630,7 +630,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.3333333333333333
         },
         order: 3,
         tier: "level20"
@@ -660,8 +660,8 @@ const thebutcher: Hero = {
   analysis: {
     tankiness: 73.01694915254237,
     physicalDamage: 72.22222222222221,
-    mobility: 24.199,
-    healing: 14.063203160158006,
+    mobility: 17.38446396885035,
+    healing: 1.0597012113562292,
     magicalDamage: 33.14459534835454
   }
 };

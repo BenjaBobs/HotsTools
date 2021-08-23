@@ -8,9 +8,9 @@ const hanzo: Hero = {
   size: 0.6875,
   movementSpeed: 4.8398,
   health: {
-    amount: 1323,
+    amount: 1375,
     scale: 0.04,
-    regenRate: 2.7578,
+    regenRate: 2.8632,
     regenScale: 0.04
   },
   energy: {
@@ -34,7 +34,7 @@ const hanzo: Hero = {
       name: "Natural Agility",
       descriptionShort: "Jump over terrain",
       descriptionLong: "Jump over unpathable terrain or Structures, up to a maximum range.",
-      cooldown: 30,
+      cooldown: 25,
       charges: {
         chargesMax: 1,
         chargesInitial: 1,
@@ -72,7 +72,7 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 72.75
+        magicalDamage: 291
       }
     },
     {
@@ -94,7 +94,7 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11
+        magicalDamage: 44
       }
     },
     {
@@ -116,14 +116,14 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11
+        magicalDamage: 44
       }
     },
     {
       id: "HanzoDragonstrike",
       name: "Dragonstrike",
       descriptionShort: "Summon a pair of Spirit Dragons to damage enemies",
-      descriptionLong: "After 1.5 seconds, summon a pair of Spirit Dragons which travel forward, dealing 84 (+4% / level) damage every 0.25 seconds to enemy Heroes in its area.  Enemies in the center take 50% increased damage.",
+      descriptionLong: "After 1.5 seconds, summon a pair of Spirit Dragons which travel forward, dealing 84 (+4% / level) damage every 0.25 seconds to enemy Heroes in its area.  Enemies in the center take 75% increased damage.",
       cost: {
         type: "Mana",
         amount: 60
@@ -138,7 +138,7 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5.6
+        magicalDamage: 22.4
       }
     },
     {
@@ -160,7 +160,7 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8.666666666666666
+        magicalDamage: 34.666666666666664
       }
     }
   ],
@@ -255,7 +255,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 4
         },
         order: 1,
         tier: "level4",
@@ -278,7 +278,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 6.666666666666667
         },
         order: 2,
         tier: "level4",
@@ -315,7 +315,7 @@ const hanzo: Hero = {
         id: "HanzoTheDragonHungers",
         name: "The Dragon Hungers",
         descriptionShort: "Storm Bow grants Spell Power",
-        descriptionLong: "Hitting a Hero with Storm Bow grants 5% Spell Power for 10 seconds, stacking up to 20%.",
+        descriptionLong: "Hitting a Hero with Storm Bow grants 5% Spell Power for 12 seconds, stacking up to 20%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -361,7 +361,7 @@ const hanzo: Hero = {
         id: "HanzoSharpenedArrowheads",
         name: "Sharpened Arrowheads",
         descriptionShort: "Basic Attacks, Storm Bow reduce Armor",
-        descriptionLong: "Hitting a Hero with Storm Bow or Basic Attacks reduces their Armor by 2 for 3 seconds, up to a maximum reduction of 20 Armor.",
+        descriptionLong: "Hitting a Hero with Storm Bow or Basic Attacks reduces their Armor by 3 for 3 seconds, up to a maximum reduction of 20 Armor.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -386,7 +386,7 @@ const hanzo: Hero = {
         id: "HanzoDragonstrike",
         name: "Dragonstrike",
         descriptionShort: "Summon a pair of Spirit Dragons to damage enemies",
-        descriptionLong: "After 1.5 seconds, summon a pair of Spirit Dragons which travel forward, dealing 84 (+4% / level) damage every 0.25 seconds to enemy Heroes in its area.  Enemies in the center take 50% increased damage.",
+        descriptionLong: "After 1.5 seconds, summon a pair of Spirit Dragons which travel forward, dealing 84 (+4% / level) damage every 0.25 seconds to enemy Heroes in its area.  Enemies in the center take 75% increased damage.",
         cost: {
           type: "Mana",
           amount: 60
@@ -401,7 +401,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.6
+          magicalDamage: 22.4
         },
         order: 1,
         tier: "level10",
@@ -428,7 +428,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8.666666666666666
+          magicalDamage: 34.666666666666664
         },
         order: 2,
         tier: "level10",
@@ -628,7 +628,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8.8
+          magicalDamage: 35.2
         },
         order: 2,
         tier: "level20",
@@ -694,9 +694,9 @@ const hanzo: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 39.86440677966102,
+    tankiness: 41.431261770244824,
     physicalDamage: 66,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 48.257173340597475
   }

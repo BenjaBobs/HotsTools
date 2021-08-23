@@ -51,7 +51,7 @@ const raynor: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 8.333333333333334
       }
     },
     {
@@ -73,7 +73,7 @@ const raynor: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22.777777777777775
+        magicalDamage: 91.1111111111111
       }
     },
     {
@@ -116,7 +116,7 @@ const raynor: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 3.3333333333333335,
+        healing: 1.6666666666666667,
         magicalDamage: 0
       }
     },
@@ -139,7 +139,7 @@ const raynor: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 52.93333333333333
+        magicalDamage: 211.73333333333332
       }
     },
     {
@@ -157,7 +157,7 @@ const raynor: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5.6
+        magicalDamage: 22.4
       }
     }
   ],
@@ -178,7 +178,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 1,
         tier: "level1",
@@ -228,7 +228,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 0.6666666666666666
         },
         order: 3,
         tier: "level1",
@@ -276,7 +276,7 @@ const raynor: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.4,
+          healing: 0.2,
           magicalDamage: 0
         },
         order: 2,
@@ -405,7 +405,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 52.93333333333333
+          magicalDamage: 211.73333333333332
         },
         order: 1,
         tier: "level10",
@@ -428,7 +428,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.6
+          magicalDamage: 22.4
         },
         order: 2,
         tier: "level10",
@@ -498,7 +498,7 @@ const raynor: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 0,
           magicalDamage: 0
         },
         order: 3,
@@ -524,7 +524,7 @@ const raynor: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 12,
+          healing: 6,
           magicalDamage: 0
         },
         order: 1,
@@ -648,7 +648,7 @@ const raynor: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 9.333333333333334,
+          healing: 0,
           magicalDamage: 0
         },
         order: 3,
@@ -706,9 +706,9 @@ const raynor: Hero = {
   analysis: {
     tankiness: 43.69114877589453,
     physicalDamage: 61.24999999999999,
-    mobility: 24.199,
-    healing: 4.375218760938047,
-    magicalDamage: 35.99306879748176
+    mobility: 17.38446396885035,
+    healing: 0.3296848213108269,
+    magicalDamage: 36.91527437271103
   }
 };
       

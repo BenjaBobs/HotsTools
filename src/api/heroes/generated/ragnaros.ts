@@ -65,8 +65,8 @@ const ragnaros: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 10,
-        magicalDamage: 47.75
+        healing: 5,
+        magicalDamage: 191
       }
     },
     {
@@ -88,7 +88,7 @@ const ragnaros: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 28.33333333333333
+        magicalDamage: 113.33333333333331
       }
     },
     {
@@ -110,7 +110,7 @@ const ragnaros: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.555555555555555
+        magicalDamage: 46.22222222222222
       }
     },
     {
@@ -132,7 +132,7 @@ const ragnaros: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.666666666666668
+        magicalDamage: 66.66666666666667
       }
     },
     {
@@ -160,7 +160,7 @@ const ragnaros: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16
+        magicalDamage: 64
       }
     }
   ],
@@ -371,7 +371,7 @@ const ragnaros: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 4
         },
         order: 3,
         tier: "level7"
@@ -397,7 +397,7 @@ const ragnaros: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16.666666666666668
+          magicalDamage: 66.66666666666667
         },
         order: 1,
         tier: "level10",
@@ -430,7 +430,7 @@ const ragnaros: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16
+          magicalDamage: 64
         },
         order: 2,
         tier: "level10",
@@ -454,7 +454,7 @@ const ragnaros: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6,
+          healing: 3,
           magicalDamage: 0
         },
         order: 1,
@@ -548,7 +548,7 @@ const ragnaros: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 14.666666666666666
+          magicalDamage: 58.666666666666664
         },
         order: 2,
         tier: "level16",
@@ -677,7 +677,7 @@ const ragnaros: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
+          healing: 160,
           magicalDamage: 0
         },
         order: 4,
@@ -733,7 +733,7 @@ const ragnaros: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 26.833333333333332
+            magicalDamage: 107.33333333333333
           }
         },
         {
@@ -751,7 +751,7 @@ const ragnaros: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 60.400000000000006
+            magicalDamage: 241.60000000000002
           }
         },
         {
@@ -769,7 +769,7 @@ const ragnaros: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 71.25
+            magicalDamage: 285
           }
         },
         {
@@ -787,7 +787,7 @@ const ragnaros: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 16.666666666666668
+            magicalDamage: 66.66666666666667
           }
         },
         {
@@ -815,7 +815,7 @@ const ragnaros: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 16
+            magicalDamage: 64
           }
         }
       ],
@@ -825,15 +825,15 @@ const ragnaros: Hero = {
         physicalDamage: 0,
         mobility: 24.199,
         healing: 0,
-        magicalDamage: 191.15
+        magicalDamage: 764.6
       }
     }
   ],
   analysis: {
     tankiness: 62.523540489642194,
     physicalDamage: 75,
-    mobility: 24.199,
-    healing: 13.125656282814141,
+    mobility: 17.38446396885035,
+    healing: 0.9890544639324806,
     magicalDamage: 53.254297950906505
   }
 };

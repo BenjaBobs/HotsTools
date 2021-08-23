@@ -66,7 +66,7 @@ const etc: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7.583333333333333
+        magicalDamage: 30.333333333333332
       }
     },
     {
@@ -88,7 +88,7 @@ const etc: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5.666666666666666
+        magicalDamage: 22.666666666666664
       }
     },
     {
@@ -154,7 +154,7 @@ const etc: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22
+        magicalDamage: 88
       }
     }
   ],
@@ -174,7 +174,7 @@ const etc: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -197,7 +197,7 @@ const etc: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 13.333333333333334,
           magicalDamage: 0
         },
         order: 2,
@@ -341,7 +341,7 @@ const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2
         },
         order: 2,
         tier: "level7",
@@ -364,7 +364,7 @@ const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 16.666666666666668
         },
         order: 3,
         tier: "level7",
@@ -420,7 +420,7 @@ const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 22
+          magicalDamage: 88
         },
         order: 2,
         tier: "level10",
@@ -689,7 +689,7 @@ const etc: Hero = {
   analysis: {
     tankiness: 67.79661016949152,
     physicalDamage: 61.87499999999999,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 15.603718332879325
   }

@@ -44,7 +44,7 @@ const tyrael: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 30
+        magicalDamage: 120
       }
     },
     {
@@ -66,7 +66,7 @@ const tyrael: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 9.166666666666666
+        magicalDamage: 36.666666666666664
       }
     },
     {
@@ -132,7 +132,7 @@ const tyrael: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10
+        magicalDamage: 40
       }
     },
     {
@@ -174,7 +174,7 @@ const tyrael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.8666666666666667,
+          healing: 37.333333333333336,
           magicalDamage: 0
         },
         order: 1,
@@ -220,7 +220,7 @@ const tyrael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.4,
+          healing: 5.3999999999999995,
           magicalDamage: 0
         },
         order: 3,
@@ -267,7 +267,7 @@ const tyrael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.8,
+          healing: 0.2,
           magicalDamage: 0
         },
         order: 2,
@@ -291,7 +291,7 @@ const tyrael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 9.333333333333334,
+          healing: 4.666666666666667,
           magicalDamage: 0
         },
         order: 3,
@@ -317,7 +317,7 @@ const tyrael: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 12.666666666666666
+          magicalDamage: 50.666666666666664
         },
         order: 1,
         tier: "level7",
@@ -392,7 +392,7 @@ const tyrael: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 40
         },
         order: 1,
         tier: "level10",
@@ -542,7 +542,7 @@ const tyrael: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.2
+          magicalDamage: 4.8
         },
         order: 2,
         tier: "level16",
@@ -673,7 +673,7 @@ const tyrael: Hero = {
   analysis: {
     tankiness: 75.84180790960453,
     physicalDamage: 48.75,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 21.764051575410875
   }

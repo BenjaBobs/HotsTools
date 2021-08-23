@@ -43,8 +43,8 @@ const alexstrasza: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 1.1466666666666665,
-        magicalDamage: 9.533333333333333
+        healing: 11.466666666666667,
+        magicalDamage: 38.13333333333333
       }
     },
     {
@@ -65,7 +65,7 @@ const alexstrasza: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 42.857142857142854,
+        healing: 21.428571428571427,
         magicalDamage: 0
       }
     },
@@ -87,7 +87,7 @@ const alexstrasza: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 5.7142857142857135,
+        healing: 1.4285714285714284,
         magicalDamage: 0
       }
     },
@@ -110,7 +110,7 @@ const alexstrasza: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 62.5
+        magicalDamage: 250
       }
     },
     {
@@ -131,7 +131,7 @@ const alexstrasza: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 6.4,
+        healing: 128,
         magicalDamage: 0
       }
     },
@@ -153,8 +153,8 @@ const alexstrasza: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 8,
-        magicalDamage: 9
+        healing: 80,
+        magicalDamage: 36
       }
     }
   ],
@@ -197,7 +197,7 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 0.3333333333333333,
           magicalDamage: 0
         },
         order: 2,
@@ -247,7 +247,7 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
+          healing: 2,
           magicalDamage: 0
         },
         order: 1,
@@ -338,7 +338,7 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -361,7 +361,7 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 0,
           magicalDamage: 0
         },
         order: 3,
@@ -390,7 +390,7 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.4,
+          healing: 128,
           magicalDamage: 0
         },
         order: 1,
@@ -417,8 +417,8 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
-          magicalDamage: 9
+          healing: 80,
+          magicalDamage: 36
         },
         order: 2,
         tier: "level10",
@@ -483,8 +483,8 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
-          magicalDamage: 13.333333333333334
+          healing: 1,
+          magicalDamage: 53.333333333333336
         },
         order: 3,
         tier: "level13"
@@ -528,7 +528,7 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 9.333333333333334,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -722,7 +722,7 @@ const alexstrasza: Hero = {
             mobility: 0,
             physicalDamage: 0,
             tankiness: 0,
-            healing: 13.333333333333332,
+            healing: 6.666666666666666,
             magicalDamage: 0
           }
         },
@@ -740,7 +740,7 @@ const alexstrasza: Hero = {
             mobility: 0,
             physicalDamage: 0,
             tankiness: 0,
-            healing: 8,
+            healing: 2,
             magicalDamage: 0
           }
         },
@@ -759,7 +759,7 @@ const alexstrasza: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 37.5
+            magicalDamage: 150
           }
         },
         {
@@ -780,7 +780,7 @@ const alexstrasza: Hero = {
             mobility: 0,
             physicalDamage: 0,
             tankiness: 0,
-            healing: 6.4,
+            healing: 128,
             magicalDamage: 0
           }
         },
@@ -802,8 +802,8 @@ const alexstrasza: Hero = {
             mobility: 0,
             physicalDamage: 0,
             tankiness: 0,
-            healing: 8,
-            magicalDamage: 9
+            healing: 80,
+            magicalDamage: 36
           }
         }
       ],
@@ -812,16 +812,16 @@ const alexstrasza: Hero = {
         tankiness: 6.792,
         physicalDamage: 4.576,
         mobility: 24.199,
-        healing: 35.733333333333334,
-        magicalDamage: 46.5
+        healing: 216.66666666666666,
+        magicalDamage: 186
       }
     }
   ],
   analysis: {
     tankiness: 51.163841807909606,
     physicalDamage: 36.5,
-    mobility: 24.199,
-    healing: 84.15920796039802,
+    mobility: 17.38446396885035,
+    healing: 47.9342891053296,
     magicalDamage: 35.870108054117864
   }
 };

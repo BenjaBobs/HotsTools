@@ -65,8 +65,8 @@ const arthas: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 5.822222222222222,
-        magicalDamage: 18.22222222222222
+        healing: 0,
+        magicalDamage: 72.88888888888889
       }
     },
     {
@@ -88,7 +88,7 @@ const arthas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 6.800000000000001
+        magicalDamage: 27.200000000000003
       }
     },
     {
@@ -111,7 +111,7 @@ const arthas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 40
+        magicalDamage: 160
       }
     },
     {
@@ -132,7 +132,7 @@ const arthas: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 3.56,
+        healing: 0,
         magicalDamage: 0
       }
     },
@@ -155,7 +155,7 @@ const arthas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.333333333333334
+        magicalDamage: 61.333333333333336
       }
     }
   ],
@@ -319,7 +319,7 @@ const arthas: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -342,7 +342,7 @@ const arthas: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 0.3333333333333333,
           magicalDamage: 0
         },
         order: 2,
@@ -388,7 +388,7 @@ const arthas: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.56,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -416,7 +416,7 @@ const arthas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15.333333333333334
+          magicalDamage: 61.333333333333336
         },
         order: 2,
         tier: "level10",
@@ -464,7 +464,7 @@ const arthas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 0.8333333333333334
         },
         order: 2,
         tier: "level13",
@@ -513,7 +513,7 @@ const arthas: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 6.666666666666667,
           magicalDamage: 0
         },
         order: 1,
@@ -586,8 +586,8 @@ const arthas: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
-          magicalDamage: 0
+          healing: 0,
+          magicalDamage: 3.3333333333333335
         },
         order: 1,
         tier: "level20",
@@ -636,7 +636,7 @@ const arthas: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_arthas_frosentempest.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 10,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -662,7 +662,7 @@ const arthas: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 0,
           magicalDamage: 0
         },
         order: 4,
@@ -673,8 +673,8 @@ const arthas: Hero = {
   analysis: {
     tankiness: 86.17702448210922,
     physicalDamage: 47.5,
-    mobility: 24.199,
-    healing: 12.314782405786955,
+    mobility: 17.38446396885035,
+    healing: 0,
     magicalDamage: 35.570083840309934
   }
 };

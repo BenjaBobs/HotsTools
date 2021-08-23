@@ -43,7 +43,7 @@ const malganis: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 6,
+        healing: 3,
         magicalDamage: 0
       }
     },
@@ -66,7 +66,7 @@ const malganis: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8.25
+        magicalDamage: 33
       }
     },
     {
@@ -88,7 +88,7 @@ const malganis: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 13.75
+        magicalDamage: 55
       }
     },
     {
@@ -153,8 +153,8 @@ const malganis: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 10,
-        magicalDamage: 8
+        healing: 5,
+        magicalDamage: 32
       }
     }
   ],
@@ -197,7 +197,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
+          healing: 3,
           magicalDamage: 0
         },
         order: 2,
@@ -220,7 +220,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.9333333333333333,
+          healing: 18.666666666666668,
           magicalDamage: 0
         },
         order: 3,
@@ -245,7 +245,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.8266666666666667,
+          healing: 3.2,
           magicalDamage: 0
         },
         order: 1,
@@ -317,7 +317,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 4
         },
         order: 1,
         tier: "level7",
@@ -367,7 +367,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.2
+          magicalDamage: 8.8
         },
         order: 3,
         tier: "level7",
@@ -395,8 +395,8 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10,
-          magicalDamage: 8
+          healing: 5,
+          magicalDamage: 32
         },
         order: 1,
         tier: "level10",
@@ -444,7 +444,7 @@ const malganis: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malganis_nightrush.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 10,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -471,7 +471,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 13.333333333333334
         },
         order: 2,
         tier: "level13",
@@ -493,7 +493,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.13333333333333333,
+          healing: 0.06666666666666667,
           magicalDamage: 0
         },
         order: 3,
@@ -519,7 +519,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.4
+          magicalDamage: 21.6
         },
         order: 1,
         tier: "level16",
@@ -541,7 +541,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 2,
@@ -587,7 +587,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8.8
+          magicalDamage: 35.2
         },
         order: 1,
         tier: "level20",
@@ -677,8 +677,8 @@ const malganis: Hero = {
   analysis: {
     tankiness: 78.3427495291902,
     physicalDamage: 43.636363636363626,
-    mobility: 24.199,
-    healing: 21.001050052502627,
+    mobility: 17.38446396885035,
+    healing: 1.5824871422919689,
     magicalDamage: 13.279760283301552
   }
 };
