@@ -67,7 +67,7 @@ const lostvikings: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8.5
+        magicalDamage: 44
       }
     },
     {
@@ -162,7 +162,7 @@ const lostvikings: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.2
+        magicalDamage: 60.8
       }
     },
     {
@@ -296,7 +296,7 @@ const lostvikings: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.6666666666666665,
+          healing: 1.3333333333333333,
           magicalDamage: 0
         },
         order: 1,
@@ -316,10 +316,10 @@ const lostvikings: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lostvikings_selecterik.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 10,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.4533333333333333,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -366,7 +366,7 @@ const lostvikings: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 4,
         tier: "level4"
@@ -411,7 +411,7 @@ const lostvikings: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8.5
+          magicalDamage: 44
         },
         order: 2,
         tier: "level7"
@@ -453,7 +453,7 @@ const lostvikings: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15.2
+          magicalDamage: 60.8
         },
         order: 1,
         tier: "level10",
@@ -501,7 +501,7 @@ const lostvikings: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.2666666666666666
+          magicalDamage: 9.066666666666666
         },
         order: 1,
         tier: "level13",
@@ -729,7 +729,7 @@ const lostvikings: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.7333333333333334
+          magicalDamage: 10.933333333333334
         },
         order: 4,
         tier: "level20"
@@ -817,7 +817,7 @@ const lostvikings: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 8.5
+            magicalDamage: 44
           }
         },
         {
@@ -930,7 +930,7 @@ const lostvikings: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 15.2
+            magicalDamage: 60.8
           }
         }
       ],
@@ -940,7 +940,7 @@ const lostvikings: Hero = {
         physicalDamage: 3.333333333333333,
         mobility: 24.199,
         healing: 0,
-        magicalDamage: 23.7
+        magicalDamage: 104.8
       }
     },
     {
@@ -1016,7 +1016,7 @@ const lostvikings: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 8.5
+            magicalDamage: 44
           }
         },
         {
@@ -1129,7 +1129,7 @@ const lostvikings: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 15.2
+            magicalDamage: 60.8
           }
         }
       ],
@@ -1139,7 +1139,7 @@ const lostvikings: Hero = {
         physicalDamage: 3.542857142857143,
         mobility: 27.832,
         healing: 0,
-        magicalDamage: 23.7
+        magicalDamage: 104.8
       }
     },
     {
@@ -1215,7 +1215,7 @@ const lostvikings: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 8.5
+            magicalDamage: 44
           }
         },
         {
@@ -1328,7 +1328,7 @@ const lostvikings: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 15.2
+            magicalDamage: 60.8
           }
         }
       ],
@@ -1338,16 +1338,16 @@ const lostvikings: Hero = {
         physicalDamage: 2.16,
         mobility: 24.199,
         healing: 0,
-        magicalDamage: 23.7
+        magicalDamage: 104.8
       }
     }
   ],
   analysis: {
     tankiness: 0,
     physicalDamage: 0,
-    mobility: 100,
+    mobility: 71.83959654882578,
     healing: 0,
-    magicalDamage: 10.491010623808226
+    magicalDamage: 11.597657314083355
   }
 };
       

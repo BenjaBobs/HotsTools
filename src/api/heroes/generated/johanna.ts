@@ -66,7 +66,7 @@ const johanna: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 14.125
+        magicalDamage: 56.5
       }
     },
     {
@@ -88,7 +88,7 @@ const johanna: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5.5
+        magicalDamage: 22
       }
     },
     {
@@ -116,7 +116,7 @@ const johanna: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 4.916666666666666
+        magicalDamage: 19.666666666666664
       }
     },
     {
@@ -160,7 +160,7 @@ const johanna: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.399999999999999
+        magicalDamage: 45.599999999999994
       }
     }
   ],
@@ -230,7 +230,7 @@ const johanna: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.333333333333333,
+          healing: 1.3333333333333333,
           magicalDamage: 0
         },
         order: 3,
@@ -325,7 +325,7 @@ const johanna: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.666666666666667,
+          healing: 2.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -425,7 +425,7 @@ const johanna: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 11.399999999999999
+          magicalDamage: 45.599999999999994
         },
         order: 2,
         tier: "level10",
@@ -473,7 +473,7 @@ const johanna: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1
+          magicalDamage: 4
         },
         order: 2,
         tier: "level13"
@@ -493,7 +493,7 @@ const johanna: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4.933333333333334
+          magicalDamage: 19.733333333333334
         },
         order: 3,
         tier: "level13"
@@ -543,7 +543,7 @@ const johanna: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -588,8 +588,8 @@ const johanna: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
-          magicalDamage: 5
+          healing: 20,
+          magicalDamage: 20
         },
         order: 1,
         tier: "level20",
@@ -671,7 +671,7 @@ const johanna: Hero = {
   analysis: {
     tankiness: 79.09604519774011,
     physicalDamage: 44.99999999999999,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 15.909890583855441
   }

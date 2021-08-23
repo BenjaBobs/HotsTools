@@ -66,7 +66,7 @@ const nova: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 38.33333333333333
+        magicalDamage: 153.33333333333331
       }
     },
     {
@@ -94,7 +94,7 @@ const nova: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8.333333333333332
+        magicalDamage: 33.33333333333333
       }
     },
     {
@@ -116,7 +116,7 @@ const nova: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 0.6666666666666666
       }
     },
     {
@@ -166,7 +166,7 @@ const nova: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 29
+        magicalDamage: 116
       }
     }
   ],
@@ -367,7 +367,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 4
         },
         order: 2,
         tier: "level7",
@@ -390,7 +390,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 16.666666666666668
         },
         order: 3,
         tier: "level7",
@@ -452,7 +452,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 29
+          magicalDamage: 116
         },
         order: 2,
         tier: "level10",
@@ -554,7 +554,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 6
         },
         order: 1,
         tier: "level16",
@@ -606,7 +606,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2
         },
         order: 3,
         tier: "level16",
@@ -722,9 +722,9 @@ const nova: Hero = {
   analysis: {
     tankiness: 39.1713747645951,
     physicalDamage: 52.5,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 33.49450649232724
+    magicalDamage: 33.56828293834558
   }
 };
       

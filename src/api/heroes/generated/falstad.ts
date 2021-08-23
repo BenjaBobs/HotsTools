@@ -84,7 +84,7 @@ const falstad: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 17.5
+        magicalDamage: 70
       }
     },
     {
@@ -106,7 +106,7 @@ const falstad: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8.230769230769232
+        magicalDamage: 32.92307692307693
       }
     },
     {
@@ -309,7 +309,7 @@ const falstad: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.6666666666666665,
+          healing: 1.3333333333333333,
           magicalDamage: 0
         },
         order: 3,
@@ -332,7 +332,7 @@ const falstad: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5
         },
         order: 1,
         tier: "level7",
@@ -355,7 +355,7 @@ const falstad: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 6.666666666666667
         },
         order: 2,
         tier: "level7",
@@ -459,7 +459,7 @@ const falstad: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.6666666666666667
         },
         order: 1,
         tier: "level13",
@@ -549,7 +549,7 @@ const falstad: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_falstad_tailwind.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 15,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -572,7 +572,7 @@ const falstad: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_falstad_barrelroll.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 60,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -601,7 +601,7 @@ const falstad: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.6666666666666667
         },
         order: 1,
         tier: "level20",
@@ -686,7 +686,7 @@ const falstad: Hero = {
   analysis: {
     tankiness: 41.12994350282486,
     physicalDamage: 74.28571428571429,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 11.389948242985563
   }

@@ -72,7 +72,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.25
+        magicalDamage: 65
       }
     },
     {
@@ -94,7 +94,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 13.75
+        magicalDamage: 55
       }
     },
     {
@@ -116,7 +116,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22
+        magicalDamage: 88
       }
     },
     {
@@ -138,7 +138,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.666666666666668
+        magicalDamage: 70
       }
     },
     {
@@ -160,7 +160,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 4.933333333333334
+        magicalDamage: 19.733333333333334
       }
     }
   ],
@@ -209,7 +209,7 @@ const kerrigan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 13.333333333333334,
           magicalDamage: 0
         },
         order: 2,
@@ -417,7 +417,7 @@ const kerrigan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4.933333333333334
+          magicalDamage: 19.733333333333334
         },
         order: 1,
         tier: "level10",
@@ -444,7 +444,7 @@ const kerrigan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16.666666666666668
+          magicalDamage: 70
         },
         order: 2,
         tier: "level10",
@@ -687,7 +687,7 @@ const kerrigan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 13.333333333333334
         },
         order: 4,
         tier: "level20"
@@ -697,9 +697,9 @@ const kerrigan: Hero = {
   analysis: {
     tankiness: 53.15254237288135,
     physicalDamage: 71.875,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 32.57967856169981
+    magicalDamage: 32.94856079179152
   }
 };
       

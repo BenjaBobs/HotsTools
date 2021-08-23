@@ -33,7 +33,7 @@ const leoric: Hero = {
       id: "LeoricUndyingTrait",
       name: "Undying",
       descriptionShort: "Leoric haunts his enemies as a ghost while dead",
-      descriptionLong: "Leoric becomes a ghost when he dies, and resurrects upon reaching full Health. Leoric deals no damage while dead. Wrath Of The Bone KingLeoric's first two Basic Attacks cleave for 100% damage, and his third Basic Attack deals 200% damage to a single target.",
+      descriptionLong: "Leoric becomes a ghost when he dies, and resurrects upon reaching full Health. Leoric deals no damage while dead. Wrath Of The Bone KingLeoric's first two Basic Attacks cleave for 100% damage, and his third Basic Attack deals 225% damage to a single target.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -44,14 +44,14 @@ const leoric: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 15
       }
     },
     {
       id: "LeoricSkeletalSwingTargetedReady",
       name: "Skeletal Swing",
       descriptionShort: "Damage and slow enemies",
-      descriptionLong: "Leoric swings his mace, dealing 150 (+4% / level) damage and Slowing enemies by 40% for 2.5 seconds. If an enemy Hero is hit, refund 50% of the cooldown and Mana cost. Peasants!",
+      descriptionLong: "Leoric swings his mace, dealing 150 (+4% / level) damage and Slowing enemies by 40% for 2.5 seconds. If an enemy Hero is hit, refund 50% of the cooldown and Mana cost. Deals 75% additional damage to Minions. Peasants!",
       cost: {
         type: "Mana",
         amount: 70
@@ -66,7 +66,7 @@ const leoric: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12.5
+        magicalDamage: 56.25
       }
     },
     {
@@ -87,7 +87,7 @@ const leoric: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 4,
+        healing: 2,
         magicalDamage: 0
       }
     },
@@ -153,7 +153,7 @@ const leoric: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 3.2,
+        healing: 0,
         magicalDamage: 0
       }
     }
@@ -174,7 +174,7 @@ const leoric: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.0666666666666667,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -220,7 +220,7 @@ const leoric: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 2,
           magicalDamage: 0
         },
         order: 3,
@@ -277,8 +277,8 @@ const leoric: Hero = {
       {
         id: "LeoricSkeletalSwingKneelPeasantsTalent",
         name: "Kneel, Peasants!",
-        descriptionShort: "Increase Skeletal Swing damage to non-Heroes",
-        descriptionLong: "Skeletal Swing deals 100% more damage to Minions, Mercenaries, and Monsters.",
+        descriptionShort: "Empower Skeletal Swing against non-Heroes",
+        descriptionLong: "Skeletal Swing deals 75% additional damage to Mercenaries and Monsters, and hitting them activates Skeletal Swing's cost and cooldown refund.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -289,7 +289,7 @@ const leoric: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5
         },
         order: 3,
         tier: "level4",
@@ -313,7 +313,7 @@ const leoric: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 1.6666666666666667,
           magicalDamage: 0
         },
         order: 1,
@@ -416,7 +416,7 @@ const leoric: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.2,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -465,7 +465,7 @@ const leoric: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 2,
         tier: "level13",
@@ -637,7 +637,7 @@ const leoric: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 10.666666666666666
         },
         order: 3,
         tier: "level20",
@@ -670,9 +670,9 @@ const leoric: Hero = {
   analysis: {
     tankiness: 76.83615819209038,
     physicalDamage: 44.23076923076923,
-    mobility: 24.199,
-    healing: 9.450472523626182,
-    magicalDamage: 5.533233451375646
+    mobility: 17.38446396885035,
+    healing: 0.3956217855729922,
+    magicalDamage: 7.884857668210296
   }
 };
       

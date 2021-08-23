@@ -73,7 +73,7 @@ const zeratul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 33.33333333333333
+        magicalDamage: 133.33333333333331
       }
     },
     {
@@ -95,7 +95,7 @@ const zeratul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20
+        magicalDamage: 80
       }
     },
     {
@@ -139,7 +139,7 @@ const zeratul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 5.333333333333334
       }
     },
     {
@@ -254,7 +254,7 @@ const zeratul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.6666666666666665
         },
         order: 1,
         tier: "level4",
@@ -365,7 +365,7 @@ const zeratul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 3,
         tier: "level7",
@@ -394,7 +394,7 @@ const zeratul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5.333333333333334
         },
         order: 1,
         tier: "level10",
@@ -468,7 +468,7 @@ const zeratul: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.666666666666667,
+          healing: 2.3333333333333335,
           magicalDamage: 0
         },
         order: 2,
@@ -511,7 +511,7 @@ const zeratul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 8.333333333333334
         },
         order: 1,
         tier: "level16",
@@ -653,7 +653,7 @@ const zeratul: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
+          healing: 4,
           magicalDamage: 0
         },
         order: 4,
@@ -664,9 +664,9 @@ const zeratul: Hero = {
   analysis: {
     tankiness: 48.873822975517896,
     physicalDamage: 70,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 23.608462725869426
+    magicalDamage: 24.19867429401616
   }
 };
       

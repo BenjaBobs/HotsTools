@@ -66,7 +66,7 @@ const gazlowe: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.533333333333333
+        magicalDamage: 10.133333333333333
       }
     },
     {
@@ -89,8 +89,8 @@ const gazlowe: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 6.25,
-        magicalDamage: 22.5
+        healing: 3.125,
+        magicalDamage: 90
       }
     },
     {
@@ -114,7 +114,7 @@ const gazlowe: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.833333333333332
+        magicalDamage: 47.33333333333333
       }
     },
     {
@@ -132,7 +132,7 @@ const gazlowe: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 6
+        magicalDamage: 24
       }
     },
     {
@@ -150,7 +150,7 @@ const gazlowe: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 14.666666666666666
+        magicalDamage: 60.666666666666664
       }
     }
   ],
@@ -173,7 +173,7 @@ const gazlowe: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_explodiumcharge.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 20,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -223,7 +223,7 @@ const gazlowe: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 4
         },
         order: 3,
         tier: "level1",
@@ -270,7 +270,7 @@ const gazlowe: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 20,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -396,7 +396,7 @@ const gazlowe: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6
+          magicalDamage: 24
         },
         order: 1,
         tier: "level10",
@@ -419,7 +419,7 @@ const gazlowe: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 14.666666666666666
+          magicalDamage: 60.666666666666664
         },
         order: 2,
         tier: "level10",
@@ -521,7 +521,7 @@ const gazlowe: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8.333333333333334
+          magicalDamage: 33.333333333333336
         },
         order: 1,
         tier: "level16",
@@ -598,7 +598,7 @@ const gazlowe: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 1,
         tier: "level20",
@@ -692,9 +692,9 @@ const gazlowe: Hero = {
   analysis: {
     tankiness: 71.56308851224105,
     physicalDamage: 62.5,
-    mobility: 24.199,
-    healing: 8.203535176758837,
-    magicalDamage: 25.46762916553164
+    mobility: 17.38446396885035,
+    healing: 0.6181590399578004,
+    magicalDamage: 25.68895850358667
   }
 };
       

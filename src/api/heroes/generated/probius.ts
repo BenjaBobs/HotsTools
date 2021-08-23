@@ -84,7 +84,7 @@ const probius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 47.33333333333333
+        magicalDamage: 236.66666666666666
       }
     },
     {
@@ -111,7 +111,7 @@ const probius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 43.5
+        magicalDamage: 217.5
       }
     },
     {
@@ -129,7 +129,7 @@ const probius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7
+        magicalDamage: 28
       }
     },
     {
@@ -194,7 +194,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5
         },
         order: 1,
         tier: "level1",
@@ -246,7 +246,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.3333333333333335
         },
         order: 3,
         tier: "level1",
@@ -343,7 +343,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1
         },
         order: 1,
         tier: "level7",
@@ -684,7 +684,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 3,
         tier: "level20",
@@ -725,9 +725,9 @@ const probius: Hero = {
   analysis: {
     tankiness: 37.96610169491525,
     physicalDamage: 18.333333333333336,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 43.30677381276672
+    magicalDamage: 53.35881458276581
   }
 };
       

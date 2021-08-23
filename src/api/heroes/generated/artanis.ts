@@ -73,7 +73,7 @@ const artanis: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 23.400000000000002
+        magicalDamage: 93.60000000000001
       }
     },
     {
@@ -117,7 +117,7 @@ const artanis: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5.5
+        magicalDamage: 22
       }
     },
     {
@@ -139,7 +139,7 @@ const artanis: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12.266666666666666
+        magicalDamage: 49.06666666666666
       }
     },
     {
@@ -167,7 +167,7 @@ const artanis: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7.6
+        magicalDamage: 30.4
       }
     }
   ],
@@ -212,7 +212,7 @@ const artanis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 10
         },
         order: 2,
         tier: "level1",
@@ -379,7 +379,7 @@ const artanis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.6666666666666665
         },
         order: 3,
         tier: "level7"
@@ -411,7 +411,7 @@ const artanis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7.6
+          magicalDamage: 30.4
         },
         order: 1,
         tier: "level10",
@@ -438,7 +438,7 @@ const artanis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 12.266666666666666
+          magicalDamage: 49.06666666666666
         },
         order: 2,
         tier: "level10",
@@ -712,7 +712,7 @@ const artanis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4.666666666666667
+          magicalDamage: 18.666666666666668
         },
         order: 4,
         tier: "level20",
@@ -725,7 +725,7 @@ const artanis: Hero = {
   analysis: {
     tankiness: 76.08286252354048,
     physicalDamage: 55.50000000000001,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 21.58698810496686
   }

@@ -66,7 +66,7 @@ const kelthuzad: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 46.400000000000006
+        magicalDamage: 92.80000000000001
       }
     },
     {
@@ -88,7 +88,7 @@ const kelthuzad: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22.5
+        magicalDamage: 45
       }
     },
     {
@@ -110,7 +110,7 @@ const kelthuzad: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 9.700000000000001
+        magicalDamage: 19.400000000000002
       }
     },
     {
@@ -132,7 +132,7 @@ const kelthuzad: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7.666666666666667
+        magicalDamage: 15.333333333333334
       }
     },
     {
@@ -154,7 +154,7 @@ const kelthuzad: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 21.333333333333332
+        magicalDamage: 42.666666666666664
       }
     }
   ],
@@ -198,7 +198,7 @@ const kelthuzad: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5
         },
         order: 2,
         tier: "level1",
@@ -246,7 +246,7 @@ const kelthuzad: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 18
+          magicalDamage: 36
         },
         order: 1,
         tier: "level4",
@@ -268,7 +268,7 @@ const kelthuzad: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 0.6666666666666666,
           magicalDamage: 0
         },
         order: 2,
@@ -390,7 +390,7 @@ const kelthuzad: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7.666666666666667
+          magicalDamage: 15.333333333333334
         },
         order: 1,
         tier: "level10",
@@ -417,7 +417,7 @@ const kelthuzad: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 21.333333333333332
+          magicalDamage: 42.666666666666664
         },
         order: 2,
         tier: "level10",
@@ -636,7 +636,7 @@ const kelthuzad: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 20
         },
         order: 3,
         tier: "level20"
@@ -666,9 +666,9 @@ const kelthuzad: Hero = {
   analysis: {
     tankiness: 43.54048964218456,
     physicalDamage: 36,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 47.63007354944157
+    magicalDamage: 23.815036774720785
   }
 };
       

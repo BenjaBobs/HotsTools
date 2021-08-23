@@ -35,7 +35,7 @@ const samuro: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_flowingstrikes.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 25,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -98,7 +98,7 @@ const samuro: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0.13333333333333333,
+        healing: 0.06666666666666667,
         magicalDamage: 0
       }
     },
@@ -117,7 +117,7 @@ const samuro: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12
+        magicalDamage: 48
       }
     },
     {
@@ -208,7 +208,7 @@ const samuro: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 0,
           magicalDamage: 0
         },
         order: 3,
@@ -311,7 +311,7 @@ const samuro: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 1,
         tier: "level7",
@@ -340,7 +340,7 @@ const samuro: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.3333333333333335
         },
         order: 2,
         tier: "level7",
@@ -394,7 +394,7 @@ const samuro: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 12
+          magicalDamage: 48
         },
         order: 1,
         tier: "level10",
@@ -678,8 +678,8 @@ const samuro: Hero = {
   analysis: {
     tankiness: 51.9774011299435,
     physicalDamage: 85.00000000000001,
-    mobility: 24.199,
-    healing: 0.17500875043752187,
+    mobility: 35.34436310605679,
+    healing: 0.013187392852433073,
     magicalDamage: 5.311904113320621
   }
 };

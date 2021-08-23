@@ -44,7 +44,7 @@ const sylvanas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 1.6666666666666667
       }
     },
     {
@@ -88,7 +88,7 @@ const sylvanas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.7272727272727275
+        magicalDamage: 10.90909090909091
       }
     },
     {
@@ -110,7 +110,7 @@ const sylvanas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10.363636363636363
+        magicalDamage: 41.45454545454545
       }
     },
     {
@@ -132,7 +132,7 @@ const sylvanas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.2
+        magicalDamage: 60.8
       }
     },
     {
@@ -247,7 +247,7 @@ const sylvanas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8.666666666666666
+          magicalDamage: 34.666666666666664
         },
         order: 1,
         tier: "level4",
@@ -270,7 +270,7 @@ const sylvanas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 6
         },
         order: 2,
         tier: "level4",
@@ -320,7 +320,7 @@ const sylvanas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 23.333333333333332
         },
         order: 1,
         tier: "level7",
@@ -395,7 +395,7 @@ const sylvanas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15.2
+          magicalDamage: 60.8
         },
         order: 1,
         tier: "level10",
@@ -538,7 +538,7 @@ const sylvanas: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 1,
           magicalDamage: 0
         },
         order: 2,
@@ -669,9 +669,9 @@ const sylvanas: Hero = {
   analysis: {
     tankiness: 49.717514124293785,
     physicalDamage: 67.5,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 12.523216364131645
+    magicalDamage: 12.7076574791775
   }
 };
       

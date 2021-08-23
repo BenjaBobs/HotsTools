@@ -66,7 +66,7 @@ const zuljin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.625
+        magicalDamage: 62.5
       }
     },
     {
@@ -88,7 +88,7 @@ const zuljin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.200000000000001
+        magicalDamage: 44.800000000000004
       }
     },
     {
@@ -154,7 +154,7 @@ const zuljin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22
+        magicalDamage: 88
       }
     }
   ],
@@ -244,7 +244,7 @@ const zuljin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.666666666666667,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -420,7 +420,7 @@ const zuljin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 22
+          magicalDamage: 88
         },
         order: 2,
         tier: "level10",
@@ -577,7 +577,7 @@ const zuljin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -604,7 +604,7 @@ const zuljin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5
         },
         order: 2,
         tier: "level20",
@@ -663,7 +663,7 @@ const zuljin: Hero = {
   analysis: {
     tankiness: 56.49717514124294,
     physicalDamage: 58.75,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 21.61280986107328
   }

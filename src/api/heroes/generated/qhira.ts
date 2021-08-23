@@ -66,7 +66,7 @@ const qhira: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5
+        magicalDamage: 20
       }
     },
     {
@@ -87,8 +87,8 @@ const qhira: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 14.625,
-        magicalDamage: 4
+        healing: 48.75,
+        magicalDamage: 16
       }
     },
     {
@@ -110,7 +110,7 @@ const qhira: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20.6
+        magicalDamage: 82.4
       }
     },
     {
@@ -132,7 +132,7 @@ const qhira: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 13.6
+        magicalDamage: 54.4
       }
     },
     {
@@ -154,7 +154,7 @@ const qhira: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 26.333333333333332
+        magicalDamage: 105.33333333333333
       }
     }
   ],
@@ -175,7 +175,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7.2
+          magicalDamage: 28.8
         },
         order: 1,
         tier: "level1",
@@ -187,7 +187,7 @@ const qhira: Hero = {
         id: "NexusHunterFatalWounds",
         name: "Fatal Wounds",
         descriptionShort: "Quest: Increase Blood Rage damage, duration",
-        descriptionLong: "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health. Quest: Damage enemy Heroes with Blood Rage's bleed damage. Reward: After damaging Heroes with Blood Rage's bleed damage 200 times, Blood Rage's duration is increased by 2 seconds.",
+        descriptionLong: "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health. Quest: Damage enemy Heroes with Blood Rage's bleed damage. Reward: After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -198,7 +198,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2
         },
         order: 2,
         tier: "level1",
@@ -222,7 +222,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.3333333333333333
         },
         order: 3,
         tier: "level1",
@@ -259,7 +259,7 @@ const qhira: Hero = {
         id: "NexusHunterEnsnaringSwing",
         name: "Ensnaring Swing",
         descriptionShort: "Revolving Sweep Slows enemies",
-        descriptionLong: "The primary target of Revolving Sweep is Slowed by 40% while Qhira is attached to them. Secondary targets hit by Revolving Sweep's swing are Slowed by 40% for 3 seconds.",
+        descriptionLong: "The primary target of Revolving Sweep is Slowed by 60% while Qhira is attached to them. Secondary targets hit by Revolving Sweep's swing are Slowed by 40% for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -318,8 +318,8 @@ const qhira: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
-          magicalDamage: 0
+          healing: 3.3333333333333335,
+          magicalDamage: 1
         },
         order: 1,
         tier: "level7",
@@ -341,7 +341,7 @@ const qhira: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.533333333333333,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -364,7 +364,7 @@ const qhira: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.6666666666666665,
+          healing: 1.3333333333333333,
           magicalDamage: 0
         },
         order: 3,
@@ -395,7 +395,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 13.6
+          magicalDamage: 54.4
         },
         order: 1,
         tier: "level10",
@@ -422,7 +422,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 26.333333333333332
+          magicalDamage: 105.33333333333333
         },
         order: 2,
         tier: "level10",
@@ -459,7 +459,7 @@ const qhira: Hero = {
         id: "NexusHunterPulsingPain",
         name: "Pulsing Pain",
         descriptionShort: "Increase Revolving Sweep damage to main target",
-        descriptionLong: "Each additional enemy Hero hit by Revolving Sweep causes the primary target to take an additional 115 (+4% / level) damage.",
+        descriptionLong: "Each additional enemy Hero hit by Revolving Sweep causes the primary target to take an additional 135 (+4% / level) damage.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -532,7 +532,7 @@ const qhira: Hero = {
         id: "NexusHunterRevolvingSweepLingeringAilment",
         name: "Lingering Ailment",
         descriptionShort: "Reduce enemy Hero Armor",
-        descriptionLong: "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 15 for 3 seconds.",
+        descriptionLong: "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 25 for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -556,7 +556,7 @@ const qhira: Hero = {
         id: "NexusHunterRevolvingSweepSwingLifeAway",
         name: "Swing Life Away",
         descriptionShort: "Revolving Sweep recharges faster",
-        descriptionLong: "Revolving Sweep's cooldown recharges 250% faster while Qhira is swinging around her target. She also gains 50 Spell Armor for 2.5 seconds after the re-activation impact.",
+        descriptionLong: "Revolving Sweep's cooldown recharges 250% faster while Qhira is swinging around her target. She also gains 60 Spell Armor for 5 seconds after the re-activation impact.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -634,7 +634,7 @@ const qhira: Hero = {
         id: "NexusHunterGrapplingHookUtilityBelt",
         name: "Utility Belt",
         descriptionShort: "Grappling Hook recharges faster",
-        descriptionLong: "Grappling Hook's cooldown is reset when hitting an enemy Hero with the initial impact of Revolving Sweep and recharges 900% faster if Qhira hasn't taken damage within the last 5 seconds.",
+        descriptionLong: "Grappling Hook's cooldown is reset when hitting an enemy Hero with the initial impact of Revolving Sweep and recharges 900% faster if Qhira hasn't taken damage within the last 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -681,8 +681,8 @@ const qhira: Hero = {
   analysis: {
     tankiness: 60.263653483992464,
     physicalDamage: 50,
-    mobility: 24.199,
-    healing: 19.19627231361568,
+    mobility: 17.38446396885035,
+    healing: 9.643281023341686,
     magicalDamage: 30.779533278852263
   }
 };

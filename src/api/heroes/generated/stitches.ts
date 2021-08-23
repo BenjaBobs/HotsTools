@@ -8,9 +8,9 @@ const stitches: Hero = {
   size: 1.0625,
   movementSpeed: 4.8398,
   health: {
-    amount: 3060,
+    amount: 3020,
     scale: 0.04,
-    regenRate: 6.379,
+    regenRate: 6.293,
     regenScale: 0.04
   },
   energy: {
@@ -33,7 +33,7 @@ const stitches: Hero = {
       id: "StitchesShamblingHorror",
       name: "Shambling Horror",
       descriptionShort: "Attacks poison, activate to prevent Slows",
-      descriptionLong: "Activate to spread Vile Gas in a large area every second and prevent your Movement Speed from being reduced below 110% for 5 seconds. Vile GasHitting enemies with Basic Attacks or the inner area of Slam afflicts them with Vile Gas, dealing an additional 36 (+4% / level) damage over 4 seconds. Deals 150% more damage to Minions, Mercenaries, and Monsters.",
+      descriptionLong: "Activate to spread Vile Gas in a large area every second and prevent your Movement Speed from being reduced below 110% for 4 seconds. Vile GasHitting enemies with Basic Attacks or the inner area of Slam afflicts them with Vile Gas, dealing an additional 36 (+4% / level) damage over 4 seconds. Deals 150% more damage to Minions, Mercenaries, and Monsters.",
       cooldown: 60,
       category: "trait",
       type: "Trait",
@@ -44,7 +44,7 @@ const stitches: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.4
+        magicalDamage: 19.6
       }
     },
     {
@@ -66,7 +66,7 @@ const stitches: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 6.066666666666666
+        magicalDamage: 24.266666666666666
       }
     },
     {
@@ -88,7 +88,7 @@ const stitches: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 13
+        magicalDamage: 52
       }
     },
     {
@@ -116,7 +116,7 @@ const stitches: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 21.266666666666666
+        magicalDamage: 85.06666666666666
       }
     },
     {
@@ -138,7 +138,7 @@ const stitches: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.466666666666667
+        magicalDamage: 9.866666666666667
       }
     },
     {
@@ -180,7 +180,7 @@ const stitches: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -277,7 +277,7 @@ const stitches: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.3333333333333335
         },
         order: 2,
         tier: "level4",
@@ -289,7 +289,7 @@ const stitches: Hero = {
         id: "StitchesTenderizer",
         name: "Tenderizer",
         descriptionShort: "Basic Attacks Slow Heroes, restore Health",
-        descriptionLong: "Basic Attacks against enemy Heroes Slow by 25% for 2.5 seconds and restore 1.75% of Stitches' maximum Health.",
+        descriptionLong: "Basic Attacks against enemy Heroes Slow by 20% for 1.5 seconds and restore 1.75% of Stitches' maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -374,7 +374,7 @@ const stitches: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 15.333333333333332,
+          healing: 7.666666666666666,
           magicalDamage: 0
         },
         order: 3,
@@ -404,7 +404,7 @@ const stitches: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.466666666666667
+          magicalDamage: 9.866666666666667
         },
         order: 1,
         tier: "level10",
@@ -455,7 +455,7 @@ const stitches: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.6666666666666665,
+          healing: 1.3333333333333333,
           magicalDamage: 0
         },
         order: 1,
@@ -517,7 +517,7 @@ const stitches: Hero = {
         id: "StitchesPulverizeSlam",
         name: "Pulverize",
         descriptionShort: "Slam Slows all targets, decreases Armor",
-        descriptionLong: "All enemies hit by Slam are Slowed by 80% for 0.75 seconds and Heroes have their Armor reduced by 10 for 4 seconds.",
+        descriptionLong: "All enemies hit by Slam are Slowed by 70% for 0.75 seconds and Heroes have their Armor reduced by 10 for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -557,7 +557,7 @@ const stitches: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 9.333333333333334
+          magicalDamage: 40.66666666666667
         },
         order: 2,
         tier: "level16",
@@ -580,7 +580,7 @@ const stitches: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1
+          magicalDamage: 4
         },
         order: 3,
         tier: "level16"
@@ -602,7 +602,7 @@ const stitches: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 6.666666666666667
         },
         order: 1,
         tier: "level20",
@@ -690,11 +690,11 @@ const stitches: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 92.20338983050847,
+    tankiness: 90.99811676082862,
     physicalDamage: 32.272727272727266,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 20.00817216017434
+    magicalDamage: 21.114818850449467
   }
 };
       

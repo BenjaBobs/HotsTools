@@ -48,7 +48,7 @@ const xul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.6666666666666665
+        magicalDamage: 10.666666666666666
       }
     },
     {
@@ -70,7 +70,7 @@ const xul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 23.75
+        magicalDamage: 95
       }
     },
     {
@@ -114,7 +114,7 @@ const xul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8
+        magicalDamage: 32
       }
     },
     {
@@ -158,7 +158,7 @@ const xul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 42
+        magicalDamage: 168
       }
     }
   ],
@@ -326,7 +326,7 @@ const xul: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 9.333333333333334,
+          healing: 4.666666666666667,
           magicalDamage: 0
         },
         order: 1,
@@ -403,7 +403,7 @@ const xul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 42
+          magicalDamage: 168
         },
         order: 1,
         tier: "level10",
@@ -455,7 +455,7 @@ const xul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.6666666666666665
         },
         order: 1,
         tier: "level13",
@@ -550,7 +550,7 @@ const xul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.3333333333333335
         },
         order: 2,
         tier: "level16",
@@ -574,7 +574,7 @@ const xul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 19.166666666666664
+          magicalDamage: 76.66666666666666
         },
         order: 3,
         tier: "level16"
@@ -595,7 +595,7 @@ const xul: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -684,7 +684,7 @@ const xul: Hero = {
   analysis: {
     tankiness: 62.674199623352166,
     physicalDamage: 57.00912145943351,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 33.82650049940979
   }

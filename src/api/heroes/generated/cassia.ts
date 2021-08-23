@@ -79,7 +79,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 63.2
+        magicalDamage: 252.8
       }
     },
     {
@@ -101,7 +101,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.3333333333333335
+        magicalDamage: 13.333333333333334
       }
     },
     {
@@ -123,7 +123,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 6.4
+        magicalDamage: 30.6
       }
     },
     {
@@ -145,7 +145,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12
+        magicalDamage: 48
       }
     },
     {
@@ -167,7 +167,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15
+        magicalDamage: 60
       }
     }
   ],
@@ -218,7 +218,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 2,
         tier: "level1",
@@ -241,7 +241,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1
         },
         order: 3,
         tier: "level1"
@@ -286,7 +286,7 @@ const cassia: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 1,
           magicalDamage: 0
         },
         order: 2,
@@ -306,7 +306,7 @@ const cassia: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 1.6666666666666667,
           magicalDamage: 0
         },
         order: 3,
@@ -385,7 +385,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 14.666666666666666
+          magicalDamage: 58.666666666666664
         },
         order: 3,
         tier: "level7",
@@ -414,7 +414,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 12
+          magicalDamage: 48
         },
         order: 1,
         tier: "level10",
@@ -441,7 +441,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15
+          magicalDamage: 60
         },
         order: 2,
         tier: "level10",
@@ -647,7 +647,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 13.333333333333334
+          magicalDamage: 53.333333333333336
         },
         order: 2,
         tier: "level20",
@@ -673,7 +673,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.3333333333333333
         },
         order: 3,
         tier: "level20",
@@ -711,9 +711,9 @@ const cassia: Hero = {
   analysis: {
     tankiness: 50.018832391713744,
     physicalDamage: 66.66666666666666,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 44.23635703259784
+    magicalDamage: 44.7896803777354
   }
 };
       

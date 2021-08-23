@@ -71,7 +71,7 @@ const anduin: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 11.200000000000001,
+        healing: 224,
         magicalDamage: 0
       }
     },
@@ -93,8 +93,8 @@ const anduin: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 10.2,
-        magicalDamage: 14
+        healing: 54.5,
+        magicalDamage: 56
       }
     },
     {
@@ -116,7 +116,7 @@ const anduin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 19.444444444444443
+        magicalDamage: 77.77777777777777
       }
     },
     {
@@ -137,7 +137,7 @@ const anduin: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 8,
+        healing: 0,
         magicalDamage: 0
       }
     },
@@ -160,7 +160,7 @@ const anduin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10
+        magicalDamage: 40
       }
     }
   ],
@@ -180,7 +180,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 7.333333333333333,
+          healing: 1,
           magicalDamage: 0
         },
         order: 1,
@@ -226,7 +226,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 13.333333333333334,
           magicalDamage: 0
         },
         order: 3,
@@ -320,7 +320,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.8,
+          healing: 36,
           magicalDamage: 0
         },
         order: 1,
@@ -363,7 +363,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 100,
           magicalDamage: 0
         },
         order: 3,
@@ -389,7 +389,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -417,7 +417,7 @@ const anduin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 40
         },
         order: 2,
         tier: "level10",
@@ -461,10 +461,10 @@ const anduin: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anduin_varians_legacy.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 2.5,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -484,7 +484,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.7333333333333334,
+          healing: 0,
           magicalDamage: 0
         },
         order: 3,
@@ -509,7 +509,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.4,
+          healing: 48,
           magicalDamage: 0
         },
         order: 1,
@@ -532,7 +532,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.8,
+          healing: 28,
           magicalDamage: 0
         },
         order: 2,
@@ -578,7 +578,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 1.6666666666666667,
           magicalDamage: 0
         },
         order: 4,
@@ -675,7 +675,7 @@ const anduin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 4,
@@ -689,8 +689,8 @@ const anduin: Hero = {
   analysis: {
     tankiness: 50.16949152542374,
     physicalDamage: 42.5,
-    mobility: 24.199,
-    healing: 38.58942947147357,
+    mobility: 17.38446396885035,
+    healing: 55.090333641039166,
     magicalDamage: 19.231060262114468
   }
 };

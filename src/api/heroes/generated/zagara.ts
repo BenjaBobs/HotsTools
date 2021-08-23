@@ -8,9 +8,9 @@ const zagara: Hero = {
   size: 1.125,
   movementSpeed: 4.8398,
   health: {
-    amount: 1575,
+    amount: 1500,
     scale: 0.04,
-    regenRate: 3.2812,
+    regenRate: 3.125,
     regenScale: 0.04
   },
   energy: {
@@ -23,7 +23,7 @@ const zagara: Hero = {
       nameId: "HeroZagara",
       range: 6.6,
       period: 0.8,
-      damage: 85,
+      damage: 83,
       damageScale: 0.04
     }
   ],
@@ -57,12 +57,12 @@ const zagara: Hero = {
       id: "ZagaraBanelingBarrage",
       name: "Baneling Barrage",
       descriptionShort: "Launch a Baneling that explodes on contact with an enemy",
-      descriptionLong: "Launch 2 Banelings that deal 86 (+4% / level) damage to enemies they hit. Stores up to 2 charges.",
+      descriptionLong: "Launch 2 Banelings that deal 80 (+4% / level) damage to enemies they hit. Stores up to 2 charges.",
       cost: {
         type: "Mana",
-        amount: 10
+        amount: 15
       },
-      cooldown: 3,
+      cooldown: 4,
       charges: {
         chargesMax: 2,
         chargesInitial: 2,
@@ -78,7 +78,7 @@ const zagara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 28.666666666666664
+        magicalDamage: 80
       }
     },
     {
@@ -100,7 +100,7 @@ const zagara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 4.733333333333333
+        magicalDamage: 23.666666666666668
       }
     },
     {
@@ -122,7 +122,7 @@ const zagara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.5
+        magicalDamage: 10
       }
     },
     {
@@ -181,8 +181,8 @@ const zagara: Hero = {
       {
         id: "ZagaraMasteryVolatileAcid",
         name: "Volatile Acid",
-        descriptionShort: "Increase Baneling range and damage",
-        descriptionLong: "Banelings can travel 50% further before exploding and their damage is increased by 20%.",
+        descriptionShort: "Increase Baneling range",
+        descriptionLong: "Banelings can travel 50% further before exploding.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -245,7 +245,7 @@ const zagara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 8.333333333333334
         },
         order: 3,
         tier: "level1"
@@ -287,7 +287,7 @@ const zagara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.2
         },
         order: 2,
         tier: "level4"
@@ -318,8 +318,8 @@ const zagara: Hero = {
       {
         id: "ZagaraMasteryBanelingMassacre",
         name: "Baneling Massacre",
-        descriptionShort: "Increase number of Banelings, reduce cooldown",
-        descriptionLong: "Gain 2 additional charges of Banelings, and reduce the cooldown of Baneling Barrage by 0.5 seconds.",
+        descriptionShort: "Gain Baneling charges, but increase cooldown",
+        descriptionLong: "Gain 2 additional charges of Banelings Barrage, but increase its cooldown by 2 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -475,7 +475,7 @@ const zagara: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
+          healing: 4,
           magicalDamage: 0
         },
         order: 1,
@@ -627,7 +627,7 @@ const zagara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 1,
         tier: "level20",
@@ -703,7 +703,7 @@ const zagara: Hero = {
         id: "ZagaraPackInstinct",
         name: "Pack Instinct",
         descriptionShort: "Increase damage against Hunter Killer target",
-        descriptionLong: "Zagara and her summons deal 25% more damage to enemies attacked by a Hunter Killer in the last 3 seconds.",
+        descriptionLong: "Zagara and her summons deal 20% more damage to enemies attacked by a Hunter Killer in the last 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -714,7 +714,7 @@ const zagara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.3333333333333333
         },
         order: 4,
         tier: "level20",
@@ -725,11 +725,11 @@ const zagara: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 47.45762711864406,
-    physicalDamage: 53.125,
-    mobility: 24.199,
+    tankiness: 45.19774011299435,
+    physicalDamage: 51.87500000000001,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 15.891446472350857
+    magicalDamage: 12.578884046127303
   }
 };
       

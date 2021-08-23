@@ -66,7 +66,7 @@ const valla: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22
+        magicalDamage: 88
       }
     },
     {
@@ -88,7 +88,7 @@ const valla: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 13.75
+        magicalDamage: 55
       }
     },
     {
@@ -166,7 +166,7 @@ const valla: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.666666666666668
+        magicalDamage: 66.66666666666667
       }
     }
   ],
@@ -250,7 +250,7 @@ const valla: Hero = {
         id: "DemonHunterMasteryArsenal",
         name: "Arsenal",
         descriptionShort: "Increase Multishot range, launch grenades",
-        descriptionLong: "Increase the range of Multishot by 20%. Multishot also fires 3 grenades that deal 120 (+4% / level) damage and refund 25 Mana after hitting enemy Heroes.",
+        descriptionLong: "Increase the range of Multishot by 20%. Multishot also fires 3 grenades that deal 100 (+4% / level) damage and refund 25 Mana after hitting enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -261,7 +261,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8
+          magicalDamage: 26.666666666666668
         },
         order: 1,
         tier: "level4",
@@ -344,7 +344,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 10
         },
         order: 1,
         tier: "level7",
@@ -367,7 +367,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.6666666666666667
         },
         order: 2,
         tier: "level7",
@@ -380,14 +380,14 @@ const valla: Hero = {
         id: "DemonHunterCombatStyleHotPursuit",
         name: "Hot Pursuit",
         descriptionShort: "Increase Hatred Move Speed bonus",
-        descriptionLong: "Increase the Movement Speed bonus of each stack of Hatred to 2.5%.",
+        descriptionLong: "Increase the Movement Speed bonus of each stack of Hatred to 2%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 2,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -453,7 +453,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16.666666666666668
+          magicalDamage: 66.66666666666667
         },
         order: 2,
         tier: "level10",
@@ -477,7 +477,7 @@ const valla: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.8,
+          healing: 0.26666666666666666,
           magicalDamage: 0
         },
         order: 1,
@@ -501,7 +501,7 @@ const valla: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 0.6666666666666666,
           magicalDamage: 0
         },
         order: 2,
@@ -514,7 +514,7 @@ const valla: Hero = {
         id: "DemonHunterGloom",
         name: "Gloom",
         descriptionShort: "Consume Hatred to gain Spell Armor",
-        descriptionLong: "Activate to consume all Hatred, granting 3 Spell Armor per Hatred consumed for 5 seconds. Passive: Gain 20 Spell Armor, and each stack of Hatred heals for 2.5 Health per second.",
+        descriptionLong: "Activate to consume all Hatred, granting 3 Spell Armor per Hatred consumed for 5 seconds. Passive: Gain 15 Spell Armor, and each stack of Hatred heals for 1.2 (+4% / level) Health per second.",
         cooldown: 5,
         category: "Talent",
         type: "Active",
@@ -606,8 +606,8 @@ const valla: Hero = {
       {
         id: "DemonHunterMasteryDeathSiphon",
         name: "Death Siphon",
-        descriptionShort: "Strafe lasts longer, fires leeching bolts",
-        descriptionLong: "Hitting an enemy Hero with Strafe increases its duration by 0.125 seconds. Strafe also fires penetrating bolts in a line for 34 (+4% / level) damage every 0.25 seconds that heal for 25% of their damage dealt.",
+        descriptionShort: "Strafe lasts longer, fires penetrating bolts",
+        descriptionLong: "Hitting an enemy Hero with Strafe increases its duration by 0.125 seconds. Strafe also fires penetrating bolts in a line for 34 (+4% / level) damage every 0.25 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -617,7 +617,7 @@ const valla: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -682,7 +682,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4
+          magicalDamage: 16
         },
         order: 3,
         tier: "level20",
@@ -718,7 +718,7 @@ const valla: Hero = {
   analysis: {
     tankiness: 40.376647834274955,
     physicalDamage: 58.333333333333336,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 23.202692272768548
   }

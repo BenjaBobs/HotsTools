@@ -2,11 +2,16 @@ import { ChangelogItem } from './changelog-app';
 
 const changeLog: ChangelogItem[] = [
   {
-    date: new Date(2021, 8, 6),
+    date: new Date(2021, 7, 23),
+    added: ['Data from newest hots patch', 'New ability/talent analyses'],
+    code: ['Add stuff about pattern matching'],
+  },
+  {
+    date: new Date(2021, 7, 6),
     fixed: ['About page', 'Underglow effect in menu not sticking'],
   },
   {
-    date: new Date(2021, 8, 5),
+    date: new Date(2021, 7, 5),
     added: [
       'New analysis properties (mobility, healing, magic damage)',
       'More stuff to the about page',
@@ -17,7 +22,7 @@ const changeLog: ChangelogItem[] = [
     ],
   },
   {
-    date: new Date(2021, 8, 2),
+    date: new Date(2021, 7, 2),
     added: [
       'Hero analysis based on stats/abilities/talents (currently only tankiness and auto attack damage)',
       'Hero strength charts',
@@ -29,7 +34,7 @@ const changeLog: ChangelogItem[] = [
     ],
   },
   {
-    date: new Date(2021, 7, 29),
+    date: new Date(2021, 6, 29),
     removed: [
       'Hero strength charts - they will be re-added once hero analysis is implemented',
     ],
@@ -38,7 +43,7 @@ const changeLog: ChangelogItem[] = [
     ],
   },
   {
-    date: new Date(2021, 7, 23),
+    date: new Date(2021, 6, 23),
     code: ['Moved from Create-React-App to Vite'],
   },
   {

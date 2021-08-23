@@ -1,5 +1,5 @@
 declare global {
-  interface Array<T extends number> {
+  interface Array<T> {
     sum(): number;
   }
 }

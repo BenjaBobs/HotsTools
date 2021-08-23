@@ -44,7 +44,7 @@ const dva: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 1.4666666666666666
+        magicalDamage: 8.533333333333333
       }
     },
     {
@@ -76,7 +76,7 @@ const dva: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dva_boosters.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 115,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -121,7 +121,7 @@ const dva: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 3.3333333333333335
       }
     },
     {
@@ -139,7 +139,7 @@ const dva: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 4.666666666666667
+        magicalDamage: 25.333333333333336
       }
     },
     {
@@ -163,7 +163,7 @@ const dva: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.6666666666666665
+        magicalDamage: 10.666666666666666
       }
     }
   ],
@@ -183,7 +183,7 @@ const dva: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.1333333333333333,
+          healing: 1.0666666666666667,
           magicalDamage: 0
         },
         order: 1,
@@ -232,7 +232,7 @@ const dva: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.666666666666667,
+          healing: 0,
           magicalDamage: 0
         },
         order: 3,
@@ -406,7 +406,7 @@ const dva: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4.666666666666667
+          magicalDamage: 25.333333333333336
         },
         order: 1,
         tier: "level10",
@@ -435,7 +435,7 @@ const dva: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 10.666666666666666
         },
         order: 2,
         tier: "level10",
@@ -483,7 +483,7 @@ const dva: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8
+          magicalDamage: 32
         },
         order: 2,
         tier: "level13",
@@ -506,7 +506,7 @@ const dva: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5
         },
         order: 3,
         tier: "level13",
@@ -553,7 +553,7 @@ const dva: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.9333333333333333,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -755,7 +755,7 @@ const dva: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 12
+            magicalDamage: 48
           }
         },
         {
@@ -773,7 +773,7 @@ const dva: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 25
+            magicalDamage: 100
           }
         }
       ],
@@ -783,16 +783,16 @@ const dva: Hero = {
         physicalDamage: 8.8,
         mobility: 24.199,
         healing: 0,
-        magicalDamage: 37
+        magicalDamage: 148
       }
     }
   ],
   analysis: {
     tankiness: 63.2768361581921,
     physicalDamage: 44,
-    mobility: 24.199,
+    mobility: 100,
     healing: 0,
-    magicalDamage: 3.8953963497684554
+    magicalDamage: 5.297148824116952
   }
 };
       

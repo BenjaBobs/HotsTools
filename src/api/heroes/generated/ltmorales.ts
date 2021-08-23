@@ -8,9 +8,9 @@ const ltmorales: Hero = {
   size: 0.75,
   movementSpeed: 4.8398,
   health: {
-    amount: 1515,
+    amount: 1560,
     scale: 0.04,
-    regenRate: 3.1562,
+    regenRate: 3.25,
     regenScale: 0.04
   },
   energy: {
@@ -43,7 +43,7 @@ const ltmorales: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0.26666666666666666,
+        healing: 0.13333333333333333,
         magicalDamage: 0
       }
     },
@@ -51,7 +51,7 @@ const ltmorales: Hero = {
       id: "MedicHealingBeam",
       name: "Healing Beam",
       descriptionShort: "Heals allies over time",
-      descriptionLong: "Heal target allied Hero or Minion for 172 (+4% / level) Health per second as long as they are in range. After not channeling Healing Beam for 2 seconds, regenerate 5 Energy per second. Reactivate to switch targets, or self-cast to cancel channeling.",
+      descriptionLong: "Heal target allied Hero or Minion for 172 (+4% / level) Health per second as long as they are in range. After not channeling Healing Beam for 2 seconds, regenerate 6 Energy per second. Reactivate to switch targets, or self-cast to cancel channeling.",
       cost: {
         type: "Energy",
         amount: 6,
@@ -66,7 +66,7 @@ const ltmorales: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 2.293333333333333,
+        healing: 45.86666666666667,
         magicalDamage: 0
       }
     },
@@ -74,7 +74,7 @@ const ltmorales: Hero = {
       id: "MedicSafeguard",
       name: "Safeguard",
       descriptionShort: "Grants Armor to the target",
-      descriptionLong: "Grant target ally Hero 30 Armor for 3 seconds.",
+      descriptionLong: "Grant target ally Hero 35 Armor for 3 seconds.",
       cooldown: 11,
       charges: {
         chargesMax: 1,
@@ -185,7 +185,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -235,7 +235,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 2,
           magicalDamage: 0
         },
         order: 1,
@@ -248,7 +248,7 @@ const ltmorales: Hero = {
         id: "MedicTraumaTrigger",
         name: "Trauma Trigger",
         descriptionShort: "Gain Armor at low Health, increase Caduceus Reactor healing",
-        descriptionLong: "Taking damage while below 40% Health grants 40 Armor for 3 seconds. This effect has a 40 second cooldown. Passive: Increase the healing provided by Caduceus Reactor from 2% to 4% of Lt. Morales's maximum Health per second.",
+        descriptionLong: "Taking damage while below 40% Health grants 40 Armor for 3 seconds. This effect has a 30 second cooldown. Passive: Increase the healing provided by Caduceus Reactor from 2% to 4% of Lt. Morales's maximum Health per second.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -258,7 +258,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.8,
+          healing: 0.13333333333333333,
           magicalDamage: 0
         },
         order: 2,
@@ -325,7 +325,7 @@ const ltmorales: Hero = {
         id: "MedicVanadiumPlating",
         name: "Vanadium Plating",
         descriptionShort: "Stuns, Roots increase Safeguard Armor, increased duration",
-        descriptionLong: "While an ally affected by Safeguard is Stunned or Rooted, Safeguard grants an additional 25 Armor. Passive: Increase the duration of Safeguard by 1 second.",
+        descriptionLong: "While an ally affected by Safeguard is Stunned or Rooted, Safeguard grants an additional 20 Armor. Passive: Increase the duration of Safeguard by 1 second.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -444,7 +444,7 @@ const ltmorales: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.4
+          magicalDamage: 25.6
         },
         order: 1,
         tier: "level13",
@@ -467,7 +467,7 @@ const ltmorales: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2
         },
         order: 2,
         tier: "level13",
@@ -515,7 +515,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 7.4399999999999995,
+          healing: 70.8,
           magicalDamage: 0
         },
         order: 1,
@@ -539,7 +539,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.666666666666666,
+          healing: 2.333333333333333,
           magicalDamage: 0
         },
         order: 2,
@@ -591,7 +591,7 @@ const ltmorales: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_stim.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 25,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -652,7 +652,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.0666666666666667,
+          healing: 0,
           magicalDamage: 0
         },
         order: 3,
@@ -687,10 +687,10 @@ const ltmorales: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 45.64971751412429,
+    tankiness: 47.005649717514125,
     physicalDamage: 41.5,
-    mobility: 24.199,
-    healing: 3.3601680084004193,
+    mobility: 17.38446396885035,
+    healing: 9.099301068178821,
     magicalDamage: 0
   }
 };

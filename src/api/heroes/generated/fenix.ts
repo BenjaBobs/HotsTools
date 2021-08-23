@@ -57,7 +57,7 @@ const fenix: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.25
+        magicalDamage: 45
       }
     },
     {
@@ -111,7 +111,7 @@ const fenix: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7.466666666666667
+        magicalDamage: 29.866666666666667
       }
     },
     {
@@ -129,7 +129,7 @@ const fenix: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5.266666666666667
+        magicalDamage: 21.066666666666666
       }
     }
   ],
@@ -174,7 +174,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 10
         },
         order: 2,
         tier: "level1",
@@ -198,7 +198,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.3333333333333335
         },
         order: 3,
         tier: "level1",
@@ -295,7 +295,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.3333333333333335
         },
         order: 1,
         tier: "level7",
@@ -366,7 +366,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.266666666666667
+          magicalDamage: 21.066666666666666
         },
         order: 1,
         tier: "level10",
@@ -389,7 +389,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7.466666666666667
+          magicalDamage: 29.866666666666667
         },
         order: 2,
         tier: "level10",
@@ -459,7 +459,7 @@ const fenix: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
+          healing: 4,
           magicalDamage: 0
         },
         order: 3,
@@ -531,7 +531,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.3333333333333333
         },
         order: 2,
         tier: "level16",
@@ -602,7 +602,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.266666666666667
+          magicalDamage: 21.066666666666666
         },
         order: 2,
         tier: "level20",
@@ -662,7 +662,7 @@ const fenix: Hero = {
   analysis: {
     tankiness: 34.3502824858757,
     physicalDamage: 30.74074074074074,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 10.616430582039408
   }

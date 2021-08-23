@@ -51,7 +51,7 @@ const lunara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 2.4
+        magicalDamage: 9.6
       }
     },
     {
@@ -91,7 +91,7 @@ const lunara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20
+        magicalDamage: 80
       }
     },
     {
@@ -138,7 +138,7 @@ const lunara: Hero = {
       id: "DryadThornwoodVine",
       name: "Thornwood Vine",
       descriptionShort: "Damages in a line",
-      descriptionLong: "Send forth vines that deal 176 (+4% / level) damage to all enemies in a line. Stores up to 3 charges.",
+      descriptionLong: "Send forth vines that deal 184 (+4% / level) damage to all enemies in a line. Stores up to 3 charges.",
       cost: {
         type: "Mana",
         amount: 35
@@ -159,7 +159,7 @@ const lunara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.733333333333333
+        magicalDamage: 49.06666666666666
       }
     },
     {
@@ -187,7 +187,7 @@ const lunara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 18.066666666666666
+        magicalDamage: 72.26666666666667
       }
     }
   ],
@@ -244,7 +244,7 @@ const lunara: Hero = {
         id: "DryadHippityHop",
         name: "Hippity Hop",
         descriptionShort: "Increase Dryad's Swiftness bonus",
-        descriptionLong: "After not Basic Attacking or taking damage for 4 seconds, increase the Move Speed bonus of Dryad's Swiftness by 10%.",
+        descriptionLong: "After not Basic Attacking or taking damage for 2 seconds, increase the Move Speed bonus of Dryad's Swiftness by 10%.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -303,7 +303,7 @@ const lunara: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.3733333333333333,
+          healing: 2.4,
           magicalDamage: 0
         },
         order: 2,
@@ -364,7 +364,7 @@ const lunara: Hero = {
         id: "DryadChokingPollen",
         name: "Choking Pollen",
         descriptionShort: "Nature's Toxin increases Noxious Blossom damage",
-        descriptionLong: "Noxious Blossom deals 100% more damage to enemies afflicted by Nature's Toxin, increased to 150% against enemies with 3 stacks.",
+        descriptionLong: "Noxious Blossom deals 100% more damage to enemies afflicted by Nature's Toxin, increased to 200% against enemies with 3 stacks.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -375,7 +375,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 6.666666666666667
         },
         order: 2,
         tier: "level7",
@@ -387,7 +387,7 @@ const lunara: Hero = {
         id: "DryadWildVigor",
         name: "Wild Vigor",
         descriptionShort: "Crippling Spores increases Basic Attack damage",
-        descriptionLong: "Using Crippling Spores increases the damage of Lunara's next 4 Basic Attacks by 50%.",
+        descriptionLong: "Using Crippling Spores increases the damage of Lunara's next 4 Basic Attacks by 70%.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -412,7 +412,7 @@ const lunara: Hero = {
         id: "DryadHeroicAbilityThornwoodVine",
         name: "Thornwood Vine",
         descriptionShort: "Damages in a line",
-        descriptionLong: "Send forth vines that deal 176 (+4% / level) damage to all enemies in a line. Stores up to 3 charges.",
+        descriptionLong: "Send forth vines that deal 184 (+4% / level) damage to all enemies in a line. Stores up to 3 charges.",
         cost: {
           type: "Mana",
           amount: 35
@@ -433,7 +433,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 11.733333333333333
+          magicalDamage: 49.06666666666666
         },
         order: 1,
         tier: "level10",
@@ -466,7 +466,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 18.066666666666666
+          magicalDamage: 72.26666666666667
         },
         order: 2,
         tier: "level10",
@@ -547,7 +547,7 @@ const lunara: Hero = {
         name: "Abolish Magic",
         descriptionShort: "Remove crowd control from a target and Lunara",
         descriptionLong: "Target an ally to remove all damage over time and disabling effects from them and Lunara. For 2 seconds after, the duration of disabling effects is reduced by 50%.",
-        cooldown: 30,
+        cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_abolishmagic.png",
@@ -648,7 +648,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 4
         },
         order: 4,
         tier: "level16",
@@ -737,7 +737,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2.6666666666666665
         },
         order: 3,
         tier: "level20",
@@ -757,7 +757,7 @@ const lunara: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_boundlessstride_a.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 80,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -774,9 +774,9 @@ const lunara: Hero = {
   analysis: {
     tankiness: 43.08851224105461,
     physicalDamage: 50,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 23.106782892944704
+    magicalDamage: 23.342867520203395
   }
 };
       

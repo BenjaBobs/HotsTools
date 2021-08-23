@@ -73,7 +73,7 @@ const rexxar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20.142857142857142
+        magicalDamage: 80.57142857142857
       }
     },
     {
@@ -95,7 +95,7 @@ const rexxar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15
+        magicalDamage: 60
       }
     },
     {
@@ -116,7 +116,7 @@ const rexxar: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 14.280000000000001,
+        healing: 285.6,
         magicalDamage: 0
       }
     },
@@ -139,7 +139,7 @@ const rexxar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7.333333333333333
+        magicalDamage: 29.333333333333332
       }
     },
     {
@@ -246,7 +246,7 @@ const rexxar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6,
+          healing: 0.3,
           magicalDamage: 0
         },
         order: 1,
@@ -433,7 +433,7 @@ const rexxar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7.333333333333333
+          magicalDamage: 29.333333333333332
         },
         order: 2,
         tier: "level10",
@@ -505,7 +505,7 @@ const rexxar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.8666666666666667
+          magicalDamage: 7.466666666666667
         },
         order: 3,
         tier: "level13"
@@ -523,7 +523,7 @@ const rexxar: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rexxar_heremishaactive.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 25,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -588,7 +588,7 @@ const rexxar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 1,
@@ -615,7 +615,7 @@ const rexxar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 2,
         tier: "level20",
@@ -641,7 +641,7 @@ const rexxar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 0.6666666666666666
         },
         order: 3,
         tier: "level20"
@@ -706,7 +706,7 @@ const rexxar: Hero = {
             physicalDamage: 0,
             tankiness: 0,
             healing: 0,
-            magicalDamage: 10
+            magicalDamage: 40
           }
         }
       ],
@@ -716,15 +716,15 @@ const rexxar: Hero = {
         physicalDamage: 1.6666666666666667,
         mobility: 24.199,
         healing: 0,
-        magicalDamage: 10
+        magicalDamage: 40
       }
     }
   ],
   analysis: {
     tankiness: 54.538606403013176,
     physicalDamage: 58.2608695652174,
-    mobility: 24.199,
-    healing: 18.74343717185859,
+    mobility: 17.38446396885035,
+    healing: 56.49479097982329,
     magicalDamage: 18.802454242388862
   }
 };

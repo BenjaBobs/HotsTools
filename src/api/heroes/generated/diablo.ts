@@ -66,7 +66,7 @@ const diablo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.333333333333333
+        magicalDamage: 13.333333333333332
       }
     },
     {
@@ -87,8 +87,8 @@ const diablo: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 32.5,
-        magicalDamage: 6
+        healing: 16.25,
+        magicalDamage: 24
       }
     },
     {
@@ -116,7 +116,7 @@ const diablo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 6.083333333333333
+        magicalDamage: 24.333333333333332
       }
     },
     {
@@ -138,7 +138,7 @@ const diablo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 9.133333333333333
+        magicalDamage: 36.53333333333333
       }
     },
     {
@@ -160,7 +160,7 @@ const diablo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.3333333333333335
+        magicalDamage: 13.333333333333334
       }
     }
   ],
@@ -180,7 +180,7 @@ const diablo: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 0.6666666666666666,
           magicalDamage: 0
         },
         order: 1,
@@ -204,7 +204,7 @@ const diablo: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.3,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -272,7 +272,7 @@ const diablo: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.17333333333333334,
+          healing: 0.08666666666666667,
           magicalDamage: 0
         },
         order: 2,
@@ -295,7 +295,7 @@ const diablo: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.7,
+          healing: 0.11666666666666667,
           magicalDamage: 0
         },
         order: 3,
@@ -344,7 +344,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.666666666666667
+          magicalDamage: 26.666666666666668
         },
         order: 2,
         tier: "level7",
@@ -396,7 +396,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 9.133333333333333
+          magicalDamage: 36.53333333333333
         },
         order: 1,
         tier: "level10",
@@ -423,7 +423,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 13.333333333333334
         },
         order: 2,
         tier: "level10",
@@ -472,7 +472,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2
+          magicalDamage: 8
         },
         order: 2,
         tier: "level13",
@@ -545,7 +545,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 2,
         tier: "level16",
@@ -671,7 +671,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 9.133333333333333
+          magicalDamage: 36.53333333333333
         },
         order: 4,
         tier: "level20"
@@ -681,8 +681,8 @@ const diablo: Hero = {
   analysis: {
     tankiness: 85.12241054613936,
     physicalDamage: 50,
-    mobility: 24.199,
-    healing: 42.65838291914596,
+    mobility: 17.38446396885035,
+    healing: 3.2144270077805617,
     magicalDamage: 12.342799418868609
   }
 };

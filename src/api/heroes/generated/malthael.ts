@@ -65,8 +65,8 @@ const malthael: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 6.5,
-        magicalDamage: 50
+        healing: 50,
+        magicalDamage: 200
       }
     },
     {
@@ -88,7 +88,7 @@ const malthael: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.8
+        magicalDamage: 47.2
       }
     },
     {
@@ -218,7 +218,7 @@ const malthael: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malthael_fearthereaper.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 25,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -244,7 +244,7 @@ const malthael: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 3.3333333333333335
         },
         order: 1,
         tier: "level4",
@@ -361,7 +361,7 @@ const malthael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 3,
@@ -440,7 +440,7 @@ const malthael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.2666666666666666,
+          healing: 0.31666666666666665,
           magicalDamage: 0
         },
         order: 1,
@@ -625,7 +625,7 @@ const malthael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 6.666666666666667,
           magicalDamage: 0
         },
         order: 2,
@@ -685,8 +685,8 @@ const malthael: Hero = {
   analysis: {
     tankiness: 59.1186440677966,
     physicalDamage: 37.27272727272727,
-    mobility: 24.199,
-    healing: 8.53167658382919,
+    mobility: 17.38446396885035,
+    healing: 9.890544639324807,
     magicalDamage: 27.3563061836012
   }
 };

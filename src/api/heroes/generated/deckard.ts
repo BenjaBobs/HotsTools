@@ -51,7 +51,7 @@ const deckard: Hero = {
       id: "DeckardHealingPotion",
       name: "Healing Potion",
       descriptionShort: "Throw Potions that heal allies",
-      descriptionLong: "Throw a Healing Potion on the ground that heals the first allied Hero that comes in contact with it for 270 (+4% / level). Limit 5 active Potions.",
+      descriptionLong: "Throw a Healing Potion on the ground that heals the first allied Hero that comes in contact with it for 285 (+4% / level). Limit 5 active Potions.",
       cost: {
         type: "Mana",
         amount: 25
@@ -65,7 +65,7 @@ const deckard: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 13.5,
+        healing: 285,
         magicalDamage: 0
       }
     },
@@ -73,7 +73,7 @@ const deckard: Hero = {
       id: "DeckardHoradricCube",
       name: "Horadric Cube",
       descriptionShort: "Damage and Slow enemies in an area",
-      descriptionLong: "Release the Horadric Cube. After 0.5 seconds it explodes, dealing 80 (+4% / level) damage to all enemies in the area and Slowing them by 35% for 1.75 seconds.",
+      descriptionLong: "Release the Horadric Cube. After 0.5 seconds it explodes, dealing 80 (+4% / level) damage to all enemies in the area and Slowing them by 35% for 2 seconds.",
       cost: {
         type: "Mana",
         amount: 35
@@ -88,7 +88,7 @@ const deckard: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 6.666666666666666
+        magicalDamage: 26.666666666666664
       }
     },
     {
@@ -110,7 +110,7 @@ const deckard: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10
+        magicalDamage: 40
       }
     },
     {
@@ -139,7 +139,7 @@ const deckard: Hero = {
       id: "DeckardLorenado",
       name: "Lorenado",
       descriptionShort: "Conjure a lorenado that knocks enemies away",
-      descriptionLong: "Vector TargetingAfter 1 second, create a twirling tome tornado that travels towards the targeted direction, continually knocking away enemies that come into contact with it.",
+      descriptionLong: "Vector TargetingAfter 1 second, create a twirling tome tornado that travels towards the targeted direction, continually knocking away enemies that come into contact with it. Deals 20 (+4% / level) damage to Heroes hit.",
       cost: {
         type: "Mana",
         amount: 35
@@ -160,7 +160,7 @@ const deckard: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 5.333333333333333
       }
     }
   ],
@@ -169,8 +169,8 @@ const deckard: Hero = {
       {
         id: "DeckardScrollOfIdentify",
         name: "Scroll of Identify",
-        descriptionShort: "Quest: Scroll of Sealing reveals, reduces Armor",
-        descriptionLong: "Quest: Hitting an enemy Hero with Scroll of Sealing reveals them for 8 seconds. Reward: After hitting 14 Heroes, Scroll of Sealing also reduces Armor of Heroes hit by 15 for 4 seconds and the reveal duration is doubled.",
+        descriptionShort: "Quest: Increase Scroll of Sealing damage, reduces Armor",
+        descriptionLong: "Quest: Hitting an enemy Hero with Scroll of Sealing permanently increases its damage by 2. Reward: After hitting 15 Heroes, Scroll of Sealing reveals and reduces the Armor of Heroes hit by 10 for 4 seconds. Reward: After hitting 30 Heroes, this talent's Armor reduction effect is increased to 15 and its duration to 6 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -242,7 +242,7 @@ const deckard: Hero = {
         id: "DeckardPotionOfShielding",
         name: "Potion of Shielding",
         descriptionShort: "Healing Potions grant a Shield",
-        descriptionLong: "Whenever an ally is healed by a Healing Potion, they gain a 122 (+4% / level) Shield for 6 seconds.",
+        descriptionLong: "Whenever an ally is healed by a Healing Potion, they gain a 140 (+4% / level) Shield for 6 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -252,7 +252,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.6266666666666665,
+          healing: 37.333333333333336,
           magicalDamage: 0
         },
         order: 1,
@@ -265,7 +265,7 @@ const deckard: Hero = {
         id: "DeckardRejuvenationPotion",
         name: "Rejuvenation Potion",
         descriptionShort: "Healing Potions restore Mana, heal more",
-        descriptionLong: "Healing Potions restore 10 Mana and heal for an additional 108 (+4% / level) over 4 seconds.",
+        descriptionLong: "Healing Potions restore 15 Mana and heal for an additional 114 (+4% / level) over 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -275,7 +275,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.4400000000000002,
+          healing: 30.4,
           magicalDamage: 0
         },
         order: 2,
@@ -298,7 +298,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 66.66666666666667,
           magicalDamage: 0
         },
         order: 3,
@@ -369,7 +369,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 20,
+          healing: 5,
           magicalDamage: 0
         },
         order: 3,
@@ -411,7 +411,7 @@ const deckard: Hero = {
         id: "DeckardLorenado",
         name: "Lorenado",
         descriptionShort: "Conjure a lorenado that knocks enemies away",
-        descriptionLong: "Vector TargetingAfter 1 second, create a twirling tome tornado that travels towards the targeted direction, continually knocking away enemies that come into contact with it.",
+        descriptionLong: "Vector TargetingAfter 1 second, create a twirling tome tornado that travels towards the targeted direction, continually knocking away enemies that come into contact with it. Deals 20 (+4% / level) damage to Heroes hit.",
         cost: {
           type: "Mana",
           amount: 35
@@ -432,7 +432,7 @@ const deckard: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 5.333333333333333
         },
         order: 2,
         tier: "level10",
@@ -446,7 +446,7 @@ const deckard: Hero = {
         id: "DeckardSuperHealingPotion",
         name: "Super Healing Potion",
         descriptionShort: "Healing Potions heal more after a duration",
-        descriptionLong: "If a Healing Potion isn't picked up for at least 2 seconds, it heals for 120% more.",
+        descriptionLong: "If a Healing Potion isn't picked up for at least 2 seconds, it heals for 100% more. Passive: Healing Potion heals for 25% more when the target is under 50% health.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -456,7 +456,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 16,
+          healing: 8.333333333333334,
           magicalDamage: 0
         },
         order: 1,
@@ -469,7 +469,7 @@ const deckard: Hero = {
         id: "DeckardPotionOfRevival",
         name: "Potion of Revival",
         descriptionShort: "Healing Potions heal in an area",
-        descriptionLong: "When a Healing Potion is picked up, it also heals all nearby allied Heroes for 50% of the healing amount.",
+        descriptionLong: "When a Healing Potion is picked up, it also heals all nearby allied Heroes for 75% of the healing amount.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -479,7 +479,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 5,
           magicalDamage: 0
         },
         order: 2,
@@ -493,7 +493,7 @@ const deckard: Hero = {
         name: "Ancient Blessings",
         descriptionShort: "Activate Fortitude to empower ally Attacks",
         descriptionLong: "Activate Fortitude of the Faithful to empower nearby allied Hero Basic Attacks for 8 seconds, causing them to deal an additional 62 (+4% / level) damage in an area and heal for 90 (+4% / level) for each Hero hit. This effect can only occur once per second.",
-        cooldown: 60,
+        cooldown: 45,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_angelic_conduit.png",
@@ -502,8 +502,8 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.2,
-          magicalDamage: 4.133333333333333
+          healing: 0,
+          magicalDamage: 16.53333333333333
         },
         order: 3,
         tier: "level13",
@@ -528,7 +528,7 @@ const deckard: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 13.333333333333334
         },
         order: 1,
         tier: "level16",
@@ -691,9 +691,9 @@ const deckard: Hero = {
   analysis: {
     tankiness: 53.634651600753294,
     physicalDamage: 28.636363636363633,
-    mobility: 24.199,
-    healing: 17.71963598179909,
-    magicalDamage: 7.377644601834195
+    mobility: 17.38446396885035,
+    healing: 56.376104444151395,
+    magicalDamage: 7.96785616998093
   }
 };
       

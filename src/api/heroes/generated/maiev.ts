@@ -66,7 +66,7 @@ const maiev: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 38
+        magicalDamage: 152
       }
     },
     {
@@ -88,7 +88,7 @@ const maiev: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7.857142857142857
+        magicalDamage: 31.428571428571427
       }
     },
     {
@@ -110,7 +110,7 @@ const maiev: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.538461538461538
+        magicalDamage: 46.15384615384615
       }
     },
     {
@@ -278,7 +278,7 @@ const maiev: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 13.333333333333334
         },
         order: 2,
         tier: "level4",
@@ -327,7 +327,7 @@ const maiev: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.133333333333333
+          magicalDamage: 20.53333333333333
         },
         order: 1,
         tier: "level7",
@@ -624,7 +624,7 @@ const maiev: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_shadoworb_relentless.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 40,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -653,7 +653,7 @@ const maiev: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5
+          magicalDamage: 20
         },
         order: 3,
         tier: "level20"
@@ -663,7 +663,7 @@ const maiev: Hero = {
   analysis: {
     tankiness: 60.89642184557439,
     physicalDamage: 80.55555555555554,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
     magicalDamage: 25.40666225629451
   }

@@ -43,7 +43,7 @@ const tyrande: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0.13333333333333333,
+        healing: 0,
         magicalDamage: 0
       }
     },
@@ -71,7 +71,7 @@ const tyrande: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 3.6,
+        healing: 72,
         magicalDamage: 0
       }
     },
@@ -94,7 +94,7 @@ const tyrande: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8
+        magicalDamage: 32
       }
     },
     {
@@ -116,7 +116,7 @@ const tyrande: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 11.538461538461538
+        magicalDamage: 46.15384615384615
       }
     },
     {
@@ -137,7 +137,7 @@ const tyrande: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 10.133333333333333,
+        healing: 101.33333333333333,
         magicalDamage: 0
       }
     },
@@ -160,7 +160,7 @@ const tyrande: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 6.133333333333333
+        magicalDamage: 24.53333333333333
       }
     }
   ],
@@ -181,7 +181,7 @@ const tyrande: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 16.666666666666668
         },
         order: 1,
         tier: "level1",
@@ -258,7 +258,7 @@ const tyrande: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10.666666666666666,
+          healing: 5.333333333333333,
           magicalDamage: 0
         },
         order: 1,
@@ -281,7 +281,7 @@ const tyrande: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.0666666666666667,
+          healing: 0.26666666666666666,
           magicalDamage: 0
         },
         order: 2,
@@ -304,7 +304,7 @@ const tyrande: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 23.333333333333332,
+          healing: 11.666666666666666,
           magicalDamage: 0
         },
         order: 3,
@@ -413,7 +413,7 @@ const tyrande: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10.133333333333333,
+          healing: 101.33333333333333,
           magicalDamage: 0
         },
         order: 1,
@@ -441,7 +441,7 @@ const tyrande: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.133333333333333
+          magicalDamage: 24.53333333333333
         },
         order: 2,
         tier: "level10",
@@ -468,7 +468,7 @@ const tyrande: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrande_lightofelune.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 20,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -619,7 +619,7 @@ const tyrande: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -708,8 +708,8 @@ const tyrande: Hero = {
   analysis: {
     tankiness: 45.52919020715631,
     physicalDamage: 36.66666666666667,
-    mobility: 24.199,
-    healing: 18.200910045502276,
+    mobility: 17.38446396885035,
+    healing: 34.28722141632599,
     magicalDamage: 11.363842731317533
   }
 };

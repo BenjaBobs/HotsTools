@@ -44,7 +44,7 @@ const varian: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8.333333333333334
+        magicalDamage: 33.333333333333336
       }
     },
     {
@@ -65,8 +65,8 @@ const varian: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 4.375,
-        magicalDamage: 18.75
+        healing: 17.5,
+        magicalDamage: 75
       }
     },
     {
@@ -115,7 +115,7 @@ const varian: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 4.166666666666666
+        magicalDamage: 16.666666666666664
       }
     },
     {
@@ -159,7 +159,7 @@ const varian: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10.666666666666666
+        magicalDamage: 42.666666666666664
       }
     },
     {
@@ -173,7 +173,7 @@ const varian: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_twinbladesoffury.png",
       isPassive: true,
       analysis: {
-        mobility: 0,
+        mobility: 30,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -308,7 +308,7 @@ const varian: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10.666666666666666
+          magicalDamage: 42.666666666666664
         },
         order: 2,
         tier: "level4",
@@ -327,7 +327,7 @@ const varian: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_twinbladesoffury.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 30,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -355,7 +355,7 @@ const varian: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 20,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
@@ -378,7 +378,7 @@ const varian: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.466666666666669,
+          healing: 3.4000000000000004,
           magicalDamage: 0
         },
         order: 2,
@@ -398,7 +398,7 @@ const varian: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.666666666666667,
+          healing: 93.33333333333333,
           magicalDamage: 0
         },
         order: 3,
@@ -521,7 +521,7 @@ const varian: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 26.666666666666668
         },
         order: 3,
         tier: "level13"
@@ -682,7 +682,7 @@ const varian: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 3.3333333333333335,
           magicalDamage: 0
         },
         order: 4,
@@ -718,8 +718,8 @@ const varian: Hero = {
   analysis: {
     tankiness: 66.89265536723164,
     physicalDamage: 46.25,
-    mobility: 24.199,
-    healing: 5.742474623731186,
+    mobility: 38.93634293349808,
+    healing: 3.4616906237636824,
     magicalDamage: 18.554776173613003
   }
 };

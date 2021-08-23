@@ -44,7 +44,7 @@ const junkrat: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.666666666666668
+        magicalDamage: 71.66666666666667
       }
     },
     {
@@ -68,7 +68,7 @@ const junkrat: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10.333333333333332
+        magicalDamage: 45.49999999999999
       }
     },
     {
@@ -86,7 +86,7 @@ const junkrat: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12
+        magicalDamage: 48
       }
     },
     {
@@ -104,7 +104,7 @@ const junkrat: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10.833333333333332
+        magicalDamage: 43.33333333333333
       }
     },
     {
@@ -122,7 +122,7 @@ const junkrat: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 48
+        magicalDamage: 192
       }
     },
     {
@@ -140,7 +140,7 @@ const junkrat: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 62.333333333333336
+        magicalDamage: 249.33333333333334
       }
     }
   ],
@@ -167,7 +167,7 @@ const junkrat: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1
         },
         order: 1,
         tier: "level1",
@@ -196,7 +196,7 @@ const junkrat: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 8
         },
         order: 2,
         tier: "level1",
@@ -219,7 +219,7 @@ const junkrat: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 1.6666666666666667
         },
         order: 3,
         tier: "level1",
@@ -419,7 +419,7 @@ const junkrat: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 48
+          magicalDamage: 192
         },
         order: 1,
         tier: "level10",
@@ -442,7 +442,7 @@ const junkrat: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 62.333333333333336
+          magicalDamage: 249.33333333333334
         },
         order: 2,
         tier: "level10",
@@ -473,7 +473,7 @@ const junkrat: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 2
         },
         order: 1,
         tier: "level13",
@@ -720,9 +720,9 @@ const junkrat: Hero = {
   analysis: {
     tankiness: 42.93785310734463,
     physicalDamage: 60,
-    mobility: 24.199,
+    mobility: 17.38446396885035,
     healing: 0,
-    magicalDamage: 70.89916462362662
+    magicalDamage: 71.91359075637884
   }
 };
       
