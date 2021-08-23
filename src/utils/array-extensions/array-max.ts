@@ -1,6 +1,6 @@
 declare global {
-  interface Array<T extends number> {
-    max(): number | undefined;
+  interface Array<T> {
+    max(): T | undefined;
   }
 }
 
