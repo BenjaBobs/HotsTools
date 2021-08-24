@@ -57,7 +57,7 @@ const murky: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 296
+        magicalDamage: 222
       }
     },
     {
@@ -75,7 +75,7 @@ const murky: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 3.3333333333333335
+        magicalDamage: 10
       }
     },
     {
@@ -111,7 +111,7 @@ const murky: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 36.66666666666667
+        magicalDamage: 35
       }
     },
     {
@@ -243,9 +243,9 @@ const murky: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 2,
         tier: "level4",
@@ -340,7 +340,7 @@ const murky: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.8666666666666667
+          magicalDamage: 1.4000000000000001
         },
         order: 3,
         tier: "level7"
@@ -362,7 +362,7 @@ const murky: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 36.66666666666667
+          magicalDamage: 35
         },
         order: 1,
         tier: "level10",
@@ -455,7 +455,7 @@ const murky: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.6666666666666667,
+          healing: 5,
           magicalDamage: 0
         },
         order: 3,
@@ -640,9 +640,9 @@ const murky: Hero = {
   analysis: {
     tankiness: 21.99623352165725,
     physicalDamage: 37.49999999999999,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 37.18332879324435
+    magicalDamage: 39.39662217379461
   }
 };
       

@@ -72,7 +72,7 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 291
+        magicalDamage: 218.25
       }
     },
     {
@@ -94,7 +94,7 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 44
+        magicalDamage: 33
       }
     },
     {
@@ -116,7 +116,7 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 44
+        magicalDamage: 33
       }
     },
     {
@@ -138,7 +138,7 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22.4
+        magicalDamage: 16.8
       }
     },
     {
@@ -160,7 +160,7 @@ const hanzo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 34.666666666666664
+        magicalDamage: 26
       }
     }
   ],
@@ -255,7 +255,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4
+          magicalDamage: 12
         },
         order: 1,
         tier: "level4",
@@ -278,7 +278,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.666666666666667
+          magicalDamage: 20
         },
         order: 2,
         tier: "level4",
@@ -401,7 +401,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 22.4
+          magicalDamage: 16.8
         },
         order: 1,
         tier: "level10",
@@ -428,7 +428,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 34.666666666666664
+          magicalDamage: 26
         },
         order: 2,
         tier: "level10",
@@ -501,7 +501,7 @@ const hanzo: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_grabthereins.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 1,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -628,7 +628,7 @@ const hanzo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 35.2
+          magicalDamage: 26.400000000000002
         },
         order: 2,
         tier: "level20",
@@ -696,9 +696,9 @@ const hanzo: Hero = {
   analysis: {
     tankiness: 41.431261770244824,
     physicalDamage: 66,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 48.257173340597475
+    magicalDamage: 48.25717334059748
   }
 };
       

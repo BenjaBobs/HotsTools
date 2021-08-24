@@ -42,7 +42,7 @@ const garrosh: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 0.2,
         healing: 0,
         magicalDamage: 0
       }
@@ -66,7 +66,7 @@ const garrosh: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 40.5
+        magicalDamage: 30.375
       }
     },
     {
@@ -93,8 +93,8 @@ const garrosh: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0.8333333333333333,
-        magicalDamage: 52
+        healing: 27.5,
+        magicalDamage: 39
       }
     },
     {
@@ -116,7 +116,7 @@ const garrosh: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 24.266666666666666
+        magicalDamage: 18.2
       }
     },
     {
@@ -166,7 +166,7 @@ const garrosh: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 37.5
+        magicalDamage: 56.25
       }
     }
   ],
@@ -187,7 +187,7 @@ const garrosh: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 44
+          magicalDamage: 33
         },
         order: 1,
         tier: "level1",
@@ -239,8 +239,8 @@ const garrosh: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
-          magicalDamage: 29.599999999999998
+          healing: 6,
+          magicalDamage: 22.200000000000003
         },
         order: 3,
         tier: "level1"
@@ -456,7 +456,7 @@ const garrosh: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 37.5
+          magicalDamage: 56.25
         },
         order: 2,
         tier: "level10",
@@ -509,7 +509,7 @@ const garrosh: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1,
+          healing: 3,
           magicalDamage: 0
         },
         order: 2,
@@ -662,7 +662,7 @@ const garrosh: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 8
         },
         order: 2,
         tier: "level20",
@@ -716,7 +716,7 @@ const garrosh: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3,
+          healing: 9,
           magicalDamage: 0
         },
         order: 4,
@@ -733,9 +733,9 @@ const garrosh: Hero = {
   analysis: {
     tankiness: 62.071563088512235,
     physicalDamage: 57.08333333333334,
-    mobility: 17.38446396885035,
-    healing: 0.1648424106554134,
-    magicalDamage: 17.071869608644327
+    mobility: 24.006944444444446,
+    healing: 6.680432406170291,
+    magicalDamage: 21.221794697176065
   }
 };
       

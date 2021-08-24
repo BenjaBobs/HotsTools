@@ -57,7 +57,7 @@ const fenix: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 45
+        magicalDamage: 33.75
       }
     },
     {
@@ -72,7 +72,7 @@ const fenix: Hero = {
       isPassive: false,
       analysis: {
         mobility: 0,
-        physicalDamage: 0,
+        physicalDamage: 30,
         tankiness: 0,
         healing: 0,
         magicalDamage: 0
@@ -111,7 +111,7 @@ const fenix: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 29.866666666666667
+        magicalDamage: 22.400000000000002
       }
     },
     {
@@ -129,7 +129,7 @@ const fenix: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 21.066666666666666
+        magicalDamage: 15.8
       }
     }
   ],
@@ -174,7 +174,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 30
         },
         order: 2,
         tier: "level1",
@@ -198,7 +198,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.3333333333333335
+          magicalDamage: 7
         },
         order: 3,
         tier: "level1",
@@ -266,7 +266,7 @@ const fenix: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_fenix_shield_1.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 3,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -295,7 +295,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.3333333333333335
+          magicalDamage: 7
         },
         order: 1,
         tier: "level7",
@@ -315,7 +315,7 @@ const fenix: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 0.8,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -366,7 +366,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 21.066666666666666
+          magicalDamage: 15.8
         },
         order: 1,
         tier: "level10",
@@ -389,7 +389,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 29.866666666666667
+          magicalDamage: 22.400000000000002
         },
         order: 2,
         tier: "level10",
@@ -412,7 +412,7 @@ const fenix: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -435,7 +435,7 @@ const fenix: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 6,
           healing: 0,
           magicalDamage: 0
         },
@@ -459,7 +459,7 @@ const fenix: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 3,
@@ -531,7 +531,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.3333333333333333
+          magicalDamage: 4
         },
         order: 2,
         tier: "level16",
@@ -602,7 +602,7 @@ const fenix: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 21.066666666666666
+          magicalDamage: 15.8
         },
         order: 2,
         tier: "level20",
@@ -662,9 +662,9 @@ const fenix: Hero = {
   analysis: {
     tankiness: 34.3502824858757,
     physicalDamage: 30.74074074074074,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 10.616430582039408
+    magicalDamage: 10.61643058203941
   }
 };
       

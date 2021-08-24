@@ -66,7 +66,7 @@ const zuljin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 62.5
+        magicalDamage: 46.875
       }
     },
     {
@@ -88,7 +88,7 @@ const zuljin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 44.800000000000004
+        magicalDamage: 33.6
       }
     },
     {
@@ -154,7 +154,7 @@ const zuljin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 88
+        magicalDamage: 66
       }
     }
   ],
@@ -244,7 +244,7 @@ const zuljin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 5,
           magicalDamage: 0
         },
         order: 1,
@@ -289,7 +289,7 @@ const zuljin: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 3,
           healing: 0,
           magicalDamage: 0
         },
@@ -360,7 +360,7 @@ const zuljin: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 8,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -420,7 +420,7 @@ const zuljin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 88
+          magicalDamage: 66
         },
         order: 2,
         tier: "level10",
@@ -553,7 +553,7 @@ const zuljin: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 1,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -577,7 +577,7 @@ const zuljin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 0.2,
           magicalDamage: 0
         },
         order: 1,
@@ -604,7 +604,7 @@ const zuljin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5
+          magicalDamage: 15
         },
         order: 2,
         tier: "level20",
@@ -663,7 +663,7 @@ const zuljin: Hero = {
   analysis: {
     tankiness: 56.49717514124294,
     physicalDamage: 58.75,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
     magicalDamage: 21.61280986107328
   }

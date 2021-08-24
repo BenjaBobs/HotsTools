@@ -5,13 +5,18 @@ import React from 'react';
 import Overlay from '../overlay/overlay';
 
 export default function Hexagon(props: {
+  className?: string;
   fallback?: string;
   src?: string;
   onClick?: () => void;
   style?: React.CSSProperties;
 }) {
   return (
-    <Overlay style={props.style} className="hexagon" onClick={props.onClick}>
+    <Overlay
+      style={props.style}
+      className={`hexagon ${props.className}`}
+      onClick={props.onClick}
+    >
       {props.src ? (
         <img className="hexagon-img" alt="" src={props.src} />
       ) : (

@@ -2,7 +2,7 @@ import { GetPatchVersions } from './fetching/HeroesPatchNotes_HeroesPatchData';
 import { GetLatestGameStrings } from './fetching/HeroesToolChest_GameStrings';
 import { GetLatestHeroData } from './fetching/HeroesToolChest_HeroData';
 import { CreateHeroesFromFetchedData } from './mapping/CreateHeroesFromFetchedData';
-import { SerializeHeroData } from './serializing/SerializeHeroData';
+import SerializeHeroData from './serializing/SerializeHeroData';
 
 console.log('Fetching patch info...');
 

@@ -132,7 +132,7 @@ const liming: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 160
+        magicalDamage: 96
       }
     },
     {
@@ -154,7 +154,7 @@ const liming: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 53.333333333333336
+        magicalDamage: 32
       }
     }
   ],
@@ -173,7 +173,7 @@ const liming: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -198,7 +198,7 @@ const liming: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0.6666666666666666
+          magicalDamage: 2
         },
         order: 2,
         tier: "level1",
@@ -317,7 +317,7 @@ const liming: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 37.333333333333336
+          magicalDamage: 28
         },
         order: 1,
         tier: "level7",
@@ -392,7 +392,7 @@ const liming: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 160
+          magicalDamage: 96
         },
         order: 1,
         tier: "level10",
@@ -419,7 +419,7 @@ const liming: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 53.333333333333336
+          magicalDamage: 32
         },
         order: 2,
         tier: "level10",
@@ -694,9 +694,9 @@ const liming: Hero = {
   analysis: {
     tankiness: 38.26741996233521,
     physicalDamage: 31.5,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 45.47856794243167
+    magicalDamage: 48.0469104694452
   }
 };
       

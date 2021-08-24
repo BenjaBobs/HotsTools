@@ -42,7 +42,7 @@ const deckard: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 2,
         healing: 0,
         magicalDamage: 0
       }
@@ -65,7 +65,7 @@ const deckard: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 285,
+        healing: 213.75,
         magicalDamage: 0
       }
     },
@@ -88,7 +88,7 @@ const deckard: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 26.666666666666664
+        magicalDamage: 20
       }
     },
     {
@@ -110,7 +110,7 @@ const deckard: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 40
+        magicalDamage: 30
       }
     },
     {
@@ -160,7 +160,7 @@ const deckard: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5.333333333333333
+        magicalDamage: 4
       }
     }
   ],
@@ -252,7 +252,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 37.333333333333336,
+          healing: 28,
           magicalDamage: 0
         },
         order: 1,
@@ -275,7 +275,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 30.4,
+          healing: 25.8,
           magicalDamage: 0
         },
         order: 2,
@@ -298,7 +298,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 66.66666666666667,
+          healing: 52.6,
           magicalDamage: 0
         },
         order: 3,
@@ -369,7 +369,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 20,
           magicalDamage: 0
         },
         order: 3,
@@ -432,7 +432,7 @@ const deckard: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.333333333333333
+          magicalDamage: 4
         },
         order: 2,
         tier: "level10",
@@ -456,7 +456,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8.333333333333334,
+          healing: 25.4,
           magicalDamage: 0
         },
         order: 1,
@@ -479,7 +479,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 15,
           magicalDamage: 0
         },
         order: 2,
@@ -502,8 +502,8 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
-          magicalDamage: 16.53333333333333
+          healing: 12.4,
+          magicalDamage: 12.4
         },
         order: 3,
         tier: "level13",
@@ -528,7 +528,7 @@ const deckard: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 13.333333333333334
+          magicalDamage: 40
         },
         order: 1,
         tier: "level16",
@@ -654,7 +654,7 @@ const deckard: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 1.6,
           magicalDamage: 0
         },
         order: 3,
@@ -691,9 +691,9 @@ const deckard: Hero = {
   analysis: {
     tankiness: 53.634651600753294,
     physicalDamage: 28.636363636363633,
-    mobility: 17.38446396885035,
-    healing: 56.376104444151395,
-    magicalDamage: 7.96785616998093
+    mobility: 24.006944444444446,
+    healing: 51.92517915705089,
+    magicalDamage: 7.967856169980933
   }
 };
       

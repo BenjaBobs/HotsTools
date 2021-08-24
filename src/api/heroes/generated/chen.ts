@@ -66,7 +66,7 @@ const chen: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 96
+        magicalDamage: 72
       }
     },
     {
@@ -88,7 +88,7 @@ const chen: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 40
+        magicalDamage: 30
       }
     },
     {
@@ -138,11 +138,11 @@ const chen: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_wanderingkeg.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 5,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.733333333333333
+        magicalDamage: 11.8
       }
     }
   ],
@@ -162,8 +162,8 @@ const chen: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
-          magicalDamage: 2.6666666666666665
+          healing: 8,
+          magicalDamage: 8
         },
         order: 1,
         tier: "level1",
@@ -186,7 +186,7 @@ const chen: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10,
+          healing: 30,
           magicalDamage: 0
         },
         order: 2,
@@ -210,7 +210,7 @@ const chen: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.23333333333333334,
+          healing: 0.6000000000000001,
           magicalDamage: 0
         },
         order: 3,
@@ -328,7 +328,7 @@ const chen: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_fortifyingbrew.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 10,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -373,11 +373,11 @@ const chen: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_wanderingkeg.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 5,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15.733333333333333
+          magicalDamage: 11.8
         },
         order: 1,
         tier: "level10",
@@ -472,7 +472,7 @@ const chen: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 14.666666666666666
+          magicalDamage: 11
         },
         order: 3,
         tier: "level13",
@@ -567,7 +567,7 @@ const chen: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5
+          magicalDamage: 15
         },
         order: 3,
         tier: "level16",
@@ -588,7 +588,7 @@ const chen: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chen_wanderingkeg.png",
         isPassive: false,
         analysis: {
-          mobility: 70,
+          mobility: 14,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -793,9 +793,9 @@ const chen: Hero = {
   analysis: {
     tankiness: 74.51600753295668,
     physicalDamage: 50,
-    mobility: 17.38446396885035,
+    mobility: 28.96726190476191,
     healing: 0,
-    magicalDamage: 16.791519113774626
+    magicalDamage: 16.79151911377463
   }
 };
       

@@ -65,8 +65,8 @@ const yrel: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 64,
-        magicalDamage: 28
+        healing: 118,
+        magicalDamage: 21
       }
     },
     {
@@ -88,7 +88,7 @@ const yrel: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 25.333333333333332
+        magicalDamage: 19
       }
     },
     {
@@ -110,7 +110,7 @@ const yrel: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 150
+        magicalDamage: 112.5
       }
     },
     {
@@ -131,7 +131,7 @@ const yrel: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
+        healing: 10,
         magicalDamage: 0
       }
     },
@@ -152,7 +152,7 @@ const yrel: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 10,
         healing: 0,
         magicalDamage: 0
       }
@@ -174,7 +174,7 @@ const yrel: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3,
+          healing: 9,
           magicalDamage: 0
         },
         order: 1,
@@ -218,7 +218,7 @@ const yrel: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 27,
           magicalDamage: 0
         },
         order: 3,
@@ -336,7 +336,7 @@ const yrel: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.6666666666666667
+          magicalDamage: 5
         },
         order: 2,
         tier: "level7",
@@ -389,7 +389,7 @@ const yrel: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 10,
           magicalDamage: 0
         },
         order: 1,
@@ -415,7 +415,7 @@ const yrel: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -442,7 +442,7 @@ const yrel: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 8
         },
         order: 1,
         tier: "level13",
@@ -582,7 +582,7 @@ const yrel: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10,
+          healing: 25,
           magicalDamage: 0
         },
         order: 1,
@@ -665,9 +665,9 @@ const yrel: Hero = {
   analysis: {
     tankiness: 80.69303201506591,
     physicalDamage: 59.61538461538461,
-    mobility: 17.38446396885035,
-    healing: 12.65989713833575,
-    magicalDamage: 22.501816035594295
+    mobility: 24.006944444444446,
+    healing: 31.09437629053808,
+    magicalDamage: 22.5018160355943
   }
 };
       

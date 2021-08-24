@@ -51,7 +51,7 @@ const raynor: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8.333333333333334
+        magicalDamage: 25
       }
     },
     {
@@ -73,7 +73,7 @@ const raynor: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 91.1111111111111
+        magicalDamage: 68.33333333333333
       }
     },
     {
@@ -92,7 +92,7 @@ const raynor: Hero = {
       isPassive: false,
       analysis: {
         mobility: 0,
-        physicalDamage: 0,
+        physicalDamage: 2.5,
         tankiness: 0,
         healing: 0,
         magicalDamage: 0
@@ -116,7 +116,7 @@ const raynor: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 1.6666666666666667,
+        healing: 5,
         magicalDamage: 0
       }
     },
@@ -139,7 +139,7 @@ const raynor: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 211.73333333333332
+        magicalDamage: 158.8
       }
     },
     {
@@ -157,7 +157,7 @@ const raynor: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22.4
+        magicalDamage: 16.8
       }
     }
   ],
@@ -178,7 +178,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 1,
         tier: "level1",
@@ -228,7 +228,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0.6666666666666666
+          magicalDamage: 2
         },
         order: 3,
         tier: "level1",
@@ -276,7 +276,7 @@ const raynor: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.2,
+          healing: 0.6000000000000001,
           magicalDamage: 0
         },
         order: 2,
@@ -405,7 +405,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 211.73333333333332
+          magicalDamage: 158.8
         },
         order: 1,
         tier: "level10",
@@ -428,7 +428,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 22.4
+          magicalDamage: 16.8
         },
         order: 2,
         tier: "level10",
@@ -472,7 +472,7 @@ const raynor: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_raynor_inspire.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 2,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -498,7 +498,7 @@ const raynor: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 10,
           magicalDamage: 0
         },
         order: 3,
@@ -524,7 +524,7 @@ const raynor: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6,
+          healing: 10,
           magicalDamage: 0
         },
         order: 1,
@@ -545,7 +545,7 @@ const raynor: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 4,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -648,7 +648,7 @@ const raynor: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 3,
@@ -706,9 +706,9 @@ const raynor: Hero = {
   analysis: {
     tankiness: 43.69114877589453,
     physicalDamage: 61.24999999999999,
-    mobility: 17.38446396885035,
-    healing: 0.3296848213108269,
-    magicalDamage: 36.91527437271103
+    mobility: 24.006944444444446,
+    healing: 1.2146240738491438,
+    magicalDamage: 39.681891098398864
   }
 };
       

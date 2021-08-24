@@ -51,7 +51,7 @@ const lunara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 9.6
+        magicalDamage: 7.2
       }
     },
     {
@@ -91,7 +91,7 @@ const lunara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 80
+        magicalDamage: 60
       }
     },
     {
@@ -159,7 +159,7 @@ const lunara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 49.06666666666666
+        magicalDamage: 36.800000000000004
       }
     },
     {
@@ -187,7 +187,7 @@ const lunara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 72.26666666666667
+        magicalDamage: 54.2
       }
     }
   ],
@@ -303,7 +303,7 @@ const lunara: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.4,
+          healing: 2.4000000000000004,
           magicalDamage: 0
         },
         order: 2,
@@ -375,7 +375,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.666666666666667
+          magicalDamage: 20
         },
         order: 2,
         tier: "level7",
@@ -433,7 +433,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 49.06666666666666
+          magicalDamage: 36.800000000000004
         },
         order: 1,
         tier: "level10",
@@ -466,7 +466,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 72.26666666666667
+          magicalDamage: 54.2
         },
         order: 2,
         tier: "level10",
@@ -535,7 +535,7 @@ const lunara: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -622,7 +622,7 @@ const lunara: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 1.2000000000000002,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -648,7 +648,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4
+          magicalDamage: 12
         },
         order: 4,
         tier: "level16",
@@ -737,7 +737,7 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 8
         },
         order: 3,
         tier: "level20",
@@ -757,7 +757,7 @@ const lunara: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_boundlessstride_a.png",
         isPassive: false,
         analysis: {
-          mobility: 80,
+          mobility: 16,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -774,9 +774,9 @@ const lunara: Hero = {
   analysis: {
     tankiness: 43.08851224105461,
     physicalDamage: 50,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 23.342867520203395
+    magicalDamage: 23.3428675202034
   }
 };
       

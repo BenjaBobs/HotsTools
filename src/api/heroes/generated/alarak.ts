@@ -43,7 +43,7 @@ const alarak: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 6.666666666666667,
+        healing: 20,
         magicalDamage: 0
       }
     },
@@ -88,7 +88,7 @@ const alarak: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16
+        magicalDamage: 12
       }
     },
     {
@@ -110,7 +110,7 @@ const alarak: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 41.33333333333333
+        magicalDamage: 31
       }
     },
     {
@@ -132,7 +132,7 @@ const alarak: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 53.333333333333336
+        magicalDamage: 40
       }
     },
     {
@@ -154,7 +154,7 @@ const alarak: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 73.33333333333333
+        magicalDamage: 55
       }
     }
   ],
@@ -174,7 +174,7 @@ const alarak: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 8,
           magicalDamage: 0
         },
         order: 1,
@@ -401,7 +401,7 @@ const alarak: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 53.333333333333336
+          magicalDamage: 40
         },
         order: 1,
         tier: "level10",
@@ -428,7 +428,7 @@ const alarak: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 73.33333333333333
+          magicalDamage: 55
         },
         order: 2,
         tier: "level10",
@@ -603,7 +603,7 @@ const alarak: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 73.33333333333333
+          magicalDamage: 55
         },
         order: 1,
         tier: "level20",
@@ -633,7 +633,7 @@ const alarak: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 53.333333333333336
+          magicalDamage: 40
         },
         order: 2,
         tier: "level20",
@@ -689,9 +689,9 @@ const alarak: Hero = {
   analysis: {
     tankiness: 58.75706214689266,
     physicalDamage: 90.01440230436869,
-    mobility: 17.38446396885035,
-    healing: 1.3187392852433075,
-    magicalDamage: 20.36229910106238
+    mobility: 24.006944444444446,
+    healing: 4.858496295396575,
+    magicalDamage: 20.362299101062383
   }
 };
       

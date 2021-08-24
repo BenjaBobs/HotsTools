@@ -78,7 +78,7 @@ const zagara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 80
+        magicalDamage: 60
       }
     },
     {
@@ -100,7 +100,7 @@ const zagara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 23.666666666666668
+        magicalDamage: 14.200000000000001
       }
     },
     {
@@ -122,7 +122,7 @@ const zagara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10
+        magicalDamage: 7.5
       }
     },
     {
@@ -245,7 +245,7 @@ const zagara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8.333333333333334
+          magicalDamage: 25
         },
         order: 3,
         tier: "level1"
@@ -287,7 +287,7 @@ const zagara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.2
+          magicalDamage: 6.6000000000000005
         },
         order: 2,
         tier: "level4"
@@ -475,7 +475,7 @@ const zagara: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 12,
           magicalDamage: 0
         },
         order: 1,
@@ -503,7 +503,7 @@ const zagara: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 4,
           healing: 0,
           magicalDamage: 0
         },
@@ -526,7 +526,7 @@ const zagara: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -627,7 +627,7 @@ const zagara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 1,
         tier: "level20",
@@ -714,7 +714,7 @@ const zagara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.3333333333333333
+          magicalDamage: 4
         },
         order: 4,
         tier: "level20",
@@ -727,9 +727,9 @@ const zagara: Hero = {
   analysis: {
     tankiness: 45.19774011299435,
     physicalDamage: 51.87500000000001,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 12.578884046127303
+    magicalDamage: 12.055071279397078
   }
 };
       

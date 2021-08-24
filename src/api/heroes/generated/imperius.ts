@@ -43,8 +43,8 @@ const imperius: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
-        magicalDamage: 1.3333333333333333
+        healing: 4,
+        magicalDamage: 4
       }
     },
     {
@@ -66,7 +66,7 @@ const imperius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 42
+        magicalDamage: 31.5
       }
     },
     {
@@ -88,7 +88,7 @@ const imperius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 55
+        magicalDamage: 41.25
       }
     },
     {
@@ -109,7 +109,7 @@ const imperius: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 4.166666666666666,
+        healing: 0,
         magicalDamage: 0
       }
     },
@@ -132,7 +132,7 @@ const imperius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 37.333333333333336
+        magicalDamage: 28
       }
     },
     {
@@ -154,7 +154,7 @@ const imperius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 100
+        magicalDamage: 75
       }
     }
   ],
@@ -268,7 +268,7 @@ const imperius: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 16,
           magicalDamage: 0
         },
         order: 2,
@@ -290,8 +290,8 @@ const imperius: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
+          tankiness: 2,
+          healing: 2,
           magicalDamage: 0
         },
         order: 3,
@@ -317,7 +317,7 @@ const imperius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 40
+          magicalDamage: 30
         },
         order: 1,
         tier: "level7",
@@ -340,7 +340,7 @@ const imperius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 49.333333333333336
+          magicalDamage: 37
         },
         order: 2,
         tier: "level7",
@@ -389,7 +389,7 @@ const imperius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 37.333333333333336
+          magicalDamage: 28
         },
         order: 1,
         tier: "level10",
@@ -416,7 +416,7 @@ const imperius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 100
+          magicalDamage: 75
         },
         order: 2,
         tier: "level10",
@@ -486,7 +486,7 @@ const imperius: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.13333333333333333,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 3,
@@ -508,8 +508,8 @@ const imperius: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_q.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
-          physicalDamage: 0,
+          mobility: 1,
+          physicalDamage: 1,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -556,7 +556,7 @@ const imperius: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 5,
           healing: 0,
           magicalDamage: 0
         },
@@ -580,7 +580,7 @@ const imperius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 37.333333333333336
+          magicalDamage: 28
         },
         order: 1,
         tier: "level20",
@@ -653,7 +653,7 @@ const imperius: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -665,9 +665,9 @@ const imperius: Hero = {
   analysis: {
     tankiness: 71.56308851224105,
     physicalDamage: 52.5,
-    mobility: 17.38446396885035,
-    healing: 0.824212053277067,
-    magicalDamage: 26.079973667483884
+    mobility: 24.006944444444446,
+    healing: 0.971699259079315,
+    magicalDamage: 26.522632343593937
   }
 };
       

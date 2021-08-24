@@ -66,7 +66,7 @@ const chromie: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 436.66666666666663
+        magicalDamage: 395
       }
     },
     {
@@ -88,7 +88,7 @@ const chromie: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 61.42857142857142
+        magicalDamage: 46.07142857142857
       }
     },
     {
@@ -257,7 +257,7 @@ const chromie: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timetrap.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.6000000000000001,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -289,7 +289,7 @@ const chromie: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 6,
           healing: 0,
           magicalDamage: 0
         },
@@ -369,7 +369,7 @@ const chromie: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2
+          magicalDamage: 6
         },
         order: 2,
         tier: "level7",
@@ -470,7 +470,7 @@ const chromie: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_aethercannon.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 40,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -678,7 +678,7 @@ const chromie: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_blessing_of_the_bronze.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 7,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -695,9 +695,9 @@ const chromie: Hero = {
   analysis: {
     tankiness: 41.88323917137476,
     physicalDamage: 41,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 55.121544667989774
+    magicalDamage: 65.08136488046594
   }
 };
       

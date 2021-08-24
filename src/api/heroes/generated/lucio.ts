@@ -84,7 +84,7 @@ const lucio: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 60
+        magicalDamage: 45
       }
     },
     {
@@ -123,7 +123,7 @@ const lucio: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 34.46153846153847,
+        healing: 0.6923076923076923,
         magicalDamage: 0
       }
     },
@@ -167,7 +167,7 @@ const lucio: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 61.333333333333336,
+        healing: 62,
         magicalDamage: 0
       }
     }
@@ -235,7 +235,7 @@ const lucio: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 6,
           magicalDamage: 0
         },
         order: 3,
@@ -355,8 +355,8 @@ const lucio: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
-          magicalDamage: 13.333333333333334
+          healing: 10,
+          magicalDamage: 10
         },
         order: 2,
         tier: "level7",
@@ -377,7 +377,7 @@ const lucio: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 1,
           healing: 0,
           magicalDamage: 0
         },
@@ -431,7 +431,7 @@ const lucio: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 61.333333333333336,
+          healing: 62,
           magicalDamage: 0
         },
         order: 2,
@@ -499,7 +499,7 @@ const lucio: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_wallride.png",
         isPassive: false,
         analysis: {
-          mobility: 40,
+          mobility: 8,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -527,7 +527,7 @@ const lucio: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.16666666666666666,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 1,
@@ -624,8 +624,8 @@ const lucio: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
-          magicalDamage: 42.666666666666664
+          healing: 32,
+          magicalDamage: 32
         },
         order: 2,
         tier: "level20",
@@ -687,8 +687,8 @@ const lucio: Hero = {
   analysis: {
     tankiness: 43.45009416195856,
     physicalDamage: 9.2,
-    mobility: 17.38446396885035,
-    healing: 18.949269114111527,
+    mobility: 24.006944444444446,
+    healing: 15.229517233646956,
     magicalDamage: 6.639880141650776
   }
 };

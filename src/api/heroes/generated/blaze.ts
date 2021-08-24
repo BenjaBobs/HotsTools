@@ -42,9 +42,9 @@ const blaze: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 8,
         healing: 0,
-        magicalDamage: 10.666666666666666
+        magicalDamage: 8
       }
     },
     {
@@ -66,7 +66,7 @@ const blaze: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 76
+        magicalDamage: 57
       }
     },
     {
@@ -93,8 +93,8 @@ const blaze: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 16.333333333333332,
-        magicalDamage: 5.333333333333333
+        healing: 0.75,
+        magicalDamage: 4
       }
     },
     {
@@ -116,7 +116,7 @@ const blaze: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20.8
+        magicalDamage: 15.6
       }
     },
     {
@@ -138,7 +138,7 @@ const blaze: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 45.333333333333336
+        magicalDamage: 34
       }
     },
     {
@@ -160,7 +160,7 @@ const blaze: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 14.666666666666666
+        magicalDamage: 11
       }
     }
   ],
@@ -177,8 +177,8 @@ const blaze: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_stim_2.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
-          physicalDamage: 0,
+          mobility: 20,
+          physicalDamage: 2,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -422,7 +422,7 @@ const blaze: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 45.333333333333336
+          magicalDamage: 34
         },
         order: 1,
         tier: "level10",
@@ -449,7 +449,7 @@ const blaze: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 14.666666666666666
+          magicalDamage: 11
         },
         order: 2,
         tier: "level10",
@@ -533,7 +533,7 @@ const blaze: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 73.33333333333333
+          magicalDamage: 55
         },
         order: 3,
         tier: "level13",
@@ -580,7 +580,7 @@ const blaze: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 15,
           magicalDamage: 0
         },
         order: 2,
@@ -602,7 +602,7 @@ const blaze: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -678,7 +678,7 @@ const blaze: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4.8
+          magicalDamage: 3.6
         },
         order: 3,
         tier: "level20"
@@ -688,9 +688,9 @@ const blaze: Hero = {
   analysis: {
     tankiness: 87.38229755178907,
     physicalDamage: 27.500000000000004,
-    mobility: 17.38446396885035,
-    healing: 3.230911248846103,
-    magicalDamage: 19.122854807954234
+    mobility: 24.006944444444446,
+    healing: 0.18219361107737156,
+    magicalDamage: 19.122854807954237
   }
 };
       

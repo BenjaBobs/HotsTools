@@ -43,7 +43,7 @@ const stukov: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 120,
+        healing: 90,
         magicalDamage: 0
       }
     },
@@ -65,7 +65,7 @@ const stukov: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 88.80000000000001,
+        healing: 67.8,
         magicalDamage: 0
       }
     },
@@ -88,7 +88,7 @@ const stukov: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 43.2
+        magicalDamage: 32.4
       }
     },
     {
@@ -110,7 +110,7 @@ const stukov: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 59.400000000000006
+        magicalDamage: 55.8
       }
     },
     {
@@ -130,9 +130,9 @@ const stukov: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 10,
         healing: 0,
-        magicalDamage: 50.666666666666664
+        magicalDamage: 38
       }
     },
     {
@@ -160,7 +160,7 @@ const stukov: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12.8
+        magicalDamage: 9.600000000000001
       }
     }
   ],
@@ -181,7 +181,7 @@ const stukov: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 1,
         tier: "level1",
@@ -228,7 +228,7 @@ const stukov: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.666666666666667
+          magicalDamage: 20
         },
         order: 3,
         tier: "level1",
@@ -252,7 +252,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 2.6,
           magicalDamage: 0
         },
         order: 1,
@@ -275,7 +275,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 2,
           magicalDamage: 0
         },
         order: 2,
@@ -298,7 +298,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 6,
           magicalDamage: 0
         },
         order: 3,
@@ -369,7 +369,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.2,
           magicalDamage: 0
         },
         order: 3,
@@ -405,7 +405,7 @@ const stukov: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 12.8
+          magicalDamage: 9.600000000000001
         },
         order: 1,
         tier: "level10",
@@ -430,9 +430,9 @@ const stukov: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
-          magicalDamage: 50.666666666666664
+          magicalDamage: 38
         },
         order: 2,
         tier: "level10",
@@ -527,7 +527,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 66.66666666666667,
+          healing: 50,
           magicalDamage: 0
         },
         order: 1,
@@ -550,7 +550,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.6666666666666665,
+          healing: 8,
           magicalDamage: 0
         },
         order: 2,
@@ -573,7 +573,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.6000000000000001,
           magicalDamage: 0
         },
         order: 3,
@@ -656,7 +656,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 6,
           magicalDamage: 0
         },
         order: 3,
@@ -680,7 +680,7 @@ const stukov: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 61.333333333333336
+          magicalDamage: 46
         },
         order: 4,
         tier: "level20",
@@ -693,9 +693,9 @@ const stukov: Hero = {
   analysis: {
     tankiness: 55.74387947269304,
     physicalDamage: 87,
-    mobility: 17.38446396885035,
-    healing: 41.30291441382039,
-    magicalDamage: 18.37771270316898
+    mobility: 24.006944444444446,
+    healing: 38.33353577067898,
+    magicalDamage: 20.037682738581676
   }
 };
       

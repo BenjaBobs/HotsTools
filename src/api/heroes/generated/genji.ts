@@ -72,7 +72,7 @@ const genji: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 21.666666666666664
+        magicalDamage: 16.25
       }
     },
     {
@@ -94,7 +94,7 @@ const genji: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 14.666666666666666
+        magicalDamage: 11
       }
     },
     {
@@ -116,7 +116,7 @@ const genji: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 63.33333333333333
+        magicalDamage: 47.5
       }
     },
     {
@@ -138,7 +138,7 @@ const genji: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 64
+        magicalDamage: 48
       }
     },
     {
@@ -160,7 +160,7 @@ const genji: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 38.666666666666664
+        magicalDamage: 29
       }
     }
   ],
@@ -177,7 +177,7 @@ const genji: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_swiftstrike.png",
         isPassive: false,
         analysis: {
-          mobility: 30,
+          mobility: 6,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -223,7 +223,7 @@ const genji: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_cyberagility_a.png",
         isPassive: false,
         analysis: {
-          mobility: 25,
+          mobility: 5,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -305,7 +305,7 @@ const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 50.666666666666664
+          magicalDamage: 38
         },
         order: 3,
         tier: "level4",
@@ -425,7 +425,7 @@ const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 64
+          magicalDamage: 48
         },
         order: 1,
         tier: "level10",
@@ -452,7 +452,7 @@ const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 38.666666666666664
+          magicalDamage: 29
         },
         order: 2,
         tier: "level10",
@@ -483,7 +483,7 @@ const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 30.666666666666668
+          magicalDamage: 23
         },
         order: 1,
         tier: "level13",
@@ -554,7 +554,7 @@ const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.2
+          magicalDamage: 6.6000000000000005
         },
         order: 1,
         tier: "level16",
@@ -577,7 +577,7 @@ const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 33.333333333333336
+          magicalDamage: 25
         },
         order: 2,
         tier: "level16",
@@ -721,9 +721,9 @@ const genji: Hero = {
   analysis: {
     tankiness: 50.470809792843696,
     physicalDamage: 22,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 22.39115136656678
+    magicalDamage: 22.391151366566785
   }
 };
       

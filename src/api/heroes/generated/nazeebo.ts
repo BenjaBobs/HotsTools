@@ -66,7 +66,7 @@ const nazeebo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 25
+        magicalDamage: 18.75
       }
     },
     {
@@ -88,7 +88,7 @@ const nazeebo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 8
+        magicalDamage: 6
       }
     },
     {
@@ -116,7 +116,7 @@ const nazeebo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 59.5
+        magicalDamage: 44.625
       }
     },
     {
@@ -138,7 +138,7 @@ const nazeebo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 26.666666666666668
+        magicalDamage: 20
       }
     },
     {
@@ -160,7 +160,7 @@ const nazeebo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 61.333333333333336
+        magicalDamage: 46
       }
     }
   ],
@@ -355,7 +355,7 @@ const nazeebo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.666666666666667
+          magicalDamage: 20
         },
         order: 2,
         tier: "level7",
@@ -413,7 +413,7 @@ const nazeebo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 26.666666666666668
+          magicalDamage: 20
         },
         order: 1,
         tier: "level10",
@@ -440,7 +440,7 @@ const nazeebo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 61.333333333333336
+          magicalDamage: 46
         },
         order: 2,
         tier: "level10",
@@ -492,7 +492,7 @@ const nazeebo: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 8,
           healing: 0,
           magicalDamage: 0
         },
@@ -559,7 +559,7 @@ const nazeebo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 85.06666666666666
+          magicalDamage: 63.800000000000004
         },
         order: 2,
         tier: "level16",
@@ -629,7 +629,7 @@ const nazeebo: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -676,7 +676,7 @@ const nazeebo: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_voodooritual_a.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 10,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -690,9 +690,9 @@ const nazeebo: Hero = {
   analysis: {
     tankiness: 45.258003766478346,
     physicalDamage: 48.888888888888886,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 19.974972759466084
+    magicalDamage: 19.974972759466088
   }
 };
       

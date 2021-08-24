@@ -40,7 +40,7 @@ const valeera: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_vanish.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 0.375,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -88,7 +88,7 @@ const valeera: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 130
+        magicalDamage: 97.5
       }
     },
     {
@@ -126,7 +126,7 @@ const valeera: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 15,
         healing: 0,
         magicalDamage: 0
       }
@@ -144,7 +144,7 @@ const valeera: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 12,
         healing: 0,
         magicalDamage: 0
       }
@@ -277,7 +277,7 @@ const valeera: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 8
         },
         order: 2,
         tier: "level4",
@@ -323,7 +323,7 @@ const valeera: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 4,
@@ -346,7 +346,7 @@ const valeera: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8.333333333333334
+          magicalDamage: 25
         },
         order: 1,
         tier: "level7",
@@ -416,7 +416,7 @@ const valeera: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 12,
           healing: 0,
           magicalDamage: 0
         },
@@ -439,7 +439,7 @@ const valeera: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -537,7 +537,7 @@ const valeera: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 1,
         tier: "level16",
@@ -560,7 +560,7 @@ const valeera: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 2,
         tier: "level16",
@@ -676,7 +676,7 @@ const valeera: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valeera_vanish.png",
         isPassive: false,
         analysis: {
-          mobility: 20,
+          mobility: 4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -694,9 +694,9 @@ const valeera: Hero = {
   analysis: {
     tankiness: 61.67984934086629,
     physicalDamage: 79,
-    mobility: 17.38446396885035,
+    mobility: 24.378968253968257,
     healing: 0,
-    magicalDamage: 14.386406973576682
+    magicalDamage: 14.386406973576685
   }
 };
       

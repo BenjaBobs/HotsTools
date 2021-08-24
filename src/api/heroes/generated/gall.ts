@@ -67,7 +67,7 @@ const gall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 225
+        magicalDamage: 135
       }
     },
     {
@@ -85,7 +85,7 @@ const gall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 105
+        magicalDamage: 63
       }
     },
     {
@@ -103,7 +103,7 @@ const gall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 56
+        magicalDamage: 42
       }
     },
     {
@@ -121,7 +121,7 @@ const gall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 117.66666666666667
+        magicalDamage: 70.60000000000001
       }
     },
     {
@@ -139,7 +139,7 @@ const gall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 23.2
+        magicalDamage: 17.400000000000002
       }
     }
   ],
@@ -156,7 +156,7 @@ const gall: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gall_shove.png",
         isPassive: false,
         analysis: {
-          mobility: 10,
+          mobility: 2,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -254,7 +254,7 @@ const gall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 48
+          magicalDamage: 36
         },
         order: 2,
         tier: "level4",
@@ -303,7 +303,7 @@ const gall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0.8
+          magicalDamage: 2.4000000000000004
         },
         order: 1,
         tier: "level7",
@@ -376,7 +376,7 @@ const gall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 23.2
+          magicalDamage: 17.400000000000002
         },
         order: 1,
         tier: "level10",
@@ -399,7 +399,7 @@ const gall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 117.66666666666667
+          magicalDamage: 70.60000000000001
         },
         order: 2,
         tier: "level10",
@@ -650,9 +650,9 @@ const gall: Hero = {
   analysis: {
     tankiness: 0,
     physicalDamage: 0,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 58.30552528829565
+    magicalDamage: 48.39734858803233
   }
 };
       

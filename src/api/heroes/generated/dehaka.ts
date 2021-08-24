@@ -55,7 +55,7 @@ const dehaka: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 23.200000000000003,
+        healing: 17.4,
         magicalDamage: 0
       }
     },
@@ -70,7 +70,7 @@ const dehaka: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_mount.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 0.4,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -96,7 +96,7 @@ const dehaka: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 42.666666666666664
+        magicalDamage: 32
       }
     },
     {
@@ -118,7 +118,7 @@ const dehaka: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20.8
+        magicalDamage: 15.6
       }
     },
     {
@@ -162,7 +162,7 @@ const dehaka: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 53.333333333333336
+        magicalDamage: 40
       }
     },
     {
@@ -183,7 +183,7 @@ const dehaka: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
+        healing: 0.8,
         magicalDamage: 0
       }
     }
@@ -253,7 +253,7 @@ const dehaka: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_brushstalker.png",
         isPassive: false,
         analysis: {
-          mobility: 2,
+          mobility: 0.4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -283,7 +283,7 @@ const dehaka: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 33.333333333333336
+          magicalDamage: 25
         },
         order: 1,
         tier: "level4",
@@ -311,7 +311,7 @@ const dehaka: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 8
         },
         order: 2,
         tier: "level4",
@@ -389,7 +389,7 @@ const dehaka: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 74.66666666666667
+          magicalDamage: 56
         },
         order: 2,
         tier: "level7",
@@ -442,7 +442,7 @@ const dehaka: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 53.333333333333336
+          magicalDamage: 40
         },
         order: 1,
         tier: "level10",
@@ -468,7 +468,7 @@ const dehaka: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 2,
@@ -494,7 +494,7 @@ const dehaka: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4
+          magicalDamage: 12
         },
         order: 1,
         tier: "level13",
@@ -589,7 +589,7 @@ const dehaka: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_burrow.png",
         isPassive: false,
         analysis: {
-          mobility: 125,
+          mobility: 25,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -613,8 +613,8 @@ const dehaka: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
+          physicalDamage: 1,
+          tankiness: 4,
           healing: 0,
           magicalDamage: 0
         },
@@ -666,7 +666,7 @@ const dehaka: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 40,
           magicalDamage: 0
         },
         order: 2,
@@ -734,8 +734,8 @@ const dehaka: Hero = {
   analysis: {
     tankiness: 73.34086629001884,
     physicalDamage: 62.5,
-    mobility: 17.38446396885035,
-    healing: 4.58921271264671,
+    mobility: 24.403769841269842,
+    healing: 4.421231628810883,
     magicalDamage: 12.925633342413512
   }
 };

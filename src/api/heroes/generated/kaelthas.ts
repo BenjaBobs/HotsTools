@@ -71,7 +71,7 @@ const kaelthas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 197.14285714285714
+        magicalDamage: 147.85714285714286
       }
     },
     {
@@ -93,7 +93,7 @@ const kaelthas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 136.4
+        magicalDamage: 102.3
       }
     },
     {
@@ -137,7 +137,7 @@ const kaelthas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 270
+        magicalDamage: 162
       }
     },
     {
@@ -159,7 +159,7 @@ const kaelthas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20.8
+        magicalDamage: 15.600000000000001
       }
     }
   ],
@@ -208,7 +208,7 @@ const kaelthas: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 2,
@@ -356,7 +356,7 @@ const kaelthas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.3333333333333335
+          magicalDamage: 7
         },
         order: 2,
         tier: "level7",
@@ -384,7 +384,7 @@ const kaelthas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 30.666666666666668
+          magicalDamage: 23
         },
         order: 3,
         tier: "level7",
@@ -414,7 +414,7 @@ const kaelthas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 20.8
+          magicalDamage: 15.600000000000001
         },
         order: 1,
         tier: "level10",
@@ -441,7 +441,7 @@ const kaelthas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 270
+          magicalDamage: 162
         },
         order: 2,
         tier: "level10",
@@ -704,9 +704,9 @@ const kaelthas: Hero = {
   analysis: {
     tankiness: 45.80037664783427,
     physicalDamage: 36.11111111111111,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 69.09269564540608
+    magicalDamage: 63.11680351792038
   }
 };
       

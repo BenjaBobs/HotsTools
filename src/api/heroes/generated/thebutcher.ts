@@ -70,7 +70,7 @@ const thebutcher: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 110
+        magicalDamage: 82.5
       }
     },
     {
@@ -91,8 +91,8 @@ const thebutcher: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 5.357142857142857,
-        magicalDamage: 10.571428571428571
+        healing: 0.8571428571428571,
+        magicalDamage: 7.928571428571428
       }
     },
     {
@@ -110,7 +110,7 @@ const thebutcher: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_butcher_fullboar.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 0.2,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -136,7 +136,7 @@ const thebutcher: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 133.33333333333334
+        magicalDamage: 100
       }
     },
     {
@@ -158,7 +158,7 @@ const thebutcher: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 45.6
+        magicalDamage: 34.2
       }
     }
   ],
@@ -200,7 +200,7 @@ const thebutcher: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -340,7 +340,7 @@ const thebutcher: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 1,
           magicalDamage: 0
         },
         order: 2,
@@ -362,7 +362,7 @@ const thebutcher: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -393,7 +393,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 133.33333333333334
+          magicalDamage: 100
         },
         order: 1,
         tier: "level10",
@@ -420,7 +420,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 45.6
+          magicalDamage: 34.2
         },
         order: 2,
         tier: "level10",
@@ -445,7 +445,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.3333333333333335
+          magicalDamage: 7
         },
         order: 1,
         tier: "level13"
@@ -488,7 +488,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1
+          magicalDamage: 3
         },
         order: 3,
         tier: "level13",
@@ -533,7 +533,7 @@ const thebutcher: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 5,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -552,7 +552,7 @@ const thebutcher: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_speed.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.6000000000000001,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -630,7 +630,7 @@ const thebutcher: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.3333333333333333
+          magicalDamage: 4
         },
         order: 3,
         tier: "level20"
@@ -660,8 +660,8 @@ const thebutcher: Hero = {
   analysis: {
     tankiness: 73.01694915254237,
     physicalDamage: 72.22222222222221,
-    mobility: 17.38446396885035,
-    healing: 1.0597012113562292,
+    mobility: 24.205357142857146,
+    healing: 0.20822126980271036,
     magicalDamage: 33.14459534835454
   }
 };

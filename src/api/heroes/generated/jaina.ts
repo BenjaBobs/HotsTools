@@ -66,7 +66,7 @@ const jaina: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 184
+        magicalDamage: 138
       }
     },
     {
@@ -88,7 +88,7 @@ const jaina: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 37.86666666666667
+        magicalDamage: 28.400000000000002
       }
     },
     {
@@ -110,7 +110,7 @@ const jaina: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 88
+        magicalDamage: 66
       }
     },
     {
@@ -132,7 +132,7 @@ const jaina: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 16.53333333333333
+        magicalDamage: 12.4
       }
     },
     {
@@ -154,7 +154,7 @@ const jaina: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 82.66666666666667
+        magicalDamage: 62
       }
     }
   ],
@@ -291,7 +291,7 @@ const jaina: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -361,7 +361,7 @@ const jaina: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 3,
         tier: "level7",
@@ -390,7 +390,7 @@ const jaina: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 82.66666666666667
+          magicalDamage: 62
         },
         order: 1,
         tier: "level10",
@@ -417,7 +417,7 @@ const jaina: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16.53333333333333
+          magicalDamage: 12.4
         },
         order: 2,
         tier: "level10",
@@ -581,7 +581,7 @@ const jaina: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 82.66666666666667
+          magicalDamage: 62
         },
         order: 1,
         tier: "level20",
@@ -666,9 +666,9 @@ const jaina: Hero = {
   analysis: {
     tankiness: 41.12994350282486,
     physicalDamage: 30,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 45.26922727685462
+    magicalDamage: 45.269227276854636
   }
 };
       

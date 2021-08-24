@@ -66,7 +66,7 @@ const nova: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 153.33333333333331
+        magicalDamage: 115
       }
     },
     {
@@ -94,7 +94,7 @@ const nova: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 33.33333333333333
+        magicalDamage: 25
       }
     },
     {
@@ -116,7 +116,7 @@ const nova: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0.6666666666666666
+        magicalDamage: 2
       }
     },
     {
@@ -166,7 +166,7 @@ const nova: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 116
+        magicalDamage: 87
       }
     }
   ],
@@ -241,7 +241,7 @@ const nova: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nova_personalcloaking.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -367,7 +367,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4
+          magicalDamage: 12
         },
         order: 2,
         tier: "level7",
@@ -390,7 +390,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16.666666666666668
+          magicalDamage: 50
         },
         order: 3,
         tier: "level7",
@@ -452,7 +452,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 116
+          magicalDamage: 87
         },
         order: 2,
         tier: "level10",
@@ -527,7 +527,7 @@ const nova: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 5,
           healing: 0,
           magicalDamage: 0
         },
@@ -554,7 +554,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6
+          magicalDamage: 18
         },
         order: 1,
         tier: "level16",
@@ -606,7 +606,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2
+          magicalDamage: 6
         },
         order: 3,
         tier: "level16",
@@ -722,9 +722,9 @@ const nova: Hero = {
   analysis: {
     tankiness: 39.1713747645951,
     physicalDamage: 52.5,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 33.56828293834558
+    magicalDamage: 33.78961227640062
   }
 };
       

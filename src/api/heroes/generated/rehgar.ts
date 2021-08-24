@@ -44,7 +44,7 @@ const rehgar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 5
+        magicalDamage: 15
       }
     },
     {
@@ -58,7 +58,7 @@ const rehgar: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_mount.png",
       isPassive: false,
       analysis: {
-        mobility: 20,
+        mobility: 15,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -83,7 +83,7 @@ const rehgar: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 130,
+        healing: 97.5,
         magicalDamage: 0
       }
     },
@@ -106,7 +106,7 @@ const rehgar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 32
+        magicalDamage: 24
       }
     },
     {
@@ -149,7 +149,7 @@ const rehgar: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 2,
+        healing: 7,
         magicalDamage: 0
       }
     },
@@ -171,7 +171,7 @@ const rehgar: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 314.6666666666667,
+        healing: 0.2,
         magicalDamage: 0
       }
     }
@@ -192,7 +192,7 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 5,
           magicalDamage: 0
         },
         order: 1,
@@ -235,7 +235,7 @@ const rehgar: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
         isPassive: false,
         analysis: {
-          mobility: 20,
+          mobility: 4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -311,7 +311,7 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.13333333333333333,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 3,
@@ -403,7 +403,7 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 314.6666666666667,
+          healing: 0.2,
           magicalDamage: 0
         },
         order: 1,
@@ -430,7 +430,7 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 7,
           magicalDamage: 0
         },
         order: 2,
@@ -455,7 +455,7 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 26,
           magicalDamage: 0
         },
         order: 1,
@@ -478,7 +478,7 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 63.333333333333336,
+          healing: 55,
           magicalDamage: 0
         },
         order: 2,
@@ -572,7 +572,7 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 1,
           magicalDamage: 0
         },
         order: 3,
@@ -598,7 +598,7 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 157.33333333333334,
+          healing: 118.2,
           magicalDamage: 0
         },
         order: 1,
@@ -681,9 +681,9 @@ const rehgar: Hero = {
   analysis: {
     tankiness: 60.263653483992464,
     physicalDamage: 66.25,
-    mobility: 31.752383278615504,
-    healing: 88.3555321113016,
-    magicalDamage: 4.094592754017978
+    mobility: 38.88789682539682,
+    healing: 25.43422810640107,
+    magicalDamage: 5.754562789430674
   }
 };
       

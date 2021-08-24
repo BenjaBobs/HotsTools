@@ -44,7 +44,7 @@ const leoric: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15
+        magicalDamage: 45
       }
     },
     {
@@ -87,7 +87,7 @@ const leoric: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 2,
+        healing: 6,
         magicalDamage: 0
       }
     },
@@ -106,7 +106,7 @@ const leoric: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_leoric_wraithwalk.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 10.714285714285714,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -153,7 +153,7 @@ const leoric: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
+        healing: 2.4000000000000004,
         magicalDamage: 0
       }
     }
@@ -174,7 +174,7 @@ const leoric: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 1,
@@ -220,7 +220,7 @@ const leoric: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 6,
           magicalDamage: 0
         },
         order: 3,
@@ -289,7 +289,7 @@ const leoric: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5
+          magicalDamage: 15
         },
         order: 3,
         tier: "level4",
@@ -313,7 +313,7 @@ const leoric: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.6666666666666667,
+          healing: 6,
           magicalDamage: 0
         },
         order: 1,
@@ -334,7 +334,7 @@ const leoric: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_leoric_drainhope_var1.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 6,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -416,7 +416,7 @@ const leoric: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 2.4000000000000004,
           magicalDamage: 0
         },
         order: 2,
@@ -465,7 +465,7 @@ const leoric: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 2,
         tier: "level13",
@@ -556,7 +556,7 @@ const leoric: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 4,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -635,9 +635,9 @@ const leoric: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 8,
           healing: 0,
-          magicalDamage: 10.666666666666666
+          magicalDamage: 8
         },
         order: 3,
         tier: "level20",
@@ -670,9 +670,9 @@ const leoric: Hero = {
   analysis: {
     tankiness: 76.83615819209038,
     physicalDamage: 44.23076923076923,
-    mobility: 17.38446396885035,
-    healing: 0.3956217855729922,
-    magicalDamage: 7.884857668210296
+    mobility: 34.636196145124714,
+    healing: 2.0405684440665617,
+    magicalDamage: 14.939730318714247
   }
 };
       

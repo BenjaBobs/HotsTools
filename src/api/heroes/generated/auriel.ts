@@ -62,7 +62,7 @@ const auriel: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20
+        magicalDamage: 15
       }
     },
     {
@@ -98,7 +98,7 @@ const auriel: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 18.333333333333332
+        magicalDamage: 13.75
       }
     },
     {
@@ -134,7 +134,7 @@ const auriel: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 68
+        magicalDamage: 51
       }
     }
   ],
@@ -416,7 +416,7 @@ const auriel: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 68
+          magicalDamage: 51
         },
         order: 2,
         tier: "level10",
@@ -579,7 +579,7 @@ const auriel: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_auriel_resurrect.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.8,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -666,9 +666,9 @@ const auriel: Hero = {
   analysis: {
     tankiness: 51.2241054613936,
     physicalDamage: 40,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 11.767343139925542
+    magicalDamage: 11.767343139925543
   }
 };
       

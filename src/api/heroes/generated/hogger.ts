@@ -44,7 +44,7 @@ const hogger: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 27.2
+        magicalDamage: 20.400000000000002
       }
     },
     {
@@ -62,7 +62,7 @@ const hogger: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 96.66666666666666
+        magicalDamage: 72.5
       }
     },
     {
@@ -98,7 +98,7 @@ const hogger: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12.571428571428571
+        magicalDamage: 9.428571428571429
       }
     },
     {
@@ -116,7 +116,7 @@ const hogger: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 26.666666666666668
+        magicalDamage: 20
       }
     },
     {
@@ -154,7 +154,7 @@ const hogger: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.5333333333333333,
+          healing: 1.6,
           magicalDamage: 0
         },
         order: 1,
@@ -177,7 +177,7 @@ const hogger: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 2,
           healing: 0,
           magicalDamage: 0
         },
@@ -201,7 +201,7 @@ const hogger: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.1333333333333333,
+          healing: 6,
           magicalDamage: 0
         },
         order: 3,
@@ -270,7 +270,7 @@ const hogger: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 10,
           magicalDamage: 0
         },
         order: 3,
@@ -290,7 +290,7 @@ const hogger: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 6,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -366,7 +366,7 @@ const hogger: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 26.666666666666668
+          magicalDamage: 20
         },
         order: 1,
         tier: "level10",
@@ -412,7 +412,7 @@ const hogger: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 4,
           healing: 0,
           magicalDamage: 0
         },
@@ -459,7 +459,7 @@ const hogger: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.2,
+          healing: 6.6000000000000005,
           magicalDamage: 0
         },
         order: 3,
@@ -509,7 +509,7 @@ const hogger: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 2,
         tier: "level16",
@@ -528,7 +528,7 @@ const hogger: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -641,9 +641,9 @@ const hogger: Hero = {
   analysis: {
     tankiness: 68.09792843691149,
     physicalDamage: 54.54545454545454,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 18.049934493001775
+    magicalDamage: 18.04993449300178
   }
 };
       

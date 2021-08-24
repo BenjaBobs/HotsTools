@@ -49,7 +49,7 @@ const cassia: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 6,
         healing: 0,
         magicalDamage: 0
       }
@@ -79,7 +79,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 252.8
+        magicalDamage: 189.6
       }
     },
     {
@@ -101,7 +101,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 13.333333333333334
+        magicalDamage: 10
       }
     },
     {
@@ -123,7 +123,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 30.6
+        magicalDamage: 34.2
       }
     },
     {
@@ -145,7 +145,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 48
+        magicalDamage: 36
       }
     },
     {
@@ -167,7 +167,7 @@ const cassia: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 60
+        magicalDamage: 45
       }
     }
   ],
@@ -218,7 +218,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 2,
         tier: "level1",
@@ -238,10 +238,10 @@ const cassia: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 0.6000000000000001,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1
+          magicalDamage: 3
         },
         order: 3,
         tier: "level1"
@@ -286,7 +286,7 @@ const cassia: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1,
+          healing: 3,
           magicalDamage: 0
         },
         order: 2,
@@ -306,7 +306,7 @@ const cassia: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.6666666666666667,
+          healing: 5,
           magicalDamage: 0
         },
         order: 3,
@@ -385,7 +385,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 58.666666666666664
+          magicalDamage: 44
         },
         order: 3,
         tier: "level7",
@@ -414,7 +414,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 48
+          magicalDamage: 36
         },
         order: 1,
         tier: "level10",
@@ -441,7 +441,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 60
+          magicalDamage: 45
         },
         order: 2,
         tier: "level10",
@@ -485,7 +485,7 @@ const cassia: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance_b.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 2,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -647,7 +647,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 53.333333333333336
+          magicalDamage: 40
         },
         order: 2,
         tier: "level20",
@@ -673,7 +673,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.3333333333333333
+          magicalDamage: 4
         },
         order: 3,
         tier: "level20",
@@ -711,9 +711,9 @@ const cassia: Hero = {
   analysis: {
     tankiness: 50.018832391713744,
     physicalDamage: 66.66666666666666,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 44.7896803777354
+    magicalDamage: 46.449650413148106
   }
 };
       

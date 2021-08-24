@@ -194,27 +194,42 @@ function AnalyseAbility(ability: Ability): Analysis {
   // limit cooldown factor to 15s, because otherwise it skews the usefulness
   // since a lot of fights are determined in less than that so no need to calculate
   // the dps of an ability with 90s cooldown
-  const cooldownFactor = 1 / Math.min(ability.cooldown ?? 15, 15);
+  const cooldownFactor = 1 / Math.min((ability.cooldown ?? 15) / 3, 5);
 
-  for (const [, damage] of analyser.FindPatterns('deal', 'value', 'damage')) {
-    if (damage.subtype === 'flat') {
-      analysis.magicalDamage += damage.value * damage.scaling * cooldownFactor;
-    } else if (damage.subtype === 'percentage') {
-      analysis.magicalDamage += damage.percentage * cooldownFactor;
+  for (const [, value] of analyser.FindPatterns('deal', 'value', 'damage')) {
+    if (value.subtype === 'flat') {
+      analysis.magicalDamage +=
+        value.value * (1 + value.scaling) * cooldownFactor;
+    } else if (value.subtype === 'percentage') {
+      analysis.magicalDamage += value.percentage * cooldownFactor;
     }
   }
 
-  for (const match of analyser.FindPatterns(
-    'increase',
+  for (const [, value] of analyser.FindPatterns('gain', 'value', 'armor')) {
+    if (value.subtype === 'flat') {
+      analysis.tankiness += value.value * (1 + value.scaling) * cooldownFactor;
+    } else if (value.subtype === 'percentage') {
+      analysis.tankiness += value.percentage * cooldownFactor;
+    }
+  }
+
+  for (const [, , speed, value] of analyser.FindPatterns(
+    ['gain', 'increase'],
     null,
-    'movement speed',
+    'speed',
     'value'
   )) {
-    if (match[3] === undefined) {
-      console.log(match);
-    }
-    if (match[3].subtype === 'percentage') {
-      analysis.mobility += match[3].percentage;
+    const valueFactor =
+      value.subtype === 'percentage'
+        ? value.percentage
+        : value.subtype === 'flat'
+        ? value.value
+        : 0;
+
+    if (speed.subtype === 'movement') {
+      analysis.mobility += valueFactor * cooldownFactor;
+    } else if (speed.subtype === 'attack') {
+      analysis.physicalDamage += valueFactor * cooldownFactor;
     }
   }
 
@@ -225,7 +240,8 @@ function AnalyseAbility(ability: Ability): Analysis {
     'value'
   )) {
     if (healing.subtype === 'flat') {
-      analysis.healing += healing.value * healing.scaling * cooldownFactor;
+      analysis.healing +=
+        healing.value * (1 + healing.scaling) * cooldownFactor;
     } else if (healing.subtype === 'percentage') {
       analysis.healing += healing.percentage * cooldownFactor;
     }

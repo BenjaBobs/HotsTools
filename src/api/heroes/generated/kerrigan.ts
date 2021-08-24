@@ -72,7 +72,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 65
+        magicalDamage: 48.75
       }
     },
     {
@@ -94,7 +94,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 55
+        magicalDamage: 41.25
       }
     },
     {
@@ -116,7 +116,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 88
+        magicalDamage: 66
       }
     },
     {
@@ -138,7 +138,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 70
+        magicalDamage: 60
       }
     },
     {
@@ -160,7 +160,7 @@ const kerrigan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 19.733333333333334
+        magicalDamage: 14.8
       }
     }
   ],
@@ -209,7 +209,7 @@ const kerrigan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -417,7 +417,7 @@ const kerrigan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 19.733333333333334
+          magicalDamage: 14.8
         },
         order: 1,
         tier: "level10",
@@ -444,7 +444,7 @@ const kerrigan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 70
+          magicalDamage: 60
         },
         order: 2,
         tier: "level10",
@@ -687,7 +687,7 @@ const kerrigan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 13.333333333333334
+          magicalDamage: 10
         },
         order: 4,
         tier: "level20"
@@ -697,9 +697,9 @@ const kerrigan: Hero = {
   analysis: {
     tankiness: 53.15254237288135,
     physicalDamage: 71.875,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 32.94856079179152
+    magicalDamage: 34.05520748206665
   }
 };
       

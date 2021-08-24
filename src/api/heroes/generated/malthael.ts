@@ -65,8 +65,8 @@ const malthael: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 50,
-        magicalDamage: 200
+        healing: 156,
+        magicalDamage: 150
       }
     },
     {
@@ -88,7 +88,7 @@ const malthael: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 47.2
+        magicalDamage: 35.4
       }
     },
     {
@@ -218,7 +218,7 @@ const malthael: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malthael_fearthereaper.png",
         isPassive: false,
         analysis: {
-          mobility: 25,
+          mobility: 5,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -244,7 +244,7 @@ const malthael: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 1,
         tier: "level4",
@@ -361,7 +361,7 @@ const malthael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 10,
           magicalDamage: 0
         },
         order: 3,
@@ -440,7 +440,7 @@ const malthael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.31666666666666665,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 1,
@@ -462,7 +462,7 @@ const malthael: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 2,
           healing: 0,
           magicalDamage: 0
         },
@@ -505,7 +505,7 @@ const malthael: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -625,7 +625,7 @@ const malthael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 20,
           magicalDamage: 0
         },
         order: 2,
@@ -685,9 +685,9 @@ const malthael: Hero = {
   analysis: {
     tankiness: 59.1186440677966,
     physicalDamage: 37.27272727272727,
-    mobility: 17.38446396885035,
-    healing: 9.890544639324807,
-    magicalDamage: 27.3563061836012
+    mobility: 24.006944444444446,
+    healing: 37.89627110409329,
+    magicalDamage: 27.356306183601202
   }
 };
       

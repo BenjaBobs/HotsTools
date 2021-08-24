@@ -66,7 +66,7 @@ const valla: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 88
+        magicalDamage: 66
       }
     },
     {
@@ -88,7 +88,7 @@ const valla: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 55
+        magicalDamage: 41.25
       }
     },
     {
@@ -166,7 +166,7 @@ const valla: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 66.66666666666667
+        magicalDamage: 50
       }
     }
   ],
@@ -232,7 +232,7 @@ const valla: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 1,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -261,7 +261,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 26.666666666666668
+          magicalDamage: 20
         },
         order: 1,
         tier: "level4",
@@ -344,7 +344,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 30
         },
         order: 1,
         tier: "level7",
@@ -367,7 +367,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.6666666666666667
+          magicalDamage: 5
         },
         order: 2,
         tier: "level7",
@@ -387,7 +387,7 @@ const valla: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_hatred.png",
         isPassive: false,
         analysis: {
-          mobility: 2,
+          mobility: 0.4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -453,7 +453,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 66.66666666666667
+          magicalDamage: 50
         },
         order: 2,
         tier: "level10",
@@ -477,7 +477,7 @@ const valla: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.26666666666666666,
+          healing: 1.2000000000000002,
           magicalDamage: 0
         },
         order: 1,
@@ -501,7 +501,7 @@ const valla: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 2,
           magicalDamage: 0
         },
         order: 2,
@@ -523,8 +523,8 @@ const valla: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
+          tankiness: 9,
+          healing: 9,
           magicalDamage: 0
         },
         order: 3,
@@ -647,7 +647,7 @@ const valla: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 0.4,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -682,7 +682,7 @@ const valla: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16
+          magicalDamage: 12
         },
         order: 3,
         tier: "level20",
@@ -718,7 +718,7 @@ const valla: Hero = {
   analysis: {
     tankiness: 40.376647834274955,
     physicalDamage: 58.333333333333336,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
     magicalDamage: 23.202692272768548
   }

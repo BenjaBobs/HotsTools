@@ -40,11 +40,11 @@ const tyrael: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrael_archangelswrath.png",
       isPassive: true,
       analysis: {
-        mobility: 0,
+        mobility: 0.8,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 120
+        magicalDamage: 90
       }
     },
     {
@@ -66,7 +66,7 @@ const tyrael: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 36.666666666666664
+        magicalDamage: 27.5
       }
     },
     {
@@ -106,7 +106,7 @@ const tyrael: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrael_smite.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 1,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -132,7 +132,7 @@ const tyrael: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 40
+        magicalDamage: 30
       }
     },
     {
@@ -174,7 +174,7 @@ const tyrael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 37.333333333333336,
+          healing: 8,
           magicalDamage: 0
         },
         order: 1,
@@ -220,7 +220,7 @@ const tyrael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5.3999999999999995,
+          healing: 6.2,
           magicalDamage: 0
         },
         order: 3,
@@ -242,7 +242,7 @@ const tyrael: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 5,
           healing: 0,
           magicalDamage: 0
         },
@@ -267,7 +267,7 @@ const tyrael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.2,
+          healing: 0.6000000000000001,
           magicalDamage: 0
         },
         order: 2,
@@ -291,7 +291,7 @@ const tyrael: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.666666666666667,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 3,
@@ -317,7 +317,7 @@ const tyrael: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 50.666666666666664
+          magicalDamage: 38
         },
         order: 1,
         tier: "level7",
@@ -392,7 +392,7 @@ const tyrael: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 40
+          magicalDamage: 30
         },
         order: 1,
         tier: "level10",
@@ -542,7 +542,7 @@ const tyrael: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4.8
+          magicalDamage: 3.6
         },
         order: 2,
         tier: "level16",
@@ -661,7 +661,7 @@ const tyrael: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -673,9 +673,9 @@ const tyrael: Hero = {
   analysis: {
     tankiness: 75.84180790960453,
     physicalDamage: 48.75,
-    mobility: 17.38446396885035,
+    mobility: 25.792658730158735,
     healing: 0,
-    magicalDamage: 21.764051575410875
+    magicalDamage: 21.764051575410882
   }
 };
       

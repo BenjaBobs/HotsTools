@@ -1,11 +1,13 @@
 import '../../src/utils/ArrayExtensions';
 
 class TextAnalyser {
+  private debug: boolean;
   private text: string;
   private currentIndex = 0;
 
-  constructor(text: string) {
+  constructor(text: string, debug: boolean = false) {
     this.text = text.toLowerCase();
+    this.debug = debug;
   }
 
   ResetIndex() {
@@ -49,6 +51,8 @@ class TextAnalyser {
 
     this.ResetIndex();
 
+    const minimumPatternLength = pattern.filter(x => x).length;
+
     while (true) {
       const token = this.FindNextToken();
       if (!token) break;
@@ -59,6 +63,12 @@ class TextAnalyser {
         // remove from end
         movingContext.shift();
       }
+
+      if (this.debug)
+        console.log(
+          'context',
+          movingContext.map(x => x.data.type)
+        );
 
       let isMatch = true;
       const matched: { type: string | null }[] = [];
@@ -96,17 +106,6 @@ class TextAnalyser {
               const patternDiff = nextNonNullIdx - pIdx;
               const contextDiff = nextContextMatchIdx - cIdx;
 
-              // console.log('lala', {
-              //   pIdx,
-              //   patternDiff,
-              //   nextNonNullIdx,
-              //   pattern,
-              //   cIdx,
-              //   contextDiff,
-              //   nextContextMatchIdx,
-              //   ctx: movingContext.map(x => x.data.type),
-              // });
-
               for (
                 let nullMatches = 0;
                 nullMatches < patternDiff;
@@ -128,13 +127,24 @@ class TextAnalyser {
             cIdx++;
           }
         } else {
-          isMatch = false;
-          break;
+          if (movingContext.length - cIdx < minimumPatternLength) {
+            isMatch = false;
+            break;
+          } else {
+            cIdx++;
+            pIdx--;
+          }
         }
       }
 
       // check if the pattern matches
       if (isMatch) {
+        if (this.debug)
+          console.log(
+            'match found!',
+            matched.map(x => x.type)
+          );
+
         // it did match, so now we can safely type cast as the pattern match
         patternMatches.push(matched as any as TokenPatternMatchData<TPattern>);
 
@@ -200,7 +210,7 @@ function Match(string: string) {
 
 const matchers = [
   (text: string) => {
-    const match = text.match(/(\d+) \(\+(\d+(\.\d+)?)% \/ level\)/);
+    const match = text.match(/(\d+) ?(\(\+(\d+(\.\d+)?)% \/ level\))?/);
 
     return !match
       ? null
@@ -211,7 +221,7 @@ const matchers = [
             type: 'value' as 'value',
             subtype: 'flat' as 'flat',
             value: parseInt(match[1]),
-            scaling: parseInt(match[2]),
+            scaling: parseInt(match[2]) || 0,
           },
         };
   },
@@ -396,6 +406,20 @@ const matchers = [
         };
   },
   (text: string) => {
+    const match = text.match(/gain?/);
+
+    return !match
+      ? null
+      : {
+          indexStart: match.index!,
+          indexEnd: match.index! + match[0].length,
+          data: {
+            type: 'gain' as 'gain',
+            keyword: match[0],
+          },
+        };
+  },
+  (text: string) => {
     const match = text.match(/increases?/);
 
     return !match
@@ -424,7 +448,7 @@ const matchers = [
         };
   },
   (text: string) => {
-    const match = text.match(/movement speed/);
+    const match = text.match(/(movement|attack)? ?speed/);
 
     return !match
       ? null
@@ -432,7 +456,31 @@ const matchers = [
           indexStart: match.index!,
           indexEnd: match.index! + match[0].length,
           data: {
-            type: 'movement speed' as 'movement speed',
+            type: 'speed' as 'speed',
+            subtype: match.includes('movement')
+              ? ('movement' as 'movement')
+              : match.includes('attack')
+              ? ('attack' as 'attack')
+              : ('speed' as 'speed'),
+            keyword: match[0],
+          },
+        };
+  },
+  (text: string) => {
+    const match = text.match(/(physical|spell)? ?armor/);
+
+    return !match
+      ? null
+      : {
+          indexStart: match.index!,
+          indexEnd: match.index! + match[0].length,
+          data: {
+            type: 'armor' as 'armor',
+            subtype: match.includes('physical')
+              ? ('physical' as 'physical')
+              : match.includes('spell')
+              ? ('spell' as 'spell')
+              : ('armor' as 'armor'),
             keyword: match[0],
           },
         };

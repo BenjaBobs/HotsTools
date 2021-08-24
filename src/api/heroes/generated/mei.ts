@@ -138,7 +138,7 @@ const mei: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 58.666666666666664
+        magicalDamage: 44
       }
     },
     {
@@ -210,7 +210,7 @@ const mei: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 11.2
+          magicalDamage: 8.4
         },
         order: 2,
         tier: "level1",
@@ -232,8 +232,8 @@ const mei: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
-          magicalDamage: 2.2
+          healing: 3.2,
+          magicalDamage: 6.6000000000000005
         },
         order: 3,
         tier: "level1"
@@ -305,7 +305,7 @@ const mei: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 8,
           healing: 0,
           magicalDamage: 0
         },
@@ -351,7 +351,7 @@ const mei: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_e1_slide.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 10,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -404,7 +404,7 @@ const mei: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 58.666666666666664
+          magicalDamage: 44
         },
         order: 1,
         tier: "level10",
@@ -453,7 +453,7 @@ const mei: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 25,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -502,7 +502,7 @@ const mei: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.4
+          magicalDamage: 4.800000000000001
         },
         order: 3,
         tier: "level13"
@@ -553,7 +553,7 @@ const mei: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 20
+          magicalDamage: 60
         },
         order: 2,
         tier: "level16",
@@ -574,8 +574,8 @@ const mei: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
-          healing: 0.06666666666666667,
+          tankiness: 2,
+          healing: 0.2,
           magicalDamage: 0
         },
         order: 3,
@@ -692,7 +692,7 @@ const mei: Hero = {
   analysis: {
     tankiness: 79.09604519774011,
     physicalDamage: 37.5,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
     magicalDamage: 6.4923272496140925
   }

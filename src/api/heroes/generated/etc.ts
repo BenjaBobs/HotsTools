@@ -42,7 +42,7 @@ const etc: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 4,
         healing: 0,
         magicalDamage: 0
       }
@@ -66,7 +66,7 @@ const etc: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 30.333333333333332
+        magicalDamage: 22.75
       }
     },
     {
@@ -88,7 +88,7 @@ const etc: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22.666666666666664
+        magicalDamage: 17
       }
     },
     {
@@ -154,7 +154,7 @@ const etc: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 88
+        magicalDamage: 66
       }
     }
   ],
@@ -174,7 +174,7 @@ const etc: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 10,
           magicalDamage: 0
         },
         order: 1,
@@ -197,7 +197,7 @@ const etc: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 13.333333333333334,
+          healing: 21,
           magicalDamage: 0
         },
         order: 2,
@@ -341,7 +341,7 @@ const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2
+          magicalDamage: 6
         },
         order: 2,
         tier: "level7",
@@ -364,7 +364,7 @@ const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16.666666666666668
+          magicalDamage: 50
         },
         order: 3,
         tier: "level7",
@@ -420,7 +420,7 @@ const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 88
+          magicalDamage: 66
         },
         order: 2,
         tier: "level10",
@@ -514,7 +514,7 @@ const etc: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 7,
           healing: 0,
           magicalDamage: 0
         },
@@ -689,9 +689,9 @@ const etc: Hero = {
   analysis: {
     tankiness: 67.79661016949152,
     physicalDamage: 61.87499999999999,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 15.603718332879325
+    magicalDamage: 15.603718332879327
   }
 };
       

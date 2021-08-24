@@ -66,7 +66,7 @@ const qhira: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20
+        magicalDamage: 15
       }
     },
     {
@@ -87,8 +87,8 @@ const qhira: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 48.75,
-        magicalDamage: 16
+        healing: 30.75,
+        magicalDamage: 12
       }
     },
     {
@@ -110,7 +110,7 @@ const qhira: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 82.4
+        magicalDamage: 61.800000000000004
       }
     },
     {
@@ -132,7 +132,7 @@ const qhira: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 54.4
+        magicalDamage: 40.8
       }
     },
     {
@@ -154,7 +154,7 @@ const qhira: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 105.33333333333333
+        magicalDamage: 79
       }
     }
   ],
@@ -175,7 +175,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 28.8
+          magicalDamage: 21.6
         },
         order: 1,
         tier: "level1",
@@ -198,7 +198,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2
+          magicalDamage: 6
         },
         order: 2,
         tier: "level1",
@@ -219,10 +219,10 @@ const qhira: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 0.6000000000000001,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.3333333333333333
+          magicalDamage: 4
         },
         order: 3,
         tier: "level1",
@@ -292,7 +292,7 @@ const qhira: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 2,
           healing: 0,
           magicalDamage: 0
         },
@@ -318,8 +318,8 @@ const qhira: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
-          magicalDamage: 1
+          healing: 10,
+          magicalDamage: 3
         },
         order: 1,
         tier: "level7",
@@ -341,7 +341,7 @@ const qhira: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -364,7 +364,7 @@ const qhira: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 3,
@@ -395,7 +395,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 54.4
+          magicalDamage: 40.8
         },
         order: 1,
         tier: "level10",
@@ -422,7 +422,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 105.33333333333333
+          magicalDamage: 79
         },
         order: 2,
         tier: "level10",
@@ -565,7 +565,7 @@ const qhira: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 12,
           healing: 0,
           magicalDamage: 0
         },
@@ -681,9 +681,9 @@ const qhira: Hero = {
   analysis: {
     tankiness: 60.263653483992464,
     physicalDamage: 50,
-    mobility: 17.38446396885035,
-    healing: 9.643281023341686,
-    magicalDamage: 30.779533278852263
+    mobility: 24.006944444444446,
+    healing: 7.469938054172235,
+    magicalDamage: 30.779533278852274
   }
 };
       

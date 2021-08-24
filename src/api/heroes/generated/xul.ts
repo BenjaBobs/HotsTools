@@ -48,7 +48,7 @@ const xul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 10.666666666666666
+        magicalDamage: 8
       }
     },
     {
@@ -70,7 +70,7 @@ const xul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 95
+        magicalDamage: 71.25
       }
     },
     {
@@ -114,7 +114,7 @@ const xul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 32
+        magicalDamage: 24
       }
     },
     {
@@ -158,7 +158,7 @@ const xul: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 168
+        magicalDamage: 126
       }
     }
   ],
@@ -326,7 +326,7 @@ const xul: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.666666666666667,
+          healing: 14,
           magicalDamage: 0
         },
         order: 1,
@@ -372,7 +372,7 @@ const xul: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 4,
           healing: 0,
           magicalDamage: 0
         },
@@ -403,7 +403,7 @@ const xul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 168
+          magicalDamage: 126
         },
         order: 1,
         tier: "level10",
@@ -455,7 +455,7 @@ const xul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 8
         },
         order: 1,
         tier: "level13",
@@ -475,7 +475,7 @@ const xul: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 0.6000000000000001,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -550,7 +550,7 @@ const xul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.3333333333333335
+          magicalDamage: 7
         },
         order: 2,
         tier: "level16",
@@ -574,7 +574,7 @@ const xul: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 76.66666666666666
+          magicalDamage: 57.5
         },
         order: 3,
         tier: "level16"
@@ -595,7 +595,7 @@ const xul: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 10,
           magicalDamage: 0
         },
         order: 1,
@@ -647,7 +647,7 @@ const xul: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 15,
           magicalDamage: 0
         },
         order: 3,
@@ -684,7 +684,7 @@ const xul: Hero = {
   analysis: {
     tankiness: 62.674199623352166,
     physicalDamage: 57.00912145943351,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
     magicalDamage: 33.82650049940979
   }

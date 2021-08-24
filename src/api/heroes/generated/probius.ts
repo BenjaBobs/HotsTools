@@ -58,7 +58,7 @@ const probius: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_mount.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 1,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -84,7 +84,7 @@ const probius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 236.66666666666666
+        magicalDamage: 142
       }
     },
     {
@@ -111,7 +111,7 @@ const probius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 217.5
+        magicalDamage: 130.5
       }
     },
     {
@@ -129,7 +129,7 @@ const probius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 28
+        magicalDamage: 21
       }
     },
     {
@@ -194,7 +194,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5
+          magicalDamage: 15
         },
         order: 1,
         tier: "level1",
@@ -246,7 +246,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.3333333333333335
+          magicalDamage: 7
         },
         order: 3,
         tier: "level1",
@@ -270,7 +270,7 @@ const probius: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 8,
           healing: 0,
           magicalDamage: 0
         },
@@ -343,7 +343,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1
+          magicalDamage: 3
         },
         order: 1,
         tier: "level7",
@@ -684,7 +684,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 3,
         tier: "level20",
@@ -725,9 +725,9 @@ const probius: Hero = {
   analysis: {
     tankiness: 37.96610169491525,
     physicalDamage: 18.333333333333336,
-    mobility: 17.38446396885035,
+    mobility: 24.99900793650794,
     healing: 0,
-    magicalDamage: 53.35881458276581
+    magicalDamage: 43.306773812766735
   }
 };
       

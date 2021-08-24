@@ -43,7 +43,7 @@ const malganis: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 3,
+        healing: 9,
         magicalDamage: 0
       }
     },
@@ -66,7 +66,7 @@ const malganis: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 33
+        magicalDamage: 24.75
       }
     },
     {
@@ -86,9 +86,9 @@ const malganis: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 9.375,
         healing: 0,
-        magicalDamage: 55
+        magicalDamage: 41.25
       }
     },
     {
@@ -106,7 +106,7 @@ const malganis: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malganis_nightrush.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 0.42857142857142855,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -153,8 +153,8 @@ const malganis: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 5,
-        magicalDamage: 32
+        healing: 15,
+        magicalDamage: 24
       }
     }
   ],
@@ -173,7 +173,7 @@ const malganis: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -197,7 +197,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3,
+          healing: 9,
           magicalDamage: 0
         },
         order: 2,
@@ -220,7 +220,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 18.666666666666668,
+          healing: 14,
           magicalDamage: 0
         },
         order: 3,
@@ -245,7 +245,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.2,
+          healing: 2.4000000000000004,
           magicalDamage: 0
         },
         order: 1,
@@ -317,7 +317,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4
+          magicalDamage: 12
         },
         order: 1,
         tier: "level7",
@@ -367,7 +367,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8.8
+          magicalDamage: 6.6000000000000005
         },
         order: 3,
         tier: "level7",
@@ -395,8 +395,8 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
-          magicalDamage: 32
+          healing: 15,
+          magicalDamage: 24
         },
         order: 1,
         tier: "level10",
@@ -444,7 +444,7 @@ const malganis: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malganis_nightrush.png",
         isPassive: false,
         analysis: {
-          mobility: 10,
+          mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -471,7 +471,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 13.333333333333334
+          magicalDamage: 40
         },
         order: 2,
         tier: "level13",
@@ -490,10 +490,10 @@ const malganis: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malganis_trait.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 1.2000000000000002,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.06666666666666667,
+          healing: 0.2,
           magicalDamage: 0
         },
         order: 3,
@@ -519,7 +519,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 21.6
+          magicalDamage: 16.2
         },
         order: 1,
         tier: "level16",
@@ -541,7 +541,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -587,7 +587,7 @@ const malganis: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 35.2
+          magicalDamage: 26.400000000000002
         },
         order: 1,
         tier: "level20",
@@ -638,7 +638,7 @@ const malganis: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 2,
           magicalDamage: 0
         },
         order: 3,
@@ -677,8 +677,8 @@ const malganis: Hero = {
   analysis: {
     tankiness: 78.3427495291902,
     physicalDamage: 43.636363636363626,
-    mobility: 17.38446396885035,
-    healing: 1.5824871422919689,
+    mobility: 24.432114512471657,
+    healing: 5.83019555447589,
     magicalDamage: 13.279760283301552
   }
 };

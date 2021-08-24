@@ -71,7 +71,7 @@ const malfurion: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 304,
+        healing: 228,
         magicalDamage: 0
       }
     },
@@ -93,8 +93,8 @@ const malfurion: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 173.33333333333331,
-        magicalDamage: 120
+        healing: 2,
+        magicalDamage: 90
       }
     },
     {
@@ -116,7 +116,7 @@ const malfurion: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 39
+        magicalDamage: 29.25
       }
     },
     {
@@ -136,8 +136,8 @@ const malfurion: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
-        healing: 21.333333333333332,
+        tankiness: 2,
+        healing: 16,
         magicalDamage: 0
       }
     },
@@ -160,7 +160,7 @@ const malfurion: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 82.66666666666667
+        magicalDamage: 62
       }
     }
   ],
@@ -205,7 +205,7 @@ const malfurion: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 11.600000000000001
         },
         order: 2,
         tier: "level1",
@@ -274,7 +274,7 @@ const malfurion: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5
+          magicalDamage: 15
         },
         order: 2,
         tier: "level4",
@@ -402,8 +402,8 @@ const malfurion: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
-          healing: 21.333333333333332,
+          tankiness: 2,
+          healing: 16,
           magicalDamage: 0
         },
         order: 1,
@@ -431,7 +431,7 @@ const malfurion: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 82.66666666666667
+          magicalDamage: 62
         },
         order: 2,
         tier: "level10",
@@ -526,7 +526,7 @@ const malfurion: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 15,
           magicalDamage: 0
         },
         order: 1,
@@ -573,7 +573,7 @@ const malfurion: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 3,
           magicalDamage: 0
         },
         order: 3,
@@ -599,7 +599,7 @@ const malfurion: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.6666666666666667,
+          healing: 0.6000000000000001,
           magicalDamage: 0
         },
         order: 1,
@@ -651,7 +651,7 @@ const malfurion: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 2,
           magicalDamage: 0
         },
         order: 3,
@@ -675,7 +675,7 @@ const malfurion: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.3333333333333333
+          magicalDamage: 4
         },
         order: 4,
         tier: "level20",
@@ -688,9 +688,9 @@ const malfurion: Hero = {
   analysis: {
     tankiness: 45.951035781544256,
     physicalDamage: 33.33333333333333,
-    mobility: 17.38446396885035,
-    healing: 98.6416985361994,
-    magicalDamage: 26.74396168164896
+    mobility: 24.006944444444446,
+    healing: 59.75950443337788,
+    magicalDamage: 26.743961681648965
   }
 };
       

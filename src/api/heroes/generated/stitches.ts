@@ -44,7 +44,7 @@ const stitches: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 19.6
+        magicalDamage: 37.2
       }
     },
     {
@@ -66,7 +66,7 @@ const stitches: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 24.266666666666666
+        magicalDamage: 18.2
       }
     },
     {
@@ -88,7 +88,7 @@ const stitches: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 52
+        magicalDamage: 39
       }
     },
     {
@@ -116,7 +116,7 @@ const stitches: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 85.06666666666666
+        magicalDamage: 63.800000000000004
       }
     },
     {
@@ -134,11 +134,11 @@ const stitches: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stitches_putridbile.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 1.6,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 9.866666666666667
+        magicalDamage: 7.4
       }
     },
     {
@@ -179,8 +179,8 @@ const stitches: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
+          tankiness: 0.6000000000000001,
+          healing: 3,
           magicalDamage: 0
         },
         order: 1,
@@ -227,7 +227,7 @@ const stitches: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stitches_hungry.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 1,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -277,7 +277,7 @@ const stitches: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.3333333333333335
+          magicalDamage: 7
         },
         order: 2,
         tier: "level4",
@@ -374,7 +374,7 @@ const stitches: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 7.666666666666666,
+          healing: 23,
           magicalDamage: 0
         },
         order: 3,
@@ -400,11 +400,11 @@ const stitches: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stitches_putridbile.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 1.6,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 9.866666666666667
+          magicalDamage: 7.4
         },
         order: 1,
         tier: "level10",
@@ -455,7 +455,7 @@ const stitches: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 4,
           magicalDamage: 0
         },
         order: 1,
@@ -500,7 +500,7 @@ const stitches: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 0.8,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -557,7 +557,7 @@ const stitches: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 40.66666666666667
+          magicalDamage: 38
         },
         order: 2,
         tier: "level16",
@@ -580,7 +580,7 @@ const stitches: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 4
+          magicalDamage: 3
         },
         order: 3,
         tier: "level16"
@@ -602,7 +602,7 @@ const stitches: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.666666666666667
+          magicalDamage: 20
         },
         order: 1,
         tier: "level20",
@@ -654,7 +654,7 @@ const stitches: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 15,
           magicalDamage: 0
         },
         order: 3,
@@ -692,9 +692,9 @@ const stitches: Hero = {
   analysis: {
     tankiness: 90.99811676082862,
     physicalDamage: 32.272727272727266,
-    mobility: 17.38446396885035,
+    mobility: 25.59424603174604,
     healing: 0,
-    magicalDamage: 21.114818850449467
+    magicalDamage: 24.434758921274863
   }
 };
       

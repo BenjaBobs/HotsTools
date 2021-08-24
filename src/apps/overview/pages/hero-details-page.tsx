@@ -1,7 +1,9 @@
-import { Avatar, Col, Result, Row, Space } from 'antd';
-import { useEffect } from 'react';
+import { Avatar, Col, Result, Row, Space, Tooltip } from 'antd';
+import React, { useEffect, useState } from 'react';
 
 import heroes from '../../../api/heroes/heroes';
+import { browserHistory } from '../../../api/routing';
+import Block from '../../components/block/block';
 import HeroStrengthChart from '../../components/hero-strength-chart/hero-strength-chart';
 import Hexagon from '../../components/hexagon/hexagon';
 import AbilityTooltip from './components/ability-tooltip';
@@ -9,10 +11,14 @@ import TalentTooltip from './components/talent-tooltip';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = heroes.byName(props.hero);
-
-  useEffect(() => {
-    console.log(hero);
-  }, []);
+  const [talentPicks, setTalentPicks] = useState<(number | undefined)[]>(
+    !browserHistory.location.search?.includes('talents')
+      ? new Array(hero?.talents.length).fill(undefined)
+      : browserHistory.location.search
+          .substring(browserHistory.location.search.indexOf('talents='))
+          .split(',')
+          .map(x => (x === '' ? undefined : parseInt(x) || undefined))
+  );
 
   if (!hero) {
     return (
@@ -22,6 +28,19 @@ export default function HeroDetailsPage(props: { hero?: string }) {
       />
     );
   }
+
+  useEffect(() => {
+    browserHistory.replace({
+      ...browserHistory.location,
+      search:
+        '?talents=' +
+        talentPicks.map(x => (x === undefined ? '' : '' + x)).join(','),
+    });
+  }, [talentPicks]);
+
+  console.log(talentPicks);
+
+  const maxTalentsPerTier = hero.talents.maxOf(tier => tier.length);
 
   return (
     <Row justify="center">
@@ -69,27 +88,56 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                     <h2>Talents</h2>
                   </Row>
                   <br />
-                  {hero.talents.map((talentSet, idx) => (
-                    <Row key={idx} gutter={8} style={{ paddingBottom: 32 }}>
-                      <Col key="tier" style={{ width: 90, paddingTop: 40 }}>
-                        <h3>Level {talentSet[0].tier}</h3>
-                      </Col>
-                      <Col key="talents">
-                        <Row gutter={8}>
-                          {talentSet.map((talent, idx) => (
-                            <Col key={idx}>
-                              <Row justify="center">
-                                <Hexagon src={talent.icon} />
-                              </Row>
-                              <Row justify="center">
-                                <TalentTooltip talent={talent} />
-                              </Row>
-                            </Col>
-                          ))}
-                        </Row>
-                      </Col>
-                    </Row>
-                  ))}
+                  <Block baseColumns={maxTalentsPerTier} gap={1} padding={1}>
+                    {hero.talents.map((talentTier, talentTierIdx) => (
+                      <React.Fragment key={talentTierIdx}>
+                        <Block columns={maxTalentsPerTier}>
+                          <h3>Level {talentTier[0].tier.substring(5)}</h3>
+                        </Block>
+                        {talentTier.map((talent, talentIdx) => {
+                          const selected =
+                            talentPicks[talentTierIdx] === talentIdx;
+
+                          return (
+                            <Block
+                              key={talentIdx}
+                              textAlign="center"
+                              onClick={() =>
+                                setTalentPicks(
+                                  [...talentPicks].fill(
+                                    selected ? undefined : talentIdx,
+                                    talentTierIdx,
+                                    talentTierIdx + 1
+                                  )
+                                )
+                              }
+                            >
+                              <Tooltip
+                                title={<TalentTooltip talent={talent} />}
+                              >
+                                <Hexagon
+                                  src={talent.icon}
+                                  style={{
+                                    width: 60,
+                                    height: 60,
+                                    margin: '0 auto',
+                                    marginBottom: 8,
+                                  }}
+                                />
+                                <h4
+                                  className={
+                                    'animate ' + (selected ? 'textglow  ' : '')
+                                  }
+                                >
+                                  {talent.name}
+                                </h4>
+                              </Tooltip>
+                            </Block>
+                          );
+                        })}
+                      </React.Fragment>
+                    ))}
+                  </Block>
                 </Col>
               </Row>
             </Space>

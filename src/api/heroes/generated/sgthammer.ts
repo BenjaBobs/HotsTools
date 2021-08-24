@@ -44,7 +44,7 @@ const sgthammer: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22.5
+        magicalDamage: 67.5
       }
     },
     {
@@ -58,7 +58,7 @@ const sgthammer: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sgthammer_mount.png",
       isPassive: false,
       analysis: {
-        mobility: 60,
+        mobility: 12,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -84,7 +84,7 @@ const sgthammer: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 27.428571428571427
+        magicalDamage: 20.57142857142857
       }
     },
     {
@@ -106,7 +106,7 @@ const sgthammer: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 47
+        magicalDamage: 35.25
       }
     },
     {
@@ -126,7 +126,7 @@ const sgthammer: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 5,
         healing: 0,
         magicalDamage: 0
       }
@@ -150,7 +150,7 @@ const sgthammer: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 142.66666666666666
+        magicalDamage: 107
       }
     },
     {
@@ -193,7 +193,7 @@ const sgthammer: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.666666666666667
+          magicalDamage: 20
         },
         order: 1,
         tier: "level1",
@@ -315,7 +315,7 @@ const sgthammer: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 2,
           magicalDamage: 0
         },
         order: 3,
@@ -444,7 +444,7 @@ const sgthammer: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 142.66666666666666
+          magicalDamage: 107
         },
         order: 2,
         tier: "level10",
@@ -696,9 +696,9 @@ const sgthammer: Hero = {
   analysis: {
     tankiness: 51.826741996233515,
     physicalDamage: 70,
-    mobility: 60.48822189814581,
+    mobility: 35.91170634920635,
     healing: 0,
-    magicalDamage: 37.58119462712897
+    magicalDamage: 48.7398820874032
   }
 };
       

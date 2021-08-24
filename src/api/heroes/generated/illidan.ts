@@ -38,7 +38,7 @@ const illidan: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 2,
+        healing: 6,
         magicalDamage: 0
       }
     },
@@ -57,7 +57,7 @@ const illidan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 44
+        magicalDamage: 33
       }
     },
     {
@@ -81,7 +81,7 @@ const illidan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 59.5
+        magicalDamage: 44.625
       }
     },
     {
@@ -117,7 +117,7 @@ const illidan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 66.93333333333334
+        magicalDamage: 50.2
       }
     },
     {
@@ -135,7 +135,7 @@ const illidan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 12.266666666666666
+        magicalDamage: 9.200000000000001
       }
     }
   ],
@@ -259,7 +259,7 @@ const illidan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 6,
           magicalDamage: 0
         },
         order: 2,
@@ -282,7 +282,7 @@ const illidan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.3333333333333335,
+          healing: 7,
           magicalDamage: 0
         },
         order: 3,
@@ -386,7 +386,7 @@ const illidan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 12.266666666666666
+          magicalDamage: 9.200000000000001
         },
         order: 1,
         tier: "level10",
@@ -409,7 +409,7 @@ const illidan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 66.93333333333334
+          magicalDamage: 50.2
         },
         order: 2,
         tier: "level10",
@@ -438,7 +438,7 @@ const illidan: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 5,
           healing: 0,
           magicalDamage: 0
         },
@@ -511,7 +511,7 @@ const illidan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 48
+          magicalDamage: 36
         },
         order: 1,
         tier: "level16",
@@ -579,7 +579,7 @@ const illidan: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 4,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -634,7 +634,7 @@ const illidan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.3333333333333333
+          magicalDamage: 4
         },
         order: 3,
         tier: "level20"
@@ -664,9 +664,9 @@ const illidan: Hero = {
   analysis: {
     tankiness: 51.9774011299435,
     physicalDamage: 70.9090909090909,
-    mobility: 17.38446396885035,
-    healing: 0.3956217855729922,
-    magicalDamage: 20.218435031326614
+    mobility: 24.006944444444446,
+    healing: 1.4575488886189725,
+    magicalDamage: 20.218435031326617
   }
 };
       

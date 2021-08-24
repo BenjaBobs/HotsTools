@@ -62,7 +62,7 @@ const sonya: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 53.23076923076923
+        magicalDamage: 39.92307692307693
       }
     },
     {
@@ -84,7 +84,7 @@ const sonya: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 704
+        magicalDamage: 528
       }
     },
     {
@@ -105,8 +105,8 @@ const sonya: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 5,
-        magicalDamage: 110.4
+        healing: 1.7999999999999998,
+        magicalDamage: 82.8
       }
     },
     {
@@ -124,7 +124,7 @@ const sonya: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 36
+        magicalDamage: 27
       }
     },
     {
@@ -163,7 +163,7 @@ const sonya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 8
         },
         order: 1,
         tier: "level1",
@@ -185,7 +185,7 @@ const sonya: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 6,
           magicalDamage: 0
         },
         order: 2,
@@ -208,7 +208,7 @@ const sonya: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 12,
           healing: 0,
           magicalDamage: 0
         },
@@ -278,7 +278,7 @@ const sonya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2.6666666666666665
+          magicalDamage: 8
         },
         order: 3,
         tier: "level4",
@@ -304,7 +304,7 @@ const sonya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6.666666666666667
+          magicalDamage: 20
         },
         order: 1,
         tier: "level7",
@@ -326,7 +326,7 @@ const sonya: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.3333333333333335,
+          healing: 7,
           magicalDamage: 0
         },
         order: 2,
@@ -356,7 +356,7 @@ const sonya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.6666666666666667
+          magicalDamage: 5
         },
         order: 3,
         tier: "level7"
@@ -378,7 +378,7 @@ const sonya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 36
+          magicalDamage: 27
         },
         order: 1,
         tier: "level10",
@@ -449,7 +449,7 @@ const sonya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 13.333333333333334
+          magicalDamage: 10
         },
         order: 2,
         tier: "level13",
@@ -497,7 +497,7 @@ const sonya: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 12,
           magicalDamage: 0
         },
         order: 1,
@@ -636,7 +636,7 @@ const sonya: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 12,
           healing: 0,
           magicalDamage: 0
         },
@@ -648,8 +648,8 @@ const sonya: Hero = {
   analysis: {
     tankiness: 73.82297551789078,
     physicalDamage: 52.49999999999999,
-    mobility: 17.38446396885035,
-    healing: 0.9890544639324806,
+    mobility: 24.006944444444446,
+    healing: 0.43726466658569174,
     magicalDamage: 100
   }
 };

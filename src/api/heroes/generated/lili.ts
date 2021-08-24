@@ -40,7 +40,7 @@ const lili: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lili_fastfeet.png",
       isPassive: true,
       analysis: {
-        mobility: 0,
+        mobility: 0.2,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -87,8 +87,8 @@ const lili: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 7.272727272727273,
-        magicalDamage: 9.454545454545455
+        healing: 7.090909090909092,
+        magicalDamage: 7.090909090909092
       }
     },
     {
@@ -110,7 +110,7 @@ const lili: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 44.33333333333333
+        magicalDamage: 33.25
       }
     },
     {
@@ -131,7 +131,7 @@ const lili: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
+        healing: 0.4,
         magicalDamage: 0
       }
     },
@@ -154,7 +154,7 @@ const lili: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 80
+        magicalDamage: 60
       }
     }
   ],
@@ -174,7 +174,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 10.2,
           magicalDamage: 0
         },
         order: 1,
@@ -243,7 +243,7 @@ const lili: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lili_cloudserpent.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -289,9 +289,9 @@ const lili: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lili_fastfeet.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.6000000000000001,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 8,
           healing: 0,
           magicalDamage: 0
         },
@@ -318,7 +318,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 11.2,
+          healing: 9,
           magicalDamage: 0
         },
         order: 1,
@@ -342,7 +342,7 @@ const lili: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5
+          magicalDamage: 15
         },
         order: 2,
         tier: "level7",
@@ -364,7 +364,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 42.666666666666664,
+          healing: 32,
           magicalDamage: 0
         },
         order: 3,
@@ -390,7 +390,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 1,
@@ -418,7 +418,7 @@ const lili: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 80
+          magicalDamage: 60
         },
         order: 2,
         tier: "level10",
@@ -513,7 +513,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 1,
@@ -536,7 +536,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.2,
+          healing: 6.6000000000000005,
           magicalDamage: 0
         },
         order: 2,
@@ -559,7 +559,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.03333333333333333,
+          healing: 2,
           magicalDamage: 0
         },
         order: 3,
@@ -584,7 +584,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.2,
           magicalDamage: 0
         },
         order: 1,
@@ -636,7 +636,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 39.733333333333334,
+          healing: 29.8,
           magicalDamage: 0
         },
         order: 3,
@@ -655,7 +655,7 @@ const lili: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 7,
           healing: 0,
           magicalDamage: 0
         },
@@ -671,9 +671,9 @@ const lili: Hero = {
   analysis: {
     tankiness: 45.19774011299435,
     physicalDamage: 37.49999999999999,
-    mobility: 17.38446396885035,
-    healing: 1.4386246748108809,
-    magicalDamage: 14.805591325953623
+    mobility: 24.205357142857146,
+    healing: 1.8197277033667174,
+    magicalDamage: 14.805591325953626
   }
 };
       

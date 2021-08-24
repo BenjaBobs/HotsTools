@@ -66,7 +66,7 @@ const muradin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 44
+        magicalDamage: 33
       }
     },
     {
@@ -108,9 +108,9 @@ const muradin: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 9,
         healing: 0,
-        magicalDamage: 23.6
+        magicalDamage: 17.7
       }
     },
     {
@@ -160,7 +160,7 @@ const muradin: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 85.06666666666666
+        magicalDamage: 63.800000000000004
       }
     }
   ],
@@ -253,7 +253,7 @@ const muradin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 23.333333333333332
+          magicalDamage: 70
         },
         order: 1,
         tier: "level4",
@@ -273,7 +273,7 @@ const muradin: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 6,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -299,7 +299,7 @@ const muradin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5
+          magicalDamage: 15
         },
         order: 3,
         tier: "level4",
@@ -370,7 +370,7 @@ const muradin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6
+          magicalDamage: 18
         },
         order: 3,
         tier: "level7",
@@ -432,7 +432,7 @@ const muradin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 85.06666666666666
+          magicalDamage: 63.800000000000004
         },
         order: 2,
         tier: "level10",
@@ -456,8 +456,8 @@ const muradin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
-          magicalDamage: 4
+          healing: 15,
+          magicalDamage: 3
         },
         order: 1,
         tier: "level13",
@@ -479,7 +479,7 @@ const muradin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.3333333333333333,
+          healing: 1,
           magicalDamage: 0
         },
         order: 2,
@@ -503,7 +503,7 @@ const muradin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 20
+          magicalDamage: 60
         },
         order: 3,
         tier: "level13",
@@ -570,7 +570,7 @@ const muradin: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 6,
           magicalDamage: 0
         },
         order: 3,
@@ -653,7 +653,7 @@ const muradin: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -685,7 +685,7 @@ const muradin: Hero = {
   analysis: {
     tankiness: 83.31450094161958,
     physicalDamage: 48.888888888888886,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
     magicalDamage: 16.89480613820031
   }

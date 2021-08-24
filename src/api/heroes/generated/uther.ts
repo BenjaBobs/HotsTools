@@ -43,7 +43,7 @@ const uther: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
+        healing: 0.4,
         magicalDamage: 0
       }
     },
@@ -65,7 +65,7 @@ const uther: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 120.66666666666666,
+        healing: 135.75,
         magicalDamage: 0
       }
     },
@@ -87,8 +87,8 @@ const uther: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 77.60000000000001,
-        magicalDamage: 70.8
+        healing: 58.199999999999996,
+        magicalDamage: 53.1
       }
     },
     {
@@ -110,7 +110,7 @@ const uther: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 43.6
+        magicalDamage: 32.699999999999996
       }
     },
     {
@@ -128,7 +128,7 @@ const uther: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divineshield.png",
       isPassive: false,
       analysis: {
-        mobility: 20,
+        mobility: 4,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
@@ -154,7 +154,7 @@ const uther: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 45.333333333333336
+        magicalDamage: 34
       }
     }
   ],
@@ -199,7 +199,7 @@ const uther: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 13,
           magicalDamage: 0
         },
         order: 2,
@@ -249,7 +249,7 @@ const uther: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 9.2,
           magicalDamage: 0
         },
         order: 1,
@@ -270,7 +270,7 @@ const uther: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_hammerofjustice.png",
         isPassive: false,
         analysis: {
-          mobility: 25,
+          mobility: 5,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -297,7 +297,7 @@ const uther: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.466666666666667
+          magicalDamage: 2.6
         },
         order: 3,
         tier: "level4",
@@ -345,7 +345,7 @@ const uther: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -391,7 +391,7 @@ const uther: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_uther_divineshield.png",
         isPassive: false,
         analysis: {
-          mobility: 20,
+          mobility: 4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -422,7 +422,7 @@ const uther: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 45.333333333333336
+          magicalDamage: 34
         },
         order: 2,
         tier: "level10",
@@ -492,7 +492,7 @@ const uther: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -515,7 +515,7 @@ const uther: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 16.666666666666668,
+          healing: 25,
           magicalDamage: 0
         },
         order: 1,
@@ -539,7 +539,7 @@ const uther: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 4,
           magicalDamage: 0
         },
         order: 2,
@@ -673,8 +673,8 @@ const uther: Hero = {
   analysis: {
     tankiness: 59.51035781544256,
     physicalDamage: 37.5,
-    mobility: 31.752383278615504,
-    healing: 39.21930634313596,
+    mobility: 27.975198412698415,
+    healing: 47.212437750516216,
     magicalDamage: 17.676836465994736
   }
 };

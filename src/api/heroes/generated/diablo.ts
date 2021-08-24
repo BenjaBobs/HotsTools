@@ -62,11 +62,11 @@ const diablo: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_diablo_shadowcharge_var1.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 0.5,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 13.333333333333332
+        magicalDamage: 10
       }
     },
     {
@@ -87,8 +87,8 @@ const diablo: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 16.25,
-        magicalDamage: 24
+        healing: 13.5,
+        magicalDamage: 18
       }
     },
     {
@@ -116,7 +116,7 @@ const diablo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 24.333333333333332
+        magicalDamage: 18.25
       }
     },
     {
@@ -138,7 +138,7 @@ const diablo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 36.53333333333333
+        magicalDamage: 27.400000000000002
       }
     },
     {
@@ -160,7 +160,7 @@ const diablo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 13.333333333333334
+        magicalDamage: 10
       }
     }
   ],
@@ -180,7 +180,7 @@ const diablo: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 2,
           magicalDamage: 0
         },
         order: 1,
@@ -204,7 +204,7 @@ const diablo: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 2,
@@ -272,7 +272,7 @@ const diablo: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.08666666666666667,
+          healing: 0.2,
           magicalDamage: 0
         },
         order: 2,
@@ -295,7 +295,7 @@ const diablo: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.11666666666666667,
+          healing: 20.2,
           magicalDamage: 0
         },
         order: 3,
@@ -344,7 +344,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 26.666666666666668
+          magicalDamage: 20
         },
         order: 2,
         tier: "level7",
@@ -396,7 +396,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 36.53333333333333
+          magicalDamage: 27.400000000000002
         },
         order: 1,
         tier: "level10",
@@ -423,7 +423,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 13.333333333333334
+          magicalDamage: 10
         },
         order: 2,
         tier: "level10",
@@ -472,7 +472,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8
+          magicalDamage: 6
         },
         order: 2,
         tier: "level13",
@@ -492,7 +492,7 @@ const diablo: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 10,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -545,7 +545,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 2,
         tier: "level16",
@@ -671,7 +671,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 36.53333333333333
+          magicalDamage: 27.400000000000002
         },
         order: 4,
         tier: "level20"
@@ -681,9 +681,9 @@ const diablo: Hero = {
   analysis: {
     tankiness: 85.12241054613936,
     physicalDamage: 50,
-    mobility: 17.38446396885035,
-    healing: 3.2144270077805617,
-    magicalDamage: 12.342799418868609
+    mobility: 24.502976190476193,
+    healing: 3.279484999392688,
+    magicalDamage: 12.342799418868612
   }
 };
       

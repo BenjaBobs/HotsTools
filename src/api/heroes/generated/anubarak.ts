@@ -66,7 +66,7 @@ const anubarak: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 30
+        magicalDamage: 22.5
       }
     },
     {
@@ -110,7 +110,7 @@ const anubarak: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 26
+        magicalDamage: 19.5
       }
     },
     {
@@ -132,7 +132,7 @@ const anubarak: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 18.133333333333333
+        magicalDamage: 13.600000000000001
       }
     },
     {
@@ -244,7 +244,7 @@ const anubarak: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.6
+          magicalDamage: 4.2
         },
         order: 1,
         tier: "level4",
@@ -263,7 +263,7 @@ const anubarak: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anubarak_hardencarapace_var1.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.6000000000000001,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -360,7 +360,7 @@ const anubarak: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 6,
           magicalDamage: 0
         },
         order: 3,
@@ -390,7 +390,7 @@ const anubarak: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 18.133333333333333
+          magicalDamage: 13.600000000000001
         },
         order: 1,
         tier: "level10",
@@ -442,7 +442,7 @@ const anubarak: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 21.333333333333332
+          magicalDamage: 16
         },
         order: 1,
         tier: "level13",
@@ -465,7 +465,7 @@ const anubarak: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7.199999999999999
+          magicalDamage: 5.4
         },
         order: 2,
         tier: "level13"
@@ -578,8 +578,8 @@ const anubarak: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
-          magicalDamage: 44
+          healing: 33,
+          magicalDamage: 33
         },
         order: 1,
         tier: "level20",
@@ -629,7 +629,7 @@ const anubarak: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -661,9 +661,9 @@ const anubarak: Hero = {
   analysis: {
     tankiness: 64.7834274952919,
     physicalDamage: 40.5,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 8.203940797239625
+    magicalDamage: 8.203940797239627
   }
 };
       

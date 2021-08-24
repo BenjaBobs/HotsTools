@@ -66,7 +66,7 @@ const tychus: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 184
+        magicalDamage: 138
       }
     },
     {
@@ -88,7 +88,7 @@ const tychus: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 102.4
+        magicalDamage: 76.8
       }
     },
     {
@@ -138,7 +138,7 @@ const tychus: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 37.86666666666667
+        magicalDamage: 28.400000000000002
       }
     },
     {
@@ -206,7 +206,7 @@ const tychus: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tychus_runandgun.png",
         isPassive: false,
         analysis: {
-          mobility: 20,
+          mobility: 4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -306,7 +306,7 @@ const tychus: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 2,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -436,7 +436,7 @@ const tychus: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 37.86666666666667
+          magicalDamage: 28.400000000000002
         },
         order: 2,
         tier: "level10",
@@ -457,7 +457,7 @@ const tychus: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tychus_overkill.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 5,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -483,7 +483,7 @@ const tychus: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 6.666666666666667,
+          healing: 20,
           magicalDamage: 0
         },
         order: 2,
@@ -506,7 +506,7 @@ const tychus: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -602,7 +602,7 @@ const tychus: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 85.06666666666666
+          magicalDamage: 63.800000000000004
         },
         order: 1,
         tier: "level20",
@@ -653,7 +653,7 @@ const tychus: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 8,
           healing: 0,
           magicalDamage: 0
         },
@@ -699,9 +699,9 @@ const tychus: Hero = {
   analysis: {
     tankiness: 58.00376647834275,
     physicalDamage: 100,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 35.88486334332153
+    magicalDamage: 35.884863343321534
   }
 };
       

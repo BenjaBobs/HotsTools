@@ -44,7 +44,7 @@ const chogall: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 15,
         healing: 0,
         magicalDamage: 0
       }
@@ -64,7 +64,7 @@ const chogall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.333333333333332
+        magicalDamage: 11.5
       }
     },
     {
@@ -81,8 +81,8 @@ const chogall: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
-        magicalDamage: 50
+        healing: 1.25,
+        magicalDamage: 37.5
       }
     },
     {
@@ -100,7 +100,7 @@ const chogall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 150.5
+        magicalDamage: 112.875
       }
     },
     {
@@ -118,7 +118,7 @@ const chogall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 46.666666666666664
+        magicalDamage: 35
       }
     },
     {
@@ -136,7 +136,7 @@ const chogall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 40
+        magicalDamage: 30
       }
     }
   ],
@@ -156,7 +156,7 @@ const chogall: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10,
+          healing: 30,
           magicalDamage: 0
         },
         order: 1,
@@ -202,7 +202,7 @@ const chogall: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 0.2,
           healing: 0,
           magicalDamage: 0
         },
@@ -278,7 +278,7 @@ const chogall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1.3333333333333333
+          magicalDamage: 4
         },
         order: 3,
         tier: "level4"
@@ -296,7 +296,7 @@ const chogall: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cho_moltensurge_a.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -346,7 +346,7 @@ const chogall: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 16,
+          healing: 19,
           magicalDamage: 0
         },
         order: 3,
@@ -373,7 +373,7 @@ const chogall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 40
+          magicalDamage: 30
         },
         order: 1,
         tier: "level10",
@@ -396,7 +396,7 @@ const chogall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 46.666666666666664
+          magicalDamage: 35
         },
         order: 2,
         tier: "level10",
@@ -420,7 +420,7 @@ const chogall: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 40,
+          healing: 30,
           magicalDamage: 0
         },
         order: 1,
@@ -484,7 +484,7 @@ const chogall: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 1,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -608,7 +608,7 @@ const chogall: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 5.6
+          magicalDamage: 4.2
         },
         order: 3,
         tier: "level20",
@@ -641,9 +641,9 @@ const chogall: Hero = {
   analysis: {
     tankiness: 100,
     physicalDamage: 66.47727272727272,
-    mobility: 17.38446396885035,
-    healing: 0,
-    magicalDamage: 33.47606238082266
+    mobility: 24.006944444444446,
+    healing: 0.30365601846228596,
+    magicalDamage: 33.47606238082267
   }
 };
       

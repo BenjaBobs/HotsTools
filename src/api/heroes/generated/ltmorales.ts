@@ -43,7 +43,7 @@ const ltmorales: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0.13333333333333333,
+        healing: 0.4,
         magicalDamage: 0
       }
     },
@@ -66,7 +66,7 @@ const ltmorales: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 45.86666666666667,
+        healing: 34.8,
         magicalDamage: 0
       }
     },
@@ -185,7 +185,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 2,
@@ -235,7 +235,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 6,
           magicalDamage: 0
         },
         order: 1,
@@ -258,7 +258,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.13333333333333333,
+          healing: 6,
           magicalDamage: 0
         },
         order: 2,
@@ -370,7 +370,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 15,
           magicalDamage: 0
         },
         order: 3,
@@ -444,7 +444,7 @@ const ltmorales: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 25.6
+          magicalDamage: 19.200000000000003
         },
         order: 1,
         tier: "level13",
@@ -467,7 +467,7 @@ const ltmorales: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2
+          magicalDamage: 6
         },
         order: 2,
         tier: "level13",
@@ -515,7 +515,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 70.8,
+          healing: 58.800000000000004,
           magicalDamage: 0
         },
         order: 1,
@@ -539,7 +539,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2.333333333333333,
+          healing: 16,
           magicalDamage: 0
         },
         order: 2,
@@ -591,7 +591,7 @@ const ltmorales: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_stim.png",
         isPassive: false,
         analysis: {
-          mobility: 25,
+          mobility: 5,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -652,7 +652,7 @@ const ltmorales: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 10,
           magicalDamage: 0
         },
         order: 3,
@@ -689,8 +689,8 @@ const ltmorales: Hero = {
   analysis: {
     tankiness: 47.005649717514125,
     physicalDamage: 41.5,
-    mobility: 17.38446396885035,
-    healing: 9.099301068178821,
+    mobility: 24.006944444444446,
+    healing: 8.550953479897972,
     magicalDamage: 0
   }
 };

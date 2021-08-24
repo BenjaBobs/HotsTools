@@ -49,9 +49,9 @@ const greymane: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 0,
+        tankiness: 2,
         healing: 0,
-        magicalDamage: 2.6666666666666665
+        magicalDamage: 8
       }
     },
     {
@@ -73,7 +73,7 @@ const greymane: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 24.444444444444443
+        magicalDamage: 18.333333333333332
       }
     },
     {
@@ -92,7 +92,7 @@ const greymane: Hero = {
       isPassive: false,
       analysis: {
         mobility: 0,
-        physicalDamage: 0,
+        physicalDamage: 0.6000000000000001,
         tankiness: 0,
         healing: 0,
         magicalDamage: 0
@@ -117,7 +117,7 @@ const greymane: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 70.4
+        magicalDamage: 52.8
       }
     },
     {
@@ -499,7 +499,7 @@ const greymane: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_greymane_beastfocus.png",
         isPassive: false,
         analysis: {
-          mobility: 30,
+          mobility: 6,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -526,7 +526,7 @@ const greymane: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 8,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -686,9 +686,9 @@ const greymane: Hero = {
   analysis: {
     tankiness: 63.593220338983045,
     physicalDamage: 74,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 10.79103483761615
+    magicalDamage: 11.676352189836255
   }
 };
       

@@ -84,7 +84,7 @@ const medivh: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 97.14285714285714
+        magicalDamage: 72.85714285714285
       }
     },
     {
@@ -105,7 +105,7 @@ const medivh: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 2.2222222222222223,
+        healing: 0.3333333333333333,
         magicalDamage: 0
       }
     },
@@ -189,7 +189,7 @@ const medivh: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medivh_ravenform.png",
         isPassive: false,
         analysis: {
-          mobility: 50,
+          mobility: 10,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -266,7 +266,7 @@ const medivh: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 6,
           healing: 0,
           magicalDamage: 0
         },
@@ -291,7 +291,7 @@ const medivh: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 30.4
+          magicalDamage: 22.8
         },
         order: 2,
         tier: "level4",
@@ -335,8 +335,8 @@ const medivh: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
-          magicalDamage: 3.3333333333333335
+          healing: 10,
+          magicalDamage: 10
         },
         order: 1,
         tier: "level7",
@@ -359,7 +359,7 @@ const medivh: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 21.333333333333332
+          magicalDamage: 16
         },
         order: 2,
         tier: "level7",
@@ -508,7 +508,7 @@ const medivh: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4.666666666666667,
+          healing: 14,
           magicalDamage: 0
         },
         order: 3,
@@ -534,7 +534,7 @@ const medivh: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 1
+          magicalDamage: 3
         },
         order: 1,
         tier: "level16",
@@ -715,8 +715,8 @@ const medivh: Hero = {
   analysis: {
     tankiness: 49.83050847457628,
     physicalDamage: 44.44444444444445,
-    mobility: 17.38446396885035,
-    healing: 0.4395797617477692,
+    mobility: 24.006944444444446,
+    healing: 0.08097493825660958,
     magicalDamage: 10.750282134101257
   }
 };

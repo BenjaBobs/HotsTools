@@ -93,7 +93,7 @@ const kharazim: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 114,
+        healing: 85.5,
         magicalDamage: 0
       }
     },
@@ -113,7 +113,7 @@ const kharazim: Hero = {
       isPassive: false,
       analysis: {
         mobility: 0,
-        physicalDamage: 0,
+        physicalDamage: 30,
         tankiness: 0,
         healing: 0,
         magicalDamage: 0
@@ -159,7 +159,7 @@ const kharazim: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 320,
+        healing: 240,
         magicalDamage: 0
       }
     }
@@ -180,7 +180,7 @@ const kharazim: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 27.733333333333334,
+          healing: 0.6000000000000001,
           magicalDamage: 0
         },
         order: 1,
@@ -201,7 +201,7 @@ const kharazim: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7.333333333333333
+          magicalDamage: 22
         },
         order: 2,
         tier: "level1"
@@ -217,7 +217,7 @@ const kharazim: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_monk_trait_insight.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -243,7 +243,7 @@ const kharazim: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.13333333333333333,
+          healing: 0.4,
           magicalDamage: 0
         },
         order: 1,
@@ -331,10 +331,10 @@ const kharazim: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_monk_breath0fheaven.png",
         isPassive: false,
         analysis: {
-          mobility: 30,
+          mobility: 6,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 10,
           magicalDamage: 0
         },
         order: 2,
@@ -387,7 +387,7 @@ const kharazim: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 320,
+          healing: 240,
           magicalDamage: 0
         },
         order: 1,
@@ -467,7 +467,7 @@ const kharazim: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 10,
           healing: 0,
           magicalDamage: 0
         },
@@ -487,7 +487,7 @@ const kharazim: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 15,
           healing: 0,
           magicalDamage: 0
         },
@@ -546,7 +546,7 @@ const kharazim: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3
+          magicalDamage: 9
         },
         order: 2,
         tier: "level16",
@@ -568,7 +568,7 @@ const kharazim: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 15.6,
           magicalDamage: 0
         },
         order: 3,
@@ -593,7 +593,7 @@ const kharazim: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 15,
           magicalDamage: 0
         },
         order: 1,
@@ -701,8 +701,8 @@ const kharazim: Hero = {
   analysis: {
     tankiness: 61.077212806026374,
     physicalDamage: 64,
-    mobility: 17.38446396885035,
-    healing: 85.84992746933932,
+    mobility: 24.006944444444446,
+    healing: 79.07202720757925,
     magicalDamage: 0
   }
 };

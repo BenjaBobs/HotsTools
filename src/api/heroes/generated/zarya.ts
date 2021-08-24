@@ -68,7 +68,7 @@ const zarya: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 43.75
+        magicalDamage: 46.875
       }
     },
     {
@@ -140,7 +140,7 @@ const zarya: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 33.06666666666666
+        magicalDamage: 24.8
       }
     }
   ],
@@ -214,7 +214,7 @@ const zarya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 3,
         tier: "level1",
@@ -365,7 +365,7 @@ const zarya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 8
+          magicalDamage: 6
         },
         order: 1,
         tier: "level7",
@@ -388,7 +388,7 @@ const zarya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 29.333333333333332
+          magicalDamage: 22
         },
         order: 2,
         tier: "level7",
@@ -482,7 +482,7 @@ const zarya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 33.06666666666666
+          magicalDamage: 24.8
         },
         order: 2,
         tier: "level10",
@@ -551,7 +551,7 @@ const zarya: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 4,
           healing: 0,
           magicalDamage: 0
         },
@@ -760,9 +760,9 @@ const zarya: Hero = {
   analysis: {
     tankiness: 69.06214689265536,
     physicalDamage: 40,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 8.500890992463452
+    magicalDamage: 10.575853536729321
   }
 };
       

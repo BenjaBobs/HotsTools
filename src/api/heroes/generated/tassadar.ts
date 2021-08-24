@@ -66,7 +66,7 @@ const tassadar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 160
+        magicalDamage: 120
       }
     },
     {
@@ -132,7 +132,7 @@ const tassadar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 37.333333333333336
+        magicalDamage: 28
       }
     },
     {
@@ -154,7 +154,7 @@ const tassadar: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 82.66666666666667
+        magicalDamage: 62
       }
     }
   ],
@@ -245,7 +245,7 @@ const tassadar: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_rework_q_ray.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 6,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -272,7 +272,7 @@ const tassadar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 24.53333333333333
+          magicalDamage: 18.400000000000002
         },
         order: 2,
         tier: "level4",
@@ -398,7 +398,7 @@ const tassadar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 37.333333333333336
+          magicalDamage: 28
         },
         order: 1,
         tier: "level10",
@@ -425,7 +425,7 @@ const tassadar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 82.66666666666667
+          magicalDamage: 62
         },
         order: 2,
         tier: "level10",
@@ -469,7 +469,7 @@ const tassadar: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tassadar_dimensionalshift.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 7,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -491,7 +491,7 @@ const tassadar: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 6,
           healing: 0,
           magicalDamage: 0
         },
@@ -668,9 +668,9 @@ const tassadar: Hero = {
   analysis: {
     tankiness: 49.717514124293785,
     physicalDamage: 28.000000000000004,
-    mobility: 17.38446396885035,
+    mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 30.98610732770362
+    magicalDamage: 30.98610732770363
   }
 };
       

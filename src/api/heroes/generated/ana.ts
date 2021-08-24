@@ -40,11 +40,11 @@ const ana: Hero = {
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ana_aim_down_sights.png",
       isPassive: false,
       analysis: {
-        mobility: 0,
+        mobility: 18.75,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 15,
-        magicalDamage: 40
+        healing: 18.75,
+        magicalDamage: 30
       }
     },
     {
@@ -65,7 +65,7 @@ const ana: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 390,
+        healing: 292.5,
         magicalDamage: 0
       }
     },
@@ -87,7 +87,7 @@ const ana: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 40.53333333333333,
+        healing: 55.400000000000006,
         magicalDamage: 0
       }
     },
@@ -153,8 +153,8 @@ const ana: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 60,
-        magicalDamage: 3.3333333333333335
+        healing: 45,
+        magicalDamage: 10
       }
     }
   ],
@@ -174,7 +174,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 6,
           magicalDamage: 0
         },
         order: 1,
@@ -220,7 +220,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.03333333333333333,
+          healing: 2,
           magicalDamage: 0
         },
         order: 3,
@@ -247,7 +247,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 10,
           magicalDamage: 0
         },
         order: 1,
@@ -315,7 +315,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 5,
           magicalDamage: 0
         },
         order: 1,
@@ -335,7 +335,7 @@ const ana: Hero = {
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ana_sleep_dart.png",
         isPassive: false,
         analysis: {
-          mobility: 0,
+          mobility: 0.4,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -418,8 +418,8 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 60,
-          magicalDamage: 3.3333333333333335
+          healing: 45,
+          magicalDamage: 10
         },
         order: 2,
         tier: "level10",
@@ -443,7 +443,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.6666666666666667,
+          healing: 5,
           magicalDamage: 0
         },
         order: 1,
@@ -466,7 +466,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.3333333333333333,
+          healing: 4,
           magicalDamage: 0
         },
         order: 2,
@@ -489,7 +489,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 10,
           magicalDamage: 0
         },
         order: 3,
@@ -514,7 +514,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.666666666666667,
+          healing: 11,
           magicalDamage: 0
         },
         order: 1,
@@ -537,7 +537,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6666666666666666,
+          healing: 2,
           magicalDamage: 0
         },
         order: 2,
@@ -585,7 +585,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3.3333333333333335,
+          healing: 10,
           magicalDamage: 0
         },
         order: 1,
@@ -611,7 +611,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.26666666666666666,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 2,
@@ -636,7 +636,7 @@ const ana: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 0,
+          tankiness: 5,
           healing: 0,
           magicalDamage: 0
         },
@@ -659,7 +659,7 @@ const ana: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 2,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -676,9 +676,9 @@ const ana: Hero = {
   analysis: {
     tankiness: 48.150659133709986,
     physicalDamage: 20,
-    mobility: 17.38446396885035,
+    mobility: 42.608134920634924,
     healing: 100,
-    magicalDamage: 4.7954689911922275
+    magicalDamage: 5.902115681467357
   }
 };
       

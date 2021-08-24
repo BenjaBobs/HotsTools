@@ -2,9 +2,19 @@ import { ChangelogItem } from './changelog-app';
 
 const changeLog: ChangelogItem[] = [
   {
+    date: new Date(2021, 7, 24),
+    added: [
+      'Movement speed analysis',
+      'A very primitive talent picker in the hero details page (with shareable link in address bar)',
+    ],
+    fixed: ['Issue where pattern matching wild cards could fail'],
+  },
+  {
     date: new Date(2021, 7, 23),
     added: ['Data from newest hots patch', 'New ability/talent analyses'],
-    code: ['Add stuff about pattern matching'],
+    code: [
+      'Created a pattern matching tool to make future analyses easier/better',
+    ],
   },
   {
     date: new Date(2021, 7, 6),

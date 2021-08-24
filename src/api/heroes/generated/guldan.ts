@@ -70,7 +70,7 @@ const guldan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 560
+        magicalDamage: 420
       }
     },
     {
@@ -87,8 +87,8 @@ const guldan: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 0,
-        magicalDamage: 52.800000000000004
+        healing: 39.6,
+        magicalDamage: 39.6
       }
     },
     {
@@ -110,7 +110,7 @@ const guldan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 58.285714285714285
+        magicalDamage: 43.714285714285715
       }
     },
     {
@@ -132,7 +132,7 @@ const guldan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 32
+        magicalDamage: 24
       }
     },
     {
@@ -154,7 +154,7 @@ const guldan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 44
+        magicalDamage: 33
       }
     }
   ],
@@ -198,7 +198,7 @@ const guldan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 5,
           magicalDamage: 0
         },
         order: 2,
@@ -300,7 +300,7 @@ const guldan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 73,
           magicalDamage: 0
         },
         order: 3,
@@ -346,7 +346,7 @@ const guldan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3.3333333333333335
+          magicalDamage: 10
         },
         order: 2,
         tier: "level7",
@@ -368,7 +368,7 @@ const guldan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 3,
           magicalDamage: 0
         },
         order: 3,
@@ -399,7 +399,7 @@ const guldan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 32
+          magicalDamage: 24
         },
         order: 1,
         tier: "level10",
@@ -426,7 +426,7 @@ const guldan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 44
+          magicalDamage: 33
         },
         order: 2,
         tier: "level10",
@@ -473,7 +473,7 @@ const guldan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 15,
           magicalDamage: 0
         },
         order: 2,
@@ -520,7 +520,7 @@ const guldan: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.6666666666666667,
+          healing: 5,
           magicalDamage: 0
         },
         order: 4,
@@ -566,7 +566,7 @@ const guldan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 82.93333333333334
+          magicalDamage: 62.2
         },
         order: 2,
         tier: "level16",
@@ -589,7 +589,7 @@ const guldan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 160
+          magicalDamage: 120
         },
         order: 3,
         tier: "level16",
@@ -677,9 +677,9 @@ const guldan: Hero = {
   analysis: {
     tankiness: 51.2241054613936,
     physicalDamage: 30,
-    mobility: 17.38446396885035,
-    healing: 0,
-    magicalDamage: 82.67599330661166
+    mobility: 24.006944444444446,
+    healing: 9.61982266488522,
+    magicalDamage: 82.67599330661167
   }
 };
       
