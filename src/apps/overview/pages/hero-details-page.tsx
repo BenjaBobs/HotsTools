@@ -15,7 +15,7 @@ export default function HeroDetailsPage(props: { hero?: string }) {
     !browserHistory.location.search?.includes('talents')
       ? new Array(hero?.talents.length).fill(undefined)
       : browserHistory.location.search
-          .substring(browserHistory.location.search.indexOf('talents='))
+          .substring(browserHistory.location.search.indexOf('talents=') + 'talents='.length)
           .toLowerCase()
           .replaceAll('%2c', ',')
           .split(',')
