@@ -3,6 +3,11 @@ on:
   push:
     branches:
       - master
+
+permissions:
+  id-token: write
+  pages: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
