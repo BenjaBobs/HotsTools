@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const greymane: Hero = {
+export const greymane: Hero = {
   name: "Greymane",
   nameNormalized: "greymane",
   franchise: "Warcraft",
@@ -170,8 +170,8 @@ const greymane: Hero = {
       {
         id: "GreymaneInnerBeastWolfheart",
         name: "Wolfheart",
-        descriptionShort: "Basic Attacks lower Inner Beast cooldown",
-        descriptionLong: "Increase the cooldown reduction from Basic Attacks during Inner Beast from 0.5 to 1 second.",
+        descriptionShort: "Increase Worgen Armor, Inner Beast cooldown reduction",
+        descriptionLong: "Increase the cooldown reduction from Basic Attacks during Inner Beast from 0.5 to 1.2 seconds, and Worgen Form's Armor bonus from 10 to 15.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -289,8 +289,8 @@ const greymane: Hero = {
       {
         id: "GreymaneInnerBeastInsatiable",
         name: "Insatiable",
-        descriptionShort: "Inner Beast causes Basic Attacks to restore Mana",
-        descriptionLong: "Inner Beast causes Basic Attacks to restore 10 Mana.",
+        descriptionShort: "Gain Mana, reduce Healing Fountain cooldown",
+        descriptionLong: "Inner Beast causes Basic Attacks to restore 10 Mana, and reduce the cooldown of Healing Fountain by 0.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -300,7 +300,7 @@ const greymane: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 2,
           magicalDamage: 0
         },
         order: 3,
@@ -339,7 +339,7 @@ const greymane: Hero = {
         id: "GreymaneGilneanCocktailIncendiaryElixir",
         name: "Incendiary Elixir",
         descriptionShort: "Quest: Increases Gilnean Cocktail damage",
-        descriptionLong: "Quest: Reduce the cooldown of Gilnean Cocktail by 2 seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by 20, up to 300. Reward: After hitting 15 Heroes, the cooldown is reduced by an additional 2 seconds.",
+        descriptionLong: "Quest: Reduce the cooldown of Gilnean Cocktail by 2 seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by 25, up to 375. Reward: After hitting 15 Heroes, the cooldown is reduced by an additional 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -444,8 +444,8 @@ const greymane: Hero = {
       {
         id: "GreymaneDarkflightDisengageRunningWild",
         name: "Running Wild",
-        descriptionShort: "Increases Darkflight and Disengage range",
-        descriptionLong: "Increases Darkflight and Disengage's range by 35%.",
+        descriptionShort: "Improve Darkflight and Disengage range, cooldown",
+        descriptionLong: "Increases Darkflight and Disengage's range by 35%, and reduce their cooldowns by 1 second.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -539,10 +539,10 @@ const greymane: Hero = {
         ]
       },
       {
-        id: "HeroGenericExecutionerPassive",
-        name: "Executioner",
+        id: "GreymaneLordofHisPack",
+        name: "Lord of His Pack",
         descriptionShort: "Attacking disabled Heroes increases damage",
-        descriptionLong: "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by 30% for 3 seconds.",
+        descriptionLong: "Attacking a Hero that is Slowed, Rooted, or Stunned increases Greymane's Basic Attack damage by 25% for 3 seconds, increased to 50% while in Worgen Form.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -613,7 +613,7 @@ const greymane: Hero = {
         id: "GreymaneCursedBulletGilneanRoulette",
         name: "Gilnean Roulette",
         descriptionShort: "Cursed Bullet deals less damage, lower cooldown",
-        descriptionLong: "Cursed Bullet's damage is reduced to 30% of current health but its cooldown is reduced by 20 seconds.",
+        descriptionLong: "Cursed Bullet's damage is reduced to 30% of current health but its cooldown is reduced by 24 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -688,8 +688,6 @@ const greymane: Hero = {
     physicalDamage: 74,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 11.676352189836255
+    magicalDamage: 2.9235013053544154
   }
 };
-      
-export default greymane;

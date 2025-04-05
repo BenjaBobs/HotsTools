@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const hogger: Hero = {
+export const hogger: Hero = {
   name: "Hogger",
   nameNormalized: "hogger",
   franchise: "Warcraft",
@@ -191,8 +191,8 @@ const hogger: Hero = {
         id: "HoggerOnTheProwl",
         name: "On The Prowl",
         descriptionShort: "Periodically heal, activate to gain Rage",
-        descriptionLong: "Activate to gain 30 Rage over 8 seconds. Passive: You heal for 8 (+4% / level) Health every second, increased by 2% per point of Rage.",
-        cooldown: 40,
+        descriptionLong: "Activate to gain 30 Rage over 8 seconds. Passive: You heal for 7 (+4% / level) Health every second, increased by 2% per point of Rage.",
+        cooldown: 45,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_rage.png",
@@ -213,7 +213,7 @@ const hogger: Hero = {
         id: "HoggerBruteForce",
         name: "Brute Force",
         descriptionShort: "Increases Attack Damage and Loot Hoard range",
-        descriptionLong: "Increase the range of Loot Hoard by 20% and its damage by 50%. Quest: Hitting Heroes with Staggering Blow permanently increases Basic Attack damage by 2, to a maximum of 150 bonus damage. Enemy Heroes that hit terrain grant an additional 8 damage.",
+        descriptionLong: "Increase the range of Loot Hoard by 20% and its damage by 50%. Quest: Hitting Heroes with Staggering Blow permanently increases Basic Attack damage by 2, to a maximum of 150 bonus damage. Enemy Heroes that hit terrain grant an additional 6 damage.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -279,30 +279,6 @@ const hogger: Hero = {
     ],
     [
       {
-        id: "HoggerSeeingRed",
-        name: "Seeing Red",
-        descriptionShort: "Rage empowers Basic Abilities, Basic Attacks",
-        descriptionLong: "While above 50 Rage, gain 35% Attack Speed and the cooldowns of Staggering Blow and Hogg Wild refresh 30% faster.",
-        cooldown: null,
-        category: "Talent",
-        type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_combo_q_e.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 6,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 1,
-        tier: "level7",
-        linkedAbilityIds: [
-          "HoggerStaggeringBlow",
-          "HoggerHoggWild"
-        ]
-      },
-      {
         id: "HoggerDenseBlastingPowder",
         name: "Dense Blasting Powder",
         descriptionShort: "Create more Ez-Thro Dynamite",
@@ -319,7 +295,7 @@ const hogger: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 2,
+        order: 1,
         tier: "level7",
         linkedAbilityIds: [
           "HoggerStaggeringBlow",
@@ -330,7 +306,7 @@ const hogger: Hero = {
         id: "HoggerGarbageFire",
         name: "Garbage Fire",
         descriptionShort: "Loot Hoard deals area damage, Slows",
-        descriptionLong: "Reduce the cooldown of Loot Hoard by 2 seconds.  Every 0.5 seconds, enemies in a large area around Loot Hoard take 23 (+4% / level) damage and are Slowed by 20%.",
+        descriptionLong: "Reduce the cooldown of Loot Hoard by 2 seconds. Every 0.5 seconds, enemies in a large area around Loot Hoard take 23 (+4% / level) damage and are Slowed by 20%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -343,10 +319,34 @@ const hogger: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 3,
+        order: 2,
         tier: "level7",
         linkedAbilityIds: [
           "HoggerLootHoard"
+        ]
+      },
+      {
+        id: "HoggerSeeingRed",
+        name: "Seeing Red",
+        descriptionShort: "Rage empowers Basic Abilities, Basic Attacks",
+        descriptionLong: "While above 50 Rage, gain 35% Attack Speed and the cooldowns of Staggering Blow and Hogg Wild refresh 30% faster.",
+        cooldown: null,
+        category: "Talent",
+        type: "Passive",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hogger_rage.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 6,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level7",
+        linkedAbilityIds: [
+          "HoggerStaggeringBlow",
+          "HoggerHoggWild"
         ]
       }
     ],
@@ -403,7 +403,7 @@ const hogger: Hero = {
         id: "HoggerDustDevil",
         name: "Dust Devil",
         descriptionShort: "Hogg Wild grants Armor",
-        descriptionLong: "Gain 20 Armor while Hogg Wild is active and for 3 seconds after. When at or above 50 Rage, increase this Armor to 40.",
+        descriptionLong: "Gain 25 Armor while Hogg Wild is active and for 4 seconds after. When at or above 50 Rage, increase this Armor to 40.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -412,7 +412,7 @@ const hogger: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 4,
+          tankiness: 5,
           healing: 0,
           magicalDamage: 0
         },
@@ -426,7 +426,7 @@ const hogger: Hero = {
         id: "HoggerPummel",
         name: "Pummel",
         descriptionShort: "Hogg Wild Slows, reduces Spell Power",
-        descriptionLong: "Enemies hit by Hogg Wild are Slowed by 10% for 2 seconds, stacking up to 5 times. Heroes hit have their Spell Power reduced by 50% for 2 seconds.",
+        descriptionLong: "Enemies hit by Hogg Wild are Slowed by 10% for 2 seconds, stacking up to 5 times. Heroes hit have their Spell Power reduced by 30% for 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -643,8 +643,6 @@ const hogger: Hero = {
     physicalDamage: 54.54545454545454,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 18.04993449300178
+    magicalDamage: 4.5193058751504145
   }
 };
-      
-export default hogger;

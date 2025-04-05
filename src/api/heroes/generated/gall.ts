@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const gall: Hero = {
+export const gall: Hero = {
   name: "Gall",
   nameNormalized: "gall",
   franchise: "Warcraft",
@@ -110,7 +110,7 @@ const gall: Hero = {
       id: "GallTwistingNether",
       name: "Twisting Nether",
       descriptionShort: "Slow and damage nearby enemies",
-      descriptionLong: "After 1 second, nearby enemies are slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 (+5% / level) damage.",
+      descriptionLong: "After 1 second, nearby enemies are Slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 (+5% / level) damage.",
       cooldown: 80,
       category: "heroic",
       type: "Heroic",
@@ -388,7 +388,7 @@ const gall: Hero = {
         id: "GallHeroicAbilityTwistingNether",
         name: "Twisting Nether",
         descriptionShort: "Slow and damage nearby enemies",
-        descriptionLong: "After 1 second, nearby enemies are slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 (+5% / level) damage.",
+        descriptionLong: "After 1 second, nearby enemies are Slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 (+5% / level) damage.",
         cooldown: 80,
         category: "Talent",
         type: "Heroic",
@@ -452,6 +452,7 @@ const gall: Hero = {
         order: 2,
         tier: "level13",
         linkedAbilityIds: [
+          "GallOgreRage",
           "GallOgreRagePassive"
         ]
       },
@@ -544,7 +545,11 @@ const gall: Hero = {
           magicalDamage: 0
         },
         order: 3,
-        tier: "level16"
+        tier: "level16",
+        linkedAbilityIds: [
+          "GallOgreRage",
+          "GallOgreRagePassive"
+        ]
       }
     ],
     [
@@ -623,7 +628,8 @@ const gall: Hero = {
         linkedAbilityIds: [
           "GallOgreRage",
           "GallOgreRagePassive"
-        ]
+        ],
+        isQuest: true
       },
       {
         id: "GallTwilightFrenzy",
@@ -652,8 +658,6 @@ const gall: Hero = {
     physicalDamage: 0,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 48.39734858803233
+    magicalDamage: 12.117629673415102
   }
 };
-      
-export default gall;

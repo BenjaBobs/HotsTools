@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const stukov: Hero = {
+export const stukov: Hero = {
   name: "Stukov",
   nameNormalized: "stukov",
   franchise: "Starcraft",
@@ -8,9 +8,9 @@ const stukov: Hero = {
   size: 0.6875,
   movementSpeed: 4.8398,
   health: {
-    amount: 1850,
+    amount: 1835,
     scale: 0.04,
-    regenRate: 3.8554,
+    regenRate: 3.8242,
     regenScale: 0.04
   },
   energy: {
@@ -33,7 +33,7 @@ const stukov: Hero = {
       id: "StukovBioKillSwitch",
       name: "Bio-Kill Switch",
       descriptionShort: "Detonate Viruses for immediate effects",
-      descriptionLong: "Activate to detonate all of Stukov's Viruses. Each Healing Pathogen heals its target for 450 (+4% / level) Health, and each Weighted Pustule does 100 (+4% / level) damage and Slows its target by 70% for 2 seconds. Can be cast while Channeling Lurking Arm.",
+      descriptionLong: "Activate to detonate all of Stukov's Viruses. Each Healing Pathogen heals its target for 435 (+4% / level) Health, and each Weighted Pustule does 100 (+4% / level) damage and Slows its target by 70% for 2 seconds. Can be cast while Channeling Lurking Arm.",
       cooldown: 16,
       category: "trait",
       type: "Trait",
@@ -43,7 +43,7 @@ const stukov: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 90,
+        healing: 87,
         magicalDamage: 0
       }
     },
@@ -170,7 +170,7 @@ const stukov: Hero = {
         id: "StukovFetidTouch",
         name: "Fetid Touch",
         descriptionShort: "Quest: Reduce Weighted Pustule cooldown, cost",
-        descriptionLong: "Basic Attacks become ranged and Slow enemies by 15% for 1.5 seconds, but deal 50% less damage. This effect can be toggled. Quest: Hit Heroes with Weighted Pustule. Reward: After hitting 20 Heroes, reduce the cooldown of Weighted Pustule by 5 seconds and remove its Mana cost.",
+        descriptionLong: "Basic Attacks become ranged and Slow enemies by 20% for 1.5 seconds, but deal 35% less damage. This effect can be toggled. Quest: Hit Heroes with Weighted Pustule. Reward: After hitting 15 Heroes, reduce the cooldown of Weighted Pustule by 5 seconds and remove its Mana cost.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -181,7 +181,7 @@ const stukov: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 7
         },
         order: 1,
         tier: "level1",
@@ -189,29 +189,6 @@ const stukov: Hero = {
           "StukovWeightedPustule"
         ],
         isQuest: true
-      },
-      {
-        id: "StukovWeightedPustuleReactiveBallistospores",
-        name: "Reactive Ballistospores",
-        descriptionShort: "Radiate Weighted Pustule at low Health",
-        descriptionLong: "While below 50% Health, the cooldown of Bio-Kill Switch refreshes 150% faster. Activate to instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch. This effect has a 60 second cooldown.",
-        cooldown: null,
-        category: "Talent",
-        type: "W",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_weightedpustule_a.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level1",
-        linkedAbilityIds: [
-          "StukovWeightedPustule"
-        ]
       },
       {
         id: "StukovLowBlow",
@@ -230,10 +207,33 @@ const stukov: Hero = {
           healing: 0,
           magicalDamage: 20
         },
-        order: 3,
+        order: 2,
         tier: "level1",
         linkedAbilityIds: [
           "StukovLurkingArm"
+        ]
+      },
+      {
+        id: "StukovWeightedPustuleReactiveBallistospores",
+        name: "Reactive Ballistospores",
+        descriptionShort: "Radiate Weighted Pustule at low Health",
+        descriptionLong: "While below 50% Health, the cooldown of Bio-Kill Switch refreshes 100% faster. Activate to instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch. This effect has a 75 second cooldown.",
+        cooldown: 75,
+        category: "Talent",
+        type: "Active",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_bio-killswitch.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level1",
+        linkedAbilityIds: [
+          "StukovWeightedPustule"
         ]
       }
     ],
@@ -269,7 +269,7 @@ const stukov: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_healingpathogen_b.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_healingpathogen_a.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -313,7 +313,7 @@ const stukov: Hero = {
         id: "StukovLongPitch",
         name: "The Long Pitch",
         descriptionShort: "Increase Weighted Pustule range, reduce cooldowns",
-        descriptionLong: "Increase the range of Weighted Pustule by 50%. Detonating 2 or more Weighted Pustules causes Stukov's Bio-Kill Switch and Basic Ability cooldowns to recharge 100% faster for 3 seconds.",
+        descriptionLong: "Increase the range of Weighted Pustule by 50%. Detonating 2 or more Weighted Pustules causes Stukov's Bio-Kill Switch and Basic Ability cooldowns to recharge 100% faster for 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -336,7 +336,7 @@ const stukov: Hero = {
         id: "StukovGrowingInfestation",
         name: "Growing Infestation",
         descriptionShort: "Lurking Arm expands, has set duration",
-        descriptionLong: "Lurking Arm's area expands by 50% over 2.5 seconds, but it cannot be Channeled for longer than 4 seconds.",
+        descriptionLong: "Lurking Arm's area expands by 50% over 2.5 seconds, but it cannot be Channeled for longer than 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -359,7 +359,7 @@ const stukov: Hero = {
         id: "StukovTargetedExcision",
         name: "Targeted Excision",
         descriptionShort: "Detonate single Weighted Pustule to reduce cooldowns",
-        descriptionLong: "Detonating exactly 1 Weighted Pustule (but any number of Healing Pathogens) with Bio-Kill Switch reduces the cooldown of Bio-Kill Switch to 8 seconds and other Basic Abilities by 1.5 seconds.",
+        descriptionLong: "Detonating exactly 1 Weighted Pustule (but any number of Healing Pathogens) with Bio-Kill Switch reduces the cooldown of Bio-Kill Switch to 7 seconds and other Basic Abilities by 1.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -446,7 +446,7 @@ const stukov: Hero = {
         id: "StukovItHungers",
         name: "It Hungers",
         descriptionShort: "Lurking Arm cost can be refunded",
-        descriptionLong: "Increase the range of Lurking Arm by 20%. If Lurking Arm damages enemy Heroes 8 times, its cooldown is reset and its Mana cost is refunded.",
+        descriptionLong: "Increase the range of Lurking Arm by 30%. If Lurking Arm damages enemy Heroes 8 times, its cooldown is reset and its Mana cost is refunded.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -517,7 +517,7 @@ const stukov: Hero = {
         id: "StukovSuperstrain",
         name: "Superstrain",
         descriptionShort: "Healing Pathogen heals when Stunned, Rooted",
-        descriptionLong: "Whenever an ally with Healing Pathogen is Stunned or Rooted, they are instantly healed for 250 (+4% / level) Health.",
+        descriptionLong: "Whenever an ally with Healing Pathogen is Stunned or Rooted, they are instantly healed for 300 (+4% / level) Health.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -527,7 +527,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 50,
+          healing: 60,
           magicalDamage: 0
         },
         order: 1,
@@ -540,7 +540,7 @@ const stukov: Hero = {
         id: "StukovUniversalCarrier",
         name: "Universal Carrier",
         descriptionShort: "Healing Pathogen can spread continually",
-        descriptionLong: "Healing Pathogen can continually spread through Stukov, but its healing is reduced by 40%.",
+        descriptionLong: "Healing Pathogen can continually spread through Stukov, but its healing is reduced by 25%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -550,7 +550,7 @@ const stukov: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
+          healing: 5,
           magicalDamage: 0
         },
         order: 2,
@@ -588,7 +588,7 @@ const stukov: Hero = {
         id: "StukovControlledChaos",
         name: "Controlled Chaos",
         descriptionShort: "Flailing Swipe only hits once, gains multiple charges",
-        descriptionLong: "Flailing Swipe gains 2 additional charges, but each use only swings 1 time, at maximum range.  Additionally, its cooldown is decreased to 25 seconds, and its Mana cost is reduced from 60 to 25.",
+        descriptionLong: "Flailing Swipe gains 2 additional charges, but each use only swings 1 time, at maximum range. Additionally, its cooldown is decreased to 25 seconds, and its Mana cost is reduced from 60 to 25.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -691,12 +691,10 @@ const stukov: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 55.74387947269304,
+    tankiness: 55.291902071563094,
     physicalDamage: 87,
     mobility: 24.006944444444446,
-    healing: 38.33353577067898,
-    magicalDamage: 20.037682738581676
+    healing: 37.6047613263695,
+    magicalDamage: 5.016994236737105
   }
 };
-      
-export default stukov;

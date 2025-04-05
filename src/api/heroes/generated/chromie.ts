@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const chromie: Hero = {
+export const chromie: Hero = {
   name: "Chromie",
   nameNormalized: "chromie",
   franchise: "Warcraft",
@@ -219,7 +219,7 @@ const chromie: Hero = {
         id: "ChromieTimewalkersPursuit",
         name: "Timewalker's Pursuit",
         descriptionShort: "Increase Spell Power, Activate to reveal an area",
-        descriptionLong: "Gain 10% Spell Power and reduce the arming time of Time Traps by 0.75 seconds. Activate to reveal the targeted area for 4 seconds. Enemies seen are revealed for 4 seconds.",
+        descriptionLong: "Gain 15% Spell Power and reduce the arming time of Time Traps by 0.75 seconds. Activate to reveal the targeted area for 4 seconds. Enemies seen are revealed for 4 seconds.",
         cooldown: 25,
         category: "Talent",
         type: "Active",
@@ -358,7 +358,7 @@ const chromie: Hero = {
         id: "ChromieDragonsBreathMobiusLoop",
         name: "Mobius Loop",
         descriptionShort: "Dragon's Breath's center deals more damage, Slows",
-        descriptionLong: "Dragon's Breath deals 30% bonus damage to enemies hit by its center.  Enemy Heroes hit by its center are Slowed by 60% for 0.75 seconds.",
+        descriptionLong: "Dragon's Breath deals 30% bonus damage to enemies hit by its center. Enemy Heroes hit by its center are Slowed by 40% for 0.75 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -596,7 +596,7 @@ const chromie: Hero = {
         id: "ChromieSlowingSandsUnravelling",
         name: "Unravelling",
         descriptionShort: "Slowing Sands reduces Spell Armor, lingers",
-        descriptionLong: "Every 0.25 seconds, enemy Heroes Slowed by Slowing Sands have their Spell Armor reduced by 10 up to 50. Slowing Sands persists for 5 seconds after it is cancelled.",
+        descriptionLong: "Every 0.25 seconds, enemy Heroes Slowed by Slowing Sands have their Spell Armor reduced by 10 up to 50. Passive: Increase Slowing Sands cast range by 50%, and Slowing Sands persists for 5 seconds after it is cancelled.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -612,6 +612,7 @@ const chromie: Hero = {
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
+          "ChromieSlowingSandsCancel",
           "ChromieSlowingSands"
         ],
         prerequisiteTalentIds: [
@@ -685,10 +686,7 @@ const chromie: Hero = {
           magicalDamage: 0
         },
         order: 4,
-        tier: "level20",
-        linkedAbilityIds: [
-          "ChromieTimewalkerTrait"
-        ]
+        tier: "level20"
       }
     ]
   ],
@@ -697,8 +695,6 @@ const chromie: Hero = {
     physicalDamage: 41,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 65.08136488046594
+    magicalDamage: 16.294939728514425
   }
 };
-      
-export default chromie;

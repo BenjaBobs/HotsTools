@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const illidan: Hero = {
+export const illidan: Hero = {
   name: "Illidan",
   nameNormalized: "illidan",
   franchise: "Warcraft",
@@ -527,7 +527,7 @@ const illidan: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -666,8 +666,6 @@ const illidan: Hero = {
     physicalDamage: 70.9090909090909,
     mobility: 24.006944444444446,
     healing: 1.4575488886189725,
-    magicalDamage: 20.218435031326617
+    magicalDamage: 5.062250628047879
   }
 };
-      
-export default illidan;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const tassadar: Hero = {
+export const tassadar: Hero = {
   name: "Tassadar",
   nameNormalized: "tassadar",
   franchise: "Starcraft",
@@ -670,8 +670,6 @@ const tassadar: Hero = {
     physicalDamage: 28.000000000000004,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 30.98610732770363
+    magicalDamage: 7.758238510418206
   }
 };
-      
-export default tassadar;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const liming: Hero = {
+export const liming: Hero = {
   name: "Li-Ming",
   nameNormalized: "liming",
   franchise: "Diablo",
@@ -187,7 +187,7 @@ const liming: Hero = {
         id: "WizardAetherWalker",
         name: "Aether Walker",
         descriptionShort: "Reduce Teleport's cooldown when out of combat",
-        descriptionLong: "Teleport costs no Mana.  If Li-Ming hasn't taken damage in the last 3 seconds, Teleport's cooldown is decreased by 2 seconds.  Casting Teleport causes Li-Ming's next cast of Magic Missiles to deal 10% bonus damage.",
+        descriptionLong: "Teleport costs no Mana. If Li-Ming hasn't taken damage in the last 3 seconds, Teleport's cooldown is decreased by 2 seconds. Casting Teleport causes Li-Ming's next cast of Magic Missiles to deal 10% bonus damage.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -456,7 +456,7 @@ const liming: Hero = {
         id: "WizardCannoneer",
         name: "Cannoneer",
         descriptionShort: "Abilities empower Basic Attacks",
-        descriptionLong: "When Li-Ming uses an Ability, her next Basic Attack's damage is increased by 75% and deals Spell damage instead of Physical.  Stacks up to 3 times.",
+        descriptionLong: "When Li-Ming uses an Ability, her next Basic Attack's damage is increased by 75% and deals Spell damage instead of Physical. Stacks up to 3 times.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -598,7 +598,7 @@ const liming: Hero = {
         id: "WizardDisintegrateTemporalFlux",
         name: "Temporal Flux",
         descriptionShort: "Disintegrate slows enemies",
-        descriptionLong: "Disintegrate gradually slows enemies caught in its beam, to a maximum of 60%.",
+        descriptionLong: "Disintegrate gradually Slows enemies caught in its beam, to a maximum of 60%.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -650,7 +650,7 @@ const liming: Hero = {
         id: "WizardTalRashasElements",
         name: "Tal Rasha's Elements",
         descriptionShort: "Cycle Abilities to gain damage",
-        descriptionLong: "Casting Abilities increases the damage of the next Ability by 5%, up to 20%.  This bonus is reset when the same Ability is used within a chain.",
+        descriptionLong: "Casting Abilities increases the damage of the next Ability by 5%, up to 20%. This bonus is reset when the same Ability is used within a chain.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -696,8 +696,6 @@ const liming: Hero = {
     physicalDamage: 31.5,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 48.0469104694452
+    magicalDamage: 12.029887690261562
   }
 };
-      
-export default liming;

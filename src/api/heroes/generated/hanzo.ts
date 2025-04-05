@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const hanzo: Hero = {
+export const hanzo: Hero = {
   name: "Hanzo",
   nameNormalized: "hanzo",
   franchise: "Overwatch",
@@ -123,7 +123,7 @@ const hanzo: Hero = {
       id: "HanzoDragonstrike",
       name: "Dragonstrike",
       descriptionShort: "Summon a pair of Spirit Dragons to damage enemies",
-      descriptionLong: "After 1.5 seconds, summon a pair of Spirit Dragons which travel forward, dealing 84 (+4% / level) damage every 0.25 seconds to enemy Heroes in its area.  Enemies in the center take 75% increased damage.",
+      descriptionLong: "After 1.5 seconds, summon a pair of Spirit Dragons which travel forward, dealing 84 (+4% / level) damage every 0.25 seconds to enemy Heroes in its area. Enemies in the center take 75% increased damage.",
       cost: {
         type: "Mana",
         amount: 60
@@ -386,7 +386,7 @@ const hanzo: Hero = {
         id: "HanzoDragonstrike",
         name: "Dragonstrike",
         descriptionShort: "Summon a pair of Spirit Dragons to damage enemies",
-        descriptionLong: "After 1.5 seconds, summon a pair of Spirit Dragons which travel forward, dealing 84 (+4% / level) damage every 0.25 seconds to enemy Heroes in its area.  Enemies in the center take 75% increased damage.",
+        descriptionLong: "After 1.5 seconds, summon a pair of Spirit Dragons which travel forward, dealing 84 (+4% / level) damage every 0.25 seconds to enemy Heroes in its area. Enemies in the center take 75% increased damage.",
         cost: {
           type: "Mana",
           amount: 60
@@ -494,7 +494,7 @@ const hanzo: Hero = {
         id: "HanzoMountedArchery",
         name: "Mounted Archery",
         descriptionShort: "Increase Mount Speed, Natural Agility mounts",
-        descriptionLong: "Reduce the cooldown of Summon Mount by 2 seconds.  Upon mounting, gain 25% additional Movement Speed for 5 seconds. Using Natural Agility instantly mounts.",
+        descriptionLong: "Reduce the cooldown of Summon Mount by 2 seconds. Upon mounting, gain 25% additional Movement Speed for 5 seconds. Using Natural Agility instantly mounts.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -566,7 +566,7 @@ const hanzo: Hero = {
         id: "HanzoGiantSlayer",
         name: "Giant Slayer",
         descriptionShort: "Basic Attacks, Scatter Arrow deal bonus damage",
-        descriptionLong: "Enemy Heroes hit by Scatter Arrow and Basic Attacks take a bonus 2% of their maximum Health as damage.",
+        descriptionLong: "Enemy Heroes hit by Scatter Arrow and Basic Attacks take a bonus 1.6% of their maximum Health as damage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -698,8 +698,6 @@ const hanzo: Hero = {
     physicalDamage: 66,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 48.25717334059748
+    magicalDamage: 12.082532880153686
   }
 };
-      
-export default hanzo;

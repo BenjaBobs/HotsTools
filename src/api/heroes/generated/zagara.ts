@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const zagara: Hero = {
+export const zagara: Hero = {
   name: "Zagara",
   nameNormalized: "zagara",
   franchise: "Starcraft",
@@ -8,9 +8,9 @@ const zagara: Hero = {
   size: 1.125,
   movementSpeed: 4.8398,
   health: {
-    amount: 1500,
+    amount: 1550,
     scale: 0.04,
-    regenRate: 3.125,
+    regenRate: 3.2304,
     regenScale: 0.04
   },
   energy: {
@@ -56,7 +56,7 @@ const zagara: Hero = {
     {
       id: "ZagaraBanelingBarrage",
       name: "Baneling Barrage",
-      descriptionShort: "Launch a Baneling that explodes on contact with an enemy",
+      descriptionShort: "Launch 2 Banelings that explode on contact with an enemy",
       descriptionLong: "Launch 2 Banelings that deal 80 (+4% / level) damage to enemies they hit. Stores up to 2 charges.",
       cost: {
         type: "Mana",
@@ -562,7 +562,7 @@ const zagara: Hero = {
         id: "ZagaraMasteryMutalisk",
         name: "Mutalisk",
         descriptionShort: "Hunter Killer summons a Mutalisk instead",
-        descriptionLong: "Reduce the cooldown of Hunter Killer by 4 seconds.  Hunter Killer now spawns a Mutalisk. Mutalisks have a bounce attack and last for 30 seconds.",
+        descriptionLong: "Reduce the cooldown of Hunter Killer by 4 seconds. Hunter Killer now spawns a Mutalisk. Mutalisks have a bounce attack and last for 30 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -674,7 +674,7 @@ const zagara: Hero = {
         id: "ZagaraBroodmother",
         name: "Broodmother",
         descriptionShort: "Basic Attacks launch Banelings",
-        descriptionLong: "Every 3rd Basic Attack also launches a Baneling towards the target.",
+        descriptionLong: "Every 3rd Basic Attack also launches a Baneling towards the target. Passive: Gain 20% bonus Attack Speed.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -725,12 +725,10 @@ const zagara: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 45.19774011299435,
+    tankiness: 46.704331450094166,
     physicalDamage: 51.87500000000001,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 12.055071279397078
+    magicalDamage: 3.0183242204817495
   }
 };
-      
-export default zagara;

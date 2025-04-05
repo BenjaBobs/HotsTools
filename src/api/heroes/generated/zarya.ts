@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const zarya: Hero = {
+export const zarya: Hero = {
   name: "Zarya",
   nameNormalized: "zarya",
   franchise: "Overwatch",
@@ -51,7 +51,7 @@ const zarya: Hero = {
       id: "ZaryaParticleGrenade",
       name: "Particle Grenade",
       descriptionShort: "Deals damage to enemies in a small area",
-      descriptionLong: "Launch a particle grenade that deals 75 (+4% / level) damage to enemies within the area. Deals 50% damage to Structures. Stores up to 4 charges.",
+      descriptionLong: "Launch a particle grenade that deals 80 (+4% / level) damage to enemies within the area. Deals 50% damage to Structures. Stores up to 4 charges.",
       cooldown: 8,
       charges: {
         chargesMax: 4,
@@ -68,7 +68,7 @@ const zarya: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 46.875
+        magicalDamage: 48.75
       }
     },
     {
@@ -111,7 +111,7 @@ const zarya: Hero = {
       id: "ZaryaGravitonSurge",
       name: "Graviton Surge",
       descriptionShort: "Launch a gravity bomb that draws in enemies",
-      descriptionLong: "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds.",
+      descriptionLong: "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds. Affected Heroes take 30 (+4% / level) damage a second.",
       cooldown: 60,
       category: "heroic",
       type: "Heroic",
@@ -180,7 +180,7 @@ const zarya: Hero = {
         id: "ZaryaShieldAllyTogetherWeAreStrong",
         name: "Together We Are Strong",
         descriptionShort: "Allied damage dealt with Shield Ally contributes to Energy",
-        descriptionLong: "Every 5.35 (+4% / level) damage done by allies while under Shield Ally contributes 1 Energy, up to 40 Energy per Shield.",
+        descriptionLong: "For 3 seconds after gaining Shield Ally, every 5.35 (+4% / level) damage done by the bearer contributes 1 Energy to Zarya, up to 40 Energy per Shield.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -202,12 +202,12 @@ const zarya: Hero = {
       {
         id: "ZaryaWeaponFeelTheHeat",
         name: "Feel the Heat",
-        descriptionShort: "Basic Attack deals more damage to close enemies",
-        descriptionLong: "Zarya's Basic Attack deals 50% additional damage to enemies in melee range.",
+        descriptionShort: "Basic Attack deals more damage to close enemies, increased size",
+        descriptionLong: "Zarya's Basic Attack deals 50% additional damage to enemies in melee range. While above 40 Energy, Zarya's Basic Attack size is increased by 35%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_base.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -251,8 +251,8 @@ const zarya: Hero = {
       {
         id: "ZaryaPersonalBarrierIAmTheStrongest",
         name: "I Am the Strongest",
-        descriptionShort: "Increases Personal Barrier Shield amount",
-        descriptionLong: "Personal Barrier absorbs an additional 140 (+4% / level) damage.",
+        descriptionShort: "Increases Personal Barrier Shield amount, Energy received",
+        descriptionLong: "Personal Barrier absorbs an additional 140 (+4% / level) damage. Passive: Damage absorbed by Zarya's Shields contributes 20% more Energy.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -298,7 +298,7 @@ const zarya: Hero = {
       {
         id: "ZaryaShieldAllySpeedBarrier",
         name: "Speed Barrier",
-        descriptionShort: "Shield Ally increases allied Hero Movement Speed",
+        descriptionShort: "Shield Ally grants Movement Speed",
         descriptionLong: "Shield Ally increases the allied Hero's Movement Speed by 50% for the duration.",
         cooldown: null,
         category: "Talent",
@@ -348,7 +348,7 @@ const zarya: Hero = {
         id: "ZaryaParticleGrenadePinpointAccuracy",
         name: "Pinpoint Accuracy",
         descriptionShort: "Particle Grenade center deals more damage, Slows",
-        descriptionLong: "Particle Grenade deals 30 (+4% / level) more damage and Slows Movement Speed by 25% for 2 seconds to enemies hit by the center of the blast.",
+        descriptionLong: "Particle Grenade deals 25 (+4% / level) more damage and Slows Movement Speed by 25% for 2 seconds to enemies hit by the center of the blast.",
         cooldown: null,
         charges: {
           chargesMax: 4,
@@ -365,9 +365,38 @@ const zarya: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6
+          magicalDamage: 5
         },
         order: 1,
+        tier: "level7",
+        linkedAbilityIds: [
+          "ZaryaParticleGrenade"
+        ]
+      },
+      {
+        id: "ZaryaDeepBurn",
+        name: "Deep Burn",
+        descriptionShort: "Particle Grenade can generate Energy",
+        descriptionLong: "Hitting a Hero with Particle Grenade causes Basic Attacks against them to generate 2 Energy. Lasts 4 seconds.",
+        cooldown: null,
+        charges: {
+          chargesMax: 4,
+          chargesInitial: 4,
+          chargeCost: 1,
+          recastCooldown: 0.75
+        },
+        category: "Talent",
+        type: "Q",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zarya_particlegrenade_a.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 2,
         tier: "level7",
         linkedAbilityIds: [
           "ZaryaParticleGrenade"
@@ -390,56 +419,10 @@ const zarya: Hero = {
           healing: 0,
           magicalDamage: 22
         },
-        order: 2,
-        tier: "level7",
-        linkedAbilityIds: [
-          "ZaryaPersonalBarrier"
-        ]
-      },
-      {
-        id: "ZaryaWeaponToTheLimit",
-        name: "To the Limit",
-        descriptionShort: "Increases Basic Attack size at high Energy",
-        descriptionLong: "While above 40 Energy, Zarya's Basic Attack size is increased by 35%.",
-        cooldown: null,
-        category: "Talent",
-        type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_base.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
-          "ZaryaEnergy"
-        ]
-      },
-      {
-        id: "ZaryaEnergyHitMe",
-        name: "Hit Me",
-        descriptionShort: "Shield damage absorbed contributes more Energy",
-        descriptionLong: "Damage absorbed by Zarya's Shields contributes 20% more Energy.",
-        cooldown: null,
-        category: "Talent",
-        type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zarya_energy.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 4,
-        tier: "level7",
-        linkedAbilityIds: [
-          "ZaryaEnergy"
+          "ZaryaPersonalBarrier"
         ]
       }
     ],
@@ -448,7 +431,7 @@ const zarya: Hero = {
         id: "ZaryaHeroicAbilityGravitonSurge",
         name: "Graviton Surge",
         descriptionShort: "Launch a gravity bomb that draws in enemies",
-        descriptionLong: "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds.",
+        descriptionLong: "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds. Affected Heroes take 30 (+4% / level) damage a second.",
         cooldown: 60,
         category: "Talent",
         type: "Heroic",
@@ -519,7 +502,7 @@ const zarya: Hero = {
         id: "ZaryaPersonalBarrierSpellBarrier",
         name: "Spell Barrier",
         descriptionShort: "Personal Barrier grants Spell Armor",
-        descriptionLong: "Upon expiration or breaking, Personal Barrier grants Zarya 75 Spell Armor for 3 Seconds, reducing the damage taken from Abilities by 75%.",
+        descriptionLong: "Upon expiration or breaking, Personal Barrier grants Zarya 75 Spell Armor for 3 seconds, reducing the damage taken from Abilities by 75%.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -565,7 +548,7 @@ const zarya: Hero = {
         id: "ZaryaPainIsTemporary",
         name: "Pain is Temporary",
         descriptionShort: "Consume Energy to gain a Shield",
-        descriptionLong: "Activate to consume all Energy and gain a Shield that absorbs 0.5% of Zarya's maximum Health per Energy consumed and lasts for 3 seconds. Zarya may only have one personal Shield active on herself at a time.",
+        descriptionLong: "Activate to consume all Energy and gain a Shield that absorbs 0.8% of Zarya's maximum Health per Energy consumed and lasts for 3 seconds. Zarya may only have one personal Shield active on herself at a time.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
@@ -762,8 +745,6 @@ const zarya: Hero = {
     physicalDamage: 40,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 10.575853536729321
+    magicalDamage: 2.7172306782917097
   }
 };
-      
-export default zarya;

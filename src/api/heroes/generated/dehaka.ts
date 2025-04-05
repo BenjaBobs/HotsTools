@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const dehaka: Hero = {
+export const dehaka: Hero = {
   name: "Dehaka",
   nameNormalized: "dehaka",
   franchise: "Starcraft",
@@ -8,9 +8,9 @@ const dehaka: Hero = {
   size: 1,
   movementSpeed: 4.8398,
   health: {
-    amount: 2434,
+    amount: 2385,
     scale: 0.04,
-    regenRate: 5.0703,
+    regenRate: 4.9687,
     regenScale: 0.04
   },
   energy: {
@@ -23,14 +23,14 @@ const dehaka: Hero = {
       nameId: "HeroDehaka",
       range: 1,
       period: 0.8,
-      damage: 100,
+      damage: 95,
       damageScale: 0.04
     },
     {
       nameId: "HeroDehakaDragWeapon",
       range: 1,
       period: 0.8,
-      damage: 100,
+      damage: 95,
       damageScale: 0.04
     }
   ],
@@ -103,7 +103,7 @@ const dehaka: Hero = {
       id: "DehakaDarkSwarm",
       name: "Dark Swarm",
       descriptionShort: "Damage nearby enemies",
-      descriptionLong: "Deal 52 (+4% / level) damage every 0.5 seconds to nearby enemies for 3.5 seconds. While active, you are able to move through units. Can be cast during Drag and Burrow.",
+      descriptionLong: "Deal 48 (+4% / level) damage every 0.5 seconds to nearby enemies for 3.5 seconds. While active, you are able to move through units. Can be cast during Drag and Burrow.",
       cost: {
         type: "Mana",
         amount: 50
@@ -118,7 +118,7 @@ const dehaka: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.6
+        magicalDamage: 14.399999999999999
       }
     },
     {
@@ -272,7 +272,7 @@ const dehaka: Hero = {
         id: "DehakaBurrowTalentLurkerStrain",
         name: "Lurker Strain",
         descriptionShort: "Burrow Stealths, knocks enemies away",
-        descriptionLong: "Emerging from Burrow grants Dehaka Stealth for 3 seconds and knocks nearby enemies back, dealing 125 (+4% / level) damage and Slowing them by 30% for 3 seconds. Passive: Reduce the cooldown of Burrow by 6 seconds.",
+        descriptionLong: "Emerging from Burrow grants Dehaka Stealth for 3 seconds and knocks nearby enemies back, dealing 125 (+4% / level) damage and Slowing them by 30% for 3 seconds. Passive: Reduce the cooldown of Burrow by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -324,7 +324,7 @@ const dehaka: Hero = {
         id: "DehakaEssenceCollectionTalentHeroStalker",
         name: "Hero Stalker",
         descriptionShort: "Takedowns grant more Essence",
-        descriptionLong: "Increases Essence gained from Takedowns by 100%, and gain 1 Essence each time an enemy Hero is hit by Dark Swarm.",
+        descriptionLong: "Increases Essence gained from Takedowns by 100%, and gain 1 Essence for each enemy Hero hit by Dark Swarm, up to 3 at once.",
         cooldown: null,
         charges: {
           chargesMax: 50,
@@ -354,8 +354,8 @@ const dehaka: Hero = {
       {
         id: "DehakaDragTalentFeedingFrenzy",
         name: "Feeding Frenzy",
-        descriptionShort: "Basic Attacks reduce Drag cooldown",
-        descriptionLong: "Basic Attacks reduce Drag's cooldown by 1.75 seconds. Passive: Increase Drag's duration by 0.5 seconds.",
+        descriptionShort: "Gambit: Basic Attacks reduce Drag cooldown",
+        descriptionLong: "Increase Drag's duration by 0.5 seconds. Gambit: Basic Attacks reduce Drag's cooldown by 1.5 seconds. Every death reduces this cooldown reduction by 0.25 seconds, up to 3 times.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -372,13 +372,14 @@ const dehaka: Hero = {
         tier: "level7",
         linkedAbilityIds: [
           "DehakaDrag"
-        ]
+        ],
+        isQuest: true
       },
       {
         id: "DehakaDragTalentParalyzingEnzymes",
         name: "Paralyzing Enzymes",
-        descriptionShort: "Gambit: Drag slows, deals additional damage",
-        descriptionLong: "Drag Slows enemies by 40% for 2 seconds after it ends. Gambit: When Drag ends, deal an additional 280 (+4% / level) damage to the target over 2 seconds. Every death reduces this damage by 40 (+4% / level), up to 5 times.",
+        descriptionShort: "Drag Slows, reduces Healing",
+        descriptionLong: "Drag Slows the target by 40% and reduces their healing received by 40% while active and for 2 seconds after ending.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -388,15 +389,14 @@ const dehaka: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
-          magicalDamage: 56
+          healing: 8,
+          magicalDamage: 0
         },
         order: 2,
         tier: "level7",
         linkedAbilityIds: [
           "DehakaDrag"
-        ],
-        isQuest: true
+        ]
       },
       {
         id: "DehakaDarkSwarmTalentSymbiosis",
@@ -483,7 +483,7 @@ const dehaka: Hero = {
         id: "DehakaBrushstalkerFerociousStalker",
         name: "Ferocious Stalker",
         descriptionShort: "Brushstalker Slows, increases Dark Swarm damage",
-        descriptionLong: "Dark Swarm Slows enemy Heroes by 15% for 0.75 seconds and deals 60% more damage while Brushstalker's Movement Speed bonus is active.",
+        descriptionLong: "Dark Swarm Slows enemy Heroes by 15% for 0.75 seconds and deals 50% more damage while Brushstalker's Movement Speed bonus is active.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -494,7 +494,7 @@ const dehaka: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 12
+          magicalDamage: 10
         },
         order: 1,
         tier: "level13",
@@ -563,7 +563,7 @@ const dehaka: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_drag_var1.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_drag.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -582,14 +582,14 @@ const dehaka: Hero = {
         id: "DehakaTunnelingClaws",
         name: "Tunneling Claws",
         descriptionShort: "Increase Burrow movement speed",
-        descriptionLong: "Increase movement speed while Burrowing to 125%.",
+        descriptionLong: "Increase movement speed while Burrowing to 120%.",
         cooldown: null,
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_burrow.png",
         isPassive: false,
         analysis: {
-          mobility: 25,
+          mobility: 24,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -605,7 +605,7 @@ const dehaka: Hero = {
         id: "DehakaPackLeaderBrushstalkerTalent",
         name: "Pack Leader",
         descriptionShort: "Gain Armor, Attack Speed near bushes",
-        descriptionLong: "Dehaka gains 20 Armor and 15% increased Attack Speed while in a bush and for 5 seconds after leaving.",
+        descriptionLong: "Dehaka gains 40 Armor and 15% increased Attack Speed while in a bush and for 5 seconds after leaving.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -614,7 +614,7 @@ const dehaka: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 1,
-          tankiness: 4,
+          tankiness: 8,
           healing: 0,
           magicalDamage: 0
         },
@@ -630,7 +630,7 @@ const dehaka: Hero = {
         id: "DehakaIsolationTalentContagion",
         name: "Contagion",
         descriptionShort: "Isolation splashes to nearby Heroes",
-        descriptionLong: "Isolation hits all Heroes near the first target.",
+        descriptionLong: "Isolation hits all Heroes near the first target, but it deals 60% less damage to all targets.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -641,7 +641,7 @@ const dehaka: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 12
         },
         order: 1,
         tier: "level20",
@@ -732,12 +732,10 @@ const dehaka: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 73.34086629001884,
-    physicalDamage: 62.5,
+    tankiness: 71.86440677966101,
+    physicalDamage: 59.375,
     mobility: 24.403769841269842,
     healing: 4.421231628810883,
-    magicalDamage: 12.925633342413512
+    magicalDamage: 3.1919609871434904
   }
 };
-      
-export default dehaka;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const falstad: Hero = {
+export const falstad: Hero = {
   name: "Falstad",
   nameNormalized: "falstad",
   franchise: "Warcraft",
@@ -33,8 +33,8 @@ const falstad: Hero = {
       id: "FalstadTailwindCooldownDisplay",
       name: "Tailwind",
       descriptionShort: "After not taking damage for a brief period, gain increased Movement Speed",
-      descriptionLong: "Gain 15% increased Movement Speed after not taking damage for 6 seconds.",
-      cooldown: 6,
+      descriptionLong: "Gain 15% increased Movement Speed after not taking damage for 5 seconds.",
+      cooldown: 5,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_falstad_tailwind.png",
@@ -135,7 +135,7 @@ const falstad: Hero = {
       id: "FalstadMightyGust",
       name: "Mighty Gust",
       descriptionShort: "Push away enemies and slow them",
-      descriptionLong: "Push enemies away, and slow their Movement Speed by 40% decaying over 4 seconds.",
+      descriptionLong: "Push enemies away, and Slow them by 40%, decaying over 4 seconds.",
       cost: {
         type: "Mana",
         amount: 70
@@ -206,7 +206,7 @@ const falstad: Hero = {
         id: "FalstadLightningRodDishonorableDischarge",
         name: "Dishonorable Discharge",
         descriptionShort: "Quest: Increase Lightning Rod damage",
-        descriptionLong: "Reduce Lightning Rod's cooldown by 2 seconds. Quest: After 3 Lightning Rod strikes, subsequent strikes on enemy Heroes increases its damage by 0.75%, up to 75%. Reward: After 30 subsequent strikes, further reduce Lightning Rod's cooldown by 2 seconds. Reward:After 100 subsequent strikes, Takedowns reset Lightning Rod's cooldown.",
+        descriptionLong: "Reduce Lightning Rod's cooldown by 2 seconds. Quest: After 3 Lightning Rod strikes, subsequent strikes on enemy Heroes increases its damage by 1%, up to 75%. Reward: After 30 subsequent strikes, further reduce Lightning Rod's cooldown by 2 seconds. Reward: After 75 subsequent strikes, Takedowns reset Lightning Rod's cooldown.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -313,7 +313,10 @@ const falstad: Hero = {
           magicalDamage: 0
         },
         order: 3,
-        tier: "level4"
+        tier: "level4",
+        linkedAbilityIds: [
+          "FalstadTailwindCooldownDisplay"
+        ]
       }
     ],
     [
@@ -419,7 +422,7 @@ const falstad: Hero = {
         id: "FalstadHeroicAbilityMightyGust",
         name: "Mighty Gust",
         descriptionShort: "Push away enemies and slow them",
-        descriptionLong: "Push enemies away, and slow their Movement Speed by 40% decaying over 4 seconds.",
+        descriptionLong: "Push enemies away, and Slow them by 40%, decaying over 4 seconds.",
         cost: {
           type: "Mana",
           amount: 70
@@ -542,7 +545,7 @@ const falstad: Hero = {
         id: "FalstadMasteryAerieGustsTailwind",
         name: "Aerie Gusts",
         descriptionShort: "Reduce Tailwind delay, increase Move Speed",
-        descriptionLong: "Reduces the activation time for Tailwind from 6 to 3 seconds, and increases the Movement Speed bonus from 15% to 25%.",
+        descriptionLong: "Reduces the activation time for Tailwind from 5 to 3 seconds, and increases the Movement Speed bonus from 15% to 25%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -688,8 +691,6 @@ const falstad: Hero = {
     physicalDamage: 74.28571428571429,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 11.389948242985563
+    magicalDamage: 2.851792067840538
   }
 };
-      
-export default falstad;

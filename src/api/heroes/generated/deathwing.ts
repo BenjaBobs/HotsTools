@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const deathwing: Hero = {
+export const deathwing: Hero = {
   name: "Deathwing",
   nameNormalized: "deathwing",
   franchise: "Warcraft",
@@ -230,7 +230,7 @@ const deathwing: Hero = {
         id: "DeathwingInfernus",
         name: "Infernus",
         descriptionShort: "Increase Molten Flame damage at high Energy",
-        descriptionLong: "Increase the damage of Molten Flame against enemy Heroes by 25%.  Increase this damage bonus to 75% when Molten Flame is cast at 75 Energy or higher.",
+        descriptionLong: "Increase the damage of Molten Flame against enemy Heroes by 25%. Increase this damage bonus to 75% when Molten Flame is cast at 75 Energy or higher.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -304,7 +304,7 @@ const deathwing: Hero = {
         id: "DeathwingFirestorm",
         name: "Firestorm",
         descriptionShort: "Meteors reduce Dragonflight's cooldown",
-        descriptionLong: "Reduce the cooldown of Deathwing's landing Abilities by 2 seconds.  When Deathwing lands, he drops 7 meteors near the landing area, dealing 70 (+4% / level) damage to enemies hit. Heroes hit by the meteors reduce Dragonflight's cooldown by 25 seconds. Meteors prioritize landing on Heroes, otherwise they fall randomly in the area.",
+        descriptionLong: "Reduce the cooldown of Deathwing's landing Abilities by 2 seconds. When Deathwing lands, he drops 7 meteors near the landing area, dealing 70 (+4% / level) damage to enemies hit. Heroes hit by the meteors reduce Dragonflight's cooldown by 25 seconds. Meteors prioritize landing on Heroes, otherwise they fall randomly in the area.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -430,7 +430,7 @@ const deathwing: Hero = {
         id: "DeathwingWickedInferno",
         name: "Wicked Inferno",
         descriptionShort: "Reduce Molten Flame's Energy cost",
-        descriptionLong: "Molten Flame's Energy cost per second is reduced by 10.  After using Molten Flame, Deathwing gains 15 Energy over 3 seconds.",
+        descriptionLong: "Molten Flame's Energy cost per second is reduced by 10. After using Molten Flame, Deathwing gains 15 Energy over 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -652,8 +652,6 @@ const deathwing: Hero = {
     physicalDamage: 51.66666666666667,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 26.699695814037955
+    magicalDamage: 6.68501551647702
   }
 };
-      
-export default deathwing;

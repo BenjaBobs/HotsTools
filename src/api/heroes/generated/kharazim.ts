@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const kharazim: Hero = {
+export const kharazim: Hero = {
   name: "Kharazim",
   nameNormalized: "kharazim",
   franchise: "Diablo",
@@ -8,9 +8,9 @@ const kharazim: Hero = {
   size: 0.625,
   movementSpeed: 4.8398,
   health: {
-    amount: 2027,
+    amount: 2080,
     scale: 0.04,
-    regenRate: 4.2226,
+    regenRate: 4.333333333333333,
     regenScale: 0.04
   },
   energy: {
@@ -79,7 +79,7 @@ const kharazim: Hero = {
       id: "MonkBreathOfHeaven",
       name: "Breath of Heaven",
       descriptionShort: "Heal nearby ally Heroes and grant Movement Speed",
-      descriptionLong: "Heal nearby Heroes for 285 (+4% / level) and give them 15% Movement Speed for 3 seconds.",
+      descriptionLong: "Heal nearby Heroes for 295 (+4% / level) and give them 15% Movement Speed for 3 seconds.",
       cost: {
         type: "Mana",
         amount: 65
@@ -93,7 +93,7 @@ const kharazim: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 85.5,
+        healing: 88.5,
         magicalDamage: 0
       }
     },
@@ -145,7 +145,7 @@ const kharazim: Hero = {
       id: "MonkDivinePalm",
       name: "Divine Palm",
       descriptionShort: "Prevent an ally from death",
-      descriptionLong: "Protect an allied Hero from death, causing them to be healed for 1200 (+4% / level) if they take fatal damage in the next 3 seconds.",
+      descriptionLong: "Protect an allied Hero from death, causing them to be healed for 1200 (+4% / level) if they take fatal damage in the next 4 seconds.",
       cost: {
         type: "Mana",
         amount: 50
@@ -253,7 +253,7 @@ const kharazim: Hero = {
         id: "MonkEarthAlly",
         name: "Earth Ally",
         descriptionShort: "Place an Earth Ally that grants Physical Armor",
-        descriptionLong: "Place an Earth Ally that grants nearby allied Heroes 50 Physical Armor against Heroic Basic Attacks, reducing damage taken by 50%. Has 400 (+4% / level) Health and lasts 10 seconds.  Kharazim can Radiant Dash to Earth Allies.",
+        descriptionLong: "Place an Earth Ally that grants nearby allied Heroes 50 Physical Armor against Heroic Basic Attacks, reducing damage taken by 50%. Has 400 (+4% / level) Health and lasts 10 seconds. Kharazim can Radiant Dash to Earth Allies.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
@@ -273,7 +273,7 @@ const kharazim: Hero = {
         id: "MonkAirAlly",
         name: "Air Ally",
         descriptionShort: "Place an Air Ally that gives Spell Power, reveals",
-        descriptionLong: "Place an Air Ally that gives allied Heroes 15% Spell Power, grants vision, and reveals a large area around it. Has 200 (+4% / level) Health and lasts 10 seconds. Kharazim can Radiant Dash to Air Allies.",
+        descriptionLong: "Place an Air Ally that gives allied Heroes 20% Spell Power, grants vision, and reveals a large area around it. Has 300 (+4% / level) Health and lasts 10 seconds. Kharazim can Radiant Dash to Air Allies.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
@@ -324,7 +324,7 @@ const kharazim: Hero = {
         id: "MonkHeavenlyZealBreathofHeaven",
         name: "Heavenly Zeal",
         descriptionShort: "Breath of Heaven increases allies Move Speed",
-        descriptionLong: "Increases Breath of Heaven's Movement Speed bonus to 30%.  Radiant Dashing to an ally increases the healing they receive from Breath of Heaven by 50% for 3.5 seconds.",
+        descriptionLong: "Increases Breath of Heaven's Movement Speed bonus to 30%. Radiant Dashing to an ally increases the healing they receive from Breath of Heaven by 50% for 3.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -347,7 +347,7 @@ const kharazim: Hero = {
         id: "MonkBlazingFistsDeadlyReach",
         name: "Blazing Fists",
         descriptionShort: "Basic Attacks reduce Deadly Reach cooldown",
-        descriptionLong: "Increase the duration of Deadly Reach by 100%.  Every 3rd Basic Attack reduces the cooldown of Deadly Reach by 0.75 seconds.",
+        descriptionLong: "Increase the duration of Deadly Reach by 100%. Every 3rd Basic Attack reduces the cooldown of Deadly Reach by 0.75 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -373,7 +373,7 @@ const kharazim: Hero = {
         id: "MonkHeroicAbilityDivinePalm",
         name: "Divine Palm",
         descriptionShort: "Prevent an ally from death",
-        descriptionLong: "Protect an allied Hero from death, causing them to be healed for 1200 (+4% / level) if they take fatal damage in the next 3 seconds.",
+        descriptionLong: "Protect an allied Hero from death, causing them to be healed for 1200 (+4% / level) if they take fatal damage in the next 4 seconds.",
         cost: {
           type: "Mana",
           amount: 50
@@ -635,11 +635,11 @@ const kharazim: Hero = {
         id: "MonkFistsofLegendTrait",
         name: "Fists of Legend",
         descriptionShort: "Gain partial level 1 talent benefits",
-        descriptionLong: "Gain 50% of the benefit from both level 1  talents that were not chosen.",
+        descriptionLong: "Gain 50% of the benefit from both level 1 talents that were not chosen.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_glues_draft_portrait_monk.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kharazim_fistoflegend.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -680,8 +680,8 @@ const kharazim: Hero = {
         id: "MonkEpiphany",
         name: "Epiphany",
         descriptionShort: "Activate to restore Mana and Radiant Dash charges",
-        descriptionLong: "Activate to restore 33% of Kharazim's maximum Mana and refill 2 charges of Radiant Dash.",
-        cooldown: 60,
+        descriptionLong: "Activate to restore 70% of Kharazim's maximum Mana and refill 2 charges of Radiant Dash.",
+        cooldown: 70,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kharazim_epiphany.png",
@@ -699,12 +699,10 @@ const kharazim: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 61.077212806026374,
+    tankiness: 62.674199623352166,
     physicalDamage: 64,
     mobility: 24.006944444444446,
-    healing: 79.07202720757925,
+    healing: 79.80080165188875,
     magicalDamage: 0
   }
 };
-      
-export default kharazim;

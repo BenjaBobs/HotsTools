@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const garrosh: Hero = {
+export const garrosh: Hero = {
   name: "Garrosh",
   nameNormalized: "garrosh",
   franchise: "Warcraft",
@@ -384,7 +384,7 @@ const garrosh: Hero = {
         name: "Lok-tar ogar!",
         descriptionShort: "Increase Into the Fray Armor, lower cooldown",
         descriptionLong: "Increase Into the Fray's Armor by 20. Hitting enemy Heroes with Into the Fray reduces its cooldown by 12 seconds.",
-        cooldown: 45,
+        cooldown: null,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_intothefray.png",
@@ -551,7 +551,7 @@ const garrosh: Hero = {
         cooldown: null,
         category: "Talent",
         type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_wrecking_ball.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_groundbreaker.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -574,7 +574,7 @@ const garrosh: Hero = {
         cooldown: null,
         category: "Talent",
         type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_intothefray.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_wrecking_ball.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -596,8 +596,8 @@ const garrosh: Hero = {
         descriptionLong: "Gain 5% maximum Health, increase Groundbreaker's Slow duration by 1 second, and Bloodthirst gains an additional charge.",
         cooldown: null,
         category: "Talent",
-        type: "Active",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_armor_up.png",
+        type: "Passive",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -619,7 +619,7 @@ const garrosh: Hero = {
         id: "GarroshWarlordsChallengeDeathWish",
         name: "Death Wish",
         descriptionShort: "Takedowns reduce Warlord's Challenge cooldown",
-        descriptionLong: "Increase the duration of Warlord's Challenge by 0.5 seconds.  If an enemy Hero is killed while Taunted by Warlord's Challenge, its cooldown is reduced by 45 seconds.",
+        descriptionLong: "Increase the duration of Warlord's Challenge by 0.5 seconds. If an enemy Hero is killed while Taunted by Warlord's Challenge, its cooldown is reduced by 45 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -735,8 +735,6 @@ const garrosh: Hero = {
     physicalDamage: 57.08333333333334,
     mobility: 24.006944444444446,
     healing: 6.680432406170291,
-    magicalDamage: 21.221794697176065
+    magicalDamage: 5.3134697798138015
   }
 };
-      
-export default garrosh;

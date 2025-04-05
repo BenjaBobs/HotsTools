@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const sylvanas: Hero = {
+export const sylvanas: Hero = {
   name: "Sylvanas",
   nameNormalized: "sylvanas",
   franchise: "Warcraft",
@@ -33,7 +33,7 @@ const sylvanas: Hero = {
       id: "SylvanasBlackArrowsActive",
       name: "Black Arrows",
       descriptionShort: "Basic Attacks apply Banshee's Curse, activate to disable enemies",
-      descriptionLong: "Activate to cause all Basic Attacks and Abilities to Stun Minions, non-Elite Mercenaries, and Structures for 3 seconds. Lasts for 10 seconds.  Banshee's CurseBasic Attacks infect enemies with Banshee's Curse for 3 seconds, stacking up to 3 times. Deal 25% more damage to enemies with 3 stacks.",
+      descriptionLong: "Activate to cause all Basic Attacks and Abilities to Stun Minions, non-Elite Mercenaries, and Structures for 3 seconds. Lasts for 10 seconds. Banshee's CurseBasic Attacks infect enemies with Banshee's Curse for 3 seconds, stacking up to 3 times. Deal 25% more damage to enemies with 3 stacks.",
       cooldown: 40,
       category: "trait",
       type: "Trait",
@@ -332,7 +332,7 @@ const sylvanas: Hero = {
         id: "SylvanasTalentLostSoul",
         name: "Lost Soul",
         descriptionShort: "Basic Attacks reduce Shadow Dagger cooldown",
-        descriptionLong: "Increase Shadow Dagger's damage by 10%.  Basic Attacks against Heroes with 3 stacks of Banshee's Curse reduce the cooldown of Shadow Dagger by 1.75 seconds.",
+        descriptionLong: "Increase Shadow Dagger's damage by 10%. Basic Attacks against Heroes with 3 stacks of Banshee's Curse reduce the cooldown of Shadow Dagger by 1.75 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -486,8 +486,8 @@ const sylvanas: Hero = {
         descriptionLong: "Increase Sylvanas's Basic Attack range by 1. Sylvanas's Basic Attacks against enemy Heroes with 3 stacks of Banshee's Curse shoot an untalented shot of Withering Fire. This shot of Withering Fire applies Banshee's Curse.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sylvanas_blackarrows.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -531,8 +531,8 @@ const sylvanas: Hero = {
         descriptionLong: "Heal for 15% of damage dealt by Sylvanas to enemies with 3 stacks of Banshee's Curse. Healing is doubled against Heroes.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_heal.png",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_sylvanas_blackarrows.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -671,8 +671,6 @@ const sylvanas: Hero = {
     physicalDamage: 67.5,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 13.260980824315066
+    magicalDamage: 3.3202573988742157
   }
 };
-      
-export default sylvanas;

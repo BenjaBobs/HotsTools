@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const fenix: Hero = {
+export const fenix: Hero = {
   name: "Fenix",
   nameNormalized: "fenix",
   franchise: "Starcraft",
@@ -236,7 +236,7 @@ const fenix: Hero = {
         id: "FenixInhibitingEnergy",
         name: "Inhibiting Energy",
         descriptionShort: "Phase Bomb can Slow enemies hit",
-        descriptionLong: "Every 10 seconds, Fenix's next Basic Attack with Phase Bomb active Slows all enemies hit by 60%, decaying in strength over 1.5 seconds.",
+        descriptionLong: "Every 10 seconds, Fenix's next Basic Attack with Phase Bomb active Slows all enemies hit by 60%, decaying over 1.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -259,7 +259,7 @@ const fenix: Hero = {
         id: "FenixEmergencyProtocol",
         name: "Emergency Protocol",
         descriptionShort: "Gain Move Speed, more when Shield depletes",
-        descriptionLong: "While Fenix has shields from Shield Capacitor, he gains 10% Movement Speed.  This bonus is increased to 15% when Fenix loses shields from Shield Capacitor.",
+        descriptionLong: "While Fenix has shields from Shield Capacitor, he gains 10% Movement Speed. This bonus is increased to 15% when Fenix loses shields from Shield Capacitor.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -557,7 +557,11 @@ const fenix: Hero = {
           magicalDamage: 0
         },
         order: 3,
-        tier: "level16"
+        tier: "level16",
+        linkedAbilityIds: [
+          "FenixRepeaterCannon",
+          "FenixPhaseBomb"
+        ]
       }
     ],
     [
@@ -664,8 +668,6 @@ const fenix: Hero = {
     physicalDamage: 30.74074074074074,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 10.61643058203941
+    magicalDamage: 2.6581202896409044
   }
 };
-      
-export default fenix;

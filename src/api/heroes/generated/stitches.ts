@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const stitches: Hero = {
+export const stitches: Hero = {
   name: "Stitches",
   nameNormalized: "stitches",
   franchise: "Warcraft",
@@ -572,7 +572,7 @@ const stitches: Hero = {
         descriptionLong: "Deals 15 (+4% / level) damage per second to nearby enemies. Hitting an enemy Hero with Hook or activating Shambling Horror increases this damage by 150% for 4 seconds.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
+        type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_burningrage.png",
         isPassive: false,
         analysis: {
@@ -694,8 +694,6 @@ const stitches: Hero = {
     physicalDamage: 32.272727272727266,
     mobility: 25.59424603174604,
     healing: 0,
-    magicalDamage: 24.434758921274863
+    magicalDamage: 6.117925225358357
   }
 };
-      
-export default stitches;

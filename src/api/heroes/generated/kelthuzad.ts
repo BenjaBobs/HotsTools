@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const kelthuzad: Hero = {
+export const kelthuzad: Hero = {
   name: "Kel'Thuzad",
   nameNormalized: "kelthuzad",
   franchise: "Warcraft",
@@ -8,9 +8,9 @@ const kelthuzad: Hero = {
   size: 0.875,
   movementSpeed: 4.8398,
   health: {
-    amount: 1445,
+    amount: 1490,
     scale: 0.04,
-    regenRate: 3.0117,
+    regenRate: 3.0976,
     regenScale: 0.04
   },
   energy: {
@@ -350,7 +350,7 @@ const kelthuzad: Hero = {
         id: "KelThuzadIceCold",
         name: "Ice Cold",
         descriptionShort: "Reduce cooldown of Glacial Spike",
-        descriptionLong: "Reduce the cooldown of Glacial Spike by 8 seconds and increase its damage by 400%.",
+        descriptionLong: "Reduce the cooldown of Glacial Spike by 10 seconds and increase its damage by 400%.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -431,7 +431,7 @@ const kelthuzad: Hero = {
         id: "KelThuzadIcyGrasp",
         name: "Icy Grasp",
         descriptionShort: "Increase Frost Nova Slow, reduce cooldown",
-        descriptionLong: "Increase Frost Nova's Slow by 20%. Each time Kel'Thuzad damages enemies Slowed by Frost Nova, reduce the cooldown of Frost Nova by 0.5 seconds.",
+        descriptionLong: "Increase Frost Nova's Slow by 20%. Each time Kel'Thuzad damages enemies Slowed by Frost Nova, reduce the cooldown of Frost Nova by 0.75 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -599,7 +599,7 @@ const kelthuzad: Hero = {
         id: "KelThuzadMightOfTheScourge",
         name: "Might of the Scourge",
         descriptionShort: "Hitting Heroes recasts Shadow Fissure",
-        descriptionLong: "If a Hero is hit with Shadow Fissure, a second one is cast below them 1 second later.  This second cast will not duplicate itself.",
+        descriptionLong: "If a Hero is hit with Shadow Fissure, a second one is cast below them 1 second later. This second cast will not duplicate itself.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -664,12 +664,10 @@ const kelthuzad: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 43.54048964218456,
+    tankiness: 44.89642184557439,
     physicalDamage: 36,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 47.63007354944156
+    magicalDamage: 11.925520910299984
   }
 };
-      
-export default kelthuzad;

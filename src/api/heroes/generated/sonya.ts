@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const sonya: Hero = {
+export const sonya: Hero = {
   name: "Sonya",
   nameNormalized: "sonya",
   franchise: "Diablo",
@@ -514,7 +514,7 @@ const sonya: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -552,7 +552,7 @@ const sonya: Hero = {
         id: "BarbarianArreatCrater",
         name: "Arreat Crater",
         descriptionShort: "Leap creates a crater and has reduced cooldown",
-        descriptionLong: "Leap leaves behind an impassable crater for 5 seconds.  Reduces Leap's cooldown by 20 seconds.",
+        descriptionLong: "Leap leaves behind an impassable crater for 5 seconds. Reduces Leap's cooldown by 20 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -650,8 +650,6 @@ const sonya: Hero = {
     physicalDamage: 52.49999999999999,
     mobility: 24.006944444444446,
     healing: 0.43726466658569174,
-    magicalDamage: 100
+    magicalDamage: 25.037796546589213
   }
 };
-      
-export default sonya;

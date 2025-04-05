@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const azmodan: Hero = {
+export const azmodan: Hero = {
   name: "Azmodan",
   nameNormalized: "azmodan",
   franchise: "Diablo",
@@ -51,7 +51,7 @@ const azmodan: Hero = {
       id: "AzmodanGlobeOfAnnihilation",
       name: "Globe of Annihilation",
       descriptionShort: "Launch a long range orb of destruction dealing area damage",
-      descriptionLong: "Shoot a globe of destruction, dealing 184 (+4% / level) damage on impact. Quest: Hitting a Hero or killing a Minion within 1.5 seconds of being hit by Globe of Annihilation grants 2 Annihilation. Reward: Each stack of Annihilation increases the damage of Globe of Annihilation by 1, up to 400.",
+      descriptionLong: "Shoot a globe of destruction, dealing 176 (+4% / level) damage on impact. Quest: Hitting a Hero or killing a Minion within 1.5 seconds of being hit by Globe of Annihilation grants 2 Annihilation. Reward: Each stack of Annihilation increases the damage of Globe of Annihilation by 1, up to 400.",
       cost: {
         type: "Mana",
         amount: 70
@@ -66,7 +66,7 @@ const azmodan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 55.199999999999996
+        magicalDamage: 52.8
       }
     },
     {
@@ -117,7 +117,7 @@ const azmodan: Hero = {
       id: "AzmodanDemonicInvasion",
       name: "Demonic Invasion",
       descriptionShort: "Damage area and create an army of Grunts",
-      descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 39 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 88 (+4% / level) damage to nearby enemies. Usable while Channeling All Shall Burn.",
+      descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 85 (+4% / level) damage per impact. Grunts deal 39 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 40 (+4% / level) damage to nearby enemies, doubled against enemy Heroes. Usable while Channeling All Shall Burn.",
       cost: {
         type: "Mana",
         amount: 60
@@ -132,7 +132,7 @@ const azmodan: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 38.400000000000006
+        magicalDamage: 32.8
       }
     },
     {
@@ -212,7 +212,7 @@ const azmodan: Hero = {
         id: "AzmodanWrath",
         name: "Wrath",
         descriptionShort: "Quest: Basic Attacks grant Annihilation",
-        descriptionLong: "Basic Attacks against Heroes under 75% Health grant 1 Annihilation. Quest: After gaining 200 Annihilation, hitting a Hero with Globe of Annihilation increases the damage of Azmodan's next Basic Attack against them within 3 seconds by 75% the amount of Annihilation he has.",
+        descriptionLong: "Basic Attacks against Heroes under 75% Health grant 1 Annihilation. Quest: After gaining 200 Annihilation, hitting a Hero with Globe of Annihilation increases the damage of Azmodan's next Basic Attack against them within 3 seconds by 85% the amount of Annihilation he has.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -285,7 +285,7 @@ const azmodan: Hero = {
         id: "AzmodanBattleborn",
         name: "Battleborn",
         descriptionShort: "Basic Attacks reduce Demon cooldowns",
-        descriptionLong: "Reduce the Mana cost of Summon Demon Warrior from 25 to 20.  Azmodan's Basic Attacks reduce the cooldown of Summon Demon Warrior by 0.75 seconds and Demon Lieutenant by 1.5 seconds.",
+        descriptionLong: "Reduce the Mana cost of Summon Demon Warrior from 25 to 20. Azmodan's Basic Attacks reduce the cooldown of Summon Demon Warrior by 0.75 seconds and Demon Lieutenant by 1.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -334,7 +334,7 @@ const azmodan: Hero = {
         id: "AzmodanBombardment",
         name: "Bombardment",
         descriptionShort: "Globe empowers Basic Attacks",
-        descriptionLong: "After casting Globe of Annihilation, Azmodan's Basic Attacks within the next 4 seconds have an additional 1.5 range and can hit 2 additional targets. Hitting Heroes with Basic Attacks empowered by Bombardment grant 1 Annihilation.",
+        descriptionLong: "After casting Globe of Annihilation, Azmodan's Basic Attacks within the next 4 seconds have an additional 1.5 range and can hit 3 additional targets. Hitting Heroes with Basic Attacks empowered by Bombardment grant 1 Annihilation.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -382,7 +382,7 @@ const azmodan: Hero = {
         id: "AzmodanHeroicAbilityDemonicInvasion",
         name: "Demonic Invasion",
         descriptionShort: "Damage area and create an army of Grunts",
-        descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 65 (+4% / level) damage per impact. Grunts deal 39 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 88 (+4% / level) damage to nearby enemies. Usable while Channeling All Shall Burn.",
+        descriptionLong: "Rain a small army of Demonic Grunts down on enemies, dealing 85 (+4% / level) damage per impact. Grunts deal 39 (+4% / level) damage, have 750 (+4% / level) Health and last up to 10 seconds. When Grunts die they explode, dealing 40 (+4% / level) damage to nearby enemies, doubled against enemy Heroes. Usable while Channeling All Shall Burn.",
         cost: {
           type: "Mana",
           amount: 60
@@ -397,7 +397,7 @@ const azmodan: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 38.400000000000006
+          magicalDamage: 32.8
         },
         order: 1,
         tier: "level10",
@@ -679,8 +679,6 @@ const azmodan: Hero = {
     physicalDamage: 42.5,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 51.36316171796969
+    magicalDamage: 12.564651987586819
   }
 };
-      
-export default azmodan;

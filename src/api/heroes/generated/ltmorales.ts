@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const ltmorales: Hero = {
+export const ltmorales: Hero = {
   name: "Lt. Morales",
   nameNormalized: "ltmorales",
   franchise: "Starcraft",
@@ -480,7 +480,7 @@ const ltmorales: Hero = {
         id: "MedicBedsideManner",
         name: "Bedside Manner",
         descriptionShort: "Displacement Grenade empowers Basic Attacks",
-        descriptionLong: "Heroes hit by Displacement Grenade will take an additional 6% of maximum Health as damage from Lt. Morales' next Basic Attack against them. Passive: Basic Attacks against Heroes deal an additional 1% of maximum Health as damage.",
+        descriptionLong: "Heroes hit by Displacement Grenade will take an additional 6% of maximum Health as damage from Lt. Morales's next Basic Attack against them. Passive: Basic Attacks against Heroes deal an additional 1% of maximum Health as damage.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -694,5 +694,3 @@ const ltmorales: Hero = {
     magicalDamage: 0
   }
 };
-      
-export default ltmorales;

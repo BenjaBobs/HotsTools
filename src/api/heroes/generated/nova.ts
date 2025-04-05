@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const nova: Hero = {
+export const nova: Hero = {
   name: "Nova",
   nameNormalized: "nova",
   franchise: "Starcraft",
@@ -150,7 +150,7 @@ const nova: Hero = {
         type: "Mana",
         amount: 100
       },
-      cooldown: 60,
+      cooldown: 50,
       charges: {
         chargesMax: 1,
         chargesInitial: 1,
@@ -205,7 +205,7 @@ const nova: Hero = {
         id: "NovaCovertOps",
         name: "Covert Ops",
         descriptionShort: "Stealth enhances Pinning Shot slow and cost",
-        descriptionLong: "After being Stealthed for 4 seconds, Pinning Shot's Slow is increased to 55% and costs no Mana. Bonus is lost after losing Stealth for 1 second.",
+        descriptionLong: "After being Stealthed for 2 seconds, Pinning Shot's Slow is increased to 60% and costs no Mana. Bonus is lost after losing Stealth for 1 second.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -234,14 +234,14 @@ const nova: Hero = {
         id: "NovaAdvancedCloaking",
         name: "Advanced Cloaking",
         descriptionShort: "Stealth grants Move Speed, Mana regen",
-        descriptionLong: "After being Stealthed for 2 seconds, gain an additional 10% Movement Speed. While Stealthed, regenerate 2 Mana per second.",
+        descriptionLong: "After being Stealthed for 1 second, gain an additional 10% Movement Speed. While Stealthed, regenerate 6 Mana per second.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nova_personalcloaking.png",
         isPassive: false,
         analysis: {
-          mobility: 0.4,
+          mobility: 1.2000000000000002,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -259,11 +259,11 @@ const nova: Hero = {
         id: "NovaRapidProjection",
         name: "Rapid Projection",
         descriptionShort: "Reduces Holo Decoy cooldown and Mana cost",
-        descriptionLong: "Reduces Holo Decoy's cooldown and Mana cost by 50%.",
+        descriptionLong: "Reduces Holo Decoy's cooldown and Mana cost by 60%.",
         cooldown: null,
         category: "Talent",
         type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nova_holodecoy_var1.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nova_holodecoy.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -282,7 +282,7 @@ const nova: Hero = {
         id: "NovaHoloStability",
         name: "Holo Stability",
         descriptionShort: "Increase Holo Decoy range, duration",
-        descriptionLong: "Increase the cast range of Holo Decoy by 100% and its duration by 120%.",
+        descriptionLong: "Increase the cast range of Holo Decoy by 100% and its duration by 120%. Passive: Reduce the cooldown of Ghost Protocol by 15 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -298,14 +298,15 @@ const nova: Hero = {
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
-          "NovaHoloDecoy"
+          "NovaHoloDecoy",
+          "NovaGhostProtocol"
         ]
       },
       {
         id: "NovaCovertMission",
         name: "Covert Mission",
         descriptionShort: "Kill Minions or Heroes to bribe a Mercenary",
-        descriptionLong: "Enemy Minions killed near Nova grant a stack of Bribe. Hero Takedowns grant 10 stacks of Bribe. Use 25 stacks to bribe a Mercenary, instantly defeating them.  Does not work on Elite Mercenaries.  Maximum of 100 stacks. If a camp is defeated entirely with Bribe, the camp respawns 50% faster.",
+        descriptionLong: "Enemy Minions killed near Nova grant a stack of Bribe. Hero Takedowns grant 10 stacks of Bribe. Use 25 stacks to bribe a Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum of 100 stacks. If a camp is defeated entirely with Bribe, the camp respawns 50% faster.",
         cooldown: null,
         charges: {
           chargesMax: 4,
@@ -332,8 +333,8 @@ const nova: Hero = {
       {
         id: "NovaMasteryPerfectShotSnipe",
         name: "Perfect Shot",
-        descriptionShort: "Hero hits reduce Snipe cooldown, refund Mana",
-        descriptionLong: "Hitting an enemy Hero with Snipe reduces its cooldown by 4 seconds and refunds its Mana cost.",
+        descriptionShort: "Snipe hits reduce cooldown, refund Mana",
+        descriptionLong: "Hitting an enemy with Snipe reduces its cooldown by 2 seconds and refunds half its Mana cost, doubled against enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -356,7 +357,7 @@ const nova: Hero = {
         id: "NovaCombatStyleOneintheChamber",
         name: "One in the Chamber",
         descriptionShort: "Using an Ability empowers next Basic Attack",
-        descriptionLong: "After using an Ability, Nova's next Basic Attack within 3 seconds deals 60% additional damage.",
+        descriptionLong: "After using an Ability, Nova's next Basic Attack within 3 seconds deals 65% additional damage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -367,7 +368,7 @@ const nova: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 12
+          magicalDamage: 13
         },
         order: 2,
         tier: "level7",
@@ -379,7 +380,7 @@ const nova: Hero = {
         id: "NovaCombatStyleAntiArmorShells",
         name: "Anti-Armor Shells",
         descriptionShort: "Basic Attacks hit harder, reduce Physical Armor",
-        descriptionLong: "Nova's Basic Attacks deal 250% damage and decrease the Physical Armor of Heroic targets by 15 for 3 seconds, but her Attack Speed is proportionally slower.",
+        descriptionLong: "Nova's Basic Attacks deal 250% damage and decrease the Physical Armor of Heroic targets by 15 for 4 seconds, but her Attack Speed is proportionally slower.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -436,7 +437,7 @@ const nova: Hero = {
           type: "Mana",
           amount: 100
         },
-        cooldown: 60,
+        cooldown: 50,
         charges: {
           chargesMax: 1,
           chargesInitial: 1,
@@ -646,7 +647,7 @@ const nova: Hero = {
         id: "NovaMasteryPrecisionBarrage",
         name: "Precision Barrage",
         descriptionShort: "Lower Precision Strike cooldown, gain charge",
-        descriptionLong: "Precision Strike gains a 2nd charge and its cooldown is reduced by 30 seconds.",
+        descriptionLong: "Precision Strike gains a 2nd charge and its cooldown is reduced by 25 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -724,8 +725,6 @@ const nova: Hero = {
     physicalDamage: 52.5,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 33.78961227640062
+    magicalDamage: 8.460174375646519
   }
 };
-      
-export default nova;

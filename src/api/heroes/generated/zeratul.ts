@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const zeratul: Hero = {
+export const zeratul: Hero = {
   name: "Zeratul",
   nameNormalized: "zeratul",
   franchise: "Starcraft",
@@ -666,8 +666,6 @@ const zeratul: Hero = {
     physicalDamage: 70,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 25.96930899845637
+    magicalDamage: 6.5021427515885915
   }
 };
-      
-export default zeratul;

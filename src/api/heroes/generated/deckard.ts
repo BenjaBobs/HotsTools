@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const deckard: Hero = {
+export const deckard: Hero = {
   name: "Deckard",
   nameNormalized: "deckard",
   franchise: "Diablo",
@@ -313,7 +313,7 @@ const deckard: Hero = {
         id: "DeckardCubeMastery",
         name: "Cube Mastery",
         descriptionShort: "Horadric Cube reduces Scroll of Sealing cooldown",
-        descriptionLong: "Reduce the Mana cost of Scroll of Sealing from 40 to 25.  Each enemy Hero hit by Horadric Cube reduces the cooldown of Scroll of Sealing by 4 seconds.",
+        descriptionLong: "Reduce the Mana cost of Scroll of Sealing from 40 to 25. Each enemy Hero hit by Horadric Cube reduces the cooldown of Scroll of Sealing by 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -693,8 +693,6 @@ const deckard: Hero = {
     physicalDamage: 28.636363636363633,
     mobility: 24.006944444444446,
     healing: 51.92517915705089,
-    magicalDamage: 7.967856169980933
+    magicalDamage: 1.9949756169646813
   }
 };
-      
-export default deckard;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const murky: Hero = {
+export const murky: Hero = {
   name: "Murky",
   nameNormalized: "murky",
   franchise: "Warcraft",
@@ -422,7 +422,7 @@ const murky: Hero = {
         id: "MurkyEggShell",
         name: "Egg Shell",
         descriptionShort: "Spawning from Egg grants Shield",
-        descriptionLong: "Spawning from his Egg grants Murky a Shield equal to 100% of his maximum Health. The shield lasts indefinitely.",
+        descriptionLong: "Spawning from his Egg grants Murky a Shield equal to 100% of his maximum Health. Casting Spawn Egg refreshes this Shield for an amount equal to 35% of Murky's current Health.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -642,8 +642,6 @@ const murky: Hero = {
     physicalDamage: 37.49999999999999,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 39.39662217379461
+    magicalDamage: 9.864046106103148
   }
 };
-      
-export default murky;

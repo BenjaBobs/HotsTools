@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const xul: Hero = {
+export const xul: Hero = {
   name: "Xul",
   nameNormalized: "xul",
   franchise: "Diablo",
@@ -33,7 +33,7 @@ const xul: Hero = {
       id: "NecromancerRaiseSkeletonDisplayAbility",
       name: "Raise Skeleton",
       descriptionShort: "Spawn Skeletal Warriors from Minions",
-      descriptionLong: "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 (+4% / level) Health that attacks for 21 (+4% / level) damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 40 (+4% / level) damage to nearby enemies.  Up to 3 Skeletal Warriors can be active at once when spawned in this way.",
+      descriptionLong: "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 (+4% / level) Health that attacks for 21 (+4% / level) damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 40 (+4% / level) damage to nearby enemies. Up to 3 Skeletal Warriors can be active at once when spawned in this way.",
       cooldown: null,
       charges: {
         chargesMax: 3,
@@ -55,7 +55,7 @@ const xul: Hero = {
       id: "NecromancerSpectralScythe",
       name: "Spectral Scythe",
       descriptionShort: "Throw a scythe that damages enemies as it returns to Xul",
-      descriptionLong: "Summon a scythe that travels to Xul after 1 second, dealing 190 (+4% / level) damage to enemies and spawning a Skeletal Warrior when hitting enemy Heroes.  These do not count towards Xul's Raise Skeleton maximum.",
+      descriptionLong: "Summon a scythe that travels to Xul after 1 second, dealing 190 (+4% / level) damage to enemies and spawning a Skeletal Warrior when hitting enemy Heroes. These do not count towards Xul's Raise Skeleton maximum.",
       cost: {
         type: "Mana",
         amount: 55
@@ -99,7 +99,7 @@ const xul: Hero = {
       id: "NecromancerBonePrison",
       name: "Bone Prison",
       descriptionShort: "Root an enemy in place",
-      descriptionLong: "After a 2 second delay, deal 80 (+4% / level) damage and Root the target enemy Hero for 1.75 seconds.  All nearby Skeletal Warriors will fixate on the target for their duration.",
+      descriptionLong: "After a 2 second delay, deal 80 (+4% / level) damage and Root the target enemy Hero for 1.75 seconds. All nearby Skeletal Warriors will fixate on the target for their duration.",
       cost: {
         type: "Mana",
         amount: 70
@@ -262,7 +262,7 @@ const xul: Hero = {
         id: "NecromancerTalentGrimScythe",
         name: "Grim Scythe",
         descriptionShort: "Reduce Cursed Strikes cooldown",
-        descriptionLong: "Increase Xul's Basic Attack damage by 15%.  Each enemy hit by Cursed Strikes reduces its cooldown by 1 second, up to 12 seconds.",
+        descriptionLong: "Increase Xul's Basic Attack damage by 15%. Each enemy hit by Cursed Strikes reduces its cooldown by 1 second, up to 12 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -286,7 +286,7 @@ const xul: Hero = {
         id: "NecromancerTalentJailors",
         name: "Jailors",
         descriptionShort: "Quest: Bone Prison spawns Skeletal Warriors",
-        descriptionLong: "Bone Prison spawns 2 Skeletal Warriors.  These do not count towards Xul's Raise Skeleton maximum. Quest: Spawn 80 Skeletal Warriors. Reward: While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.",
+        descriptionLong: "Bone Prison spawns 2 Skeletal Warriors. These do not count towards Xul's Raise Skeleton maximum. Quest: Spawn 80 Skeletal Warriors. Reward: While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -491,7 +491,7 @@ const xul: Hero = {
         id: "NecromancerTalentAmplifyDamage",
         name: "Amplify Damage",
         descriptionShort: "Bone Prison lowers Armor",
-        descriptionLong: "Increase the Root duration of Bone Prison by 0.25 seconds.  Enemies Rooted by Bone Prison lose 25 Armor for 2 seconds.",
+        descriptionLong: "Increase the Root duration of Bone Prison by 0.25 seconds. Enemies Rooted by Bone Prison lose 25 Armor for 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -611,7 +611,7 @@ const xul: Hero = {
         id: "NecromancerTalentColdHandOfDeath",
         name: "Cold Hand of Death",
         descriptionShort: "Spectral Scythe spawns Skeletal Mages",
-        descriptionLong: "Increase the Slow of Frost Mages by 20%.  Every 5th Spectral Scythe that hits enemy Heroes spawns a Frost Mage instead of a Skeletal Warrior at their location.",
+        descriptionLong: "Increase the Slow of Frost Mages by 20%. Every 5th Spectral Scythe that hits enemy Heroes spawns a Frost Mage instead of a Skeletal Warrior at their location.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -686,8 +686,6 @@ const xul: Hero = {
     physicalDamage: 57.00912145943351,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 33.82650049940979
+    magicalDamage: 8.469410373873208
   }
 };
-      
-export default xul;

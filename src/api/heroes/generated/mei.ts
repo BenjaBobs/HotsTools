@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const mei: Hero = {
+export const mei: Hero = {
   name: "Mei",
   nameNormalized: "mei",
   franchise: "Overwatch",
@@ -273,7 +273,7 @@ const mei: Hero = {
         id: "MeiOWColdFront",
         name: "Cold Front",
         descriptionShort: "Blizzard reduces Icing cooldown",
-        descriptionLong: "Reduce the cooldown of Icing by 3 seconds.  If Mei enters her own Blizzard while Icing is active, the cooldown of Icing is reduced by 5 seconds and she gains 80 Mana.",
+        descriptionLong: "Reduce the cooldown of Icing by 3 seconds. If Mei enters her own Blizzard while Icing is active, the cooldown of Icing is reduced by 5 seconds and she gains 80 Mana.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -694,8 +694,6 @@ const mei: Hero = {
     physicalDamage: 37.5,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 6.4923272496140925
+    magicalDamage: 1.6255356878971479
   }
 };
-      
-export default mei;

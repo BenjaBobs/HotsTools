@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const junkrat: Hero = {
+export const junkrat: Hero = {
   name: "Junkrat",
   nameNormalized: "junkrat",
   franchise: "Overwatch",
@@ -94,7 +94,7 @@ const junkrat: Hero = {
       name: "Steel Trap",
       descriptionShort: "Place a trap that Roots enemies",
       descriptionLong: "Place a trap on the ground that arms after 2 seconds. Deals 130 (+4% / level) damage to the first enemy that walks over it and Roots them for 2 seconds. Limit 1 active trap.",
-      cooldown: 12,
+      cooldown: 15,
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_steel_trap.png",
@@ -104,7 +104,7 @@ const junkrat: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 32.5
+        magicalDamage: 26
       }
     },
     {
@@ -179,7 +179,7 @@ const junkrat: Hero = {
         id: "JunkratFragLauncherExtraWoundTimers",
         name: "Extra-Wound Timers",
         descriptionShort: "Frag Launcher grenades deal bonus damage",
-        descriptionLong: "The final grenade launched from Frag Launcher deals 120% bonus damage, and Frag Launcher grenades last an additional 2 seconds before automatically detonating.",
+        descriptionLong: "The final grenade launched from Frag Launcher deals 100% bonus damage, and Frag Launcher grenades last an additional 2 seconds before automatically detonating.",
         cooldown: null,
         charges: {
           chargesMax: 4,
@@ -196,7 +196,7 @@ const junkrat: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 24
+          magicalDamage: 20
         },
         order: 2,
         tier: "level1",
@@ -334,10 +334,10 @@ const junkrat: Hero = {
         ]
       },
       {
-        id: "JunkratSteelTrapBigAs",
-        name: "Big As",
-        descriptionShort: "Increase Steel Trap radius, damage",
-        descriptionLong: "Steel Trap now only hits Heroes, and Heroes hit have their Armor reduced by 15 for 3 seconds. Increases Steel Trap's radius and damage by 50%.",
+        id: "JunkratSteelTrapStickyWicket",
+        name: "Sticky Wicket",
+        descriptionShort: "Steel Trap Silences Heroes",
+        descriptionLong: "Enemy Heroes who are hit by Steel Trap are Silenced for 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -357,33 +357,10 @@ const junkrat: Hero = {
         ]
       },
       {
-        id: "JunkratSteelTrapStickyWicket",
-        name: "Sticky Wicket",
-        descriptionShort: "Steel Trap Silences Heroes",
-        descriptionLong: "Enemy Heroes who are hit by Steel Trap are Silenced for 2 seconds.",
-        cooldown: null,
-        category: "Talent",
-        type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_steel_trap_a.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 3,
-        tier: "level7",
-        linkedAbilityIds: [
-          "JunkratSteelTrap"
-        ]
-      },
-      {
         id: "JunkratTotalMayhemDirtyTricksterTalent",
         name: "Dirty Trickster",
         descriptionShort: "Trigger Total Mayhem more often",
-        descriptionLong: "Increase the explosion radius of Total Mayhem by 20%.  When Junkrat is Stunned, Rooted, or damaged by an enemy Hero while below 50% Health, he uses Total Mayhem, dropping 5 grenades at his feet that explode.  This effect has a 12 second cooldown.",
+        descriptionLong: "Increase the explosion radius of Total Mayhem by 20%. When Junkrat is Stunned, Rooted, or damaged by an enemy Hero while below 50% Health, he uses Total Mayhem, dropping 5 grenades at his feet that explode. This effect has a 20 second cooldown.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -396,7 +373,7 @@ const junkrat: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 4,
+        order: 3,
         tier: "level7",
         linkedAbilityIds: [
           "JunkratTotalMayhem"
@@ -456,7 +433,7 @@ const junkrat: Hero = {
         id: "JunkratFragLauncherBombsAwayTalent",
         name: "Bombs Away",
         descriptionShort: "Gain Basic Attack range, damage",
-        descriptionLong: "Increase Junkrat's Basic Attack range by 1.  Frag Launcher grenades fired within 0.5 seconds of using a Basic Attack deal 30% bonus damage.",
+        descriptionLong: "Increase Junkrat's Basic Attack range by 1. Frag Launcher grenades fired within 0.5 seconds of using a Basic Attack deal 30% bonus damage.",
         cooldown: null,
         charges: {
           chargesMax: 4,
@@ -523,6 +500,29 @@ const junkrat: Hero = {
           magicalDamage: 0
         },
         order: 3,
+        tier: "level13",
+        linkedAbilityIds: [
+          "JunkratSteelTrap"
+        ]
+      },
+      {
+        id: "JunkratSteelTrapBigAs",
+        name: "Big As",
+        descriptionShort: "Steel Traps focus Heroes",
+        descriptionLong: "Steel Trap now only hits Heroes, and Heroes hit have their Armor reduced by 15 for 3 seconds. Increases Steel Trap's radius and damage by 50%.",
+        cooldown: null,
+        category: "Talent",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_steel_trap_a.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 4,
         tier: "level13",
         linkedAbilityIds: [
           "JunkratSteelTrap"
@@ -640,7 +640,7 @@ const junkrat: Hero = {
         id: "JunkratRocketRidePuckishScamp",
         name: "Puckish Scamp",
         descriptionShort: "Also gain RIP-Tire",
-        descriptionLong: "Junkrat also gains the Ability RIP-Tire. Each time he uses his Heroic, it swaps to the alternate ability. Each Heroic has its own separate cooldown.",
+        descriptionLong: "Junkrat also gains the Ability RIP-Tire. Each time he uses his Heroic, it swaps to the alternate ability. Passive: Reduce both Heroic cooldowns by 20 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -722,8 +722,6 @@ const junkrat: Hero = {
     physicalDamage: 60,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 74.95686915463544
+    magicalDamage: 18.52741244273681
   }
 };
-      
-export default junkrat;

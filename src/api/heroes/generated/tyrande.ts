@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const tyrande: Hero = {
+export const tyrande: Hero = {
   name: "Tyrande",
   nameNormalized: "tyrande",
   franchise: "Warcraft",
@@ -193,7 +193,7 @@ const tyrande: Hero = {
         id: "TyrandeMasteryLunarBlaze",
         name: "Lunar Blaze",
         descriptionShort: "Quest: Increase Lunar Flare range, damage",
-        descriptionLong: "Increase Lunar Flare's range by 30%. Quest: Hitting a Hero with Lunar Flare increases its damage by 5%, up to 100%.",
+        descriptionLong: "Increase Lunar Flare's range by 30%. Quest: Hitting a Hero with Lunar Flare increases its damage by 5%, up to 150%.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -217,7 +217,7 @@ const tyrande: Hero = {
         id: "TyrandeTrueshotAura",
         name: "Trueshot Aura",
         descriptionShort: "Gain Attack Damage, reset Hunter's Mark",
-        descriptionLong: "Passive: Basic Attack damage increased by 30%. Activate to reset the cooldown of Hunter's Mark, increase the bonus of Trueshot Aura to 30%, and apply it to other nearby allied Heroes for 5 seconds.",
+        descriptionLong: "Activate to grant other nearby allied Heroes 40% increased Attack Damage for 5 seconds, and to reset the cooldown of Hunter's Mark. Passive: Basic Attack damage increased by 30%.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
@@ -271,7 +271,7 @@ const tyrande: Hero = {
         id: "TyrandeMarkofMending",
         name: "Mark of Mending",
         descriptionShort: "Marked enemies heal nearby Allies",
-        descriptionLong: "Basic Attacks against Marked targets Heal all nearby allied Heroes for 4% of their maximum Health.",
+        descriptionLong: "Tyrande's Basic Attacks against Marked targets heal other allied Heroes near the enemy for 4% of their maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -281,7 +281,7 @@ const tyrande: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.8,
+          healing: 0,
           magicalDamage: 0
         },
         order: 2,
@@ -373,8 +373,8 @@ const tyrande: Hero = {
       {
         id: "TyrandeHuntressFury",
         name: "Huntress' Fury",
-        descriptionShort: "Hunter's Mark makes Basic Attacks splash",
-        descriptionLong: "Increase the cast range and duration of Hunter's Mark by 25%. Tyrande's Basic Attacks against targets with Hunter's Mark splash to nearby enemy Heroes.",
+        descriptionShort: "Hunter's Mark makes Basic Attacks bounce",
+        descriptionLong: "Increase the cast range and duration of Hunter's Mark by 25%. Tyrande's Basic Attacks against targets with Hunter's Mark bounce to nearby enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -484,7 +484,7 @@ const tyrande: Hero = {
         id: "TyrandeHarshMoonlight",
         name: "Harsh Moonlight",
         descriptionShort: "Sentinel Slows and reduces damage dealt",
-        descriptionLong: "Sentinel Slows enemies hit by 35% and reduces their damage dealt by 35% for 4 seconds.",
+        descriptionLong: "Sentinel Slows enemies hit by 35% and reduces their damage dealt by 35% for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -561,7 +561,7 @@ const tyrande: Hero = {
         id: "TyrandeEmpower",
         name: "Empower",
         descriptionShort: "Sentinel cooldown reduced, deals percent damage",
-        descriptionLong: "Reduce Sentinel's cooldown by 3 seconds. Heroes hit by Sentinel takes bonus damage equal to 7% of their maximum Health.",
+        descriptionLong: "Reduce Sentinel's cooldown by 3 seconds. Heroes hit by Sentinel takes bonus damage equal to 6% of their maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -609,7 +609,7 @@ const tyrande: Hero = {
         id: "TyrandeEyesOfTheHuntress",
         name: "Eyes of the Huntress",
         descriptionShort: "Shadowstalk reveals enemies, heals more",
-        descriptionLong: "Shadowstalk reveals all enemy Heroes for 10 seconds and heals for 50% more.",
+        descriptionLong: "Shadowstalk reveals all enemy Heroes for 10 seconds and heals for 75% more.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -635,7 +635,7 @@ const tyrande: Hero = {
         id: "TyrandeMasteryStarfallCelestialWrath",
         name: "Celestial Wrath",
         descriptionShort: "Starfall applies Hunter's Mark and Slows more",
-        descriptionLong: "Increase the Slow of Starfall to 40% and cause it to apply Hunter's Mark to enemy Heroes while inside of its area of effect.",
+        descriptionLong: "Increase the Slow of Starfall to 60% and cause it to apply Hunter's Mark to enemy Heroes while inside of its area of effect.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -665,7 +665,7 @@ const tyrande: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_speed.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_range.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -710,8 +710,6 @@ const tyrande: Hero = {
     physicalDamage: 36.66666666666667,
     mobility: 24.006944444444446,
     healing: 14.332564071419895,
-    magicalDamage: 11.363842731317536
+    magicalDamage: 2.845255822941651
   }
 };
-      
-export default tyrande;

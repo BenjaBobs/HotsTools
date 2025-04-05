@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const zuljin: Hero = {
+export const zuljin: Hero = {
   name: "Zul'jin",
   nameNormalized: "zuljin",
   franchise: "Warcraft",
@@ -23,7 +23,7 @@ const zuljin: Hero = {
       nameId: "ZuljinHeroWeapon",
       range: 5.5,
       period: 0.8,
-      damage: 94,
+      damage: 96,
       damageScale: 0.04
     }
   ],
@@ -33,7 +33,7 @@ const zuljin: Hero = {
       id: "ZuljinBerserker",
       name: "Berserker",
       descriptionShort: "Increased Attack Speed as Health gets lower",
-      descriptionLong: "Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack. Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing. You Want Axe?Quest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1. Reward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1. Reward: After attacking Heroes 150 times, Twin Cleave now revolves twice.",
+      descriptionLong: "Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack. Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing. You Want Axe?Quest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1, up to 50. Reward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1. Reward: After attacking Heroes 150 times, Twin Cleave now revolves twice.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -120,9 +120,9 @@ const zuljin: Hero = {
       descriptionLong: "For the next 4 seconds, Zul'jin is Unkillable, and cannot be reduced to less than 1 Health. Taz'dingo!",
       cost: {
         type: "Mana",
-        amount: 75
+        amount: 80
       },
-      cooldown: 90,
+      cooldown: 100,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_tazdingo.png",
@@ -142,9 +142,9 @@ const zuljin: Hero = {
       descriptionLong: "Zul'jin launches a massive axe into the air that drops on the targeted area, dealing 330 (+4% / level) damage plus bonus damage the lower his Health is.",
       cost: {
         type: "Mana",
-        amount: 70
+        amount: 60
       },
-      cooldown: 40,
+      cooldown: 30,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_guillotine.png",
@@ -187,7 +187,7 @@ const zuljin: Hero = {
         id: "ZuljinRecklessness",
         name: "Recklessness",
         descriptionShort: "Low Health increases damage",
-        descriptionLong: "While Zul'jin is below 75% Health, he gains 10% Spell Power. While he is below 50% Health, his Basic Attack damage is increased by 15% and Basic Attacks against Heroes grant an additional stack of You Want Axe?.",
+        descriptionLong: "While Zul'jin is below 75% Health, he gains 10% Spell Power. While he is below 50% Health, his Basic Attack damage is increased by 10% and Basic Attacks against Heroes grant an additional stack of You Want Axe?.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -381,9 +381,9 @@ const zuljin: Hero = {
         descriptionLong: "For the next 4 seconds, Zul'jin is Unkillable, and cannot be reduced to less than 1 Health. Taz'dingo!",
         cost: {
           type: "Mana",
-          amount: 75
+          amount: 80
         },
-        cooldown: 90,
+        cooldown: 100,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_tazdingo.png",
@@ -408,9 +408,9 @@ const zuljin: Hero = {
         descriptionLong: "Zul'jin launches a massive axe into the air that drops on the targeted area, dealing 330 (+4% / level) damage plus bonus damage the lower his Health is.",
         cost: {
           type: "Mana",
-          amount: 70
+          amount: 60
         },
-        cooldown: 40,
+        cooldown: 30,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zuljin_guillotine.png",
@@ -662,11 +662,9 @@ const zuljin: Hero = {
   ],
   analysis: {
     tankiness: 56.49717514124294,
-    physicalDamage: 58.75,
+    physicalDamage: 60,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 21.61280986107328
+    magicalDamage: 5.411371361016698
   }
 };
-      
-export default zuljin;

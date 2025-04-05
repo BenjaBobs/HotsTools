@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const yrel: Hero = {
+export const yrel: Hero = {
   name: "Yrel",
   nameNormalized: "yrel",
   franchise: "Warcraft",
@@ -33,7 +33,7 @@ const yrel: Hero = {
       id: "YrelDivinePurpose",
       name: "Divine Purpose",
       descriptionShort: "Make next Basic Ability cast instantly",
-      descriptionLong: "Activate to instantly charge Yrel's next Basic Ability at no mana cost. Passive: Yrel's Basic Abilities charge up over 1.5 seconds, increasing in effectiveness, but reducing Yrel's Movement Speed by 25%.",
+      descriptionLong: "Activate to instantly charge Yrel's next Basic Ability at no mana cost. Divine Purpose's cooldown is reset when Yrel casts a Heroic ability. Passive: Yrel's Basic Abilities charge up over 1.5 seconds, increasing in effectiveness, but reducing Yrel's Movement Speed by 25%.",
       cooldown: 8,
       category: "trait",
       type: "Trait",
@@ -140,11 +140,7 @@ const yrel: Hero = {
       name: "Sacred Ground",
       descriptionShort: "Yrel gains Armor in an area",
       descriptionLong: "Yrel sanctifies the ground around her, gaining 50 Armor until she leaves the area.",
-      cost: {
-        type: "Mana",
-        amount: 40
-      },
-      cooldown: 40,
+      cooldown: 25,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_sacred_ground.png",
@@ -208,7 +204,7 @@ const yrel: Hero = {
         id: "YrelMaraadsInsight",
         name: "Maraad's Insight",
         descriptionShort: "Attacking after Basic Abilities heals",
-        descriptionLong: "After damaging an enemy Hero with a Basic Ability, Yrel's next Basic Attack heals her for 135 (+4% / level).",
+        descriptionLong: "After damaging an enemy Hero with a Basic Ability, Yrel's next Basic Attack heals her for 160 (+4% / level).",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -218,7 +214,7 @@ const yrel: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 27,
+          healing: 32,
           magicalDamage: 0
         },
         order: 3,
@@ -230,7 +226,7 @@ const yrel: Hero = {
         id: "YrelAvengingWrathAegisOfLight",
         name: "Aegis of Light",
         descriptionShort: "Avenging Wrath grants allies Armor",
-        descriptionLong: "Upon landing, Avenging Wrath grants other nearby allied Heroes 25 Armor for 4 seconds.",
+        descriptionLong: "Upon landing, Avenging Wrath grants other nearby allied Heroes 40 Armor for 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -403,11 +399,7 @@ const yrel: Hero = {
         name: "Sacred Ground",
         descriptionShort: "Yrel gains Armor in an area",
         descriptionLong: "Yrel sanctifies the ground around her, gaining 50 Armor until she leaves the area.",
-        cost: {
-          type: "Mana",
-          amount: 40
-        },
-        cooldown: 40,
+        cooldown: 25,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_yrel_sacred_ground.png",
@@ -502,7 +494,7 @@ const yrel: Hero = {
         id: "YrelRighteousHammerTemplarsVerdict",
         name: "Templar's Verdict",
         descriptionShort: "Righteous Hammer reduces Armor, deals percent damage",
-        descriptionLong: "Righteous Hammer reduces the Armor of enemy Heroes hit by 20 for 4 seconds and deals bonus damage equal to 7% of their maximum Health.",
+        descriptionLong: "Righteous Hammer reduces the Armor of enemy Heroes hit by 15 for 4 seconds and deals bonus damage equal to 6% of their maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -527,7 +519,7 @@ const yrel: Hero = {
         id: "YrelDivinePurposeDivineFavor",
         name: "Divine Favor",
         descriptionShort: "Basic Abilities reduce Divine Purpose cooldown",
-        descriptionLong: "Casting a Basic Ability reduces the cooldown of Divine Purpose by 2 seconds.",
+        descriptionLong: "Casting a Basic Ability reduces the cooldown of Divine Purpose by 2.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -550,7 +542,7 @@ const yrel: Hero = {
         id: "YrelHolyWrath",
         name: "Holy Wrath",
         descriptionShort: "Attacks splash after casting Basic Abilities",
-        descriptionLong: "After casting a Basic Ability, Yrel's next Basic Attack splashes for 30% increased damage around the target.",
+        descriptionLong: "After casting a Basic Ability, Yrel's next Basic Attack splashes for 35% increased damage around the target.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -667,8 +659,6 @@ const yrel: Hero = {
     physicalDamage: 59.61538461538461,
     mobility: 24.006944444444446,
     healing: 31.09437629053808,
-    magicalDamage: 22.5018160355943
+    magicalDamage: 5.6339589182798875
   }
 };
-      
-export default yrel;

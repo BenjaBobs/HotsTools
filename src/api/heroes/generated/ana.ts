@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const ana: Hero = {
+export const ana: Hero = {
   name: "Ana",
   nameNormalized: "ana",
   franchise: "Overwatch",
@@ -163,8 +163,8 @@ const ana: Hero = {
       {
         id: "AnaBioticGrenadeContactHealing",
         name: "Contact Healing",
-        descriptionShort: "Increase Biotic Grenade healing on multiple Heroes",
-        descriptionLong: "Biotic Grenade heals for 30% more per allied and enemy Hero hit.",
+        descriptionShort: "Increase Biotic Grenade on multiple Heroes",
+        descriptionLong: "Hitting Heroes with Biotic Grenade increases its damage and healing by 30% per Hero hit.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -210,7 +210,7 @@ const ana: Hero = {
         id: "AnaShrikeVampiricRounds",
         name: "Vampiric Rounds",
         descriptionShort: "Quest: Increase Shrike Healing",
-        descriptionLong: "Quest: Stack 5 Doses on an enemy Hero or Basic Attack a Hero with 5 Doses. Reward: Stack 5 Doses to increase Shrike's healing by 0.25%. Reward: Basic Attack a Hero with 5 Doses to increase Shrike's healing by 0.25%.",
+        descriptionLong: "Quest: Stack 5 Doses on an enemy Hero or Basic Attack a Hero with 5 Doses. Reward: Stack 5 Doses to increase Shrike's healing by 1%. Reward: Basic Attack a Hero with 5 Doses to increase Shrike's healing by 0.25%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -237,7 +237,7 @@ const ana: Hero = {
         id: "AnaBioticGrenadeBioticEnhancements",
         name: "Biotic Enhancements",
         descriptionShort: "Empower Biotic Grenade",
-        descriptionLong: "Increase the bonus healing duration of Biotic Grenade by 50% and reduce its cooldown by 2 seconds.",
+        descriptionLong: "Increase the bonus healing duration of Biotic Grenade by 50% and reduce its cooldown by 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -260,7 +260,7 @@ const ana: Hero = {
         id: "AnaOverdose",
         name: "Overdose",
         descriptionShort: "Sleep Dart applies Doses, pierces",
-        descriptionLong: "Sleep Dart applies 4 Doses.  While Aim Down Sights is active, Sleep Dart pierces all enemy Heroes.",
+        descriptionLong: "Sleep Dart applies 4 Doses. While Aim Down Sights is active, Sleep Dart pierces all enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -283,7 +283,7 @@ const ana: Hero = {
         id: "AnaDebilitatingDart",
         name: "Debilitating Dart",
         descriptionShort: "Fire a dart that reduces damage and Slows",
-        descriptionLong: "Activate to fire a dart which Slows the Movement Speed and reduces the damage dealt by the first enemy Hero it hits by 50% for 4 seconds.",
+        descriptionLong: "Fire a dart which Slows the Movement Speed and reduces the damage dealt by the first enemy Hero it hits by 50% for 4 seconds. If no Heroes are hit, reduce this cooldown by 8 seconds.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
@@ -504,7 +504,7 @@ const ana: Hero = {
         id: "AnaHealingDartSharpshooter",
         name: "Sharpshooter",
         descriptionShort: "Empower consecutive Healing Darts",
-        descriptionLong: "Healing Dart's healing is increased by 5% if it heals a Hero, up to 50%. This bonus is reset if Healing Dart fails to hit a Hero.",
+        descriptionLong: "Healing Dart's healing is increased by 5% if it heals a Hero, up to 50%. At maximum bonus, further increase its healing by 35%. This bonus is reset if Healing Dart fails to hit a Hero.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -514,7 +514,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 11,
+          healing: 18,
           magicalDamage: 0
         },
         order: 1,
@@ -527,7 +527,7 @@ const ana: Hero = {
         id: "AnaHealingDartConcentratedDoses",
         name: "Concentrated Doses",
         descriptionShort: "Doses empower Healing Dart",
-        descriptionLong: "Increase Healing Dart's healing by 10% for each Dose active on enemy Heroes.",
+        descriptionLong: "Increase Healing Dart's healing by 12% for each Dose active on enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -537,7 +537,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 2.4000000000000004,
           magicalDamage: 0
         },
         order: 2,
@@ -601,7 +601,7 @@ const ana: Hero = {
         id: "AnaEyeOfHorusDeadeye",
         name: "Deadeye",
         descriptionShort: "Hitting Heroes increases healing and damage",
-        descriptionLong: "Increase Eye Of Horus' healing and damage by 4% for every Hero hit. This bonus resets after all shots have been fired.",
+        descriptionLong: "Increase Eye Of Horus' healing and damage by 5% for every Hero hit. This bonus resets after all shots have been fired.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -611,7 +611,7 @@ const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.8,
+          healing: 1,
           magicalDamage: 0
         },
         order: 2,
@@ -678,8 +678,6 @@ const ana: Hero = {
     physicalDamage: 20,
     mobility: 42.608134920634924,
     healing: 100,
-    magicalDamage: 5.902115681467357
+    magicalDamage: 1.4777597162701344
   }
 };
-      
-export default ana;

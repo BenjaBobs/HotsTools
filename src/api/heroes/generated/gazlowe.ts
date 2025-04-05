@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const gazlowe: Hero = {
+export const gazlowe: Hero = {
   name: "Gazlowe",
   nameNormalized: "gazlowe",
   franchise: "Warcraft",
@@ -8,9 +8,9 @@ const gazlowe: Hero = {
   size: 0.75,
   movementSpeed: 4.8398,
   health: {
-    amount: 2375,
+    amount: 2275,
     scale: 0.04,
-    regenRate: 4.95,
+    regenRate: 4.74,
     regenScale: 0.04
   },
   energy: {
@@ -51,7 +51,7 @@ const gazlowe: Hero = {
       id: "TinkerRockItTurret",
       name: "Rock-It! Turret",
       descriptionShort: "Create a turret that shoots at nearby enemies",
-      descriptionLong: "Create a turret that deals 38 (+4% / level) damage. Lasts for 15 seconds. Turrets prioritize the nearest enemy Hero when first created.",
+      descriptionLong: "Create a turret that deals 36 (+4% / level) damage. Lasts for 15 seconds. Turrets prioritize the nearest enemy Hero when first created.",
       cost: {
         type: "Scrap",
         amount: 4
@@ -66,14 +66,14 @@ const gazlowe: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7.6000000000000005
+        magicalDamage: 7.2
       }
     },
     {
       id: "GazloweDethLazor",
       name: "Deth Lazor",
       descriptionShort: "Damage targets in a line",
-      descriptionLong: "After 0.65 seconds, deal 180 (+4% / level) damage to enemies in a line. Heal for 25% of the damage dealt, increased to 75% against enemy Heroes.",
+      descriptionLong: "After 0.65 seconds, deal 175 (+4% / level) damage to enemies in a line. Heal for 25% of the damage dealt, increased to 75% against enemy Heroes.",
       cooldown: 8,
       charges: {
         chargesMax: 1,
@@ -90,14 +90,14 @@ const gazlowe: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 9.375,
-        magicalDamage: 67.5
+        magicalDamage: 65.625
       }
     },
     {
       id: "TinkerXplodiumBomb",
       name: "Xplodium Charge",
       descriptionShort: "Throw a timed bomb which stuns and damages enemies in an area",
-      descriptionLong: "Place a bomb that deals 142 (+4% / level) damage to enemies within the target area after 1.25 seconds.  Enemies hit are also Stunned for 1 second.",
+      descriptionLong: "Place a bomb that deals 142 (+4% / level) damage to enemies within the target area after 1.25 seconds. Enemies hit are also Stunned for 1 second.",
       cooldown: 12,
       charges: {
         chargesMax: 1,
@@ -212,7 +212,7 @@ const gazlowe: Hero = {
         id: "GazloweOneManWreckingCrew",
         name: "One Man Wrecking Crew",
         descriptionShort: "Basic Abilities empower Basic Attacks",
-        descriptionLong: "Casting Basic Abilities cause Gazlowe's next Basic Attack within 6 seconds to deal 60% more damage.  Stores up to 2 charges.",
+        descriptionLong: "Casting Basic Abilities cause Gazlowe's next Basic Attack within 6 seconds to deal 60% more damage. Stores up to 2 charges.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -690,12 +690,10 @@ const gazlowe: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 71.56308851224105,
+    tankiness: 68.54990583804143,
     physicalDamage: 62.5,
     mobility: 24.006944444444446,
     healing: 2.2774201384671446,
-    magicalDamage: 26.352946517751754
+    magicalDamage: 6.514149549283285
   }
 };
-      
-export default gazlowe;

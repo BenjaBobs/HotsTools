@@ -1,10 +1,8 @@
-import fetch from 'node-fetch';
-
 export async function GetPatchVersions() {
   console.log('Fetching patch infos');
 
   const patches = (await fetch(
-    'https://api.github.com/repos/HeroesToolChest/heroes-data/releases'
+    'https://api.github.com/repos/HeroesToolChest/heroes-data/releases',
   ).then(x => x.json())) as PatchVersion[];
 
   console.log(`Found ${patches.length} patches...`);

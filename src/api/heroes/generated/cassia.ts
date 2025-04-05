@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const cassia: Hero = {
+export const cassia: Hero = {
   name: "Cassia",
   nameNormalized: "cassia",
   franchise: "Diablo",
@@ -23,14 +23,14 @@ const cassia: Hero = {
       nameId: "AmazonHeroWeaponMelee",
       range: 2,
       period: 0.9,
-      damage: 120,
+      damage: 125,
       damageScale: 0.04
     },
     {
       nameId: "AmazonHeroWeaponRanged",
       range: 4.5,
       period: 0.9,
-      damage: 120,
+      damage: 125,
       damageScale: 0.04
     }
   ],
@@ -177,7 +177,7 @@ const cassia: Hero = {
         id: "AmazonThunderstroke",
         name: "Thunderstroke",
         descriptionShort: "Quest: Increase Lightning Fury damage",
-        descriptionLong: "Increase the damage of Lightning Fury by 15. Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
+        descriptionLong: "Increase the damage of Lightning Fury by 20. Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -207,7 +207,7 @@ const cassia: Hero = {
         id: "AmazonImpale",
         name: "Impale",
         descriptionShort: "Increase Fend range and damage",
-        descriptionLong: "Increase Fend's cast range and area of effect by 25%. It deals an additional 50% damage to enemies below 50% Health.",
+        descriptionLong: "Increase Fend's cast range and area of effect by 25%. It deals an additional 70% damage to enemies below 50% Health.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -218,7 +218,7 @@ const cassia: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 14
         },
         order: 2,
         tier: "level1",
@@ -230,7 +230,7 @@ const cassia: Hero = {
         id: "AmazonChargedStrikes",
         name: "Charged Strikes",
         descriptionShort: "Gain Attack Speed, bounce damage",
-        descriptionLong: "Gain 15% Attack Speed. Every 3rd Basic Attack deals 15% bonus damage and bounces to nearby enemy Heroes.",
+        descriptionLong: "Gain 15% Attack Speed. Every 3rd Basic Attack deals 20% bonus damage and bounces to nearby enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -241,7 +241,7 @@ const cassia: Hero = {
           physicalDamage: 0.6000000000000001,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3
+          magicalDamage: 4
         },
         order: 3,
         tier: "level1"
@@ -276,7 +276,7 @@ const cassia: Hero = {
         id: "AmazonRingoftheLeech",
         name: "Ring of the Leech",
         descriptionShort: "Basic Attacks heal",
-        descriptionLong: "Basic Attacks against your primary target heal for 15% of their damage. If an enemy is Blinded, this also affects Lightning Fury and Fend.",
+        descriptionLong: "Basic Attacks against your primary target heal for 20% of their damage. If an enemy is Blinded, this also affects Lightning Fury and Fend.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -286,7 +286,7 @@ const cassia: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3,
+          healing: 4,
           magicalDamage: 0
         },
         order: 2,
@@ -351,7 +351,7 @@ const cassia: Hero = {
         id: "AmazonSeraphsHymn",
         name: "Seraph's Hymn",
         descriptionShort: "Empower Basic Attacks, Blinding Light",
-        descriptionLong: "Basic Attacks against your primary enemy Hero grant 10 Mana and reduce the cooldown of Blinding Light by 1.5 seconds. Passive: Increase the passive damage bonus of Blinding Light from 15% to 30%.",
+        descriptionLong: "Basic Attacks against your primary enemy Hero grant 10 Mana and reduce the cooldown of Blinding Light by 2 seconds. Passive: Increase the passive damage bonus of Blinding Light from 15% to 30%.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -376,6 +376,12 @@ const cassia: Hero = {
         descriptionShort: "Activate Avoidance to deal damage",
         descriptionLong: "After taking 650 (+4% / level) damage with Avoidance active, Cassia can activate Avoidance to deal 220 (+4% / level) damage to enemies around her.",
         cooldown: null,
+        charges: {
+          chargesMax: 100,
+          chargesInitial: 0,
+          chargeCost: 100,
+          recastCooldown: 0.25
+        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance_b.png",
@@ -495,7 +501,8 @@ const cassia: Hero = {
         tier: "level13",
         linkedAbilityIds: [
           "AmazonSurgeOfLight",
-          "AmazonAvoidance"
+          "AmazonAvoidance",
+          "AmazonWarTravelerSummonMount"
         ]
       },
       {
@@ -588,11 +595,11 @@ const cassia: Hero = {
         id: "AmazonMartialLaw",
         name: "Martial Law",
         descriptionShort: "Disabled Heroes take additional damage",
-        descriptionLong: "Basic Attacks against enemy Heroes deal bonus damage equal to 1% of their maximum Health. Increase this to 3% if they are Stunned, Rooted or Slowed.",
+        descriptionLong: "Basic Attacks against enemy Heroes deal bonus damage equal to 1% of their maximum Health. Increase this to 3% if they are Stunned, Rooted, Slowed, or Blinded.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -610,11 +617,11 @@ const cassia: Hero = {
         id: "AmazonInfiniteLightning",
         name: "Infinite Lightning",
         descriptionShort: "Ball Lightning bounces indefinitely",
-        descriptionLong: "Ball Lightning can now bounce indefinitely. Every bounce reduces its cooldown by 5 seconds.",
+        descriptionLong: "Ball Lightning can now bounce indefinitely. Every bounce reduces its cooldown by 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_balllightning_a.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_balllightning.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -640,7 +647,7 @@ const cassia: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Heroic",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_valkrie_a.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_valkrie.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -710,11 +717,9 @@ const cassia: Hero = {
   ],
   analysis: {
     tankiness: 50.018832391713744,
-    physicalDamage: 66.66666666666666,
+    physicalDamage: 69.44444444444444,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 46.449650413148106
+    magicalDamage: 11.629968967045958
   }
 };
-      
-export default cassia;

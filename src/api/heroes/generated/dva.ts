@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const dva: Hero = {
+export const dva: Hero = {
   name: "D.Va",
   nameNormalized: "dva",
   franchise: "Overwatch",
@@ -8,9 +8,9 @@ const dva: Hero = {
   size: 1.1875,
   movementSpeed: 4.8398,
   health: {
-    amount: 2100,
+    amount: 2150,
     scale: 0.04,
-    regenRate: 4.375,
+    regenRate: 4.4804,
     regenScale: 0.04
   },
   energy: {
@@ -87,7 +87,7 @@ const dva: Hero = {
       id: "DVaMechDefenseMatrixOn",
       name: "Defense Matrix",
       descriptionShort: "Reduce damage of enemy Heroes in an area",
-      descriptionLong: "Project a defensive field in the target direction for 3 seconds, reducing the damage dealt by enemy Heroes inside it by 50%. Activate again to change the angle of projection. Damage dealt to the Mech from enemies within Defense Matrix still grants the same amount of Self-Destruct Charge.",
+      descriptionLong: "Project a defensive field in the target direction for 3 seconds, reducing the damage dealt by enemy Heroes inside it by 60%. Activate again to change the angle of projection. Damage dealt to the Mech from enemies within Defense Matrix still grants the same amount of Self-Destruct Charge.",
       cooldown: 12,
       category: "basic",
       type: "W",
@@ -128,7 +128,7 @@ const dva: Hero = {
       id: "DVaMechBunnyHopHeroic",
       name: "Bunny Hop",
       descriptionShort: "Become Unstoppable and Stun nearby Heroes",
-      descriptionLong: "D. Va's Mech becomes Unstoppable and stomps every 0.5 seconds, dealing 70 (+4% / level) damage in a large area. Every 4th consecutive hit on a Hero deals 100% more damage and Stuns them for 0.5 seconds. Lasts for 4 seconds. Requires Mech Mode.",
+      descriptionLong: "D. Va's Mech becomes Unstoppable and stomps every 0.5 seconds, dealing 78 (+4% / level) damage in a large area. Every 4th consecutive hit on a Hero deals 80% more damage and Stuns them for 0.5 seconds. Lasts for 4 seconds. Requires Mech Mode.",
       cooldown: 70,
       category: "heroic",
       type: "Heroic",
@@ -139,20 +139,20 @@ const dva: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 34
+        magicalDamage: 31.6
       }
     },
     {
       id: "DVaMicroMissiles",
       name: "Micro Missiles",
       descriptionShort: "Fire a stream of missiles that damage and Slow",
-      descriptionLong: "After .375 seconds, Channel to launch a volley of 12 missiles in a target direction. Each missile impacts the first enemy in its path, dealing 40 (+4% / level) damage in a small area and Slowing by 30% for 2 seconds. Stores 2 charges with a 5 second cooldown between each use. Requires Mech Mode.",
-      cooldown: 20,
+      descriptionLong: "After .375 seconds, Channel to launch a volley of 12 missiles in a target direction. Each missile impacts the first enemy in its path, dealing 40 (+4% / level) damage in a small area and Slowing by 30% for 2 seconds. Stores 2 charges with a 3 second cooldown between each use. Requires Mech Mode.",
+      cooldown: 19,
       charges: {
         chargesMax: 2,
         chargesInitial: 2,
         chargeCost: 1,
-        recastCooldown: 5
+        recastCooldown: 3
       },
       category: "heroic",
       type: "Heroic",
@@ -189,8 +189,7 @@ const dva: Hero = {
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
-          "DVaMechMechMode",
-          "DVaPilotCallMech"
+          "DVaMechMechMode"
         ]
       },
       {
@@ -214,15 +213,14 @@ const dva: Hero = {
         tier: "level1",
         linkedAbilityIds: [
           "DVaMechMechMode",
-          "DVaPilotCallMech",
-          "DVaPilotPilotMode"
+          "DVaPilotCallMech"
         ]
       },
       {
         id: "DVaLiquidCooling",
         name: "Liquid Cooling",
         descriptionShort: "Empower Healing Fountain in Mech Mode",
-        descriptionLong: "Activate to gain the effects of Healing Fountain. Requires Mech Mode. Passive: While in Mech Mode, Healing Fountain's cooldown is reduced to 50 seconds and its effects last 35% longer.",
+        descriptionLong: "Activate to gain the effects of Healing Fountain. Requires Mech Mode. Passive: While in Mech Mode, Healing Fountain's cooldown is reduced to 50 seconds and its effects last 50% longer.",
         cooldown: 50,
         category: "Talent",
         type: "Active",
@@ -286,7 +284,8 @@ const dva: Hero = {
         order: 2,
         tier: "level4",
         linkedAbilityIds: [
-          "DVaMechDefenseMatrixOn"
+          "DVaMechDefenseMatrixOn",
+          "DVaMechDefenseMatrixRetarget"
         ]
       },
       {
@@ -315,7 +314,8 @@ const dva: Hero = {
         tier: "level4",
         linkedAbilityIds: [
           "DVaMechSelfDestruct",
-          "DVaPilotBigShot"
+          "DVaPilotBigShot",
+          "DVaMechPilotSelfDestruct"
         ]
       }
     ],
@@ -324,7 +324,7 @@ const dva: Hero = {
         id: "DvaGetOnThePoint",
         name: "Get On The Point!",
         descriptionShort: "Reduce Boosters cooldown, grants allies move speed",
-        descriptionLong: "Casting Boosters grants nearby allies 20% Movement Speed for 2 seconds. Passive: If D. Va has not taken damage in the last 3 seconds, Boosters' cooldown refreshes 100% faster.",
+        descriptionLong: "Casting Boosters grants nearby allies 20% Movement Speed for 3 seconds. Passive: If D. Va has not taken damage in the last 2 seconds, Boosters' cooldown refreshes 100% faster.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -386,7 +386,8 @@ const dva: Hero = {
         order: 3,
         tier: "level7",
         linkedAbilityIds: [
-          "DVaMechDefenseMatrixOn"
+          "DVaMechDefenseMatrixOn",
+          "DVaMechDefenseMatrixRetarget"
         ]
       }
     ],
@@ -395,7 +396,7 @@ const dva: Hero = {
         id: "DVaBunnyHop",
         name: "Bunny Hop",
         descriptionShort: "Become Unstoppable and Stun nearby Heroes",
-        descriptionLong: "D. Va's Mech becomes Unstoppable and stomps every 0.5 seconds, dealing 70 (+4% / level) damage in a large area. Every 4th consecutive hit on a Hero deals 100% more damage and Stuns them for 0.5 seconds. Lasts for 4 seconds. Requires Mech Mode.",
+        descriptionLong: "D. Va's Mech becomes Unstoppable and stomps every 0.5 seconds, dealing 78 (+4% / level) damage in a large area. Every 4th consecutive hit on a Hero deals 80% more damage and Stuns them for 0.5 seconds. Lasts for 4 seconds. Requires Mech Mode.",
         cooldown: 70,
         category: "Talent",
         type: "Heroic",
@@ -406,7 +407,7 @@ const dva: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 34
+          magicalDamage: 31.6
         },
         order: 1,
         tier: "level10",
@@ -418,13 +419,13 @@ const dva: Hero = {
         id: "DVaMicroMissiles",
         name: "Micro Missiles",
         descriptionShort: "Fire a stream of missiles that damage and Slow",
-        descriptionLong: "After .375 seconds, Channel to launch a volley of 12 missiles in a target direction. Each missile impacts the first enemy in its path, dealing 40 (+4% / level) damage in a small area and Slowing by 30% for 2 seconds. Stores 2 charges with a 5 second cooldown between each use. Requires Mech Mode.",
-        cooldown: 20,
+        descriptionLong: "After .375 seconds, Channel to launch a volley of 12 missiles in a target direction. Each missile impacts the first enemy in its path, dealing 40 (+4% / level) damage in a small area and Slowing by 30% for 2 seconds. Stores 2 charges with a 3 second cooldown between each use. Requires Mech Mode.",
+        cooldown: 19,
         charges: {
           chargesMax: 2,
           chargesInitial: 2,
           chargeCost: 1,
-          recastCooldown: 5
+          recastCooldown: 3
         },
         category: "Talent",
         type: "Heroic",
@@ -449,7 +450,7 @@ const dva: Hero = {
         id: "DVaTargetLocked",
         name: "Target Locked",
         descriptionShort: "Defense Matrix lowers Armor, Slows",
-        descriptionLong: "Enemy Heroes that remain in your Defense Matrix for 1 seconds have their Armor reduced by 15 and their Movement Speed reduced by 25% for 3 seconds.",
+        descriptionLong: "Enemy Heroes that remain in your Defense Matrix for 0.75 seconds have their Armor reduced by 15 and their Movement Speed reduced by 25% for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -465,7 +466,8 @@ const dva: Hero = {
         order: 1,
         tier: "level13",
         linkedAbilityIds: [
-          "DVaMechDefenseMatrixOn"
+          "DVaMechDefenseMatrixOn",
+          "DVaMechDefenseMatrixRetarget"
         ]
       },
       {
@@ -486,10 +488,7 @@ const dva: Hero = {
           magicalDamage: 24
         },
         order: 2,
-        tier: "level13",
-        linkedAbilityIds: [
-          "DVaPilotPilotMode"
-        ]
+        tier: "level13"
       },
       {
         id: "DVaBigShotPewPewPew",
@@ -543,7 +542,7 @@ const dva: Hero = {
         id: "DVaDefenseMatrixDivertingPower",
         name: "Diverting Power",
         descriptionShort: "Increase Defense Matrix area, adds healing",
-        descriptionLong: "Defense Matrix's area grows drastically in size and each time it reduces damage dealt to Heroes D. Va's Mech is healed for 35 (+4% / level) Health.",
+        descriptionLong: "Defense Matrix's area grows drastically in size and each time it reduces damage dealt to Heroes D. Va's Mech is healed for 31 (+4% / level) Health.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -553,20 +552,21 @@ const dva: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 7,
+          healing: 6.2,
           magicalDamage: 0
         },
         order: 2,
         tier: "level16",
         linkedAbilityIds: [
-          "DVaMechDefenseMatrixOn"
+          "DVaMechDefenseMatrixOn",
+          "DVaMechDefenseMatrixRetarget"
         ]
       },
       {
         id: "DVaMechEmergencyShielding",
         name: "Emergency Shielding",
         descriptionShort: "Mech gains a Shield instead of dying",
-        descriptionLong: "When D. Va's Mech would be destroyed, it instead gains a Shield that absorbs 280 (+4% / level) damage over 4 seconds. This effect has a 30 second cooldown.",
+        descriptionLong: "When D. Va's Mech would be destroyed, it instead gains a Shield that absorbs 290 (+4% / level) damage over 8 seconds. This effect has a 30 second cooldown.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -623,7 +623,7 @@ const dva: Hero = {
           chargesMax: 2,
           chargesInitial: 2,
           chargeCost: 1,
-          recastCooldown: 5
+          recastCooldown: 3
         },
         category: "Talent",
         type: "Heroic",
@@ -639,8 +639,7 @@ const dva: Hero = {
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
-          "DVaMicroMissiles",
-          "DVaMechSelfDestruct"
+          "DVaMicroMissiles"
         ],
         prerequisiteTalentIds: [
           "DVaMicroMissiles"
@@ -788,12 +787,10 @@ const dva: Hero = {
     }
   ],
   analysis: {
-    tankiness: 63.2768361581921,
+    tankiness: 64.7834274952919,
     physicalDamage: 44,
     mobility: 58.233134920634924,
     healing: 0,
-    magicalDamage: 9.502406247162446
+    magicalDamage: 2.2905275602187083
   }
 };
-      
-export default dva;

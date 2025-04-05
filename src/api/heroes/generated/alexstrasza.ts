@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const alexstrasza: Hero = {
+export const alexstrasza: Hero = {
   name: "Alexstrasza",
   nameNormalized: "alexstrasza",
   franchise: "Warcraft",
@@ -10,7 +10,7 @@ const alexstrasza: Hero = {
   health: {
     amount: 1698,
     scale: 0.04,
-    regenRate: 3.539,
+    regenRate: 8.8437,
     regenScale: 0.04
   },
   energy: {
@@ -51,7 +51,7 @@ const alexstrasza: Hero = {
       id: "AlexstraszaGiftOfLife",
       name: "Gift of Life",
       descriptionShort: "Give a portion of Health to an allied Hero",
-      descriptionLong: "Sacrifice 15% of Alexstrasza's current Health, healing an allied Hero for 150% of that amount. Dragonqueen: Breath of LifeCooldown greatly reduced and does not cost Health.",
+      descriptionLong: "Sacrifice 15% of Alexstrasza's current Health, healing an allied Hero for 150% of that amount. Passive: Increase Alexstrasza's Health regeneration by 150%. Dragonqueen: Breath of LifeCooldown greatly reduced and does not cost Health.",
       cost: {
         type: "Health",
         amount: 15
@@ -494,8 +494,8 @@ const alexstrasza: Hero = {
       {
         id: "AlexstraszaToughLoveGiftOfLife",
         name: "Tough Love",
-        descriptionShort: "Gift of Life grants Armor at high Health",
-        descriptionLong: "While Alexstrasza is above 75% Health, Gift of Life grants its target 30 Armor for 2.5 seconds.",
+        descriptionShort: "Gift of Life grants Armor",
+        descriptionLong: "Gift of Life grants its target 10 Armor for 2.5 seconds, increased to 30 while Alexstrasza is above 75% Health.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -518,7 +518,7 @@ const alexstrasza: Hero = {
         id: "AlexstraszaOverprotectiveAbundance",
         name: "Overprotective",
         descriptionShort: "Abundance grants Shields",
-        descriptionLong: "Heroes healed by Abundance gain a Shield for 3 seconds equal to 70% of the amount healed.",
+        descriptionLong: "Heroes healed by Abundance gain a Shield for 6 seconds equal to 70% of the amount healed.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -528,7 +528,7 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0.6000000000000001,
+          healing: 1.2000000000000002,
           magicalDamage: 0
         },
         order: 2,
@@ -541,7 +541,7 @@ const alexstrasza: Hero = {
         id: "AlexstraszaDraconicDisciplineDragonqueen",
         name: "Draconic Discipline",
         descriptionShort: "Increase Dragonqueen duration",
-        descriptionLong: "Increase Dragonqueen's duration by 6 seconds.",
+        descriptionLong: "Increase Dragonqueen's duration by 6 seconds, and Basic Attack healing by 50%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -551,7 +551,7 @@ const alexstrasza: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 1.2000000000000002,
           magicalDamage: 0
         },
         order: 3,
@@ -671,7 +671,7 @@ const alexstrasza: Hero = {
       health: {
         amount: 1698,
         scale: 0.04,
-        regenRate: 3.539,
+        regenRate: 8.8437,
         regenScale: 0.04
       },
       energy: {
@@ -822,8 +822,6 @@ const alexstrasza: Hero = {
     physicalDamage: 36.5,
     mobility: 24.006944444444446,
     healing: 47.602852631396296,
-    magicalDamage: 35.870108054117864
+    magicalDamage: 8.981084675631742
   }
 };
-      
-export default alexstrasza;

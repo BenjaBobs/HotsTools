@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const chogall: Hero = {
+export const chogall: Hero = {
   name: "Cho",
   nameNormalized: "chogall",
   franchise: "Warcraft",
@@ -193,7 +193,7 @@ const chogall: Hero = {
         id: "ChoTheWillofCho",
         name: "The Will of Cho",
         descriptionShort: "Killing Minions and Takedowns grant Armor",
-        descriptionLong: "Quest: Killing enemy Minions grants 1 stack of The Will of Cho, and Hero takedowns grant 10 stacks.  Gain 1 Armor for every 30 stacks of The Will of Cho, up to a maximum of 10 Armor. This Armor bonus stacks with Ogre Hide.",
+        descriptionLong: "Quest: Killing enemy Minions grants 1 stack of The Will of Cho, and Hero takedowns grant 10 stacks. Gain 1 Armor for every 30 stacks of The Will of Cho, up to a maximum of 10 Armor. This Armor bonus stacks with Ogre Hide.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -289,7 +289,7 @@ const chogall: Hero = {
         id: "ChoPowerSurge",
         name: "Power Surge",
         descriptionShort: "Surging Fist Slows enemy Heroes",
-        descriptionLong: "Enemy Heroes who are hit by Surging Fist are Slowed by 30% for 2.5 seconds.  Gain 15% Movement Speed while charging Surging Fist and for 2.5 seconds after casting the Ability.",
+        descriptionLong: "Enemy Heroes who are hit by Surging Fist are Slowed by 30% for 2.5 seconds. Gain 15% Movement Speed while charging Surging Fist and for 2.5 seconds after casting the Ability.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -597,11 +597,11 @@ const chogall: Hero = {
         id: "ChoFuelForTheFlame",
         name: "Fuel for the Flame",
         descriptionShort: "Basic Attacks explode for damage",
-        descriptionLong: "Basic Attacks against enemies cause them to explode, dealing 21 (+4% / level) damage to them and 45 (+4% / level) damage to nearby enemies.  This damage is doubled against enemy Heroes.",
+        descriptionLong: "Basic Attacks against enemies cause them to explode, dealing 21 (+4% / level) damage to them and 45 (+4% / level) damage to nearby enemies. This damage is doubled against enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_aoe.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -613,7 +613,8 @@ const chogall: Hero = {
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
-          "ChoOgreHidePassive"
+          "ChoOgreHidePassive",
+          "ChoOgreHide"
         ]
       },
       {
@@ -643,8 +644,6 @@ const chogall: Hero = {
     physicalDamage: 66.47727272727272,
     mobility: 24.006944444444446,
     healing: 0.30365601846228596,
-    magicalDamage: 33.47606238082267
+    magicalDamage: 8.381668390719668
   }
 };
-      
-export default chogall;

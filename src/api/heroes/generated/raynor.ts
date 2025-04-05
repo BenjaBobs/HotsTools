@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const raynor: Hero = {
+export const raynor: Hero = {
   name: "Raynor",
   nameNormalized: "raynor",
   franchise: "Starcraft",
@@ -217,7 +217,7 @@ const raynor: Hero = {
         id: "RaynorAceInTheHole",
         name: "Ace In The Hole",
         descriptionShort: "Deal more damage to disabled Heroes",
-        descriptionLong: "Deal 10% more damage to Stunned or Slowed Heroes. Enemy Heroes hit by Give 'Em Some Pepper are Slowed by 10% for 2.5 seconds.",
+        descriptionLong: "Deal 12% more damage to Stunned or Slowed Heroes. Enemy Heroes hit by Give 'Em Some Pepper are Slowed by 10% for 2.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -228,7 +228,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 2
+          magicalDamage: 2.4000000000000004
         },
         order: 3,
         tier: "level1",
@@ -317,7 +317,7 @@ const raynor: Hero = {
         id: "RaynorPenetratingRoundHeavySlugs",
         name: "Heavy Slugs",
         descriptionShort: "Improve Penetrating Round's Slow",
-        descriptionLong: "Increase Penetrating Round's Slow by 15% and its duration by 1.5 seconds.",
+        descriptionLong: "Increase Penetrating Round's Slow by 15% and its duration by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -585,7 +585,7 @@ const raynor: Hero = {
         id: "RaynorHyperionCavalrysArrived",
         name: "Cavalry's Arrived",
         descriptionShort: "Mark targets for the Hyperion",
-        descriptionLong: "Give 'Em Some Pepper lowers the cooldown of Hyperion by 5 seconds if the primary target is a Hero. These Heroes are targeted by the Hyperion for 100% increased damage.",
+        descriptionLong: "Give 'Em Some Pepper lowers the cooldown of Hyperion by 5 seconds if the primary target is a Hero. These Heroes are targeted by the Hyperion for 100% increased damage for 6 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -611,7 +611,7 @@ const raynor: Hero = {
         id: "RaynorDuskWing",
         name: "Dusk Wing",
         descriptionShort: "Upgrade Raynor's Raider",
-        descriptionLong: "Increase the Health and leash range of Raynor's Raider by 100%. Its Basic Attack lowers enemy Hero Armor by 2 for 1 second, stacking up to 25.",
+        descriptionLong: "Increase the Health and leash range of Raynor's Raider by 100%. Its Basic Attack lowers enemy Hero Armor by 3 for 1 second, stacking up to 30.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -685,7 +685,7 @@ const raynor: Hero = {
         id: "RaynorHyperionExecuteOrders",
         name: "Execute Orders",
         descriptionShort: "Retaliate upon death",
-        descriptionLong: "Reduce Raynor's death timer by 35 seconds. Upon death, the Hyperion is cast towards the closest enemy Hero.",
+        descriptionLong: "When Raynor is killed, the Hyperion is cast towards the closest enemy Hero. It lasts 12 seconds, hitting up to 4 enemy Heroes of the lowest Health in the area for 66 (+4% / level) damage every second. Every 4 seconds, it will also fire its Yamato Cannon at the lowest Health enemy Hero, dealing 395 (+4% / level) damage. Passive: Reduce Raynor's death timer by 35 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -696,7 +696,7 @@ const raynor: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 79
         },
         order: 5,
         tier: "level20"
@@ -708,8 +708,6 @@ const raynor: Hero = {
     physicalDamage: 61.24999999999999,
     mobility: 24.006944444444446,
     healing: 1.2146240738491438,
-    magicalDamage: 39.681891098398864
+    magicalDamage: 9.935471159056204
   }
 };
-      
-export default raynor;

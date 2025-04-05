@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const jaina: Hero = {
+export const jaina: Hero = {
   name: "Jaina",
   nameNormalized: "jaina",
   franchise: "Warcraft",
@@ -33,7 +33,7 @@ const jaina: Hero = {
       id: "JainaTraitFrostbite",
       name: "Frostbite",
       descriptionShort: "Jaina's Abilities Chill targets, slowing them and causing them to take more damage",
-      descriptionLong: "Jaina's Abilities Chill targets, Slowing them by 25% and amplifying damage taken from her Abilities by 50%. Lasts 4 seconds. Quest: Deal 15,000 Ability damage to Chilled Heroes. Reward: Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.",
+      descriptionLong: "Jaina's Abilities Chill targets, Slowing them by 25% and amplifying damage taken from her Abilities by 50%. Lasts 4 seconds. Quest: Deal 12000 Ability damage to Chilled Heroes. Reward: Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -44,7 +44,7 @@ const jaina: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 2400
       }
     },
     {
@@ -117,7 +117,7 @@ const jaina: Hero = {
       id: "JainaSummonWaterElemental",
       name: "Summon Water Elemental",
       descriptionShort: "Summon a Water Elemental that Chills enemies",
-      descriptionLong: "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 (+4% / level) damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental.  Lasts 20 seconds.",
+      descriptionLong: "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 (+4% / level) damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental. Lasts 20 seconds.",
       cost: {
         type: "Mana",
         amount: 60
@@ -163,8 +163,8 @@ const jaina: Hero = {
       {
         id: "JainaFrostboltWintersReach",
         name: "Winter's Reach",
-        descriptionShort: "Increase Frostbolt range",
-        descriptionLong: "Increase the range of Frostbolt by 30%.",
+        descriptionShort: "Increase Frostbolt range, travel speed",
+        descriptionLong: "Increase the range and travel speed of Frostbolt by 30%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -350,11 +350,11 @@ const jaina: Hero = {
         id: "JainaIcefuryWand",
         name: "Icefury Wand",
         descriptionShort: "Increase Basic Attack damage",
-        descriptionLong: "Basic Attacks against Chilled enemies deal 50% more damage and lower the cooldown of Blizzard by 1.25 seconds.  Doubled against enemy Heroes.",
+        descriptionLong: "Basic Attacks against Chilled enemies deal 50% more damage and lower the cooldown of Blizzard by 1.25 seconds. Doubled against enemy Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -402,7 +402,7 @@ const jaina: Hero = {
         id: "JainaHeroicSummonWaterElemental",
         name: "Summon Water Elemental",
         descriptionShort: "Summon a Water Elemental that Chills enemies",
-        descriptionLong: "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 (+4% / level) damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental.  Lasts 20 seconds.",
+        descriptionLong: "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal 62 (+4% / level) damage, splash for 25% damage and Chill. The Ability can be reactivated to retarget the Water Elemental. Lasts 20 seconds.",
         cost: {
           type: "Mana",
           amount: 60
@@ -668,8 +668,6 @@ const jaina: Hero = {
     physicalDamage: 30,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 45.269227276854636
+    magicalDamage: 100
   }
 };
-      
-export default jaina;

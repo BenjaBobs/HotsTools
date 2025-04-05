@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const rexxar: Hero = {
+export const rexxar: Hero = {
   name: "Rexxar",
   nameNormalized: "rexxar",
   franchise: "Warcraft",
@@ -536,7 +536,7 @@ const rexxar: Hero = {
         id: "RexxarSpiritBondPrimalIntimidation",
         name: "Primal Intimidation",
         descriptionShort: "Activate to slow enemy Attack and Move speed",
-        descriptionLong: "Activate to slow the Attack Speed by 50% and Movement Speed by 20% of Heroes and Summons near Rexxar and Misha for 2.5 seconds. Passive: Heroes and Summons that attack Rexxar or Misha have their Attack Speed slowed by 20% for 2.5 seconds.",
+        descriptionLong: "Activate to Slow the Attack Speed by 50% and Movement Speed by 20% of Heroes and Summons near Rexxar and Misha for 2.5 seconds. Passive: Heroes and Summons that attack Rexxar or Misha have their Attack Speed slowed by 20% for 2.5 seconds.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
@@ -604,7 +604,7 @@ const rexxar: Hero = {
         id: "RexxarUnleashTheBoarsKillCommand",
         name: "Kill Command",
         descriptionShort: "Unleash the Boars deals more damage and roots",
-        descriptionLong: "Unleash the Boars deals 50% more damage and roots for 1.5 seconds.",
+        descriptionLong: "Unleash the Boars deals 50% more damage and Roots for 1.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -725,8 +725,6 @@ const rexxar: Hero = {
     physicalDamage: 58.2608695652174,
     mobility: 24.006944444444446,
     healing: 52.034495323697314,
-    magicalDamage: 18.802454242388865
+    magicalDamage: 4.707720238974857
   }
 };
-      
-export default rexxar;

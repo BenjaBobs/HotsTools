@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const qhira: Hero = {
+export const qhira: Hero = {
   name: "Qhira",
   nameNormalized: "qhira",
   franchise: "Nexus",
@@ -34,7 +34,7 @@ const qhira: Hero = {
       name: "Grappling Hook",
       descriptionShort: "Qhira launches herself towards terrain or Heroes",
       descriptionLong: "Qhira fires a grappling hook that pulls her to terrain it contacts. If an enemy Hero is hit, they take 35 (+4% / level) damage and Qhira launches at them, kicking them for an additional 108 (+4% / level) damage. Can be used while Revolving Sweep is active.",
-      cooldown: 25,
+      cooldown: 20,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_d.png",
@@ -73,12 +73,12 @@ const qhira: Hero = {
       id: "NexusHunterBloodRage",
       name: "Blood Rage",
       descriptionShort: "Your Basic Attacks and Abilities cause enemies to take damage over time",
-      descriptionLong: "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 (+4% / level) damage over 4 seconds. Stacks 5 times. Active: Qhira deals 32 (+4% / level) damage and heals for 85 (+4% / level) Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
+      descriptionLong: "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 (+4% / level) damage over 4 seconds. Stacks 5 times. Qhira deals 32 (+4% / level) damage and heals for 90 (+4% / level) Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
       cost: {
         type: "Mana",
         amount: 35
       },
-      cooldown: 8,
+      cooldown: 7,
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nexushunter_w.png",
@@ -87,8 +87,8 @@ const qhira: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 30.75,
-        magicalDamage: 12
+        healing: 35.14285714285714,
+        magicalDamage: 13.714285714285714
       }
     },
     {
@@ -139,7 +139,7 @@ const qhira: Hero = {
       id: "NexusHunterFinalStrikeActivate",
       name: "Final Strike",
       descriptionShort: "Extend sword to deal finishing blow",
-      descriptionLong: "After 1 second, deal 395 (+4% / level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+      descriptionLong: "After 1 second, deal 410 (+4% / level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
       cost: {
         type: "Mana",
         amount: 45
@@ -154,7 +154,7 @@ const qhira: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 79
+        magicalDamage: 82
       }
     }
   ],
@@ -331,7 +331,7 @@ const qhira: Hero = {
         id: "NexusHunterBloodRageHealmonger",
         name: "Healmonger",
         descriptionShort: "Blood Rage heals more against low Health",
-        descriptionLong: "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 190 (+4% / level) Health.",
+        descriptionLong: "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 210 (+4% / level) Health.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -407,7 +407,7 @@ const qhira: Hero = {
         id: "NexusHunterFinalStrike",
         name: "Final Strike",
         descriptionShort: "Extend sword to deal finishing blow",
-        descriptionLong: "After 1 second, deal 395 (+4% / level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+        descriptionLong: "After 1 second, deal 410 (+4% / level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
         cost: {
           type: "Mana",
           amount: 45
@@ -422,7 +422,7 @@ const qhira: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 79
+          magicalDamage: 82
         },
         order: 2,
         tier: "level10",
@@ -532,7 +532,7 @@ const qhira: Hero = {
         id: "NexusHunterRevolvingSweepLingeringAilment",
         name: "Lingering Ailment",
         descriptionShort: "Reduce enemy Hero Armor",
-        descriptionLong: "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 25 for 3 seconds.",
+        descriptionLong: "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 35 for 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -682,9 +682,7 @@ const qhira: Hero = {
     tankiness: 60.263653483992464,
     physicalDamage: 50,
     mobility: 24.006944444444446,
-    healing: 7.469938054172235,
-    magicalDamage: 30.779533278852274
+    healing: 8.537072061911124,
+    magicalDamage: 7.8806814583377305
   }
 };
-      
-export default qhira;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const tracer: Hero = {
+export const tracer: Hero = {
   name: "Tracer",
   nameNormalized: "tracer",
   franchise: "Overwatch",
@@ -81,7 +81,7 @@ const tracer: Hero = {
         chargesMax: 1,
         chargesInitial: 1,
         chargeCost: 1,
-        recastCooldown: 2
+        recastCooldown: 3
       },
       category: "basic",
       type: "W",
@@ -149,7 +149,7 @@ const tracer: Hero = {
           chargesMax: 1,
           chargesInitial: 1,
           chargeCost: 1,
-          recastCooldown: 2
+          recastCooldown: 3
         },
         category: "Talent",
         type: "W",
@@ -172,7 +172,7 @@ const tracer: Hero = {
         id: "TracerPartingGift",
         name: "Parting Gift",
         descriptionShort: "Using Recall leaves bombs",
-        descriptionLong: "Recall leaves behind 6 bombs that deal 240 (+4% / level) damage each to different targets. Heroes hit with these bombs are slowed by 50% for 0.75 seconds and grant 7% Pulse Bomb charge.",
+        descriptionLong: "Recall leaves behind 6 bombs that deal 240 (+4% / level) damage each to different targets. Heroes hit with these bombs are Slowed by 50% for 0.75 seconds and grant 7% Pulse Bomb charge.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -243,7 +243,7 @@ const tracer: Hero = {
         id: "TracerPulseGenerator",
         name: "Pulse Generator",
         descriptionShort: "Pulse Bomb heals Tracer, refreshes Blink charge",
-        descriptionLong: "Successfully sticking a Pulse Bomb to an enemy Hero heals Tracer for 25% of her maximum Health over 1.5 seconds and refunds a charge of Blink.",
+        descriptionLong: "Successfully sticking a Pulse Bomb to an enemy Hero heals Tracer for 12% of her maximum Health over 1.5 seconds and refunds a charge of Blink.",
         cooldown: null,
         charges: {
           chargesMax: 100,
@@ -258,7 +258,7 @@ const tracer: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 2.4000000000000004,
           magicalDamage: 0
         },
         order: 2,
@@ -271,7 +271,7 @@ const tracer: Hero = {
         id: "TracerIsThataHealthPack",
         name: "Is That a Health Pack?!",
         descriptionShort: "Empower Healing Fountains, Regen Globes",
-        descriptionLong: "Collecting a Regeneration Globe instantly heals Tracer for 10% of her maximum Health and reduces the cooldown of Healing Fountain by 15 seconds. Drinking from a Healing Fountain instantly heals for 20% of Tracer's maximum Health.",
+        descriptionLong: "Collecting a Regeneration Globe instantly heals Tracer for 15% of her maximum Health and reduces the cooldown of Healing Fountain by 15 seconds. Drinking from a Healing Fountain instantly heals for 20% of Tracer's maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -281,7 +281,7 @@ const tracer: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 9,
+          healing: 10,
           magicalDamage: 0
         },
         order: 3,
@@ -316,7 +316,7 @@ const tracer: Hero = {
         id: "TracerFocusFire",
         name: "Focus Fire",
         descriptionShort: "Unloading a magazine on an enemy does bonus damage",
-        descriptionLong: "If an entire ammo magazine is unloaded on an enemy, the last bullet will deal 80 (+4% / level) bonus damage.  This is equal to 35% of the total magazine.",
+        descriptionLong: "If an entire ammo magazine is unloaded on an enemy, the last bullet will deal 80 (+4% / level) bonus damage. This is equal to 35% of the total magazine.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -450,7 +450,7 @@ const tracer: Hero = {
         id: "TracerUntouchable",
         name: "Untouchable",
         descriptionShort: "Quest: Takedowns increase Attack Damage",
-        descriptionLong: "Passive: After Blinking, gain 20% Movement Speed for 1.5 seconds. Quest: Takedowns increase Tracer's Basic Attack damage by 5%, up to 25%. These bonuses are lost on death.",
+        descriptionLong: "Passive: After Blinking, gain 20% Movement Speed for 1.25 seconds. Quest: Takedowns increase Tracer's Basic Attack damage by 5%, up to 25%. These bonuses are lost on death.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -480,7 +480,7 @@ const tracer: Hero = {
         id: "TracerJumper",
         name: "Jumper",
         descriptionShort: "Blink grants Shield, reduced cooldown",
-        descriptionLong: "Passive: When Blink has no charges remaining, its cooldown refreshes 150% faster. Casting Blink grants Tracer a Shield equal to 8% of her maximum Health for 3 seconds. This Shield stacks up to 3 times.",
+        descriptionLong: "Passive: When Blink has no charges remaining, its cooldown refreshes 100% faster. Casting Blink grants Tracer a Shield equal to 6% of her maximum Health for 3 seconds. This Shield stacks up to 3 times.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -490,7 +490,7 @@ const tracer: Hero = {
         },
         category: "Talent",
         type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_blink_d.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_blink.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -540,7 +540,7 @@ const tracer: Hero = {
           chargesMax: 1,
           chargesInitial: 1,
           chargeCost: 1,
-          recastCooldown: 2
+          recastCooldown: 3
         },
         category: "Talent",
         type: "W",
@@ -569,7 +569,7 @@ const tracer: Hero = {
           chargesMax: 1,
           chargesInitial: 1,
           chargeCost: 1,
-          recastCooldown: 2
+          recastCooldown: 3
         },
         category: "Talent",
         type: "W",
@@ -652,7 +652,7 @@ const tracer: Hero = {
           chargesMax: 1,
           chargesInitial: 1,
           chargeCost: 1,
-          recastCooldown: 2
+          recastCooldown: 3
         },
         category: "Talent",
         type: "W",
@@ -729,8 +729,6 @@ const tracer: Hero = {
     physicalDamage: 92,
     mobility: 24.006944444444446,
     healing: 54.65808332321147,
-    magicalDamage: 20.96726595841279
+    magicalDamage: 5.249741392049652
   }
 };
-      
-export default tracer;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const johanna: Hero = {
+export const johanna: Hero = {
   name: "Johanna",
   nameNormalized: "johanna",
   franchise: "Diablo",
@@ -34,7 +34,7 @@ const johanna: Hero = {
       name: "Iron Skin",
       descriptionShort: "Becomes Unstoppable and gains a Shield",
       descriptionLong: "Activate to grant Johanna a Shield that absorbs 810 (+4% / level) damage for 4 seconds. While this Shield is active, Johanna is Unstoppable.",
-      cooldown: 25,
+      cooldown: 22,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_iron_skin.png",
@@ -50,8 +50,8 @@ const johanna: Hero = {
     {
       id: "CrusaderPunish",
       name: "Punish",
-      descriptionShort: "Damage and slow enemies",
-      descriptionLong: "Step forward dealing 113 (+4% / level) damage and Slowing enemies by 60% decaying over 2 seconds.",
+      descriptionShort: "Damage and Slow enemies",
+      descriptionLong: "Step forward dealing 113 (+4% / level) damage and Slowing enemies by 60%, decaying over 2 seconds.",
       cost: {
         type: "Mana",
         amount: 40
@@ -94,11 +94,11 @@ const johanna: Hero = {
     {
       id: "CrusaderShieldGlare",
       name: "Shield Glare",
-      descriptionShort: "Damages and blinds enemies in a cone",
+      descriptionShort: "Damages and Blinds enemies in a cone",
       descriptionLong: "Deal 59 (+4% / level) damage to enemies and Blind them for 1.5 seconds.",
       cost: {
         type: "Mana",
-        amount: 45
+        amount: 55
       },
       cooldown: 12,
       charges: {
@@ -169,8 +169,8 @@ const johanna: Hero = {
       {
         id: "CrusaderZealousGlare",
         name: "Zealous Glare",
-        descriptionShort: "Gain an additional Shield Glare charge",
-        descriptionLong: "Shield Glare gains 1 additional charge.",
+        descriptionShort: "Gain Shield Glare charge, damage",
+        descriptionLong: "Shield Glare gains 1 additional charge, and deals 70% more damage.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -187,7 +187,7 @@ const johanna: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 14
         },
         order: 1,
         tier: "level1",
@@ -199,7 +199,7 @@ const johanna: Hero = {
         id: "CrusaderPassiveDivineFortress",
         name: "Divine Fortress",
         descriptionShort: "Gambit: Gain max HealthBasic Attacks grant Physical Armor",
-        descriptionLong: "Basic Attacks against enemy Heroes grant 8 Physical Armor for 2.5 seconds, stacking up to 40. Gambit: Gain 20% bonus maximum Health. Every death reduces this bonus by 5%",
+        descriptionLong: "Basic Attacks grant 10 Physical Armor for 4 seconds, stacking up to 40. Gambit: Gain 25% bonus maximum Health. Every death reduces this bonus by 5%.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -290,7 +290,7 @@ const johanna: Hero = {
         id: "CrusaderMasteryIronSkinHoldYourGround",
         name: "Hold Your Ground",
         descriptionShort: "Increases Iron Skin Shield, reduces cooldown",
-        descriptionLong: "Increases Iron Skin's Shield by 40% and its cooldown is reduced by 5 seconds.",
+        descriptionLong: "Increases Iron Skin's Shield by 40% and its cooldown is reduced by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -315,7 +315,7 @@ const johanna: Hero = {
         id: "CrusaderMasteryShieldGlareSinsExposed",
         name: "Sins Exposed",
         descriptionShort: "Punish reduces enemy Healing",
-        descriptionLong: "Punish reduces healing received by 35% for 2 seconds. Basic Attacks against them refresh this duration.",
+        descriptionLong: "Punish reduces healing received by 35% for 3 seconds. Basic Attacks against them refresh this duration.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -361,7 +361,7 @@ const johanna: Hero = {
         id: "CrusaderIronSkinSteedCharge",
         name: "Steed Charge",
         descriptionShort: "Activate for an empowered Mount",
-        descriptionLong: "Activate to instantly Mount for 3 seconds, unhindered by damage. Passive: Increase the duration of Iron Skin by 1 second.",
+        descriptionLong: "Activate to instantly Mount for 4 seconds, unhindered by damage. Passive: Increase the duration of Iron Skin by 2 second.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
@@ -439,7 +439,7 @@ const johanna: Hero = {
         id: "CrusaderMasteryPunishRoar",
         name: "Roar",
         descriptionShort: "Increase Punish damage",
-        descriptionLong: "Increase Punish's damage by 25%. This bonus is increased to 150% whenever Punish hits 2 or more Heroes.",
+        descriptionLong: "Increase Punish's damage by 50%. This bonus is increased to 150% whenever Punish hits 2 or more Heroes.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -465,7 +465,7 @@ const johanna: Hero = {
         descriptionLong: "Deal 15 (+4% / level) damage per second to nearby enemies. Each Hero hit by Condemn increases this damage by 40% for 5 seconds.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
+        type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_burningrage.png",
         isPassive: false,
         analysis: {
@@ -482,7 +482,7 @@ const johanna: Hero = {
         id: "CrusaderBlessedHammer",
         name: "Blessed Hammer",
         descriptionShort: "Activate to create spinning hammers",
-        descriptionLong: "Activate to create 2 hammers that spiral outward from Johanna, dealing 74 (+4% / level) damage to enemies hit. Damaging enemies with Basic Abilities reduce the cooldown of this Ability by 3 seconds. Passive: Every 3rd Basic Attack against enemy Heroes releases a hammer.",
+        descriptionLong: "Activate to create 2 hammers that spiral outward from Johanna, dealing 65 (+4% / level) damage to enemies hit. Damaging enemies with Basic Abilities reduce the cooldown of this Ability by 2 seconds. Passive: Every 3rd Basic Attack against enemy Heroes releases a hammer.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
@@ -493,7 +493,7 @@ const johanna: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 14.8
+          magicalDamage: 13
         },
         order: 3,
         tier: "level13"
@@ -504,7 +504,7 @@ const johanna: Hero = {
         id: "CrusaderCondemnShrinkingVacuum",
         name: "Shrinking Vacuum",
         descriptionShort: "Condemn reduces damage dealt, Slows",
-        descriptionLong: "Condemn reduces enemy Heroes damage by 25% and Slows by 25% for 2 seconds.",
+        descriptionLong: "Condemn reduces enemy Heroes damage by 30% and Slows by 30% for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -527,7 +527,7 @@ const johanna: Hero = {
         id: "CrusaderMasteryShieldGlareHolyRenewal",
         name: "Holy Renewal",
         descriptionShort: "Shield Glare heals",
-        descriptionLong: "Hitting enemy Heroes with Shield Glare reduce its cooldown by 1.5 seconds and heals for 5% of Johanna's maximum Health.",
+        descriptionLong: "Hitting enemy Heroes with Shield Glare reduce its cooldown by 1 second and heals for 5% of Johanna's maximum Health.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -578,7 +578,7 @@ const johanna: Hero = {
         id: "CrusaderMasteryFallingSwordHeavensFury",
         name: "Heaven's Fury",
         descriptionShort: "Falling Sword rains down holy bolts",
-        descriptionLong: "Falling Sword rains down holy bolts, dealing 75 (+4% / level) damage to enemies, healing allied Heroes for 75 (+4% / level), and reducing its cooldown by 2 seconds for each Hero hit.",
+        descriptionLong: "Falling Sword rains down holy bolts, dealing 50 (+4% / level) damage to enemies, healing allied Heroes for 68 (+4% / level), and reducing its cooldown by 1 second for each Hero hit.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -588,8 +588,8 @@ const johanna: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 15,
-          magicalDamage: 15
+          healing: 13.600000000000001,
+          magicalDamage: 10
         },
         order: 1,
         tier: "level20",
@@ -673,8 +673,6 @@ const johanna: Hero = {
     physicalDamage: 44.99999999999999,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 15.909890583855447
+    magicalDamage: 3.983486035170681
   }
 };
-      
-export default johanna;

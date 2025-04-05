@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const diablo: Hero = {
+export const diablo: Hero = {
   name: "Diablo",
   nameNormalized: "diablo",
   franchise: "Diablo",
@@ -10,7 +10,7 @@ const diablo: Hero = {
   health: {
     amount: 2825,
     scale: 0.04,
-    regenRate: 5.8867,
+    regenRate: 5.885416666666667,
     regenScale: 0.04
   },
   energy: {
@@ -33,7 +33,7 @@ const diablo: Hero = {
       id: "DiabloBlackSoulstone",
       name: "Black Soulstone",
       descriptionShort: "Gather souls from enemies to gain Health and resurrect faster",
-      descriptionLong: "Repeatable Quest: Gain 10 Souls per Hero killed and 1 Soul per Minion, up to 100. For each Soul, gain 0.3% maximum Health. If Diablo has 100 Souls upon dying, he will resurrect in 5 seconds but lose 100 Souls.",
+      descriptionLong: "Repeatable Quest: Gain 10 Souls per Hero killed and 1 Soul per Minion, up to 100. For each Soul, gain 0.3% maximum Health. If Diablo has 100 Souls upon dying, he will resurrect in 5 seconds but lose 100 Souls. After reaching level 10, Diablo only consumes 75 Souls when resurrecting.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -221,7 +221,7 @@ const diablo: Hero = {
         cooldown: 45,
         category: "Talent",
         type: "Active",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_spellshield.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_hardenedshield.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -437,7 +437,7 @@ const diablo: Hero = {
         id: "DiabloDevastatingCharge",
         name: "Devastating Charge",
         descriptionShort: "Quest: Shadow Charge reduces Armor",
-        descriptionLong: "Increase Shadow Charge's terrain collision damage by 50%. Quest: Hit an enemy Hero against terrain 5 times. Reward: Hitting enemy Heroes against terrain reduces their Armor by 15 for 4 seconds.",
+        descriptionLong: "Increase Shadow Charge's terrain collision damage by 50%. Quest: Hit an enemy Hero against terrain 5 times. Reward: Hitting enemy Heroes against terrain reduces their Armor by 20 for 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -461,7 +461,7 @@ const diablo: Hero = {
         id: "DiabloHellfire",
         name: "Hellfire",
         descriptionShort: "Fire Stomp grants Spell Power",
-        descriptionLong: "Each enemy Hero hit by Fire Stomp grants 3% Spell Power for 10 seconds, up to 30%.  While at maximum stacks, Diablo deals 30 (+4% / level) damage per second to nearby enemies.",
+        descriptionLong: "Each enemy Hero hit by Fire Stomp grants 3% Spell Power for 10 seconds, up to 30%. While at maximum stacks, Diablo deals 33 (+4% / level) damage per second to nearby enemies.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -472,7 +472,7 @@ const diablo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6
+          magicalDamage: 6.6000000000000005
         },
         order: 2,
         tier: "level13",
@@ -683,8 +683,6 @@ const diablo: Hero = {
     physicalDamage: 50,
     mobility: 24.502976190476193,
     healing: 3.279484999392688,
-    magicalDamage: 12.342799418868612
+    magicalDamage: 3.0903650066499186
   }
 };
-      
-export default diablo;

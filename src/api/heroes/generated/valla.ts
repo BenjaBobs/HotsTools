@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const valla: Hero = {
+export const valla: Hero = {
   name: "Valla",
   nameNormalized: "valla",
   franchise: "Diablo",
@@ -33,7 +33,7 @@ const valla: Hero = {
       id: "DemonHunterHatred",
       name: "Hatred",
       descriptionShort: "Basic Attacks grant bonus Attack Damage and Move Speed temporarily",
-      descriptionLong: "Basic Attacks grant a stack of Hatred, up to 10. Each Hatred stack increases Basic Attack damage by 8% and Movement Speed by 1%. Lasts 6 seconds.",
+      descriptionLong: "Basic Attacks grant a stack of Hatred, up to 10. Each Hatred stack increases Basic Attack damage by 8% and Movement Speed by 1%. Lasts 5 seconds.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -73,12 +73,12 @@ const valla: Hero = {
       id: "DemonHunterMultishot",
       name: "Multishot",
       descriptionShort: "Damage enemies in an area",
-      descriptionLong: "Deal 165 (+4% / level) damage to enemies within the target area.",
+      descriptionLong: "Deal 159 (+4% / level) damage to enemies within the target area.",
       cost: {
         type: "Mana",
         amount: 75
       },
-      cooldown: 12,
+      cooldown: 13,
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_multishot.png",
@@ -88,7 +88,7 @@ const valla: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 41.25
+        magicalDamage: 36.69230769230769
       }
     },
     {
@@ -123,10 +123,10 @@ const valla: Hero = {
       id: "DemonHunterStrafe",
       name: "Strafe",
       descriptionShort: "Unleashes a flurry of arrows at enemies",
-      descriptionLong: "Rapidly attack enemies within 10 range for 60 (+4% / level) damage per hit, prioritizing Heroes over Minions. Valla is able to move and use Vault while strafing. Lasts for 4 seconds.",
+      descriptionLong: "Rapidly attack enemies within 10 range for 70 (+4% / level) damage per hit, prioritizing Heroes over Minions. Valla is able to move and use Vault while strafing. Lasts for 4 seconds.",
       cost: {
         type: "Mana",
-        amount: 80
+        amount: 60
       },
       cooldown: 60,
       category: "heroic",
@@ -176,7 +176,7 @@ const valla: Hero = {
         id: "DemonHunterMasteryPuncturingArrow",
         name: "Puncturing Arrow",
         descriptionShort: "Quest: Gain Hungering Arrow bounce, damage",
-        descriptionLong: "Increase the number of Hungering Arrow bounces by 1. Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 7.",
+        descriptionLong: "Increase the number of Hungering Arrow bounces by 1. Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 6.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -224,7 +224,7 @@ const valla: Hero = {
         id: "DemonHunterCreedoftheHunter",
         name: "Creed of the Hunter",
         descriptionShort: "Gambit: Gain Attack SpeedQuest: Increase Hatred Basic Attack bonus",
-        descriptionLong: "Quest: Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 5%. Gambit: Gain 20% bonus Attack Speed. Every death reduces this bonus by 5%.",
+        descriptionLong: "Quest: Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 6%. Gambit: Gain 25% bonus Attack Speed. Every death reduces this bonus by 5%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -405,10 +405,10 @@ const valla: Hero = {
         id: "DemonHunterHeroicAbilityStrafe",
         name: "Strafe",
         descriptionShort: "Unleashes a flurry of arrows at enemies",
-        descriptionLong: "Rapidly attack enemies within 10 range for 60 (+4% / level) damage per hit, prioritizing Heroes over Minions. Valla is able to move and use Vault while strafing. Lasts for 4 seconds.",
+        descriptionLong: "Rapidly attack enemies within 10 range for 70 (+4% / level) damage per hit, prioritizing Heroes over Minions. Valla is able to move and use Vault while strafing. Lasts for 4 seconds.",
         cost: {
           type: "Mana",
-          amount: 80
+          amount: 60
         },
         cooldown: 60,
         category: "Talent",
@@ -539,7 +539,7 @@ const valla: Hero = {
         id: "DemonHunterPunishment",
         name: "Punishment",
         descriptionShort: "Reduce Multishot cooldown at max Hatred",
-        descriptionLong: "While at max Hatred, Multishot's cooldown recharges 50% faster.",
+        descriptionLong: "While at max Hatred, Multishot's cooldown recharges 50% faster. Passive: Reduce Multishot's Mana cost from 75 to 55.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -585,11 +585,11 @@ const valla: Hero = {
         id: "DemonHunterManticore",
         name: "Manticore",
         descriptionShort: "Increase Basic Attacks against Heroes",
-        descriptionLong: "Every 3rd Basic Attack against the same Hero deals an additional 5% of their maximum Health as damage.",
+        descriptionLong: "Every 3rd Basic Attack against the same Hero deals an additional 4% of their maximum Health as damage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -720,8 +720,6 @@ const valla: Hero = {
     physicalDamage: 58.333333333333336,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 23.202692272768548
+    magicalDamage: 5.641063532300416
   }
 };
-      
-export default valla;

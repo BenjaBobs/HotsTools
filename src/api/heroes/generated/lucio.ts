@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const lucio: Hero = {
+export const lucio: Hero = {
   name: "Lúcio",
   nameNormalized: "lucio",
   franchise: "Overwatch",
@@ -72,9 +72,9 @@ const lucio: Hero = {
       descriptionLong: "Deal 105 (+4% / level) damage to enemies in an area and knock them back.",
       cost: {
         type: "Mana",
-        amount: 30
+        amount: 45
       },
-      cooldown: 7,
+      cooldown: 8,
       category: "basic",
       type: "Q",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundwave.png",
@@ -84,7 +84,7 @@ const lucio: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 45
+        magicalDamage: 39.375
       }
     },
     {
@@ -158,7 +158,7 @@ const lucio: Hero = {
         type: "Mana",
         amount: 30
       },
-      cooldown: 20,
+      cooldown: 25,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_highfive.png",
@@ -202,7 +202,7 @@ const lucio: Hero = {
         id: "LucioWallRideAccelerando",
         name: "Accelerando",
         descriptionShort: "Wall Ride gradually increases Move Speed",
-        descriptionLong: "Wall Ride's Movement Speed bonus gradually increases to 40% over 4 seconds while Lúcio maintains its effect.",
+        descriptionLong: "Wall Ride's Movement Speed bonus gradually increases to 40% over 6 seconds while Lúcio maintains its effect.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -274,7 +274,7 @@ const lucio: Hero = {
         id: "LucioSoundwaveOffTheWall",
         name: "Off the Wall",
         descriptionShort: "Wall Ride Soundwave hits reduce cooldown",
-        descriptionLong: "Hitting an enemy with Soundwave while Wall Ride is active reduces its cooldown by 3 seconds.",
+        descriptionLong: "Hitting an enemy with Soundwave while Wall Ride is active sets its cooldown to 5 seconds and refunds 15 Mana.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -322,11 +322,11 @@ const lucio: Hero = {
         id: "LucioSoundwaveGoodVibrations",
         name: "Good Vibrations",
         descriptionShort: "Soundwave grants Shield",
-        descriptionLong: "Hitting an enemy with Soundwave grants Lúcio a 38 (+4% / level) Shield for 7 seconds. Hitting enemy Heroes grants 3 times this amount.",
+        descriptionLong: "Hitting an enemy with Soundwave grants Lúcio a 38 (+4% / level) Shield for 8 seconds. Hitting enemy Heroes grants 3 times this amount.",
         cooldown: null,
         category: "Talent",
         type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundwave_a.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_soundwave.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -422,7 +422,7 @@ const lucio: Hero = {
           type: "Mana",
           amount: 30
         },
-        cooldown: 20,
+        cooldown: 25,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lucio_highfive.png",
@@ -468,8 +468,8 @@ const lucio: Hero = {
       {
         id: "LucioPushOffHeavyCasters",
         name: "Heavy Casters",
-        descriptionShort: "Push Off Stuns, no longer Slows",
-        descriptionLong: "Push Off no longer Slows enemies, and instead Stuns them for 0.5 seconds.",
+        descriptionShort: "Push Off Stuns the first Hero hit",
+        descriptionLong: "Push Off no longer Slows the first Hero hit, and instead Stuns them for 0.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -540,7 +540,7 @@ const lucio: Hero = {
         id: "LucioAmpItUpUpTheFrequency",
         name: "Up the Frequency",
         descriptionShort: "Basic Attacks reduce Amp It Up cooldown",
-        descriptionLong: "Hitting enemy Heroes with Basic Attacks reduces the cooldown of Amp It Up by 0.4 seconds. Passive: Wall Ride increases Basic Attack range by 2.2.",
+        descriptionLong: "Hitting enemy Heroes with Basic Attacks reduces the cooldown of Amp It Up by 0.3 seconds. Passive: Wall Ride increases Basic Attack range by 2.2.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -563,7 +563,7 @@ const lucio: Hero = {
         id: "LucioAmpItUpUpToEleven",
         name: "Up To Eleven",
         descriptionShort: "Increase Amp It Up duration",
-        descriptionLong: "Increase the duration of Amp It Up by 1 second. While Amp It Up is active, enemy Heroes hit by Soundwave or Push-Off further increase its duration by 0.3 seconds.",
+        descriptionLong: "Hitting an enemy Hero with Soundwave or Push Off increases the duration of Amp It Up. Soundwave grants 0.25 seconds and Push Off grants 0.5 seconds. If Amp It Up is not active, these bonuses are granted to its next activation, up to 1.5 seconds. Passive: Increase the duration of Amp It Up by 1 second.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -689,8 +689,6 @@ const lucio: Hero = {
     physicalDamage: 9.2,
     mobility: 24.006944444444446,
     healing: 15.229517233646956,
-    magicalDamage: 6.639880141650776
+    magicalDamage: 1.4546697207034136
   }
 };
-      
-export default lucio;

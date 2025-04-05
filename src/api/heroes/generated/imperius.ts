@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const imperius: Hero = {
+export const imperius: Hero = {
   name: "Imperius",
   nameNormalized: "imperius",
   franchise: "Diablo",
@@ -51,7 +51,7 @@ const imperius: Hero = {
       id: "ImperiusCelestialCharge",
       name: "Celestial Charge",
       descriptionShort: "Charge forward and Stun enemies",
-      descriptionLong: "Lunge towards a targeted direction and stab, dealing 35 (+4% / level) damage. If an enemy Hero is hit, Channel to Stun for 1 second and deal 70 (+4% / level) additional damage when it fully finishes.",
+      descriptionLong: "Lunge towards a targeted direction and stab, dealing 35 (+4% / level) damage. If an enemy Hero is hit, Channel to Stun for 1 second and deal 80 (+4% / level) additional damage when it fully finishes.",
       cost: {
         type: "Mana",
         amount: 40
@@ -66,7 +66,7 @@ const imperius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 31.5
+        magicalDamage: 34.5
       }
     },
     {
@@ -139,7 +139,7 @@ const imperius: Hero = {
       id: "ImperiusWrathOfTheAngiris",
       name: "Wrath of the Angiris",
       descriptionShort: "Ascend with an enemy into the Heavens",
-      descriptionLong: "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving. After 2 seconds, slam the target into the ground, dealing 375 (+4% / level) damage and Stunning them for 1 second.",
+      descriptionLong: "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving. After 2 seconds, slam the target into the ground, dealing 250 (+4% / level) damage to them, increased by 20% for each Valorous Brand on the target when landing, and Stunning them for 1 second.",
       cost: {
         type: "Mana",
         amount: 80
@@ -154,7 +154,7 @@ const imperius: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 75
+        magicalDamage: 50
       }
     }
   ],
@@ -281,7 +281,7 @@ const imperius: Hero = {
         id: "ImperiusPressForward",
         name: "Press Forward",
         descriptionShort: "Damage Heroes to refresh Regen Globes",
-        descriptionLong: "Gain 10 Armor while being healed by a Regeneration Globe.  Damaging an enemy Hero sets the duration of an active Regeneration Globe on Imperius to 8 seconds (unless it is already higher).",
+        descriptionLong: "Gain 10 Armor while being healed by a Regeneration Globe. Damaging an enemy Hero sets the duration of an active Regeneration Globe on Imperius to 8 seconds (unless it is already higher).",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -329,7 +329,7 @@ const imperius: Hero = {
         id: "ImperiusSolarionsFireBlazeOfGlory",
         name: "Blaze of Glory",
         descriptionShort: "Solarion's Fire creates a delayed explosion",
-        descriptionLong: "Solarion's Fire leaves a line of scorched earth along its center, exploding after 2 seconds and dealing 185 (+4% / level) damage.  This explosion benefits from and consumes Valorous Brand marks.",
+        descriptionLong: "Solarion's Fire leaves a line of scorched earth along its center that explodes after 2 seconds for 205 (+4% / level) damage, dealing bonus damage with Valorous Brand marks.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -340,7 +340,7 @@ const imperius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 37
+          magicalDamage: 0
         },
         order: 2,
         tier: "level7",
@@ -401,7 +401,7 @@ const imperius: Hero = {
         id: "ImperiusWrathOfTheAngiris",
         name: "Wrath of the Angiris",
         descriptionShort: "Ascend with an enemy into the Heavens",
-        descriptionLong: "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving. After 2 seconds, slam the target into the ground, dealing 375 (+4% / level) damage and Stunning them for 1 second.",
+        descriptionLong: "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving. After 2 seconds, slam the target into the ground, dealing 250 (+4% / level) damage to them, increased by 20% for each Valorous Brand on the target when landing, and Stunning them for 1 second.",
         cost: {
           type: "Mana",
           amount: 80
@@ -416,7 +416,7 @@ const imperius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 75
+          magicalDamage: 50
         },
         order: 2,
         tier: "level10",
@@ -501,7 +501,7 @@ const imperius: Hero = {
         id: "ImperiusCelestialChargeCelestialSwiftness",
         name: "Celestial Swiftness",
         descriptionShort: "Celestial Charge grants Attack and Move Speed",
-        descriptionLong: "Gain 20% Movement Speed for 5 seconds after casting Celestial Charge. Gain 40% Attack Speed for 5 seconds for each Hero stunned with Celestial Charge.",
+        descriptionLong: "Gain 20% Movement Speed for 5 seconds after casting Celestial Charge. Gain 40% Attack Speed for 5 seconds for each Hero Stunned with Celestial Charge.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -667,8 +667,6 @@ const imperius: Hero = {
     physicalDamage: 52.5,
     mobility: 24.006944444444446,
     healing: 0.971699259079315,
-    magicalDamage: 26.522632343593937
+    magicalDamage: 5.827914881040343
   }
 };
-      
-export default imperius;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const anduin: Hero = {
+export const anduin: Hero = {
   name: "Anduin",
   nameNormalized: "anduin",
   franchise: "Warcraft",
@@ -431,7 +431,7 @@ const anduin: Hero = {
         id: "AnduinDivineStarSpeedOfThePious",
         name: "Speed of the Pious",
         descriptionShort: "Divine Star grants Move Speed, reduce cooldown",
-        descriptionLong: "While Divine Star is traveling, gain 30% Movement Speed.  Each allied Hero healed by Divine Star on its return to Anduin reduces its cooldown by 1 second.",
+        descriptionLong: "While Divine Star is traveling, gain 30% Movement Speed. Each allied Hero healed by Divine Star on its return to Anduin reduces its cooldown by 1 second.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -632,7 +632,7 @@ const anduin: Hero = {
         order: 2,
         tier: "level20",
         linkedAbilityIds: [
-          "AnduinLeapOfFaithInstant"
+          "AnduinLightBomb"
         ],
         prerequisiteTalentIds: [
           "AnduinLightBomb"
@@ -691,8 +691,6 @@ const anduin: Hero = {
     physicalDamage: 42.5,
     mobility: 24.006944444444446,
     healing: 12.753552775416011,
-    magicalDamage: 19.231060262114468
+    magicalDamage: 4.815033742180187
   }
 };
-      
-export default anduin;

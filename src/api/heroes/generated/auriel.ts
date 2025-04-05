@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const auriel: Hero = {
+export const auriel: Hero = {
   name: "Auriel",
   nameNormalized: "auriel",
   franchise: "Diablo",
@@ -33,7 +33,7 @@ const auriel: Hero = {
       id: "AurielBestowHope",
       name: "Bestow Hope",
       descriptionShort: "Bestowed ally's damage grants energy",
-      descriptionLong: "Passive: 60% of the damage Auriel deals to Heroes and 20% dealt to non-Heroes is stored as energy. Bestow an allied Hero with Hope.  While they remain near Auriel, 30% of their damage to Heroes and 10% of their damage to non-Heroes is converted to energy. Auriel can only have Bestow Hope on 1 ally at a time. Auriel can store up to 475 (+4% / level) energy.",
+      descriptionLong: "Passive: 80% of the damage Auriel deals to Heroes and 40% dealt to non-Heroes is stored as energy. Bestow an allied Hero with Hope. While they remain near Auriel, 30% of their damage to Heroes and 10% of their damage to non-Heroes is converted to energy. Auriel can only have Bestow Hope on 1 ally at a time. Auriel can store up to 475 (+4% / level) energy.",
       cooldown: 1.5,
       category: "trait",
       type: "Trait",
@@ -105,7 +105,7 @@ const auriel: Hero = {
       id: "AurielResurrect",
       name: "Resurrect",
       descriptionShort: "Bring an allied Hero back to life",
-      descriptionLong: "Channel on the spirit of a dead ally for 1 second. After a 5 second delay, they are brought back to life with 100% of their maximum Health at the location where they died. Auriel can use this ability while dead to resurrect herself.",
+      descriptionLong: "Channel on the spirit of a dead ally for 1 second. After a 3 second delay, they are brought back to life with 100% of their maximum Health at the location where they died. Auriel can use this ability while dead to resurrect herself.",
       cooldown: 100,
       category: "heroic",
       type: "Heroic",
@@ -141,10 +141,10 @@ const auriel: Hero = {
   talents: [
     [
       {
-        id: "AurielSwiftSweepSacredSweepTalent",
-        name: "Swift Sweep",
-        descriptionShort: "Increases Sacred Sweep cast speed",
-        descriptionLong: "Increases the cast speed of Sacred Sweep by 50%.",
+        id: "AurielIncreasingClaritySacredSweepTalent",
+        name: "Increasing Clarity",
+        descriptionShort: "Quest: Increases center damage by hitting Heroes",
+        descriptionLong: "Quest: Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50. Reward: After hitting 25 Heroes, this center damage bonus is increased to 180.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -158,29 +158,6 @@ const auriel: Hero = {
           magicalDamage: 0
         },
         order: 1,
-        tier: "level1",
-        linkedAbilityIds: [
-          "AurielSacredSweep"
-        ]
-      },
-      {
-        id: "AurielIncreasingClaritySacredSweepTalent",
-        name: "Increasing Clarity",
-        descriptionShort: "Quest: Increases center damage by hitting Heroes",
-        descriptionLong: "Quest: Every time Sacred Sweep hits a Hero in the center, increase the center damage by 2, up to 50. Reward: After hitting 25 Heroes, this center damage bonus is increased to 180.",
-        cooldown: null,
-        category: "Talent",
-        type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_auriel_angelicsweep_a.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 2,
         tier: "level1",
         linkedAbilityIds: [
           "AurielSacredSweep"
@@ -204,7 +181,7 @@ const auriel: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 3,
+        order: 2,
         tier: "level1",
         linkedAbilityIds: [
           "AurielSacredSweep"
@@ -213,8 +190,8 @@ const auriel: Hero = {
       {
         id: "AurielSearingLightRayOfHeavenTalent",
         name: "Searing Light",
-        descriptionShort: "Ray of Heaven also damages enemies in the area",
-        descriptionLong: "Ray of Heaven also deals damage to enemies in the area equal to 30% of the energy consumed.",
+        descriptionShort: "Ray of Heaven also damages Heroes in the area",
+        descriptionLong: "Ray of Heaven also deals damage to enemy Heroes in the area equal to 30% of the energy consumed.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -227,7 +204,7 @@ const auriel: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 4,
+        order: 3,
         tier: "level1",
         linkedAbilityIds: [
           "AurielRayOfHeaven"
@@ -262,7 +239,7 @@ const auriel: Hero = {
         id: "AurielHeavyBurdenDetainmentStrikeTalent",
         name: "Heavy Burden",
         descriptionShort: "Detainment Strike Slows",
-        descriptionLong: "Detainment Strike Slows enemy Heroes by 20% for 2.5 seconds. Slow and duration doubled on enemies it Stuns.",
+        descriptionLong: "Detainment Strike Slows enemy Heroes by 20% for 2.5 seconds. Slow amount and duration doubled on enemies it Stuns. Passive: Increase Detainment Strikes' Stun duration by 0.25 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -357,7 +334,7 @@ const auriel: Hero = {
         id: "AurielEnergizedCordRayOfHeavenTalent",
         name: "Energized Cord",
         descriptionShort: "Increases energy from Auriel Basic Attacks",
-        descriptionLong: "Increases the energy stored from Auriel's Basic Attacks to 120% of the damage against Heroes and 55% of the damage against non-Heroes. Does not affect Auriel's Bestow Hope ally.",
+        descriptionLong: "Increases the energy stored from Auriel's Basic Attacks to 140% of the damage against Heroes and 75% of the damage against non-Heroes. Does not affect Auriel's Bestow Hope ally. Passive: Increase Basic Attack Range by 1.1.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -382,7 +359,7 @@ const auriel: Hero = {
         id: "AurielHeroicResurrect",
         name: "Resurrect",
         descriptionShort: "Bring an allied Hero back to life",
-        descriptionLong: "Channel on the spirit of a dead ally for 1 second. After a 5 second delay, they are brought back to life with 100% of their maximum Health at the location where they died. Auriel can use this ability while dead to resurrect herself.",
+        descriptionLong: "Channel on the spirit of a dead ally for 1 second. After a 3 second delay, they are brought back to life with 100% of their maximum Health at the location where they died. Auriel can use this ability while dead to resurrect herself.",
         cooldown: 100,
         category: "Talent",
         type: "Heroic",
@@ -457,7 +434,7 @@ const auriel: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_auriel_angelicsweep_a.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_auriel_angelicsweep_b.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -501,7 +478,7 @@ const auriel: Hero = {
         id: "AurielReservoirofHopeRayOfHeavenTalent",
         name: "Reservoir of Hope",
         descriptionShort: "Quest: Increases maximum Ray of Heaven energy",
-        descriptionLong: "Quest: Each maximum energy Ray of Heaven Auriel casts increases the maximum amount of energy that can be stored by 75.",
+        descriptionLong: "Quest: Each maximum energy Ray of Heaven Auriel casts increases the maximum amount of energy that can be stored by 55.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -518,13 +495,14 @@ const auriel: Hero = {
         tier: "level16",
         linkedAbilityIds: [
           "AurielRayOfHeaven"
-        ]
+        ],
+        isQuest: true
       },
       {
         id: "AurielWillofHeavenBestowHopeTalent",
         name: "Will of Heaven",
         descriptionShort: "Bestow Hope ally gains Attack Speed",
-        descriptionLong: "Allies with Bestow Hope gain 20% Attack Speed.",
+        descriptionLong: "Allies with Bestow Hope gain 20% Attack Speed. Passive: Auriel gains 10% increased Basic Attack Damage.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -532,7 +510,7 @@ const auriel: Hero = {
         isPassive: false,
         analysis: {
           mobility: 0,
-          physicalDamage: 0,
+          physicalDamage: 2,
           tankiness: 0,
           healing: 0,
           magicalDamage: 0
@@ -547,7 +525,7 @@ const auriel: Hero = {
         id: "AurielWrathofHeavenBestowHopeTalent",
         name: "Wrath of Heaven",
         descriptionShort: "Bestow Hope ally gains Spell Power",
-        descriptionLong: "Allies with Bestow Hope gain 10% Spell Power.",
+        descriptionLong: "Allies with Bestow Hope gain 15% Spell Power. Enemy Heroes hit by the center area of Sacred Sweep or the terrain collision of Detainment Strike have their Spell Armor reduced by 20 for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -572,7 +550,7 @@ const auriel: Hero = {
         id: "AurielLightSpeedResurrectTalent",
         name: "Light Speed",
         descriptionShort: "Resurrected allies gain Move Speed, reduce cooldown",
-        descriptionLong: "Resurrected allies gain 200% increased Movement Speed, decaying over 4 seconds.  While a resurrected ally remains alive, Resurrect's next cooldown recharges 100% faster.",
+        descriptionLong: "Resurrected allies gain 200% increased Movement Speed, decaying over 4 seconds. While a resurrected ally remains alive, Resurrect's next cooldown recharges 100% faster.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -668,8 +646,6 @@ const auriel: Hero = {
     physicalDamage: 40,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 11.767343139925543
+    magicalDamage: 2.9462834343135804
   }
 };
-      
-export default auriel;

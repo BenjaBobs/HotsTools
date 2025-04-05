@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const arthas: Hero = {
+export const arthas: Hero = {
   name: "Arthas",
   nameNormalized: "arthas",
   franchise: "Warcraft",
@@ -8,9 +8,9 @@ const arthas: Hero = {
   size: 0.8125,
   movementSpeed: 4.8398,
   health: {
-    amount: 2860,
+    amount: 2980,
     scale: 0.04,
-    regenRate: 5.957,
+    regenRate: 6.207,
     regenScale: 0.04
   },
   energy: {
@@ -51,7 +51,7 @@ const arthas: Hero = {
       id: "ArthasDeathCoil",
       name: "Death Coil",
       descriptionShort: "Deals damage to a target or heal Arthas",
-      descriptionLong: "Deals 164 (+4% / level) damage to target enemy. Can be self-cast to heal for 262 (+4% / level) Health.",
+      descriptionLong: "Deals 164 (+4% / level) damage to target enemy. Can be self-cast to heal for 290 (+4% / level) Health.",
       cost: {
         type: "Mana",
         amount: 50
@@ -65,7 +65,7 @@ const arthas: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 87.33333333333333,
+        healing: 96.66666666666666,
         magicalDamage: 54.666666666666664
       }
     },
@@ -98,7 +98,7 @@ const arthas: Hero = {
       descriptionLong: "Deal 40 (+4% / level) damage per second to nearby enemies and Slow their Movement Speed by 10% per second, stacking up to 40%. Heroes hit also have their Attack Speed Slowed by 10% per second, stacking up to 40%. Frozen Tempest's effects last for 1.5 seconds.",
       cost: {
         type: "Mana",
-        amount: 13,
+        amount: 11,
         perSecond: true
       },
       cooldown: 1,
@@ -118,7 +118,7 @@ const arthas: Hero = {
       id: "ArthasArmyOfTheDead",
       name: "Army of the Dead",
       descriptionShort: "Raise ghouls that fight enemies, heal Arthas",
-      descriptionLong: "Summons Ghouls that last 15 seconds and atttack for 20 (+4% / level) damage. Sacrifice Ghouls to heal for 267 (+4% / level) Health.",
+      descriptionLong: "Summons Ghouls that last 15 seconds and attack for 20 (+4% / level) damage. Sacrifice Ghouls to heal for 267 (+4% / level) Health.",
       cost: {
         type: "Mana",
         amount: 80
@@ -300,6 +300,7 @@ const arthas: Hero = {
         order: 3,
         tier: "level4",
         linkedAbilityIds: [
+          "ArthasFrozenTempestCancel",
           "ArthasFrozenTempest"
         ]
       }
@@ -374,7 +375,7 @@ const arthas: Hero = {
         id: "ArthasHeroicAbilityArmyoftheDead",
         name: "Army of the Dead",
         descriptionShort: "Raise ghouls that fight enemies, heal Arthas",
-        descriptionLong: "Summons Ghouls that last 15 seconds and atttack for 20 (+4% / level) damage. Sacrifice Ghouls to heal for 267 (+4% / level) Health.",
+        descriptionLong: "Summons Ghouls that last 15 seconds and attack for 20 (+4% / level) damage. Sacrifice Ghouls to heal for 267 (+4% / level) Health.",
         cost: {
           type: "Mana",
           amount: 80
@@ -476,8 +477,8 @@ const arthas: Hero = {
       {
         id: "ArthasMasteryFrostStrikeFrostmourneHungers",
         name: "Frost Strike",
-        descriptionShort: "Reduces Frostmourne Hungers cooldown and adds Slow",
-        descriptionLong: "Reduces Frostmourne Hungers' cooldown by 2 seconds. Frostmourne Hungers also Slows the enemy by 50% for 1.5 seconds.",
+        descriptionShort: "Frostmourne Hungers Slows, Death Coil can Silence",
+        descriptionLong: "Frostmourne Hungers also Slows the target by 50% for 1.5 seconds. Hitting that target with Death Coil while they are Slowed also Silences them for 1 second.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -549,8 +550,8 @@ const arthas: Hero = {
       {
         id: "ArthasMasteryFrostmourneFeedsFrostmourneHungers",
         name: "Frostmourne Feeds",
-        descriptionShort: "Increases number of Frostmourne Hungers attacks",
-        descriptionLong: "Increases the amount of Basic Attacks empowered by Frostmourne Hungers to 2.",
+        descriptionShort: "Frostmourne Hungers hits twice against Heroes",
+        descriptionLong: "Hitting an enemy Hero with Frostmourne Hungers activates it a second time for free, expiring after 4 seconds. This cannot benefit from Frostmourne Feeds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -645,6 +646,7 @@ const arthas: Hero = {
         order: 3,
         tier: "level20",
         linkedAbilityIds: [
+          "ArthasFrozenTempestCancel",
           "ArthasFrozenTempest"
         ]
       },
@@ -671,12 +673,10 @@ const arthas: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 86.17702448210922,
+    tankiness: 89.79284369114878,
     physicalDamage: 47.5,
     mobility: 24.006944444444446,
-    healing: 22.187133082311025,
-    magicalDamage: 35.57008384030994
+    healing: 24.45443135349609,
+    magicalDamage: 8.90596522338801
   }
 };
-      
-export default arthas;

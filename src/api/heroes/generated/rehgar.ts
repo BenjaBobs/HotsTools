@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const rehgar: Hero = {
+export const rehgar: Hero = {
   name: "Rehgar",
   nameNormalized: "rehgar",
   franchise: "Warcraft",
@@ -8,9 +8,9 @@ const rehgar: Hero = {
   size: 0.75,
   movementSpeed: 4.8398,
   health: {
-    amount: 2000,
+    amount: 1900,
     scale: 0.04,
-    regenRate: 4.168,
+    regenRate: 3.957,
     regenScale: 0.04
   },
   energy: {
@@ -22,47 +22,47 @@ const rehgar: Hero = {
     {
       nameId: "HeroRehgar",
       range: 1.5,
-      period: 0.8,
-      damage: 106,
+      period: 0.9,
+      damage: 110,
       damageScale: 0.04
     }
   ],
   icon: "https://heroespatchnotes.github.io/heroes-talents/images/heroes/rehgar.png",
   abilities: [
     {
-      id: "RehgarGhostWolf",
-      name: "Ghost Wolf",
-      descriptionShort: "Transform into a Ghost Wolf",
-      descriptionLong: "Instead of using a mount, Rehgar transforms into a Ghost Wolf with 20% increased Movement Speed. Basic Attacks in Ghost Wolf form cause him to lunge at his target and deal 75% bonus damage. Dealing damage, using Abilities, and channeling cancels Ghost Wolf form.",
-      cooldown: null,
+      id: "RehgarPurge",
+      name: "Purge",
+      descriptionShort: "Makes target ally Unstoppable, Slows enemy Hero",
+      descriptionLong: "When used on an allied Hero, make them Unstoppable for 0.5 seconds. When used on an enemy Hero, Slow them by 80%, decaying over 2 seconds. Cannot be cast on yourself.",
+      cooldown: 60,
       category: "trait",
       type: "Trait",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
-      isPassive: true,
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_purge.png",
+      isPassive: false,
       analysis: {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15
+        magicalDamage: 0
       }
     },
     {
       id: "RehgarGhostWolfActivate",
       name: "Ghost Wolf",
       descriptionShort: "Transform into a Ghost Wolf",
-      descriptionLong: "Increases Movement Speed by 20%.",
+      descriptionLong: "Instead of using a mount, Rehgar transforms into a Ghost Wolf with 20% increased Movement Speed. Basic Attacks in Ghost Wolf form cause him to lunge at his target and deal 60% bonus damage. Dealing damage, using Abilities, and channeling cancels Ghost Wolf form.",
       cooldown: 4,
       category: "mount",
       type: "Z",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_mount.png",
       isPassive: false,
       analysis: {
-        mobility: 15,
+        mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 0
+        magicalDamage: 45
       }
     },
     {
@@ -72,7 +72,7 @@ const rehgar: Hero = {
       descriptionLong: "Heal an ally with a wave of healing for 260 (+4% / level) Health. The wave then bounces 2 times to nearby allies within 7 range, restoring 260 (+4% / level) Health to them.",
       cost: {
         type: "Mana",
-        amount: 55
+        amount: 60
       },
       cooldown: 8,
       category: "basic",
@@ -91,10 +91,10 @@ const rehgar: Hero = {
       id: "RehgarLightningShield",
       name: "Lightning Shield",
       descriptionShort: "Imbue target ally with lightning, causing damage to nearby enemies",
-      descriptionLong: "Imbue an ally with lightning dealing 64 (+4% / level) damage a second to nearby enemies. Lasts 5 seconds.",
+      descriptionLong: "Imbue an ally with lightning dealing 64 (+4% / level) damage a second to nearby enemies. Each enemy hit restores 1 Mana to Rehgar. Lasts 5 seconds.",
       cost: {
         type: "Mana",
-        amount: 60
+        amount: 50
       },
       cooldown: 8,
       category: "basic",
@@ -113,7 +113,7 @@ const rehgar: Hero = {
       id: "RehgarEarthbindTotem",
       name: "Earthbind Totem",
       descriptionShort: "Creates a totem that Slows nearby enemies",
-      descriptionLong: "Create a totem that Slows nearby enemies by 35%. The totem has 217 (+4% / level) Health and lasts for 8 seconds.",
+      descriptionLong: "Create a totem that Slows nearby enemies by 35%. The totem has 260 (+4% / level) Health and lasts for 6 seconds.",
       cost: {
         type: "Mana",
         amount: 50
@@ -179,10 +179,10 @@ const rehgar: Hero = {
   talents: [
     [
       {
-        id: "RehgarLightningShieldElectricCharge",
-        name: "Electric Charge",
-        descriptionShort: "Increases Lightning Shield radius, heals",
-        descriptionLong: "Increases the radius of Lightning Shield by 25%. Heal for 30% of the damage it deals to enemy Heroes.",
+        id: "RehgarLightningShieldStormcaller",
+        name: "Stormcaller",
+        descriptionShort: "Quest: Lightning Shield increases Health, Mana",
+        descriptionLong: "Increase the radius of Lightning Shield by 25%. Quest: Each time Lightning Shield damages an enemy Hero, permanently increase Rehgar's Health by 2 and Mana by 1, stacking up to 200 times.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -192,20 +192,21 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 5,
+          healing: 0,
           magicalDamage: 0
         },
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
           "RehgarLightningShield"
-        ]
+        ],
+        isQuest: true
       },
       {
         id: "RehgarEarthbindTotemColossalTotem",
         name: "Colossal Totem",
-        descriptionShort: "Increases Earthbind Totem area and range, reactivatable",
-        descriptionLong: "Increases the area and range of Earthbind Totem by 50% and it can be reactivated to move an existing totem to a new location once.",
+        descriptionShort: "Increases Earthbind Totem Health, area, duration",
+        descriptionLong: "Reactivate Earthbind Totem to move an existing totem to a new location. This can be used once per cast. Passive: Increase Earthbind Totem's area and duration by 50%, and Health by 25%.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -225,17 +226,17 @@ const rehgar: Hero = {
         ]
       },
       {
-        id: "RehgarWolfRun",
-        name: "Wolf Run",
-        descriptionShort: "Increases Ghost Wolf Speed, lower cooldown",
-        descriptionLong: "Increases the Movement Speed of Ghost Wolf from 20% to 30%. If an enemy Hero is hit by Ghost Wolf's Basic Attack, reduce its cooldown by 1 second.",
+        id: "RehgarFeralHeart",
+        name: "Feral Heart",
+        descriptionShort: "Increase Ghost Wolf Movement Speed, grants Armor",
+        descriptionLong: "Ghost Wolf's Movement Speed bonus is increased to 40% for the first second, then falls to 30%. Entering or exiting Ghost Wolf form grants 15 Armor for 1 second.",
         cooldown: null,
         category: "Talent",
         type: "Z",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
         isPassive: false,
         analysis: {
-          mobility: 4,
+          mobility: 8,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -244,17 +245,39 @@ const rehgar: Hero = {
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
-          "RehgarGhostWolf",
-          "RehgarGhostWolfLunge"
+          "RehgarGhostWolfActivate"
         ]
       }
     ],
     [
       {
-        id: "RehgarLightningShieldStormcaller",
-        name: "Stormcaller",
-        descriptionShort: "Lightning Shield returns Mana",
-        descriptionLong: "When Lightning Shield damages an enemy it restores 4 Mana, up to 100.",
+        id: "RehgarEarthlivingEnchant",
+        name: "Earthliving Enchant",
+        descriptionShort: "Empowers Chain Heal on low Health Heroes",
+        descriptionLong: "When Chain Heal heals a Hero below 50% Health, they are healed an additional 160 (+4% / level) Health over 4 seconds.",
+        cooldown: null,
+        category: "Talent",
+        type: "Q",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_chainheal.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 42,
+          magicalDamage: 0
+        },
+        order: 1,
+        tier: "level4",
+        linkedAbilityIds: [
+          "RehgarChainHeal"
+        ]
+      },
+      {
+        id: "RehgarLightningShieldElectricCharge",
+        name: "Electric Charge",
+        descriptionShort: "Lightning Shield heals, increases Movement Speed",
+        descriptionLong: "The bearer of Lightning Shield Heals for 20% of the damage it deals to enemy Heroes, doubled if the bearer is Rehgar. While Lightning Shield is damaging an enemy, its bearer gains 10% increased Movement Speed.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -264,44 +287,20 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 4,
           magicalDamage: 0
         },
-        order: 1,
+        order: 2,
         tier: "level4",
         linkedAbilityIds: [
           "RehgarLightningShield"
         ]
       },
       {
-        id: "RehgarFeralHeart",
-        name: "Feral Heart",
-        descriptionShort: "Ghost Wolf restores Health and Mana",
-        descriptionLong: "Increases Rehgar's Health Regeneration by 75% while in Ghost Wolf form. Ghost Wolf attacks also restore 1% of Rehgar's maximum Mana, increased to 5% against Heroes.",
-        cooldown: null,
-        category: "Talent",
-        type: "Z",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_ghostwolf.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level4",
-        linkedAbilityIds: [
-          "RehgarGhostWolf",
-          "RehgarGhostWolfLunge"
-        ]
-      },
-      {
         id: "RehgarHealingTotem",
         name: "Healing Totem",
         descriptionShort: "Activate to place a ward which heals in an area",
-        descriptionLong: "Activate to place a Totem that heals allied Heroes in an area for 2% of their maximum Health every second for 10 seconds.",
+        descriptionLong: "Activate to place a Totem that heals allied Heroes in an area for 2% of their maximum Health every second. This Totem has 125 (+4% / level) Health and lasts for 10 seconds.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
@@ -322,8 +321,8 @@ const rehgar: Hero = {
       {
         id: "RehgarEarthbindTotemGroundedTotem",
         name: "Grounded Totem",
-        descriptionShort: "Increase Totem Health, lower Attack Speed",
-        descriptionLong: "Increase the Health of Earthbind Totem by 100%.  Enemy Heroes who are Slowed by Earthbind Totem also have their Attack Speed Slowed by 40%.",
+        descriptionShort: "Empower Earthbind Totem",
+        descriptionLong: "Enemy Heroes in Earthbind Totem's area also have their Attack Speed Slowed by 15% and their Spell Power reduced by 15%. Passive: Increase Earthbind Totem's range by 50%.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -337,13 +336,39 @@ const rehgar: Hero = {
           magicalDamage: 0
         },
         order: 1,
-        tier: "level7"
+        tier: "level7",
+        linkedAbilityIds: [
+          "RehgarEarthbindTotem"
+        ]
+      },
+      {
+        id: "RehgarPurification",
+        name: "Purification",
+        descriptionShort: "Empower Purge",
+        descriptionLong: "If Purge removes a Slow, Stun, Root, or Silence effect from an ally, heal them for 220 (+4% / level). Using Purge on an enemy Hero deals up to 330 (+4% / level) damage to Shields and reduces healing received by 40% for 2 seconds. Passive: Reduce Purge's cooldown by 15 seconds.",
+        cooldown: null,
+        category: "Talent",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_purge.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 52,
+          magicalDamage: 66
+        },
+        order: 2,
+        tier: "level7",
+        linkedAbilityIds: [
+          "RehgarPurge"
+        ]
       },
       {
         id: "RehgarBloodAndThunder",
         name: "Blood and Thunder",
         descriptionShort: "Ghost Wolf attacks reduce Basic Ability cooldowns",
-        descriptionLong: "Ghost Wolf attacks reduce Basic Ability cooldowns by 2 seconds.",
+        descriptionLong: "Ghost Wolf attacks reduce Basic Ability cooldowns by 1.5 seconds and restore 4% of Rehgar's maximum Mana.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -356,32 +381,11 @@ const rehgar: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 2,
+        order: 3,
         tier: "level7",
         linkedAbilityIds: [
-          "RehgarGhostWolf",
-          "RehgarGhostWolfLunge"
+          "RehgarGhostWolfActivate"
         ]
-      },
-      {
-        id: "GenericTalentCleanse",
-        name: "Cleanse",
-        descriptionShort: "Makes target ally Unstoppable",
-        descriptionLong: "Activate to make target ally Unstoppable for 1 second. Cannot be cast on yourself.",
-        cooldown: 60,
-        category: "Talent",
-        type: "Active",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_cleanse.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 3,
-        tier: "level7"
       }
     ],
     [
@@ -445,7 +449,7 @@ const rehgar: Hero = {
         id: "RehgarMasteryTidalWaves",
         name: "Tidal Waves",
         descriptionShort: "Reduces Chain Heal cooldown, Mana cost",
-        descriptionLong: "Reduces Chain Heal's cooldown by .75 seconds for each Hero healed, and reduces its Mana cost from 55 to 40.",
+        descriptionLong: "Reduces Chain Heal's cooldown by 1 second for each Hero healed, and reduces its Mana cost from 60 to 40.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -455,7 +459,7 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 26,
+          healing: 12.2,
           magicalDamage: 0
         },
         order: 1,
@@ -465,33 +469,10 @@ const rehgar: Hero = {
         ]
       },
       {
-        id: "RehgarEarthlivingEnchant",
-        name: "Earthliving Enchant",
-        descriptionShort: "Empowers Chain Heal on low Health Heroes",
-        descriptionLong: "When Chain Heal heals a Hero below 50% Health, they are healed an additional 225 (+4% / level) Health over 5 seconds.",
-        cooldown: null,
-        category: "Talent",
-        type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_chainheal_a.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 55,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level13",
-        linkedAbilityIds: [
-          "RehgarChainHeal"
-        ]
-      },
-      {
         id: "RehgarLightningShieldEarthShield",
         name: "Earth Shield",
         descriptionShort: "Lightning Shield gives a Shield",
-        descriptionLong: "Lightning Shield gives Heroes a Shield that absorbs damage equal to 12% of their maximum Health for 3 seconds.",
+        descriptionLong: "Lightning Shield gives Heroes a Shield that absorbs damage equal to 14% of their maximum Health for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -504,10 +485,33 @@ const rehgar: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 3,
+        order: 2,
         tier: "level13",
         linkedAbilityIds: [
           "RehgarLightningShield"
+        ]
+      },
+      {
+        id: "RehgarWellspring",
+        name: "Wellspring",
+        descriptionShort: "Earthbind Totem casts Chain Heal",
+        descriptionLong: "Every 2 seconds, Earthbind Totem will cast an untalented Chain Heal at the nearest allied Hero with the lowest Health. This Chain Heal heals for 35% of its normal amount.",
+        cooldown: null,
+        category: "Talent",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_rehgar_earthbindtotem.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 7.4,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level13",
+        linkedAbilityIds: [
+          "RehgarEarthbindTotem"
         ]
       }
     ],
@@ -515,8 +519,8 @@ const rehgar: Hero = {
       {
         id: "RehgarLightningShieldRisingStorm",
         name: "Rising Storm",
-        descriptionShort: "Increases Lightning Shield damage with each hit",
-        descriptionLong: "Casting Lightning Shield on an ally also casts an untalented version on Rehgar.  Every time either Lighting Shield damages an enemy Hero, increase the damage of both Lightning Shields by 10%. Stacks up to 15 times.",
+        descriptionShort: "Increase Lightning Shield damage, duration",
+        descriptionLong: "Every time a Lightning Shield damages an enemy Hero, increase its damage by 10%. Stacks up to 15 times. Passive: Increase the duration of Lightning Shield by 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -538,8 +542,8 @@ const rehgar: Hero = {
       {
         id: "RehgarEarthbindTotemEarthgraspTotem",
         name: "Earthgrasp Totem",
-        descriptionShort: "Increases Earthbind Totem initial Slow",
-        descriptionLong: "When Earthbind Totem is first cast, it Slows nearby enemies by 90% for 1 second.",
+        descriptionShort: "Earthbind Totem placement damages, increased Slow",
+        descriptionLong: "When Earthbind Totem is first cast, it deals 90 (+4% / level) damage and Slows nearby enemies by 90% for 1 second.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -550,7 +554,7 @@ const rehgar: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 18
         },
         order: 2,
         tier: "level16",
@@ -562,7 +566,7 @@ const rehgar: Hero = {
         id: "RehgarHungerOfTheWolf",
         name: "Hunger of the Wolf",
         descriptionShort: "Ghost Wolf attacks do extra damage and heal",
-        descriptionLong: "Ghost Wolf attacks against Heroes deal an additional 5% of the target's maximum Health and heal Rehgar for 5% of his maximum Health.",
+        descriptionLong: "Ghost Wolf attacks against Heroes deal an additional 6% of the target's maximum Health and heal Rehgar for 6% of his maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -572,14 +576,13 @@ const rehgar: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1,
+          healing: 1.2000000000000002,
           magicalDamage: 0
         },
         order: 3,
         tier: "level16",
         linkedAbilityIds: [
-          "RehgarGhostWolf",
-          "RehgarGhostWolfLunge"
+          "RehgarGhostWolfActivate"
         ]
       }
     ],
@@ -637,14 +640,14 @@ const rehgar: Hero = {
         ]
       },
       {
-        id: "GenericTalentRewind",
-        name: "Rewind",
-        descriptionShort: "Activate to reset cooldowns",
-        descriptionLong: "Activate to reset the cooldowns of your Basic Abilities.",
-        cooldown: 60,
+        id: "RehgarElementalConduit",
+        name: "Elemental Conduit",
+        descriptionShort: "Gain Lightning Shield, Shield nearby allies",
+        descriptionLong: "Activate to gain Lightning Shield and grant all nearby allied Heroes a Shield equal to 10% of their maximum Health for 5 seconds. For up to 5 seconds after activating, hitting an enemy Hero with this effects' Lightning Shield gives nearby allies a Shield equal to 1.5% of their maximum Health for 5 seconds.",
+        cooldown: 70,
         category: "Talent",
         type: "Active",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_rewind.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_stormshield.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -657,14 +660,14 @@ const rehgar: Hero = {
         tier: "level20"
       },
       {
-        id: "GenericTalentStormShield",
-        name: "Storm Shield",
-        descriptionShort: "Activate to grant Shields to all nearby allies",
-        descriptionLong: "Activate to give all nearby allied Heroes a Shield for 20% of their max Health for 3 seconds.",
-        cooldown: 45,
+        id: "RehgarPitFighter",
+        name: "Pit Fighter",
+        descriptionShort: "Gain Attack Damage, Spellpower near Allies",
+        descriptionLong: "Gain 10% increased Attack Damage and 3 Spell Power. Each nearby ally Hero grants an additional stack of this effect, up to 5 stacks. While at 2 or more stacks, Purge's cooldown refreshes 50% faster.",
+        cooldown: null,
         category: "Talent",
-        type: "Active",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_stormshield.png",
+        type: "Passive",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_ingame_heroselect_btn_rehgar.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -679,12 +682,10 @@ const rehgar: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 60.263653483992464,
-    physicalDamage: 66.25,
-    mobility: 38.88789682539682,
+    tankiness: 57.250470809792844,
+    physicalDamage: 61.111111111111114,
+    mobility: 24.006944444444446,
     healing: 25.43422810640107,
-    magicalDamage: 5.754562789430674
+    magicalDamage: 2.5491355105659816
   }
 };
-      
-export default rehgar;

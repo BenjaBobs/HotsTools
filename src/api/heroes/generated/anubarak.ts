@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const anubarak: Hero = {
+export const anubarak: Hero = {
   name: "Anub'arak",
   nameNormalized: "anubarak",
   franchise: "Warcraft",
@@ -163,8 +163,8 @@ const anubarak: Hero = {
       {
         id: "AnubarakNerubianArmor",
         name: "Nerubian Armor",
-        descriptionShort: "Increase Hardened Carapace's Spell Armor",
-        descriptionLong: "Increase Hardened Carapace's Spell Armor by 20.",
+        descriptionShort: "Increase Harden Carapace's Spell Armor",
+        descriptionLong: "Increase Harden Carapace's Spell Armor by 25.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -233,7 +233,7 @@ const anubarak: Hero = {
         id: "AnubarakMasteryBedOfBarbs",
         name: "Bed of Barbs",
         descriptionShort: "Impale slows and damages over time",
-        descriptionLong: "Create a bed of spikes along Impale's path that slows enemies by 25% and deals 21 (+4% / level) damage per second.  Spikes persist for 3.5 seconds.",
+        descriptionLong: "Create a bed of spikes along Impale's path that Slows enemies by 25% and deals 21 (+4% / level) damage per second. Spikes persist for 3.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -308,7 +308,7 @@ const anubarak: Hero = {
         cooldown: null,
         category: "Talent",
         type: "W",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anubarak_hardencarapace_var2.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anubarak_hardencarapace_var1.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -327,7 +327,7 @@ const anubarak: Hero = {
         id: "AnubarakSubterraneanShield",
         name: "Subterranean Shield",
         descriptionShort: "Burrow Charge grants Shield",
-        descriptionLong: "Burrow Charge also grants a 345 (+4% / level) point Shield for 5 seconds.",
+        descriptionLong: "Burrow Charge also grants a 400 (+4% / level) point Shield for 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -431,7 +431,7 @@ const anubarak: Hero = {
         id: "AnubarakMasteryUrticatingSpines",
         name: "Urticating Spines",
         descriptionShort: "Harden Carapace deals area damage",
-        descriptionLong: "Casting Harden Carapace will also deal 80 (+4% / level) damage to nearby enemies. Deals double damage against Heroes.",
+        descriptionLong: "Casting Harden Carapace will also deal 90 (+4% / level) damage to nearby enemies. Deals double damage against Heroes.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -442,7 +442,7 @@ const anubarak: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 16
+          magicalDamage: 18
         },
         order: 1,
         tier: "level13",
@@ -457,7 +457,7 @@ const anubarak: Hero = {
         descriptionLong: "Deal 21 (+4% / level) damage per second to nearby enemies. Beetles deal 6 (+4% / level) damage per second to nearby enemies.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
+        type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_burningrage.png",
         isPassive: false,
         analysis: {
@@ -472,9 +472,9 @@ const anubarak: Hero = {
       },
       {
         id: "AnubarakAcidDrenchedMandibles",
-        name: "Acid Drenched Mandibles",
+        name: "Acid-Drenched Mandibles",
         descriptionShort: "Attacking disabled Heroes increases damage",
-        descriptionLong: "Attacking a Hero that is slowed, rooted, or stunned increases Anub'arak's Basic Attack damage by 70% for 3 seconds.",
+        descriptionLong: "Attacking a Hero that is Slowed, Rooted, or Stunned increases Anub'arak's Basic Attack damage by 80% for 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -594,7 +594,7 @@ const anubarak: Hero = {
         id: "AnubarakCocoonCryptweave",
         name: "Cryptweave",
         descriptionShort: "Increases Cocoon duration, damage on exit",
-        descriptionLong: "Staying near the Cocoon allows Anub'arak to extend the duration by up to 6 seconds per Cocoon. Upon exiting the Cocoon, enemies take 50 (+4% / level) damage over 4 seconds. This damage is increased by 100% for each second that they were inside.",
+        descriptionLong: "Staying near the Cocoon allows Anub'arak to extend the duration by up to 6 seconds per Cocoon. Upon exiting the Cocoon, enemies take 60 (+4% / level) damage over 4 seconds. This damage is increased by 100% for each second that they were inside.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -663,8 +663,6 @@ const anubarak: Hero = {
     physicalDamage: 40.5,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 8.203940797239627
+    magicalDamage: 2.054086005615487
   }
 };
-      
-export default anubarak;

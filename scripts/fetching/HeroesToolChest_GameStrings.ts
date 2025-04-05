@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 import { PatchVersion } from './HeroesPatchNotes_HeroesPatchData';
 
 export async function GetLatestGameStrings(patches: PatchVersion[]) {
@@ -15,7 +13,7 @@ export async function GetLatestGameStrings(patches: PatchVersion[]) {
     // https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/2.53.1.83632/gamestrings/gamestrings_83632_enus.json
     // https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/<full-version>/gamestrings/gamestrings_<build-number>_enus.json
     const gameStringsResponse = await fetch(
-      `https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/${fullVersion}/gamestrings/gamestrings_${build}_enus.json`
+      `https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/${fullVersion}/gamestrings/gamestrings_${build}_enus.json`,
     );
 
     if (gameStringsResponse.status === 404) {
@@ -53,7 +51,7 @@ function PatchGameStringKeys(gamestrings: HTC_GameStrings) {
 
         return obj;
       },
-      {}
+      {},
     );
   }
 }

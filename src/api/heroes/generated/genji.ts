@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const genji: Hero = {
+export const genji: Hero = {
   name: "Genji",
   nameNormalized: "genji",
   franchise: "Overwatch",
@@ -51,7 +51,7 @@ const genji: Hero = {
       id: "GenjiShuriken",
       name: "Shuriken",
       descriptionShort: "Throw Shuriken in a spread pattern",
-      descriptionLong: "Throw 3 Shuriken in a spread pattern, each dealing 65 (+4% / level) damage to the first enemy hit. Stores up to 3 charges.  Shuriken's cooldown replenishes all charges at the same time.",
+      descriptionLong: "Throw 3 Shuriken in a spread pattern, each dealing 65 (+4% / level) damage to the first enemy hit. Stores up to 3 charges. Shuriken's cooldown replenishes all charges at the same time.",
       cost: {
         type: "Mana",
         amount: 20
@@ -145,7 +145,7 @@ const genji: Hero = {
       id: "GenjiXStrike",
       name: "X-Strike",
       descriptionShort: "Deal heavy damage in a cross shape",
-      descriptionLong: "Perform two slashes dealing 145 (+4% / level) damage. The slashes detonate after 1.25 seconds causing an additional 290 (+4% / level) damage to enemies in their area.",
+      descriptionLong: "Perform two slashes dealing 135 (+4% / level) damage. The slashes detonate after 1.25 seconds causing an additional 275 (+4% / level) damage to enemies in their area.",
       cost: {
         type: "Mana",
         amount: 70
@@ -160,7 +160,7 @@ const genji: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 29
+        magicalDamage: 27
       }
     }
   ],
@@ -193,7 +193,7 @@ const genji: Hero = {
         id: "GenjiCyberAgilityAgileDismount",
         name: "Agile Dismount",
         descriptionShort: "Increase Cyber Agility range while Mounted",
-        descriptionLong: "While mounted, the range of Cyber Agility is increased by 70% and its cooldown is reduced by 14 seconds.",
+        descriptionLong: "While mounted the range of Cyber Agility is increased by 70%, its cooldown is reduced by 14 seconds, and it Slows enemy Heroes in its landing area by 25% for 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -215,15 +215,15 @@ const genji: Hero = {
       {
         id: "GenjiCyberAgilityPathfinder",
         name: "Pathfinder",
-        descriptionShort: "Jumping over terrain increases Move Speed",
-        descriptionLong: "Jumping over terrain with Cyber Agility increases Genji's Movement Speed by 25% for 6 seconds.",
+        descriptionShort: "Jumping over terrain gives Move Speed, Stealth",
+        descriptionLong: "Jumping over terrain with Cyber Agility increases Movement Speed by 30%, and grants Stealth, for 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_cyberagility_a.png",
         isPassive: false,
         analysis: {
-          mobility: 5,
+          mobility: 6,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
@@ -241,7 +241,7 @@ const genji: Hero = {
         id: "GenjiShurikenShurikenMastery",
         name: "Shuriken Mastery",
         descriptionShort: "Quest: Increase Shuriken damage and restore charges",
-        descriptionLong: "Quest: Hit enemy Heroes with Shuriken. Reward: After hitting 35 Heroes, Shuriken damage is increased by 25. Reward: After hitting 75 Heroes, Cyber Agility now refunds 2 charges of Shuriken.",
+        descriptionLong: "Quest: Hit enemy Heroes with Shuriken. Reward: After hitting 30 Heroes, Shuriken damage is increased by 25. Reward: After hitting 60 Heroes, Cyber Agility now refunds 3 charges of Shuriken.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -364,8 +364,8 @@ const genji: Hero = {
       {
         id: "GenjiCyberAgilityCyberShield",
         name: "Cyber Shield",
-        descriptionShort: "Cyber Agility grants Spell Armor",
-        descriptionLong: "Using Cyber Agility grants 50 Spell Armor for 4 seconds.",
+        descriptionShort: "Genji Dodges, Cyber Agility grants Spell Armor",
+        descriptionLong: "Using Cyber Agility grants 40 Spell Armor for 4 seconds. Passive: Genji dodges 1 Heroic Basic Attack every 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -383,26 +383,6 @@ const genji: Hero = {
         linkedAbilityIds: [
           "GenjiCyberAgility"
         ]
-      },
-      {
-        id: "GenjiDodge",
-        name: "Dodge",
-        descriptionShort: "Periodically dodge Basic Attacks",
-        descriptionLong: "Genji dodges 1 Heroic Basic Attack every 7 seconds.",
-        cooldown: null,
-        category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_dodge.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 4,
-        tier: "level7"
       }
     ],
     [
@@ -437,7 +417,7 @@ const genji: Hero = {
         id: "GenjiHeroicXStrike",
         name: "X-Strike",
         descriptionShort: "Deal heavy damage in a cross shape",
-        descriptionLong: "Perform two slashes dealing 145 (+4% / level) damage. The slashes detonate after 1.25 seconds causing an additional 290 (+4% / level) damage to enemies in their area.",
+        descriptionLong: "Perform two slashes dealing 135 (+4% / level) damage. The slashes detonate after 1.25 seconds causing an additional 275 (+4% / level) damage to enemies in their area.",
         cost: {
           type: "Mana",
           amount: 70
@@ -452,7 +432,7 @@ const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 29
+          magicalDamage: 27
         },
         order: 2,
         tier: "level10",
@@ -466,7 +446,7 @@ const genji: Hero = {
         id: "GenjiShurikenShingan",
         name: "Shingan",
         descriptionShort: "Increase Shuriken single-target damage",
-        descriptionLong: "Hitting an enemy with all 3 Shuriken deals 115 (+4% / level) bonus damage.",
+        descriptionLong: "Hitting an enemy with all 3 Shuriken deals 100 (+4% / level) bonus damage.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -483,7 +463,7 @@ const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 23
+          magicalDamage: 20
         },
         order: 1,
         tier: "level13",
@@ -518,7 +498,7 @@ const genji: Hero = {
         id: "GenjiWayOfTheShimadaTalent",
         name: "Way Of The Shimada",
         descriptionShort: "Increase Basic Attack range, damage",
-        descriptionLong: "Increase Genji's Basic Attack range by 1.  Each time Genji hits an enemy Hero with a Basic Attack, increase his Basic Attack damage by 1% for 3 seconds, stacking up to 15%.",
+        descriptionLong: "Increase Genji's Basic Attack range by 1. Each time Genji hits an enemy Hero with a Basic Attack, increase his Basic Attack damage by 1% for 3 seconds, stacking up to 15%.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -589,7 +569,7 @@ const genji: Hero = {
         id: "GenjiSwiftStrikeSteadyBlade",
         name: "Steady Blade",
         descriptionShort: "Swift Strike deals increased damage for each Hero hit",
-        descriptionLong: "Each enemy Hero hit by Swift Strike increases the damage of the next Swift Strike by 20%. This bonus stacks up to 3 times.",
+        descriptionLong: "Each enemy Hero hit by Swift Strike increases the damage of the next Swift Strike by 30%. This bonus stacks up to 3 times.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -666,8 +646,8 @@ const genji: Hero = {
       {
         id: "GenjiShurikenSharpenedStars",
         name: "Sharpened Stars",
-        descriptionShort: "Shuriken pierce",
-        descriptionLong: "Shuriken now pierce all enemies hit.",
+        descriptionShort: "Shuriken pierce, gain charge from Swift Strike",
+        descriptionLong: "Shuriken now pierce all enemies hit. Swift Strike's refund grants 1 charge of Shuriken.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -700,7 +680,7 @@ const genji: Hero = {
         cooldown: null,
         category: "Talent",
         type: "W",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_deflect_b.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_deflect.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -723,8 +703,6 @@ const genji: Hero = {
     physicalDamage: 22,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 22.391151366566785
+    magicalDamage: 5.532362937786315
   }
 };
-      
-export default genji;

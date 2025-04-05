@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const muradin: Hero = {
+export const muradin: Hero = {
   name: "Muradin",
   nameNormalized: "muradin",
   franchise: "Warcraft",
@@ -288,7 +288,7 @@ const muradin: Hero = {
         id: "MuradinMasteryThunderburn",
         name: "Thunder Burn",
         descriptionShort: "Thunder Clap can strike a second time",
-        descriptionLong: "Hitting an enemy Hero with Thunder Clap triggers a second explosion 2 seconds later in the same location that deals 75% damage.",
+        descriptionLong: "Hitting an enemy Hero with Thunder Clap triggers a second Thunder Clap explosion 2 seconds later in the same location that deals 72 (+4% / level) damage.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -299,7 +299,7 @@ const muradin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15
+          magicalDamage: 14.4
         },
         order: 3,
         tier: "level4",
@@ -492,7 +492,7 @@ const muradin: Hero = {
         id: "MuradinMasteryThunderclapThunderstrike",
         name: "Thunder Strike",
         descriptionShort: "Increases Thunder Clap damage to one enemy",
-        descriptionLong: "Thunder Clap deals 300% damage if only one target is hit. Passive: Increase the duration of Dwarf Toss's Armor by 2 seconds.",
+        descriptionLong: "Thunder Clap deals 200% more damage if only one target is hit. Passive: Increase the duration of Dwarf Toss's Armor by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -503,7 +503,7 @@ const muradin: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 60
+          magicalDamage: 40
         },
         order: 3,
         tier: "level13",
@@ -687,8 +687,6 @@ const muradin: Hero = {
     physicalDamage: 48.888888888888886,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 16.89480613820031
+    magicalDamage: 4.230087187823259
   }
 };
-      
-export default muradin;

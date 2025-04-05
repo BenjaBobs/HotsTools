@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const sgthammer: Hero = {
+export const sgthammer: Hero = {
   name: "Sgt. Hammer",
   nameNormalized: "sgthammer",
   franchise: "Starcraft",
@@ -182,7 +182,7 @@ const sgthammer: Hero = {
         id: "SgtHammerAmbush",
         name: "Ambush",
         descriptionShort: "Siege Mode grants Stealth, extra damage",
-        descriptionLong: "Gain Stealth when entering Siege Mode or after not taking or dealing damage for 3 seconds while in Siege Mode. Basic Attacks while Stealthed deal 100% more damage. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
+        descriptionLong: "Gain Stealth when entering Siege Mode or after not taking or dealing damage for 3 seconds while in Siege Mode. Basic Attacks while Stealthed deal 125% more damage. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -193,7 +193,7 @@ const sgthammer: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 20
+          magicalDamage: 25
         },
         order: 1,
         tier: "level1",
@@ -205,7 +205,7 @@ const sgthammer: Hero = {
         id: "SgtHammerSiegeModeAdvancedArtillery",
         name: "Advanced Artillery",
         descriptionShort: "Increase Siege Mode splash damage, radius",
-        descriptionLong: "Increase Siege Mode's splash damage to 50% of Basic Attack damage, and increase its splash radius by 25%.",
+        descriptionLong: "Increase Siege Mode's splash damage to 60% of Basic Attack damage, and increase its splash radius by 25%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -229,7 +229,7 @@ const sgthammer: Hero = {
         name: "Maelstrom Rounds",
         descriptionShort: "Activate to increase Basic Attack damage",
         descriptionLong: "Activate to increase Basic Attack damage dealt by 30% for 5 seconds. Hitting enemy Heroes or Structures with Basic Attacks while in Siege Mode reduces the cooldown of Maelstrom Rounds by 5 seconds. Stores up to 3 charges.",
-        cooldown: 100,
+        cooldown: 80,
         charges: {
           chargesMax: 3,
           chargesInitial: 3,
@@ -330,7 +330,7 @@ const sgthammer: Hero = {
         id: "SgtHammerSpiderMinesPulseDetonationCore",
         name: "Pulse Detonation Core",
         descriptionShort: "Spider Mines detonate multiple times",
-        descriptionLong: "Spider Mines detonate 3 times over 3 seconds.  Basic Attacks against enemy Heroes grant 5 Mana and reduce the cooldown of Spider Mines by 1.5 seconds.  Increase this bonus to 2.5 seconds while in Siege Mode.",
+        descriptionLong: "Spider Mines detonate 3 times over 3 seconds. Basic Attacks against enemy Heroes grant 5 Mana and reduce the cooldown of Spider Mines by 1.5 seconds. Increase this bonus to 2.5 seconds while in Siege Mode.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -354,7 +354,7 @@ const sgthammer: Hero = {
         id: "SgtHammerMasteryHoverSiegeMode",
         name: "Hover Siege Mode",
         descriptionShort: "Move while in Siege Mode",
-        descriptionLong: "Sgt. Hammer can move at 40% Movement Speed while in Siege Mode.",
+        descriptionLong: "Sgt. Hammer can move at 50% Movement Speed while in Siege Mode.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -377,7 +377,7 @@ const sgthammer: Hero = {
         id: "SgtHammerGraduatingRange",
         name: "Graduating Range",
         descriptionShort: "Gradually gain Basic Attack range in Siege Mode",
-        descriptionLong: "While in Siege Mode, Basic Attack range is increased by 1 every 2 seconds, up to 3.",
+        descriptionLong: "While in Siege Mode, Basic Attack range is increased by 1 every 1.5 seconds, up to 3.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -553,7 +553,7 @@ const sgthammer: Hero = {
         id: "HeroGenericExecutionerPassive",
         name: "Executioner",
         descriptionShort: "Attacking disabled Heroes increases damage",
-        descriptionLong: "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by 30% for 3 seconds.",
+        descriptionLong: "Attacking a Hero that is Slowed, Rooted, or Stunned increases your Basic Attack damage by 30% for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -648,7 +648,7 @@ const sgthammer: Hero = {
         id: "SgtHammerSpiderMinesShrapnelMines",
         name: "Shrapnel Mines",
         descriptionShort: "Spider Mines reduce Armor",
-        descriptionLong: "Upon detonating, Spider Mines reduce the armor of enemy Heroes hit by 10, up to 30, for 4 seconds.",
+        descriptionLong: "Upon detonating, Spider Mines reduce the Armor of enemy Heroes hit by 10, up to 50, for 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -672,7 +672,7 @@ const sgthammer: Hero = {
         id: "SgtHammerSiegeModeUltraCapacitors",
         name: "Ultra Capacitors",
         descriptionShort: "Siege Mode Attacks grant Attack Speed",
-        descriptionLong: "Hitting enemy Heroes with Basic Attacks while in Siege Mode grants 5% Attack Speed for 5 seconds, up to 40%.",
+        descriptionLong: "Hitting enemy Heroes with Basic Attacks while in Siege Mode grants 10% Attack Speed for 5 seconds, up to 60%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -698,8 +698,6 @@ const sgthammer: Hero = {
     physicalDamage: 70,
     mobility: 35.91170634920635,
     healing: 0,
-    magicalDamage: 48.7398820874032
+    magicalDamage: 12.203392514091494
   }
 };
-      
-export default sgthammer;

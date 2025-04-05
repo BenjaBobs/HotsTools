@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const thebutcher: Hero = {
+export const thebutcher: Hero = {
   name: "The Butcher",
   nameNormalized: "thebutcher",
   franchise: "Diablo",
@@ -55,7 +55,7 @@ const thebutcher: Hero = {
       id: "ButcherHamstring",
       name: "Hamstring",
       descriptionShort: "Deals damage in an area and slows enemies",
-      descriptionLong: "Deal 110 (+4% / level) damage and slow enemies by 50% fading over 2 seconds.  The Butcher's next Basic Attack will strike immediately.",
+      descriptionLong: "Deal 110 (+4% / level) damage and Slow enemies by 50%, decaying over 2 seconds. The Butcher's next Basic Attack will strike immediately.",
       cost: {
         type: "Mana",
         amount: 40
@@ -188,26 +188,6 @@ const thebutcher: Hero = {
         ]
       },
       {
-        id: "GenericTalentBlock",
-        name: "Block",
-        descriptionShort: "Periodically gain Physical Armor",
-        descriptionLong: "Every 5 seconds, gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%. Stores up to 2 charges.",
-        cooldown: null,
-        category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_block.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 15,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level1"
-      },
-      {
         id: "ButcherMasteryHamstringChopMeat",
         name: "Chop Meat",
         descriptionShort: "Increases Hamstring damage to non-Heroes",
@@ -224,11 +204,31 @@ const thebutcher: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 3,
+        order: 2,
         tier: "level1",
         linkedAbilityIds: [
           "ButcherHamstring"
         ]
+      },
+      {
+        id: "GenericTalentBlock",
+        name: "Block",
+        descriptionShort: "Periodically gain Physical Armor",
+        descriptionLong: "Every 5 seconds, gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%. Stores up to 2 charges.",
+        cooldown: null,
+        category: "Talent",
+        type: "Passive",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_block.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 15,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level1"
       }
     ],
     [
@@ -256,29 +256,6 @@ const thebutcher: Hero = {
         ]
       },
       {
-        id: "ButcherMasteryRuthlessOnslaughtUnrelentingPursuit",
-        name: "Unrelenting Pursuit",
-        descriptionShort: "Reduces Ruthless Onslaught cooldown on impact",
-        descriptionLong: "Reduces the cooldown of Ruthless Onslaught by 33% upon impact.",
-        cooldown: null,
-        category: "Talent",
-        type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_butcher_fullboar.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 0,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level4",
-        linkedAbilityIds: [
-          "ButcherRuthlessOnslaught"
-        ]
-      },
-      {
         id: "ButcherMasteryHamstringCheapShot",
         name: "Cheap Shot",
         descriptionShort: "Increase Hamstring damage to disabled targets",
@@ -295,10 +272,33 @@ const thebutcher: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 3,
+        order: 2,
         tier: "level4",
         linkedAbilityIds: [
           "ButcherHamstring"
+        ]
+      },
+      {
+        id: "ButcherMasteryRuthlessOnslaughtUnrelentingPursuit",
+        name: "Unrelenting Pursuit",
+        descriptionShort: "Reduces Ruthless Onslaught cooldown on impact",
+        descriptionLong: "Reduces the cooldown of Ruthless Onslaught by 33% upon impact.",
+        cooldown: null,
+        category: "Talent",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_butcher_fullboar.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level4",
+        linkedAbilityIds: [
+          "ButcherRuthlessOnslaught"
         ]
       }
     ],
@@ -327,29 +327,6 @@ const thebutcher: Hero = {
         ]
       },
       {
-        id: "ButcherMasteryFreshMeatVictuals",
-        name: "Victuals",
-        descriptionShort: "Nearby Minion deaths heal",
-        descriptionLong: "Every time a nearby enemy minion dies, The Butcher heals 5% of his maximum health.",
-        cooldown: null,
-        category: "Talent",
-        type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_butcher_freshmeat.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 1,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level7",
-        linkedAbilityIds: [
-          "ButcherFreshMeatDummy"
-        ]
-      },
-      {
         id: "ButcherMeatShield",
         name: "Meat Shield",
         descriptionShort: "Ruthless Onslaught grants Spell Armor",
@@ -366,10 +343,33 @@ const thebutcher: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 3,
+        order: 2,
         tier: "level7",
         linkedAbilityIds: [
           "ButcherRuthlessOnslaught"
+        ]
+      },
+      {
+        id: "ButcherMasteryFreshMeatVictuals",
+        name: "Victuals",
+        descriptionShort: "Nearby Minion deaths heal",
+        descriptionLong: "Every time a nearby enemy minion dies, The Butcher heals 5% of his maximum health.",
+        cooldown: null,
+        category: "Talent",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_butcher_freshmeat.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 1,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level7",
+        linkedAbilityIds: [
+          "ButcherFreshMeatDummy"
         ]
       }
     ],
@@ -431,24 +431,27 @@ const thebutcher: Hero = {
     ],
     [
       {
-        id: "ButcherCleaver",
-        name: "Cleaver",
-        descriptionShort: "Basic Attacks deal area damage",
-        descriptionLong: "Basic Attacks deal 35% of The Butcher's Basic Attack Damage in an area around the target.",
+        id: "ButcherMasteryHamstringBrutalStrike",
+        name: "Brutal Strike",
+        descriptionShort: "Hamstring empowers Basic Attacks",
+        descriptionLong: "After using Hamstring, The Butcher's next 3 Basic Attacks within 5 seconds deal an additional 15% damage.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_aoe.png",
+        type: "Q",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_butcher_hamstring.png",
         isPassive: false,
         analysis: {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7
+          magicalDamage: 3
         },
         order: 1,
-        tier: "level13"
+        tier: "level13",
+        linkedAbilityIds: [
+          "ButcherHamstring"
+        ]
       },
       {
         id: "ButcherMasteryRuthlessOnslaughtSavageCharge",
@@ -474,26 +477,26 @@ const thebutcher: Hero = {
         ]
       },
       {
-        id: "ButcherMasteryHamstringBrutalStrike",
-        name: "Brutal Strike",
-        descriptionShort: "Hamstring empowers Basic Attacks",
-        descriptionLong: "After using Hamstring, The Butcher's next 3 Basic Attacks within 5 seconds deal an additional 15% damage.",
+        id: "ButcherCleaver",
+        name: "Cleaver",
+        descriptionShort: "Basic Attacks deal area damage",
+        descriptionLong: "Basic Attacks deal 35% of The Butcher's Basic Attack Damage in an area around the target.",
         cooldown: null,
         category: "Talent",
-        type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_butcher_hamstring.png",
+        type: "Passive",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_aoe.png",
         isPassive: false,
         analysis: {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3
+          magicalDamage: 7
         },
         order: 3,
         tier: "level13",
         linkedAbilityIds: [
-          "ButcherHamstring"
+          "ButcherFreshMeatDummy"
         ]
       }
     ],
@@ -502,7 +505,7 @@ const thebutcher: Hero = {
         id: "ButcherMasteryHamstringCripplingSlam",
         name: "Crippling Slam",
         descriptionShort: "Hamstring slow no longer fades and lasts longer",
-        descriptionLong: "Hamstring's slow no longer fades out, and the duration is increased by 30%.",
+        descriptionLong: "Hamstring's Slow no longer decays, and its duration is increased by 30%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -559,7 +562,10 @@ const thebutcher: Hero = {
           magicalDamage: 0
         },
         order: 3,
-        tier: "level16"
+        tier: "level16",
+        linkedAbilityIds: [
+          "ButcherFreshMeatDummy"
+        ]
       }
     ],
     [
@@ -662,8 +668,6 @@ const thebutcher: Hero = {
     physicalDamage: 72.22222222222221,
     mobility: 24.205357142857146,
     healing: 0.20822126980271036,
-    magicalDamage: 33.14459534835454
+    magicalDamage: 8.298676349511283
   }
 };
-      
-export default thebutcher;

@@ -1,13 +1,11 @@
-const allHeroes = Object.values(import.meta.globEager('./generated/*.ts')).map(
-  module => module.default
-) as Hero[];
+import { allHeroes } from './generated';
 
 const heroesByName = allHeroes.reduce(
   (heroMap: Record<string, Hero>, hero: Hero): Record<string, Hero> => {
     heroMap[hero.nameNormalized] = hero;
     return heroMap;
   },
-  {}
+  {},
 );
 
 const heroes = {

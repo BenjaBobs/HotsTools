@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const leoric: Hero = {
+export const leoric: Hero = {
   name: "Leoric",
   nameNormalized: "leoric",
   franchise: "Diablo",
@@ -187,7 +187,7 @@ const leoric: Hero = {
         id: "LeoricMasteryFealtyUntoDeathUndying",
         name: "Fealty Unto Death",
         descriptionShort: "Gain Health and Mana when Minions die",
-        descriptionLong: "When a nearby friendly or enemy Minion dies, Leoric restores 1.25% of his maximum Health and 6 Mana.",
+        descriptionLong: "When a nearby friendly or enemy Minion dies, Leoric restores 32 (+4% / level) Health and 6 Mana.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -629,7 +629,7 @@ const leoric: Hero = {
         descriptionLong: "Deal 40 (+4% / level) damage per second to nearby enemies. While Drain Hope is active, gain 40 Armor and the damage and area is increased by 100%.",
         cooldown: null,
         category: "Talent",
-        type: "Passive",
+        type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_leoric_drainhope.png",
         isPassive: false,
         analysis: {
@@ -672,8 +672,6 @@ const leoric: Hero = {
     physicalDamage: 44.23076923076923,
     mobility: 34.636196145124714,
     healing: 2.0405684440665617,
-    magicalDamage: 14.939730318714247
+    magicalDamage: 3.740579281808778
   }
 };
-      
-export default leoric;

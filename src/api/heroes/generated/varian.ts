@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const varian: Hero = {
+export const varian: Hero = {
   name: "Varian",
   nameNormalized: "varian",
   franchise: "Warcraft",
@@ -33,7 +33,7 @@ const varian: Hero = {
       id: "VarianHeroicStrike",
       name: "Heroic Strike",
       descriptionShort: "Deal bonus damage on next Basic Attack",
-      descriptionLong: "Every 18 seconds, Varian's next Basic Attack deals 125 (+4% / level) bonus Spell Damage. Basic Attacks reduce this cooldown by 2 seconds.",
+      descriptionLong: "Every 18 seconds, Varian's next Basic Attack deals 125 (+4% / level) bonus Spell Damage. Basic Attacks reduce this cooldown by 3 seconds.",
       cooldown: 18,
       category: "trait",
       type: "Trait",
@@ -144,7 +144,7 @@ const varian: Hero = {
       id: "VarianColossusSmash",
       name: "Colossus Smash",
       descriptionShort: "Gain Damage, Lose HealthSmash enemies and lower their Armor",
-      descriptionLong: "Smash a target enemy, dealing 160 (+4% / level) damage and lowering their Armor by 20 for 3 seconds, causing them to take 20% increased damage. Passive: Base Attack Damage increased by 100%. Passive: Maximum Health and Health Regeneration reduced by 10%.",
+      descriptionLong: "Smash a target enemy, dealing 185 (+4% / level) damage and lowering their Armor by 25 for 3 seconds, causing them to take 25% increased damage. Passive: Base Attack Damage increased by 100%. Passive: Maximum Health and Health Regeneration reduced by 10%.",
       cost: {
         type: "Mana",
         amount: 40
@@ -159,7 +159,7 @@ const varian: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 32
+        magicalDamage: 37
       }
     },
     {
@@ -187,7 +187,7 @@ const varian: Hero = {
         id: "VarianLionsFangLionsMawQuest",
         name: "Lion's Maw",
         descriptionShort: "Quest: Hit Heroes to empower Lion's Fang",
-        descriptionLong: "Quest: Every time Lion's Fang hits a Hero, increase its damage by 6, up to 150. Reward: After hitting 25 Heroes, the Slow is increased to 50% and its duration is increased to 2 seconds.",
+        descriptionLong: "Quest: Every time Lion's Fang hits a Hero, increase its damage by 7, up to 175. Reward: After hitting 25 Heroes, the Slow is increased to 50% and its duration is increased to 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -238,7 +238,7 @@ const varian: Hero = {
       {
         id: "VarianHighKingsQuestQuest",
         name: "High King's Quest",
-        descriptionShort: "Quest:  Complete Quests to gain Attack Damage",
+        descriptionShort: "Quest: Complete Quests to gain Attack Damage",
         descriptionLong: "Quest: Hit 50 Heroes with Basic Attacks. Quest: Participate in 5 Hero Takedowns. Quest: Gather 15 Regeneration Globes. Reward: Completing a Quest grants 10 Base Attack Damage. Completing all 3 Quests grants an additional 30 Base Attack Damage.",
         cooldown: null,
         category: "Talent",
@@ -293,7 +293,7 @@ const varian: Hero = {
         id: "VarianColossusSmash",
         name: "Colossus Smash",
         descriptionShort: "Gain Damage, Lose HealthSmash enemies and lower their Armor",
-        descriptionLong: "Smash a target enemy, dealing 160 (+4% / level) damage and lowering their Armor by 20 for 3 seconds, causing them to take 20% increased damage. Passive: Base Attack Damage increased by 100%. Passive: Maximum Health and Health Regeneration reduced by 10%.",
+        descriptionLong: "Smash a target enemy, dealing 185 (+4% / level) damage and lowering their Armor by 25 for 3 seconds, causing them to take 25% increased damage. Passive: Base Attack Damage increased by 100%. Passive: Maximum Health and Health Regeneration reduced by 10%.",
         cost: {
           type: "Mana",
           amount: 40
@@ -308,7 +308,7 @@ const varian: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 32
+          magicalDamage: 37
         },
         order: 2,
         tier: "level4",
@@ -697,7 +697,7 @@ const varian: Hero = {
         id: "VarianDemoralizingShout",
         name: "Demoralizing Shout",
         descriptionShort: "Reduce damage of nearby Heroes",
-        descriptionLong: "Activate to demoralize nearby enemy Heroes, reducing damage they deal by 40% for 5 seconds.",
+        descriptionLong: "Activate to demoralize nearby enemy Heroes, reducing damage they deal by 40% for 5 seconds. Each time an enemy Hero affected by Demoralizing Shout deals damage to a Hero, reduce its cooldown and Parry's cooldown by 2.5%.",
         cooldown: 20,
         category: "Talent",
         type: "Active",
@@ -720,8 +720,6 @@ const varian: Hero = {
     physicalDamage: 46.25,
     mobility: 29.9593253968254,
     healing: 0.4554840276934289,
-    magicalDamage: 18.554776173613003
+    magicalDamage: 4.830427072558002
   }
 };
-      
-export default varian;

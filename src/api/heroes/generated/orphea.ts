@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const orphea: Hero = {
+export const orphea: Hero = {
   name: "Orphea",
   nameNormalized: "orphea",
   franchise: "Nexus",
@@ -102,7 +102,7 @@ const orphea: Hero = {
       id: "OrpheaDread",
       name: "Dread",
       descriptionShort: "Damage enemies in a line, erupting after a short delay",
-      descriptionLong: "Release a wave of dread that deals 85 (+4% / level) damage to enemies hit.  Dread erupts 0.75 seconds after reaching the end of its path, dealing 175 (+4% / level) damage. Enemies hit by Dread's wave or eruption are Slowed by 25% for 2 seconds.",
+      descriptionLong: "Release a wave of dread that deals 85 (+4% / level) damage to enemies hit. Dread erupts 0.75 seconds after reaching the end of its path, dealing 175 (+4% / level) damage. Enemies hit by Dread's wave or eruption are Slowed by 25% for 2 seconds.",
       cost: {
         type: "Mana",
         amount: 50
@@ -194,7 +194,7 @@ const orphea: Hero = {
         id: "OrpheaGrowingNightmare",
         name: "Growing Nightmare",
         descriptionShort: "Quest: Empower Dread eruption",
-        descriptionLong: "Increase Dread's damage by 50%.  Quest: Hit 3 enemy Heroes with a single cast of Dread's eruption. Reward: Permanently increase Dread's eruption damage by 50% and increase the Slow amount of Dread's eruption by 15%.",
+        descriptionLong: "Increase Dread's damage by 50%. Quest: Hit 3 enemy Heroes with a single cast of Dread's eruption. Reward: Permanently increase Dread's eruption damage by 50% and increase the Slow amount of Dread's eruption by 15%.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -694,8 +694,6 @@ const orphea: Hero = {
     physicalDamage: 52.8084493518963,
     mobility: 24.006944444444446,
     healing: 4.858496295396575,
-    magicalDamage: 49.90449598526418
+    magicalDamage: 12.494986172391226
   }
 };
-      
-export default orphea;

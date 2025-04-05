@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const malthael: Hero = {
+export const malthael: Hero = {
   name: "Malthael",
   nameNormalized: "malthael",
   franchise: "Diablo",
@@ -33,7 +33,7 @@ const malthael: Hero = {
       id: "MalthaelReapersMark",
       name: "Reaper's Mark",
       descriptionShort: "Basic Attacks cleave, apply Reaper's Mark",
-      descriptionLong: "Basic Attacks cleave in an area in front of Malthael and afflict non-Structure targets with Reaper's Mark for 4 seconds.  Marked enemies are revealed and take damage equal to 1.75% of their maximum Health every 1 second.",
+      descriptionLong: "Basic Attacks cleave in an area in front of Malthael and afflict non-Structure targets with Reaper's Mark for 4 seconds. Marked enemies are revealed and take damage equal to 2% of their maximum Health every 1 second.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -117,7 +117,7 @@ const malthael: Hero = {
       id: "MalthaelTormentedSouls",
       name: "Tormented Souls",
       descriptionShort: "Apply Reaper's Mark to nearby enemies",
-      descriptionLong: "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds.  When Tormented Souls is cast and when it expires, reset the cooldown of Wraith Strike.",
+      descriptionLong: "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds. When Tormented Souls is cast and when it expires, reset the cooldown of Wraith Strike.",
       cost: {
         type: "Mana",
         amount: 20
@@ -352,7 +352,7 @@ const malthael: Hero = {
         name: "Touch of Death",
         descriptionShort: "Activate to reduce enemy healing",
         descriptionLong: "Activate to reduce healing received by Heroes afflicted by Reaper's Mark by 50% for 4 seconds.",
-        cooldown: 25,
+        cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malthael_touchofdeath.png",
@@ -373,7 +373,7 @@ const malthael: Hero = {
         id: "MalthaelTormentedSouls",
         name: "Tormented Souls",
         descriptionShort: "Apply Reaper's Mark to nearby enemies",
-        descriptionLong: "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds.  When Tormented Souls is cast and when it expires, reset the cooldown of Wraith Strike.",
+        descriptionLong: "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds. When Tormented Souls is cast and when it expires, reset the cooldown of Wraith Strike.",
         cost: {
           type: "Mana",
           amount: 20
@@ -497,7 +497,7 @@ const malthael: Hero = {
         name: "Shroud of Wisdom",
         descriptionShort: "Activate to gain Spell Armor",
         descriptionLong: "After 2 seconds, gain 50 Spell Armor for 4 seconds.",
-        cooldown: 30,
+        cooldown: 20,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malthael_shroudofwisdom.png",
@@ -564,7 +564,7 @@ const malthael: Hero = {
         id: "MalthaelMementoMori",
         name: "Memento Mori",
         descriptionShort: "Reaper's Mark deals increased damage over time",
-        descriptionLong: "Reaper's Mark deals 90% increased damage after afflicting an enemy for more than 4 seconds.",
+        descriptionLong: "Reaper's Mark deals 60% increased damage after afflicting an enemy for more than 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -589,7 +589,7 @@ const malthael: Hero = {
         id: "MalthaelReaperOfSouls",
         name: "Reaper of Souls",
         descriptionShort: "Hero Takedowns extend Tormented Souls duration",
-        descriptionLong: "Increase Tormented Souls' duration by 2 seconds.  While Tormented Souls is active, Hero Takedowns refresh the duration.",
+        descriptionLong: "Increase Tormented Souls' duration by 2 seconds. While Tormented Souls is active, Hero Takedowns refresh the duration.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -687,8 +687,6 @@ const malthael: Hero = {
     physicalDamage: 37.27272727272727,
     mobility: 24.006944444444446,
     healing: 37.89627110409329,
-    magicalDamage: 27.356306183601202
+    magicalDamage: 6.849416284912073
   }
 };
-      
-export default malthael;

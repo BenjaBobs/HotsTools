@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const artanis: Hero = {
+export const artanis: Hero = {
   name: "Artanis",
   nameNormalized: "artanis",
   franchise: "Starcraft",
@@ -8,9 +8,9 @@ const artanis: Hero = {
   size: 0.8125,
   movementSpeed: 4.8398,
   health: {
-    amount: 2525,
+    amount: 2490,
     scale: 0.04,
-    regenRate: 5.2617,
+    regenRate: 5.1875,
     regenScale: 0.04
   },
   energy: {
@@ -40,7 +40,7 @@ const artanis: Hero = {
       id: "ArtanisShieldOverloadDummy",
       name: "Shield Overload",
       descriptionShort: "Gain a Shield when attacked at low Health",
-      descriptionLong: "After taking damage while below 75% Health, Artanis gains a 385 (+4% / level) Shield for 5 seconds. Basic Attacks lower the cooldown of Shield Overload by 4 seconds.",
+      descriptionLong: "After taking damage while below 75% Health, Artanis gains a 365 (+4% / level) Shield for 5 seconds. Basic Attacks lower the cooldown of Shield Overload by 4 seconds.",
       cooldown: 24,
       category: "trait",
       type: "Trait",
@@ -124,7 +124,7 @@ const artanis: Hero = {
       id: "ArtanisSpearofAdunPurifierBeam",
       name: "Purifier Beam",
       descriptionShort: "Chase an enemy with an orbital beam",
-      descriptionLong: "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 (+4% / level) damage per second for 8 seconds. The beam will chase the target as they move.  Unlimited range.",
+      descriptionLong: "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 (+4% / level) damage per second for 8 seconds. The beam will chase the target as they move. Unlimited range.",
       cost: {
         type: "Mana",
         amount: 65
@@ -193,6 +193,7 @@ const artanis: Hero = {
         order: 1,
         tier: "level1",
         linkedAbilityIds: [
+          "ArtanisBladeDash",
           "ArtanisTwinBladesPrimed",
           "ArtanisTwinBlades"
         ]
@@ -225,7 +226,7 @@ const artanis: Hero = {
         id: "ArtanisProtectorOfAiur",
         name: "Protector Of Aiur",
         descriptionShort: "Quest: Attacks against Heroes increase damage",
-        descriptionLong: "Quest: Basic Attacks against enemy Heroes increase Artanis's Attack damage by 0.1%.  Takedowns grant 1% bonus damage.",
+        descriptionLong: "Quest: Basic Attacks against enemy Heroes increase Artanis's Attack damage by 0.1%. Takedowns grant 1% bonus damage.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -297,7 +298,7 @@ const artanis: Hero = {
         id: "ArtanisShieldOverloadShieldSurge",
         name: "Shield Surge",
         descriptionShort: "Increase Shield Overload shield at low Health",
-        descriptionLong: "Increases Shield Overload's Shields by 75% while below 25% Health.",
+        descriptionLong: "Increases Shield Overload's Shields by 80% while below 25% Health.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -423,7 +424,7 @@ const artanis: Hero = {
         id: "ArtanisHeroicAbilitySpearofAdunPurifierBeam",
         name: "Purifier Beam",
         descriptionShort: "Chase an enemy with an orbital beam",
-        descriptionLong: "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 (+4% / level) damage per second for 8 seconds. The beam will chase the target as they move.  Unlimited range.",
+        descriptionLong: "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 (+4% / level) damage per second for 8 seconds. The beam will chase the target as they move. Unlimited range.",
         cost: {
           type: "Mana",
           amount: 65
@@ -619,7 +620,7 @@ const artanis: Hero = {
         id: "ArtanisSpearofAdunSuppressionPulseOrbitalBombardment",
         name: "Orbital Bombardment",
         descriptionShort: "Suppression Pulse gains an additional charge",
-        descriptionLong: "Suppression Pulse gains an additional charge.  There is a 10 second cooldown between uses.",
+        descriptionLong: "Suppression Pulse gains an additional charge. There is a 10 second cooldown between uses.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -723,12 +724,10 @@ const artanis: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 76.08286252354048,
+    tankiness: 75.02824858757063,
     physicalDamage: 55.50000000000001,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 21.58698810496686
+    magicalDamage: 5.404906162258017
   }
 };
-      
-export default artanis;

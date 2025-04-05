@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const chen: Hero = {
+export const chen: Hero = {
   name: "Chen",
   nameNormalized: "chen",
   franchise: "Warcraft",
@@ -19,6 +19,13 @@ const chen: Hero = {
     name: "Brew"
   },
   autoAttacks: [
+    {
+      nameId: "ChenHeroWeaponComboStrikes",
+      range: 2,
+      period: 0.9,
+      damage: 90,
+      damageScale: 0.04
+    },
     {
       nameId: "ChenHeroWeapon",
       range: 2,
@@ -95,7 +102,7 @@ const chen: Hero = {
       id: "ChenStagger",
       name: "Stagger",
       descriptionShort: "Become immune to damage, then convert it to damage over time",
-      descriptionLong: "Damage taken over the next 3 seconds is prevented.  Once this effect ends, Chen receives 75% of the damage taken over 5 seconds.  This damage cannot be modified.",
+      descriptionLong: "Damage taken over the next 3 seconds is prevented. Once this effect ends, Chen receives 75% of the damage taken over 5 seconds. This damage cannot be modified.",
       cooldown: 18,
       category: "basic",
       type: "E",
@@ -113,7 +120,7 @@ const chen: Hero = {
       id: "ChenStormEarthFire",
       name: "Storm, Earth, Fire",
       descriptionShort: "Split into three elemental spirits",
-      descriptionLong: "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well. Storm can grant the spirits a Shield. Earth can leap to an area and Slow enemies. Fire can grant the spirits Attack Speed, damage.",
+      descriptionLong: "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability. The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well. Storm can grant the spirits a Shield. Earth can leap to an area and Slow enemies. Fire can grant the spirits Attack Speed, damage.",
       cooldown: 120,
       category: "heroic",
       type: "Heroic",
@@ -152,7 +159,7 @@ const chen: Hero = {
         id: "ChenEyeOfTheTiger",
         name: "Eye of the Tiger",
         descriptionShort: "Basic Attacks deal bonus damage, heal",
-        descriptionLong: "Basic Attacks against Brew-soaked enemy Heroes deal 40% more damage and heal Chen for 40% of the damage done.",
+        descriptionLong: "Basic Attacks against Brew-soaked enemy Heroes deal 50% more damage and heal Chen for 60% of the damage done.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -162,8 +169,8 @@ const chen: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 8,
-          magicalDamage: 8
+          healing: 10,
+          magicalDamage: 10
         },
         order: 1,
         tier: "level1",
@@ -248,7 +255,7 @@ const chen: Hero = {
         id: "ChenAccumulatingFlame",
         name: "Accumulating Flame",
         descriptionShort: "Increase Ignite damage and duration",
-        descriptionLong: "Increase Ignited damage by 20%.  Basic Attacks against enemy Heroes who are Ignited increase its duration by 0.75 seconds.",
+        descriptionLong: "Increase Ignited damage by 30%. Basic Attacks against enemy Heroes who are Ignited increase its duration by 0.75 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -298,7 +305,7 @@ const chen: Hero = {
         id: "ChenGiftOfTheOxStagger",
         name: "Gift of the Ox",
         descriptionShort: "Increase Stagger's duration, reduce damage taken",
-        descriptionLong: "Increase the duration of Stagger's damage prevention by 1.5 seconds, and reduce the amount of damage taken over time to 50% of damage taken.",
+        descriptionLong: "Increase the duration of Stagger's damage prevention by 2 seconds, and reduce the amount of damage taken over time to 50% of damage taken.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -389,7 +396,7 @@ const chen: Hero = {
         id: "ChenHeroicAbilityStormEarthFire",
         name: "Storm, Earth, Fire",
         descriptionShort: "Split into three elemental spirits",
-        descriptionLong: "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well. Storm can grant the spirits a Shield. Earth can leap to an area and Slow enemies. Fire can grant the spirits Attack Speed, damage.",
+        descriptionLong: "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability. The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well. Storm can grant the spirits a Shield. Earth can leap to an area and Slow enemies. Fire can grant the spirits Attack Speed, damage.",
         cooldown: 120,
         category: "Talent",
         type: "Heroic",
@@ -437,7 +444,7 @@ const chen: Hero = {
         id: "ChenMasteryKegSmashATouchOfHoney",
         name: "A Touch of Honey",
         descriptionShort: "Increase Keg Smash Slow amount, duration",
-        descriptionLong: "Increase the Slows from Keg Smash by 20% and its duration by 0.5 seconds.",
+        descriptionLong: "Increase the Slows from Keg Smash by 30% and its duration by 0.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -461,7 +468,7 @@ const chen: Hero = {
         id: "ChenRingofFire",
         name: "Ring of Fire",
         descriptionShort: "Damage nearby enemies after Igniting them",
-        descriptionLong: "After Igniting an enemy, become bathed in a fiery aura, dealing 55 (+4% / level) damage every second to nearby enemies for 5 seconds.",
+        descriptionLong: "After Igniting an enemy, become bathed in a fiery aura, dealing 60 (+4% / level) damage every second to nearby enemies for 6 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -472,7 +479,7 @@ const chen: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 11
+          magicalDamage: 12
         },
         order: 3,
         tier: "level13",
@@ -556,7 +563,7 @@ const chen: Hero = {
         id: "ChenComboStrikes",
         name: "Combo Strikes",
         descriptionShort: "Gain Attack Speed, damage",
-        descriptionLong: "Every 3rd Basic Attack against the same target deals 75% bonus damage.  While Chen has Shields from Fortifying Brew and for 2 seconds after, he gains 35% Attack Speed.",
+        descriptionLong: "Every 3rd Basic Attack against the same target deals 75% bonus damage. While Chen has Shields from Fortifying Brew and for 2 seconds after, he gains 35% Attack Speed.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -581,7 +588,7 @@ const chen: Hero = {
         id: "ChenMasteryWanderingKegUntappedPotential",
         name: "Untapped Potential",
         descriptionShort: "Increases Wandering Keg Speed, Armor",
-        descriptionLong: "Increase Wandering Keg's Movement Speed bonus from 70% to 125%, and its Armor bonus to 75 for its duration and 3 seconds afterwards.",
+        descriptionLong: "Increase Wandering Keg's Movement Speed bonus from 70% to 125%, and its Armor bonus to 75 for its duration and 5 seconds afterwards.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -795,8 +802,6 @@ const chen: Hero = {
     physicalDamage: 50,
     mobility: 28.96726190476191,
     healing: 0,
-    magicalDamage: 16.79151911377463
+    magicalDamage: 4.204226392788532
   }
 };
-      
-export default chen;

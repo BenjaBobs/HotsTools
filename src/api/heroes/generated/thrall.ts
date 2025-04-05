@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const thrall: Hero = {
+export const thrall: Hero = {
   name: "Thrall",
   nameNormalized: "thrall",
   franchise: "Warcraft",
@@ -8,9 +8,9 @@ const thrall: Hero = {
   size: 0.75,
   movementSpeed: 4.8398,
   health: {
-    amount: 1876,
+    amount: 1946,
     scale: 0.04,
-    regenRate: 3.9062,
+    regenRate: 4.0546,
     regenScale: 0.04
   },
   energy: {
@@ -33,7 +33,7 @@ const thrall: Hero = {
       id: "ThrallFrostwolfResilience",
       name: "Frostwolf Resilience",
       descriptionShort: "Casting Abilities on enemies grants charges that restore health",
-      descriptionLong: "Dealing damage with Abilities grants 1 stack of Frostwolf Resilience. At 5 stacks, Thrall is instantly healed for 223 (+4% / level) Health.",
+      descriptionLong: "Dealing damage with Abilities grants 1 stack of Frostwolf Resilience. At 5 stacks, Thrall is instantly healed for 240 (+4% / level) Health.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -51,7 +51,7 @@ const thrall: Hero = {
       id: "ThrallChainLightning",
       name: "Chain Lightning",
       descriptionShort: "Shock enemies with bouncing lightning",
-      descriptionLong: "Shock an enemy with lightning, dealing 162 (+4% / level) damage. The lightning then bounces 3 times to nearby enemies, dealing 81 (+4% / level) damage to each enemy hit.",
+      descriptionLong: "Shock an enemy with lightning, dealing 170 (+4% / level) damage. The lightning then bounces 3 times to nearby enemies, dealing 85 (+4% / level) damage to each enemy hit.",
       cost: {
         type: "Mana",
         amount: 40
@@ -72,7 +72,7 @@ const thrall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 104.14285714285714
+        magicalDamage: 109.28571428571428
       }
     },
     {
@@ -82,9 +82,9 @@ const thrall: Hero = {
       descriptionLong: "Unleash a Feral Spirit that deals 153 (+4% / level) damage to enemies in its path and Roots Heroes hit for 1 second. Each Hero hit increases the distance traveled by 25%.",
       cost: {
         type: "Mana",
-        amount: 60
+        amount: 40
       },
-      cooldown: 12,
+      cooldown: 10,
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_thrall_feralspirit.png",
@@ -94,7 +94,7 @@ const thrall: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 38.25
+        magicalDamage: 45.9
       }
     },
     {
@@ -170,7 +170,7 @@ const thrall: Hero = {
         id: "ThrallEchooftheElements",
         name: "Echo of the Elements",
         descriptionShort: "Quest: Killing enemies grants Chain Lightning charge",
-        descriptionLong: "Quest: Kill Minions or Heroes within 1.5 seconds of hitting them with Chain Lightning. Reward: After killing 10 enemies, reduce the Mana cost of Chain Lightning from 40 to 25. Reward: After killing 20 enemies, gain a second charge of Chain Lightning.",
+        descriptionLong: "Quest: Kill Minions or Heroes within 1.5 seconds of hitting them with Chain Lightning. Reward: After killing 10 enemies, reduce the Mana cost of Chain Lightning from 40 to 20. Reward: After killing 20 enemies, gain a second charge of Chain Lightning.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -261,7 +261,7 @@ const thrall: Hero = {
         id: "ThrallFeralResilience",
         name: "Feral Resilience",
         descriptionShort: "Feral Spirit grants Physical Armor, Frostwolf Resilience",
-        descriptionLong: "Heroes damaged by Feral Spirit grant 3 stacks of Frostwolf Resilience and 2 stacks of Feral Resilience, granting 75 Physical Armor against the next incoming Hero Basic Attack. Stacks are consumed on the next cast of Feral Spirit.",
+        descriptionLong: "Heroes damaged by Feral Spirit grant 4 stacks of Frostwolf Resilience and 2 stacks of Feral Resilience, granting 75 Physical Armor against the next incoming Hero Basic Attack. Stacks are consumed on the next cast of Feral Spirit.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -338,7 +338,7 @@ const thrall: Hero = {
         cooldown: null,
         category: "Talent",
         type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_thrall_windfury_var1.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_thrall_windfury.png",
         isPassive: false,
         analysis: {
           mobility: 8,
@@ -485,7 +485,7 @@ const thrall: Hero = {
         id: "ThrallMasteryFrostwolfsGrace",
         name: "Frostwolf's Grace",
         descriptionShort: "Activate Frostwolf Resilience to instantly heal",
-        descriptionLong: "Frostwolf Resilience can be activated to instantly heal for 150% of its normal amount.",
+        descriptionLong: "Frostwolf Resilience can be activated to instantly heal. This healing is increased by up to 100% based on Thrall's missing health.",
         cooldown: 15,
         category: "Talent",
         type: "Trait",
@@ -495,7 +495,7 @@ const thrall: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 30,
+          healing: 20,
           magicalDamage: 0
         },
         order: 2,
@@ -509,7 +509,7 @@ const thrall: Hero = {
         id: "ThrallSpiritShield",
         name: "Spirit Shield",
         descriptionShort: "Periodically gain temporary Spell Armor",
-        descriptionLong: "Every 45 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 2.5 seconds. Frostwolf Resilience reduces this cooldown by 10 seconds. Can be toggled to allow or prevent this talent from triggering automatically.",
+        descriptionLong: "Every 45 seconds, gain 70 Spell Armor against the next enemy Ability and subsequent Abilities for 4 seconds. Frostwolf Resilience reduces this cooldown by 10 seconds. Can be toggled to allow or prevent this talent from triggering automatically.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
@@ -518,7 +518,7 @@ const thrall: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 10,
+          tankiness: 14,
           healing: 0,
           magicalDamage: 0
         },
@@ -658,6 +658,26 @@ const thrall: Hero = {
         ]
       },
       {
+        id: "ThrallElementalMomentum",
+        name: "Elemental Momentum",
+        descriptionShort: "Basic Attacks reduce Ability cooldowns",
+        descriptionLong: "Basic Attacks reduce Thrall's Basic and Heroic Ability cooldowns by 0.25 seconds, tripled against Heroes.",
+        cooldown: null,
+        category: "Talent",
+        type: "Passive",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level20"
+      },
+      {
         id: "GenericTalentNexusBlades",
         name: "Nexus Blades",
         descriptionShort: "Basic Attacks deal more damage and Slow",
@@ -674,7 +694,7 @@ const thrall: Hero = {
           healing: 0,
           magicalDamage: 4
         },
-        order: 3,
+        order: 4,
         tier: "level20"
       },
       {
@@ -694,18 +714,16 @@ const thrall: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 4,
+        order: 5,
         tier: "level20"
       }
     ]
   ],
   analysis: {
-    tankiness: 56.52730696798493,
+    tankiness: 58.63653483992467,
     physicalDamage: 78.63636363636363,
     mobility: 31.447420634920636,
     healing: 0.048584962953965756,
-    magicalDamage: 31.044074535289468
+    magicalDamage: 8.24537144546011
   }
 };
-      
-export default thrall;

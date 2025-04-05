@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const kerrigan: Hero = {
+export const kerrigan: Hero = {
   name: "Kerrigan",
   nameNormalized: "kerrigan",
   franchise: "Starcraft",
@@ -630,7 +630,7 @@ const kerrigan: Hero = {
         id: "KerriganTorrasqueSummonUltralisk",
         name: "Torrasque",
         descriptionShort: "Ultralisk spawns a new Ultralisk on death",
-        descriptionLong: "Increase the Health and Basic Attack damage of the Ultralisk by 20%.  The Ultralisk morphs into an egg when it dies. If the egg isn't killed within 4 seconds, a new Ultralisk is born.",
+        descriptionLong: "Increase the Health and Basic Attack damage of the Ultralisk by 20%. The Ultralisk morphs into an egg when it dies. If the egg isn't killed within 4 seconds, a new Ultralisk is born.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -699,8 +699,6 @@ const kerrigan: Hero = {
     physicalDamage: 71.875,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 34.05520748206665
+    magicalDamage: 8.526673562878676
   }
 };
-      
-export default kerrigan;

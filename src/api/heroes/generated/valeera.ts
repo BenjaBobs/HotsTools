@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const valeera: Hero = {
+export const valeera: Hero = {
   name: "Valeera",
   nameNormalized: "valeera",
   franchise: "Warcraft",
@@ -696,8 +696,6 @@ const valeera: Hero = {
     physicalDamage: 79,
     mobility: 24.378968253968257,
     healing: 0,
-    magicalDamage: 14.386406973576685
+    magicalDamage: 3.602039308408453
   }
 };
-      
-export default valeera;

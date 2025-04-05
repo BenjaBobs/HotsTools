@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const whitemane: Hero = {
+export const whitemane: Hero = {
   name: "Whitemane",
   nameNormalized: "whitemane",
   franchise: "Warcraft",
@@ -33,7 +33,7 @@ const whitemane: Hero = {
       id: "WhitemaneFanaticalPower",
       name: "Zeal",
       descriptionShort: "Heal marked allies for damage dealt",
-      descriptionLong: "Whitemane's healing Abilities apply Zeal for 8 seconds. Allies with Zeal are healed for 100% of the damage Whitemane deals to Heroes. Activate to gain 25% Spell Power and lose 25 Armor for 5 seconds. Can be cast while channeling abilities.",
+      descriptionLong: "Whitemane's healing Abilities apply Zeal for 8 seconds. Allies with Zeal are healed for 100% of the damage Whitemane deals to Heroes. Activate to gain 25% Spell Power and lose 15 Armor for 5 seconds. Can be cast while channeling abilities.",
       cooldown: 40,
       category: "trait",
       type: "Trait",
@@ -51,10 +51,10 @@ const whitemane: Hero = {
       id: "WhitemaneDesperatePlea",
       name: "Desperate Plea",
       descriptionShort: "Heal an allied Hero",
-      descriptionLong: "Heal an allied Hero for 140 (+4% / level) and gain Desperation for 4 seconds. Desperation increases Desperate Plea's Mana cost by 45, and stacks up to 3 times. Current Mana Cost: 45",
+      descriptionLong: "Heal an allied Hero for 140 (+4% / level) and gain Desperation for 4 seconds. Desperation increases Desperate Plea's Mana cost by 40, and stacks up to 3 times. Current Mana Cost: 40",
       cost: {
         type: "Mana",
-        amount: 45
+        amount: 40
       },
       cooldown: null,
       category: "basic",
@@ -193,8 +193,8 @@ const whitemane: Hero = {
       {
         id: "WhitemaneInquisitorsPrayer",
         name: "Inquisitor's Prayer",
-        descriptionShort: "Quest: Searing Lash increases Health and Mana",
-        descriptionLong: "Quest: Hit Heroes with Searing Lash. Reward: Each Hero hit grants 3 permanent Health and 2 permanent Mana. Heroes hit with the second strike count as 2 hits.",
+        descriptionShort: "Quest: Hit Heroes to increase Health and Mana",
+        descriptionLong: "Repeatable Quest: Hit Heroes with Searing Lash. Repeatable Quest: Hit 3 Heroes with Basic Attacks. Reward: Permanently increase Whitemane's maximum Health by 3 and Mana by 2. Heroes hit with the second strike of Searing Lash count as 2 hits.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -318,7 +318,7 @@ const whitemane: Hero = {
         cooldown: null,
         category: "Talent",
         type: "E",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_lash_alt_1.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_whitemane_lash.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -337,7 +337,7 @@ const whitemane: Hero = {
         id: "WhitemaneIntercession",
         name: "Intercession",
         descriptionShort: "Make an ally Unstoppable",
-        descriptionLong: "Activate to make an ally Unstoppable for 1 second and gain 1 stack of Desperation.",
+        descriptionLong: "Activate to make an ally Unstoppable for 1 second.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
@@ -453,7 +453,7 @@ const whitemane: Hero = {
         id: "WhitemaneZealScarletWrath",
         name: "Scarlet Wrath",
         descriptionShort: "Basic Attacks increase Zeal duration",
-        descriptionLong: "Basic Attacks against Heroes increase the duration of all active Zeals by 0.75 seconds and lower the cooldown of Zeals activation by 4 seconds.",
+        descriptionLong: "Basic Attacks against Heroes increase the duration of all active Zeals by 0.75 seconds, restore 0.5% Mana to all Zeal targets, and lower the cooldown of Zeals activation by 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -478,7 +478,7 @@ const whitemane: Hero = {
         id: "WhitemaneDesperatePleaRadiance",
         name: "Radiance",
         descriptionShort: "Desperation heals allies with Zeal",
-        descriptionLong: "Upon reaching 3 stacks of Desperation, all allies with Zeal are healed for 175 (+4% / level). Activating Zeal while at 3 stacks of Desperation now increases Armor by 15 instead of reducing it.",
+        descriptionLong: "Reaching 3 stacks of Desperation heals for 175 (+4% / level) and reapplies Zeal to allies with Zeal.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -501,7 +501,7 @@ const whitemane: Hero = {
         id: "WhitemaneInquisitionSharedPunishment",
         name: "Shared Punishment",
         descriptionShort: "Inquisition chains to a nearby enemy, lowers Armor",
-        descriptionLong: "Upon casting, Inquisition can chain to an additional enemy Hero near its target, dealing 35 (+4% / level) damage every 0.5 seconds. Affected enemies lose 10 Armor.",
+        descriptionLong: "Upon casting, Inquisition can chain to an additional enemy Hero near its target, dealing 50 (+4% / level) damage every 0.5 seconds. Affected enemies lose 10 Armor.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -512,7 +512,7 @@ const whitemane: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7
+          magicalDamage: 10
         },
         order: 2,
         tier: "level16",
@@ -524,7 +524,7 @@ const whitemane: Hero = {
         id: "WhitemaneSearingLashHarshDiscipline",
         name: "Harsh Discipline",
         descriptionShort: "Searing Lash Roots Inquisition target",
-        descriptionLong: "Hitting a Hero with Searing Lash while they are being targeted by Inquisition Roots them for 1.5 seconds.",
+        descriptionLong: "Hitting a Hero with Searing Lash while they are being targeted by Inquisition Roots them for 1.5 seconds. Passive: Reduce Inquisition's cooldown by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -647,8 +647,6 @@ const whitemane: Hero = {
     physicalDamage: 31,
     mobility: 24.006944444444446,
     healing: 26.624559698773233,
-    magicalDamage: 3.319940070825388
+    magicalDamage: 0.8312398404019505
   }
 };
-      
-export default whitemane;

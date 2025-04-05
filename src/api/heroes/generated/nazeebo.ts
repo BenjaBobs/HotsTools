@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const nazeebo: Hero = {
+export const nazeebo: Hero = {
   name: "Nazeebo",
   nameNormalized: "nazeebo",
   franchise: "Diablo",
@@ -95,7 +95,7 @@ const nazeebo: Hero = {
       id: "WitchDoctorPlagueofToads",
       name: "Plague of Toads",
       descriptionShort: "Summon a wave of exploding toads",
-      descriptionLong: "Create a wave of 3 Toads that explode on contact, dealing 119 (+4% / level) damage over 6 seconds. This effect stacks. Stores up to 2 charges.",
+      descriptionLong: "Create a wave of 3 Toads that explode on contact, dealing 126 (+4% / level) damage over 6 seconds. This effect stacks. Stores up to 2 charges.",
       cost: {
         type: "Mana",
         amount: 30
@@ -116,14 +116,14 @@ const nazeebo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 44.625
+        magicalDamage: 47.25
       }
     },
     {
       id: "WitchDoctorGargantuan",
       name: "Gargantuan",
       descriptionShort: "Summon a Gargantuan to guard an area",
-      descriptionLong: "Summon a Gargantuan to guard an area for 20 seconds. Deals 100 (+4% / level) damage when summoned, attacks for 140 (+4% / level) damage, and can be ordered to stomp nearby enemies.",
+      descriptionLong: "Summon a Gargantuan to guard an area for 20 seconds. Deals 100 (+4% / level) damage when summoned, attacks for 140 (+4% / level) damage, and can be ordered to stomp nearby enemies. The Gargantuan's Stomp deals 240 (+4% / level) damage and Slows by 30% for 2 seconds.",
       cost: {
         type: "Mana",
         amount: 90
@@ -138,7 +138,7 @@ const nazeebo: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 20
+        magicalDamage: 68
       }
     },
     {
@@ -170,7 +170,7 @@ const nazeebo: Hero = {
         id: "WitchDoctorWidowmakers",
         name: "Widowmakers",
         descriptionShort: "Quest: Empower Corpse Spiders",
-        descriptionLong: "Enemies hit by Corpse Spiders' jar are Slowed by 30% for 1.5 seconds. Reward: After Corpse Spiders attack Heroes 100 times, their attack damage is increased by 30% and their duration is increased by 1 second.",
+        descriptionLong: "Enemies hit by Corpse Spiders' jar are Slowed by 25% for 1 second. Reward: After Corpse Spiders attack Heroes 100 times, their attack damage is increased by 25% and their duration is increased by 1 second.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -194,7 +194,7 @@ const nazeebo: Hero = {
         id: "WitchDoctorPandemic",
         name: "Pandemic",
         descriptionShort: "Quest: Empower Plague of Toads",
-        descriptionLong: "Quest: Hit Heroes with Plague of Toads. Reward: After hitting 40 Heroes with Plague of Toads, it spawns 2 additional toads. Reward: After hitting 80 Heroes with Plague of Toads, it reduces the damage Heroes deal by 5%, stacking up to 25%.",
+        descriptionLong: "Quest: Hit Heroes with Plague of Toads. Reward: After hitting 35 Heroes with Plague of Toads, it spawns 2 additional toads. Reward: After hitting 70 Heroes with Plague of Toads, it reduces the damage Heroes deal by 5%, stacking up to 25%.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -296,7 +296,7 @@ const nazeebo: Hero = {
         id: "WitchDoctorBloodRitual",
         name: "Blood Ritual",
         descriptionShort: "Voodoo Ritual restores Health and Mana",
-        descriptionLong: "If an enemy dies while poisoned by Voodoo Ritual, restore 2% of Nazeebo's maximum Health and Mana. Passive: Takedowns grant 5 stacks of Voodoo Ritual.",
+        descriptionLong: "If an enemy dies while poisoned by Voodoo Ritual, restore 2% of Nazeebo's maximum Health and Mana. Passive: Takedowns grant 3 stacks of Voodoo Ritual.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -398,7 +398,7 @@ const nazeebo: Hero = {
         id: "WitchDoctorHeroicAbilityGargantuan",
         name: "Gargantuan",
         descriptionShort: "Summon a Gargantuan to guard an area",
-        descriptionLong: "Summon a Gargantuan to guard an area for 20 seconds. Deals 100 (+4% / level) damage when summoned, attacks for 140 (+4% / level) damage, and can be ordered to stomp nearby enemies.",
+        descriptionLong: "Summon a Gargantuan to guard an area for 20 seconds. Deals 100 (+4% / level) damage when summoned, attacks for 140 (+4% / level) damage, and can be ordered to stomp nearby enemies. The Gargantuan's Stomp deals 240 (+4% / level) damage and Slows by 30% for 2 seconds.",
         cost: {
           type: "Mana",
           amount: 90
@@ -413,7 +413,7 @@ const nazeebo: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 20
+          magicalDamage: 68
         },
         order: 1,
         tier: "level10",
@@ -454,7 +454,7 @@ const nazeebo: Hero = {
         id: "WitchDoctorGuardianToads",
         name: "Guardian Toads",
         descriptionShort: "Toads grant Armor",
-        descriptionLong: "Hitting an enemy Hero with Plague of Toads grants 30 Armor for 2 seconds, stacking up to 6 seconds.",
+        descriptionLong: "Hitting an enemy Hero with Plague of Toads grants 30 Armor for 3 seconds, stacking up to 6 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -525,7 +525,7 @@ const nazeebo: Hero = {
         id: "WitchDoctorSpiderColony",
         name: "Spider Colony",
         descriptionShort: "Corpse Spiders reduce Basic Ability cooldowns",
-        descriptionLong: "Corpse Spider Attacks against Heroes reduce the cooldowns of Zombie Wall and Plague of Toads by 0.25 seconds and the cooldown of Corpse Spiders by 0.125 seconds.",
+        descriptionLong: "Corpse Spider Attacks against Heroes reduce the cooldown of Nazeebo's Basic Abilities by 0.125 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -593,7 +593,7 @@ const nazeebo: Hero = {
         id: "WitchDoctorHumongoid",
         name: "Humongoid",
         descriptionShort: "Empower Gargantuan, Gargantuan Stomp",
-        descriptionLong: "Gargantuan Stomp's area is increased by 25% and its slow amount is increased to 50%. Passive: Reduce Gargantuan's cooldown by 40 seconds and its Mana cost by 50%.",
+        descriptionLong: "Gargantuan Stomp's area is increased by 25% and its Slow amount is increased to 50%. Passive: Reduce Gargantuan's cooldown by 40 seconds and its Mana cost by 50%.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -692,8 +692,6 @@ const nazeebo: Hero = {
     physicalDamage: 48.888888888888886,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 19.974972759466088
+    magicalDamage: 6.871582680656124
   }
 };
-      
-export default nazeebo;

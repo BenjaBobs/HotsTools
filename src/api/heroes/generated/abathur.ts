@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const abathur: Hero = {
+export const abathur: Hero = {
   name: "Abathur",
   nameNormalized: "abathur",
   franchise: "Starcraft",
@@ -46,7 +46,7 @@ const abathur: Hero = {
       id: "AbathurDeepTunnel",
       name: "Deep Tunnel",
       descriptionShort: "Tunnel to a location.",
-      descriptionLong: "Quickly tunnel to a visible location",
+      descriptionLong: "Quickly tunnel to a visible location.",
       cooldown: 30,
       category: "mount",
       type: "Z",
@@ -106,7 +106,7 @@ const abathur: Hero = {
       id: "AbathurEvolveMonstrosity",
       name: "Evolve Monstrosity",
       descriptionShort: "Minion or Locust becomes a powerful Monstrosity",
-      descriptionLong: "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times.  The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every 80 seconds. Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
+      descriptionLong: "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times. The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every 80 seconds. Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits. This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
       cooldown: 90,
       category: "heroic",
       type: "Heroic",
@@ -214,6 +214,7 @@ const abathur: Hero = {
         order: 3,
         tier: "level1",
         linkedAbilityIds: [
+          "AbathurSymbiote",
           "AbathurSymbioteCarapace"
         ]
       },
@@ -428,7 +429,7 @@ const abathur: Hero = {
         id: "AbathurHeroicAbilityEvolveMonstrosity",
         name: "Evolve Monstrosity",
         descriptionShort: "Minion or Locust becomes a powerful Monstrosity",
-        descriptionLong: "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times.  The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every 80 seconds. Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
+        descriptionLong: "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times. The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every 80 seconds. Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits. This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
         cooldown: 90,
         category: "Talent",
         type: "Heroic",
@@ -445,7 +446,8 @@ const abathur: Hero = {
         tier: "level10",
         linkedAbilityIds: [
           "AbathurEvolveMonstrosity"
-        ]
+        ],
+        isQuest: true
       }
     ],
     [
@@ -511,7 +513,7 @@ const abathur: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_spawnlocust_var1.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_spawnlocust.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -626,7 +628,7 @@ const abathur: Hero = {
         id: "AbathurUltimateEvolutionEvolutionaryLink",
         name: "Evolutionary Link",
         descriptionShort: "Ultimate Evolution target gets a Shield",
-        descriptionLong: "Increase the duration of Ultimate Evolution by 50%.  As long as the Ultimate Evolution is alive, the original target of the clone gains a Shield equal to 35% of their maximum Health.  Refreshes every 5 seconds.",
+        descriptionLong: "Increase the duration of Ultimate Evolution by 50%. As long as the Ultimate Evolution is alive, the original target of the clone gains a Shield equal to 35% of their maximum Health. Refreshes every 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -678,7 +680,7 @@ const abathur: Hero = {
         id: "AbathurSymbioteHivemind",
         name: "Hivemind",
         descriptionShort: "Symbiote two targets",
-        descriptionLong: "Symbiote creates an additional Symbiote on a nearby allied Hero.  This Symbiote mimics the commands of the first, but does half damage and Shielding.",
+        descriptionLong: "Symbiote creates an additional Symbiote on a nearby allied Hero. This Symbiote mimics the commands of the first, but does half damage and Shielding.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -810,8 +812,6 @@ const abathur: Hero = {
     physicalDamage: 18.571428571428573,
     mobility: 24.006944444444446,
     healing: 1.94339851815863,
-    magicalDamage: 8.867928811404704
+    magicalDamage: 2.220333973695877
   }
 };
-      
-export default abathur;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const lili: Hero = {
+export const lili: Hero = {
   name: "Li Li",
   nameNormalized: "lili",
   franchise: "Warcraft",
@@ -51,7 +51,7 @@ const lili: Hero = {
       id: "LiLiHealingBrew",
       name: "Healing Brew",
       descriptionShort: "Heal a nearby ally",
-      descriptionLong: "Heal lowest Health ally (prioritizing Heroes) within 6 range for 175 (+4% / level) Health.",
+      descriptionLong: "Heal the lowest Health allied Hero within 6 range for 175 (+4% / level) Health.",
       cost: {
         type: "Mana",
         amount: 25
@@ -117,7 +117,7 @@ const lili: Hero = {
       id: "LiLiJugof1000Cups",
       name: "Jug of 1,000 Cups",
       descriptionShort: "Rapidly heal nearby allies",
-      descriptionLong: "Channel for up to 6 seconds. Every 0.25 seconds, increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50 additional seconds, and heal the lowest Health nearby allied Hero for 66 (+4% / level) Health.",
+      descriptionLong: "Channel for up to 6 seconds. Every 0.25 seconds, increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50 additional seconds, and heal the lowest Health nearby allied Hero for 75 (+4% / level) Health.",
       cost: {
         type: "Mana",
         amount: 80
@@ -164,7 +164,7 @@ const lili: Hero = {
         id: "LiLiFreeDrinks",
         name: "Free Drinks",
         descriptionShort: "Healing Brew cost reduced on low Health targets",
-        descriptionLong: "Healing Brew's cooldown is reduced by 1 second and its Mana cost is refunded if it heals a Hero under 50% Health.",
+        descriptionLong: "When Healing Brew heals a Hero under 50% Health, its cooldown is reduced by 1 second, and its Mana cost is refunded.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -174,7 +174,7 @@ const lili: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10.2,
+          healing: 10,
           magicalDamage: 0
         },
         order: 1,
@@ -376,7 +376,7 @@ const lili: Hero = {
         id: "LiLiHeroicAbilityJugof1000Cups",
         name: "Jug of 1,000 Cups",
         descriptionShort: "Rapidly heal nearby allies",
-        descriptionLong: "Channel for up to 6 seconds. Every 0.25 seconds, increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50 additional seconds, and heal the lowest Health nearby allied Hero for 66 (+4% / level) Health.",
+        descriptionLong: "Channel for up to 6 seconds. Every 0.25 seconds, increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50 additional seconds, and heal the lowest Health nearby allied Hero for 75 (+4% / level) Health.",
         cost: {
           type: "Mana",
           amount: 80
@@ -526,7 +526,7 @@ const lili: Hero = {
         id: "LiLiPickMeUp",
         name: "Pick Me Up",
         descriptionShort: "Healing Brew heals more on low Health targets",
-        descriptionLong: "Healing Brew's healing for Heroes is increased by 33% if they are under 50% Health.",
+        descriptionLong: "Healing Brew heals for 33% more when the target is under 50% Health.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -646,7 +646,7 @@ const lili: Hero = {
         id: "LiLiShakeItOff",
         name: "Shake It Off",
         descriptionShort: "Gain Armor while disabled, empower Fast Feet",
-        descriptionLong: "Gain 35 Armor while Stunned, Silenced, or Rooted. Passive: Increase Fast Feet's cooldown refresh rate to 75%",
+        descriptionLong: "While Stunned, Silenced, or Rooted and for 2 seconds afterwards, Li Li gains 35 Armor. Passive: Increase Fast Feet's cooldown refresh rate to 75%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -673,8 +673,6 @@ const lili: Hero = {
     physicalDamage: 37.49999999999999,
     mobility: 24.205357142857146,
     healing: 1.8197277033667174,
-    magicalDamage: 14.805591325953626
+    magicalDamage: 3.7069938337117287
   }
 };
-      
-export default lili;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const malfurion: Hero = {
+export const malfurion: Hero = {
   name: "Malfurion",
   nameNormalized: "malfurion",
   franchise: "Warcraft",
@@ -170,7 +170,7 @@ const malfurion: Hero = {
         id: "MalfurionEntanglingRootsDeepRootsTalent",
         name: "Deep Roots",
         descriptionShort: "Quest: Entangling Roots grants permanent Mana",
-        descriptionLong: "Entangling Roots grows 25% larger, and persist on the ground 40% longer. Repeatable Quest: Every time an enemy Hero becomes Rooted, gain 10 Mana permanently.",
+        descriptionLong: "Entangling Roots grows 25% larger, and persist on the ground 40% longer. Repeatable Quest: Every time an enemy Hero becomes Rooted, gain 14 Mana permanently.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -232,7 +232,10 @@ const malfurion: Hero = {
           magicalDamage: 0
         },
         order: 3,
-        tier: "level1"
+        tier: "level1",
+        linkedAbilityIds: [
+          "MalfurionEntanglingRoots"
+        ]
       }
     ],
     [
@@ -263,7 +266,7 @@ const malfurion: Hero = {
         id: "MalfurionCelestialAlignment",
         name: "Celestial Alignment",
         descriptionShort: "Moonfire reveals longer, empowers Attacks",
-        descriptionLong: "Increase Moonfire's reveal duration by 3 seconds. Malfurion's Basic Attacks against Heroes revealed by Moonfire deal 75% more damage.",
+        descriptionLong: "Increase Moonfire's reveal duration by 3 seconds. Malfurion's Basic Attacks against Heroes revealed by Moonfire deal 85% more damage.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -274,7 +277,7 @@ const malfurion: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15
+          magicalDamage: 17
         },
         order: 2,
         tier: "level4",
@@ -491,7 +494,7 @@ const malfurion: Hero = {
         id: "MalfurionRevitalizeInnervateTalent",
         name: "Revitalize",
         descriptionShort: "Innervate also benefits Malfurion",
-        descriptionLong: "Using Innervate also grants Malfurion 80 Mana and causes his Basic Ability cooldowns to refresh 50% faster for 5 seconds.",
+        descriptionLong: "Using Innervate also grants Malfurion 15% of his max Mana and causes his Basic Ability cooldowns to refresh 50% faster for 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -516,7 +519,7 @@ const malfurion: Hero = {
         id: "MalfurionYserasGift",
         name: "Ysera's Gift",
         descriptionShort: "Increase Regrowth heal at high Health",
-        descriptionLong: "While Malfurion is above 75% Health, Regrowth's healing-over-time is increased by 60%.",
+        descriptionLong: "While Malfurion is above 75% Health, Regrowth's healing-over-time is increased by 75%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -539,7 +542,7 @@ const malfurion: Hero = {
         id: "MalfurionRegrowthNaturesBalance",
         name: "Nature's Balance",
         descriptionShort: "Increase Moonfire area, Regrowth duration",
-        descriptionLong: "Increase Moonfire's area by 25% and Regrowth's duration by 3 seconds.",
+        descriptionLong: "Increase Moonfire's area by 25% and Regrowth's duration by 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -563,7 +566,7 @@ const malfurion: Hero = {
         id: "MalfurionMoonfireMoonlitHarmonyTalent",
         name: "Moonlit Harmony",
         descriptionShort: "Moonfire heals more per ally affected by Regrowth",
-        descriptionLong: "Increase Moonfire's heal by 15% per ally affected by Regrowth.",
+        descriptionLong: "Increase Moonfire's heal by 20%, and 15% per ally affected by Regrowth.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -573,7 +576,7 @@ const malfurion: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 3,
+          healing: 4,
           magicalDamage: 0
         },
         order: 3,
@@ -615,7 +618,7 @@ const malfurion: Hero = {
         id: "MalfurionMasteryAstralCommunion",
         name: "Astral Communion",
         descriptionShort: "Activate to teleport and cast Twilight Dream",
-        descriptionLong: "Activate to Channel for 1 second, and then instantly teleport and cast Twilight Dream at the targeted location.  Cooldown is shared with Twilight Dream. Passive: Increase Twilight Dream's Silence duration to 4 seconds.",
+        descriptionLong: "Activate to Channel for 1 second, and then instantly teleport and cast Twilight Dream at the targeted location. Cooldown is shared with Twilight Dream. Passive: Increase Twilight Dream's Silence duration to 5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -668,7 +671,7 @@ const malfurion: Hero = {
         cooldown: null,
         category: "Talent",
         type: "W",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_moonfire_a.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_moonfire.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -690,8 +693,6 @@ const malfurion: Hero = {
     physicalDamage: 33.33333333333333,
     mobility: 24.006944444444446,
     healing: 59.75950443337788,
-    magicalDamage: 26.743961681648965
+    magicalDamage: 6.696098714349047
   }
 };
-      
-export default malfurion;

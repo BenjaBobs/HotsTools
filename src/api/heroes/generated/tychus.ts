@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const tychus: Hero = {
+export const tychus: Hero = {
   name: "Tychus",
   nameNormalized: "tychus",
   franchise: "Starcraft",
@@ -51,7 +51,7 @@ const tychus: Hero = {
       id: "TychusOverkillTargeted",
       name: "Overkill",
       descriptionShort: "Attack one target while moving, damaging nearby enemies as well",
-      descriptionLong: "Deal 552 (+4% / level) damage to the target and 276 (+4% / level) damage to nearby targets over 4 seconds. Reactivate to select a new target.  Can move and use Abilities while Channeling.",
+      descriptionLong: "Deal 552 (+4% / level) damage to the target and 276 (+4% / level) damage to nearby targets over 4 seconds. Reactivate to select a new target. Can move and use Abilities while Channeling.",
       cost: {
         type: "Mana",
         amount: 60
@@ -542,7 +542,7 @@ const tychus: Hero = {
         id: "TychusMasteryFragGrenadeTitanGrenade",
         name: "Titan Grenade",
         descriptionShort: "Increases Frag Grenade damage to Heroes",
-        descriptionLong: "Frag Grenade deals bonus damage to Heroes equal to 5% of their maximum Health.  Each enemy Hero hit by Frag Grenade reduces its cooldown by 1 second.",
+        descriptionLong: "Frag Grenade deals bonus damage to Heroes equal to 5% of their maximum Health. Each enemy Hero hit by Frag Grenade reduces its cooldown by 1 second.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -569,7 +569,7 @@ const tychus: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -618,7 +618,7 @@ const tychus: Hero = {
         id: "TychusMasteryDrakkenLaserFocusingDiodes",
         name: "Focusing Diodes",
         descriptionShort: "Increase Laser Drill range and damage",
-        descriptionLong: "Increases the range of the Drakken Laser Drill by 50%.  Deals increasing damage the longer it remains on a single target, up to 100% extra damage.",
+        descriptionLong: "Increases the range of the Drakken Laser Drill by 50%. Deals increasing damage the longer it remains on a single target, up to 100% additional damage.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -644,7 +644,7 @@ const tychus: Hero = {
         id: "TychusCanDoThisAllDayOverkillTalent",
         name: "Can Do This All Day",
         descriptionShort: "Reduce Overkill cooldown, gain Armor",
-        descriptionLong: "Reduce Overkill's cooldown by 5 seconds.  While Channeling Overkill, Tychus gains 40 Armor.",
+        descriptionLong: "Reduce Overkill's cooldown by 5 seconds. While Channeling Overkill, Tychus gains 40 Armor.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -667,7 +667,7 @@ const tychus: Hero = {
         id: "TychusRunAndGunBobAndWeave",
         name: "Bob and Weave",
         descriptionShort: "Adds Run and Gun charges and reduces Mana cost",
-        descriptionLong: "Run and Gun and Odin's Thrusters gain 2 additional charges and reduces Run and Gun's Mana cost from 50 to 25.  After using Run and Gun, increase Tychus's Basic Attack range by 1.5 for 4 seconds.",
+        descriptionLong: "Run and Gun and Odin's Thrusters gain 2 additional charges and reduces Run and Gun's Mana cost from 50 to 25. After using Run and Gun, increase Tychus's Basic Attack range by 1.5 for 4 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -701,8 +701,6 @@ const tychus: Hero = {
     physicalDamage: 100,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 35.884863343321534
+    magicalDamage: 8.984779074922418
   }
 };
-      
-export default tychus;

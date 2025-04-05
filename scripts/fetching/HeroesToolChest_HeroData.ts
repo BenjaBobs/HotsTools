@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 import { PatchVersion } from './HeroesPatchNotes_HeroesPatchData';
 
 export async function GetLatestHeroData(patches: PatchVersion[]) {
@@ -15,7 +13,7 @@ export async function GetLatestHeroData(patches: PatchVersion[]) {
     // https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/2.53.1.83632/data/herodata_83632_localized.json
     // https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/<full-version>/data/herodata_<build-number>_localized.json
     const gameDataResponse = await fetch(
-      `https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/${fullVersion}/data/herodata_${build}_localized.json`
+      `https://raw.githubusercontent.com/HeroesToolChest/heroes-data/master/heroesdata/${fullVersion}/data/herodata_${build}_localized.json`,
     );
 
     if (gameDataResponse.status === 404) {
@@ -28,7 +26,7 @@ export async function GetLatestHeroData(patches: PatchVersion[]) {
     console.log(
       `Success! Found hero data for patch! ${
         Object.keys(gameData).length
-      } heroes found!`
+      } heroes found!`,
     );
 
     return gameData as { [key: string]: HTC_Hero };

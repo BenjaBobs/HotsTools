@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const ragnaros: Hero = {
+export const ragnaros: Hero = {
   name: "Ragnaros",
   nameNormalized: "ragnaros",
   franchise: "Warcraft",
@@ -267,7 +267,7 @@ const ragnaros: Hero = {
         id: "RagnarosBlastWaveSlowBurn",
         name: "Slow Burn",
         descriptionShort: "Blast Wave slows enemies",
-        descriptionLong: "Blast Wave slows enemies hit by 40% for 2 seconds.",
+        descriptionLong: "Blast Wave Slows enemies hit by 40% for 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -740,7 +740,7 @@ const ragnaros: Hero = {
           id: "RagnarosBigRagMeteorShower",
           name: "Meteor Shower",
           descriptionShort: "Summon a line of meteors",
-          descriptionLong: "Vector TargetingSummon 3 meteors at the target point that fall in the target direction. Each meteor deals 151 (+4% / level) damage and slows enemies by 25% for 2 seconds. Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
+          descriptionLong: "Vector TargetingSummon 3 meteors at the target point that fall in the target direction. Each meteor deals 151 (+4% / level) damage and Slows enemies by 25% for 2 seconds. Damage increased by 25% versus Minions, Mercenaries, and Monsters.",
           cooldown: 2.5,
           category: "basic",
           type: "W",
@@ -834,8 +834,6 @@ const ragnaros: Hero = {
     physicalDamage: 75,
     mobility: 24.006944444444446,
     healing: 34.79897971577797,
-    magicalDamage: 53.25429795090651
+    magicalDamage: 13.333702773262402
   }
 };
-      
-export default ragnaros;

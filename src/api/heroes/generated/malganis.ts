@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const malganis: Hero = {
+export const malganis: Hero = {
   name: "Mal'Ganis",
   nameNormalized: "malganis",
   franchise: "Warcraft",
@@ -281,7 +281,7 @@ const malganis: Hero = {
         id: "MalGanisNecroticEmbraceEchoOfDoom",
         name: "Echo of Doom",
         descriptionShort: "Necrotic Embrace explodes when expiring",
-        descriptionLong: "When Necrotic Embrace expires, it explodes again for 68 (+4% / level) damage.  For each enemy Hero hit, gain 5 Mana and reduce the cooldown of Necrotic Embrace by 0.75 seconds. Does not wake Sleeping targets.",
+        descriptionLong: "When Necrotic Embrace expires, it explodes again for 68 (+4% / level) damage. For each enemy Hero hit, gain 5 Mana and reduce the cooldown of Necrotic Embrace by 0.75 seconds. Does not wake Sleeping targets.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -356,7 +356,7 @@ const malganis: Hero = {
         id: "MalGanisNightRushSpreadingPlague",
         name: "Spreading Plague",
         descriptionShort: "Periodically deal damage after casting Night Rush",
-        descriptionLong: "After casting Night Rush, deal 33 (+4% / level) damage per second to nearby enemies.  This effect lasts for 5 seconds and Basic Attacks against Heroes refresh its duration. Does not wake Sleeping targets.",
+        descriptionLong: "After casting Night Rush, deal 33 (+4% / level) damage per second to nearby enemies. This effect lasts for 5 seconds and Basic Attacks against Heroes refresh its duration. Does not wake Sleeping targets.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -460,7 +460,7 @@ const malganis: Hero = {
         id: "MalGanisNightRushTheNightBeckons",
         name: "The Night Beckons",
         descriptionShort: "Night Rush Slows enemies",
-        descriptionLong: "Basic Attacks deal 200% bonus damage to Sleeping enemies.  After Night Rush's Sleep ends, targets are Slowed by 30% for 3 seconds.",
+        descriptionLong: "Basic Attacks deal 200% bonus damage to Sleeping enemies. After Night Rush's Sleep ends, targets are Slowed by 30% for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -554,7 +554,7 @@ const malganis: Hero = {
         id: "MalGanisFelClawsBlindAsABat",
         name: "Blind as a Bat",
         descriptionShort: "Remove Fel Claws cooldown, but lose all vision",
-        descriptionLong: "Activate to erupt with blind rage, removing the cooldown and Mana cost of Fel Claws, but losing all vision. Lasts 6 seconds.  Enemy Heroes hit by the final slash of Fel Claws reduces the cooldown of this Ability by 4 seconds.",
+        descriptionLong: "Activate to erupt with blind rage, removing the cooldown and Mana cost of Fel Claws, but losing all vision. Lasts 6 seconds. Enemy Heroes hit by the final slash of Fel Claws reduces the cooldown of this Ability by 4 seconds.",
         cooldown: 60,
         category: "Talent",
         type: "Active",
@@ -653,7 +653,7 @@ const malganis: Hero = {
         id: "MalGanisNightRushAloneInTheDark",
         name: "Alone in the Dark",
         descriptionShort: "Night Rush reduces enemy vision",
-        descriptionLong: "Reduce the cooldown of Night Rush by 4 seconds.  Enemy Heroes put to Sleep by Night Rush have their vision greatly reduced during the Sleep and for 2 seconds after.",
+        descriptionLong: "Reduce the cooldown of Night Rush by 4 seconds. Enemy Heroes put to Sleep by Night Rush have their vision greatly reduced during the Sleep and for 2 seconds after.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -679,8 +679,6 @@ const malganis: Hero = {
     physicalDamage: 43.636363636363626,
     mobility: 24.432114512471657,
     healing: 5.83019555447589,
-    magicalDamage: 13.279760283301552
+    magicalDamage: 3.324959361607802
   }
 };
-      
-export default malganis;

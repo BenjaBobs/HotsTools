@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const blaze: Hero = {
+export const blaze: Hero = {
   name: "Blaze",
   nameNormalized: "blaze",
   franchise: "Starcraft",
@@ -23,7 +23,7 @@ const blaze: Hero = {
       nameId: "FirebatHeroWeapon",
       range: 4.5,
       period: 1,
-      damage: 55,
+      damage: 60,
       damageScale: 0.04
     }
   ],
@@ -51,7 +51,7 @@ const blaze: Hero = {
       id: "FirebatFlameStream",
       name: "Flame Stream",
       descriptionShort: "Fire two streams of flames",
-      descriptionLong: "Fire two streams that deal 76 (+4% / level) damage to enemies hit, and an additional 120 (+4% / level) damage to enemies hit by both streams. Flame Stream Ignites Oil Spills it comes in contact with.",
+      descriptionLong: "Fire two streams that deal 76 (+4% / level) damage to enemies hit, and an additional 120 (+4% / level) damage to non-Structure enemies hit by both streams. Flame Stream Ignites Oil Spills it comes in contact with.",
       cost: {
         type: "Mana",
         amount: 30
@@ -123,12 +123,12 @@ const blaze: Hero = {
       id: "FirebatBunkerDrop",
       name: "Bunker Drop",
       descriptionShort: "Call down a Bunker",
-      descriptionLong: "After 0.5 seconds, deploy and enter a Bunker with 1435 (+4% / level) Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 170 (+4% / level) damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
+      descriptionLong: "After 0.5 seconds, deploy and enter a Bunker with 1435 (+4% / level) Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 150 (+4% / level) damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
       cost: {
         type: "Mana",
-        amount: 70
+        amount: 80
       },
-      cooldown: 70,
+      cooldown: 80,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_bunker.png",
@@ -138,7 +138,7 @@ const blaze: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 34
+        magicalDamage: 30
       }
     },
     {
@@ -170,7 +170,7 @@ const blaze: Hero = {
         id: "FirebatAdrenalineStimpack",
         name: "Adrenaline Stimpack",
         descriptionShort: "Activate to gain Attack Speed, Move Speed",
-        descriptionLong: "Passive: While over 80% Health, gain 25% bonus Attack Speed and 10% bonus Movement Speed. Activate to gain 100% Attack Speed and 25% Movement Speed for 5 seconds.",
+        descriptionLong: "Passive: While over 80% Health, gain 20% bonus Attack Speed and 10% bonus Movement Speed. Activate to gain 100% Attack Speed and 25% Movement Speed for 5 seconds.",
         cooldown: 30,
         category: "Talent",
         type: "Active",
@@ -308,11 +308,11 @@ const blaze: Hero = {
         id: "FirebatWeaponIncineratorGauntlets",
         name: "Incinerator Gauntlets",
         descriptionShort: "Basic Attacks deal bonus damage to non-Heroes",
-        descriptionLong: "Increase Basic Attack area by 15%, and Basic Attack damage to Minions, Mercenaries, and Monsters by 50%.",
+        descriptionLong: "Increase Basic Attack area by 15%, and Basic Attack damage to Minions, Mercenaries, and Monsters by 40%.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_slow.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_building.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -322,7 +322,10 @@ const blaze: Hero = {
           magicalDamage: 0
         },
         order: 3,
-        tier: "level4"
+        tier: "level4",
+        linkedAbilityIds: [
+          "FirebatIgnite"
+        ]
       }
     ],
     [
@@ -330,7 +333,7 @@ const blaze: Hero = {
         id: "FirebatFlameStreamSuppressiveFire",
         name: "Suppressive Fire",
         descriptionShort: "Flame Stream reduces Spell Power",
-        descriptionLong: "Each stream of Flame Stream reduces the Spell Power of Heroes hit by 25% for 4 seconds, up to 50%.",
+        descriptionLong: "Each stream of Flame Stream reduces the Spell Power of Heroes hit by 20% for 4 seconds, up to 40%.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -353,7 +356,7 @@ const blaze: Hero = {
         id: "FirebatOilSpillNanomachineCoating",
         name: "Nanomachine Coating",
         descriptionShort: "Oil Spill reduces Attack Speed",
-        descriptionLong: "Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 50% for 3 seconds.",
+        descriptionLong: "Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 35% for 4 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -407,12 +410,12 @@ const blaze: Hero = {
         id: "FirebatHeroicAbilityBunkerDrop",
         name: "Bunker Drop",
         descriptionShort: "Call down a Bunker",
-        descriptionLong: "After 0.5 seconds, deploy and enter a Bunker with 1435 (+4% / level) Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 170 (+4% / level) damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
+        descriptionLong: "After 0.5 seconds, deploy and enter a Bunker with 1435 (+4% / level) Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 150 (+4% / level) damage to enemies in a line. Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.",
         cost: {
           type: "Mana",
-          amount: 70
+          amount: 80
         },
-        cooldown: 70,
+        cooldown: 80,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_bunker.png",
@@ -422,7 +425,7 @@ const blaze: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 34
+          magicalDamage: 30
         },
         order: 1,
         tier: "level10",
@@ -522,7 +525,7 @@ const blaze: Hero = {
         id: "FirebatJetPropulsionCollisionCourse",
         name: "Collision Course",
         descriptionShort: "Jet Propulsion collision deals damage",
-        descriptionLong: "Jet Propulsion's collision deals 275 (+4% / level) damage to the first enemy Hero hit.",
+        descriptionLong: "Jet Propulsion's collision deals 260 (+4% / level) damage to the first enemy Hero hit.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -533,7 +536,7 @@ const blaze: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 55
+          magicalDamage: 52
         },
         order: 3,
         tier: "level13",
@@ -681,17 +684,18 @@ const blaze: Hero = {
           magicalDamage: 3.6
         },
         order: 3,
-        tier: "level20"
+        tier: "level20",
+        linkedAbilityIds: [
+          "FirebatIgnite"
+        ]
       }
     ]
   ],
   analysis: {
     tankiness: 87.38229755178907,
-    physicalDamage: 27.500000000000004,
+    physicalDamage: 30,
     mobility: 24.006944444444446,
     healing: 0.18219361107737156,
-    magicalDamage: 19.122854807954237
+    magicalDamage: 4.640165509088222
   }
 };
-      
-export default blaze;

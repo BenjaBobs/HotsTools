@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const lostvikings: Hero = {
+export const lostvikings: Hero = {
   name: "The Lost Vikings",
   nameNormalized: "lostvikings",
   franchise: "Classic",
@@ -56,7 +56,7 @@ const lostvikings: Hero = {
       id: "LostVikingsSpinToWin",
       name: "Spin To Win!",
       descriptionShort: "Deals damage around each Viking",
-      descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
+      descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies. Deals 100% bonus damage to enemy Heroes.",
       cooldown: 10,
       category: "basic",
       type: "Q",
@@ -114,7 +114,7 @@ const lostvikings: Hero = {
       cooldown: 20,
       category: "basic",
       type: "W",
-      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+      icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
       isPassive: false,
       analysis: {
         mobility: 0,
@@ -128,7 +128,7 @@ const lostvikings: Hero = {
       id: "LostVikingsVikingBribery",
       name: "Viking Bribery",
       descriptionShort: "Kill Minions to bribe a Mercenary",
-      descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
+      descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.",
       cooldown: null,
       charges: {
         chargesMax: 5,
@@ -151,7 +151,7 @@ const lostvikings: Hero = {
       id: "LostVikingsLongboatRaidNewer",
       name: "Longboat Raid!",
       descriptionShort: "Load into a Longboat to attack enemies",
-      descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+      descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area. The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
       cooldown: 90,
       category: "heroic",
       type: "Heroic",
@@ -259,7 +259,7 @@ const lostvikings: Hero = {
         id: "LostVikingsMasteryVikingBribery",
         name: "Viking Bribery",
         descriptionShort: "Kill Minions to bribe a Mercenary",
-        descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
+        descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.",
         cooldown: null,
         charges: {
           chargesMax: 5,
@@ -377,7 +377,7 @@ const lostvikings: Hero = {
         id: "LostVikingsMasteryBaleogTheFierce",
         name: "Baleog the Fierce",
         descriptionShort: "Baleog gains Attack Speed, Range",
-        descriptionLong: "Increase Baleog's attack range by 2.5.  While near Olaf and Erik, he becomes inspired by the power of teamwork and his Attack Speed is increased by 50%.",
+        descriptionLong: "Increase Baleog's attack range by 2.5. While near Olaf and Erik, he becomes inspired by the power of teamwork and his Attack Speed is increased by 50%.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -400,7 +400,7 @@ const lostvikings: Hero = {
         id: "LostVikingsMasterySpinToWin",
         name: "Spin To Win!",
         descriptionShort: "Deals damage around each Viking",
-        descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
+        descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies. Deals 100% bonus damage to enemy Heroes.",
         cooldown: 10,
         category: "Talent",
         type: "Active",
@@ -442,7 +442,7 @@ const lostvikings: Hero = {
         id: "LostVikingsHeroicAbilityLongboatRaid",
         name: "Longboat Raid!",
         descriptionShort: "Load into a Longboat to attack enemies",
-        descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+        descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area. The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
         cooldown: 90,
         category: "Talent",
         type: "Heroic",
@@ -537,7 +537,7 @@ const lostvikings: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Passive",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -621,7 +621,7 @@ const lostvikings: Hero = {
         id: "HeroGenericExecutionerPassive",
         name: "Executioner",
         descriptionShort: "Attacking disabled Heroes increases damage",
-        descriptionLong: "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by 30% for 3 seconds.",
+        descriptionLong: "Attacking a Hero that is Slowed, Rooted, or Stunned increases your Basic Attack damage by 30% for 3 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -718,7 +718,7 @@ const lostvikings: Hero = {
         id: "LostVikingsTalentFuryoftheStorm",
         name: "Fury of the Storm",
         descriptionShort: "Basic Attacks chain to non-Heroes",
-        descriptionLong: "Every 5 seconds, the next Basic Attack will deal an additional 41 (+4% / level) damage to the target, and 105 (+4% / level) damage to all nearby Minions, Mercenaries and Monsters.  Each Viking has their own cooldown.",
+        descriptionLong: "Every 5 seconds, the next Basic Attack will deal an additional 41 (+4% / level) damage to the target, and 105 (+4% / level) damage to all nearby Minions, Mercenaries and Monsters. Each Viking has their own cooldown.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -806,7 +806,7 @@ const lostvikings: Hero = {
           id: "LostVikingsSpinToWin",
           name: "Spin To Win!",
           descriptionShort: "Deals damage around each Viking",
-          descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
+          descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies. Deals 100% bonus damage to enemy Heroes.",
           cooldown: 10,
           category: "basic",
           type: "Q",
@@ -864,7 +864,7 @@ const lostvikings: Hero = {
           cooldown: 20,
           category: "basic",
           type: "W",
-          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
           isPassive: false,
           analysis: {
             mobility: 0,
@@ -878,7 +878,7 @@ const lostvikings: Hero = {
           id: "LostVikingsVikingBribery",
           name: "Viking Bribery",
           descriptionShort: "Kill Minions to bribe a Mercenary",
-          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
+          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.",
           cooldown: null,
           charges: {
             chargesMax: 5,
@@ -919,7 +919,7 @@ const lostvikings: Hero = {
           id: "LostVikingsLongboatRaidNewer",
           name: "Longboat Raid!",
           descriptionShort: "Load into a Longboat to attack enemies",
-          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area. The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
           cooldown: 90,
           category: "heroic",
           type: "Heroic",
@@ -947,7 +947,7 @@ const lostvikings: Hero = {
       name: "Erik",
       nameNormalized: "heroerik",
       size: 0.5,
-      movementSpeed: 5.5664,
+      movementSpeed: 5.56577,
       health: {
         amount: 804,
         scale: 0.04,
@@ -1005,7 +1005,7 @@ const lostvikings: Hero = {
           id: "LostVikingsSpinToWin",
           name: "Spin To Win!",
           descriptionShort: "Deals damage around each Viking",
-          descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
+          descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies. Deals 100% bonus damage to enemy Heroes.",
           cooldown: 10,
           category: "basic",
           type: "Q",
@@ -1063,7 +1063,7 @@ const lostvikings: Hero = {
           cooldown: 20,
           category: "basic",
           type: "W",
-          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
           isPassive: false,
           analysis: {
             mobility: 0,
@@ -1077,7 +1077,7 @@ const lostvikings: Hero = {
           id: "LostVikingsVikingBribery",
           name: "Viking Bribery",
           descriptionShort: "Kill Minions to bribe a Mercenary",
-          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
+          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.",
           cooldown: null,
           charges: {
             chargesMax: 5,
@@ -1118,7 +1118,7 @@ const lostvikings: Hero = {
           id: "LostVikingsLongboatRaidNewer",
           name: "Longboat Raid!",
           descriptionShort: "Load into a Longboat to attack enemies",
-          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area. The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
           cooldown: 90,
           category: "heroic",
           type: "Heroic",
@@ -1137,7 +1137,7 @@ const lostvikings: Hero = {
       analysis: {
         tankiness: 3.216,
         physicalDamage: 3.542857142857143,
-        mobility: 28.632,
+        mobility: 28.62885,
         healing: 0.4,
         magicalDamage: 101.1
       }
@@ -1204,7 +1204,7 @@ const lostvikings: Hero = {
           id: "LostVikingsSpinToWin",
           name: "Spin To Win!",
           descriptionShort: "Deals damage around each Viking",
-          descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
+          descriptionLong: "Activate to have each Viking deal 85 (+4% / level) damage to nearby enemies. Deals 100% bonus damage to enemy Heroes.",
           cooldown: 10,
           category: "basic",
           type: "Q",
@@ -1262,7 +1262,7 @@ const lostvikings: Hero = {
           cooldown: 20,
           category: "basic",
           type: "W",
-          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_damage.png",
+          icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_searing.png",
           isPassive: false,
           analysis: {
             mobility: 0,
@@ -1276,7 +1276,7 @@ const lostvikings: Hero = {
           id: "LostVikingsVikingBribery",
           name: "Viking Bribery",
           descriptionShort: "Kill Minions to bribe a Mercenary",
-          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. Current number of Bribe stacks: 0",
+          descriptionLong: "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.",
           cooldown: null,
           charges: {
             chargesMax: 5,
@@ -1317,7 +1317,7 @@ const lostvikings: Hero = {
           id: "LostVikingsLongboatRaidNewer",
           name: "Longboat Raid!",
           descriptionShort: "Load into a Longboat to attack enemies",
-          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
+          descriptionLong: "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% / level) damage per second and can fire a mortar that deals 228 (+4% / level) damage in an area. The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds. Requires all surviving Vikings to be nearby.",
           cooldown: 90,
           category: "heroic",
           type: "Heroic",
@@ -1347,8 +1347,6 @@ const lostvikings: Hero = {
     physicalDamage: 0,
     mobility: 100,
     healing: 0.09716992590793151,
-    magicalDamage: 14.917597384908746
+    magicalDamage: 3.7350376828727647
   }
 };
-      
-export default lostvikings;

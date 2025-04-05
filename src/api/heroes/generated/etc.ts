@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const etc: Hero = {
+export const etc: Hero = {
   name: "E.T.C.",
   nameNormalized: "etc",
   franchise: "Warcraft",
@@ -8,9 +8,9 @@ const etc: Hero = {
   size: 0.9375,
   movementSpeed: 4.8398,
   health: {
-    amount: 2250,
+    amount: 2280,
     scale: 0.04,
-    regenRate: 4.6875,
+    regenRate: 4.75,
     regenScale: 0.04
   },
   energy: {
@@ -33,7 +33,7 @@ const etc: Hero = {
       id: "RockstarDummy",
       name: "Rockstar",
       descriptionShort: "After using an ability, E. T. C. gains Armor",
-      descriptionLong: "After E. T. C. uses a Basic or Heroic ability, he gains 20 Armor for 2 seconds.  This effect does not stack with itself.",
+      descriptionLong: "Using a Basic Ability grants 20 Armor for 2 seconds. Heroic Abilities grant 60 Armor.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -42,7 +42,7 @@ const etc: Hero = {
       analysis: {
         mobility: 0,
         physicalDamage: 0,
-        tankiness: 4,
+        tankiness: 0,
         healing: 0,
         magicalDamage: 0
       }
@@ -50,8 +50,8 @@ const etc: Hero = {
     {
       id: "L90ETCPowerslide",
       name: "Powerslide",
-      descriptionShort: "Dash to an area, stunning and damaging enemies hit",
-      descriptionLong: "Slide to a location dealing 91 (+4% / level) damage and stunning enemies hit for 1.25 second.",
+      descriptionShort: "Dash to an area, Stunning and damaging enemies hit",
+      descriptionLong: "Slide to a location dealing 105 (+4% / level) damage and Stunning enemies hit for 1.25 seconds.",
       cost: {
         type: "Mana",
         amount: 60
@@ -66,7 +66,7 @@ const etc: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 22.75
+        magicalDamage: 26.25
       }
     },
     {
@@ -139,10 +139,10 @@ const etc: Hero = {
       id: "L90ETCStageDive",
       name: "Stage Dive",
       descriptionShort: "Dive to a location and deal damage",
-      descriptionLong: "Leap to target location, landing after 2.75 seconds, dealing 330 (+4% / level) damage to enemies in the area, and slowing them by 50% for 3 seconds.",
+      descriptionLong: "Leap to target location, landing after 2.75 seconds, dealing 330 (+4% / level) damage to enemies in the area, and slowing them by 50% for 4 seconds.",
       cost: {
         type: "Mana",
-        amount: 100
+        amount: 70
       },
       cooldown: 75,
       category: "heroic",
@@ -164,7 +164,7 @@ const etc: Hero = {
         id: "ETCMasteryGuitarHero",
         name: "Guitar Hero",
         descriptionShort: "Basic Attacks add duration, heal during Guitar Solo",
-        descriptionLong: "While Guitar Solo is active, E. T. C. heals for 50% of his damage dealt by Basic Attacks.  Basic Attacks increase the duration of Guitar Solo by 0.5 seconds.",
+        descriptionLong: "While Guitar Solo is active, E. T. C. heals for 60% of his damage dealt by Basic Attacks. Basic Attacks increase the duration of Guitar Solo by 0.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -174,7 +174,7 @@ const etc: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 10,
+          healing: 12,
           magicalDamage: 0
         },
         order: 1,
@@ -236,7 +236,7 @@ const etc: Hero = {
         id: "ETCCrowdSurfer",
         name: "Crowd Surfer",
         descriptionShort: "Powerslide can go over terrain",
-        descriptionLong: "Allows Powerslide to travel over walls and terrain. If no enemies are hit, reduce the cooldown by 5 seconds and refund the Mana cost.",
+        descriptionLong: "Allows Powerslide to travel over walls and terrain. If no enemies are hit, reduce the cooldown by 7 seconds and refund the Mana cost.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -282,7 +282,7 @@ const etc: Hero = {
         id: "ETCMasterySpeedMetal",
         name: "Speed Metal",
         descriptionShort: "Move Speed is added to Rockstar",
-        descriptionLong: "Using a Basic or Heroic ability also gives nearby allied Heroes 20% Movement Speed for 2 seconds.",
+        descriptionLong: "Using a Basic or Heroic ability also gives nearby allied Heroes 20% Movement Speed for 2.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -307,7 +307,7 @@ const etc: Hero = {
         id: "L90ETCMasteryFaceMeltPinballWizard",
         name: "Pinball Wizard",
         descriptionShort: "Increases Face Melt damage after Powerslide",
-        descriptionLong: "Face Melt does 300% more damage to enemies recently affected by Powerslide.",
+        descriptionLong: "Hitting an enemy with Powerslide causes the next Face Melt against them within 2 seconds to deal 300% more damage.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -318,7 +318,7 @@ const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 60
         },
         order: 1,
         tier: "level7",
@@ -330,7 +330,7 @@ const etc: Hero = {
         id: "ETCMasteryHammeron",
         name: "Hammer-on",
         descriptionShort: "Guitar Solo increases Basic Attack damage",
-        descriptionLong: "While Guitar Solo is active your Basic Attacks deal 30% more damage.",
+        descriptionLong: "While Guitar Solo is active your Basic Attacks deal 35% more damage.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -341,7 +341,7 @@ const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 6
+          magicalDamage: 7
         },
         order: 2,
         tier: "level7",
@@ -353,7 +353,7 @@ const etc: Hero = {
         id: "ETCCombatStyleEchoPedal",
         name: "Echo Pedal",
         descriptionShort: "Abilities cause area damage",
-        descriptionLong: "Using a Basic or Heroic Ability releases two pulses of 15 (+4% / level) damage.  This deals 250% bonus damage to Minions, Mercenaries, and Monsters. The first occurs instantly, the second occurs 2 seconds later.",
+        descriptionLong: "Using a Basic or Heroic Ability releases two pulses of 18 (+4% / level) damage. This deals 200% bonus damage to Minions, Mercenaries, and Monsters. The first occurs instantly, the second occurs 2 seconds later.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -364,7 +364,7 @@ const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 50
+          magicalDamage: 40
         },
         order: 3,
         tier: "level7",
@@ -405,10 +405,10 @@ const etc: Hero = {
         id: "ETCHeroicAbilityStageDive",
         name: "Stage Dive",
         descriptionShort: "Dive to a location and deal damage",
-        descriptionLong: "Leap to target location, landing after 2.75 seconds, dealing 330 (+4% / level) damage to enemies in the area, and slowing them by 50% for 3 seconds.",
+        descriptionLong: "Leap to target location, landing after 2.75 seconds, dealing 330 (+4% / level) damage to enemies in the area, and slowing them by 50% for 4 seconds.",
         cost: {
           type: "Mana",
-          amount: 100
+          amount: 70
         },
         cooldown: 75,
         category: "Talent",
@@ -479,8 +479,8 @@ const etc: Hero = {
       {
         id: "ETCMasteryFaceSmelt",
         name: "Face Smelt",
-        descriptionShort: "Face Melt slows enemies",
-        descriptionLong: "Face Melt slows enemies by 50% fading over 2 seconds.",
+        descriptionShort: "Face Melt Slows enemies",
+        descriptionLong: "Face Melt Slows enemies by 50%, decaying over 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -572,8 +572,8 @@ const etc: Hero = {
       {
         id: "L90ETCMasteryMoshPitTourBus",
         name: "Tour Bus",
-        descriptionShort: "Makes Powerslide usable during Mosh Pit",
-        descriptionLong: "Mosh Pit refreshes the cooldown of Powerslide. E. T. C. can Powerslide during Mosh Pit, which also increases its duration by 2 seconds.",
+        descriptionShort: "Cast Powerslide during Mosh Pit",
+        descriptionLong: "Channeling Mosh Pit refreshes Powerslide's cooldown, and it can be cast to increase Mosh Pit's duration by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -687,12 +687,10 @@ const etc: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 67.79661016949152,
+    tankiness: 68.7005649717514,
     physicalDamage: 61.87499999999999,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 15.603718332879327
+    magicalDamage: 4.036131225062804
   }
 };
-      
-export default etc;

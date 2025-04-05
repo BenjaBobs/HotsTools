@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const maiev: Hero = {
+export const maiev: Hero = {
   name: "Maiev",
   nameNormalized: "maiev",
   franchise: "Warcraft",
@@ -33,8 +33,14 @@ const maiev: Hero = {
       id: "MaievVaultOfTheWardens",
       name: "Vault of the Wardens",
       descriptionShort: "Leap into the air, becoming temporarily Immune",
-      descriptionLong: "Leap into the air, becoming Immune to all hostile effects for 0.75 seconds.",
+      descriptionLong: "Leap into the air, becoming Immune to all hostile effects for 0.75 seconds. After reaching Level 20, Vault of the Wardens gains an additional charge.",
       cooldown: 13,
+      charges: {
+        chargesMax: 1,
+        chargesInitial: 1,
+        chargeCost: 1,
+        recastCooldown: 0.75
+      },
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_maiev_trait.png",
@@ -117,7 +123,7 @@ const maiev: Hero = {
       id: "MaievContainmentDisc",
       name: "Containment Disc",
       descriptionShort: "Time Stop an enemy Hero and remove their vision",
-      descriptionLong: "Throw a glaive in the target direction. If an enemy Hero is hit, Containment Disc can be reactivated to remove their vision and Time Stop them for 4 seconds. Containment Disc automatically activates 6 seconds after hitting a Hero.",
+      descriptionLong: "Throw a glaive in the target direction. If an enemy Hero is hit, Containment Disc can be reactivated to remove their vision and Time Stop them for 4 seconds. Leaving Containment Silences the enemy Hero for 1.5 seconds. Containment Disc automatically activates 6 seconds after hitting a Hero.",
       cost: {
         type: "Mana",
         amount: 50
@@ -243,7 +249,7 @@ const maiev: Hero = {
         id: "MaievFanOfKnivesPinDown",
         name: "Pin Down",
         descriptionShort: "Quest: Hitting multiple Heroes empowers Fan of Knives",
-        descriptionLong: "Quest: Hit 3 enemy Heroes with a single Fan of Knives. Reward: Increase Fan of Knives damage by 25%. Reward: Each additional time 3 enemy Heroes are hit by a single Fan of Knives, gain an additional 5% damage, up to 40%. Reward: Hit 4 enemy Heroes with a single Fan of Knives to instantly gain all Rewards.",
+        descriptionLong: "Quest: Hit 3 enemy Heroes with a single Fan of Knives. Reward: Increase Fan of Knives damage by 35%. Reward: Each additional time 3 enemy Heroes are hit by a single Fan of Knives, gain an additional 5% damage, up to 50%. Reward: Hit 4 enemy Heroes with a single Fan of Knives to instantly gain all Rewards.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -339,7 +345,7 @@ const maiev: Hero = {
         id: "MaievUmbralBindBondsOfCorruption",
         name: "Bonds of Corruption",
         descriptionShort: "Umbral Bind pull reduces Armor, Movement Speed",
-        descriptionLong: "Enemy Heroes pulled by Umbral Bind have their Armor reduced by 10 and are Slowed by 20% for 4 seconds",
+        descriptionLong: "Enemy Heroes pulled by Umbral Bind have their Armor reduced by 15 and are Slowed by 25% for 3 seconds",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -389,7 +395,7 @@ const maiev: Hero = {
         id: "MaievContainmentDisc",
         name: "Containment Disc",
         descriptionShort: "Time Stop an enemy Hero and remove their vision",
-        descriptionLong: "Throw a glaive in the target direction. If an enemy Hero is hit, Containment Disc can be reactivated to remove their vision and Time Stop them for 4 seconds. Containment Disc automatically activates 6 seconds after hitting a Hero.",
+        descriptionLong: "Throw a glaive in the target direction. If an enemy Hero is hit, Containment Disc can be reactivated to remove their vision and Time Stop them for 4 seconds. Leaving Containment Silences the enemy Hero for 1.5 seconds. Containment Disc automatically activates 6 seconds after hitting a Hero.",
         cost: {
           type: "Mana",
           amount: 50
@@ -565,7 +571,7 @@ const maiev: Hero = {
         id: "MaievArmoredAssault",
         name: "Armored Assault",
         descriptionShort: "Armor increases Physical Damage dealt",
-        descriptionLong: "While Maiev has positive Armor of any kind, all Physical Damage dealt is increased by 20%.",
+        descriptionLong: "While Maiev has positive Armor of any kind, all Physical Damage dealt is increased by 25%.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -665,8 +671,6 @@ const maiev: Hero = {
     physicalDamage: 80.55555555555554,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 25.40666225629451
+    magicalDamage: 6.361268405010091
   }
 };
-      
-export default maiev;

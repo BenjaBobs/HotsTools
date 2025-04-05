@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const uther: Hero = {
+export const uther: Hero = {
   name: "Uther",
   nameNormalized: "uther",
   franchise: "Warcraft",
@@ -675,8 +675,6 @@ const uther: Hero = {
     physicalDamage: 37.5,
     mobility: 27.975198412698415,
     healing: 47.212437750516216,
-    magicalDamage: 17.676836465994736
+    magicalDamage: 4.425890350229053
   }
 };
-      
-export default uther;

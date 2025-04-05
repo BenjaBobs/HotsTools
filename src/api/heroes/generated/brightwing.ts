@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const brightwing: Hero = {
+export const brightwing: Hero = {
   name: "Brightwing",
   nameNormalized: "brightwing",
   franchise: "Warcraft",
@@ -8,9 +8,9 @@ const brightwing: Hero = {
   size: 0.6875,
   movementSpeed: 4.8398,
   health: {
-    amount: 1450,
+    amount: 1425,
     scale: 0.04,
-    regenRate: 3.0195,
+    regenRate: 2.9687,
     regenScale: 0.04
   },
   energy: {
@@ -33,8 +33,8 @@ const brightwing: Hero = {
       id: "BrightwingCalmingMist",
       name: "Soothing Mist",
       descriptionShort: "Remove disabling effects from allies",
-      descriptionLong: "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes. Passive: Brightwing heals nearby allied Heroes for 115 (+4% / level) every 4 seconds",
-      cooldown: 90,
+      descriptionLong: "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes. Passive: Brightwing heals nearby allied Heroes for 110 (+4% / level) every 4 seconds",
+      cooldown: 75,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_soothingmist.png",
@@ -43,7 +43,7 @@ const brightwing: Hero = {
         mobility: 0,
         physicalDamage: 0,
         tankiness: 0,
-        healing: 23,
+        healing: 22,
         magicalDamage: 0
       }
     },
@@ -211,7 +211,7 @@ const brightwing: Hero = {
         id: "BrightwingPhaseShiftHyperShift",
         name: "Hyper Shift",
         descriptionShort: "Increase Phase Shift healing",
-        descriptionLong: "Increase Phase Shift's healing by an additional 8% of the target's maximum Health. Nearby enemy Minion deaths reduce Phase Shift's cooldown by 1 second.",
+        descriptionLong: "Increase Phase Shift's healing by an additional 4% of the target's maximum Health. Nearby enemy Minion deaths reduce Phase Shift's cooldown by 0.5 second.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -221,7 +221,7 @@ const brightwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 1.6,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 2,
@@ -308,7 +308,7 @@ const brightwing: Hero = {
         id: "BrightwingMagicSpit",
         name: "Magic Spit",
         descriptionShort: "Basic Attacks reduce Soothing Mist cooldown",
-        descriptionLong: "Increase Basic Attack range by 1.1. Basic Attacks against Heroes reduce the cooldown of Soothing Mist by 6 seconds.",
+        descriptionLong: "Increase Basic Attack range by 1.1. Basic Attacks against Heroes reduce the cooldown of Soothing Mist by 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -322,7 +322,10 @@ const brightwing: Hero = {
           magicalDamage: 0
         },
         order: 3,
-        tier: "level4"
+        tier: "level4",
+        linkedAbilityIds: [
+          "BrightwingCalmingMist"
+        ]
       }
     ],
     [
@@ -602,7 +605,7 @@ const brightwing: Hero = {
         id: "BrightwingInvisibleFriends",
         name: "Invisible Friends",
         descriptionShort: "Blink Heal grants Stealth",
-        descriptionLong: "Blink Heal grants Stealth to Brightwing. If Blink Heal is cast on a Hero, they are also granted Stealth. While Stealthed by Invisible Friends, Heroes heal for 20 (+4% / level) Health per second and are Unrevealable for the first 0.5 seconds. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
+        descriptionLong: "Blink Heal grants Stealth to Brightwing and her Heroic targets for 9 seconds, and they are Unrevealable for the first 0.5 seconds. While Stealthed by Invisible Friends, Heroes heal for 25 (+4% / level) health per second. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -618,7 +621,7 @@ const brightwing: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 4,
+          healing: 2.8,
           magicalDamage: 0
         },
         order: 1,
@@ -705,12 +708,10 @@ const brightwing: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 43.69114877589453,
+    tankiness: 42.93785310734463,
     physicalDamage: 45,
     mobility: 29.9593253968254,
-    healing: 22.996882464877118,
-    magicalDamage: 12.173113593026425
+    healing: 22.75395765010729,
+    magicalDamage: 3.047879414807152
   }
 };
-      
-export default brightwing;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const mephisto: Hero = {
+export const mephisto: Hero = {
   name: "Mephisto",
   nameNormalized: "mephisto",
   franchise: "Diablo",
@@ -300,7 +300,7 @@ const mephisto: Hero = {
         id: "MephistoSpite",
         name: "Spite",
         descriptionShort: "Regen Globes activate Lord of Hatred",
-        descriptionLong: "Increase Regeneration Globe healing duration by 150%. Every tick of Regeneration Globe healing activates Lord of Hatred, reducing Basic Ability cooldowns by 1 second.",
+        descriptionLong: "Increase Regeneration Globe healing duration by 100%. Every tick of Regeneration Globe healing activates Lord of Hatred, reducing Basic Ability cooldowns by 1 second.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -310,7 +310,7 @@ const mephisto: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 30.2,
+          healing: 20.2,
           magicalDamage: 0
         },
         order: 3,
@@ -481,7 +481,7 @@ const mephisto: Hero = {
         id: "MephistoLordOfHatredHysteria",
         name: "Hysteria",
         descriptionShort: "Lord of Hatred reduces Heroic cooldown",
-        descriptionLong: "Lord of Hatred also reduces the cooldown of Mephisto's Heroic Ability.  Mephisto is healed for 15% of his maximum Health and Mana when he casts his Heroic Ability.",
+        descriptionLong: "Lord of Hatred also reduces the cooldown of Mephisto's Heroic Ability. Mephisto is healed for 15% of his maximum Health and Mana when he casts his Heroic Ability.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -526,7 +526,7 @@ const mephisto: Hero = {
         id: "MephistoSkullMissileLightningReaction",
         name: "Lightning Reaction",
         descriptionShort: "Skull Missile explodes when hitting Lightning Nova",
-        descriptionLong: "Skull Missile explodes on contact with Lightning Nova, dealing 138 (+4% / level) damage to nearby enemies.",
+        descriptionLong: "Skull Missile explodes on contact with Lightning Nova, dealing 120 (+4% / level) damage to nearby enemies.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -543,7 +543,7 @@ const mephisto: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 27.6
+          magicalDamage: 24
         },
         order: 1,
         tier: "level16",
@@ -704,8 +704,6 @@ const mephisto: Hero = {
     physicalDamage: 33,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 16.706676200853536
+    magicalDamage: 4.182983596867149
   }
 };
-      
-export default mephisto;

@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const lunara: Hero = {
+export const lunara: Hero = {
   name: "Lunara",
   nameNormalized: "lunara",
   franchise: "Warcraft",
@@ -40,7 +40,7 @@ const lunara: Hero = {
       id: "DryadNaturesToxin",
       name: "Nature's Toxin",
       descriptionShort: "Basic Attacks and damaging Abilities deal damage over time",
-      descriptionLong: "Lunara's Basic Attacks and damaging Abilities poison their target, dealing 36 (+4% / level) damage a second for 3 seconds. Every additional application increases the duration by 3 seconds, up to a maximum of 9 seconds.",
+      descriptionLong: "Lunara's Basic Attacks and damaging Abilities poison their target, dealing 33 (+4% / level) damage a second for 3 seconds. Every additional application increases the duration by 3 seconds, up to a maximum of 9 seconds.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -51,7 +51,7 @@ const lunara: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 7.2
+        magicalDamage: 6.6000000000000005
       }
     },
     {
@@ -98,7 +98,7 @@ const lunara: Hero = {
       id: "DryadCripplingSpores",
       name: "Crippling Spores",
       descriptionShort: "Slow enemies afflicted by Nature's Toxin and extend duration",
-      descriptionLong: "Enemies currently afflicted by Nature's Toxin have its duration increased by 3 seconds and are Slowed by 40% decaying over 3 seconds.",
+      descriptionLong: "Enemies currently afflicted by Nature's Toxin have its duration increased by 3 seconds and are Slowed by 40%, decaying over 3 seconds.",
       cost: {
         type: "Mana",
         amount: 50
@@ -120,7 +120,7 @@ const lunara: Hero = {
       id: "DryadWisp",
       name: "Wisp",
       descriptionShort: "Spawns a Wisp to scout",
-      descriptionLong: "Spawn a Wisp to scout an area. Can be redirected once active. When the Wisp is in a bush for more 2 seconds, its vision radius is increased by 75%.  Lasts 45 seconds.",
+      descriptionLong: "Spawn a Wisp to scout an area. Can be redirected once active. When the Wisp is in a bush for more 2 seconds, its vision radius is increased by 75%. Lasts 45 seconds.",
       cooldown: 30,
       category: "basic",
       type: "E",
@@ -270,7 +270,7 @@ const lunara: Hero = {
         id: "DryadBlossomSwell",
         name: "Blossom Swell",
         descriptionShort: "Increases Noxious Blossom range and radius",
-        descriptionLong: "Increases Noxious Blossom's range by 25% and its radius by 20%.  Blossom Swell applies 2 stacks of Nature's Toxin to enemies hit.",
+        descriptionLong: "Increases Noxious Blossom's range by 25% and its radius by 20%. Blossom Swell applies 2 stacks of Nature's Toxin to enemies hit.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -290,29 +290,6 @@ const lunara: Hero = {
         ]
       },
       {
-        id: "DryadSiphoningToxin",
-        name: "Siphoning Toxin",
-        descriptionShort: "Nature's Toxin heals Lunara",
-        descriptionLong: "While at least one enemy is afflicted by Nature's Toxin, heal for 9 (+4% / level) per second.  When an enemy Hero has 3 stacks of Nature's Toxin, increase this healing by 19 (+4% / level) per second.",
-        cooldown: null,
-        category: "Talent",
-        type: "Trait",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_stiflingblossom_var1.png",
-        isPassive: false,
-        analysis: {
-          mobility: 0,
-          physicalDamage: 0,
-          tankiness: 0,
-          healing: 2.4000000000000004,
-          magicalDamage: 0
-        },
-        order: 2,
-        tier: "level4",
-        linkedAbilityIds: [
-          "DryadNaturesToxin"
-        ]
-      },
-      {
         id: "DryadNaturesCulling",
         name: "Nature's Culling",
         descriptionShort: "Increases Nature's Toxin damage to non-Heroes",
@@ -327,6 +304,29 @@ const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
+          magicalDamage: 0
+        },
+        order: 2,
+        tier: "level4",
+        linkedAbilityIds: [
+          "DryadNaturesToxin"
+        ]
+      },
+      {
+        id: "DryadSiphoningToxin",
+        name: "Siphoning Toxin",
+        descriptionShort: "Nature's Toxin heals Lunara",
+        descriptionLong: "While at least one enemy is afflicted by Nature's Toxin, heal for 9 (+4% / level) per second. When an enemy Hero has 3 stacks of Nature's Toxin, increase this healing by 19 (+4% / level) per second.",
+        cooldown: null,
+        category: "Talent",
+        type: "Trait",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_stiflingblossom_var1.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 2.4000000000000004,
           magicalDamage: 0
         },
         order: 3,
@@ -364,7 +364,7 @@ const lunara: Hero = {
         id: "DryadChokingPollen",
         name: "Choking Pollen",
         descriptionShort: "Nature's Toxin increases Noxious Blossom damage",
-        descriptionLong: "Noxious Blossom deals 100% more damage to enemies afflicted by Nature's Toxin, increased to 200% against enemies with 3 stacks.",
+        descriptionLong: "Noxious Blossom deals 100% more damage to enemies afflicted by Nature's Toxin, increased to 175% against enemies with 3 stacks.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -507,7 +507,7 @@ const lunara: Hero = {
         cooldown: null,
         category: "Talent",
         type: "W",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_fullbloom_b.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_fullbloom_a.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -568,7 +568,7 @@ const lunara: Hero = {
         id: "DryadAcceleratedContamination",
         name: "Accelerated Contamination",
         descriptionShort: "Noxious Blossom recharges faster",
-        descriptionLong: "Reduce the Mana cost of Noxious Blossom from 60 to 40.  While at least 1 enemy Hero is afflicted with Nature's Toxin, Noxious Blossom's cooldown recharges 75% faster.",
+        descriptionLong: "Reduce the Mana cost of Noxious Blossom from 60 to 40. While at least 1 enemy Hero is afflicted with Nature's Toxin, Noxious Blossom's cooldown recharges 75% faster.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -591,7 +591,7 @@ const lunara: Hero = {
         id: "DryadStarWoodSpear",
         name: "Star Wood Spear",
         descriptionShort: "Crippling Spores increases Basic Attack range",
-        descriptionLong: "Increase Lunara's Basic Attack range by 0.5.  Using Crippling Spores increases Lunara's Basic Attack range by an additional 2.25 for 6 seconds.",
+        descriptionLong: "Increase Lunara's Basic Attack range by 0.5. Using Crippling Spores increases Lunara's Basic Attack range by an additional 2.25 for 6 seconds.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -614,7 +614,7 @@ const lunara: Hero = {
         id: "DryadInvigoratingSpores",
         name: "Invigorating Spores",
         descriptionShort: "Crippling Spores empowers Basic Attacks",
-        descriptionLong: "Crippling Spores grants 30% Attack Speed for 6 seconds.  Basic Attacks against enemy Heroes with 3 stacks of Nature's Toxin deal damage equal to 1.5% of their maximum Health.",
+        descriptionLong: "Crippling Spores grants 30% Attack Speed for 6 seconds. Basic Attacks against enemy Heroes with 3 stacks of Nature's Toxin deal damage equal to 1.5% of their maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -662,7 +662,7 @@ const lunara: Hero = {
         id: "DryadForestsWrath",
         name: "Forest's Wrath",
         descriptionShort: "Thornwood Vine applies Nature's Toxin",
-        descriptionLong: "Thornwood Vine now applies 2 stacks of Nature's Toxin.  Increase Thornwood Vine's range by 30% and Lunara's vision radius by 35%.",
+        descriptionLong: "Thornwood Vine now applies 2 stacks of Nature's Toxin. Increase Thornwood Vine's range by 30% and Lunara's vision radius by 35%.",
         cooldown: null,
         charges: {
           chargesMax: 3,
@@ -776,8 +776,6 @@ const lunara: Hero = {
     physicalDamage: 50,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 23.3428675202034
+    magicalDamage: 5.82237328210433
   }
 };
-      
-export default lunara;

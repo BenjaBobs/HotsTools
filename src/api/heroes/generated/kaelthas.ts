@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const kaelthas: Hero = {
+export const kaelthas: Hero = {
   name: "Kael'thas",
   nameNormalized: "kaelthas",
   franchise: "Warcraft",
@@ -8,9 +8,9 @@ const kaelthas: Hero = {
   size: 0.8125,
   movementSpeed: 4.8398,
   health: {
-    amount: 1520,
+    amount: 1595,
     scale: 0.04,
-    regenRate: 3.168,
+    regenRate: 3.3164,
     regenScale: 0.04
   },
   energy: {
@@ -78,7 +78,7 @@ const kaelthas: Hero = {
       id: "KaelthasLivingBomb",
       name: "Living Bomb",
       descriptionShort: "Damage an enemy over time, eventually exploding in an area around them",
-      descriptionLong: "Deal 126 (+4% / level) damage over 3 seconds to an enemy, then they explode dealing 215 (+4% / level) damage to all nearby enemies.  Other Heroes damaged by this explosion are also affected by Living Bomb, though the secondary explosions cannot spread. Verdant Spheres makes this Ability cost no Mana and have no cooldown.",
+      descriptionLong: "Deal 126 (+4% / level) damage over 3 seconds to an enemy, then they explode dealing 215 (+4% / level) damage to all nearby enemies. Other Heroes damaged by this explosion are also affected by Living Bomb, though the secondary explosions cannot spread. Verdant Spheres makes this Ability cost no Mana and have no cooldown.",
       cost: {
         type: "Mana",
         amount: 50
@@ -105,7 +105,7 @@ const kaelthas: Hero = {
         type: "Mana",
         amount: 90
       },
-      cooldown: 14,
+      cooldown: 12,
       category: "basic",
       type: "E",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kaelthas_gravitylapse.png",
@@ -144,7 +144,7 @@ const kaelthas: Hero = {
       id: "KaelthasPhoenix",
       name: "Phoenix",
       descriptionShort: "Summon a Phoenix to burn enemies",
-      descriptionLong: "Launch a Phoenix to an area, dealing 78 (+4% / level) damage to enemies along the way. The Phoenix persists for 7 seconds, attacking enemies for 78 (+4% / level) damage and splashing for 39 (+4% / level) damage.",
+      descriptionLong: "Launch a Phoenix to an area, dealing 84 (+4% / level) damage to enemies along the way. The Phoenix persists for 7 seconds, attacking enemies for 84 (+4% / level) damage and splashing for 42 (+4% / level) damage.",
       cost: {
         type: "Mana",
         amount: 80
@@ -159,7 +159,7 @@ const kaelthas: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 15.600000000000001
+        magicalDamage: 16.8
       }
     }
   ],
@@ -268,7 +268,7 @@ const kaelthas: Hero = {
         id: "KaelthasGravityLapseEnergyRoil",
         name: "Energy Roil",
         descriptionShort: "Reduce Gravity Lapse cooldown on Heroes",
-        descriptionLong: "Reduce the Mana cost of Gravity Lapse by 70.  If Gravity Lapse hits a Hero, reduce its cooldown by 9 seconds.",
+        descriptionLong: "Reduce the Mana cost of Gravity Lapse by 70. If Gravity Lapse hits a Hero, reduce its cooldown by 8 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -291,7 +291,7 @@ const kaelthas: Hero = {
         id: "KaelthasFlamestrikeManaTap",
         name: "Mana Tap",
         descriptionShort: "Verdant Spheres restores Mana",
-        descriptionLong: "Activating Verdant Spheres restores 4% of Kael'thas's maximum Mana.",
+        descriptionLong: "Activating Verdant Spheres restores 5% of Kael'thas's maximum Mana.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -368,7 +368,7 @@ const kaelthas: Hero = {
         id: "KaelthasMasterySunfireEnchantment",
         name: "Sunfire Enchantment",
         descriptionShort: "Special attack on Verdant Spheres",
-        descriptionLong: "Activating Verdant Spheres causes Kael'thas's next 2 Basic Attacks to instead deal 115 (+4% / level) Spell Damage.  If both of these Attacks hit enemy Heroes, gain 15% Spell Power for 10 seconds.",
+        descriptionLong: "Activating Verdant Spheres causes Kael'thas's next 2 Basic Attacks to instead deal 115 (+4% / level) Spell Damage. If both of these Attacks hit enemy Heroes, gain 15% Spell Power for 10 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 1,
@@ -399,7 +399,7 @@ const kaelthas: Hero = {
         id: "KaelthasHeroicAbilityPhoenix",
         name: "Phoenix",
         descriptionShort: "Summon a Phoenix to burn enemies",
-        descriptionLong: "Launch a Phoenix to an area, dealing 78 (+4% / level) damage to enemies along the way. The Phoenix persists for 7 seconds, attacking enemies for 78 (+4% / level) damage and splashing for 39 (+4% / level) damage.",
+        descriptionLong: "Launch a Phoenix to an area, dealing 84 (+4% / level) damage to enemies along the way. The Phoenix persists for 7 seconds, attacking enemies for 84 (+4% / level) damage and splashing for 42 (+4% / level) damage.",
         cost: {
           type: "Mana",
           amount: 80
@@ -414,7 +414,7 @@ const kaelthas: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15.600000000000001
+          magicalDamage: 16.8
         },
         order: 1,
         tier: "level10",
@@ -702,12 +702,10 @@ const kaelthas: Hero = {
     ]
   ],
   analysis: {
-    tankiness: 45.80037664783427,
+    tankiness: 48.06026365348399,
     physicalDamage: 36.11111111111111,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 63.11680351792038
+    magicalDamage: 15.847389643015472
   }
 };
-      
-export default kaelthas;

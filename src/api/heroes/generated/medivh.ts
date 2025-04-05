@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const medivh: Hero = {
+export const medivh: Hero = {
   name: "Medivh",
   nameNormalized: "medivh",
   franchise: "Warcraft",
@@ -91,7 +91,7 @@ const medivh: Hero = {
       id: "MedivhForceOfWill",
       name: "Force of Will",
       descriptionShort: "Protect an allied Hero from damage",
-      descriptionLong: "Protect an allied Hero from all damage for 1.5 seconds.  Upon expiration, Force of Will heals the target for 20% of the damage it absorbed.",
+      descriptionLong: "Protect an allied Hero from all damage for 1.5 seconds. Upon expiration, Force of Will heals the target for 20% of the damage it absorbed.",
       cost: {
         type: "Mana",
         amount: 60
@@ -257,7 +257,7 @@ const medivh: Hero = {
         id: "MedivhPortalMageArmor",
         name: "Mage Armor",
         descriptionShort: "Using a Portal grants Armor",
-        descriptionLong: "The first time an ally uses a Portal, they gain 30 Armor for 4 seconds, reducing their damage taken by 30%.",
+        descriptionLong: "The first time an ally uses a Portal, they gain 40 Armor for 5 seconds, reducing their damage taken by 40%.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -266,7 +266,7 @@ const medivh: Hero = {
         analysis: {
           mobility: 0,
           physicalDamage: 0,
-          tankiness: 6,
+          tankiness: 8,
           healing: 0,
           magicalDamage: 0
         },
@@ -375,7 +375,7 @@ const medivh: Hero = {
         cooldown: null,
         category: "Talent",
         type: "W",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medivh_forceofwill_b.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medivh_forceofwill_a.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -593,8 +593,8 @@ const medivh: Hero = {
       {
         id: "MedivhPolyBombGlyphOfPolyBomb",
         name: "Glyph Of Poly Bomb",
-        descriptionShort: "Poly Bomb spreads faster and farther",
-        descriptionLong: "Poly Bomb explodes 1 second sooner and the spread radius is increased by 25%.",
+        descriptionShort: "Poly Bomb instantly spreads in a larger area",
+        descriptionLong: "Poly Bomb now hits an area, instantly Polymorphing enemy Heroes, hitting the same area again 1 second later. Poly Bomb's duration is reduced to 1 second, and the spread radius is increased by 25%.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -717,8 +717,6 @@ const medivh: Hero = {
     physicalDamage: 44.44444444444445,
     mobility: 24.006944444444446,
     healing: 0.08097493825660958,
-    magicalDamage: 10.750282134101257
+    magicalDamage: 2.6916337689206014
   }
 };
-      
-export default medivh;

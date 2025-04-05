@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const tyrael: Hero = {
+export const tyrael: Hero = {
   name: "Tyrael",
   nameNormalized: "tyrael",
   franchise: "Diablo",
@@ -511,7 +511,7 @@ const tyrael: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrael_eldruinsmight_a.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_autoattack_cooldown.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -535,7 +535,7 @@ const tyrael: Hero = {
         cooldown: null,
         category: "Talent",
         type: "Q",
-        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrael_eldruinsmight_b.png",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_talent_burningrage.png",
         isPassive: false,
         analysis: {
           mobility: 0,
@@ -675,8 +675,6 @@ const tyrael: Hero = {
     physicalDamage: 48.75,
     mobility: 25.792658730158735,
     healing: 0,
-    magicalDamage: 21.764051575410882
+    magicalDamage: 5.4492389537461206
   }
 };
-      
-export default tyrael;

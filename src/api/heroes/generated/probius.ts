@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const probius: Hero = {
+export const probius: Hero = {
   name: "Probius",
   nameNormalized: "probius",
   franchise: "Starcraft",
@@ -33,8 +33,8 @@ const probius: Hero = {
       id: "ProbiusWarpInPylon",
       name: "Warp In Pylon",
       descriptionShort: "Summon a Pylon that renergizes Probius and allows the construction of other buildings",
-      descriptionLong: "Warp in a Pylon that generates a Power Field and grants vision of the surrounding area. Probius only regenerates mana while inside a Power Field. Up to 2 Pylons can be active at a time.",
-      cooldown: 12,
+      descriptionLong: "Warp in a Pylon that generates a Power Field and grants vision of the surrounding area. Probius only regenerates mana while inside a Power Field. Enemy Heroes and Minions drop Minerals when killed. Gather Minerals to reduce the cooldown of Warp In Pylon by 0.75 seconds. Up to 2 Pylons can be active at a time.",
+      cooldown: 14,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warpinpylon.png",
@@ -50,8 +50,8 @@ const probius: Hero = {
     {
       id: "ProbiusWorkerRush",
       name: "Worker Rush",
-      descriptionShort: "Move faster passively.  Activate to move even faster.",
-      descriptionLong: "Activate to gain an additional 60% Movement Speed for 5 seconds. Taking damage ends this effect early.  Worker Rush is always active while at the Hall of Storms. Passive: Probius moves 10% faster by hovering over the ground.",
+      descriptionShort: "Move faster passively. Activate to move even faster.",
+      descriptionLong: "Activate to gain an additional 60% Movement Speed for 5 seconds. Taking damage ends this effect early. Worker Rush is always active while at the Hall of Storms. Passive: Probius moves 10% faster by hovering over the ground.",
       cooldown: 30,
       category: "mount",
       type: "Z",
@@ -90,8 +90,8 @@ const probius: Hero = {
     {
       id: "ProbiusWarpRift",
       name: "Warp Rift",
-      descriptionShort: "Create a rift that slows enemies and can be detonated with Disruption Pulse",
-      descriptionLong: "Open an unstable Warp Rift at a location that takes 1.25 seconds to arm, which then slows nearby enemies by 25% lasting 9 seconds. Armed Warp Rifts explode when hit by Disruption Pulse, dealing 261 (+5% / level) damage to nearby enemies. Stores up to 2 charges.",
+      descriptionShort: "Create a rift that Slows enemies and can be detonated with Disruption Pulse",
+      descriptionLong: "Open an unstable Warp Rift at a location that takes 1.25 seconds to arm, which then Slows nearby enemies by 25% lasting 3 seconds. Armed Warp Rifts explode when they expire or when hit by Disruption Pulse, dealing 261 (+5% / level) damage to nearby enemies.",
       cost: {
         type: "Mana",
         amount: 150
@@ -118,7 +118,7 @@ const probius: Hero = {
       id: "ProbiusPhotonCannon",
       name: "Photon Cannon",
       descriptionShort: "Create a cannon that attacks nearby enemies",
-      descriptionLong: "Warp in a Photon Cannon that deals 105 (+4% / level) damage per second. Lasts for 13 seconds. Must be placed within a Pylon's Power Field.  Deactivates if it doesn't have a Pylon powering it.",
+      descriptionLong: "Warp in a Photon Cannon that deals 105 (+4% / level) damage. Lasts for 13 seconds. While within a Pylon's Power Field, Photon Cannons gain 40% Attack Speed over 4 seconds and reveal nearby enemies.",
       cooldown: 15,
       category: "basic",
       type: "E",
@@ -126,7 +126,7 @@ const probius: Hero = {
       isPassive: false,
       analysis: {
         mobility: 0,
-        physicalDamage: 0,
+        physicalDamage: 0.8,
         tankiness: 0,
         healing: 0,
         magicalDamage: 21
@@ -136,7 +136,7 @@ const probius: Hero = {
       id: "ProbiusPylonOvercharge",
       name: "Pylon Overcharge",
       descriptionShort: "Weaponize Pylons",
-      descriptionLong: "Increase the size of Pylon power fields and allow them to attack enemies within it for 96 (+4% / level) damage per second. Lasts 10 seconds.",
+      descriptionLong: "For 8 seconds, increase the size of Pylon power fields and allow them to attack enemy Heroes within it for 96 (+4% / level) damage per second. Pylons are Invulnerable for the duration.",
       cost: {
         type: "Mana",
         amount: 100
@@ -158,7 +158,7 @@ const probius: Hero = {
       id: "ProbiusNullGate",
       name: "Null Gate",
       descriptionShort: "Create a Slowing barrier",
-      descriptionLong: "Vector TargetingProject a barrier of negative energy in the target direction that lasts 4 seconds. Enemies who touch the barrier take 68 (+4% / level) damage per second and are Slowed by 80% for as long as they remain in contact with it.",
+      descriptionLong: "Vector TargetingProject a barrier of negative energy in the target direction that lasts 4 seconds. Enemies who touch the barrier take 76 (+4% / level) damage per second and are Slowed by 80% for as long as they remain in contact with it.",
       cost: {
         type: "Mana",
         amount: 100
@@ -183,7 +183,7 @@ const probius: Hero = {
         id: "ProbiusEchoPulseDisruptionPulse",
         name: "Echo Pulse",
         descriptionShort: "Disruption Pulse returns to Probius",
-        descriptionLong: "Disruption Pulse now returns to Probius 1.25 seconds after reaching its target, dealing 75% damage on the return trip.",
+        descriptionLong: "Disruption Pulse now returns to Probius 1.25 seconds after reaching its target, dealing 100% damage on the return trip.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -194,7 +194,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 15
+          magicalDamage: 20
         },
         order: 1,
         tier: "level1",
@@ -206,7 +206,7 @@ const probius: Hero = {
         id: "ProbiusWarpResonanceWarpRiftQuest",
         name: "Warp Resonance",
         descriptionShort: "Quest: Detonate Warp Rift on Heroes",
-        descriptionLong: "Quest: Hit Heroes with Warp Rift explosions. Reward: After hitting 8 Heroes with Warp Rift explosions, increase the explosion damage by 100. Reward: After hitting 16 Heroes with Warp Rift explosions, Warp Rift gains 1 additional charge.",
+        descriptionLong: "Quest: Hit Heroes with Warp Rift explosions. Reward: After hitting 8 Heroes with Warp Rift explosions, increase the explosion damage by 120. Reward: After hitting 16 Heroes with Warp Rift explosions, Warp Rift gains 1 additional charge.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -235,7 +235,7 @@ const probius: Hero = {
         id: "ProbiusGatherMineralsPhotonCannonQuest",
         name: "Gather Minerals",
         descriptionShort: "Quest: Collect Minerals to empower Photon Cannons",
-        descriptionLong: "Quest: Enemy Heroes and Minions drop Minerals when killed. Collect them to increase the Health of Photon Cannons by 8, up to 560. Reward: After collecting 70 Minerals, Photon Cannons deal 35% more damage, can see over obstacles, and reveal nearby Cloaked units.",
+        descriptionLong: "Quest: Gather Minerals to increase the Health of Photon Cannons by 8, up to 560. Reward: After collecting 70 Minerals, Photon Cannons deal 35% more damage.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -284,7 +284,7 @@ const probius: Hero = {
         id: "ProbiusTurboChargedWorkerRush",
         name: "Turbo Charged",
         descriptionShort: "Move faster and decrease Worker Rush's cooldown",
-        descriptionLong: "Worker Rush grants an additional 10% passive Movement Speed while in a Power Field, and its cooldown is reduced by 10 seconds.",
+        descriptionLong: "Worker Rush grants an additional 10% passive Movement Speed while in a Power Field, and its cooldown is reduced by 14 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Z",
@@ -331,8 +331,8 @@ const probius: Hero = {
       {
         id: "ProbiusParticleAcceleratorDisruptionPulse",
         name: "Particle Accelerator",
-        descriptionShort: "Increase damage, reduce cooldown",
-        descriptionLong: "Disruption Pulse deals 15% more damage for each enemy or Warp Rift hit, up to 60%. Reduce the cooldown of Disruption Pulse by 0.5 seconds, plus an additional 0.5 seconds whenever a Warp Rift explodes.",
+        descriptionShort: "Disruption Pulse can fire additional pulses",
+        descriptionLong: "After hitting 3 Heroes with Disruption Pulse, the next Warp Rift detonated by a Disruption Pulse fires 4 additional pulses that deal 78 (+5% / level) damage from the impact location in different directions. Passive: Reduce the cooldown of Disruption Pulse by 0.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -343,7 +343,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 3
+          magicalDamage: 15.600000000000001
         },
         order: 1,
         tier: "level7",
@@ -354,8 +354,8 @@ const probius: Hero = {
       {
         id: "ProbiusRiftShockWarpRift",
         name: "Rift Shock",
-        descriptionShort: "Deal more damage to enemies caught in Warp Rift detonations",
-        descriptionLong: "Hitting an enemy Hero with Warp Rift explosion increases Probius's damage against them by 20% for 10 seconds.",
+        descriptionShort: "Detonate Warp Rifts quickly for extra damage",
+        descriptionLong: "Hitting a Warp Rift with Disruption Pulse within 1 second of it arming deals 105 (+5% / level) damage over 3 seconds.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -371,7 +371,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 21
         },
         order: 2,
         tier: "level7",
@@ -383,7 +383,7 @@ const probius: Hero = {
         id: "ProbiusTowerDefensePhotonCannon",
         name: "Tower Defense",
         descriptionShort: "Reduce Photon Cannon cooldown",
-        descriptionLong: "Reduce Photon Cannon's cooldown by 4 seconds when Disruption Pulse or Warp Rift damages an enemy Hero.",
+        descriptionLong: "Reduce Photon Cannon's cooldown by 3.5 seconds when Disruption Pulse or Warp Rift damages an enemy Hero.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -408,7 +408,7 @@ const probius: Hero = {
         id: "ProbiusPylonOverchargeHeroic",
         name: "Pylon Overcharge",
         descriptionShort: "Weaponize Pylons",
-        descriptionLong: "Increase the size of Pylon power fields and allow them to attack enemies within it for 96 (+4% / level) damage per second. Lasts 10 seconds.",
+        descriptionLong: "For 8 seconds, increase the size of Pylon power fields and allow them to attack enemy Heroes within it for 96 (+4% / level) damage per second. Pylons are Invulnerable for the duration.",
         cost: {
           type: "Mana",
           amount: 100
@@ -435,7 +435,7 @@ const probius: Hero = {
         id: "ProbiusNullGateHeroic",
         name: "Null Gate",
         descriptionShort: "Create a Slowing barrier",
-        descriptionLong: "Vector TargetingProject a barrier of negative energy in the target direction that lasts 4 seconds. Enemies who touch the barrier take 68 (+4% / level) damage per second and are Slowed by 80% for as long as they remain in contact with it.",
+        descriptionLong: "Vector TargetingProject a barrier of negative energy in the target direction that lasts 4 seconds. Enemies who touch the barrier take 76 (+4% / level) damage per second and are Slowed by 80% for as long as they remain in contact with it.",
         cost: {
           type: "Mana",
           amount: 100
@@ -535,7 +535,7 @@ const probius: Hero = {
         id: "ProbiusQuantumEntanglementWarpRift",
         name: "Quantum Entanglement",
         descriptionShort: "Warp Rift's slow lingers",
-        descriptionLong: "Enemies continue to be slowed for 3 seconds after their last contact with a Warp Rift.",
+        descriptionLong: "Enemies continue to be Slowed for 3 seconds after their last contact with a Warp Rift.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -563,7 +563,7 @@ const probius: Hero = {
         id: "ProbiusGravityWellWarpRift",
         name: "Gravity Well",
         descriptionShort: "Increase Warp Rift Slow amount in center",
-        descriptionLong: "Enemies are slowed more the closer they are to the center of the Warp Rift, up to a maximum slow of 60%.",
+        descriptionLong: "Enemies are Slowed more the closer they are to the center of the Warp Rift, up to a maximum slow of 60%.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -591,7 +591,7 @@ const probius: Hero = {
         id: "ProbiusInterferenceWarpRift",
         name: "Interference",
         descriptionShort: "Warp Rift explosions reduce enemy Spell Power and knock back",
-        descriptionLong: "Enemy Heroes hit by Warp Rift explosions have their Spell Power reduced by 35% for 5 seconds.  Additionally, enemies hit by Warp Rift explosions are knocked away from the center.",
+        descriptionLong: "Enemy Heroes hit by Warp Rift explosions have their Spell Power reduced by 35% for 5 seconds. Additionally, enemies hit by Warp Rift explosions are knocked away from the center.",
         cooldown: null,
         charges: {
           chargesMax: 2,
@@ -672,8 +672,8 @@ const probius: Hero = {
       {
         id: "ProbiusShootEmUptoRiftsDisruptionPulse",
         name: "Shoot 'Em Up",
-        descriptionShort: "Hitting a Warp Rift splits Disruption Pulse into several additional pulses",
-        descriptionLong: "Hitting a Warp Rift with Disruption Pulse causes 4 additional pulses that deal 50% damage to be fired from the impact location in different directions.  Additional Pulses do not benefit from Echo Pulse or Particle Accelerator.",
+        descriptionShort: "Increase Disruption Pulse damage against Heroes",
+        descriptionLong: "Enemy Heroes hit by Disruption Pulse take a bonus 2.5% of their maximum Health as damage. Passive: Reduce the cooldown of Disruption Pulse by 0.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -684,7 +684,7 @@ const probius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 10
+          magicalDamage: 0
         },
         order: 3,
         tier: "level20",
@@ -727,8 +727,6 @@ const probius: Hero = {
     physicalDamage: 18.333333333333336,
     mobility: 24.99900793650794,
     healing: 0,
-    magicalDamage: 43.306773812766735
+    magicalDamage: 10.843061918132111
   }
 };
-      
-export default probius;

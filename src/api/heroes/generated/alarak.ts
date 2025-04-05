@@ -1,6 +1,6 @@
 import { Hero } from '../heroes';
       
-const alarak: Hero = {
+export const alarak: Hero = {
   name: "Alarak",
   nameNormalized: "alarak",
   franchise: "Starcraft",
@@ -187,7 +187,7 @@ const alarak: Hero = {
         id: "AlarakRuthlessMomentum",
         name: "Ruthless Momentum",
         descriptionShort: "Reduce cooldown at high Health",
-        descriptionLong: "Reduce the Mana cost of Telekinesis from 30 to 20.  Telekinesis's cooldown recharges 75% faster while above 80% Health.",
+        descriptionLong: "Reduce the Mana cost of Telekinesis from 30 to 20. Telekinesis's cooldown recharges 100% faster while above 80% Health.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -205,7 +205,8 @@ const alarak: Hero = {
         linkedAbilityIds: [
           "AlarakTelekinesis",
           "AlarakDeadlyChargeActivate2ndHeroic",
-          "AlarakCounterStrikeTargeted2ndHeroic"
+          "AlarakCounterStrikeTargeted2ndHeroic",
+          "AlarakSadism"
         ]
       },
       {
@@ -263,7 +264,7 @@ const alarak: Hero = {
         id: "AlarakNegativelyCharged",
         name: "Negatively Charged",
         descriptionShort: "Quest: Increase Lightning Surge center damage",
-        descriptionLong: "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to 175%. Repeatable Quest: Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by 4%.",
+        descriptionLong: "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to 175%. Repeatable Quest: Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by 5%.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -288,7 +289,7 @@ const alarak: Hero = {
         id: "AlarakShowofForce",
         name: "Show of Force",
         descriptionShort: "Ability combos deal bonus damage, grant Sadism",
-        descriptionLong: "Heroes hit with 3 of Alarak's Abilities within 2 seconds take an additional 61 (+4% / level) damage and increase Sadism by 2%, stacking up to 20%.  Sadism gained from Show of Force is lost on death.",
+        descriptionLong: "Heroes hit with 3 of Alarak's Abilities within 2 seconds take an additional 61 (+4% / level) damage and increase Sadism by 2%, stacking up to 20%. Sadism gained from Show of Force is lost on death.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -537,7 +538,7 @@ const alarak: Hero = {
         id: "AlarakLightningBarrage",
         name: "Lightning Barrage",
         descriptionShort: "Center hits grant free Lightning Surge cast",
-        descriptionLong: "Hitting an enemy Hero with the center of Lightning Surge allows it to be cast again for free on a different primary target within the next 2 seconds. This free cast cannot benefit from Lightning Barrage.",
+        descriptionLong: "Hitting an enemy Hero with the center of Lightning Surge allows it to be cast again for free on a different primary target within the next 3 seconds. This free cast cannot benefit from Lightning Barrage.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -561,7 +562,7 @@ const alarak: Hero = {
         id: "AlarakMockingStrikes",
         name: "Mocking Strikes",
         descriptionShort: "Reduce cooldowns against disabled Heroes",
-        descriptionLong: "Basic Attacks against enemy Heroes reduce the cooldown of Alarak's Basic Abilities by 1.5 seconds.  This bonus is doubled against enemy Heroes who are Stunned, Silenced, Slowed, or Rooted.",
+        descriptionLong: "Basic Attacks against enemy Heroes reduce the cooldown of Alarak's Basic Abilities by 1.5 seconds. This bonus is doubled against enemy Heroes who are Stunned, Silenced, Slowed, or Rooted.",
         cooldown: null,
         category: "Talent",
         type: "Passive",
@@ -691,8 +692,6 @@ const alarak: Hero = {
     physicalDamage: 90.01440230436869,
     mobility: 24.006944444444446,
     healing: 4.858496295396575,
-    magicalDamage: 20.362299101062383
+    magicalDamage: 5.098271021131963
   }
 };
-      
-export default alarak;
