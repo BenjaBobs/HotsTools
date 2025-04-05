@@ -70,12 +70,20 @@ export default function AppHost() {
               >
                 <React.Suspense
                   fallback={
-                    <Result title="Loading..." icon={<LoadingOutlined />} />
+                    <Result
+                      title="Loading..."
+                      icon={
+                        <LoadingOutlined
+                          onPointerEnterCapture={undefined}
+                          onPointerLeaveCapture={undefined}
+                        />
+                      }
+                    />
                   }
                 >
                   {React.cloneElement(
                     currentApp.app.component as React.ReactElement,
-                    currentApp.params
+                    currentApp.params,
                   )}
                 </React.Suspense>
               </ErrorBoundary>

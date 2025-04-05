@@ -1,7 +1,5 @@
 import { defineConfig } from 'vite';
-import reactJsx from 'vite-react-jsx';
-
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,5 +9,5 @@ export default defineConfig({
     sourcemap: true,
   },
   base: '/HotsTools/',
-  plugins: [reactJsx(), reactRefresh()],
+  plugins: [react()],
 });

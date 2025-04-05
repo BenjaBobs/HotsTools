@@ -1,4 +1,4 @@
-import { Col, Input, Row } from 'antd';
+import { Col, Input, InputRef, Row } from 'antd';
 import { useEffect, useRef, useState } from 'react';
 
 import heroes, { Hero } from '../../../api/heroes/heroes';
@@ -9,7 +9,7 @@ export default function HeroPicker(props: {
   disabledHeroes?: string[];
   size?: number;
 }) {
-  const searchRef = useRef<Input>();
+  const searchRef = useRef<InputRef>();
   const [search, setSearch] = useState('');
 
   // autofocus searcher

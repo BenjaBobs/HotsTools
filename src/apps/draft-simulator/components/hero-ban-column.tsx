@@ -23,15 +23,30 @@ export default function HeroBanColumn(props: { heroes: (Hero | undefined)[] }) {
     <Row justify="center" className="hero-ban-column" style={style as any}>
       <Overlay>
         <Avatar icon={'?'} src={props.heroes[0]?.icon} />
-        {props.heroes[0] && <StopOutlined />}
+        {props.heroes[0] && (
+          <StopOutlined
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          />
+        )}
       </Overlay>
       <Overlay>
         <Avatar icon={'?'} src={props.heroes[1]?.icon} />
-        {props.heroes[1] && <StopOutlined />}
+        {props.heroes[1] && (
+          <StopOutlined
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          />
+        )}
       </Overlay>
       <Overlay>
         <Avatar icon={'?'} src={props.heroes[2]?.icon} />
-        {props.heroes[2] && <StopOutlined />}
+        {props.heroes[2] && (
+          <StopOutlined
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          />
+        )}
       </Overlay>
     </Row>
   );
