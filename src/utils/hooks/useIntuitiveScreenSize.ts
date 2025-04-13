@@ -43,7 +43,7 @@ function getEnabledSizesFromWidth(width: number): {
   [key in ScreenSizeName]: boolean;
 } {
   return Object.fromEntries(
-    ScreenSizes.map(([name, breakpoint]) => [name, breakpoint > width]),
+    ScreenSizes.map(([name, breakpoint]) => [name, width > breakpoint]),
   ) as { [key in ScreenSizeName]: boolean };
 }
 

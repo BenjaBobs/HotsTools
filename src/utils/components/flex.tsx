@@ -1,5 +1,5 @@
 import { CSSProperties, MouseEventHandler, PropsWithChildren } from 'react';
-import '@src/common/flex/flex.scss';
+import './flex.scss';
 import {
   DeviceSpecificProps,
   useDeviceProps,
@@ -8,7 +8,7 @@ import {
 export function Flex(
   props: PropsWithChildren<
     DeviceSpecificProps<{
-      style?: React.CSSProperties & { [key: `--${string}`]: string };
+      style?: CSSProperties & { [key: `--${string}`]: string };
       className?: string;
       slim?: boolean;
       full?: boolean;
@@ -17,14 +17,16 @@ export function Flex(
       left?: boolean;
       right?: boolean;
       center?: boolean;
-      justify?: React.CSSProperties['justifyContent'];
-      align?: React.CSSProperties['alignItems'];
-      itemsSize?: 'even';
-      itemsPlace?: 'center';
+      justifySelf?: CSSProperties['justifySelf'];
+      justifyContent?: CSSProperties['justifyContent'];
+      align?: CSSProperties['alignItems'];
       pad?: CSSProperties['padding'];
-      gap?: number | `${number}%`;
-      width?: number | `${number}%`;
-      color?: string;
+      gap?: CSSProperties['gap'];
+      width?: CSSProperties['width'];
+      maxWidth?: CSSProperties['maxWidth'];
+      height?: CSSProperties['height'];
+      maxHeight?: CSSProperties['maxHeight'];
+      color?: CSSProperties['color'];
       bg?: CSSProperties['background'];
       border?: CSSProperties['border'];
       onClick?: MouseEventHandler<HTMLDivElement>;
@@ -38,9 +40,10 @@ export function Flex(
     'flex',
     computedProps.className,
     getDirection(computedProps),
-    computedProps.justify && 'justify-' + computedProps.justify,
-    computedProps.itemsSize && 'items-size-' + computedProps.itemsSize,
-    computedProps.itemsPlace && 'items-place-' + computedProps.itemsPlace,
+    computedProps.justifySelf && 'justify-self-' + computedProps.justifySelf,
+    computedProps.justifyContent &&
+      'justify-content-' + computedProps.justifyContent,
+    computedProps.align && 'align-' + computedProps.align,
     computedProps.slim && 'slim',
     computedProps.full && 'full',
     computedProps.center && 'center',
@@ -51,6 +54,9 @@ export function Flex(
       style={{
         gap: computedProps.gap,
         width: computedProps.width,
+        maxWidth: computedProps.maxWidth,
+        height: computedProps.height,
+        maxHeight: computedProps.maxHeight,
         color: computedProps.color,
         padding: computedProps.pad,
         background: computedProps.bg,
@@ -67,9 +73,9 @@ export function Flex(
 }
 
 function getDirection(object: Parameters<typeof Flex>[0]) {
-  if (object.up) return 'direction-up';
-  if (object.down) return 'direction-down';
-  if (object.left) return 'direction-left';
-  if (object.right) return 'direction-right';
-  return 'direction-right';
+  if (object.up) return 'up';
+  if (object.down) return 'down';
+  if (object.left) return 'left';
+  if (object.right) return 'right';
+  return 'right';
 }

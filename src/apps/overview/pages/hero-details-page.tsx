@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react';
 
 import heroes from '../../../api/heroes/heroes';
 import { browserHistory } from '../../../api/routing';
-import Block from '../../components/block/block';
 import HeroStrengthChart from '../../components/hero-strength-chart/hero-strength-chart';
 import Hexagon from '../../components/hexagon/hexagon';
 import AbilityTooltip from './components/ability-tooltip';
 import TalentTooltip from './components/talent-tooltip';
+import { Flex } from '@src/utils/components/flex';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = heroes.byName(props.hero);
@@ -15,11 +15,14 @@ export default function HeroDetailsPage(props: { hero?: string }) {
     !browserHistory.location.search?.includes('talents')
       ? new Array(hero?.talents.length).fill(undefined)
       : browserHistory.location.search
-          .substring(browserHistory.location.search.indexOf('talents=') + 'talents='.length)
+          .substring(
+            browserHistory.location.search.indexOf('talents=') +
+              'talents='.length,
+          )
           .toLowerCase()
           .replaceAll('%2c', ',')
           .split(',')
-          .map(x => (x === '' ? undefined : parseInt(x) || undefined))
+          .map(x => (x === '' ? undefined : parseInt(x) || undefined)),
   );
 
   if (!hero) {
@@ -39,10 +42,6 @@ export default function HeroDetailsPage(props: { hero?: string }) {
         talentPicks.map(x => (x === undefined ? '' : '' + x)).join(','),
     });
   }, [talentPicks]);
-
-  console.log(talentPicks);
-
-  const maxTalentsPerTier = hero.talents.maxOf(tier => tier.length);
 
   return (
     <Row justify="center">
@@ -90,56 +89,60 @@ export default function HeroDetailsPage(props: { hero?: string }) {
                     <h2>Talents</h2>
                   </Row>
                   <br />
-                  <Block baseColumns={maxTalentsPerTier} gap={1} padding={1}>
+                  <Flex down gap={32} pad={8}>
                     {hero.talents.map((talentTier, talentTierIdx) => (
                       <React.Fragment key={talentTierIdx}>
-                        <Block columns={maxTalentsPerTier}>
+                        <Flex>
                           <h3>Level {talentTier[0].tier.substring(5)}</h3>
-                        </Block>
-                        {talentTier.map((talent, talentIdx) => {
-                          const selected =
-                            talentPicks[talentTierIdx] === talentIdx;
+                        </Flex>
+                        <Flex gap={32}>
+                          {talentTier.map((talent, talentIdx) => {
+                            const selected =
+                              talentPicks[talentTierIdx] === talentIdx;
 
-                          return (
-                            <Block
-                              key={talentIdx}
-                              textAlign="center"
-                              onClick={() =>
-                                setTalentPicks(
-                                  [...talentPicks].fill(
-                                    selected ? undefined : talentIdx,
-                                    talentTierIdx,
-                                    talentTierIdx + 1
+                            return (
+                              <Flex
+                                laptop={{ width: 230 }}
+                                justifyContent="center"
+                                key={talentIdx}
+                                onClick={() =>
+                                  setTalentPicks(
+                                    [...talentPicks].fill(
+                                      selected ? undefined : talentIdx,
+                                      talentTierIdx,
+                                      talentTierIdx + 1,
+                                    ),
                                   )
-                                )
-                              }
-                            >
-                              <Tooltip
-                                title={<TalentTooltip talent={talent} />}
+                                }
                               >
-                                <Hexagon
-                                  src={talent.icon}
-                                  style={{
-                                    width: 60,
-                                    height: 60,
-                                    margin: '0 auto',
-                                    marginBottom: 8,
-                                  }}
-                                />
-                                <h4
-                                  className={
-                                    'animate ' + (selected ? 'textglow  ' : '')
-                                  }
+                                <Tooltip
+                                  title={<TalentTooltip talent={talent} />}
                                 >
-                                  {talent.name}
-                                </h4>
-                              </Tooltip>
-                            </Block>
-                          );
-                        })}
+                                  <Hexagon
+                                    src={talent.icon}
+                                    style={{
+                                      width: 60,
+                                      height: 60,
+                                      margin: '0 auto',
+                                      marginBottom: 8,
+                                    }}
+                                  />
+                                  <h4
+                                    className={
+                                      'animate ' +
+                                      (selected ? 'textglow  ' : '')
+                                    }
+                                  >
+                                    {talent.name}
+                                  </h4>
+                                </Tooltip>
+                              </Flex>
+                            );
+                          })}
+                        </Flex>
                       </React.Fragment>
                     ))}
-                  </Block>
+                  </Flex>
                 </Col>
               </Row>
             </Space>

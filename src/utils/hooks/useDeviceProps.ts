@@ -20,6 +20,8 @@ export function useDeviceProps<TProps>(props: DeviceSpecificProps<TProps>) {
 }
 
 function mergeInto(a: any, b: any) {
+  if (!b || !a) return;
+
   for (const entry of Object.getOwnPropertyNames(b)) {
     a[entry] = b[entry];
   }

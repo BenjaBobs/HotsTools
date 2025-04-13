@@ -1,7 +1,7 @@
 import { Avatar } from 'antd';
 
 import { Hero } from '../../../api/heroes/heroes';
-import Block from '../block/block';
+import { Flex } from '@src/utils/components/flex';
 
 export default function HeroAvatar(props: {
   hero: Hero;
@@ -14,12 +14,12 @@ export default function HeroAvatar(props: {
   else if (props.onClick) classes.push('hoverable');
 
   return (
-    <Block onClick={props.onClick} className={classes.join(' ')}>
+    <Flex slim onClick={props.onClick} className={classes.join(' ')}>
       <Avatar
         className={classes.join(' ')}
         style={{ height: props.size ?? 80, width: props.size ?? 80 }}
         src={props.hero.icon}
       />
-    </Block>
+    </Flex>
   );
 }

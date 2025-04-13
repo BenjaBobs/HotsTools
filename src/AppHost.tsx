@@ -1,6 +1,6 @@
 import './AppHost.scss';
 
-import { Col, Layout, Result, Row, Typography } from 'antd';
+import { Col, Layout, Result, Row } from 'antd';
 import ErrorBoundary from 'antd/lib/alert/ErrorBoundary';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
@@ -8,11 +8,10 @@ import { useRecoilValue } from 'recoil';
 import { LoadingOutlined } from '@ant-design/icons';
 
 import { s_apps, s_currentApp } from './apps/Apps';
-import Block from './apps/components/block/block';
 import Link from './Link';
+import { Flex } from '@src/utils/components/flex';
 
 const { Header, Content } = Layout;
-const { Title } = Typography;
 
 export default function AppHost() {
   const apps = useRecoilValue(s_apps);
@@ -21,33 +20,24 @@ export default function AppHost() {
   return (
     <Layout>
       <Header>
-        <Block
-          baseColumns={1}
-          tablet={{ baseColumns: 3 }}
-          laptop={{ baseColumns: Math.min(apps.length, 6) }}
-          align="center"
-          gap={0.5}
-        >
+        <Flex height={64} justifySelf="center" align="stretch" gap={16}>
           {apps.map(app => (
             <Link
               key={app.absolutePath}
               to={app.overrideLink ?? app.absolutePath}
               absolute
             >
-              <Block
-                align="center"
-                textAlign="center"
+              <div
                 className={`animate textglow-hover ${
                   app === currentApp?.app ? 'underglow' : 'underglow-hover'
                 }`}
-                padding={{ left: 0.5, right: 0.5 }}
-                height={4}
+                style={{ padding: '0 8px', alignContent: 'center' }}
               >
-                <Title level={4}>{app.name}</Title>
-              </Block>
+                <h4>{app.name}</h4>
+              </div>
             </Link>
           ))}
-        </Block>
+        </Flex>
       </Header>
       <Content>
         <Row justify="center">
