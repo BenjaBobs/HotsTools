@@ -22,31 +22,61 @@ export const ScreenSize = {
 };
 
 export const ScreenSizes = Object.entries(ScreenSize).sort(
-  (a, b) => b[1] - a[1]
+  (a, b) => b[1] - a[1],
 ) as [ScreenSizeName, number][];
 
 export type ScreenSizeName = keyof typeof ScreenSize;
 
-export default function useIntuitiveScreenSize() {
-  const [screenSize, setScreenSize] = useState<ScreenSizeName>(
-    getScreenSizeFromWidth(window.innerWidth)
-  );
+export function useEnabledScreenSizes() {
+  const size = useScreenSize();
+
+  const [sizes, setSizes] = useState(getEnabledSizesFromWidth(size[0]));
 
   useEffect(() => {
-    function onResize(evt: UIEvent) {
-      const width = (evt.target as Window).innerWidth;
+    setSizes(getEnabledSizesFromWidth(size[0]));
+  }, [size, setSizes]);
 
-      const newScreenSize = getScreenSizeFromWidth(width);
+  return sizes;
+}
 
-      if (newScreenSize !== screenSize) {
-        setScreenSize(newScreenSize);
-      }
+function getEnabledSizesFromWidth(width: number): {
+  [key in ScreenSizeName]: boolean;
+} {
+  return Object.fromEntries(
+    ScreenSizes.map(([name, breakpoint]) => [name, breakpoint > width]),
+  ) as { [key in ScreenSizeName]: boolean };
+}
+
+export function useIntuitiveScreenSize() {
+  const size = useScreenSize();
+
+  const [screenSize, setScreenSize] = useState<ScreenSizeName>(
+    getScreenSizeFromWidth(size[0]),
+  );
+
+  useEffect(
+    () => setScreenSize(getScreenSizeFromWidth(size[0])),
+    [screen, setScreenSize],
+  );
+
+  return screenSize;
+}
+
+export function useScreenSize() {
+  const [screenSize, setScreenSize] = useState([
+    window.innerWidth,
+    window.innerHeight,
+  ] as const);
+
+  useEffect(() => {
+    function onResize() {
+      setScreenSize([window.innerWidth, window.innerHeight]);
     }
 
     window.addEventListener('resize', onResize);
 
     return () => window.removeEventListener('resize', onResize);
-  }, [screenSize, setScreenSize]);
+  }, [setScreenSize]);
 
   return screenSize;
 }
