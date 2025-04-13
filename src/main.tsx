@@ -2,16 +2,16 @@ import './main.scss';
 import './utils/ArrayExtensions';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { RecoilRoot } from 'recoil';
+import { createRoot } from 'react-dom/client';
+import AppHost from '@src/AppHost';
 
-import AppHost from './AppHost';
+const root = createRoot(document.getElementById('root')!);
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <RecoilRoot>
       <AppHost />
     </RecoilRoot>
   </React.StrictMode>,
-  document.getElementById('root')
 );
