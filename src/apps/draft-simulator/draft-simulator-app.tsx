@@ -1,7 +1,7 @@
 import { Col, Row, Select } from 'antd';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
-import { Maps } from '../../api/maps';
+import { HotsMaps } from '../../api/maps';
 import { AppDefinition } from '../AppDefinition';
 import Orb from '../components/orb/orb';
 import DraftPanels from './components/draft-panels';
@@ -10,7 +10,12 @@ import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
 import style from './draft-simulator.module.scss';
 import {
-    s_draftHistory, s_draftMap, s_draftPhases, s_draftTeamBans, s_draftTeamPicks, s_draftType
+  s_draftHistory,
+  s_draftMap,
+  s_draftPhases,
+  s_draftTeamBans,
+  s_draftTeamPicks,
+  s_draftType,
 } from './draft-state';
 import { DraftType, Team } from './Types';
 
@@ -56,14 +61,14 @@ function DraftSimulator() {
           <Select
             value={draftMap.name}
             onChange={newDraftMapName => {
-              const newMap = Maps.find(m => m.name === newDraftMapName);
+              const newMap = HotsMaps.find(m => m.name === newDraftMapName);
               if (newMap) {
                 setDraftMap(newMap);
               }
             }}
             style={{ width: 200 }}
           >
-            {Maps.map(m => (
+            {HotsMaps.map(m => (
               <Select.Option key={m.name} value={m.name}>
                 {m.name}
               </Select.Option>
@@ -95,7 +100,7 @@ function DraftSimulator() {
                 >
                   {p.amount}
                 </Orb>
-              )
+              ),
             )}
           </FlexSteps>
         </Col>

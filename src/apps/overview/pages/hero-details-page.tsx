@@ -2,27 +2,20 @@ import { Avatar, Col, Result, Row, Space, Tooltip } from 'antd';
 import React, { useEffect, useState } from 'react';
 
 import heroes from '../../../api/heroes/heroes';
-import { browserHistory } from '../../../api/routing';
 import HeroStrengthChart from '../../components/hero-strength-chart/hero-strength-chart';
 import Hexagon from '../../components/hexagon/hexagon';
 import AbilityTooltip from './components/ability-tooltip';
 import TalentTooltip from './components/talent-tooltip';
 import { Flex } from '@src/utils/components/flex';
+import { AddressBar } from '@src/utils/AddressBar';
 
 export default function HeroDetailsPage(props: { hero?: string }) {
   const hero = heroes.byName(props.hero);
   const [talentPicks, setTalentPicks] = useState<(number | undefined)[]>(
-    !browserHistory.location.search?.includes('talents')
-      ? new Array(hero?.talents.length).fill(undefined)
-      : browserHistory.location.search
-          .substring(
-            browserHistory.location.search.indexOf('talents=') +
-              'talents='.length,
-          )
-          .toLowerCase()
-          .replaceAll('%2c', ',')
-          .split(',')
-          .map(x => (x === '' ? undefined : parseInt(x) || undefined)),
+    AddressBar.getQueryParam('talents')
+      ?.split(',')
+      .map(char => (char ? parseInt(char) : undefined)) ??
+      new Array(hero?.talents.length).fill(undefined),
   );
 
   if (!hero) {
@@ -35,12 +28,10 @@ export default function HeroDetailsPage(props: { hero?: string }) {
   }
 
   useEffect(() => {
-    browserHistory.replace({
-      ...browserHistory.location,
-      search:
-        '?talents=' +
-        talentPicks.map(x => (x === undefined ? '' : '' + x)).join(','),
-    });
+    AddressBar.setQueryParam(
+      'talents',
+      talentPicks.map(x => (x === undefined ? '' : '' + x)).join(','),
+    );
   }, [talentPicks]);
 
   return (

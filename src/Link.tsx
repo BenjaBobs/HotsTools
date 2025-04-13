@@ -1,9 +1,9 @@
 import './Link.scss';
 
 import React, { useMemo } from 'react';
-import { useRecoilValue } from 'recoil';
 
-import { browserHistory, s_urlPath } from './api/routing';
+import { AddressBar } from '@src/utils/AddressBar';
+import { useNotifyRerender } from '@src/utils/NotifyingClass';
 
 export type LinkProps = {
   to: string;
@@ -22,7 +22,8 @@ export type LinkProps = {
 );
 
 export default function Link(props: React.PropsWithChildren<LinkProps>) {
-  const path = useRecoilValue(s_urlPath);
+  useNotifyRerender(AddressBar, state => [state.path]);
+  const path = AddressBar.path;
 
   const href = useMemo(() => {
     let innerHref = '';
@@ -58,7 +59,7 @@ export default function Link(props: React.PropsWithChildren<LinkProps>) {
           !(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey) // ignore clicks with modifier keys
         ) {
           event.preventDefault();
-          browserHistory.push(href);
+          AddressBar.setUrl(href);
         }
       }}
     >

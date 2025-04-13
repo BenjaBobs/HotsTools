@@ -15,7 +15,7 @@ export default ChangeLogApp;
 
 function ChangeLogPage() {
   return (
-    <Flex down justifySelf="center" align="center" maxWidth={1000}>
+    <Flex down justifySelf="center" align="center" maxWidth={1000} pad={32}>
       <Timeline mode="left" style={{ width: '100%' }}>
         {changeLog.map((item, idx) => (
           <Timeline.Item style={{ paddingBottom: 60 }} key={idx}>

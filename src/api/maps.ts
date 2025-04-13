@@ -1,8 +1,8 @@
-export type Map = {
+export type HotsMap = {
   name: string;
 };
 
-export const Maps: Map[] = [
+export const HotsMaps: HotsMap[] = [
   { name: 'Alterac Pass' },
   { name: 'Battlefield of Eternity' },
   { name: "Blackheart' Bay" },
