@@ -56,7 +56,8 @@ export default function Link(props: React.PropsWithChildren<LinkProps>) {
           !event.defaultPrevented && // onClick prevented default
           event.button === 0 && // ignore everything but left clicks
           (!props.target || props.target === '_self') && // let browser handle "target=_blank" etc.
-          !(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey) // ignore clicks with modifier keys
+          !(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey) && // ignore clicks with modifier keys
+          (!props.absolute || href.startsWith(AddressBar.origin)) // allow links to external
         ) {
           event.preventDefault();
           AddressBar.setUrl(href);

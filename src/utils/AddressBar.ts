@@ -5,6 +5,10 @@ class AddressBarCls extends NotifyingClass<AddressBarCls> {
     super();
   }
 
+  public get origin() {
+    return location.origin;
+  }
+
   public get path() {
     return location.pathname;
   }

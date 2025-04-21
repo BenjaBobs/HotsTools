@@ -13,13 +13,12 @@ import { useNotifyRerender } from '@src/utils/NotifyingClass';
 
 const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
-  path: '/draft',
+  path: 'draft',
   component: <DraftSimulator />,
 };
 
 function DraftSimulator() {
   useNotifyRerender(DraftSimulation);
-  console.log('rerender');
 
   return (
     <>

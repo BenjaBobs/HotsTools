@@ -5,7 +5,7 @@ import HeroDetailsPage from './pages/hero-details-page';
 
 const OverviewApp: AppDefinition = {
   name: 'Heroes',
-  path: '/heroes',
+  path: 'heroes',
   component: (
     <HeroPicker
       onHeroPicked={hero =>
@@ -16,7 +16,7 @@ const OverviewApp: AppDefinition = {
   nestedApps: [
     {
       name: 'Hero details',
-      path: '/:hero',
+      path: ':hero',
       component: <HeroDetailsPage />,
     },
   ],

@@ -26,7 +26,7 @@ function __patchApps(
 
     extended.absolutePath = parentApp
       ? parentApp.absolutePath + '/' + extended.path
-      : '/HotsTools' + extended.path;
+      : location.origin + '/HotsTools' + '/' + extended.path;
 
     if (extended.nestedApps) {
       __patchApps(extended.nestedApps, extended);
@@ -56,7 +56,7 @@ class AppsCls extends NotifyingClass<AppsCls> {
 
     AddressBar.subscribe(
       () => {
-        const match = findMatchingApp(AddressBar.path);
+        const match = findMatchingApp(AddressBar.getOriginAndPath());
 
         if (this._currentApp !== match?.app) {
           this._currentApp = match?.app ?? apps[0];

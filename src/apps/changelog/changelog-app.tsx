@@ -7,7 +7,7 @@ import { Flex } from '@src/utils/components/flex';
 
 const ChangeLogApp: AppDefinition = {
   name: 'ChangeLog',
-  path: '/ChangeLog',
+  path: 'ChangeLog',
   component: <ChangeLogPage />,
 };
 
