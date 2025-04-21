@@ -2,6 +2,16 @@ import { ChangelogItem } from './changelog-app';
 
 const changeLog: ChangelogItem[] = [
   {
+    date: new Date(2025, 4, 21),
+    code: [
+      "Removed 'recoil' in favor of simpler state management ('recoil' was abandoned).",
+      "Removed 'history' package, don't need it.",
+      "Removed 'yarn', I prefer bun now.",
+      'Updated various packages.',
+      'Added <Flex> component with screensize sensitive props for easier layouting.',
+    ],
+  },
+  {
     date: new Date(2021, 7, 24),
     added: [
       'Movement speed analysis',

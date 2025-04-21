@@ -4,6 +4,7 @@ import React from 'react';
 import { AppDefinition } from '../AppDefinition';
 import changeLog from './changelog';
 import { Flex } from '@src/utils/components/flex';
+import Link from '@src/Link';
 
 const ChangeLogApp: AppDefinition = {
   name: 'ChangeLog',
@@ -15,7 +16,23 @@ export default ChangeLogApp;
 
 function ChangeLogPage() {
   return (
-    <Flex down justifySelf="center" align="center" maxWidth={1000} pad={32}>
+    <Flex
+      down
+      justifySelf="center"
+      align="center"
+      maxWidth={1000}
+      pad={32}
+      gap={16}
+    >
+      <div>
+        Full history at{' '}
+        <Link
+          to="https://github.com/BenjaBobs/HotsTools/commits/master/"
+          absolute
+        >
+          https://github.com/BenjaBobs/HotsTools/commits/master/
+        </Link>
+      </div>
       <Timeline mode="left" style={{ width: '100%' }}>
         {changeLog.map((item, idx) => (
           <Timeline.Item style={{ paddingBottom: 60 }} key={idx}>

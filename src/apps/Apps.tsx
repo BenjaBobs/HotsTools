@@ -49,7 +49,7 @@ class AppsCls extends NotifyingClass<AppsCls> {
   constructor() {
     super();
 
-    const initialMatch = findMatchingApp(AddressBar.path);
+    const initialMatch = findMatchingApp(AddressBar.getOriginAndPath());
 
     this._currentApp = initialMatch?.app ?? apps[0];
     this._currentPathParams = initialMatch?.params ?? {};

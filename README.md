@@ -26,11 +26,11 @@ The _analysis_ tab shows the (naïve) analysis for each team.
 
 Clone the repo
 
-Install the dependencies: `yarn install`
+Install the dependencies: `bun install`
 
-Compile the hero data from the latest patch: `yarn compile-data`
+Compile the hero data from the latest patch: `bun run compile-data`
 
-Start development server: `yarn dev`
+Start development server: `bun dev`
 
 # Questions?
 
