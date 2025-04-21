@@ -20,7 +20,7 @@ export default function AppHost() {
   return (
     <Layout>
       <Header>
-        <Flex height={64} justifySelf="center" align="stretch" gap={16}>
+        <Flex wrap height={64} justifySelf="center" align="stretch" gap={16}>
           {Apps.topLevelApps.map(app => (
             <Link
               key={app.absolutePath}

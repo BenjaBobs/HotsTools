@@ -2,16 +2,21 @@ import './hero-ban-column.scss';
 
 import { Row } from 'antd';
 import Avatar from 'antd/lib/avatar/avatar';
-import { useRecoilValue } from 'recoil';
 
 import { StopOutlined } from '@ant-design/icons';
 
-import { s_screenInterpolationRatio } from '../../../api/device';
+import { Device } from '../../../api/device';
 import { Hero } from '../../../api/heroes/heroes';
 import Overlay from '../../components/overlay/overlay';
+import { useNotifyRerender } from '@src/utils/NotifyingClass';
+import { GetInterpolationRatioLinear } from '@src/utils/MathUtils';
 
-export default function HeroBanColumn(props: { heroes: (Hero | undefined)[] }) {
-  const sizeRatio = useRecoilValue(s_screenInterpolationRatio);
+export default function HeroBanColumn(props: {
+  heroes: readonly (Hero | undefined)[];
+}) {
+  useNotifyRerender(Device, device => [device.width]);
+
+  const sizeRatio = GetInterpolationRatioLinear(375, 1920, Device.width);
 
   let size = 30 + sizeRatio * 30;
 

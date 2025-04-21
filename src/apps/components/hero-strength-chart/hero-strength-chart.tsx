@@ -1,6 +1,13 @@
 import { Card, Col, Result, Row, Typography } from 'antd';
 import {
-    Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
 } from 'recharts';
 
 import { Hero } from '../../../api/heroes/heroes';
@@ -9,15 +16,15 @@ const _blueHue = '211';
 const _redHue = '350';
 
 export default function HeroStrengthChart(props: {
-  blueHeroes?: Hero[];
-  redHeroes?: Hero[];
+  blueHeroes?: readonly Hero[];
+  redHeroes?: readonly Hero[];
   heroCount?: number;
 }) {
   if (!props.blueHeroes?.length && !props.redHeroes?.length)
     return <Result title="No data" />;
 
   const categories = Object.keys(
-    props.blueHeroes?.[0]?.analysis ?? props.redHeroes?.[0].analysis!
+    props.blueHeroes?.[0]?.analysis ?? props.redHeroes?.[0].analysis!,
   );
 
   const data = categories.map(category => {
@@ -29,7 +36,7 @@ export default function HeroStrengthChart(props: {
 
           return obj;
         },
-        {}
+        {},
       ),
     };
   });

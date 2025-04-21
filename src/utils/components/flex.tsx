@@ -17,6 +17,7 @@ export function Flex(
       left?: boolean;
       right?: boolean;
       center?: boolean;
+      wrap?: CSSProperties['flexWrap'] | true;
       justifySelf?: CSSProperties['justifySelf'];
       justifyContent?: CSSProperties['justifyContent'];
       align?: CSSProperties['alignItems'];
@@ -61,6 +62,7 @@ export function Flex(
         padding: computedProps.pad,
         background: computedProps.bg,
         border: computedProps.border,
+        flexWrap: computedProps.wrap === true ? 'wrap' : computedProps.wrap,
         ...computedProps.style,
       }}
       onClick={computedProps.onClick}

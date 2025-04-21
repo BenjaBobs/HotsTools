@@ -1,7 +1,5 @@
-import {
-  ScreenSizeName,
-  useEnabledScreenSizes,
-} from '@src/utils/hooks/useIntuitiveScreenSize';
+import { Device, ScreenSizeName } from '@src/api/device';
+import { useNotifyRerender } from '../NotifyingClass';
 
 export type DeviceSpecificProps<TProps> = TProps &
   Partial<{
@@ -9,12 +7,13 @@ export type DeviceSpecificProps<TProps> = TProps &
   }>;
 
 export function useDeviceProps<TProps>(props: DeviceSpecificProps<TProps>) {
-  const enabledSizes = useEnabledScreenSizes();
+  useNotifyRerender(Device, device => [device.largestScreenSize]);
+
   const { tablet, laptop, laptop4k, ...rest } = props;
 
-  if (enabledSizes.tablet) mergeInto(rest, tablet);
-  if (enabledSizes.laptop) mergeInto(rest, laptop);
-  if (enabledSizes.laptop4k) mergeInto(rest, laptop4k);
+  if (Device.enabledScreenSizes.tablet) mergeInto(rest, tablet);
+  if (Device.enabledScreenSizes.laptop) mergeInto(rest, laptop);
+  if (Device.enabledScreenSizes.laptop4k) mergeInto(rest, laptop4k);
 
   return rest;
 }

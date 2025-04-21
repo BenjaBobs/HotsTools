@@ -1,28 +1,80 @@
-import { atom, selector } from 'recoil';
+import { NotifyingClass } from '@src/utils/NotifyingClass';
 
-import { GetInterpolationRatioLinear } from '../utils/MathUtils';
+export const ScreenSize = {
+  /**
+   * 1440 < ScreenSize
+   */
+  laptop4k: 1440,
+  /**
+   * 768 < ScreenSize < 1440
+   */
+  laptop: 768,
+  /**
+   * 425 < ScreenSize < 768
+   * Note: the actual value slightly higher than 425 because the browser presets sometimes goes a couple of pixels above
+   * This appears to only happen for the 425 breakpoint
+   */
+  tablet: 428,
+  /**
+   * ScreenSize < 425
+   */
+  mobile: 0,
+};
 
-export const s_deviceSize = atom({
-  key: 's_deviceSize',
-  default: [window.screen.width, window.screen.height],
-  effects_UNSTABLE: [
-    ({ setSelf }) => {
-      const onResize = () => {
-        setSelf([window.screen.width, window.screen.height]);
-      };
+export const ScreenSizes = Object.entries(ScreenSize).sort(
+  (a, b) => b[1] - a[1],
+) as [ScreenSizeName, number][];
 
-      window.addEventListener('resize', onResize);
-      return () => window.removeEventListener('resize', onResize);
-    },
-  ],
-});
+export type ScreenSizeName = keyof typeof ScreenSize;
 
-export const s_screenInterpolationRatio = selector({
-  key: 's_screenInterpolationRatio',
-  get: ({ get }) => {
-    const [width] = get(s_deviceSize);
-    const ratio = GetInterpolationRatioLinear(375, 1920, width);
+class DeviceCls extends NotifyingClass<DeviceCls> {
+  #width: number = window.innerWidth;
+  #height: number = window.innerHeight;
+  #largestScreenSize: ScreenSizeName = 'mobile';
+  #enabledScreenSizes: { [key in ScreenSizeName]: boolean } = {
+    mobile: true,
+    tablet: false,
+    laptop: false,
+    laptop4k: false,
+  };
 
-    return ratio;
-  },
-});
+  constructor() {
+    super();
+    this.reset();
+    window.addEventListener('resize', this.reset);
+  }
+
+  private reset = () => {
+    this.#width = window.innerWidth;
+    this.#height = window.innerHeight;
+
+    for (const [size, breakpoint] of ScreenSizes) {
+      if (this.#width >= breakpoint) {
+        this.#largestScreenSize = size;
+        this.#enabledScreenSizes[size] = true;
+      } else {
+        this.#enabledScreenSizes[size] = false;
+      }
+    }
+
+    this.notifyListeners();
+  };
+
+  get width() {
+    return this.#width;
+  }
+
+  get height() {
+    return this.#height;
+  }
+
+  get enabledScreenSizes(): { readonly [key in ScreenSizeName]: boolean } {
+    return this.#enabledScreenSizes;
+  }
+
+  get largestScreenSize() {
+    return this.#largestScreenSize;
+  }
+}
+
+export const Device = new DeviceCls();

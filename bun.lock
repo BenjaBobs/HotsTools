@@ -10,7 +10,6 @@
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "recharts": "2.0.10",
-        "recoil": "0.7.7",
       },
       "devDependencies": {
         "@types/bun": "^1.2.8",
@@ -319,8 +318,6 @@
 
     "globals": ["globals@11.12.0", "", {}, "sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA=="],
 
-    "hamt_plus": ["hamt_plus@1.0.2", "", {}, "sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA=="],
-
     "immutable": ["immutable@5.1.1", "", {}, "sha512-3jatXi9ObIsPGr3N5hGw/vWWcTkq6hUYhpQz4k0wLC+owqWi/LiugIw9x0EdNZ2yGedKN/HzePiBvaJRXa0Ujg=="],
 
     "internmap": ["internmap@1.0.1", "", {}, "sha512-lDB5YccMydFBtasVtxnZ3MRBHuaoE8GKsppq+EchKL2U4nK/DmEpPHNH8MZe5HkMtpSiTSOZwfN0tzYjO/lJEw=="],
@@ -464,8 +461,6 @@
     "recharts": ["recharts@2.0.10", "", { "dependencies": { "@types/d3-scale": "^3.0.0", "@types/d3-shape": "^2.0.0", "classnames": "^2.2.5", "d3-interpolate": "^2.0.1", "d3-scale": "^3.2.3", "d3-shape": "^2.0.0", "eventemitter3": "^4.0.1", "lodash": "^4.17.19", "react-is": "16.10.2", "react-resize-detector": "^6.6.3", "react-smooth": "^2.0.0", "recharts-scale": "^0.4.4", "reduce-css-calc": "^2.1.8" }, "peerDependencies": { "react": "^16.0.0 || ^17.0.0", "react-dom": "^16.0.0 || ^17.0.0" } }, "sha512-yVIlHXPiSgxg8z+qApVnBcGVCLpluqNbXJenK3jKxsCb/FJzh77wyEztS6kXLXSC1RCZa7UABmBPBhqspMCF+g=="],
 
     "recharts-scale": ["recharts-scale@0.4.5", "", { "dependencies": { "decimal.js-light": "^2.4.1" } }, "sha512-kivNFO+0OcUNu7jQquLXAxz1FIwZj8nrj+YkOKc5694NbjCvcT6aSZiIzNzd2Kul4o4rTto8QVR9lMNtxD4G1w=="],
-
-    "recoil": ["recoil@0.7.7", "", { "dependencies": { "hamt_plus": "1.0.2" }, "peerDependencies": { "react": ">=16.13.1" } }, "sha512-8Og5KPQW9LwC577Vc7Ug2P0vQshkv1y3zG3tSSkWMqkWSwHmE+by06L8JtnGocjW6gcCvfwB3YtrJG6/tWivNQ=="],
 
     "reduce-css-calc": ["reduce-css-calc@2.1.8", "", { "dependencies": { "css-unit-converter": "^1.1.1", "postcss-value-parser": "^3.3.0" } }, "sha512-8liAVezDmUcH+tdzoEGrhfbGcP7nOV4NkGE3a74+qqvE7nt9i4sKLGBuZNOnpI4WiGksiNPklZxva80061QiPg=="],
 

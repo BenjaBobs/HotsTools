@@ -1,5 +1,4 @@
 import { Col, Row, Select } from 'antd';
-import { useRecoilState, useRecoilValue } from 'recoil';
 
 import { HotsMaps } from '../../api/maps';
 import { AppDefinition } from '../AppDefinition';
@@ -9,15 +8,8 @@ import FlexSteps from './components/flex-steps';
 import HeroBanColumn from './components/hero-ban-column';
 import HeroSelectionColumn from './components/hero-selection-column';
 import style from './draft-simulator.module.scss';
-import {
-  s_draftHistory,
-  s_draftMap,
-  s_draftPhases,
-  s_draftTeamBans,
-  s_draftTeamPicks,
-  s_draftType,
-} from './draft-state';
-import { DraftType, Team } from './Types';
+import { DraftSimulation, DraftType, Team } from './DraftSimulation';
+import { useNotifyRerender } from '@src/utils/NotifyingClass';
 
 const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
@@ -26,27 +18,18 @@ const DraftSimulatorApp: AppDefinition = {
 };
 
 function DraftSimulator() {
-  const [actions, setActions] = useRecoilState(s_draftHistory);
-  const phases = useRecoilValue(s_draftPhases);
-  const currentPhase = phases[actions.filter(x => x.completed).length];
-
-  const [draftType, setDraftType] = useRecoilState(s_draftType);
-  const [draftMap, setDraftMap] = useRecoilState(s_draftMap);
-
-  const blueHeroes = useRecoilValue(s_draftTeamPicks(Team.Blue));
-  const redHeroes = useRecoilValue(s_draftTeamPicks(Team.Red));
-  const blueBans = useRecoilValue(s_draftTeamBans(Team.Blue));
-  const redBans = useRecoilValue(s_draftTeamBans(Team.Red));
+  useNotifyRerender(DraftSimulation);
+  console.log('rerender');
 
   return (
     <>
       <Row justify="center" style={{ marginBottom: 16 }}>
         <Col>
           <Select<DraftType>
-            value={draftType}
+            value={DraftSimulation.draftType}
             onChange={newDraftType => {
-              setDraftType(newDraftType);
-              setActions([]);
+              DraftSimulation.setDraftType(newDraftType);
+              DraftSimulation.reset();
             }}
             style={{ width: 100 }}
           >
@@ -59,11 +42,11 @@ function DraftSimulator() {
         </Col>
         <Col>
           <Select
-            value={draftMap.name}
+            value={DraftSimulation.map.name}
             onChange={newDraftMapName => {
               const newMap = HotsMaps.find(m => m.name === newDraftMapName);
               if (newMap) {
-                setDraftMap(newMap);
+                DraftSimulation.setMap(newMap);
               }
             }}
             style={{ width: 200 }}
@@ -79,13 +62,13 @@ function DraftSimulator() {
       <Row justify="center">
         <Col xs={22} sm={18} md={16}>
           <FlexSteps>
-            {phases.map((p, idx) =>
+            {DraftSimulation.phases.map((p, idx) =>
               p.type === 'Ban' ? (
                 <Orb
                   key={idx}
                   intensity={0.2}
                   className={`${style.phaseOrb} ${
-                    p === currentPhase ? style.current : ''
+                    p === DraftSimulation.getCurrentPhase() ? style.current : ''
                   }`}
                 >
                   {p.team === Team.Blue ? '<' : '>'}
@@ -95,7 +78,7 @@ function DraftSimulator() {
                   key={idx}
                   color={p.team}
                   className={`${style.phaseOrb} ${
-                    p === currentPhase ? style.current : ''
+                    p === DraftSimulation.getCurrentPhase() ? style.current : ''
                   }`}
                 >
                   {p.amount}
@@ -108,12 +91,14 @@ function DraftSimulator() {
       <Row justify="space-between">
         <Col span={3}>
           <Row>
-            <HeroBanColumn heroes={blueBans} />
+            <HeroBanColumn heroes={DraftSimulation.getBans(Team.Blue)} />
           </Row>
           <Row>
             <HeroSelectionColumn
               direction="ltr"
-              selectedHeroes={blueHeroes.map(h => h.icon)}
+              selectedHeroes={DraftSimulation.getPicks(Team.Blue).map(
+                h => h.icon,
+              )}
             />
           </Row>
         </Col>
@@ -124,12 +109,14 @@ function DraftSimulator() {
         </Col>
         <Col span={3}>
           <Row justify="end">
-            <HeroBanColumn heroes={redBans} />
+            <HeroBanColumn heroes={DraftSimulation.getBans(Team.Red)} />
           </Row>
           <Row justify="end">
             <HeroSelectionColumn
               direction="rtl"
-              selectedHeroes={redHeroes.map(h => h.icon)}
+              selectedHeroes={DraftSimulation.getPicks(Team.Red).map(
+                h => h.icon,
+              )}
             />
           </Row>
         </Col>

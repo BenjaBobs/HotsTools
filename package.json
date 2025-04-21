@@ -14,8 +14,7 @@
     "markdown-to-jsx": "^7.7.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "recharts": "2.0.10",
-    "recoil": "0.7.7"
+    "recharts": "2.0.10"
   },
   "devDependencies": {
     "@types/bun": "^1.2.8",

@@ -1,17 +1,17 @@
-import { useRecoilValue } from 'recoil';
-
 import HeroPicker from '../../../components/hero-picker/hero-picker';
-import { s_draftHistory, usePickHero } from '../../draft-state';
+import { useNotifyRerender } from '@src/utils/NotifyingClass';
+import { DraftSimulation } from '../../DraftSimulation';
 
 export default function HeroesPanel() {
-  const pickHero = usePickHero();
-  const actions = useRecoilValue(s_draftHistory);
+  useNotifyRerender(DraftSimulation);
 
   return (
     <HeroPicker
-      disabledHeroes={actions.flatMap(a => a.heroes.map(h => h.nameNormalized))}
+      disabledHeroes={DraftSimulation.getUnavailableHeroes().map(
+        a => a.nameNormalized,
+      )}
       size={60}
-      onHeroPicked={pickHero}
+      onHeroPicked={DraftSimulation.pickHero}
     />
   );
 }

@@ -1,16 +1,19 @@
 import './hero-selection-column.scss';
 
 import { Col } from 'antd';
-import { useRecoilValue } from 'recoil';
 
-import { s_screenInterpolationRatio } from '../../../api/device';
+import { Device } from '../../../api/device';
 import Hexagon from '../../components/hexagon/hexagon';
+import { GetInterpolationRatioLinear } from '@src/utils/MathUtils';
+import { useNotifyRerender } from '@src/utils/NotifyingClass';
 
 export default function HeroSelectionColumn(props: {
   direction?: 'ltr' | 'rtl';
   selectedHeroes: string[];
 }) {
-  const sizeRatio = useRecoilValue(s_screenInterpolationRatio);
+  useNotifyRerender(Device, device => [device.width]);
+
+  const sizeRatio = GetInterpolationRatioLinear(375, 1920, Device.width);
 
   let size = 40 + sizeRatio * 70;
 
