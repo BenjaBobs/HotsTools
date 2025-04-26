@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && cp build/index.html build/404.html",
-    "compile-data": "scripts/compile-data.ts"
+    "compile-data": "bun scripts/compile-data.ts"
   },
   "dependencies": {
     "@ant-design/icons": "4.6.2",
