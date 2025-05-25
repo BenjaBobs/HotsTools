@@ -622,12 +622,6 @@ export const artanis: Hero = {
         descriptionShort: "Suppression Pulse gains an additional charge",
         descriptionLong: "Suppression Pulse gains an additional charge. There is a 10 second cooldown between uses.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 10
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_artanis_disruptionweb.png",

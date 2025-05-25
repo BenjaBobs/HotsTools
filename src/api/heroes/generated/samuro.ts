@@ -171,12 +171,6 @@ export const samuro: Hero = {
         descriptionShort: "Critical Strike happens more often",
         descriptionLong: "Critical Strike now happens for Samuro and his Mirror Images every 3rd Basic Attack. Critical Strikes against enemy Heroes from Samuro or his Mirror Images reduces their Physical Armor by 5 for 2.25 seconds, up to a maximum reduction of 15 Physical Armor.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike.png",
@@ -296,12 +290,6 @@ export const samuro: Hero = {
         descriptionShort: "Critical Strike deals area damage",
         descriptionLong: "Critical Strikes from Samuro or his Mirror Images deal bonus Spell Damage equal to 50% of their Basic Attack damage to the target and other nearby enemies.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike.png",
@@ -325,12 +313,6 @@ export const samuro: Hero = {
         descriptionShort: "Critical Strikes reduce Image Transmission cooldown",
         descriptionLong: "Samuro's Critical Strikes against enemy Heroes reduce Image Transmission's cooldown by 1 second, and deal 35% more damage for each active Mirror Image.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike_a.png",
@@ -354,12 +336,6 @@ export const samuro: Hero = {
         descriptionShort: "Critical Strikes increase Basic Attack damage",
         descriptionLong: "Samuro's Basic Attacks against enemy Heroes reduce Critical Strike's cooldown by 2 seconds. Critical Strikes against enemy Heroes increase Samuro's Basic Attack damage by 10% for 4 seconds, up to 30%.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike_b.png",
@@ -504,12 +480,6 @@ export const samuro: Hero = {
         descriptionShort: "Critically Strike always happens on disabled targets",
         descriptionLong: "Samuro's Basic Attacks against Stunned, Rooted, or Slowed enemies are always Critical Strikes.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_samuro_criticalstrike.png",

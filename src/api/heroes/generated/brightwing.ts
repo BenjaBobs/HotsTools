@@ -607,12 +607,6 @@ export const brightwing: Hero = {
         descriptionShort: "Blink Heal grants Stealth",
         descriptionLong: "Blink Heal grants Stealth to Brightwing and her Heroic targets for 9 seconds, and they are Unrevealable for the first 0.5 seconds. While Stealthed by Invisible Friends, Heroes heal for 25 (+4% / level) health per second. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 2
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_brightwing_blinkheal.png",

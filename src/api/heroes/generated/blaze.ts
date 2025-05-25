@@ -258,12 +258,6 @@ export const blaze: Hero = {
         descriptionShort: "Increase Oil Spill area",
         descriptionLong: "Increase Oil Spill's area by 20%. Each enemy Hero hit by Flame Stream reduces the cooldown of Oil Spill by 0.75 seconds and refunds 5 Mana.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil.png",
@@ -358,12 +352,6 @@ export const blaze: Hero = {
         descriptionShort: "Oil Spill reduces Attack Speed",
         descriptionLong: "Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 35% for 4 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil.png",
@@ -468,12 +456,6 @@ export const blaze: Hero = {
         descriptionShort: "Quest: Increase Ignited Oil Spill damage, duration",
         descriptionLong: "Increase Ignited Oil Spill damage by 45%. Quest: Damage enemy Heroes with Ignited Oil Spills 30 times. Reward: Increase Oil Spill's Ignite duration by 2.5 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil.png",
@@ -498,12 +480,6 @@ export const blaze: Hero = {
         descriptionShort: "Oil Spill Slows when Ignited",
         descriptionLong: "Enemies standing in Oil Spill when it is Ignited are Slowed by 40% and take 35% more Basic Attack damage from Blaze for 3 seconds. Additionally, Basic Attack splashes Ignite Oil Spills.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_blaze_oil_b.png",

@@ -44,8 +44,7 @@ export const dehaka: Hero = {
       cooldown: 5,
       charges: {
         chargesMax: 50,
-        chargesInitial: 0,
-        recastCooldown: 1
+        chargesInitial: 0
       },
       category: "trait",
       type: "Trait",
@@ -219,11 +218,6 @@ export const dehaka: Hero = {
         descriptionShort: "Quest: Essence increases Health Regen, max Essence",
         descriptionLong: "Regeneration Globes grant 10 Essence. Repeatable Quest: Every 50 Essence collected permanently increases Health Regeneration by 4, up to 40, and maximum Essence by 1, up to 10.",
         cooldown: null,
-        charges: {
-          chargesMax: 50,
-          chargesInitial: 0,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection.png",
@@ -297,11 +291,6 @@ export const dehaka: Hero = {
         descriptionShort: "Increases Essence from Minions, Dark Swarm damage to Mercenaries",
         descriptionLong: "Increases Essence collected from Minions by 50%. Dark Swarm deals 40% more damage to Mercenaries.",
         cooldown: null,
-        charges: {
-          chargesMax: 50,
-          chargesInitial: 0,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection.png",
@@ -326,11 +315,6 @@ export const dehaka: Hero = {
         descriptionShort: "Takedowns grant more Essence",
         descriptionLong: "Increases Essence gained from Takedowns by 100%, and gain 1 Essence for each enemy Hero hit by Dark Swarm, up to 3 at once.",
         cooldown: null,
-        charges: {
-          chargesMax: 50,
-          chargesInitial: 0,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection_var1.png",
@@ -531,11 +515,6 @@ export const dehaka: Hero = {
         descriptionShort: "Essence increases Attack Damage",
         descriptionLong: "Gain 1.25% increased Attack Damage per Essence stored.",
         cooldown: null,
-        charges: {
-          chargesMax: 50,
-          chargesInitial: 0,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection.png",
@@ -684,11 +663,6 @@ export const dehaka: Hero = {
         descriptionShort: "Basic Attacks slow, grant Essence",
         descriptionLong: "Dehaka's Basic Attacks slow the target by 20% for 1 second. If the target is a Hero, Dehaka gains 5 Essence.",
         cooldown: null,
-        charges: {
-          chargesMax: 50,
-          chargesInitial: 0,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dehaka_essencecollection.png",

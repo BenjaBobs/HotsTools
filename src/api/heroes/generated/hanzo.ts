@@ -467,12 +467,6 @@ export const hanzo: Hero = {
         descriptionShort: "Storm Bow lowers Natural Agility cooldown",
         descriptionLong: "Hitting Heroes with Storm Bow lowers Natural Agility's cooldown by 10 seconds. Additionally, Hero Takedowns reset Natural Agility's cooldown.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_wallvault.png",
@@ -668,12 +662,6 @@ export const hanzo: Hero = {
         descriptionShort: "Gain Natural Agility charge, cooldown reduced",
         descriptionLong: "Natural Agility gains a 2nd charge and its cooldown is reduced by 10 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_hanzo_wallvault.png",

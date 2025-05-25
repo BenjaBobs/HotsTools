@@ -95,7 +95,7 @@ export const imperius: Hero = {
       id: "ImperiusMoltenArmor",
       name: "Molten Armor",
       descriptionShort: "Burn nearby enemies",
-      descriptionLong: "Shroud Imperius in flames for 3 seconds, striking a nearby enemy for 19 (+4% / level) damage every 0.25 seconds. Imperius heals for 50% of the damage dealt, increased to 100% against Heroes.",
+      descriptionLong: "Shroud Imperius in flames for 3 seconds, striking a nearby enemy for 19 (+4% / level) damage every 0.25 seconds. Imperius heals for 50% of the damage dealt, increased to 100% against Heroes. Strikes 2 additional targets if no Heroes are in range.",
       cost: {
         type: "Mana",
         amount: 75
@@ -164,7 +164,7 @@ export const imperius: Hero = {
         id: "ImperiusCelestialChargeImpalingLight",
         name: "Impaling Light",
         descriptionShort: "Empower Celestial Charge with Valorous Brand",
-        descriptionLong: "Celestial Charge's final damage is increased by 75% and its cooldown is reduced by 1.25 seconds for each Valorous Brand on the target when the Stun completes.",
+        descriptionLong: "Celestial Charge deals 180% more damage to Heroes, reduced by 20% for each additional Hero hit. For each Valorous Brand on the target when Celestial Charge's Stun completes, reduce its cooldown by 1 second. Passive: Reduce Celestial Charge's cooldown by 2 seconds, and its Mana cost from 40 to 30.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -175,7 +175,7 @@ export const imperius: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 36
         },
         order: 1,
         tier: "level1",
@@ -329,7 +329,7 @@ export const imperius: Hero = {
         id: "ImperiusSolarionsFireBlazeOfGlory",
         name: "Blaze of Glory",
         descriptionShort: "Solarion's Fire creates a delayed explosion",
-        descriptionLong: "Solarion's Fire leaves a line of scorched earth along its center that explodes after 2 seconds for 205 (+4% / level) damage, dealing bonus damage with Valorous Brand marks.",
+        descriptionLong: "Solarion's Fire leaves a line of scorched earth along its center that explodes after 1.75 seconds for 205 (+4% / level) damage, dealing bonus damage with Valorous Brand marks.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -352,7 +352,7 @@ export const imperius: Hero = {
         id: "ImperiusHolyFervor",
         name: "Holy Fervor",
         descriptionShort: "Activate to gain cleaving Basic Attacks",
-        descriptionLong: "Activate to cause the next 4 Basic Attacks within 10 seconds to cleave for 30% additional damage. Passive: Casting Molten Armor grants Holy Fervor for 2 Basic Attacks.",
+        descriptionLong: "Activate to cause the next 4 Basic Attacks within 10 seconds to cleave for 30% additional damage.",
         cooldown: 25,
         category: "Talent",
         type: "Active",
@@ -569,7 +569,7 @@ export const imperius: Hero = {
         id: "ImperiusAngelicArmamentsHeavenlyHost",
         name: "Heavenly Host",
         descriptionShort: "Allied Heroes gain a weaponized Shield",
-        descriptionLong: "Nearby allied Heroes gain 600 (+4% / level) Shield for 3 seconds. If the Shield lasts the full duration, fire a sword at the nearest enemy Hero, dealing 140 (+4% / level) damage.",
+        descriptionLong: "Shields granted by Angelic Armaments no longer expire, and on initial activation, nearby allied Heroes gain a Shield that absorbs 600 (+4% / level) damage. If a Shield granted to an allied Hero lasts 3 seconds, it fires 1 sword at a nearby enemy, prioritizing closest Heroes, dealing 140 (+4% / level) damage.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -618,6 +618,29 @@ export const imperius: Hero = {
         ]
       },
       {
+        id: "ImperiusMoltenWrath",
+        name: "Molten Wrath",
+        descriptionShort: "Molten Armor always hits extra targets",
+        descriptionLong: "Molten Armor always strikes 2 additional targets, even if there are Heroes in range.",
+        cooldown: null,
+        category: "Talent",
+        type: "E",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_imperius_e.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level20",
+        linkedAbilityIds: [
+          "ImperiusMoltenArmor"
+        ]
+      },
+      {
         id: "ImperiusValorousBrandBrandOfSolarion",
         name: "Brand of Solarion",
         descriptionShort: "Valorous Brand no longer consumed",
@@ -634,7 +657,7 @@ export const imperius: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 3,
+        order: 4,
         tier: "level20",
         linkedAbilityIds: [
           "ImperiusValorousBrand"
@@ -657,7 +680,7 @@ export const imperius: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 4,
+        order: 5,
         tier: "level20"
       }
     ]

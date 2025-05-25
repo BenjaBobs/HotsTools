@@ -172,12 +172,6 @@ export const mei: Hero = {
         descriptionShort: "Increase Snow Blind's Slow, reduced cooldown",
         descriptionLong: "Increases the duration of Snow Blind's Slow by 1.5 seconds. Each time Blizzard damages an enemy Hero, reduce the cooldown of Snow Blind by 0.5 seconds and gain 3 Mana.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 2
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_q_snowblind.png",
@@ -246,12 +240,6 @@ export const mei: Hero = {
         descriptionShort: "Increase Snow Blind damage, disables Structures",
         descriptionLong: "Snow Blind deals 75% increased damage and Structures hit are disabled for 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 2
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_q_snowblind.png",
@@ -515,12 +503,6 @@ export const mei: Hero = {
         descriptionShort: "Snow Blind gains a charge, increased range",
         descriptionLong: "Snow Blind gains an additional charge and its range is increased by 33%.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 2
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_q_snowblind.png",
@@ -641,12 +623,6 @@ export const mei: Hero = {
         descriptionShort: "Snow Blind is periodically empowered",
         descriptionLong: "Every 15 seconds, the next Snow Blind you cast has 67% increased area and 200% increased damage.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 2
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mei_q_snowblind.png",

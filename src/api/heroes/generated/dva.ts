@@ -294,11 +294,6 @@ export const dva: Hero = {
         descriptionShort: "Empower Fusion Cannons and Self-Destruct",
         descriptionLong: "Hitting your self-destructing Mech with Big Shot causes it to self-destruct 40% faster. Passive: When Fusion Cannons deal bonus damage to an enemy Hero, gain 0.25 Self-Destruct Charge.",
         cooldown: null,
-        charges: {
-          chargesMax: 100,
-          chargesInitial: 0,
-          chargeCost: 100
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dva_selfdestruct.png",
@@ -619,12 +614,6 @@ export const dva: Hero = {
         descriptionShort: "Gain a charge, Hero hits reduce cooldown",
         descriptionLong: "Micro Missiles gains an additional charge. Each time Micro Missiles hits an enemy Hero, reduce its cooldown by 0.5 seconds and charge cooldown by 0.25 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_dva_micromissiles.png",

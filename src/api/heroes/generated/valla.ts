@@ -275,12 +275,6 @@ export const valla: Hero = {
         descriptionShort: "Increases Vault damage bonus, reduce cooldown",
         descriptionLong: "Increase Vaults Basic Attack damage bonus from 6% to 15% per stack of Hatred. If this attack kills its victim within 1.5 seconds, the Mana cost and cooldown of Vault are refunded. Passive: Reduce the cooldown of Vault by 5 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_vault.png",
@@ -304,12 +298,6 @@ export const valla: Hero = {
         descriptionShort: "Vault refreshes Hungering Arrow",
         descriptionLong: "Vault no longer has a Mana cost. Casting Vault resets the cooldown of Hungering Arrow.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_repeatingarrow.png",
@@ -635,12 +623,6 @@ export const valla: Hero = {
         descriptionShort: "Reduce cooldown, gain Attack Speed",
         descriptionLong: "Basic Attacks against Heroes reduce the cooldown of Rain of Vengeance by 5 seconds. Passive: Each stack of Hatred increases your Attack Speed by 2%. While at max Hatred, gain an additional 30% Attack Speed.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_rainofvengeance.png",
@@ -667,12 +649,6 @@ export const valla: Hero = {
         descriptionShort: "Gain Vault charges, drop Caltrops",
         descriptionLong: "Gain 2 additional charges of Vault. Drop 3 Caltrops while Vaulting that deal 60 (+4% / level) damage and Slow enemies by 40% for 1 second.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_valla_vault.png",

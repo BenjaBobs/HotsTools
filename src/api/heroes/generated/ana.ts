@@ -73,7 +73,7 @@ export const ana: Hero = {
       id: "AnaBioticGrenade",
       name: "Biotic Grenade",
       descriptionShort: "Toss a grenade that heals allies, prevents enemy healing",
-      descriptionLong: "Toss a grenade at the target area. Allied Heroes hit are healed for 152 (+4% / level) Health and receive 25% increased healing from Ana for 4 seconds. Enemies hit take 60 (+4% / level) damage and receive 100% less healing for 1.75 seconds.",
+      descriptionLong: "Toss a grenade at the target area. Allied Heroes hit are healed for 152 (+4% / level) Health and receive 25% increased healing from Ana for 4 seconds. Enemies hit take 60 (+4% / level) damage and receive 100% less healing for 1.75 seconds. If Biotic Grenade does not hit any enemies, reduce its cooldown by 3 seconds, and if Ana is the only target hit, reduce its cooldown by an additional 2 seconds.",
       cost: {
         type: "Mana",
         amount: 50
@@ -145,6 +145,11 @@ export const ana: Hero = {
         amount: 45
       },
       cooldown: 60,
+      charges: {
+        chargesMax: 6,
+        chargesInitial: 6,
+        chargeCost: 0
+      },
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ana_overwatch.png",
@@ -210,7 +215,7 @@ export const ana: Hero = {
         id: "AnaShrikeVampiricRounds",
         name: "Vampiric Rounds",
         descriptionShort: "Quest: Increase Shrike Healing",
-        descriptionLong: "Quest: Stack 5 Doses on an enemy Hero or Basic Attack a Hero with 5 Doses. Reward: Stack 5 Doses to increase Shrike's healing by 1%. Reward: Basic Attack a Hero with 5 Doses to increase Shrike's healing by 0.25%.",
+        descriptionLong: "Increase Shrike's healing by 15%. Repeatable Quest: Stack 5 Doses to increase Shrike's healing by 1%. Repeatable Quest: Basic Attack a Hero with 5 Doses to increase Shrike's healing by 0.25%.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -220,7 +225,7 @@ export const ana: Hero = {
           mobility: 0,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 2,
+          healing: 5,
           magicalDamage: 0
         },
         order: 3,
@@ -410,6 +415,11 @@ export const ana: Hero = {
           amount: 45
         },
         cooldown: 60,
+        charges: {
+          chargesMax: 6,
+          chargesInitial: 6,
+          chargeCost: 0
+        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ana_overwatch.png",
@@ -600,8 +610,8 @@ export const ana: Hero = {
       {
         id: "AnaEyeOfHorusDeadeye",
         name: "Deadeye",
-        descriptionShort: "Hitting Heroes increases healing and damage",
-        descriptionLong: "Increase Eye Of Horus' healing and damage by 5% for every Hero hit. This bonus resets after all shots have been fired.",
+        descriptionShort: "Eye of Horus rounds recharge over time",
+        descriptionLong: "Eye of Horus cooldown reduced to 6 seconds, but it only regains new rounds every 10 seconds. Remaining cooldown is converted to rounds. For every Hero Eye of Horus hits, increases its damage and healing by 5%. This bonus resets after leaving Eye of Horus or after 4 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",

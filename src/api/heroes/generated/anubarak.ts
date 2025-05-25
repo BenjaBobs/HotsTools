@@ -34,7 +34,7 @@ export const anubarak: Hero = {
       name: "Scarab Host",
       descriptionShort: "Spawn a Beetle whenever an Ability is cast",
       descriptionLong: "Using an Ability spawns a Beetle which lasts for 8 seconds, attacking nearby enemies for 20 (+4% / level) damage.",
-      cooldown: 8,
+      cooldown: null,
       category: "trait",
       type: "Trait",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_anubarak_scarabhost.png",

@@ -297,12 +297,6 @@ export const kharazim: Hero = {
         descriptionShort: "Radiant Dash more often",
         descriptionLong: "Decreases Radiant Dash's cooldown by 2 seconds and increases the maximum number of charges by 1.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_monk_dash.png",
@@ -431,12 +425,6 @@ export const kharazim: Hero = {
         descriptionShort: "Radiant Dash gives Move Speed",
         descriptionLong: "Radiant Dashing to an ally gives Kharazim and the target 30% bonus Movement Speed for 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_monk_dash.png",
@@ -502,12 +490,6 @@ export const kharazim: Hero = {
         descriptionShort: "Radiant Dash makes ally Unstoppable",
         descriptionLong: "Radiant Dashing to an ally makes them Unstoppable for 1 second.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_monk_dash.png",
@@ -531,12 +513,6 @@ export const kharazim: Hero = {
         descriptionShort: "Radiant Dash launches a volley of blows",
         descriptionLong: "Radiant Dashing to an enemy launches a rapid volley of 6 Basic Attacks dealing 45% damage each.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_monk_dash_a.png",

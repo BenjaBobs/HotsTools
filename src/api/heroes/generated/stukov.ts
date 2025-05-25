@@ -590,12 +590,6 @@ export const stukov: Hero = {
         descriptionShort: "Flailing Swipe only hits once, gains multiple charges",
         descriptionLong: "Flailing Swipe gains 2 additional charges, but each use only swings 1 time, at maximum range. Additionally, its cooldown is decreased to 25 seconds, and its Mana cost is reduced from 60 to 25.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.0625
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stukov_flailingswipe.png",

@@ -152,12 +152,6 @@ export const zarya: Hero = {
         descriptionShort: "Quest: Increases Particle Grenade radius and reduces cooldown",
         descriptionLong: "Quest: For every 5 enemy Heroes hit by Particle Grenade, its recharge rate lowers by 0.4375 seconds, up to 3.5 seconds. Reward: Once Particle Grenade has hit 40 enemy Heroes, its radius is increased by 15%.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.75
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zarya_particlegrenade.png",
@@ -350,12 +344,6 @@ export const zarya: Hero = {
         descriptionShort: "Particle Grenade center deals more damage, Slows",
         descriptionLong: "Particle Grenade deals 25 (+4% / level) more damage and Slows Movement Speed by 25% for 2 seconds to enemies hit by the center of the blast.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.75
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zarya_particlegrenade.png",
@@ -379,12 +367,6 @@ export const zarya: Hero = {
         descriptionShort: "Particle Grenade can generate Energy",
         descriptionLong: "Hitting a Hero with Particle Grenade causes Basic Attacks against them to generate 2 Energy. Lasts 4 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.75
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zarya_particlegrenade_a.png",
@@ -695,12 +677,6 @@ export const zarya: Hero = {
         descriptionShort: "Particle Grenade charges are returned at once",
         descriptionLong: "All Particle Grenade charges are returned at once.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.75
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zarya_particlegrenade.png",

@@ -195,12 +195,6 @@ export const tychus: Hero = {
         descriptionShort: "Increase Run and Gun Range, Movement Speed",
         descriptionLong: "Increase the range of Run and Gun by 50%. When cast, increase Tychus's Movement Speed by 20% for 2.5 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tychus_runandgun.png",
@@ -669,12 +663,6 @@ export const tychus: Hero = {
         descriptionShort: "Adds Run and Gun charges and reduces Mana cost",
         descriptionLong: "Run and Gun and Odin's Thrusters gain 2 additional charges and reduces Run and Gun's Mana cost from 50 to 25. After using Run and Gun, increase Tychus's Basic Attack range by 1.5 for 4 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tychus_runandgun.png",

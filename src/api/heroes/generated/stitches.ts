@@ -192,12 +192,6 @@ export const stitches: Hero = {
         descriptionShort: "Quest: Devouring Heroes grants Health per second, increases Vile Gas damage",
         descriptionLong: "Quest: Hitting an enemy Hero with Devour increases Stitches' Health Regeneration by 1.5 and the damage of Vile Gas by 2%, stacking up to 100 times.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 6
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stitches_devour.png",
@@ -336,12 +330,6 @@ export const stitches: Hero = {
         descriptionShort: "Gambit: Gain additional Devour charge, grants Shields",
         descriptionLong: "Devour gains 1 additional charge with a 6 second cooldown between uses. Gambit: If Stitches is at max Health after using Devour, he gains a Shield equal to 15% of his maximum Health for 10 seconds. Every death, reduce this Shield by 3%.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 6
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stitches_devour.png",
@@ -542,12 +530,6 @@ export const stitches: Hero = {
         descriptionShort: "Increase Devour damage, reduces enemy damage dealt",
         descriptionLong: "Devour deals an additional 140 (+4% / level) damage over 5 seconds. When used on a Hero, its cooldown is reduced by 4 seconds and causes the Hero hit to deal 50% reduced damage for 4 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 6
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_stitches_devour.png",

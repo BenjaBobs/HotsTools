@@ -339,7 +339,7 @@ export const gall: Hero = {
         id: "GallOgreRampage",
         name: "Ogre Rampage",
         descriptionShort: "Empower Ogre Rage",
-        descriptionLong: "Increase the damage bonus of Ogre Rage by 5%. Each time Gall damages an enemy Hero this bonus increases by 1% for 4 seconds, up to an additional 10% bonus damage.",
+        descriptionLong: "Increase the damage bonus of Ogre Rage by 5%. Each time Gall damages an enemy Hero while Ogre Rage is active, this bonus increases by 1% for 4 seconds, up to an additional 10% bonus damage.",
         cooldown: null,
         category: "Talent",
         type: "Trait",

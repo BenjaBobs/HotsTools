@@ -559,12 +559,6 @@ export const diablo: Hero = {
         descriptionShort: "Gain charges of Overpower",
         descriptionLong: "Gain 2 additional charges of Overpower, with a 2 second cooldown between uses.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 2
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_diablo_overpower_var1.png",

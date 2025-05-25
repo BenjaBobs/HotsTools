@@ -171,12 +171,6 @@ export const abathur: Hero = {
         descriptionShort: "Toxic Nests deal more damage, reduce Armor",
         descriptionLong: "Toxic Nests deal 75% more damage over 3 seconds and reduce the Armor of enemy Heroes hit by 10 for 4 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.0625
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_toxicnest.png",
@@ -272,12 +266,6 @@ export const abathur: Hero = {
         descriptionShort: "Increases Stab damage and range",
         descriptionLong: "Increases the damage and range of Symbiote's Stab by 20%.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_stab.png",
@@ -302,12 +290,6 @@ export const abathur: Hero = {
         descriptionShort: "Increases Toxic Nest charges, duration",
         descriptionLong: "Increase the duration of Toxic Nests by 45 seconds, reduce its cooldown by 2 seconds, and add 2 additional charges.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.0625
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_toxicnest.png",
@@ -333,12 +315,6 @@ export const abathur: Hero = {
         descriptionShort: "Toxic Nests slow Move Speed",
         descriptionLong: "Toxic Nests Slow enemy Movement Speed by 40% for 2.5 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.0625
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_toxicnest.png",
@@ -457,12 +433,6 @@ export const abathur: Hero = {
         descriptionShort: "Stab gains an additional charge",
         descriptionLong: "Symbiote's Stab gains 1 additional charge and its cooldown is reduced by .5 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_abathur_stab.png",

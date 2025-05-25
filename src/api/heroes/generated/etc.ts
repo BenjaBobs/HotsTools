@@ -33,7 +33,7 @@ export const etc: Hero = {
       id: "RockstarDummy",
       name: "Rockstar",
       descriptionShort: "After using an ability, E. T. C. gains Armor",
-      descriptionLong: "Using a Basic Ability grants 20 Armor for 2 seconds. Heroic Abilities grant 60 Armor.",
+      descriptionLong: "Using a Basic Ability grants 25 Armor for 2 seconds. Heroic Abilities grant 50 Armor.",
       cooldown: null,
       category: "trait",
       type: "Trait",
@@ -78,7 +78,7 @@ export const etc: Hero = {
         type: "Mana",
         amount: 55
       },
-      cooldown: 12,
+      cooldown: 10,
       category: "basic",
       type: "W",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_etc_facemelt.png",
@@ -88,14 +88,14 @@ export const etc: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 17
+        magicalDamage: 20.4
       }
     },
     {
       id: "L90ETCGuitarSolo",
       name: "Guitar Solo",
       descriptionShort: "Regenerate Health",
-      descriptionLong: "Regenerate 66 (+4% / level) Health per second for 4 seconds.",
+      descriptionLong: "Regenerate 66 Health per second for 4 seconds.",
       cost: {
         type: "Mana",
         amount: 40
@@ -236,7 +236,7 @@ export const etc: Hero = {
         id: "ETCCrowdSurfer",
         name: "Crowd Surfer",
         descriptionShort: "Powerslide can go over terrain",
-        descriptionLong: "Allows Powerslide to travel over walls and terrain. If no enemies are hit, reduce the cooldown by 7 seconds and refund the Mana cost.",
+        descriptionLong: "Allows Powerslide to travel over walls and terrain. If no enemies are hit, reduce the cooldown by 6 seconds and refund the Mana cost.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -330,7 +330,7 @@ export const etc: Hero = {
         id: "ETCMasteryHammeron",
         name: "Hammer-on",
         descriptionShort: "Guitar Solo increases Basic Attack damage",
-        descriptionLong: "While Guitar Solo is active your Basic Attacks deal 35% more damage.",
+        descriptionLong: "E. T. C.'s Basic Attacks deal 12% more damage, increased to 36% while Guitar Solo is active.",
         cooldown: null,
         category: "Talent",
         type: "E",
@@ -341,7 +341,7 @@ export const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 7
+          magicalDamage: 2.4000000000000004
         },
         order: 2,
         tier: "level7",
@@ -457,7 +457,7 @@ export const etc: Hero = {
         id: "ETCMasteryEncore",
         name: "Encore",
         descriptionShort: "Face Melt will knock enemies away a second time, reduces Heroic Ability cooldown",
-        descriptionLong: "Face Melt leaves an Amp behind, which will knock enemies away again 2 seconds later. Passive: Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by 5%.",
+        descriptionLong: "Face Melt leaves an Amp behind, which will knock enemies away again 2 seconds later. Passive: Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by 4%.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -645,10 +645,10 @@ export const etc: Hero = {
         ]
       },
       {
-        id: "GenericTalentStormShield",
-        name: "Storm Shield",
-        descriptionShort: "Activate to grant Shields to all nearby allies",
-        descriptionLong: "Activate to give all nearby allied Heroes a Shield for 20% of their max Health for 3 seconds.",
+        id: "L90ETCPoweroftheHorde",
+        name: "Power of the Horde",
+        descriptionShort: "Activate to Shield nearby allies",
+        descriptionLong: "Activate to grant nearby allied Heroes a Shield that absorbs damage equal to 30% of their maximum Health for 5 seconds, increased by 2% for each other allied Hero in the area.",
         cooldown: 45,
         category: "Talent",
         type: "Active",
@@ -665,10 +665,10 @@ export const etc: Hero = {
         tier: "level20"
       },
       {
-        id: "GenericTalentFlashoftheStorms",
-        name: "Bolt of the Storm",
+        id: "L90ETCRidetheLightning",
+        name: "Ride the Lightning",
         descriptionShort: "Activate to teleport a short distance",
-        descriptionLong: "Activate to teleport to a nearby location.",
+        descriptionLong: "Activate to teleport to a nearby location and deal 48 (+4% / level) damage to nearby enemy Heroes. The cooldown is reduced by 10 second for every enemy Hero hit, up to 50 seconds.",
         cooldown: 70,
         category: "Talent",
         type: "Active",
@@ -679,7 +679,7 @@ export const etc: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 9.600000000000001
         },
         order: 5,
         tier: "level20"
@@ -691,6 +691,6 @@ export const etc: Hero = {
     physicalDamage: 61.87499999999999,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 4.036131225062804
+    magicalDamage: 4.161740800945766
   }
 };

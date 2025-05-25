@@ -172,12 +172,6 @@ export const mephisto: Hero = {
         descriptionShort: "Quest: Empower Skull Missile",
         descriptionLong: "Quest: Hit Heroes with Skull Missile. Reward: After hitting 20 Heroes, increase Skull Missile's damage by 100. Reward: After hitting 40 Heroes, Skull Missile gains an additional charge.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_skull.png",
@@ -250,12 +244,6 @@ export const mephisto: Hero = {
         descriptionShort: "Skull Missile heals",
         descriptionLong: "Skull Missile grants 10 Mana and heals Mephisto for 70% of the damage it deals to Heroes.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_skull.png",
@@ -454,12 +442,6 @@ export const mephisto: Hero = {
         descriptionShort: "Increase Skull Missile damage, grants Spell Power",
         descriptionLong: "Hitting a Hero with Skull Missile grants 25% Spell Power for 6 seconds. Skull Missile deals 40% more damage to Heroes under 50% Health.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_skull.png",
@@ -528,12 +510,6 @@ export const mephisto: Hero = {
         descriptionShort: "Skull Missile explodes when hitting Lightning Nova",
         descriptionLong: "Skull Missile explodes on contact with Lightning Nova, dealing 120 (+4% / level) damage to nearby enemies.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_mephisto_skull.png",

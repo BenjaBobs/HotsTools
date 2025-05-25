@@ -341,7 +341,7 @@ export const lunara: Hero = {
         id: "DryadSplinteredSpear",
         name: "Splintered Spear",
         descriptionShort: "Noxious Blossom makes Basic Attack spread",
-        descriptionLong: "Using Noxious Blossom causes Lunara's next Basic Attack to hit up to 4 enemies. These extra attacks can apply Nature's Toxin.",
+        descriptionLong: "Casting Noxious Blossom grants Lunara 3 stacks of Splintered Spear. When Lunara uses her Basic Attack, it hits an additional enemy for each stack of Splintered Spear, consuming 1 stack for each target. Stores up to 3 stacks. Splintered Spear deals 90 (+4% / level) damage, and applies Nature's Toxin.",
         cooldown: null,
         category: "Talent",
         type: "Q",
@@ -352,7 +352,7 @@ export const lunara: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 0
+          magicalDamage: 18
         },
         order: 1,
         tier: "level7",
@@ -480,7 +480,7 @@ export const lunara: Hero = {
         id: "DryadEndlessSpores",
         name: "Endless Spores",
         descriptionShort: "Nature's Toxin can reduce Crippling Spores cooldown",
-        descriptionLong: "Casting Crippling Spores while at least 2 Heroes are afflicted by Nature's Toxin reduces the cooldown by 4 seconds.",
+        descriptionLong: "Casting Crippling Spores while at least 2 Heroes are afflicted by Nature's Toxin reduces the cooldown by 4 seconds and refunds 50 Mana.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -659,17 +659,11 @@ export const lunara: Hero = {
     ],
     [
       {
-        id: "DryadForestsWrath",
-        name: "Forest's Wrath",
-        descriptionShort: "Thornwood Vine applies Nature's Toxin",
-        descriptionLong: "Thornwood Vine now applies 2 stacks of Nature's Toxin. Increase Thornwood Vine's range by 30% and Lunara's vision radius by 35%.",
+        id: "DryadForTheWildlands",
+        name: "For the Wildlands",
+        descriptionShort: "Thornwood Vine shoots in an arc",
+        descriptionLong: "Thornwood Vine shoots 4 additional vines in an arc.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_wildspear.png",
@@ -696,12 +690,6 @@ export const lunara: Hero = {
         descriptionShort: "Leaping Strike can target allies",
         descriptionLong: "All Leaping Strike charges are returned every 15 seconds. Leaping Strike can be used on allies.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_boundlessstride.png",
@@ -723,6 +711,26 @@ export const lunara: Hero = {
         ]
       },
       {
+        id: "DryadForestsWrath",
+        name: "Forest's Wrath",
+        descriptionShort: "Heroic applies more Nature's Toxin, range increased",
+        descriptionLong: "Lunara's Heroic Ability now applies 2 stacks of Nature's Toxin, and its range is increased by 30%. Passive: Increase Lunara's vision radius by 35%.",
+        cooldown: null,
+        category: "Talent",
+        type: "Heroic",
+        icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_lunara_forests_wrath.png",
+        isPassive: false,
+        analysis: {
+          mobility: 0,
+          physicalDamage: 0,
+          tankiness: 0,
+          healing: 0,
+          magicalDamage: 0
+        },
+        order: 3,
+        tier: "level20"
+      },
+      {
         id: "DryadIntensifyingToxin",
         name: "Intensifying Toxin",
         descriptionShort: "Increase Nature's Toxin damage",
@@ -739,7 +747,7 @@ export const lunara: Hero = {
           healing: 0,
           magicalDamage: 8
         },
-        order: 3,
+        order: 4,
         tier: "level20",
         linkedAbilityIds: [
           "DryadNaturesToxin",
@@ -763,7 +771,7 @@ export const lunara: Hero = {
           healing: 0,
           magicalDamage: 0
         },
-        order: 4,
+        order: 5,
         tier: "level20",
         linkedAbilityIds: [
           "DryadDryadsSwiftness"

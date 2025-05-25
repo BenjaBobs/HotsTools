@@ -172,12 +172,6 @@ export const kerrigan: Hero = {
         descriptionShort: "Ravage grants Assimilation Shields",
         descriptionLong: "Hitting an enemy Hero with Ravage grants 100 (+4% / level) points of Assimilation Shields.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage.png",
@@ -246,12 +240,6 @@ export const kerrigan: Hero = {
         descriptionShort: "Quest: Ravage kills increase damage",
         descriptionLong: "Quest: Minions and Heroes that die within 1.5 seconds of being hit by Ravage increase its damage up to a maximum of 75. Minions grant 1 increased damage and Heroes grant 5 increased damage. Reward: After reaching a 75 damage increase, Ravage gains 50 additional damage.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage.png",
@@ -324,12 +312,6 @@ export const kerrigan: Hero = {
         descriptionShort: "Ravage deals bonus damage to Minions, Mercs",
         descriptionLong: "Reduce the cooldown of Ravage by 3 seconds and increase its damage to Minions and Mercenaries by 100%.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage.png",
@@ -353,12 +335,6 @@ export const kerrigan: Hero = {
         descriptionShort: "Ravage can grant a charge of Ravage",
         descriptionLong: "Hitting an enemy Hero with Ravage grants a charge of Ravage. Can only occur once every 10 seconds per Hero.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage_b.png",
@@ -528,12 +504,6 @@ export const kerrigan: Hero = {
         descriptionShort: "Ravage grants Spell Power",
         descriptionLong: "Ravage grants 5% Spell Power for 5 seconds, up to 40%.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kerrigan_ravage.png",

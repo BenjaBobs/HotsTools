@@ -246,12 +246,6 @@ export const chromie: Hero = {
         descriptionShort: "Time Trap affects enemy/allied Move Speed",
         descriptionLong: "After its Time Stop ends, enemies affected by Time Trap are Slowed by 30% for 3 seconds and allies gain 30% Movement Speed for 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timetrap.png",
@@ -276,12 +270,6 @@ export const chromie: Hero = {
         descriptionShort: "Time Trap affects enemy/allied Armor",
         descriptionLong: "After its Time Stop ends, enemies affected by Time Trap lose 15 Armor for 3 seconds and allies gain 30 Armor for 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timetrap_a.png",
@@ -305,12 +293,6 @@ export const chromie: Hero = {
         descriptionShort: "Increase Time Trap charges, reduce cooldown",
         descriptionLong: "Increase the charges and maximum active Time Traps to 3, and reduce its cooldown by 8 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_chromie_timetrap_b.png",

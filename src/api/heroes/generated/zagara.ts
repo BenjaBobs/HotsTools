@@ -184,12 +184,6 @@ export const zagara: Hero = {
         descriptionShort: "Increase Baneling range",
         descriptionLong: "Banelings can travel 50% further before exploding.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.125
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_banelingbarrage.png",
@@ -321,12 +315,6 @@ export const zagara: Hero = {
         descriptionShort: "Gain Baneling charges, but increase cooldown",
         descriptionLong: "Gain 2 additional charges of Banelings Barrage, but increase its cooldown by 2 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.125
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_banelingbarrage.png",
@@ -350,12 +338,6 @@ export const zagara: Hero = {
         descriptionShort: "Banelings also Slow enemies",
         descriptionLong: "Banelings Slow enemies by 25% for 2.5 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.125
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_banelingbarrage_a.png",
@@ -490,12 +472,6 @@ export const zagara: Hero = {
         descriptionShort: "Gain Armor on Creep",
         descriptionLong: "While on Creep, Zagara gains 20 Armor, taking 20% less damage.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_creep.png",
@@ -539,7 +515,7 @@ export const zagara: Hero = {
         id: "ZagaraMasteryCorrosiveSaliva",
         name: "Corrosive Saliva",
         descriptionShort: "Empowers Hunter Killer, Roachling damage against Heroes",
-        descriptionLong: "When attacking Heroes, Hunter Killers and Roachlings deal additional damage equal to 1.75% of their maximum Health.",
+        descriptionLong: "When attacking Heroes, Hunter Killers and Roachlings deal additional damage equal to 1.5% of their maximum Health.",
         cooldown: null,
         category: "Talent",
         type: "W",
@@ -587,12 +563,6 @@ export const zagara: Hero = {
         descriptionShort: "Gain Attack Damage, range on Creep",
         descriptionLong: "While on Creep, Zagara gains 50% more Basic Attack damage and her attack range is increased by 1.1.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_creep.png",
@@ -644,12 +614,6 @@ export const zagara: Hero = {
         descriptionShort: "Increases Creep Tumor's cast range and duration",
         descriptionLong: "The cast range for Creep Tumor is increased by 2000%. Creep Tumors now last 600 seconds. While on Creep, Zagara gains an additional 10% Movement Speed.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 2
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_nydusworm.png",
@@ -676,12 +640,6 @@ export const zagara: Hero = {
         descriptionShort: "Basic Attacks launch Banelings",
         descriptionLong: "Every 3rd Basic Attack also launches a Baneling towards the target. Passive: Gain 20% bonus Attack Speed.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.125
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zagara_banelingbarrage.png",

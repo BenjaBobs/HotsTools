@@ -162,12 +162,6 @@ export const gazlowe: Hero = {
         descriptionShort: "Increase Xplodium Charge cast range, damage",
         descriptionLong: "Increase the cast range of Xplodium Charge by 30% and its damage by 35%. Hitting an enemy Hero increases Movement Speed by 20% for 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_explodiumcharge.png",
@@ -332,12 +326,6 @@ export const gazlowe: Hero = {
         descriptionShort: "Gain an additional Deth Lazor charge",
         descriptionLong: "Deth Lazor can now store up to 2 charges. Each enemy Hero hit by Deth Lazor reduces its cooldown by 0.75 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_dethlazor_a.png",
@@ -506,12 +494,6 @@ export const gazlowe: Hero = {
         descriptionShort: "Rock It! Turrets fire Deth Lazorz",
         descriptionLong: "Firing Deth Lazor causes all of Gazlowe's Rock-It! Turrets to fire a Deth Lazor of their own that deals 125 (+4% / level) damage.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_dethlazor.png",
@@ -535,12 +517,6 @@ export const gazlowe: Hero = {
         descriptionShort: "Xplodium Charge creates Turrets, reduce cooldown",
         descriptionLong: "Reduce the cooldown of Xplodium Charge by 2 seconds. Casting Xplodium Charge creates 3 miniature Rock-It! Turrets that last for 3 seconds. These Turrets do not drop Scrap or benefit from other Talents.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_explodiumcharge.png",
@@ -664,12 +640,6 @@ export const gazlowe: Hero = {
         descriptionShort: "Xplodium Charge releases more bombs",
         descriptionLong: "Xplodium Charge gains a 2nd charge with a 3 second cooldown between uses and launches 2 more bombs when it detonates.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_gazlowe_explodiumcharge.png",

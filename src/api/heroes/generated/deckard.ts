@@ -614,12 +614,6 @@ export const deckard: Hero = {
         descriptionShort: "Gain Lorenado charge, reduce cooldown",
         descriptionLong: "Lorenado gains an additional charge and its cooldown is reduced by 10 seconds every time an enemy Hero is knocked back. This effect can only occur once per 0.5 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_deckard_lorenado.png",

@@ -208,11 +208,6 @@ export const probius: Hero = {
         descriptionShort: "Quest: Detonate Warp Rift on Heroes",
         descriptionLong: "Quest: Hit Heroes with Warp Rift explosions. Reward: After hitting 8 Heroes with Warp Rift explosions, increase the explosion damage by 120. Reward: After hitting 16 Heroes with Warp Rift explosions, Warp Rift gains 1 additional charge.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift.png",
@@ -357,11 +352,6 @@ export const probius: Hero = {
         descriptionShort: "Detonate Warp Rifts quickly for extra damage",
         descriptionLong: "Hitting a Warp Rift with Disruption Pulse within 1 second of it arming deals 105 (+5% / level) damage over 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift.png",
@@ -537,11 +527,6 @@ export const probius: Hero = {
         descriptionShort: "Warp Rift's slow lingers",
         descriptionLong: "Enemies continue to be Slowed for 3 seconds after their last contact with a Warp Rift.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift.png",
@@ -565,11 +550,6 @@ export const probius: Hero = {
         descriptionShort: "Increase Warp Rift Slow amount in center",
         descriptionLong: "Enemies are Slowed more the closer they are to the center of the Warp Rift, up to a maximum slow of 60%.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift_a.png",
@@ -593,11 +573,6 @@ export const probius: Hero = {
         descriptionShort: "Warp Rift explosions reduce enemy Spell Power and knock back",
         descriptionLong: "Enemy Heroes hit by Warp Rift explosions have their Spell Power reduced by 35% for 5 seconds. Additionally, enemies hit by Warp Rift explosions are knocked away from the center.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift_c.png",
@@ -698,11 +673,6 @@ export const probius: Hero = {
         descriptionShort: "Create new Warp Rifts by hitting Heroes with explosions",
         descriptionLong: "Whenever a Rift explosion hits 1 or more enemy Heroes, create a new Warp Rift in the same location.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_probius_warprift.png",

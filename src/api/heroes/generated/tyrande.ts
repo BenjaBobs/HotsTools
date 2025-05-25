@@ -244,12 +244,6 @@ export const tyrande: Hero = {
         descriptionShort: "Increase Light of Elune healing on multiple targets",
         descriptionLong: "If Light of Elune's second charge is cast on a different target from the first, it heals for 80% more.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrande_lightofelune.png",
@@ -318,12 +312,6 @@ export const tyrande: Hero = {
         descriptionShort: "Increase Light of Elune cooldown reduction",
         descriptionLong: "Basic Attacks decrease the cooldown of Light of Elune by an additional 0.75 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrande_lightofelune.png",
@@ -347,12 +335,6 @@ export const tyrande: Hero = {
         descriptionShort: "Light of Elune grants Spell Armor",
         descriptionLong: "Light of Elune grants the target 10 Spell Armor for 2 seconds. This effect stacks up to 2 times.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrande_lightofelune_a.png",
@@ -457,12 +439,6 @@ export const tyrande: Hero = {
         descriptionShort: "Light of Elune increases Movement Speed",
         descriptionLong: "Gain 5% Movement Speed. Light of Elune increases the target's Movement Speed by 20% for 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrande_lightofelune.png",
@@ -534,12 +510,6 @@ export const tyrande: Hero = {
         descriptionShort: "Light of Elune removes Stuns, Silences, and Slows",
         descriptionLong: "Light of Elune removes Stuns, Silences, and Slows from its target.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tyrande_lightofelune.png",

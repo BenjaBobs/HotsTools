@@ -253,12 +253,6 @@ export const garrosh: Hero = {
         descriptionShort: "Bloodthirst kills reset cooldown, restore Mana",
         descriptionLong: "Increase Bloodthirst's damage against non-Heroes by 70%. Killing enemies with Bloodthirst resets its cooldown and refunds its Mana cost.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst.png",
@@ -282,12 +276,6 @@ export const garrosh: Hero = {
         descriptionShort: "Basic Attacks reduce Bloodthirst cooldown",
         descriptionLong: "Basic Attacks against Heroes reduce the cooldown of Bloodthirst by 2 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst_var1.png",
@@ -356,12 +344,6 @@ export const garrosh: Hero = {
         descriptionShort: "Basic Attacks, Bloodthirst reduce Spell Power",
         descriptionLong: "Basic Attacks and Bloodthirst against Heroes reduce the target's Spell Power by 30% for 2.5 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst.png",
@@ -495,12 +477,6 @@ export const garrosh: Hero = {
         descriptionShort: "Bloodthirst heals over time",
         descriptionLong: "When hitting a Hero, Bloodthirst heals for an additional 15% of Garrosh's maximum Health over 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_bloodthirst.png",
@@ -647,12 +623,6 @@ export const garrosh: Hero = {
         descriptionShort: "Decimate reduces damage dealt",
         descriptionLong: "Heroes hit by Decimate deal 40% less damage for 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_garrosh_decimate.png",

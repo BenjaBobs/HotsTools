@@ -37,8 +37,7 @@ export const kaelthas: Hero = {
       cooldown: 6,
       charges: {
         chargesMax: 1,
-        chargesInitial: 1,
-        recastCooldown: 0.0625
+        chargesInitial: 1
       },
       category: "trait",
       type: "Trait",
@@ -195,11 +194,6 @@ export const kaelthas: Hero = {
         descriptionShort: "Increases Spell Power, Verdant Spheres heals",
         descriptionLong: "Increases Kael'thas's Spell Power by 4%. Kael'thas heals for 94 (+4% / level) Health when activating Verdant Spheres.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          recastCooldown: 0.0625
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kaelthas_verdantspheres.png",
@@ -293,11 +287,6 @@ export const kaelthas: Hero = {
         descriptionShort: "Verdant Spheres restores Mana",
         descriptionLong: "Activating Verdant Spheres restores 5% of Kael'thas's maximum Mana.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          recastCooldown: 0.0625
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kaelthas_verdantspheres.png",
@@ -370,11 +359,6 @@ export const kaelthas: Hero = {
         descriptionShort: "Special attack on Verdant Spheres",
         descriptionLong: "Activating Verdant Spheres causes Kael'thas's next 2 Basic Attacks to instead deal 115 (+4% / level) Spell Damage. If both of these Attacks hit enemy Heroes, gain 15% Spell Power for 10 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          recastCooldown: 0.0625
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kaelthas_verdantspheres.png",
@@ -574,11 +558,6 @@ export const kaelthas: Hero = {
         descriptionShort: "Gain level 7 talents, Verdant Spheres charge",
         descriptionLong: "Verdant Spheres gains a second charge. Passive: Kael'thas benefits from all of his level 7 talents.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          recastCooldown: 0.0625
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_kaelthas_verdantspheres.png",

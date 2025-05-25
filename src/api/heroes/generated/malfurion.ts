@@ -291,12 +291,6 @@ export const malfurion: Hero = {
         descriptionShort: "Gain a second charge of Innervate",
         descriptionLong: "Gain a second charge of Innervate. Its cooldown recharges 25% faster per ally affected by Regrowth.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_malfurion_innerrvate.png",

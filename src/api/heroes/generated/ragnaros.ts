@@ -291,7 +291,7 @@ export const ragnaros: Hero = {
         name: "Catching Fire",
         descriptionShort: "Quest: Regen Globes increase Health Regen",
         descriptionLong: "Quest: Gathering a Regeneration Globe increases Ragnaros' Health Regeneration by 1.25 per second, up to 18.75. Reward: After gathering 15 Regeneration Globes, activate Catching Fire to gain 25 Armor for 3 seconds, reducing damage taken by 25%.",
-        cooldown: 30,
+        cooldown: null,
         category: "Talent",
         type: "Active",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_catchingfire.png",
@@ -614,12 +614,6 @@ export const ragnaros: Hero = {
         descriptionShort: "Lava Wave has two charges",
         descriptionLong: "Lava Wave gains an additional charge and its cooldown is reduced by 30 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 5
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_ragnaros_lavawave.png",

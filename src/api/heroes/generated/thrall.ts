@@ -172,12 +172,6 @@ export const thrall: Hero = {
         descriptionShort: "Quest: Killing enemies grants Chain Lightning charge",
         descriptionLong: "Quest: Kill Minions or Heroes within 1.5 seconds of hitting them with Chain Lightning. Reward: After killing 10 enemies, reduce the Mana cost of Chain Lightning from 40 to 20. Reward: After killing 20 enemies, gain a second charge of Chain Lightning.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_thrall_chainlightning.png",
@@ -202,12 +196,6 @@ export const thrall: Hero = {
         descriptionShort: "Quest: Multiple Hero hits empower Chain Lightning",
         descriptionLong: "Repeatable Quest: Hitting at least 2 Heroes with a single use of Chain Lightning increases the damage of its bounces by 12, up to 360. Reward: After hitting multiple Heroes 30 times, Chain Lightning prioritizes bouncing to Heroes.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_thrall_chainlightning_var1.png",
@@ -232,12 +220,6 @@ export const thrall: Hero = {
         descriptionShort: "Chain Lightning empowers Basic Attacks",
         descriptionLong: "For 8 seconds after hitting an enemy with Chain Lightning, Thrall's next Basic Attack against them grants a stack of Frostwolf Resilience. If the target is an enemy Hero, then he also deals damage to them equal to 3% of their maximum Health and healing for the same amount. Passive: Increase the number of Chain Lightning bounces by 1.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_thrall_chainlightning_var2.png",
@@ -556,12 +538,6 @@ export const thrall: Hero = {
         descriptionShort: "Quest: Hit Heroes to make Chain Lightning Slow",
         descriptionLong: "Chain Lightning Slows targets by 8% for 2 seconds. Quest: Targeting a Hero directly with Chain Lightning increases this Slow by 8%, up to an additional 40%. Reward: While at a 40% bonus, Chain Lightning's damage is increased by 25%. Bonuses are reset if Chain Lightning is used on the same Hero it was last used on, or if Thrall dies.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_thrall_chainlightning.png",

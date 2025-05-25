@@ -145,12 +145,12 @@ export const genji: Hero = {
       id: "GenjiXStrike",
       name: "X-Strike",
       descriptionShort: "Deal heavy damage in a cross shape",
-      descriptionLong: "Perform two slashes dealing 135 (+4% / level) damage. The slashes detonate after 1.25 seconds causing an additional 275 (+4% / level) damage to enemies in their area.",
+      descriptionLong: "Perform two slashes dealing 145 (+4% / level) damage. The slashes detonate after 1.25 seconds causing an additional 290 (+4% / level) damage to enemies in their area.",
       cost: {
         type: "Mana",
         amount: 70
       },
-      cooldown: 60,
+      cooldown: 75,
       category: "heroic",
       type: "Heroic",
       icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens_xblade.png",
@@ -160,7 +160,7 @@ export const genji: Hero = {
         physicalDamage: 0,
         tankiness: 0,
         healing: 0,
-        magicalDamage: 27
+        magicalDamage: 29
       }
     }
   ],
@@ -216,7 +216,7 @@ export const genji: Hero = {
         id: "GenjiCyberAgilityPathfinder",
         name: "Pathfinder",
         descriptionShort: "Jumping over terrain gives Move Speed, Stealth",
-        descriptionLong: "Jumping over terrain with Cyber Agility increases Movement Speed by 30%, and grants Stealth, for 4 seconds.",
+        descriptionLong: "Jumping over terrain with Cyber Agility increases Movement Speed by 30%, and grants Stealth, for 4 seconds. Passive: Genji's Heroic Ability heals him for 10% of the damage dealt to enemy Heroes, increasing up to 30% the lower Genji's Health is.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -226,7 +226,7 @@ export const genji: Hero = {
           mobility: 6,
           physicalDamage: 0,
           tankiness: 0,
-          healing: 0,
+          healing: 0.8,
           magicalDamage: 0
         },
         order: 3,
@@ -243,12 +243,6 @@ export const genji: Hero = {
         descriptionShort: "Quest: Increase Shuriken damage and restore charges",
         descriptionLong: "Quest: Hit enemy Heroes with Shuriken. Reward: After hitting 30 Heroes, Shuriken damage is increased by 25. Reward: After hitting 60 Heroes, Cyber Agility now refunds 3 charges of Shuriken.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens.png",
@@ -417,12 +411,12 @@ export const genji: Hero = {
         id: "GenjiHeroicXStrike",
         name: "X-Strike",
         descriptionShort: "Deal heavy damage in a cross shape",
-        descriptionLong: "Perform two slashes dealing 135 (+4% / level) damage. The slashes detonate after 1.25 seconds causing an additional 275 (+4% / level) damage to enemies in their area.",
+        descriptionLong: "Perform two slashes dealing 145 (+4% / level) damage. The slashes detonate after 1.25 seconds causing an additional 290 (+4% / level) damage to enemies in their area.",
         cost: {
           type: "Mana",
           amount: 70
         },
-        cooldown: 60,
+        cooldown: 75,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens_xblade.png",
@@ -432,7 +426,7 @@ export const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 27
+          magicalDamage: 29
         },
         order: 2,
         tier: "level10",
@@ -446,14 +440,8 @@ export const genji: Hero = {
         id: "GenjiShurikenShingan",
         name: "Shingan",
         descriptionShort: "Increase Shuriken single-target damage",
-        descriptionLong: "Hitting an enemy with all 3 Shuriken deals 100 (+4% / level) bonus damage.",
+        descriptionLong: "Hitting an enemy with all 3 Shuriken deals 100 (+4% / level) bonus damage. Deals 40% less damage to Structures.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens.png",
@@ -463,7 +451,7 @@ export const genji: Hero = {
           physicalDamage: 0,
           tankiness: 0,
           healing: 0,
-          magicalDamage: 20
+          magicalDamage: 28
         },
         order: 1,
         tier: "level13",
@@ -621,7 +609,7 @@ export const genji: Hero = {
         id: "GenjiXStrikeLivingWeapon",
         name: "Living Weapon",
         descriptionShort: "Hero hits reduce X-Strike's cooldown",
-        descriptionLong: "Each enemy Hero hit by X-Strike reduces its cooldown by 10 seconds.",
+        descriptionLong: "Each enemy Hero hit by X-Strike reduces its cooldown by 12.5 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",
@@ -649,12 +637,6 @@ export const genji: Hero = {
         descriptionShort: "Shuriken pierce, gain charge from Swift Strike",
         descriptionLong: "Shuriken now pierce all enemies hit. Swift Strike's refund grants 1 charge of Shuriken.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_genji_shurikens.png",
@@ -703,6 +685,6 @@ export const genji: Hero = {
     physicalDamage: 22,
     mobility: 24.006944444444446,
     healing: 0,
-    magicalDamage: 5.532362937786315
+    magicalDamage: 5.606250923599823
   }
 };

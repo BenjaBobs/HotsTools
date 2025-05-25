@@ -178,12 +178,6 @@ export const nova: Hero = {
         descriptionShort: "Increases Pinning Shot range",
         descriptionLong: "Increases the cast range of Pinning Shot by 30%. Pinning Shot also increases the range of Nova's next Basic Attack by 2.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nova_pinningshot.png",
@@ -207,12 +201,6 @@ export const nova: Hero = {
         descriptionShort: "Stealth enhances Pinning Shot slow and cost",
         descriptionLong: "After being Stealthed for 2 seconds, Pinning Shot's Slow is increased to 60% and costs no Mana. Bonus is lost after losing Stealth for 1 second.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nova_pinningshot_var1.png",
@@ -492,12 +480,6 @@ export const nova: Hero = {
         descriptionShort: "Pinning Shot gains a charge, cooldown increased",
         descriptionLong: "Pinning Shot now has 2 charges, but its cooldown is increased by 2 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nova_pinningshot.png",
@@ -569,12 +551,6 @@ export const nova: Hero = {
         descriptionShort: "Pinning Shot lowers Armor",
         descriptionLong: "Pinning Shot lowers a Hero's Armor by 20 for the duration of the Slow, causing them to take 20% increased damage.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nova_pinningshot.png",
@@ -649,12 +625,6 @@ export const nova: Hero = {
         descriptionShort: "Lower Precision Strike cooldown, gain charge",
         descriptionLong: "Precision Strike gains a 2nd charge and its cooldown is reduced by 25 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nova_orbitalstrike.png",

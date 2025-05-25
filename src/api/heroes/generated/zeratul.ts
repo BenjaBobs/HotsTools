@@ -380,11 +380,7 @@ export const zeratul: Hero = {
         name: "Might Of The Nerazim",
         descriptionShort: "Recast last Basic Ability",
         descriptionLong: "Activate to cast an untalented version of Zeratul's most recently used Basic Ability, dealing 50% less damage. Passive: After using an Ability, Zeratul's next Basic Attack within 6 seconds deals 30% more damage.",
-        cost: {
-          type: "Mana",
-          amount: 30
-        },
-        cooldown: 20,
+        cooldown: null,
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_zeratul_mightofnerazim.png",
@@ -587,7 +583,8 @@ export const zeratul: Hero = {
         order: 1,
         tier: "level20",
         linkedAbilityIds: [
-          "ZeratulMightOfTheNerazimDummy"
+          "ZeratulMightOfTheNerazimDummy",
+          "ZeratulMightOfTheNerazim"
         ],
         prerequisiteTalentIds: [
           "ZeratulMightOfTheNerazim"

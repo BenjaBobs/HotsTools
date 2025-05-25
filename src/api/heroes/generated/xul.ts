@@ -288,10 +288,6 @@ export const xul: Hero = {
         descriptionShort: "Quest: Bone Prison spawns Skeletal Warriors",
         descriptionLong: "Bone Prison spawns 2 Skeletal Warriors. These do not count towards Xul's Raise Skeleton maximum. Quest: Spawn 80 Skeletal Warriors. Reward: While fixating on an enemy, Skeletal Warriors gain 25% Movement and Attack Speed.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 0
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_necromancer_raiseskeleton.png",

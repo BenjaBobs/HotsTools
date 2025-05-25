@@ -298,12 +298,6 @@ export const ltmorales: Hero = {
         descriptionShort: "Safeguard removes Slows",
         descriptionLong: "Safeguard removes all Slows from its target and its cooldown is reduced by 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield.png",
@@ -327,12 +321,6 @@ export const ltmorales: Hero = {
         descriptionShort: "Stuns, Roots increase Safeguard Armor, increased duration",
         descriptionLong: "While an ally affected by Safeguard is Stunned or Rooted, Safeguard grants an additional 20 Armor. Passive: Increase the duration of Safeguard by 1 second.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield_c.png",
@@ -356,12 +344,6 @@ export const ltmorales: Hero = {
         descriptionShort: "Healing Beam heals Safeguard targets",
         descriptionLong: "Allies with Safeguard receive 75% of the healing done by Healing Beam on another ally.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield_b.png",
@@ -555,12 +537,6 @@ export const ltmorales: Hero = {
         descriptionShort: "Safeguard gains a second charge, increased range",
         descriptionLong: "Safeguard gains a second charge and its range is increased by 60%.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield.png",
@@ -638,12 +614,6 @@ export const ltmorales: Hero = {
         descriptionShort: "Safeguard grants Unkillable, can heal",
         descriptionLong: "Safeguard grants its target Unkillable for 1 second. If the target is under 50% maximum Health when the Unkillable effect ends, they are healed for 8% of their maximum Health.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_medic_deployshield.png",

@@ -145,12 +145,6 @@ export const tracer: Hero = {
         descriptionShort: "Melee gains an additional charge, reduced cooldown",
         descriptionLong: "Reduce the cooldown of Melee by 1 second and it gains an additional charge.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_melee.png",
@@ -245,11 +239,6 @@ export const tracer: Hero = {
         descriptionShort: "Pulse Bomb heals Tracer, refreshes Blink charge",
         descriptionLong: "Successfully sticking a Pulse Bomb to an enemy Hero heals Tracer for 12% of her maximum Health over 1.5 seconds and refunds a charge of Blink.",
         cooldown: null,
-        charges: {
-          chargesMax: 100,
-          chargesInitial: 0,
-          chargeCost: 100
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_combo_q_r.png",
@@ -366,11 +355,6 @@ export const tracer: Hero = {
         descriptionShort: "Increases Pulse Bomb area and adds Slow",
         descriptionLong: "Increases Pulse Bomb's radius by 50% and enemies hit are Slowed by 70% for 3 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 100,
-          chargesInitial: 0,
-          chargeCost: 100
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_pulsebomb.png",
@@ -394,11 +378,6 @@ export const tracer: Hero = {
         descriptionShort: "Pulse Bomb deals percentage damage",
         descriptionLong: "Pulse Bomb deals an additional 6% of maximum Health as damage to Heroes.",
         cooldown: null,
-        charges: {
-          chargesMax: 100,
-          chargesInitial: 0,
-          chargeCost: 100
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_pulsebomb_b.png",
@@ -422,11 +401,6 @@ export const tracer: Hero = {
         descriptionShort: "Increases Pulse Bomb range and charge rate",
         descriptionLong: "Increases Pulse Bomb's range and charge rate from Basic Attacks against Heroes by 100%.",
         cooldown: null,
-        charges: {
-          chargesMax: 100,
-          chargesInitial: 0,
-          chargeCost: 100
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_pulsebomb_c.png",
@@ -452,12 +426,6 @@ export const tracer: Hero = {
         descriptionShort: "Quest: Takedowns increase Attack Damage",
         descriptionLong: "Passive: After Blinking, gain 20% Movement Speed for 1.25 seconds. Quest: Takedowns increase Tracer's Basic Attack damage by 5%, up to 25%. These bonuses are lost on death.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.125
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_combo_q_trait.png",
@@ -482,12 +450,6 @@ export const tracer: Hero = {
         descriptionShort: "Blink grants Shield, reduced cooldown",
         descriptionLong: "Passive: When Blink has no charges remaining, its cooldown refreshes 100% faster. Casting Blink grants Tracer a Shield equal to 6% of her maximum Health for 3 seconds. This Shield stacks up to 3 times.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.125
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_blink.png",
@@ -536,12 +498,6 @@ export const tracer: Hero = {
         descriptionShort: "Melee hits all enemies in range",
         descriptionLong: "Increases the radius of Melee by 30%, and causes it to damage all enemies in range.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_melee.png",
@@ -565,12 +521,6 @@ export const tracer: Hero = {
         descriptionShort: "Melee reduces Armor",
         descriptionLong: "Heroes hit by Melee have their Armor reduced by 15 for 4 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_melee_b.png",
@@ -619,12 +569,6 @@ export const tracer: Hero = {
         descriptionShort: "Blink empowers ammo",
         descriptionLong: "Casting Blink causes Basic Attacks to not consume ammo for 1 second.",
         cooldown: null,
-        charges: {
-          chargesMax: 3,
-          chargesInitial: 3,
-          chargeCost: 1,
-          recastCooldown: 0.125
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_combo_q_trait.png",
@@ -648,12 +592,6 @@ export const tracer: Hero = {
         descriptionShort: "Empower Melee",
         descriptionLong: "Increases Melee's Pulse Bomb charge against Heroes from 10% to 20%. Hitting an enemy with Melee who is stuck with a Pulse Bomb causes the bomb to instantly explode and knock the target away.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 3
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_melee.png",
@@ -700,11 +638,6 @@ export const tracer: Hero = {
         descriptionShort: "Hitting Heroes with Pulse Bomb leaves a second",
         descriptionLong: "Successfully sticking a Pulse Bomb to an enemy Hero also drops another one at their feet that deals 50% damage and explodes slightly earlier.",
         cooldown: null,
-        charges: {
-          chargesMax: 100,
-          chargesInitial: 0,
-          chargeCost: 100
-        },
         category: "Talent",
         type: "Heroic",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_tracer_pulsebomb.png",

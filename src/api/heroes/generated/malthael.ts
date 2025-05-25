@@ -117,7 +117,7 @@ export const malthael: Hero = {
       id: "MalthaelTormentedSouls",
       name: "Tormented Souls",
       descriptionShort: "Apply Reaper's Mark to nearby enemies",
-      descriptionLong: "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds. When Tormented Souls is cast and when it expires, reset the cooldown of Wraith Strike.",
+      descriptionLong: "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds. Tormented Souls resets the cooldown of Wraith Strike when activated, and while active, Wraith Strike costs no Mana its cooldown is reduced to 2 seconds.",
       cost: {
         type: "Mana",
         amount: 20
@@ -279,7 +279,7 @@ export const malthael: Hero = {
         id: "MalthaelBlackHarvest",
         name: "Black Harvest",
         descriptionShort: "Quest: Increase Reaper's Mark duration",
-        descriptionLong: "Quest: Apply Reaper's Mark to Heroes for a total of 180 seconds. Reward: Permanently increase Reaper's Mark's duration by 2 seconds.",
+        descriptionLong: "Quest: Apply Reaper's Mark to Heroes for a total of 150 seconds. Reward: Permanently increase Reaper's Mark's duration by 2 seconds.",
         cooldown: null,
         category: "Talent",
         type: "Trait",
@@ -373,7 +373,7 @@ export const malthael: Hero = {
         id: "MalthaelTormentedSouls",
         name: "Tormented Souls",
         descriptionShort: "Apply Reaper's Mark to nearby enemies",
-        descriptionLong: "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds. When Tormented Souls is cast and when it expires, reset the cooldown of Wraith Strike.",
+        descriptionLong: "Unleash a torrent of souls, continually applying Reaper's Mark to nearby enemies for 4 seconds. Tormented Souls resets the cooldown of Wraith Strike when activated, and while active, Wraith Strike costs no Mana its cooldown is reduced to 2 seconds.",
         cost: {
           type: "Mana",
           amount: 20
@@ -588,8 +588,8 @@ export const malthael: Hero = {
       {
         id: "MalthaelReaperOfSouls",
         name: "Reaper of Souls",
-        descriptionShort: "Hero Takedowns extend Tormented Souls duration",
-        descriptionLong: "Increase Tormented Souls' duration by 2 seconds. While Tormented Souls is active, Hero Takedowns refresh the duration.",
+        descriptionShort: "Extend Tormented Souls duration",
+        descriptionLong: "Increase the duration of Tormented Souls to 6 seconds, and while Tormented Souls is active, Hero Takedowns refresh its duration. If 2 or more enemy Heroes are in Tormented Souls' radius, it does not decay.",
         cooldown: null,
         category: "Talent",
         type: "Heroic",

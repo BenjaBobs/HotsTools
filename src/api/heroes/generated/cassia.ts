@@ -179,12 +179,6 @@ export const cassia: Hero = {
         descriptionShort: "Quest: Increase Lightning Fury damage",
         descriptionLong: "Increase the damage of Lightning Fury by 20. Quest: Lightning Fury's damage is increased by 1.5 every time it hits a Hero.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_lightningfury.png",
@@ -323,12 +317,6 @@ export const cassia: Hero = {
         descriptionShort: "Lightning Fury and Fend Slow enemies",
         descriptionLong: "Enemies hit by Lightning Fury or Fend are Slowed by 20% for 2 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_combo_q_e.png",
@@ -376,12 +364,6 @@ export const cassia: Hero = {
         descriptionShort: "Activate Avoidance to deal damage",
         descriptionLong: "After taking 650 (+4% / level) damage with Avoidance active, Cassia can activate Avoidance to deal 220 (+4% / level) damage to enemies around her.",
         cooldown: null,
-        charges: {
-          chargesMax: 100,
-          chargesInitial: 0,
-          chargeCost: 100,
-          recastCooldown: 0.25
-        },
         category: "Talent",
         type: "Trait",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_avoidance_b.png",
@@ -537,12 +519,6 @@ export const cassia: Hero = {
         descriptionShort: "Lightning Fury pierces and casts Blinding Light",
         descriptionLong: "Lightning Fury pierces but only splits on Heroes. Enemy Heroes hit reduce its cooldown by 1 second and become marked for 15 seconds. Upon reaching 3 marks, remove them and cast a Blinding Light at their feet.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_combo_q_w.png",
@@ -567,12 +543,6 @@ export const cassia: Hero = {
         descriptionShort: "Fend releases Lightning Fury bolts",
         descriptionLong: "Gain 2 additional charges of Lightning Fury. Fend's impact launches a lightning bolt towards each nearby enemy Hero.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_cassia_combo_q_e.png",

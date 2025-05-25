@@ -196,12 +196,6 @@ export const nazeebo: Hero = {
         descriptionShort: "Quest: Empower Plague of Toads",
         descriptionLong: "Quest: Hit Heroes with Plague of Toads. Reward: After hitting 35 Heroes with Plague of Toads, it spawns 2 additional toads. Reward: After hitting 70 Heroes with Plague of Toads, it reduces the damage Heroes deal by 5%, stacking up to 25%.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_plagueoftoads.png",
@@ -369,12 +363,6 @@ export const nazeebo: Hero = {
         descriptionShort: "Toads become more powerful with each hop",
         descriptionLong: "Increase the damage and explosion radius of Plague of Toads by 25% after each hop, up to a maximum of 100%.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_plagueoftoads.png",
@@ -456,12 +444,6 @@ export const nazeebo: Hero = {
         descriptionShort: "Toads grant Armor",
         descriptionLong: "Hitting an enemy Hero with Plague of Toads grants 30 Armor for 3 seconds, stacking up to 6 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_nazeebo_plagueoftoads.png",

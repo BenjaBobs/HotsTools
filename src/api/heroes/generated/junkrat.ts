@@ -152,12 +152,6 @@ export const junkrat: Hero = {
         descriptionShort: "Gain Move Speed while Frag Launcher replenishes",
         descriptionLong: "While Frag Launcher has no charges left, Junkrat gains 10% Movement Speed and his Basic Attacks deal 15% bonus damage.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher.png",
@@ -181,12 +175,6 @@ export const junkrat: Hero = {
         descriptionShort: "Frag Launcher grenades deal bonus damage",
         descriptionLong: "The final grenade launched from Frag Launcher deals 100% bonus damage, and Frag Launcher grenades last an additional 2 seconds before automatically detonating.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher_b.png",
@@ -236,12 +224,6 @@ export const junkrat: Hero = {
         descriptionShort: "Quest: Increase Frag Launcher damage",
         descriptionLong: "Quest: Hitting a Hero with Frag Launcher increases its damage by 0.2%, up to 40%.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher.png",
@@ -435,12 +417,6 @@ export const junkrat: Hero = {
         descriptionShort: "Gain Basic Attack range, damage",
         descriptionLong: "Increase Junkrat's Basic Attack range by 1. Frag Launcher grenades fired within 0.5 seconds of using a Basic Attack deal 30% bonus damage.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher.png",
@@ -536,12 +512,6 @@ export const junkrat: Hero = {
         descriptionShort: "Frag Launcher burst fires",
         descriptionLong: "Frag Launcher fires all of its charges in a continuous burst, its cooldown is reduced by 6 seconds, but it loses 1 maximum charge.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher_f.png",
@@ -565,12 +535,6 @@ export const junkrat: Hero = {
         descriptionShort: "Hitting Heroes reduces Frag Launcher cooldown",
         descriptionLong: "Hitting an enemy Hero with Frag Launcher reduces its cooldown by 1.5 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher_e.png",
@@ -669,12 +633,6 @@ export const junkrat: Hero = {
         descriptionShort: "Bigger Basic Attack, Frag Launcher explosions",
         descriptionLong: "Increase the radius and explosion radius of grenades from Basic Attacks and Frag Launcher by 50%.",
         cooldown: null,
-        charges: {
-          chargesMax: 4,
-          chargesInitial: 4,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "Q",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_junkrat_frag_launcher_g.png",

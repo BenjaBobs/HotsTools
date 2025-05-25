@@ -147,12 +147,6 @@ export const illidan: Hero = {
         descriptionShort: "Sweeping Strike deals area damage",
         descriptionLong: "After using Sweeping Strike, burn nearby enemies for 22 (+4% / level) damage a second for 4 seconds.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_illidan_sweepingstrike.png",
@@ -176,12 +170,6 @@ export const illidan: Hero = {
         descriptionShort: "Increases Sweeping Strike damage bonus",
         descriptionLong: "Increase Sweeping Strike's Basic Attack damage bonus duration from 3 to 5 seconds. If Sweeping Strike hits 2 Heroes its damage bonus is increased from 35% to 125%.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_illidan_sweepingstrike_a.png",
@@ -345,12 +333,6 @@ export const illidan: Hero = {
         descriptionShort: "Quest: Sweeping Strike can go over terrain",
         descriptionLong: "Sweeping Strike can go over walls and terrain. Reward: After hitting 15 Heroes with Sweeping Strike, gain a second charge.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_illidan_sweepingstrike.png",
@@ -425,12 +407,6 @@ export const illidan: Hero = {
         descriptionShort: "Sweeping Strike grants Armor",
         descriptionLong: "If Sweeping Strike hits an enemy Hero, gain 25 Armor for 2 seconds, reducing damage taken by 25%.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_illidan_sweepingstrike.png",

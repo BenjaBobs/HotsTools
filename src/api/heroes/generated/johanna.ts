@@ -172,12 +172,6 @@ export const johanna: Hero = {
         descriptionShort: "Gain Shield Glare charge, damage",
         descriptionLong: "Shield Glare gains 1 additional charge, and deals 70% more damage.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_shield_glare.png",
@@ -529,12 +523,6 @@ export const johanna: Hero = {
         descriptionShort: "Shield Glare heals",
         descriptionLong: "Hitting enemy Heroes with Shield Glare reduce its cooldown by 1 second and heals for 5% of Johanna's maximum Health.",
         cooldown: null,
-        charges: {
-          chargesMax: 1,
-          chargesInitial: 1,
-          chargeCost: 1,
-          recastCooldown: 0.5
-        },
         category: "Talent",
         type: "E",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_johanna_shield_glare.png",

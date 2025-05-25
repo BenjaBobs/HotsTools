@@ -213,11 +213,6 @@ export const varian: Hero = {
         descriptionShort: "Parrying a Hero's attack will refresh Heroic Strike",
         descriptionLong: "When Parry blocks a Hero's Basic Attack, Heroic Strike's cooldown is refreshed and the next one does 40% more damage.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_parry.png",
@@ -412,11 +407,6 @@ export const varian: Hero = {
         descriptionShort: "Parry grants Protected",
         descriptionLong: "Parry grants Protected, preventing all incoming damage while active. Additionally, Parry's cooldown is reduced by 5 seconds, but it loses 1 charge.",
         cooldown: null,
-        charges: {
-          chargesMax: 2,
-          chargesInitial: 2,
-          chargeCost: 1
-        },
         category: "Talent",
         type: "W",
         icon: "https://heroespatchnotes.github.io/heroes-talents/images/talents/storm_ui_icon_varian_parry.png",

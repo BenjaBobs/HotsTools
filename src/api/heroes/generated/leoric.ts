@@ -525,7 +525,7 @@ export const leoric: Hero = {
         id: "LeoricMasteryRoyalFocusWraithWalk",
         name: "Royal Focus",
         descriptionShort: "Empower Skeletal Swing and Wraith Walk",
-        descriptionLong: "Wraith Walk increases the damage of the next Skeletal Swing within 5 seconds by 50%. Each enemy Hero hit by this Skeletal Swing reduces the cooldown of Wraith Walk by 7 seconds.",
+        descriptionLong: "Wraith Walk increases the damage of the next Skeletal Swing within 5 seconds by 50%. Each enemy Hero hit by Skeletal Swing reduces the cooldown of Wraith Walk by 7 seconds.",
         cooldown: null,
         category: "Talent",
         type: "E",
