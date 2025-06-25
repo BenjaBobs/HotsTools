@@ -1,6 +1,6 @@
 import '../../src/utils/ArrayExtensions';
 
-class TextAnalyser {
+export class TextAnalyser {
   private debug: boolean;
   private text: string;
   private currentIndex = 0;
@@ -67,7 +67,7 @@ class TextAnalyser {
       if (this.debug)
         console.log(
           'context',
-          movingContext.map(x => x.data.type)
+          movingContext.map(x => x.data.type),
         );
 
       let isMatch = true;
@@ -92,14 +92,14 @@ class TextAnalyser {
           cIdx++;
         } else if (current === null) {
           const nextNonNullIdx = pattern.findIndex(
-            (x, idx) => idx > pIdx && x !== null
+            (x, idx) => idx > pIdx && x !== null,
           );
           if (nextNonNullIdx !== -1) {
             const nextNonNull = pattern[nextNonNullIdx];
             const nextContextMatchIdx = movingContext.findIndex((x, idx) =>
               idx > cIdx && Array.isArray(nextNonNull)
                 ? nextNonNull.includes(x.data.type)
-                : nextNonNull === x.data.type
+                : nextNonNull === x.data.type,
             );
 
             if (nextContextMatchIdx !== -1) {
@@ -142,7 +142,7 @@ class TextAnalyser {
         if (this.debug)
           console.log(
             'match found!',
-            matched.map(x => x.type)
+            matched.map(x => x.type),
           );
 
         // it did match, so now we can safely type cast as the pattern match
@@ -158,8 +158,6 @@ class TextAnalyser {
     return patternMatches;
   }
 }
-
-export default TextAnalyser;
 
 type TokenMatch = ReturnType<typeof Match>;
 type TokenMatchType = TokenMatch['data']['type'];
@@ -188,12 +186,12 @@ type TokenPatternMatch<TPattern> = {
   [P in keyof TPattern]: TPattern[P] extends TokenMatchType
     ? TokenMatchSpecific<TPattern[P]>
     : TPattern[P] extends [TokenMatchType] | TokenMatchType[]
-    ? ObjectToUnionType<
-        { [OneOf in TupleToUnionType<TPattern[P]>]: TokenMatchSpecific<OneOf> }
-      >
-    : TPattern[P] extends null
-    ? TokenMatch | { data: { type: null } }
-    : never;
+      ? ObjectToUnionType<{
+          [OneOf in TupleToUnionType<TPattern[P]>]: TokenMatchSpecific<OneOf>;
+        }>
+      : TPattern[P] extends null
+        ? TokenMatch | { data: { type: null } }
+        : never;
 };
 
 type TokenPatternMatchData<TPattern> = {
@@ -460,8 +458,8 @@ const matchers = [
             subtype: match.includes('movement')
               ? ('movement' as 'movement')
               : match.includes('attack')
-              ? ('attack' as 'attack')
-              : ('speed' as 'speed'),
+                ? ('attack' as 'attack')
+                : ('speed' as 'speed'),
             keyword: match[0],
           },
         };
@@ -479,8 +477,8 @@ const matchers = [
             subtype: match.includes('physical')
               ? ('physical' as 'physical')
               : match.includes('spell')
-              ? ('spell' as 'spell')
-              : ('armor' as 'armor'),
+                ? ('spell' as 'spell')
+                : ('armor' as 'armor'),
             keyword: match[0],
           },
         };

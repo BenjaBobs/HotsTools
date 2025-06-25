@@ -2,13 +2,13 @@ import React, { CSSProperties } from 'react';
 
 import style from './orb.module.scss';
 
-export default function Orb(
+export function Orb(
   props: React.PropsWithChildren<{
     size?: number;
     color?: string;
     intensity?: number;
     className?: string;
-  }>
+  }>,
 ) {
   const cssVariables = {
     '--orb-size': (props.size ?? 20) + 'px',

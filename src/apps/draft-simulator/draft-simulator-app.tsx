@@ -2,16 +2,16 @@ import { Col, Row, Select } from 'antd';
 
 import { HotsMaps } from '../../api/maps';
 import { AppDefinition } from '../AppDefinition';
-import Orb from '../components/orb/orb';
-import DraftPanels from './components/draft-panels';
-import FlexSteps from './components/flex-steps';
-import HeroBanColumn from './components/hero-ban-column';
-import HeroSelectionColumn from './components/hero-selection-column';
+import { Orb } from '../components/orb/orb';
+import { DraftPanels } from './components/draft-panels';
+import { FlexSteps } from './components/flex-steps';
+import { HeroBanColumn } from './components/hero-ban-column';
+import { HeroSelectionColumn } from './components/hero-selection-column';
 import style from './draft-simulator.module.scss';
 import { DraftSimulation, DraftType, Team } from './DraftSimulation';
 import { useNotifyRerender } from '@src/utils/NotifyingClass';
 
-const DraftSimulatorApp: AppDefinition = {
+export const DraftSimulatorApp: AppDefinition = {
   name: 'Draft simulator',
   path: 'draft',
   component: <DraftSimulator />,
@@ -123,5 +123,3 @@ function DraftSimulator() {
     </>
   );
 }
-
-export default DraftSimulatorApp;

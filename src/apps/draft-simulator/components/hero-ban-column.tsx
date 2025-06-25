@@ -7,11 +7,11 @@ import { StopOutlined } from '@ant-design/icons';
 
 import { Device } from '../../../api/device';
 import { Hero } from '../../../api/heroes/heroes';
-import Overlay from '../../components/overlay/overlay';
+import { Overlay } from '../../components/overlay/overlay';
 import { useNotifyRerender } from '@src/utils/NotifyingClass';
 import { GetInterpolationRatioLinear } from '@src/utils/MathUtils';
 
-export default function HeroBanColumn(props: {
+export function HeroBanColumn(props: {
   heroes: readonly (Hero | undefined)[];
 }) {
   useNotifyRerender(Device, device => [device.width]);

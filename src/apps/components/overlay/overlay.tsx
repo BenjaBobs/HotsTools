@@ -2,12 +2,12 @@ import './overlay.scss';
 
 import React from 'react';
 
-export default function Overlay(
+export function Overlay(
   props: React.PropsWithChildren<{
     onClick?: () => void;
     className?: string;
     style?: React.CSSProperties;
-  }>
+  }>,
 ) {
   const children = Array.isArray(props.children)
     ? props.children

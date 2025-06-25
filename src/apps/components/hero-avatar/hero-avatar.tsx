@@ -3,7 +3,7 @@ import { Avatar } from 'antd';
 import { Hero } from '../../../api/heroes/heroes';
 import { Flex } from '@src/utils/components/flex';
 
-export default function HeroAvatar(props: {
+export function HeroAvatar(props: {
   hero: Hero;
   onClick?: () => void;
   disabled?: boolean;

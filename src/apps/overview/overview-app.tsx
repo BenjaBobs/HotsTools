@@ -1,9 +1,9 @@
 import { AddressBar } from '@src/utils/AddressBar';
 import { AppDefinition } from '../AppDefinition';
-import HeroPicker from '../components/hero-picker/hero-picker';
-import HeroDetailsPage from './pages/hero-details-page';
+import { HeroPicker } from '../components/hero-picker/hero-picker';
+import { HeroDetailsPage } from './pages/hero-details-page';
 
-const OverviewApp: AppDefinition = {
+export const OverviewApp: AppDefinition = {
   name: 'Heroes',
   path: 'heroes',
   component: (
@@ -21,5 +21,3 @@ const OverviewApp: AppDefinition = {
     },
   ],
 };
-
-export default OverviewApp;

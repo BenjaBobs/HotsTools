@@ -15,7 +15,7 @@ import { Hero } from '../../../api/heroes/heroes';
 const _blueHue = '211';
 const _redHue = '350';
 
-export default function HeroStrengthChart(props: {
+export function HeroStrengthChart(props: {
   blueHeroes?: readonly Hero[];
   redHeroes?: readonly Hero[];
   heroCount?: number;

@@ -1,9 +1,9 @@
-import AboutApp from './about/about-app';
+import { AboutApp } from './about/about-app';
 import { AppDefinition, ExtendedAppDefinition } from './AppDefinition';
-import ChangeLogApp from './changelog/changelog-app';
-import DraftSimulatorApp from './draft-simulator/draft-simulator-app';
-import GitHubApp from './GitHub-app';
-import OverviewApp from './overview/overview-app';
+import { ChangeLogApp } from './changelog/changelog-app';
+import { DraftSimulatorApp } from './draft-simulator/draft-simulator-app';
+import { GitHubApp } from './GitHub-app';
+import { OverviewApp } from './overview/overview-app';
 import { AddressBar } from '@src/utils/AddressBar';
 import { NotifyingClass } from '@src/utils/NotifyingClass';
 

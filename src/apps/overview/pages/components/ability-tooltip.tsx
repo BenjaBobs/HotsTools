@@ -1,9 +1,9 @@
 import { Col, Row } from 'antd';
 
 import { Ability } from '../../../../api/heroes/heroes';
-import HotsTooltip from '../../../components/hots-tooltip/hots-tooltip';
+import { HotsTooltip } from '../../../components/hots-tooltip/hots-tooltip';
 
-export default function AbilityTooltip(props: { ability: Ability }) {
+export function AbilityTooltip(props: { ability: Ability }) {
   return (
     <div style={{ maxWidth: 500 }}>
       <HotsTooltip>

@@ -1,8 +1,8 @@
-import HeroStrengthChart from '../../../components/hero-strength-chart/hero-strength-chart';
+import { HeroStrengthChart } from '../../../components/hero-strength-chart/hero-strength-chart';
 import { DraftSimulation, Team } from '../../DraftSimulation';
 import { useNotifyRerender } from '@src/utils/NotifyingClass';
 
-export default function AnalysisPanel() {
+export function AnalysisPanel() {
   useNotifyRerender(DraftSimulation);
 
   return (

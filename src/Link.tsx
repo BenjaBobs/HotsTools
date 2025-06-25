@@ -21,7 +21,7 @@ export type LinkProps = {
     }
 );
 
-export default function Link(props: React.PropsWithChildren<LinkProps>) {
+export function Link(props: React.PropsWithChildren<LinkProps>) {
   useNotifyRerender(AddressBar, state => [state.path]);
   const path = AddressBar.path;
 

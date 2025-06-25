@@ -3,8 +3,8 @@ import './draft-panels.scss';
 import { Card, Col, Row } from 'antd';
 import { useState } from 'react';
 
-import AnalysisPanel from './panels/analysis-panel';
-import HeroesPanel from './panels/heroes-panel';
+import { AnalysisPanel } from './panels/analysis-panel';
+import { HeroesPanel } from './panels/heroes-panel';
 
 const panels = [
   {
@@ -17,7 +17,7 @@ const panels = [
   },
 ];
 
-export default function DraftPanels() {
+export function DraftPanels() {
   const [panel, setPanel] = useState(panels[0]);
 
   return (

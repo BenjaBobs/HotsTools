@@ -8,7 +8,7 @@ const heroesByName = allHeroes.reduce(
   {},
 );
 
-const heroes = {
+export const heroes = {
   all: allHeroes,
   byName: (name: string | undefined) => {
     if (!name) return undefined;
@@ -16,8 +16,6 @@ const heroes = {
     return heroesByName[name];
   },
 };
-
-export default heroes;
 
 export type Hero = {
   name: string;

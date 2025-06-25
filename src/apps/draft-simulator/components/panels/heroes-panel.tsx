@@ -1,8 +1,8 @@
-import HeroPicker from '../../../components/hero-picker/hero-picker';
+import { HeroPicker } from '../../../components/hero-picker/hero-picker';
 import { useNotifyRerender } from '@src/utils/NotifyingClass';
 import { DraftSimulation } from '../../DraftSimulation';
 
-export default function HeroesPanel() {
+export function HeroesPanel() {
   useNotifyRerender(DraftSimulation);
 
   return (

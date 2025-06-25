@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-export default function SerializeHeroData(heroes: any[]) {
+export function SerializeHeroData(heroes: any[]) {
   const path = './src/api/heroes/generated';
   fs.mkdirSync(path, { recursive: true });
   //TODO: generate an index.ts that re-exports all the stuff

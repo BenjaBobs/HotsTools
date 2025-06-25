@@ -6,14 +6,14 @@ import React from 'react';
 
 import { LoadingOutlined } from '@ant-design/icons';
 
-import Link from './Link';
+import { Link } from './Link';
 import { Flex } from '@src/utils/components/flex';
 import { Apps } from '@src/apps/Apps';
 import { useNotifyRerender } from '@src/utils/NotifyingClass';
 
 const { Header, Content } = Layout;
 
-export default function AppHost() {
+export function AppHost() {
   useNotifyRerender(Apps);
   const currentApp = Apps.currentApp;
 

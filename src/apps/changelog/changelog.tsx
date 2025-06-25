@@ -1,6 +1,6 @@
 import { ChangelogItem } from './changelog-app';
 
-const changeLog: ChangelogItem[] = [
+export const changeLog: ChangelogItem[] = [
   {
     date: new Date(2025, 4, 21),
     code: [
@@ -90,5 +90,3 @@ const changeLog: ChangelogItem[] = [
     ],
   },
 ];
-
-export default changeLog;

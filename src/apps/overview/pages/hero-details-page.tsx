@@ -1,15 +1,15 @@
 import { Avatar, Col, Result, Row, Space, Tooltip } from 'antd';
 import React, { useEffect, useState } from 'react';
 
-import heroes from '../../../api/heroes/heroes';
-import HeroStrengthChart from '../../components/hero-strength-chart/hero-strength-chart';
-import Hexagon from '../../components/hexagon/hexagon';
-import AbilityTooltip from './components/ability-tooltip';
-import TalentTooltip from './components/talent-tooltip';
+import { heroes } from '../../../api/heroes/heroes';
+import { HeroStrengthChart } from '../../components/hero-strength-chart/hero-strength-chart';
+import { Hexagon } from '../../components/hexagon/hexagon';
+import { AbilityTooltip } from './components/ability-tooltip';
+import { TalentTooltip } from './components/talent-tooltip';
 import { Flex } from '@src/utils/components/flex';
 import { AddressBar } from '@src/utils/AddressBar';
 
-export default function HeroDetailsPage(props: { hero?: string }) {
+export function HeroDetailsPage(props: { hero?: string }) {
   const hero = heroes.byName(props.hero);
   const [talentPicks, setTalentPicks] = useState<(number | undefined)[]>(
     AddressBar.getQueryParam('talents')

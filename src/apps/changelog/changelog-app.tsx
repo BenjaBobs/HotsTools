@@ -2,17 +2,15 @@ import { Card, Timeline, Typography } from 'antd';
 import React from 'react';
 
 import { AppDefinition } from '../AppDefinition';
-import changeLog from './changelog';
+import { changeLog } from './changelog';
 import { Flex } from '@src/utils/components/flex';
-import Link from '@src/Link';
+import { Link } from '@src/Link';
 
-const ChangeLogApp: AppDefinition = {
+export const ChangeLogApp: AppDefinition = {
   name: 'ChangeLog',
   path: 'ChangeLog',
   component: <ChangeLogPage />,
 };
-
-export default ChangeLogApp;
 
 function ChangeLogPage() {
   return (

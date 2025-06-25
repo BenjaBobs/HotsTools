@@ -1,10 +1,10 @@
 import { Col, Input, InputRef, Row } from 'antd';
 import { useEffect, useRef, useState } from 'react';
 
-import heroes, { Hero } from '../../../api/heroes/heroes';
-import HeroAvatar from '../hero-avatar/hero-avatar';
+import { Hero, heroes } from '../../../api/heroes/heroes';
+import { HeroAvatar } from '../hero-avatar/hero-avatar';
 
-export default function HeroPicker(props: {
+export function HeroPicker(props: {
   onHeroPicked?: (hero: Hero) => void;
   disabledHeroes?: string[];
   size?: number;
