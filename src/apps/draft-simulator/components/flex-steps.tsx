@@ -1,7 +1,5 @@
 import { Flex } from '@src/utils/components/flex';
-import './flex-steps.scss';
 
-import { Col } from 'antd';
 import React from 'react';
 import { FlexDivider } from '@src/apps/components/flex-divider/FlexDivider';
 
@@ -11,21 +9,27 @@ export function FlexSteps(props: { children: React.ReactNode }) {
     : [props.children];
 
   return (
-    <Flex justifyContent="space-between" align="middle" className="flex-steps">
+    <Flex
+      justifyContent="space-between"
+      align="center"
+      className="flex-steps"
+      tablet={{ gap: 4 }}
+      laptop={{ gap: 8 }}
+    >
       {childArr.map((step, idx) => {
         if (idx === 0) {
           return (
-            <Col key={idx} className="flex-step">
+            <Flex down key={idx} className="flex-step">
               {step}
-            </Col>
+            </Flex>
           );
         } else {
           return (
             <React.Fragment key={idx}>
-              <FlexDivider />
-              <Col key={idx} className="flex-step">
+              <FlexDivider spaceAround={0} />
+              <Flex down key={idx} className="flex-step">
                 {step}
-              </Col>
+              </Flex>
             </React.Fragment>
           );
         }
