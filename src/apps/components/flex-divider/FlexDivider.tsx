@@ -8,10 +8,11 @@ export function FlexDivider(props: {
 }) {
   return (
     <div
+      className="flex-divider"
       style={{
         blockSize: props.thickness ?? 2,
         inlineSize: props.length ?? '100%',
-        backgroundColor: props.color ?? 'var(--fg-color-bright)',
+        backgroundColor: props.color ?? 'HSL(var(--fg-color))',
         marginBlock: props.spaceAround ?? 16,
       }}
     />
