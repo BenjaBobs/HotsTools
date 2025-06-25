@@ -22,7 +22,7 @@ export const ScreenSize = {
 };
 
 export const ScreenSizes = Object.entries(ScreenSize).sort(
-  (a, b) => b[1] - a[1],
+  (a, b) => a[1] - b[1],
 ) as [ScreenSizeName, number][];
 
 export type ScreenSizeName = keyof typeof ScreenSize;
